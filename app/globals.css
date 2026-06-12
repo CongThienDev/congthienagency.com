@@ -5,9 +5,9 @@
   --font-sans: var(--font-be-vietnam), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, monospace;
 
-  /* Brand palette — black / white / blue, editorial-technical */
-  --color-paper: #f6f8fb;
-  --color-ink: #0b0f1a;
+  /* Brand palette — black / white / blue, premium local growth studio */
+  --color-paper: #f7f9fc;
+  --color-ink: #0a0e1a;
   --color-ink-soft: #2a3142;
   --color-muted: #5b6577;
 
@@ -19,6 +19,7 @@
   --color-blue-500: #2f6bff;
   --color-blue-600: #1d4ed8;
   --color-blue-700: #1740b0;
+  --color-blue-800: #123488;
   --color-blue-900: #0b2a6b;
   --color-blue-950: #08153a;
 
@@ -30,8 +31,9 @@
 
   /* Shadows */
   --shadow-soft: 0 1px 2px rgba(11, 15, 26, 0.04), 0 8px 24px rgba(11, 15, 26, 0.06);
-  --shadow-lift: 0 2px 6px rgba(11, 15, 26, 0.06), 0 18px 48px rgba(13, 39, 107, 0.12);
-  --shadow-blue: 0 12px 40px rgba(29, 78, 216, 0.28);
+  --shadow-lift: 0 2px 6px rgba(11, 15, 26, 0.06), 0 18px 48px rgba(13, 39, 107, 0.14);
+  --shadow-blue: 0 10px 32px rgba(29, 78, 216, 0.32);
+  --shadow-float: 0 6px 16px rgba(11, 15, 26, 0.08), 0 24px 64px rgba(13, 39, 107, 0.16);
 }
 
 :root {
@@ -53,6 +55,7 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 ::selection {
@@ -60,18 +63,35 @@ body {
   color: #fff;
 }
 
-/* Atmosphere: faint grid + blue glow used on hero/section backgrounds */
+/* ─── Atmosphere ─── */
+
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(11, 15, 26, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(11, 15, 26, 0.04) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(to right, rgba(11, 15, 26, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 15, 26, 0.045) 1px, transparent 1px);
+  background-size: 52px 52px;
+}
+
+.bg-grid-fade {
+  -webkit-mask-image: radial-gradient(75% 90% at 50% 0%, black 30%, transparent 100%);
+  mask-image: radial-gradient(75% 90% at 50% 0%, black 30%, transparent 100%);
+}
+
+.bg-dots {
+  background-image: radial-gradient(rgba(11, 15, 26, 0.10) 1px, transparent 1px);
+  background-size: 22px 22px;
 }
 
 .bg-glow {
   background:
-    radial-gradient(60% 50% at 15% 0%, rgba(47, 107, 255, 0.12) 0%, transparent 60%),
-    radial-gradient(50% 50% at 100% 10%, rgba(13, 39, 107, 0.1) 0%, transparent 55%);
+    radial-gradient(55% 45% at 18% 0%, rgba(47, 107, 255, 0.13) 0%, transparent 62%),
+    radial-gradient(45% 50% at 95% 12%, rgba(91, 139, 255, 0.12) 0%, transparent 58%);
+}
+
+.bg-glow-dark {
+  background:
+    radial-gradient(60% 70% at 85% 10%, rgba(47, 107, 255, 0.28) 0%, transparent 60%),
+    radial-gradient(45% 60% at 10% 100%, rgba(29, 78, 216, 0.22) 0%, transparent 55%);
 }
 
 .text-balance {
@@ -86,11 +106,43 @@ body {
   font-weight: 500;
 }
 
-/* Entrance animation — one orchestrated load, staggered via inline delay */
+/* ─── Premium card treatments ─── */
+
+/* 1px gradient border via padding-box/border-box trick */
+.card-gradient-border {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, rgba(47, 107, 255, 0.55), rgba(228, 233, 242, 0.9) 45%, rgba(47, 107, 255, 0.25)) border-box;
+}
+
+.card-gradient-border-dark {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(180deg, #0d1326, #0a0e1a) padding-box,
+    linear-gradient(135deg, rgba(91, 139, 255, 0.6), rgba(11, 42, 107, 0.4) 50%, rgba(47, 107, 255, 0.3)) border-box;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.card-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+/* ─── Motion ─── */
+
 @keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -102,16 +154,77 @@ body {
   animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+@keyframes float-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float-y 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-y 7s ease-in-out 1.2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2.2s ease-in-out infinite;
+}
+
+/* Scroll-reveal: hidden until .is-visible added by IntersectionObserver */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* No-JS / bots: never hide content */
+@media (scripting: none) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-rise {
+  .animate-rise,
+  .animate-float,
+  .animate-float-slow,
+  .animate-pulse-dot {
     animation: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .card-hover,
+  .card-hover:hover {
+    transform: none;
   }
   html {
     scroll-behavior: auto;
   }
 }
 
-/* FAQ accordion (CSS-only via details) */
+/* ─── FAQ accordion (CSS-only via details) ─── */
 details > summary {
   list-style: none;
   cursor: pointer;
@@ -121,4 +234,15 @@ details > summary::-webkit-details-marker {
 }
 details[open] .faq-icon {
   transform: rotate(45deg);
+}
+details .faq-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+details[open] .faq-body {
+  grid-template-rows: 1fr;
+}
+details .faq-body > div {
+  overflow: hidden;
 }

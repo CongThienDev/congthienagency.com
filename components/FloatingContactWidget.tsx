@@ -1,25 +1,27 @@
 import { SITE } from "@/content/site";
+import { IconChat, IconPhone } from "./Icons";
 
 export function FloatingContactWidget() {
   return (
-    <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-2">
+    <div className="fixed bottom-5 right-4 z-40 flex flex-col items-end gap-2.5 sm:right-5">
       <a
         href={SITE.contact.zalo}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat Zalo"
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white shadow-blue transition-transform hover:scale-110"
+        aria-label={`Chat Zalo ${SITE.contact.phoneDisplay}`}
+        className="group flex h-12 items-center gap-2 rounded-full bg-blue-600 pl-3.5 pr-4 text-white shadow-blue transition-all hover:-translate-y-0.5 hover:bg-blue-500"
       >
-        Zalo
+        <IconChat className="h-5 w-5" />
+        <span className="text-sm font-bold">Zalo</span>
       </a>
       <a
         href={SITE.contact.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat WhatsApp"
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-ink text-[10px] font-bold text-white shadow-lift transition-transform hover:scale-110"
+        className="grid h-12 w-12 place-items-center rounded-full border border-line bg-white text-ink shadow-lift transition-all hover:-translate-y-0.5 hover:text-blue-700"
       >
-        WA
+        <IconPhone className="h-5 w-5" />
       </a>
     </div>
   );

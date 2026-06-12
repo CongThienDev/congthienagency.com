@@ -1,29 +1,99 @@
 import Link from "next/link";
 import { type ReactNode } from "react";
+import { IconArrowRight, IconCheck } from "./Icons";
 
 export function ServiceCard({
   title,
   desc,
   href,
   tag,
+  icon,
+  featured = false,
+  bullets,
+  ctaLabel = "Xem chi tiết",
 }: {
   title: string;
   desc: string;
   href: string;
   tag?: string;
+  icon?: ReactNode;
+  featured?: boolean;
+  bullets?: string[];
+  ctaLabel?: string;
 }) {
   return (
     <Link
       href={href}
-      className="group relative flex flex-col rounded-card border border-line bg-white p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lift"
+      className={`group card-hover relative flex flex-col overflow-hidden rounded-card p-6 sm:p-7 ${
+        featured
+          ? "card-gradient-border-dark text-white shadow-lift"
+          : "card-gradient-border shadow-soft"
+      }`}
     >
-      {tag && <span className="label-mono text-blue-600">{tag}</span>}
-      <h3 className="mt-3 text-lg font-semibold tracking-tight text-ink">{title}</h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{desc}</p>
-      <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-blue-700">
-        Xem chi tiết
-        <span className="transition-transform group-hover:translate-x-1">→</span>
-      </span>
+      {featured && (
+        <div aria-hidden className="bg-glow-dark absolute inset-0 opacity-80" />
+      )}
+      <div className="relative">
+        <div className="flex items-start justify-between">
+          {icon && (
+            <span
+              className={`grid h-11 w-11 place-items-center rounded-xl transition-transform duration-300 group-hover:scale-110 ${
+                featured
+                  ? "bg-blue-600 text-white shadow-blue"
+                  : "bg-blue-50 text-blue-600 ring-1 ring-blue-100"
+              }`}
+            >
+              {icon}
+            </span>
+          )}
+          {tag && (
+            <span
+              className={`label-mono ${featured ? "text-blue-300" : "text-blue-600"}`}
+            >
+              {tag}
+            </span>
+          )}
+        </div>
+        <h3
+          className={`mt-4 text-lg font-bold tracking-tight ${
+            featured ? "text-white" : "text-ink"
+          }`}
+        >
+          {title}
+        </h3>
+        <p
+          className={`mt-2 text-sm leading-relaxed ${
+            featured ? "text-blue-100/75" : "text-muted"
+          }`}
+        >
+          {desc}
+        </p>
+        {bullets && (
+          <ul className="mt-4 flex flex-col gap-1.5">
+            {bullets.map((b) => (
+              <li
+                key={b}
+                className={`flex items-center gap-2 text-[13px] ${
+                  featured ? "text-blue-100/85" : "text-ink-soft"
+                }`}
+              >
+                <IconCheck
+                  className={`h-3.5 w-3.5 shrink-0 ${featured ? "text-blue-400" : "text-blue-600"}`}
+                />
+                {b}
+              </li>
+            ))}
+          </ul>
+        )}
+        <span
+          className={`mt-5 inline-flex items-center gap-1.5 text-sm font-semibold ${
+            featured ? "text-blue-300" : "text-blue-700"
+          }`}
+        >
+          {ctaLabel}
+          <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+        </span>
+      </div>
     </Link>
   );
 }
@@ -33,29 +103,76 @@ export function PortfolioCard({
   name,
   category,
   location,
-  stat,
+  deliveryTime,
+  features,
 }: {
   href: string;
   name: string;
   category: string;
   location: string;
-  stat: string;
+  deliveryTime?: string;
+  features?: string[];
 }) {
   return (
     <Link
       href={href}
-      className="group flex flex-col overflow-hidden rounded-card border border-line bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+      className="group card-hover card-gradient-border flex flex-col overflow-hidden rounded-card shadow-soft"
     >
-      <div className="relative aspect-[16/10] bg-gradient-to-br from-blue-50 via-white to-blue-100">
-        <div className="bg-grid absolute inset-0 opacity-40" />
-        <div className="absolute bottom-4 left-4 rounded-full bg-ink/90 px-3 py-1 text-xs font-medium text-white">
-          {stat}
+      {/* mock screenshot area — swap for a real <Image> when assets exist */}
+      <div className="relative m-3 mb-0 overflow-hidden rounded-xl border border-line bg-gradient-to-br from-blue-950 via-blue-900 to-ink">
+        <div className="bg-grid absolute inset-0 opacity-[0.12]" />
+        <div className="relative px-6 pb-0 pt-6">
+          <div className="overflow-hidden rounded-t-lg border border-white/10 bg-white shadow-float transition-transform duration-500 group-hover:-translate-y-1.5">
+            <div className="flex items-center gap-1.5 border-b border-line bg-paper px-3 py-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-line-strong" />
+              <span className="h-1.5 w-1.5 rounded-full bg-line-strong" />
+              <span className="h-1.5 w-1.5 rounded-full bg-line-strong" />
+            </div>
+            <div className="space-y-1.5 p-3.5">
+              <div className="h-2.5 w-2/3 rounded-full bg-ink/80" />
+              <div className="h-1.5 w-full rounded-full bg-line" />
+              <div className="h-1.5 w-4/5 rounded-full bg-line" />
+              <div className="flex gap-1.5 pt-1">
+                <div className="h-4 w-14 rounded bg-blue-600" />
+                <div className="h-4 w-12 rounded ring-1 ring-line-strong" />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* SEO badge */}
+        <div className="absolute right-3.5 top-3.5 flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 shadow-soft">
+          <span className="grid h-4 w-4 place-items-center rounded-full bg-blue-600 text-[8px] font-bold text-white">✓</span>
+          <span className="font-mono text-[10px] font-semibold text-ink">SEO 100/100</span>
         </div>
       </div>
-      <div className="p-6">
-        <span className="label-mono text-blue-600">{category}</span>
-        <h3 className="mt-2 text-lg font-semibold tracking-tight text-ink">{name}</h3>
-        <p className="mt-1 text-sm text-muted">{location}</p>
+
+      <div className="flex flex-1 flex-col p-6">
+        <div className="flex items-center justify-between gap-3">
+          <span className="label-mono text-blue-600">{category}</span>
+          {deliveryTime && (
+            <span className="rounded-full bg-blue-50 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-blue-700 ring-1 ring-blue-100">
+              {deliveryTime}
+            </span>
+          )}
+        </div>
+        <h3 className="mt-2.5 text-xl font-bold tracking-tight text-ink">{name}</h3>
+        <p className="mt-0.5 text-sm text-muted">{location}</p>
+        {features && (
+          <ul className="mt-4 flex flex-wrap gap-1.5">
+            {features.map((f) => (
+              <li
+                key={f}
+                className="rounded-full border border-line bg-paper px-2.5 py-1 text-[11px] font-medium text-ink-soft"
+              >
+                {f}
+              </li>
+            ))}
+          </ul>
+        )}
+        <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700">
+          Xem case study
+          <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+        </span>
       </div>
     </Link>
   );
@@ -82,19 +199,20 @@ export function BlogCard({
   return (
     <Link
       href={href}
-      className="group flex flex-col rounded-card border border-line bg-white p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lift"
+      className="group card-hover card-gradient-border flex flex-col rounded-card p-6 shadow-soft"
     >
-      <div className="flex items-center gap-3 text-xs text-muted">
+      <div className="flex items-center gap-3 font-mono text-[11px] text-muted">
         <span>{d}</span>
         <span className="h-1 w-1 rounded-full bg-line-strong" />
         <span>{readingMinutes} phút đọc</span>
       </div>
-      <h3 className="mt-3 text-lg font-semibold leading-snug tracking-tight text-ink group-hover:text-blue-700">
+      <h3 className="mt-3 text-lg font-bold leading-snug tracking-tight text-ink transition-colors group-hover:text-blue-700">
         {title}
       </h3>
       <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{excerpt}</p>
-      <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-700">
-        Đọc bài <span className="transition-transform group-hover:translate-x-1">→</span>
+      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700">
+        Đọc bài
+        <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
       </span>
     </Link>
   );

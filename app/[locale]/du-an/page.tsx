@@ -58,7 +58,8 @@ export default async function Page({ params }: Params) {
                 name={p.name}
                 category={p.category}
                 location={`${p.location} · ${p.year}`}
-                stat="PageSpeed SEO 100/100"
+                deliveryTime={p.stats[0]?.value}
+                features={p.scope.slice(1, 4)}
               />
             ))}
           </div>

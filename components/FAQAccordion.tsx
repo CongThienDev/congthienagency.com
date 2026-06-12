@@ -4,19 +4,25 @@ export function FAQAccordion({
   faqs: { q: string; a: string }[];
 }) {
   return (
-    <div className="divide-y divide-line overflow-hidden rounded-card border border-line bg-white">
+    <div className="card-gradient-border divide-y divide-line overflow-hidden rounded-card shadow-soft">
       {faqs.map((f) => (
-        <details key={f.q} className="group p-5 sm:p-6">
-          <summary className="flex items-start justify-between gap-4 text-base font-medium text-ink">
+        <details key={f.q} className="group">
+          <summary className="flex items-center justify-between gap-4 px-5 py-5 text-[15px] font-semibold text-ink transition-colors hover:text-blue-700 sm:px-7">
             <span>{f.q}</span>
             <span
               aria-hidden
-              className="faq-icon mt-1 flex h-5 w-5 shrink-0 items-center justify-center text-blue-600 transition-transform duration-200"
+              className="faq-icon grid h-7 w-7 shrink-0 place-items-center rounded-full bg-blue-50 text-base font-medium text-blue-600 ring-1 ring-blue-100 transition-transform duration-300"
             >
               +
             </span>
           </summary>
-          <p className="mt-3 text-sm leading-relaxed text-muted">{f.a}</p>
+          <div className="faq-body">
+            <div>
+              <p className="px-5 pb-6 text-sm leading-relaxed text-muted sm:px-7 sm:text-[15px]">
+                {f.a}
+              </p>
+            </div>
+          </div>
         </details>
       ))}
     </div>

@@ -15,16 +15,15 @@ export function LanguageSwitcher({
   const enHref = alt?.en ?? "/en";
 
   const base =
-    "px-2 py-1 text-xs font-medium uppercase tracking-wider transition-colors";
-  const active = "text-ink";
+    "rounded-full px-2.5 py-1 font-mono text-[11px] font-semibold uppercase tracking-wider transition-all";
+  const active = "bg-ink text-white shadow-soft";
   const idle = "text-muted hover:text-blue-700";
 
   return (
-    <div className="flex items-center gap-1 rounded-full border border-line bg-white/60 px-1 py-0.5">
+    <div className="flex items-center gap-0.5 rounded-full border border-line bg-white/70 p-0.5">
       <Link href={viHref} className={`${base} ${locale === "vi" ? active : idle}`}>
         VI
       </Link>
-      <span className="text-line-strong">/</span>
       <Link href={enHref} className={`${base} ${locale === "en" ? active : idle}`}>
         EN
       </Link>

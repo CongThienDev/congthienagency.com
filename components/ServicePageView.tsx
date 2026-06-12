@@ -34,19 +34,21 @@ export function ServicePageView({ service }: { service: Service }) {
       <JsonLd data={graphDocument(nodes)} />
 
       {/* Hero */}
-      <section className="bg-glow border-b border-line">
-        <Container className="py-12 sm:py-16">
+      <section className="relative overflow-hidden border-b border-line">
+        <div aria-hidden className="bg-glow absolute inset-0" />
+        <div aria-hidden className="bg-grid bg-grid-fade absolute inset-0" />
+        <Container className="relative py-12 sm:py-16">
           <Breadcrumb items={service.breadcrumb} />
-          <div className="mt-6 max-w-3xl animate-rise">
+          <div className="mt-7 max-w-3xl animate-rise">
             <p className="label-mono text-blue-600">{service.eyebrow}</p>
-            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-5xl text-balance">
+            <h1 className="mt-4 text-3xl font-bold leading-[1.12] tracking-tight text-ink sm:text-5xl text-balance">
               {service.h1}
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-muted">{service.heroSub}</p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Button href="/vi/lien-he">{service.heroCta}</Button>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <Button href="/vi/lien-he" size="lg">{service.heroCta}</Button>
               {service.priceFrom && (
-                <span className="inline-flex items-center rounded-full border border-line bg-white px-5 py-3 text-sm font-medium text-ink">
+                <span className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-5 py-3 text-sm font-semibold text-blue-800">
                   {service.priceFrom}
                 </span>
               )}
@@ -71,7 +73,7 @@ export function ServicePageView({ service }: { service: Service }) {
             {service.sections.map((s) => (
               <div
                 key={s.heading}
-                className="rounded-card border border-line bg-white p-6 shadow-soft"
+                className="card-hover card-gradient-border rounded-card p-6 shadow-soft"
               >
                 <h2 className="text-lg font-semibold tracking-tight text-ink">{s.heading}</h2>
                 {s.body && (

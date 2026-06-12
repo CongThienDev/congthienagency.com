@@ -15,6 +15,33 @@ export const HOME_VI = {
     { value: "Booking", label: "& thanh toán online" },
     { value: "Hội An – ĐN", label: "Khu vực phục vụ" },
   ],
+  painIntro: {
+    eyebrow: "Vấn đề thường gặp",
+    title: "Khách tìm — nhưng không thấy bạn, hoặc thấy mà không đặt được",
+    sub: "Phần lớn doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng đang gặp ít nhất một trong những vấn đề này.",
+  },
+  painPoints: [
+    {
+      num: "01",
+      title: "Chỉ có Fanpage, không có website",
+      desc: "Khách quốc tế và khách Hàn muốn xem website chính chủ trước khi đặt. Fanpage không đủ tạo niềm tin.",
+    },
+    {
+      num: "02",
+      title: "Khách Hàn không tìm thấy bạn",
+      desc: "Người Hàn tìm kiếm trên Naver, không phải Google. Không hiện diện trên Naver là mất hẳn nhóm khách này.",
+    },
+    {
+      num: "03",
+      title: "Google Maps sơ sài, ít đánh giá",
+      desc: "Hồ sơ Maps thiếu thông tin và đánh giá khiến khách chọn đối thủ ngay bên cạnh.",
+    },
+    {
+      num: "04",
+      title: "Khách muốn đặt nhưng không đặt được",
+      desc: "Không có luồng booking và thanh toán online — khách phải nhắn tin chờ phản hồi, rồi bỏ đi.",
+    },
+  ],
   servicesIntro: {
     eyebrow: "Dịch vụ",
     title: "Bốn mảng dịch vụ, một hệ thống marketing",
@@ -22,10 +49,12 @@ export const HOME_VI = {
   },
   services: [
     {
-      title: "Thiết kế website",
-      desc: "Website chuẩn SEO có booking, thanh toán online và đạt PageSpeed SEO 100/100.",
+      title: "Thiết kế website SEO",
+      desc: "Website chuẩn SEO có booking, thanh toán online và đạt PageSpeed SEO 100/100 — nền tảng của cả hệ thống.",
       href: "/vi/thiet-ke-website",
       tag: "Website",
+      featured: true,
+      bullets: ["Booking + thanh toán online", "PageSpeed SEO 100/100", "Email xác nhận tự động"],
     },
     {
       title: "Naver Marketing",
@@ -40,11 +69,22 @@ export const HOME_VI = {
       tag: "Maps",
     },
     {
-      title: "Social Marketing",
+      title: "Social Marketing & Hỗ trợ Facebook",
       desc: "Hỗ trợ xác minh Fanpage / Meta Verified và gói tăng trưởng kênh mạng xã hội.",
       href: "/vi/social-marketing",
       tag: "Social",
     },
+  ],
+  industriesIntro: {
+    eyebrow: "Ngành nghề",
+    title: "Thiết kế cho đúng ngành của bạn",
+    sub: "Mỗi ngành có hành vi đặt dịch vụ khác nhau — website và marketing được thiết kế theo đúng hành vi đó.",
+  },
+  industries: [
+    { title: "Spa · Massage · Wellness", desc: "Booking liệu trình, thanh toán quốc tế, không gian thương hiệu." },
+    { title: "Nhà hàng · Cafe · Seafood", desc: "Menu online, đặt bàn, hình ảnh món ăn chuẩn SEO." },
+    { title: "Khách sạn · Homestay · Villa", desc: "Đặt phòng trực tiếp, giảm phụ thuộc OTA." },
+    { title: "Tour · Cooking Class · Trải nghiệm", desc: "Lịch trình, đặt chỗ theo ngày, thanh toán trước." },
   ],
   whyIntro: {
     eyebrow: "Vì sao chọn tôi",

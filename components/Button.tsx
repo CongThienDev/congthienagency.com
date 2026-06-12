@@ -1,30 +1,36 @@
 import Link from "next/link";
 import { type ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "ghost";
+type Variant = "primary" | "secondary" | "ghost" | "inverse";
 
 const VARIANTS: Record<Variant, string> = {
   primary:
-    "bg-blue-600 text-white shadow-blue hover:bg-blue-700 hover:-translate-y-0.5",
+    "bg-blue-600 text-white shadow-blue hover:bg-blue-500 hover:-translate-y-0.5 hover:shadow-float active:translate-y-0",
   secondary:
-    "bg-white text-ink border border-line-strong hover:border-blue-400 hover:text-blue-700",
+    "bg-white text-ink border border-line-strong shadow-soft hover:border-blue-300 hover:text-blue-700 hover:-translate-y-0.5",
   ghost: "text-ink-soft hover:text-blue-700",
+  inverse:
+    "bg-white text-ink hover:bg-blue-50 hover:-translate-y-0.5 shadow-soft",
 };
 
 export function Button({
   href,
   children,
   variant = "primary",
+  size = "md",
   className = "",
   external = false,
 }: {
   href: string;
   children: ReactNode;
   variant?: Variant;
+  size?: "md" | "lg";
   className?: string;
   external?: boolean;
 }) {
-  const cls = `inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 ${VARIANTS[variant]} ${className}`;
+  const sizeCls =
+    size === "lg" ? "px-7 py-3.5 text-base" : "px-6 py-3 text-sm";
+  const cls = `inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 ${sizeCls} ${VARIANTS[variant]} ${className}`;
 
   if (external) {
     return (

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
-import { Breadcrumb, ProofBadge, CaseStudyStats } from "@/components/Bits";
+import { Breadcrumb, CaseStudyStats } from "@/components/Bits";
 import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
 import { PROJECTS, getProject } from "@/content/projects.vi";
@@ -111,8 +111,13 @@ export default async function Page({ params }: Params) {
               <h2 className="text-2xl font-semibold tracking-tight text-ink">Kết quả kiểm chứng</h2>
               <div className="mt-5 flex flex-col gap-3">
                 {project.verifiedProof.map((p) => (
-                  <div key={p} className="flex items-center gap-3 rounded-xl bg-blue-50 px-4 py-3 text-sm text-ink">
-                    <ProofBadge>✓</ProofBadge>
+                  <div
+                    key={p}
+                    className="flex items-center gap-3 rounded-xl border border-blue-100 bg-blue-50 px-4 py-3.5 text-sm font-medium text-ink"
+                  >
+                    <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-blue-600 text-[10px] font-bold text-white shadow-blue">
+                      ✓
+                    </span>
                     {p}
                   </div>
                 ))}
