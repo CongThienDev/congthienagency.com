@@ -9,7 +9,7 @@ import { ServiceCard, PortfolioCard } from "@/components/Cards";
 import { TrustStrip } from "@/components/Bits";
 import { CTASection } from "@/components/CTASection";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { HeroVisual } from "@/components/HeroVisual";
+import { HeroImage } from "@/components/HeroImage";
 import { Reveal } from "@/components/Reveal";
 import { PricingCard } from "@/components/PricingCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -190,7 +190,7 @@ function HomeVI() {
 
             {/* Right: CSS product mockup */}
             <div className="animate-rise max-lg:mt-2" style={{ animationDelay: "200ms" }}>
-              <HeroVisual />
+              <HeroImage />
             </div>
           </div>
 
@@ -482,7 +482,7 @@ function HomeVI() {
       {/* ── FAQ ── */}
       <section className="border-t border-line bg-white py-16 sm:py-24">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <Reveal>
               <div className="lg:sticky lg:top-28">
                 <SectionHeader
@@ -546,7 +546,7 @@ function HomeEN() {
               </div>
             </div>
             <div className="animate-rise max-lg:mt-2" style={{ animationDelay: "200ms" }}>
-              <HeroVisual />
+              <HeroImage />
             </div>
           </div>
           <div className="animate-rise mt-16" style={{ animationDelay: "400ms" }}>
