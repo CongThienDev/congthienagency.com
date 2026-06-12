@@ -1,23 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "./Container";
 import { FOOTER_VI } from "@/content/navigation";
 import { SITE, type Locale } from "@/content/site";
-import {
-  IconChat,
-  IconMail,
-  IconMapPin,
-  IconCode,
-  IconNaver,
-  IconMapsColor,
-  IconFacebook,
-} from "./Icons";
+import { IconChat, IconMail, IconMapPin, IconCode } from "./Icons";
 import type { ReactNode } from "react";
 
 function brandIconForHref(href: string): ReactNode {
   if (href.includes("thiet-ke-website")) return <IconCode className="h-3.5 w-3.5 text-blue-400" />;
-  if (href.includes("naver")) return <IconNaver className="h-3.5 w-3.5 text-[color:var(--color-naver)]" />;
-  if (href.includes("google-maps")) return <IconMapsColor className="h-4 w-4" />;
-  if (href.includes("social")) return <IconFacebook className="h-3.5 w-3.5 text-[color:var(--color-facebook)]" />;
+  if (href.includes("naver"))
+    return <Image src="/icon-service/naver-icon.jpeg" alt="Naver" width={16} height={16} className="rounded-[3px] object-cover" />;
+  if (href.includes("google-maps"))
+    return <Image src="/icon-service/map-icon.png" alt="Google Maps" width={16} height={16} className="object-contain" />;
+  if (href.includes("social"))
+    return <Image src="/icon-service/facebook-icon.webp" alt="Facebook" width={16} height={16} className="rounded-[3px] object-cover" />;
   return null;
 }
 

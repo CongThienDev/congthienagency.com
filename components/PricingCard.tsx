@@ -50,7 +50,7 @@ export function PricingCard({
               <h3 className="text-lg font-bold tracking-tight text-white">{name}</h3>
             </div>
             <span className="rounded-full bg-blue-600 px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white shadow-blue">
-              Phổ biến
+              {cluster === "website" ? "Dịch vụ chính" : "Phổ biến"}
             </span>
           </div>
           {tagline && <p className="mt-1.5 text-sm text-blue-100/70">{tagline}</p>}

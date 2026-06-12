@@ -52,21 +52,24 @@ export default async function Page({ params }: Params) {
       <section className="py-16 sm:py-20">
         <Container>
           <div className="grid gap-6 sm:grid-cols-2">
-            {PROJECTS.map((p) => (
-              <PortfolioCard
-                key={p.slug}
-                href={p.path}
-                name={p.name}
-                category={p.category}
-                location={`${p.location} · ${p.year}`}
-                deliveryTime={p.stats[0]?.value}
-                proofs={[
-                  { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
-                  { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: "Booking + thanh toán online" },
-                  { icon: <IconMapsColor className="h-4 w-4" />, label: "Thiết lập Google Maps" },
-                ]}
-              />
-            ))}
+            {PROJECTS.map((p) => {
+              const payment = p.stats.find((s) => s.label === "Thanh toán");
+              return (
+                <PortfolioCard
+                  key={p.slug}
+                  href={p.path}
+                  name={p.name}
+                  category={p.category}
+                  location={`${p.location} · ${p.year}`}
+                  deliveryTime={p.stats[0]?.value}
+                  proofs={[
+                    { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
+                    { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: payment ? `Thanh toán: ${payment.value}` : "Booking + thanh toán online" },
+                    { icon: <IconMapsColor className="h-4 w-4" />, label: "Thiết lập Google Maps" },
+                  ]}
+                />
+              );
+            })}
           </div>
         </Container>
       </section>

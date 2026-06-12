@@ -34,6 +34,7 @@ import {
   IconStar,
   IconUsers,
 } from "@/components/Icons";
+import { SERVICE_BRAND } from "@/components/serviceBrand";
 import { HOME_VI } from "@/content/pages.vi";
 import { HOME_EN } from "@/content/pages.en";
 import { PROJECTS } from "@/content/projects.vi";
@@ -299,16 +300,18 @@ function HomeVI() {
                     Một hệ thống — khách tìm thấy, tin tưởng và đặt dịch vụ
                   </h3>
                   <div className="mt-8 flex flex-col gap-2.5">
-                    {[
-                      { label: "Website", note: "nền tảng chính chủ, chuẩn SEO", icon: <IconGlobe className="h-4.5 w-4.5" /> },
-                      { label: "Naver", note: "khách Hàn tìm thấy bạn", icon: <IconSearch className="h-4.5 w-4.5" /> },
-                      { label: "Google Maps", note: "uy tín tại địa phương", icon: <IconMapPin className="h-4.5 w-4.5" /> },
-                      { label: "Social", note: "kênh tương tác & tin cậy", icon: <IconUsers className="h-4.5 w-4.5" /> },
-                    ].map((step, i) => (
+                    {(
+                      [
+                        { label: "Website", note: "nền tảng chính chủ, chuẩn SEO", brand: "website", iconBg: "bg-blue-600/90 text-white shadow-blue" },
+                        { label: "Naver", note: "khách Hàn tìm thấy bạn", brand: "naver", iconBg: "bg-white/95" },
+                        { label: "Google Maps", note: "uy tín tại địa phương", brand: "maps", iconBg: "bg-white/95" },
+                        { label: "Social", note: "kênh tương tác & tin cậy", brand: "facebook", iconBg: "bg-white/95" },
+                      ] as { label: string; note: string; brand: "website" | "naver" | "maps" | "facebook"; iconBg: string }[]
+                    ).map((step, i) => (
                       <div key={step.label}>
                         <div className="flex items-center gap-3.5 rounded-2xl bg-white/[0.07] px-4 py-3.5 ring-1 ring-white/10 backdrop-blur transition-colors hover:bg-white/[0.11]">
-                          <span className="grid h-9 w-9 place-items-center rounded-xl bg-blue-600/90 text-white shadow-blue">
-                            {step.icon}
+                          <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-xl ${step.iconBg}`}>
+                            {SERVICE_BRAND[step.brand].logoImage}
                           </span>
                           <div className="flex-1">
                             <p className="text-sm font-bold">{step.label}</p>
@@ -357,22 +360,25 @@ function HomeVI() {
             </div>
           </Reveal>
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            {PROJECTS.map((p, i) => (
-              <Reveal key={p.slug} delay={i * 100}>
-                <PortfolioCard
-                  href={p.path}
-                  name={p.name}
-                  category={p.category}
-                  location={`${p.location} · ${p.year}`}
-                  deliveryTime={p.stats[0]?.value}
-                  proofs={[
-                    { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
-                    { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: "Booking + thanh toán online" },
-                    { icon: <IconMapsColor className="h-4 w-4" />, label: "Thiết lập Google Maps" },
-                  ]}
-                />
-              </Reveal>
-            ))}
+            {PROJECTS.map((p, i) => {
+              const payment = p.stats.find((s) => s.label === "Thanh toán");
+              return (
+                <Reveal key={p.slug} delay={i * 100}>
+                  <PortfolioCard
+                    href={p.path}
+                    name={p.name}
+                    category={p.category}
+                    location={`${p.location} · ${p.year}`}
+                    deliveryTime={p.stats[0]?.value}
+                    proofs={[
+                      { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
+                      { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: payment ? `Thanh toán: ${payment.value}` : "Booking + thanh toán online" },
+                      { icon: <IconMapsColor className="h-4 w-4" />, label: "Thiết lập Google Maps" },
+                    ]}
+                  />
+                </Reveal>
+              );
+            })}
           </div>
         </Container>
       </section>

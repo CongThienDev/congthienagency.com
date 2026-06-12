@@ -1,4 +1,5 @@
-import { IconCheck, IconMapPin, IconNaver, IconMapsColor } from "./Icons";
+import Image from "next/image";
+import { IconCheck, IconMapPin } from "./Icons";
 
 /**
  * CSS-built product mockup for the hero: a browser window showing a
@@ -114,8 +115,8 @@ export function HeroVisual() {
       {/* Floating: Naver service chip */}
       <div className="animate-float-slow absolute -left-6 top-1/2 hidden md:block">
         <div className="glass flex items-center gap-2 rounded-full border border-white/60 py-1.5 pl-1.5 pr-3.5 shadow-lift ring-1 ring-line/60">
-          <span className="grid h-6 w-6 place-items-center rounded-full bg-naver text-white">
-            <IconNaver className="h-3.5 w-3.5" />
+          <span className="grid h-6 w-6 shrink-0 overflow-hidden place-items-center rounded-full">
+            <Image src="/icon-service/naver-icon.jpeg" alt="Naver" width={24} height={24} className="h-6 w-6 object-cover" />
           </span>
           <span className="text-[11px] font-semibold text-ink">Naver Blog</span>
         </div>
@@ -124,8 +125,8 @@ export function HeroVisual() {
       {/* Floating: Google Maps service chip */}
       <div className="animate-float absolute -right-5 bottom-24 hidden md:block">
         <div className="glass flex items-center gap-2 rounded-full border border-white/60 py-1.5 pl-1.5 pr-3.5 shadow-lift ring-1 ring-line/60">
-          <span className="grid h-6 w-6 place-items-center rounded-full bg-white ring-1 ring-line">
-            <IconMapsColor className="h-4 w-4" />
+          <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-white ring-1 ring-line">
+            <Image src="/icon-service/map-icon.png" alt="Google Maps" width={18} height={18} className="object-contain" />
           </span>
           <span className="text-[11px] font-semibold text-ink">Google Maps</span>
         </div>
