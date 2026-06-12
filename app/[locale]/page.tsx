@@ -113,7 +113,7 @@ function HomeVI() {
         <div aria-hidden className="bg-grid bg-grid-fade absolute inset-0" />
 
         <Container className="relative pb-16 pt-6 sm:pb-24 sm:pt-10 lg:pt-12">
-          <div className="grid items-start gap-10 lg:grid-cols-[0.83fr_1.17fr] lg:gap-8">
+          <div className="grid items-start gap-10 lg:grid-cols-[0.89fr_1.11fr] lg:gap-8">
             {/* Left */}
             <div>
               <div
@@ -155,7 +155,7 @@ function HomeVI() {
               </p>
 
               <div
-                className="animate-rise mt-8 flex flex-wrap gap-3"
+                className="animate-rise mt-8 flex flex-wrap gap-3 md:flex-nowrap"
                 style={{ animationDelay: "240ms" }}
               >
                 <Button href={SITE.contact.zalo} external size="lg">
@@ -190,7 +190,7 @@ function HomeVI() {
 
             {/* Right: CSS product mockup */}
             <div
-              className="animate-rise max-lg:mt-1 lg:-mr-14 lg:pt-2 xl:-mr-24"
+              className="animate-rise max-lg:mt-1 lg:-mr-12 lg:pt-2 xl:-mr-20"
               style={{ animationDelay: "200ms" }}
             >
               <HeroImage />

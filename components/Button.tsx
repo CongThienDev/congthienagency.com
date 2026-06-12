@@ -30,7 +30,7 @@ export function Button({
 }) {
   const sizeCls =
     size === "lg" ? "px-7 py-3.5 text-base" : "px-6 py-3 text-sm";
-  const cls = `inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 ${sizeCls} ${VARIANTS[variant]} ${className}`;
+  const cls = `inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 ${sizeCls} ${VARIANTS[variant]} ${className}`;
 
   if (external) {
     return (
