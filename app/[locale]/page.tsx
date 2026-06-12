@@ -112,8 +112,8 @@ function HomeVI() {
         <div aria-hidden className="bg-glow absolute inset-0" />
         <div aria-hidden className="bg-grid bg-grid-fade absolute inset-0" />
 
-        <Container className="relative pb-16 pt-10 sm:pb-24 sm:pt-16 lg:pt-20">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+        <Container className="relative pb-16 pt-6 sm:pb-24 sm:pt-10 lg:pt-12">
+          <div className="grid items-start gap-10 lg:grid-cols-[0.83fr_1.17fr] lg:gap-8">
             {/* Left */}
             <div>
               <div
@@ -129,7 +129,7 @@ function HomeVI() {
               </div>
 
               <h1
-                className="animate-rise mt-5 text-[2.1rem] font-bold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem] text-balance"
+                className="animate-rise mt-5 text-[2.1rem] font-bold leading-[1.08] tracking-tight text-ink text-balance sm:text-5xl lg:text-[3.4rem]"
                 style={{ animationDelay: "80ms" }}
               >
                 Website, Naver &amp; Google Maps cho{" "}
@@ -144,7 +144,7 @@ function HomeVI() {
                     <path d="M1 7C40 2.5 120 1.5 199 5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
                   </svg>
                 </span>{" "}
-                và du lịch tại Hội An – Đà Nẵng
+                tại Hội An
               </h1>
 
               <p
@@ -189,13 +189,16 @@ function HomeVI() {
             </div>
 
             {/* Right: CSS product mockup */}
-            <div className="animate-rise max-lg:mt-2" style={{ animationDelay: "200ms" }}>
+            <div
+              className="animate-rise max-lg:mt-1 lg:-mr-14 lg:pt-2 xl:-mr-24"
+              style={{ animationDelay: "200ms" }}
+            >
               <HeroImage />
             </div>
           </div>
 
           {/* Trust strip */}
-          <div className="animate-rise mt-16 sm:mt-20" style={{ animationDelay: "400ms" }}>
+          <div className="animate-rise mt-14 sm:mt-18" style={{ animationDelay: "400ms" }}>
             <TrustStrip
               items={c.trust.map((t, i) => ({ ...t, icon: TRUST_ICONS[i] }))}
             />
