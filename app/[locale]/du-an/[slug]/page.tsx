@@ -5,6 +5,7 @@ import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb, CaseStudyStats } from "@/components/Bits";
 import { CTASection } from "@/components/CTASection";
+import { ProjectImageGallery } from "@/components/ProjectImageGallery";
 import { JsonLd } from "@/components/JsonLd";
 import { PROJECTS, getProject } from "@/content/projects.vi";
 import { graphDocument, breadcrumbGraph, creativeWorkGraph } from "@/lib/schema";
@@ -146,6 +147,8 @@ export default async function Page({ params }: Params) {
           </Container>
         </section>
       )}
+
+      <ProjectImageGallery projectName={project.name} images={project.images} />
 
       <CTASection
         title="Bạn muốn một website tương tự?"

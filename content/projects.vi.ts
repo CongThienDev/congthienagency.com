@@ -118,17 +118,17 @@ export const PROJECTS: Project[] = [
     images: [
       {
         slot: "hero",
-        suggestion: "/images/projects/serena-retreat/hero.jpg",
+        suggestion: "/images/projects/serena-retreat/hero.webp",
         alt: "Website spa Serena Retreat trên màn hình desktop và mobile",
       },
       {
         slot: "booking",
-        suggestion: "/images/projects/serena-retreat/booking.jpg",
+        suggestion: "/images/projects/serena-retreat/booking.webp",
         alt: "Giao diện đặt liệu trình của website Serena Retreat",
       },
       {
         slot: "pagespeed",
-        suggestion: "/images/projects/serena-retreat/pagespeed.jpg",
+        suggestion: "/images/projects/serena-retreat/pagespeed.webp",
         alt: "Kết quả PageSpeed Insights SEO 100/100 của Serena Retreat",
       },
     ],
@@ -213,17 +213,17 @@ export const PROJECTS: Project[] = [
     images: [
       {
         slot: "hero",
-        suggestion: "/images/projects/ruong-house/hero.jpg",
+        suggestion: "/images/projects/ruong-house/hero.webp",
         alt: "Website Ruong House trên màn hình desktop và mobile",
       },
       {
         slot: "cart",
-        suggestion: "/images/projects/ruong-house/cart.jpg",
+        suggestion: "/images/projects/ruong-house/cart.webp",
         alt: "Giỏ hàng và thanh toán của website Ruong House",
       },
       {
         slot: "pagespeed",
-        suggestion: "/images/projects/ruong-house/pagespeed.jpg",
+        suggestion: "/images/projects/ruong-house/pagespeed.webp",
         alt: "Kết quả PageSpeed Insights SEO 100/100 của Ruong House",
       },
     ],
