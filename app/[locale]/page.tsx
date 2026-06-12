@@ -27,6 +27,7 @@ import {
   IconGauge,
   IconGlobe,
   IconMapPin,
+  IconMapsColor,
   IconSearch,
   IconShield,
   IconSpa,
@@ -243,13 +244,17 @@ function HomeVI() {
               <Reveal
                 key={s.href + s.title}
                 delay={i * 80}
-                className={i === 0 ? "lg:col-span-2" : i === 3 ? "lg:col-span-2" : ""}
+                className={i === 0 || i === 3 ? "lg:col-span-2" : ""}
               >
                 <ServiceCard
-                  {...s}
-                  icon={SERVICE_ICONS[i]}
+                  title={s.title}
+                  desc={s.desc}
+                  href={s.href}
+                  tag={s.tag}
+                  brand={s.brand}
                   featured={"featured" in s && Boolean(s.featured)}
                   bullets={"bullets" in s ? (s.bullets as string[]) : undefined}
+                  chips={s.chips}
                 />
               </Reveal>
             ))}
@@ -360,7 +365,11 @@ function HomeVI() {
                   category={p.category}
                   location={`${p.location} · ${p.year}`}
                   deliveryTime={p.stats[0]?.value}
-                  features={p.scope.slice(1, 4)}
+                  proofs={[
+                    { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
+                    { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: "Booking + thanh toán online" },
+                    { icon: <IconMapsColor className="h-4 w-4" />, label: "Thiết lập Google Maps" },
+                  ]}
                 />
               </Reveal>
             ))}
@@ -392,6 +401,7 @@ function HomeVI() {
                   ctaLabel={pkg.ctaLabel}
                   highlight={pkg.highlight}
                   disclaimer={pkg.disclaimer}
+                  cluster={pkg.cluster}
                 />
               </Reveal>
             ))}

@@ -1,4 +1,4 @@
-import { IconCheck, IconMapPin } from "./Icons";
+import { IconCheck, IconMapPin, IconNaver, IconMapsColor } from "./Icons";
 
 /**
  * CSS-built product mockup for the hero: a browser window showing a
@@ -103,11 +103,31 @@ export function HeroVisual() {
       </div>
 
       {/* Floating: local presence chip */}
-      <div className="absolute -right-1 top-10 hidden sm:block">
+      <div className="absolute -right-1 top-9 hidden sm:block">
         <div className="flex items-center gap-1.5 rounded-full bg-ink px-3 py-1.5 text-white shadow-lift">
           <IconMapPin className="h-3.5 w-3.5 text-blue-400" />
           <span className="font-mono text-[10px] tracking-wide">Hội An – Đà Nẵng</span>
           <span className="animate-pulse-dot h-1.5 w-1.5 rounded-full bg-blue-400" />
+        </div>
+      </div>
+
+      {/* Floating: Naver service chip */}
+      <div className="animate-float-slow absolute -left-6 top-1/2 hidden md:block">
+        <div className="glass flex items-center gap-2 rounded-full border border-white/60 py-1.5 pl-1.5 pr-3.5 shadow-lift ring-1 ring-line/60">
+          <span className="grid h-6 w-6 place-items-center rounded-full bg-naver text-white">
+            <IconNaver className="h-3.5 w-3.5" />
+          </span>
+          <span className="text-[11px] font-semibold text-ink">Naver Blog</span>
+        </div>
+      </div>
+
+      {/* Floating: Google Maps service chip */}
+      <div className="animate-float absolute -right-5 bottom-24 hidden md:block">
+        <div className="glass flex items-center gap-2 rounded-full border border-white/60 py-1.5 pl-1.5 pr-3.5 shadow-lift ring-1 ring-line/60">
+          <span className="grid h-6 w-6 place-items-center rounded-full bg-white ring-1 ring-line">
+            <IconMapsColor className="h-4 w-4" />
+          </span>
+          <span className="text-[11px] font-semibold text-ink">Google Maps</span>
         </div>
       </div>
     </div>

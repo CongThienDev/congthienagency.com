@@ -4,6 +4,7 @@ import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb } from "@/components/Bits";
 import { PortfolioCard } from "@/components/Cards";
+import { IconGauge, IconCreditCard, IconMapsColor } from "@/components/Icons";
 import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
 import { PROJECTS_HUB, PROJECTS } from "@/content/projects.vi";
@@ -59,7 +60,11 @@ export default async function Page({ params }: Params) {
                 category={p.category}
                 location={`${p.location} · ${p.year}`}
                 deliveryTime={p.stats[0]?.value}
-                features={p.scope.slice(1, 4)}
+                proofs={[
+                  { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
+                  { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: "Booking + thanh toán online" },
+                  { icon: <IconMapsColor className="h-4 w-4" />, label: "Thiết lập Google Maps" },
+                ]}
               />
             ))}
           </div>

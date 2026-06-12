@@ -75,6 +75,7 @@ export default async function Page({ params }: Params) {
                   ctaLabel={pkg.ctaLabel}
                   highlight={pkg.highlight}
                   disclaimer={pkg.disclaimer}
+                  cluster={pkg.cluster}
                 />
               ))}
             </div>

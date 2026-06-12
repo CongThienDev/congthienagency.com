@@ -5,35 +5,45 @@
   --font-sans: var(--font-be-vietnam), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, monospace;
 
-  /* Brand palette — black / white / blue, premium local growth studio */
-  --color-paper: #f7f9fc;
-  --color-ink: #0a0e1a;
-  --color-ink-soft: #2a3142;
-  --color-muted: #5b6577;
+  /* Brand palette — bright, clean global-agency blue on slate */
+  --color-paper: #f8fafc;
+  --color-ink: #0f172a;
+  --color-ink-soft: #334155;
+  --color-muted: #64748b;
 
-  --color-blue-50: #eef4ff;
-  --color-blue-100: #dbe7ff;
-  --color-blue-200: #b9d0ff;
-  --color-blue-300: #8bb0ff;
-  --color-blue-400: #5b8bff;
-  --color-blue-500: #2f6bff;
-  --color-blue-600: #1d4ed8;
-  --color-blue-700: #1740b0;
-  --color-blue-800: #123488;
-  --color-blue-900: #0b2a6b;
-  --color-blue-950: #08153a;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
+  --color-blue-950: #0b1220;
 
-  --color-line: #e4e9f2;
-  --color-line-strong: #d2dae8;
+  --color-line: #e2e8f0;
+  --color-line-strong: #cbd5e1;
+
+  /* Service identity + accents (used sparingly) */
+  --color-cyan: #38bdf8;
+  --color-success: #10b981;
+  --color-naver: #03c75a;
+  --color-facebook: #1877f2;
+  --color-gmaps: #ea4335;
+  --color-gmaps-blue: #4285f4;
+  --color-gmaps-green: #34a853;
+  --color-gmaps-yellow: #fbbc04;
 
   /* Radius */
   --radius-card: 1.25rem;
 
   /* Shadows */
-  --shadow-soft: 0 1px 2px rgba(11, 15, 26, 0.04), 0 8px 24px rgba(11, 15, 26, 0.06);
-  --shadow-lift: 0 2px 6px rgba(11, 15, 26, 0.06), 0 18px 48px rgba(13, 39, 107, 0.14);
-  --shadow-blue: 0 10px 32px rgba(29, 78, 216, 0.32);
-  --shadow-float: 0 6px 16px rgba(11, 15, 26, 0.08), 0 24px 64px rgba(13, 39, 107, 0.16);
+  --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.06);
+  --shadow-lift: 0 2px 6px rgba(15, 23, 42, 0.06), 0 18px 48px rgba(37, 99, 235, 0.14);
+  --shadow-blue: 0 10px 28px rgba(37, 99, 235, 0.34);
+  --shadow-float: 0 6px 16px rgba(15, 23, 42, 0.08), 0 24px 64px rgba(37, 99, 235, 0.16);
 }
 
 :root {
@@ -84,14 +94,14 @@ body {
 
 .bg-glow {
   background:
-    radial-gradient(55% 45% at 18% 0%, rgba(47, 107, 255, 0.13) 0%, transparent 62%),
-    radial-gradient(45% 50% at 95% 12%, rgba(91, 139, 255, 0.12) 0%, transparent 58%);
+    radial-gradient(55% 45% at 16% 0%, rgba(59, 130, 246, 0.14) 0%, transparent 62%),
+    radial-gradient(45% 50% at 96% 8%, rgba(56, 189, 248, 0.12) 0%, transparent 58%);
 }
 
 .bg-glow-dark {
   background:
-    radial-gradient(60% 70% at 85% 10%, rgba(47, 107, 255, 0.28) 0%, transparent 60%),
-    radial-gradient(45% 60% at 10% 100%, rgba(29, 78, 216, 0.22) 0%, transparent 55%);
+    radial-gradient(60% 70% at 85% 8%, rgba(59, 130, 246, 0.30) 0%, transparent 60%),
+    radial-gradient(45% 60% at 8% 100%, rgba(37, 99, 235, 0.22) 0%, transparent 55%);
 }
 
 .text-balance {
@@ -113,14 +123,14 @@ body {
   border: 1px solid transparent;
   background:
     linear-gradient(#ffffff, #ffffff) padding-box,
-    linear-gradient(135deg, rgba(47, 107, 255, 0.55), rgba(228, 233, 242, 0.9) 45%, rgba(47, 107, 255, 0.25)) border-box;
+    linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(226, 232, 240, 0.9) 45%, rgba(56, 189, 248, 0.28)) border-box;
 }
 
 .card-gradient-border-dark {
   border: 1px solid transparent;
   background:
-    linear-gradient(180deg, #0d1326, #0a0e1a) padding-box,
-    linear-gradient(135deg, rgba(91, 139, 255, 0.6), rgba(11, 42, 107, 0.4) 50%, rgba(47, 107, 255, 0.3)) border-box;
+    linear-gradient(180deg, #0b1220, #020817) padding-box,
+    linear-gradient(135deg, rgba(96, 165, 250, 0.6), rgba(30, 64, 175, 0.4) 50%, rgba(56, 189, 248, 0.3)) border-box;
 }
 
 .glass {

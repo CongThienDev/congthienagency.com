@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { type ReactNode } from "react";
 import { IconArrowRight, IconCheck } from "./Icons";
+import { SERVICE_BRAND, type ServiceBrand } from "./serviceBrand";
 
 export function ServiceCard({
   title,
@@ -8,8 +9,10 @@ export function ServiceCard({
   href,
   tag,
   icon,
+  brand,
   featured = false,
   bullets,
+  chips,
   ctaLabel = "Xem chi tiết",
 }: {
   title: string;
@@ -17,10 +20,22 @@ export function ServiceCard({
   href: string;
   tag?: string;
   icon?: ReactNode;
+  brand?: ServiceBrand;
   featured?: boolean;
   bullets?: string[];
+  chips?: string[];
   ctaLabel?: string;
 }) {
+  const b = brand ? SERVICE_BRAND[brand] : undefined;
+  const badgeIcon = b?.icon ?? icon;
+  const badgeClass = b
+    ? featured
+      ? b.badgeDark
+      : b.badge
+    : featured
+      ? "bg-blue-600 text-white shadow-blue"
+      : "bg-blue-50 text-blue-600 ring-1 ring-blue-100";
+
   return (
     <Link
       href={href}
@@ -33,22 +48,18 @@ export function ServiceCard({
       {featured && (
         <div aria-hidden className="bg-glow-dark absolute inset-0 opacity-80" />
       )}
-      <div className="relative">
+      <div className="relative flex h-full flex-col">
         <div className="flex items-start justify-between">
-          {icon && (
+          {badgeIcon && (
             <span
-              className={`grid h-11 w-11 place-items-center rounded-xl transition-transform duration-300 group-hover:scale-110 ${
-                featured
-                  ? "bg-blue-600 text-white shadow-blue"
-                  : "bg-blue-50 text-blue-600 ring-1 ring-blue-100"
-              }`}
+              className={`grid h-11 w-11 place-items-center rounded-xl transition-transform duration-300 group-hover:scale-110 ${badgeClass}`}
             >
-              {icon}
+              {badgeIcon}
             </span>
           )}
           {tag && (
             <span
-              className={`label-mono ${featured ? "text-blue-300" : "text-blue-600"}`}
+              className={`label-mono ${featured ? "text-blue-300" : b?.accentText ?? "text-blue-600"}`}
             >
               {tag}
             </span>
@@ -70,9 +81,9 @@ export function ServiceCard({
         </p>
         {bullets && (
           <ul className="mt-4 flex flex-col gap-1.5">
-            {bullets.map((b) => (
+            {bullets.map((bl) => (
               <li
-                key={b}
+                key={bl}
                 className={`flex items-center gap-2 text-[13px] ${
                   featured ? "text-blue-100/85" : "text-ink-soft"
                 }`}
@@ -80,13 +91,29 @@ export function ServiceCard({
                 <IconCheck
                   className={`h-3.5 w-3.5 shrink-0 ${featured ? "text-blue-400" : "text-blue-600"}`}
                 />
-                {b}
+                {bl}
               </li>
             ))}
           </ul>
         )}
+        {chips && (
+          <div className="mt-4 flex flex-wrap gap-1.5">
+            {chips.map((c) => (
+              <span
+                key={c}
+                className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold ${
+                  featured
+                    ? "border-white/15 bg-white/10 text-blue-100/85"
+                    : b?.chip ?? "border-blue-200 bg-blue-50 text-blue-700"
+                }`}
+              >
+                {c}
+              </span>
+            ))}
+          </div>
+        )}
         <span
-          className={`mt-5 inline-flex items-center gap-1.5 text-sm font-semibold ${
+          className={`mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold ${
             featured ? "text-blue-300" : "text-blue-700"
           }`}
         >
@@ -105,6 +132,7 @@ export function PortfolioCard({
   location,
   deliveryTime,
   features,
+  proofs,
 }: {
   href: string;
   name: string;
@@ -112,6 +140,7 @@ export function PortfolioCard({
   location: string;
   deliveryTime?: string;
   features?: string[];
+  proofs?: { icon: ReactNode; label: string }[];
 }) {
   return (
     <Link
@@ -157,7 +186,19 @@ export function PortfolioCard({
         </div>
         <h3 className="mt-2.5 text-xl font-bold tracking-tight text-ink">{name}</h3>
         <p className="mt-0.5 text-sm text-muted">{location}</p>
-        {features && (
+        {proofs && (
+          <ul className="mt-4 flex flex-col gap-2">
+            {proofs.map((p) => (
+              <li key={p.label} className="flex items-center gap-2.5 text-[13px] font-medium text-ink-soft">
+                <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-paper ring-1 ring-line">
+                  {p.icon}
+                </span>
+                {p.label}
+              </li>
+            ))}
+          </ul>
+        )}
+        {!proofs && features && (
           <ul className="mt-4 flex flex-wrap gap-1.5">
             {features.map((f) => (
               <li

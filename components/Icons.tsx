@@ -178,3 +178,45 @@ export function IconStar({ className = base }: IconProps) {
     </svg>
   );
 }
+
+/* ─── Brand-identity glyphs (filled, use their own colors) ─── */
+
+/** Naver-style "N" — filled glyph, inherits currentColor. */
+export function IconNaver({ className = base }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
+      <path d="M14.2 3v9.1L9.9 3H4v18h5.8v-9.1L14.1 21H20V3h-5.8Z" />
+    </svg>
+  );
+}
+
+/** Facebook "f" — filled glyph, inherits currentColor. */
+export function IconFacebook({ className = base }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
+      <path d="M14.3 21v-7.5h2.5l.4-2.9h-2.9V8.7c0-.8.2-1.4 1.4-1.4h1.5V4.7c-.7-.1-1.5-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H8.7v2.9h2.6V21h3Z" />
+    </svg>
+  );
+}
+
+/**
+ * Google Maps pin — multicolor (uses Google brand dot colors), independent
+ * of currentColor so it reads as the real product mark.
+ */
+export function IconMapsColor({ className = base }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <path
+        d="M12 22s7-6.1 7-11.5A7 7 0 0 0 5 10.5C5 15.9 12 22 12 22Z"
+        fill="#fff"
+        stroke="#e2e8f0"
+        strokeWidth="1"
+      />
+      <path d="M12 22s7-6.1 7-11.5c0-1.3-.35-2.5-.97-3.55L12 12l6.03-5.05A7 7 0 0 0 12 3.5Z" fill="#34a853" />
+      <path d="M5.4 7.2A7 7 0 0 0 5 10.5C5 15.9 12 22 12 22l.6-9.9L5.4 7.2Z" fill="#4285f4" />
+      <path d="M12 3.5a7 7 0 0 0-6.6 3.7L12 12l3.9-3.3A7 7 0 0 0 12 3.5Z" fill="#fbbc04" />
+      <path d="M12 3.5A7 7 0 0 0 5.4 7.2L12 12l3.4-2.85A4 4 0 0 0 12 3.5Z" fill="#ea4335" />
+      <circle cx="12" cy="10.3" r="2.5" fill="#fff" />
+    </svg>
+  );
+}

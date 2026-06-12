@@ -1,5 +1,15 @@
 import { Button } from "./Button";
 import { IconCheck } from "./Icons";
+import { SERVICE_BRAND, type ServiceBrand } from "./serviceBrand";
+
+type Cluster = "website" | "naver" | "maps" | "social";
+
+const CLUSTER_BRAND: Record<Cluster, ServiceBrand> = {
+  website: "website",
+  naver: "naver",
+  maps: "maps",
+  social: "facebook",
+};
 
 export function PricingCard({
   name,
@@ -11,6 +21,7 @@ export function PricingCard({
   ctaLabel,
   highlight = false,
   disclaimer,
+  cluster,
 }: {
   name: string;
   priceLabel: string;
@@ -21,14 +32,23 @@ export function PricingCard({
   ctaLabel: string;
   highlight?: boolean;
   disclaimer?: string;
+  cluster?: Cluster;
 }) {
+  const brand = cluster ? SERVICE_BRAND[CLUSTER_BRAND[cluster]] : undefined;
   if (highlight) {
     return (
       <div className="card-gradient-border-dark card-hover relative flex flex-col overflow-hidden rounded-card p-6 text-white shadow-lift sm:p-7">
         <div aria-hidden className="bg-glow-dark absolute inset-0 opacity-90" />
         <div className="relative flex flex-1 flex-col">
           <div className="flex items-center justify-between gap-3">
-            <h3 className="text-lg font-bold tracking-tight text-white">{name}</h3>
+            <div className="flex items-center gap-2.5">
+              {brand && (
+                <span className={`grid h-9 w-9 place-items-center rounded-xl ${brand.badgeDark}`}>
+                  {brand.icon}
+                </span>
+              )}
+              <h3 className="text-lg font-bold tracking-tight text-white">{name}</h3>
+            </div>
             <span className="rounded-full bg-blue-600 px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white shadow-blue">
               Phổ biến
             </span>
@@ -61,8 +81,15 @@ export function PricingCard({
 
   return (
     <div className="card-gradient-border card-hover flex flex-col rounded-card p-6 shadow-soft sm:p-7">
-      <h3 className="text-lg font-bold tracking-tight text-ink">{name}</h3>
-      {tagline && <p className="mt-1.5 text-sm text-muted">{tagline}</p>}
+      <div className="flex items-center gap-2.5">
+        {brand && (
+          <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-xl ${brand.badge}`}>
+            {brand.icon}
+          </span>
+        )}
+        <h3 className="text-lg font-bold tracking-tight text-ink">{name}</h3>
+      </div>
+      {tagline && <p className="mt-2 text-sm text-muted">{tagline}</p>}
       <div className="mt-5 flex items-baseline gap-1.5">
         <span className="text-[1.7rem] font-bold tracking-tight text-ink">{priceLabel}</span>
         {priceUnit && <span className="text-sm text-muted">{priceUnit}</span>}

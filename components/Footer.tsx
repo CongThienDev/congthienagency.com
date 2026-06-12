@@ -2,7 +2,24 @@ import Link from "next/link";
 import { Container } from "./Container";
 import { FOOTER_VI } from "@/content/navigation";
 import { SITE, type Locale } from "@/content/site";
-import { IconChat, IconMail, IconMapPin } from "./Icons";
+import {
+  IconChat,
+  IconMail,
+  IconMapPin,
+  IconCode,
+  IconNaver,
+  IconMapsColor,
+  IconFacebook,
+} from "./Icons";
+import type { ReactNode } from "react";
+
+function brandIconForHref(href: string): ReactNode {
+  if (href.includes("thiet-ke-website")) return <IconCode className="h-3.5 w-3.5 text-blue-400" />;
+  if (href.includes("naver")) return <IconNaver className="h-3.5 w-3.5 text-[color:var(--color-naver)]" />;
+  if (href.includes("google-maps")) return <IconMapsColor className="h-4 w-4" />;
+  if (href.includes("social")) return <IconFacebook className="h-3.5 w-3.5 text-[color:var(--color-facebook)]" />;
+  return null;
+}
 
 export function Footer({ locale }: { locale: Locale }) {
   const year = new Date().getFullYear();
@@ -81,7 +98,7 @@ export function Footer({ locale }: { locale: Locale }) {
             </div>
           </div>
 
-          <FooterCol title="Dịch vụ" links={FOOTER_VI.services} />
+          <FooterCol title="Dịch vụ" links={FOOTER_VI.services} brandIcons />
           <FooterCol title="Ngành nghề" links={FOOTER_VI.industries} />
           <FooterCol title="Công ty" links={FOOTER_VI.company} />
         </div>
@@ -126,9 +143,11 @@ function BrandLockup() {
 function FooterCol({
   title,
   links,
+  brandIcons = false,
 }: {
   title: string;
   links: { label: string; href: string }[];
+  brandIcons?: boolean;
 }) {
   return (
     <div>
@@ -138,8 +157,13 @@ function FooterCol({
           <li key={l.href}>
             <Link
               href={l.href}
-              className="text-sm text-blue-100/70 transition-colors hover:text-white"
+              className="group flex items-center gap-2.5 text-sm text-blue-100/70 transition-colors hover:text-white"
             >
+              {brandIcons && (
+                <span className="grid h-6 w-6 shrink-0 place-items-center rounded-lg bg-white/10 ring-1 ring-white/10 transition-colors group-hover:bg-white/15">
+                  {brandIconForHref(l.href)}
+                </span>
+              )}
               {l.label}
             </Link>
           </li>
