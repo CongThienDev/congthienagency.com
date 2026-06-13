@@ -39,21 +39,24 @@ import { HOME_EN } from "@/content/pages.en";
 import { PROJECTS } from "@/content/projects.vi";
 import { GLOBAL_FAQS } from "@/content/faqs.vi";
 import { PRICING_GROUPS } from "@/content/pricing.vi";
-import { graphDocument, faqGraph } from "@/lib/schema";
+import { graphDocument, faqGraph, webPageGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import { SITE } from "@/content/site";
+import { resolveAbsoluteImageUrls, resolvePrimaryImage } from "@/lib/siteIndex";
 
 type Params = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale } = await params;
   const c = locale === "en" ? HOME_EN : HOME_VI;
+  const pagePath = locale === "en" ? "/en" : "/vi";
   return buildMetadata({
     title: c.metaTitle,
     description: c.metaDescription,
-    path: locale === "en" ? "/en" : "/vi",
+    path: pagePath,
     locale: locale === "en" ? "en" : "vi",
     alternateKey: "home",
+    image: resolvePrimaryImage(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]),
   });
 }
 
@@ -97,6 +100,7 @@ const WHY_ICONS = [
 
 function HomeVI() {
   const c = HOME_VI;
+  const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]);
   const pricingPreviewIds = ["website-business", "naver-blogger", "maps-reputation"];
   const pricingPreview = PRICING_GROUPS.flatMap((g) => g.packages).filter((p) =>
     pricingPreviewIds.includes(p.id)
@@ -104,7 +108,17 @@ function HomeVI() {
 
   return (
     <Shell locale="vi" alternateKey="home">
-      <JsonLd data={graphDocument([faqGraph(GLOBAL_FAQS)])} />
+      <JsonLd
+        data={graphDocument([
+          webPageGraph({
+            name: c.metaTitle,
+            description: c.metaDescription,
+            path: "/vi",
+            images: imageUrls,
+          }),
+          faqGraph(GLOBAL_FAQS),
+        ])}
+      />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden">
@@ -499,8 +513,19 @@ function HomeVI() {
 
 function HomeEN() {
   const c = HOME_EN;
+  const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]);
   return (
     <Shell locale="en" alternateKey="home">
+      <JsonLd
+        data={graphDocument([
+          webPageGraph({
+            name: c.metaTitle,
+            description: c.metaDescription,
+            path: "/en",
+            images: imageUrls,
+          }),
+        ])}
+      />
       <section className="relative overflow-hidden">
         <div aria-hidden className="bg-glow absolute inset-0" />
         <div aria-hidden className="bg-grid bg-grid-fade absolute inset-0" />
