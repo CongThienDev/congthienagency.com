@@ -2,6 +2,7 @@ export const SITE = {
   name: "Công Thiên Agency by CongThienDev",
   shortName: "Công Thiên Agency",
   brandTagline: "Marketing Online · Website · Naver · Google Maps",
+  logoPath: "/brand/congthien-agency-logo.svg",
   founder: "Lê Công Thiên",
   domain: "congthienagency.com",
   url: "https://congthienagency.com",

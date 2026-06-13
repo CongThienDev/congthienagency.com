@@ -3,7 +3,6 @@ import { SITE } from "@/content/site";
 const ORG_ID = `${SITE.url}/#organization`;
 const PERSON_ID = `${SITE.url}/#person`;
 const WEBSITE_ID = `${SITE.url}/#website`;
-const DEFAULT_LOGO = `${SITE.url}/logo/cong-thien-agency-signature-blue.svg`;
 const DEFAULT_IMAGE = `${SITE.url}/images/og/og-default.jpg`;
 
 type Graph = Record<string, unknown>;
@@ -17,11 +16,16 @@ export function organizationGraph(): Graph[] {
       name: SITE.name,
       alternateName: SITE.alternateNames,
       url: SITE.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE.url}${SITE.logoPath}`,
+        width: 512,
+        height: 512,
+      },
+      image: [DEFAULT_IMAGE],
       description: SITE.description,
       email: SITE.contact.email,
       telephone: SITE.contact.phoneE164,
-      logo: DEFAULT_LOGO,
-      image: [DEFAULT_IMAGE],
       founder: { "@id": PERSON_ID },
       areaServed: SITE.areaServed.map((name) => ({ "@type": "Place", name })),
       address: {
