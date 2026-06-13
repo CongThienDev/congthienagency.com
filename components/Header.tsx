@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Container } from "./Container";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -43,21 +44,17 @@ export function Header({
         <div className="flex h-[68px] items-center justify-between gap-4">
           <Link
             href={home}
-            className="group flex items-center gap-2.5"
+            className="group flex items-center"
             onClick={() => setOpen(false)}
           >
-            <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-ink font-mono text-sm font-bold text-white transition-transform duration-300 group-hover:scale-105">
-              <span className="absolute inset-0 bg-gradient-to-br from-blue-600/70 via-transparent to-transparent opacity-80" />
-              <span className="relative">CT</span>
-            </span>
-            <span className="hidden leading-tight sm:block">
-              <span className="block whitespace-nowrap text-[15px] font-bold tracking-tight text-ink">
-                Công Thiên Agency
-              </span>
-              <span className="block font-mono text-[9px] uppercase tracking-[0.22em] text-muted">
-                by CongThienDev
-              </span>
-            </span>
+            <Image
+              src="/logo/cong-thien-agency-signature.svg"
+              alt="Công Thiên Agency"
+              width={3495}
+              height={844}
+              priority
+              className="h-9 w-auto transition-transform duration-300 group-hover:scale-[1.02] sm:h-10"
+            />
           </Link>
 
           <nav className="hidden items-center gap-0.5 lg:flex">

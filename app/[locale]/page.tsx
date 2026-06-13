@@ -19,7 +19,6 @@ import {
   IconBolt,
   IconCalendarCheck,
   IconChat,
-  IconCheck,
   IconCode,
   IconCompass,
   IconCreditCard,
@@ -168,24 +167,6 @@ function HomeVI() {
                 </Button>
               </div>
 
-              {/* proof mini-row */}
-              <div
-                className="animate-rise mt-8 flex flex-wrap items-center gap-x-5 gap-y-2"
-                style={{ animationDelay: "320ms" }}
-              >
-                {[
-                  "PageSpeed SEO 100/100",
-                  "2 website booking đã bàn giao",
-                  "Booking + thanh toán online",
-                ].map((p) => (
-                  <span key={p} className="flex items-center gap-1.5 text-[13px] font-medium text-ink-soft">
-                    <span className="grid h-4.5 w-4.5 place-items-center rounded-full bg-blue-600 text-white">
-                      <IconCheck className="h-2.5 w-2.5" />
-                    </span>
-                    {p}
-                  </span>
-                ))}
-              </div>
             </div>
 
             {/* Right: CSS product mockup */}

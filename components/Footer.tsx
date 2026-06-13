@@ -119,19 +119,14 @@ export function Footer({ locale }: { locale: Locale }) {
 
 function BrandLockup() {
   return (
-    <div className="flex items-center gap-2.5">
-      <span className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-white/10 font-mono text-sm font-bold text-white ring-1 ring-white/15">
-        <span className="absolute inset-0 bg-gradient-to-br from-blue-600/60 via-transparent to-transparent" />
-        <span className="relative">CT</span>
-      </span>
-      <span className="leading-tight">
-        <span className="block text-base font-bold tracking-tight text-white">
-          Công Thiên Agency
-        </span>
-        <span className="block font-mono text-[9px] uppercase tracking-[0.22em] text-blue-200/50">
-          by CongThienDev
-        </span>
-      </span>
+    <div className="flex items-center">
+      <Image
+        src="/logo/cong-thien-agency-signature.svg"
+        alt="Công Thiên Agency"
+        width={3495}
+        height={844}
+        className="h-11 w-auto brightness-0 invert"
+      />
     </div>
   );
 }
