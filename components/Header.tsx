@@ -48,7 +48,7 @@ export function Header({
             onClick={() => setOpen(false)}
           >
             <Image
-              src="/logo/cong-thien-agency-signature.svg"
+              src="/logo/cong-thien-agency-signature-blue.svg"
               alt="Công Thiên Agency"
               width={3495}
               height={844}
