@@ -4,6 +4,7 @@ import { getService } from "@/content/services.vi";
 import { Shell } from "@/components/Shell";
 import { ServicePageView } from "@/components/ServicePageView";
 import { buildMetadata } from "@/lib/seo";
+import { resolvePrimaryImage } from "@/lib/siteIndex";
 
 type Params = { params: Promise<{ locale: string }> };
 
@@ -18,6 +19,7 @@ export function serviceRoute(path: string) {
       description: service.metaDescription,
       path,
       locale: "vi",
+      image: resolvePrimaryImage(service.images.map((image) => image.suggestion)),
     });
   }
 

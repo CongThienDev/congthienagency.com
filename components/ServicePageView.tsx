@@ -14,8 +14,10 @@ import {
   faqGraph,
 } from "@/lib/schema";
 import { SITE } from "@/content/site";
+import { resolveAbsoluteImageUrls } from "@/lib/siteIndex";
 
 export function ServicePageView({ service }: { service: Service }) {
+  const imageUrls = resolveAbsoluteImageUrls(service.images.map((image) => image.suggestion));
   const nodes = [
     breadcrumbGraph(service.breadcrumb),
     serviceGraph({
@@ -25,6 +27,7 @@ export function ServicePageView({ service }: { service: Service }) {
       serviceType: service.schema.serviceType,
       offerMinPriceVnd: service.schema.offerMinPriceVnd,
       offerPriceVnd: service.schema.offerPriceVnd,
+      images: imageUrls,
     }),
   ];
   if (service.faqs.length > 0) nodes.push(faqGraph(service.faqs));
