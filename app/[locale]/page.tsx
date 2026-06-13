@@ -10,6 +10,7 @@ import { TrustStrip } from "@/components/Bits";
 import { CTASection } from "@/components/CTASection";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { HeroImage } from "@/components/HeroImage";
+import { MobileHomeHero } from "@/components/MobileHomeHero";
 import { Reveal } from "@/components/Reveal";
 import { PricingCard } from "@/components/PricingCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -121,7 +122,9 @@ function HomeVI() {
       />
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden">
+      <MobileHomeHero sub={c.heroSub} />
+
+      <section className="relative hidden overflow-hidden lg:block">
         <div aria-hidden className="bg-glow absolute inset-0" />
         <div aria-hidden className="bg-grid bg-grid-fade absolute inset-0" />
 
