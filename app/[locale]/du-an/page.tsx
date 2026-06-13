@@ -62,6 +62,7 @@ export default async function Page({ params }: Params) {
                   category={p.category}
                   location={`${p.location} · ${p.year}`}
                   deliveryTime={p.stats[0]?.value}
+                  previewImage={p.previewImage}
                   proofs={[
                     { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
                     { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: payment ? `Thanh toán: ${payment.value}` : "Booking + thanh toán online" },

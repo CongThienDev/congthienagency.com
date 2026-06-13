@@ -85,6 +85,20 @@ const INDUSTRY_ICONS = [
   <IconCompass key="compass" className="h-6 w-6" />,
 ];
 
+const INDUSTRY_IMAGES = [
+  "/images/illustrations/industry-spa.svg",
+  "/images/illustrations/industry-restaurant.svg",
+  "/images/illustrations/industry-hotel.svg",
+  "/images/illustrations/industry-tour.svg",
+];
+
+const SERVICE_IMAGES = [
+  "/images/services/service-website.jpg",
+  "/images/services/service-naver.jpg",
+  "/images/services/service-maps.jpg",
+  "/images/services/service-social.jpg",
+];
+
 const TRUST_ICONS = [
   <IconGauge key="gauge" />,
   <IconBolt key="bolt" />,
@@ -211,7 +225,16 @@ function HomeVI() {
             <Reveal>
               <div className="lg:sticky lg:top-28">
                 <SectionHeader {...c.painIntro} />
-                <div className="mt-8 hidden lg:block">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/illustrations/growth-system.svg"
+                  alt="Khách hàng tìm thấy doanh nghiệp trên Google Maps, xem đánh giá 5 sao và đặt dịch vụ trực tuyến"
+                  loading="lazy"
+                  width={440}
+                  height={340}
+                  className="mt-8 w-full max-w-md"
+                />
+                <div className="mt-2 hidden lg:block">
                   <Button href={SITE.contact.zalo} external>
                     <IconChat className="h-4 w-4" />
                     Trao đổi vấn đề của bạn
@@ -257,6 +280,7 @@ function HomeVI() {
                   featured={"featured" in s && Boolean(s.featured)}
                   bullets={"bullets" in s ? (s.bullets as string[]) : undefined}
                   chips={s.chips}
+                  image={SERVICE_IMAGES[i]}
                 />
               </Reveal>
             ))}
@@ -371,6 +395,7 @@ function HomeVI() {
                     category={p.category}
                     location={`${p.location} · ${p.year}`}
                     deliveryTime={p.stats[0]?.value}
+                    previewImage={p.previewImage}
                     proofs={[
                       { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
                       { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: payment ? `Thanh toán: ${payment.value}` : "Booking + thanh toán online" },
@@ -437,12 +462,24 @@ function HomeVI() {
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {c.industries.map((ind, i) => (
               <Reveal key={ind.title} delay={i * 70}>
-                <div className="group card-hover card-gradient-border h-full rounded-card p-6 text-center shadow-soft">
-                  <span className="mx-auto grid h-13 w-13 place-items-center rounded-2xl bg-blue-50 text-blue-600 ring-1 ring-blue-100 transition-transform duration-300 group-hover:scale-110">
-                    {INDUSTRY_ICONS[i]}
-                  </span>
-                  <h3 className="mt-4 text-[15px] font-bold tracking-tight text-ink">{ind.title}</h3>
-                  <p className="mt-2 text-[13px] leading-relaxed text-muted">{ind.desc}</p>
+                <div className="group card-hover card-gradient-border h-full overflow-hidden rounded-card text-center shadow-soft">
+                  <div className="relative overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={INDUSTRY_IMAGES[i]}
+                      alt=""
+                      aria-hidden
+                      loading="lazy"
+                      className="aspect-[2/1] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <span className="absolute bottom-0 left-1/2 grid h-12 w-12 -translate-x-1/2 translate-y-1/2 place-items-center rounded-2xl bg-white text-blue-600 shadow-soft ring-1 ring-blue-100">
+                      {INDUSTRY_ICONS[i]}
+                    </span>
+                  </div>
+                  <div className="px-6 pb-6 pt-8">
+                    <h3 className="text-[15px] font-bold tracking-tight text-ink">{ind.title}</h3>
+                    <p className="mt-2 text-[13px] leading-relaxed text-muted">{ind.desc}</p>
+                  </div>
                 </div>
               </Reveal>
             ))}

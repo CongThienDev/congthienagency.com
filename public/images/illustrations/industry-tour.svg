@@ -1,0 +1,45 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice">
+  <title>Tour, cooking class và trải nghiệm</title>
+  <desc>Minh hoạ tour du lịch với bản đồ, lộ trình, ghim địa điểm và la bàn</desc>
+  <rect width="400" height="200" fill="#ecfdf5"/>
+  <circle cx="60" cy="40" r="100" fill="#d1fae5"/>
+  <circle cx="350" cy="170" r="90" fill="#a7f3d0" opacity="0.5"/>
+  <!-- map card -->
+  <g transform="translate(70 44)">
+    <rect x="0" y="0" width="200" height="120" rx="14" fill="#ffffff" stroke="#a7f3d0" stroke-width="2"/>
+    <rect x="10" y="10" width="180" height="100" rx="9" fill="#ecfdf5"/>
+    <!-- water -->
+    <path d="M10 80c40-10 70 6 110-2 30-6 50 2 70 4v28H10z" fill="#6ee7b7" opacity="0.55"/>
+    <!-- roads -->
+    <path d="M14 30h60M120 18v40M40 60h120" stroke="#a7f3d0" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- dashed route -->
+    <path d="M34 92C70 70 90 96 130 60c20-18 36-10 54-30" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 8"/>
+    <!-- pins -->
+    <g transform="translate(34 92)">
+      <path d="M0-22c10 0 16 7 16 15 0 9-16 21-16 21S-16 2-16-7c0-8 6-15 16-15z" fill="#10b981"/>
+      <circle cx="0" cy="-7" r="6" fill="#fff"/>
+    </g>
+    <g transform="translate(184 30)">
+      <path d="M0-22c10 0 16 7 16 15 0 9-16 21-16 21S-16 2-16-7c0-8 6-15 16-15z" fill="#059669"/>
+      <circle cx="0" cy="-7" r="6" fill="#fff"/>
+    </g>
+  </g>
+  <!-- compass -->
+  <g transform="translate(312 124)">
+    <circle r="40" fill="#ffffff" stroke="#a7f3d0" stroke-width="3"/>
+    <circle r="32" fill="#ecfdf5"/>
+    <path d="M0-26L9 0 0 26-9 0z" fill="#10b981"/>
+    <path d="M0-26L9 0 0 0z" fill="#047857"/>
+    <path d="M0 26L-9 0 0 0z" fill="#34d399"/>
+    <circle r="4" fill="#065f46"/>
+  </g>
+  <!-- date / booking chip -->
+  <g transform="translate(40 26)">
+    <rect x="0" y="0" width="80" height="36" rx="10" fill="#ffffff" stroke="#a7f3d0" stroke-width="1.5"/>
+    <rect x="10" y="9" width="20" height="18" rx="4" fill="#10b981"/>
+    <rect x="13" y="6" width="3" height="6" rx="1.5" fill="#047857"/>
+    <rect x="24" y="6" width="3" height="6" rx="1.5" fill="#047857"/>
+    <rect x="38" y="11" width="32" height="5" rx="2.5" fill="#065f46"/>
+    <rect x="38" y="21" width="22" height="4" rx="2" fill="#a7f3d0"/>
+  </g>
+</svg>

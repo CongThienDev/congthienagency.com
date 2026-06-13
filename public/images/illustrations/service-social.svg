@@ -1,0 +1,70 @@
+<svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice">
+  <title>Social Marketing &amp; Hỗ trợ Facebook</title>
+  <desc>Minh hoạ trang Facebook có tích xanh Meta Verified, tăng trưởng người theo dõi và tương tác</desc>
+  <defs>
+    <linearGradient id="so-cover" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1877f2"/>
+      <stop offset="1" stop-color="#0a5fd6"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="200" fill="#eef4ff"/>
+  <circle cx="60" cy="36" r="86" fill="#dbe7fe"/>
+  <circle cx="430" cy="180" r="80" fill="#cfe0fd" opacity="0.6"/>
+
+  <!-- fanpage card -->
+  <g>
+    <ellipse cx="150" cy="180" rx="130" ry="14" fill="#0a2a66" opacity="0.10"/>
+    <rect x="36" y="30" width="236" height="142" rx="16" fill="#ffffff"/>
+    <rect x="36" y="30" width="236" height="46" rx="16" fill="url(#so-cover)"/>
+    <rect x="36" y="60" width="236" height="16" fill="url(#so-cover)"/>
+    <!-- avatar with f -->
+    <circle cx="74" cy="78" r="24" fill="#ffffff"/>
+    <circle cx="74" cy="78" r="20" fill="#1877f2"/>
+    <path d="M78 70h5l1-7h-6v-4c0-2 .6-3 3-3h3V49c-1 0-3-.2-5-.2-5 0-8 3-8 8v5h-5v7h5v18a20 20 0 005 0z" fill="#fff"/>
+    <!-- verified -->
+    <g transform="translate(90 92)">
+      <path d="M0-9l2.2 1.6 2.7-.3 1 2.6 2.4 1.3-.8 2.6.8 2.6-2.4 1.3-1 2.6-2.7-.3L0 9l-2.2-1.6-2.7.3-1-2.6-2.4-1.3.8-2.6-.8-2.6 2.4-1.3 1-2.6 2.7.3z" fill="#1877f2"/>
+      <path d="M-3.4 0l2.4 2.4L4-3" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <rect x="108" y="86" width="86" height="8" rx="4" fill="#0f172a"/>
+    <rect x="108" y="100" width="60" height="5" rx="2.5" fill="#94a3b8"/>
+    <!-- stats row -->
+    <g transform="translate(52 120)">
+      <rect x="0" y="0" width="64" height="34" rx="8" fill="#eef4ff"/>
+      <text x="32" y="16" font-family="sans-serif" font-size="12" font-weight="700" fill="#1877f2" text-anchor="middle">128K</text>
+      <text x="32" y="27" font-family="sans-serif" font-size="6.5" fill="#64748b" text-anchor="middle">Followers</text>
+      <rect x="74" y="0" width="64" height="34" rx="8" fill="#eef4ff"/>
+      <text x="106" y="16" font-family="sans-serif" font-size="12" font-weight="700" fill="#1877f2" text-anchor="middle">8.4%</text>
+      <text x="106" y="27" font-family="sans-serif" font-size="6.5" fill="#64748b" text-anchor="middle">Engagement</text>
+      <rect x="148" y="0" width="64" height="34" rx="8" fill="#1877f2"/>
+      <text x="180" y="20" font-family="sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">Verified</text>
+    </g>
+  </g>
+
+  <!-- growth chart card -->
+  <g transform="translate(296 56)">
+    <ellipse cx="76" cy="104" rx="78" ry="10" fill="#0a2a66" opacity="0.10"/>
+    <rect x="0" y="0" width="152" height="96" rx="14" fill="#ffffff"/>
+    <rect x="14" y="14" width="70" height="6" rx="3" fill="#334155"/>
+    <text x="138" y="22" font-family="sans-serif" font-size="9" font-weight="700" fill="#16a34a" text-anchor="end">▲ 42%</text>
+    <g transform="translate(14 80)">
+      <rect x="0" y="-22" width="14" height="22" rx="3" fill="#cfe0fd"/>
+      <rect x="22" y="-32" width="14" height="32" rx="3" fill="#a9c8fb"/>
+      <rect x="44" y="-44" width="14" height="44" rx="3" fill="#7eaaf9"/>
+      <rect x="66" y="-54" width="14" height="54" rx="3" fill="#4a8bf5"/>
+      <rect x="88" y="-66" width="14" height="66" rx="3" fill="#1877f2"/>
+      <path d="M7-26l22-12 22-14 22-12 22-16" stroke="#16a34a" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="117" cy="-80" r="3.5" fill="#16a34a"/>
+    </g>
+  </g>
+
+  <!-- floating reactions -->
+  <g transform="translate(244 40)">
+    <rect x="0" y="0" width="78" height="30" rx="15" fill="#ffffff"/>
+    <rect x="0" y="0" width="78" height="30" rx="15" fill="#1877f2" opacity="0.05"/>
+    <circle cx="17" cy="15" r="9" fill="#1877f2"/>
+    <path d="M13 14h2v5h-2zM17 12c2 0 3-2 3-4 1 0 2 1 1 3l3 .2c1 0 1.6 1 1 2l-1.4 4c-.3 1-1 1.4-2 1.4h-4z" fill="#fff"/>
+    <path d="M44 11c-3-3-8 0-5 4l5 5 5-5c3-4-2-7-5-4z" fill="#ef4444"/>
+    <circle cx="64" cy="15" r="6" fill="#fbbf24"/>
+  </g>
+</svg>

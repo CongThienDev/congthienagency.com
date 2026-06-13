@@ -1,0 +1,64 @@
+<svg viewBox="0 0 440 340" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Được khách tìm thấy, tin tưởng và đặt dịch vụ</title>
+  <desc>Minh hoạ điện thoại với kết quả tìm kiếm, ghim Google Maps, đánh giá 5 sao và biểu đồ tăng trưởng</desc>
+  <rect x="40" y="40" width="360" height="280" rx="28" fill="#eff6ff"/>
+  <circle cx="360" cy="80" r="80" fill="#dbeafe"/>
+  <circle cx="90" cy="290" r="64" fill="#bfdbfe" opacity="0.5"/>
+  <!-- phone -->
+  <g transform="translate(118 70)">
+    <rect x="0" y="0" width="150" height="252" rx="24" fill="#0b1220"/>
+    <rect x="8" y="8" width="134" height="236" rx="18" fill="#ffffff"/>
+    <rect x="54" y="16" width="42" height="7" rx="3.5" fill="#0b1220"/>
+    <!-- search bar -->
+    <rect x="18" y="34" width="114" height="22" rx="11" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <circle cx="32" cy="45" r="5" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <line x1="36" y1="49" x2="40" y2="53" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+    <rect x="44" y="42" width="74" height="6" rx="3" fill="#93c5fd"/>
+    <!-- map area -->
+    <rect x="18" y="64" width="114" height="86" rx="12" fill="#dbeafe"/>
+    <path d="M18 120c26-8 44 6 70-2 18-6 30 0 44 2v30H18z" fill="#bfdbfe"/>
+    <path d="M30 78h44M96 70v40M40 100h70" stroke="#bfdbfe" stroke-width="4" stroke-linecap="round"/>
+    <!-- glowing pin -->
+    <circle cx="78" cy="96" r="22" fill="#2563eb" opacity="0.18"/>
+    <g transform="translate(78 96)">
+      <path d="M0-18c10 0 16 7 16 15 0 9-16 22-16 22S-16 6-16-3c0-8 6-15 16-15z" fill="#2563eb"/>
+      <circle cx="0" cy="-3" r="6" fill="#fff"/>
+    </g>
+    <!-- result rows -->
+    <g transform="translate(18 160)">
+      <rect x="0" y="0" width="114" height="30" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="8" y="7" width="16" height="16" rx="4" fill="#2563eb"/>
+      <rect x="30" y="8" width="56" height="5" rx="2.5" fill="#334155"/>
+      <g transform="translate(30 18)" fill="#fbbf24">
+        <circle cx="3" cy="0" r="2.4"/><circle cx="11" cy="0" r="2.4"/><circle cx="19" cy="0" r="2.4"/><circle cx="27" cy="0" r="2.4"/><circle cx="35" cy="0" r="2.4"/>
+      </g>
+    </g>
+    <!-- booking button -->
+    <rect x="18" y="198" width="114" height="30" rx="10" fill="#2563eb"/>
+    <rect x="46" y="209" width="58" height="8" rx="4" fill="#bfdbfe"/>
+  </g>
+  <!-- floating 5-star card -->
+  <g transform="translate(286 92)">
+    <rect x="0" y="0" width="104" height="56" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <g transform="translate(14 20)" fill="#fbbf24">
+      <path d="M0-7l2 4 5 1-4 4 1 5-4-3-4 3 1-5-4-4 5-1z"/>
+      <g transform="translate(17 0)"><path d="M0-7l2 4 5 1-4 4 1 5-4-3-4 3 1-5-4-4 5-1z"/></g>
+      <g transform="translate(34 0)"><path d="M0-7l2 4 5 1-4 4 1 5-4-3-4 3 1-5-4-4 5-1z"/></g>
+      <g transform="translate(51 0)"><path d="M0-7l2 4 5 1-4 4 1 5-4-3-4 3 1-5-4-4 5-1z"/></g>
+      <g transform="translate(68 0)"><path d="M0-7l2 4 5 1-4 4 1 5-4-3-4 3 1-5-4-4 5-1z"/></g>
+    </g>
+    <rect x="14" y="34" width="44" height="6" rx="3" fill="#1d4ed8"/>
+    <rect x="14" y="44" width="68" height="4" rx="2" fill="#bfdbfe"/>
+  </g>
+  <!-- floating growth chart card -->
+  <g transform="translate(286 196)">
+    <rect x="0" y="0" width="104" height="86" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <rect x="16" y="56" width="12" height="16" rx="3" fill="#bfdbfe"/>
+    <rect x="34" y="46" width="12" height="26" rx="3" fill="#93c5fd"/>
+    <rect x="52" y="34" width="12" height="38" rx="3" fill="#60a5fa"/>
+    <rect x="70" y="20" width="12" height="52" rx="3" fill="#2563eb"/>
+    <path d="M16 50l18-8 18-10 18-12" stroke="#10b981" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 18l8 2 0 8" stroke="#10b981" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="70" cy="20" r="3.5" fill="#10b981"/>
+  </g>
+</svg>

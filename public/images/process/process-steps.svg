@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .step-circle { fill: #2563eb; }
+      .step-number { font-size: 28px; font-weight: bold; fill: white; }
+      .step-title { font-size: 18px; font-weight: 600; fill: #1f2937; }
+      .step-detail { font-size: 14px; fill: #6b7280; }
+      .arrow { stroke: #d1d5db; stroke-width: 2; fill: none; }
+      .arrow-head { fill: #d1d5db; }
+    </style>
+  </defs>
+
+  <!-- Step 1: Tư vấn -->
+  <circle cx="120" cy="120" r="50" class="step-circle"/>
+  <text x="120" y="135" text-anchor="middle" class="step-number">01</text>
+  <text x="120" y="200" text-anchor="middle" class="step-title">Tư vấn</text>
+  <text x="120" y="220" text-anchor="middle" class="step-detail">Hiểu ngành, mục tiêu</text>
+  <text x="120" y="238" text-anchor="middle" class="step-detail">và nhóm khách</text>
+
+  <!-- Arrow 1 -->
+  <line x1="170" y1="120" x2="280" y2="120" class="arrow"/>
+  <polygon points="280,120 270,115 272,125" class="arrow-head"/>
+
+  <!-- Step 2: Thiết kế -->
+  <circle cx="350" cy="120" r="50" class="step-circle"/>
+  <text x="350" y="135" text-anchor="middle" class="step-number">02</text>
+  <text x="350" y="200" text-anchor="middle" class="step-title">Thiết kế</text>
+  <text x="350" y="220" text-anchor="middle" class="step-detail">Dựng giao diện theo</text>
+  <text x="350" y="238" text-anchor="middle" class="step-detail">hành vi đặt dịch vụ</text>
+
+  <!-- Arrow 2 -->
+  <line x1="400" y1="120" x2="510" y2="120" class="arrow"/>
+  <polygon points="510,120 500,115 502,125" class="arrow-head"/>
+
+  <!-- Step 3: Phát triển -->
+  <circle cx="580" cy="120" r="50" class="step-circle"/>
+  <text x="580" y="135" text-anchor="middle" class="step-number">03</text>
+  <text x="580" y="200" text-anchor="middle" class="step-title">Phát triển</text>
+  <text x="580" y="220" text-anchor="middle" class="step-detail">Code website, booking,</text>
+  <text x="580" y="238" text-anchor="middle" class="step-detail">thanh toán & SEO</text>
+
+  <!-- Arrow 3 -->
+  <line x1="630" y1="120" x2="740" y2="120" class="arrow"/>
+  <polygon points="740,120 730,115 732,125" class="arrow-head"/>
+
+  <!-- Step 4: Bàn giao -->
+  <circle cx="810" cy="120" r="50" class="step-circle"/>
+  <text x="810" y="135" text-anchor="middle" class="step-number">04</text>
+  <text x="810" y="200" text-anchor="middle" class="step-title">Bàn giao</text>
+  <text x="810" y="220" text-anchor="middle" class="step-detail">Kiểm tra tốc độ,</text>
+  <text x="810" y="238" text-anchor="middle" class="step-detail">mobile & SEO</text>
+
+  <!-- Timeline bottom label -->
+  <text x="600" y="340" text-anchor="middle" style="font-size: 16px; fill: #374151; font-weight: 500;">Quy trình triển khai từ A đến Z</text>
+</svg>

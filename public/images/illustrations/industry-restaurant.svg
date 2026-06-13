@@ -1,0 +1,47 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice">
+  <title>Nhà hàng, cafe và seafood</title>
+  <desc>Minh hoạ nhà hàng với đĩa món ăn, dao nĩa, menu online và đặt bàn</desc>
+  <rect width="400" height="200" fill="#fffbeb"/>
+  <circle cx="80" cy="36" r="110" fill="#fef3c7"/>
+  <circle cx="350" cy="180" r="100" fill="#fde68a" opacity="0.55"/>
+  <!-- table -->
+  <ellipse cx="200" cy="174" rx="160" ry="18" fill="#fcd34d" opacity="0.55"/>
+  <!-- plate -->
+  <g transform="translate(176 110)">
+    <ellipse cx="0" cy="6" rx="78" ry="30" fill="#f59e0b" opacity="0.25"/>
+    <circle cx="0" cy="0" r="62" fill="#ffffff" stroke="#fde68a" stroke-width="3"/>
+    <circle cx="0" cy="0" r="46" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5"/>
+    <!-- food: salmon + greens -->
+    <path d="M-22 6c6-16 30-20 42-8 8 8 4 22-8 26-16 5-40-2-34-18z" fill="#fb7185"/>
+    <path d="M-20 4c4-9 18-12 26-5" stroke="#fda4af" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-6" cy="-14" rx="13" ry="8" fill="#34d399"/>
+    <ellipse cx="10" cy="-16" rx="10" ry="6" fill="#10b981"/>
+    <circle cx="22" cy="2" r="6" fill="#ef4444"/>
+    <circle cx="-30" cy="-6" r="5" fill="#ef4444"/>
+  </g>
+  <!-- fork -->
+  <g transform="translate(86 96)" fill="#d97706">
+    <rect x="-2" y="0" width="4" height="58" rx="2"/>
+    <rect x="-9" y="-14" width="3" height="20" rx="1.5"/>
+    <rect x="-2" y="-14" width="3" height="20" rx="1.5"/>
+    <rect x="5" y="-14" width="3" height="20" rx="1.5"/>
+    <rect x="-9" y="2" width="17" height="5" rx="2.5"/>
+  </g>
+  <!-- knife -->
+  <g transform="translate(300 94)" fill="#d97706">
+    <rect x="-2" y="0" width="4" height="60" rx="2"/>
+    <path d="M-5-16c6 0 9 6 9 16h-9z" fill="#f59e0b"/>
+  </g>
+  <!-- floating menu / booking card -->
+  <g transform="translate(266 38)">
+    <rect x="0" y="0" width="100" height="58" rx="12" fill="#ffffff" stroke="#fde68a" stroke-width="1.5"/>
+    <rect x="12" y="12" width="36" height="6" rx="3" fill="#d97706"/>
+    <rect x="12" y="24" width="76" height="4" rx="2" fill="#fcd34d"/>
+    <rect x="12" y="33" width="64" height="4" rx="2" fill="#fde68a"/>
+    <rect x="12" y="44" width="44" height="9" rx="4.5" fill="#f59e0b"/>
+    <circle cx="80" cy="14" r="5" fill="#10b981"/>
+  </g>
+  <!-- steam -->
+  <path d="M150 70c6-6-6-12 0-18" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M176 64c6-6-6-12 0-18" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.55"/>
+</svg>

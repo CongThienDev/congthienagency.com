@@ -25,6 +25,7 @@ export type Project = {
   verifiedProof: string[];
   related: { label: string; href: string; note: string }[];
   images: ImageSlot[];
+  previewImage?: string;
   schema: { serviceType: string };
 };
 
@@ -132,6 +133,7 @@ export const PROJECTS: Project[] = [
         alt: "Kết quả PageSpeed Insights SEO 100/100 của Serena Retreat",
       },
     ],
+    previewImage: "/images/projects/serena-retreat/hero.jpg",
     schema: { serviceType: "Web design" },
   },
   {
@@ -227,6 +229,7 @@ export const PROJECTS: Project[] = [
         alt: "Kết quả PageSpeed Insights SEO 100/100 của Ruong House",
       },
     ],
+    previewImage: "/images/projects/ruong-house/hero.jpg",
     schema: { serviceType: "Web design" },
   },
 ];
