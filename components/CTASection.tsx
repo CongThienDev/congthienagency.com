@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "./Container";
 import { SITE } from "@/content/site";
 import { IconChat, IconMail, IconPhone } from "./Icons";
@@ -47,8 +48,21 @@ export function CTASection({
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3.5 text-base font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white/20"
               >
-                <IconPhone className="h-4.5 w-4.5" />
+                <Image
+                  src="/icon-service/whatsapp-icon.avif"
+                  alt="WhatsApp"
+                  width={18}
+                  height={18}
+                  className="h-4.5 w-4.5 object-contain"
+                />
                 WhatsApp
+              </a>
+              <a
+                href={`tel:${SITE.contact.phoneE164}`}
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3.5 text-base font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white/20"
+              >
+                <IconPhone className="h-4.5 w-4.5" />
+                Gọi {SITE.contact.phoneDisplay}
               </a>
               <a
                 href={`mailto:${SITE.contact.email}`}
