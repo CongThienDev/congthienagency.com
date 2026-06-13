@@ -15,6 +15,13 @@ export function organizationGraph(): Graph[] {
       name: SITE.name,
       alternateName: SITE.alternateNames,
       url: SITE.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE.url}${SITE.logoPath}`,
+        width: 512,
+        height: 512,
+      },
+      image: `${SITE.url}${SITE.logoPath}`,
       description: SITE.description,
       email: SITE.contact.email,
       telephone: SITE.contact.phoneE164,

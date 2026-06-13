@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     template: `%s`,
   },
   description: SITE.description,
+  icons: {
+    icon: [
+      { url: "/icon", type: "image/png", sizes: "32x32" },
+      { url: "/icon", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/manifest.webmanifest",
 };
 
 export function generateStaticParams() {
