@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SITE } from "@/content/site";
 import { IconChat, IconPhone } from "./Icons";
 
@@ -19,6 +20,19 @@ export function FloatingContactWidget() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat WhatsApp"
+        className="grid h-12 w-12 place-items-center rounded-full border border-line bg-white shadow-lift transition-all hover:-translate-y-0.5"
+      >
+        <Image
+          src="/icon-service/whatsapp-icon.avif"
+          alt="WhatsApp"
+          width={22}
+          height={22}
+          className="h-5.5 w-5.5 object-contain"
+        />
+      </a>
+      <a
+        href={`tel:${SITE.contact.phoneE164}`}
+        aria-label={`Gọi ${SITE.contact.phoneDisplay}`}
         className="grid h-12 w-12 place-items-center rounded-full border border-line bg-white text-ink shadow-lift transition-all hover:-translate-y-0.5 hover:text-blue-700"
       >
         <IconPhone className="h-5 w-5" />

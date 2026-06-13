@@ -6,10 +6,10 @@ export default function manifest(): MetadataRoute.Manifest {
     name: SITE.name,
     short_name: SITE.shortName,
     description: SITE.description,
-    start_url: "/",
+    start_url: "/vi",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#0f3cc9",
+    background_color: "#F6FAFF",
+    theme_color: "#2F66F5",
     icons: [
       {
         src: "/icon",

@@ -9,6 +9,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { BLOG_POSTS, getPost } from "@/content/blog.vi";
 import { graphDocument, breadcrumbGraph, blogPostingGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
+import { resolveAbsoluteImageUrls, resolvePrimaryImage } from "@/lib/siteIndex";
 
 type Params = { params: Promise<{ locale: string; slug: string }> };
 
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     path: post.path,
     locale: "vi",
     type: "article",
+    image: resolvePrimaryImage(["/images/og/og-default.jpg"]),
   });
 }
 
@@ -34,6 +36,7 @@ export default async function Page({ params }: Params) {
   if (locale !== "vi") notFound();
   const post = getPost(slug);
   if (!post) notFound();
+  const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg"]);
 
   const d = new Date(post.date).toLocaleDateString("vi-VN", {
     day: "2-digit",
@@ -51,6 +54,7 @@ export default async function Page({ params }: Params) {
             description: post.metaDescription,
             path: post.path,
             datePublished: post.date,
+            images: imageUrls,
           }),
         ])}
       />

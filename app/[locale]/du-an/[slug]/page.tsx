@@ -10,6 +10,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { PROJECTS, getProject } from "@/content/projects.vi";
 import { graphDocument, breadcrumbGraph, creativeWorkGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
+import { resolveAbsoluteImageUrls, resolvePrimaryImage } from "@/lib/siteIndex";
 
 type Params = { params: Promise<{ locale: string; slug: string }> };
 
@@ -27,6 +28,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     path: project.path,
     locale: "vi",
     type: "article",
+    image: resolvePrimaryImage(project.images.map((image) => image.suggestion)),
   });
 }
 
@@ -35,6 +37,7 @@ export default async function Page({ params }: Params) {
   if (locale !== "vi") notFound();
   const project = getProject(slug);
   if (!project) notFound();
+  const imageUrls = resolveAbsoluteImageUrls(project.images.map((image) => image.suggestion));
 
   return (
     <Shell locale="vi">
@@ -45,6 +48,7 @@ export default async function Page({ params }: Params) {
             name: project.name,
             description: project.metaDescription,
             path: project.path,
+            images: imageUrls,
           }),
         ])}
       />

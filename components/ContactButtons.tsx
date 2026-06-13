@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SITE } from "@/content/site";
 import { IconArrowRight, IconChat, IconMail, IconPhone, IconUsers } from "./Icons";
 import type { ReactNode } from "react";
@@ -10,6 +11,13 @@ const CHANNELS: {
   icon: ReactNode;
 }[] = [
   {
+    key: "phone",
+    label: "Hotline",
+    sub: SITE.contact.phoneDisplay,
+    href: `tel:${SITE.contact.phoneE164}`,
+    icon: <IconPhone className="h-5 w-5" />,
+  },
+  {
     key: "zalo",
     label: "Zalo",
     sub: SITE.contact.phoneDisplay,
@@ -21,7 +29,15 @@ const CHANNELS: {
     label: "WhatsApp",
     sub: "Chat trực tiếp",
     href: SITE.contact.whatsapp,
-    icon: <IconPhone className="h-5 w-5" />,
+    icon: (
+      <Image
+        src="/icon-service/whatsapp-icon.avif"
+        alt="WhatsApp"
+        width={20}
+        height={20}
+        className="h-5 w-5 object-contain"
+      />
+    ),
   },
   {
     key: "email",
@@ -46,8 +62,8 @@ export function ContactButtons() {
         <a
           key={c.key}
           href={c.href}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={c.href.startsWith("tel:") || c.href.startsWith("mailto:") ? undefined : "_blank"}
+          rel={c.href.startsWith("tel:") || c.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
           className="group card-hover card-gradient-border flex items-center gap-4 rounded-card px-5 py-4 shadow-soft"
         >
           <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600 ring-1 ring-blue-100 transition-transform duration-300 group-hover:scale-110">

@@ -12,7 +12,7 @@ export const HOME_VI = {
   trust: [
     { value: "100/100", label: "PageSpeed SEO" },
     { value: "15 ngày", label: "Bàn giao nhanh nhất" },
-    { value: "Booking", label: "& thanh toán online" },
+    { value: "10+ website", label: "booking đã bàn giao" },
     { value: "Hội An – ĐN", label: "Khu vực phục vụ" },
   ],
   painIntro: {

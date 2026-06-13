@@ -23,6 +23,7 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: SITE_METADATA_BASE,
+  applicationName: SITE.shortName,
   title: {
     default: SITE.name,
     template: `%s`,
@@ -36,6 +37,11 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: SITE.shortName,
+    statusBarStyle: "default",
+  },
 };
 
 export function generateStaticParams() {

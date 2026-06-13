@@ -10,6 +10,7 @@ import { TrustStrip } from "@/components/Bits";
 import { CTASection } from "@/components/CTASection";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { HeroImage } from "@/components/HeroImage";
+import { MobileHomeHero } from "@/components/MobileHomeHero";
 import { Reveal } from "@/components/Reveal";
 import { PricingCard } from "@/components/PricingCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -19,7 +20,6 @@ import {
   IconBolt,
   IconCalendarCheck,
   IconChat,
-  IconCheck,
   IconCode,
   IconCompass,
   IconCreditCard,
@@ -40,21 +40,24 @@ import { HOME_EN } from "@/content/pages.en";
 import { PROJECTS } from "@/content/projects.vi";
 import { GLOBAL_FAQS } from "@/content/faqs.vi";
 import { PRICING_GROUPS } from "@/content/pricing.vi";
-import { graphDocument, faqGraph } from "@/lib/schema";
+import { graphDocument, faqGraph, webPageGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import { SITE } from "@/content/site";
+import { resolveAbsoluteImageUrls, resolvePrimaryImage } from "@/lib/siteIndex";
 
 type Params = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale } = await params;
   const c = locale === "en" ? HOME_EN : HOME_VI;
+  const pagePath = locale === "en" ? "/en" : "/vi";
   return buildMetadata({
     title: c.metaTitle,
     description: c.metaDescription,
-    path: locale === "en" ? "/en" : "/vi",
+    path: pagePath,
     locale: locale === "en" ? "en" : "vi",
     alternateKey: "home",
+    image: resolvePrimaryImage(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]),
   });
 }
 
@@ -98,6 +101,7 @@ const WHY_ICONS = [
 
 function HomeVI() {
   const c = HOME_VI;
+  const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]);
   const pricingPreviewIds = ["website-business", "naver-blogger", "maps-reputation"];
   const pricingPreview = PRICING_GROUPS.flatMap((g) => g.packages).filter((p) =>
     pricingPreviewIds.includes(p.id)
@@ -105,10 +109,22 @@ function HomeVI() {
 
   return (
     <Shell locale="vi" alternateKey="home">
-      <JsonLd data={graphDocument([faqGraph(GLOBAL_FAQS)])} />
+      <JsonLd
+        data={graphDocument([
+          webPageGraph({
+            name: c.metaTitle,
+            description: c.metaDescription,
+            path: "/vi",
+            images: imageUrls,
+          }),
+          faqGraph(GLOBAL_FAQS),
+        ])}
+      />
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden">
+      <MobileHomeHero sub={c.heroSub} />
+
+      <section className="relative hidden overflow-hidden lg:block">
         <div aria-hidden className="bg-glow absolute inset-0" />
         <div aria-hidden className="bg-grid bg-grid-fade absolute inset-0" />
 
@@ -168,24 +184,6 @@ function HomeVI() {
                 </Button>
               </div>
 
-              {/* proof mini-row */}
-              <div
-                className="animate-rise mt-8 flex flex-wrap items-center gap-x-5 gap-y-2"
-                style={{ animationDelay: "320ms" }}
-              >
-                {[
-                  "PageSpeed SEO 100/100",
-                  "2 website booking đã bàn giao",
-                  "Booking + thanh toán online",
-                ].map((p) => (
-                  <span key={p} className="flex items-center gap-1.5 text-[13px] font-medium text-ink-soft">
-                    <span className="grid h-4.5 w-4.5 place-items-center rounded-full bg-blue-600 text-white">
-                      <IconCheck className="h-2.5 w-2.5" />
-                    </span>
-                    {p}
-                  </span>
-                ))}
-              </div>
             </div>
 
             {/* Right: CSS product mockup */}
@@ -518,8 +516,19 @@ function HomeVI() {
 
 function HomeEN() {
   const c = HOME_EN;
+  const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]);
   return (
     <Shell locale="en" alternateKey="home">
+      <JsonLd
+        data={graphDocument([
+          webPageGraph({
+            name: c.metaTitle,
+            description: c.metaDescription,
+            path: "/en",
+            images: imageUrls,
+          }),
+        ])}
+      />
       <section className="relative overflow-hidden">
         <div aria-hidden className="bg-glow absolute inset-0" />
         <div aria-hidden className="bg-grid bg-grid-fade absolute inset-0" />

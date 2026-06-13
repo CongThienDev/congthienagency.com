@@ -3,6 +3,7 @@ import { SITE } from "@/content/site";
 const ORG_ID = `${SITE.url}/#organization`;
 const PERSON_ID = `${SITE.url}/#person`;
 const WEBSITE_ID = `${SITE.url}/#website`;
+const DEFAULT_IMAGE = `${SITE.url}/images/og/og-default.jpg`;
 
 type Graph = Record<string, unknown>;
 
@@ -21,7 +22,7 @@ export function organizationGraph(): Graph[] {
         width: 512,
         height: 512,
       },
-      image: `${SITE.url}${SITE.logoPath}`,
+      image: [DEFAULT_IMAGE],
       description: SITE.description,
       email: SITE.contact.email,
       telephone: SITE.contact.phoneE164,
@@ -76,6 +77,7 @@ export function serviceGraph(args: {
   serviceType: string;
   offerMinPriceVnd?: number;
   offerPriceVnd?: number;
+  images?: string[];
 }): Graph {
   const offers =
     args.offerMinPriceVnd != null || args.offerPriceVnd != null
@@ -100,6 +102,7 @@ export function serviceGraph(args: {
     description: args.description,
     serviceType: args.serviceType,
     url: `${SITE.url}${args.path}`,
+    ...(args.images?.length ? { image: args.images } : {}),
     provider: { "@id": ORG_ID },
     areaServed: SITE.areaServed.map((name) => ({ "@type": "Place", name })),
     ...offers,
@@ -121,12 +124,14 @@ export function creativeWorkGraph(args: {
   name: string;
   description: string;
   path: string;
+  images?: string[];
 }): Graph {
   return {
     "@type": "CreativeWork",
     name: args.name,
     description: args.description,
     url: `${SITE.url}${args.path}`,
+    ...(args.images?.length ? { image: args.images } : {}),
     creator: { "@id": PERSON_ID },
   };
 }
@@ -136,6 +141,7 @@ export function blogPostingGraph(args: {
   description: string;
   path: string;
   datePublished: string;
+  images?: string[];
 }): Graph {
   return {
     "@type": "BlogPosting",
@@ -147,6 +153,32 @@ export function blogPostingGraph(args: {
     author: { "@id": PERSON_ID },
     publisher: { "@id": ORG_ID },
     mainEntityOfPage: `${SITE.url}${args.path}`,
+    ...(args.images?.length ? { image: args.images } : {}),
+  };
+}
+
+export function webPageGraph(args: {
+  name: string;
+  description: string;
+  path: string;
+  images?: string[];
+}): Graph {
+  return {
+    "@type": "WebPage",
+    name: args.name,
+    description: args.description,
+    url: `${SITE.url}${args.path}`,
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": ORG_ID },
+    ...(args.images?.length
+      ? {
+          image: args.images,
+          primaryImageOfPage: {
+            "@type": "ImageObject",
+            url: args.images[0],
+          },
+        }
+      : {}),
   };
 }
 
