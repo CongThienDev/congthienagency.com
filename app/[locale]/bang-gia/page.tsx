@@ -4,7 +4,7 @@ import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb } from "@/components/Bits";
 import { SectionHeader } from "@/components/SectionHeader";
-import { PricingTable } from "@/components/PricingTable";
+import { PricingList } from "@/components/PricingList";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
@@ -60,23 +60,23 @@ export default async function Page({ params }: Params) {
 
       <section className="py-12 first:pt-16 sm:py-14">
         <Container>
-          <PricingTable groups={PRICING_GROUPS} />
-        </Container>
-      </section>
-
-      <section className="pb-8">
-        <Container>
-          <p className="rounded-card border border-line bg-white p-5 text-sm leading-relaxed text-muted">
-            {PRICING_NOTE}
-          </p>
+          <div className="mx-auto max-w-4xl">
+            <PricingList groups={PRICING_GROUPS} />
+            <p className="mt-8 flex items-start gap-2.5 px-1 text-[13px] leading-relaxed text-muted">
+              <span aria-hidden className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-line-strong" />
+              {PRICING_NOTE}
+            </p>
+          </div>
         </Container>
       </section>
 
       <section className="py-12 sm:py-16">
         <Container>
-          <SectionHeader eyebrow="FAQ" title="Câu hỏi về bảng giá" />
-          <div className="mt-8">
-            <FAQAccordion faqs={PRICING_FAQS} />
+          <div className="mx-auto max-w-4xl">
+            <SectionHeader eyebrow="FAQ" title="Câu hỏi về bảng giá" />
+            <div className="mt-8">
+              <FAQAccordion faqs={PRICING_FAQS} />
+            </div>
           </div>
         </Container>
       </section>

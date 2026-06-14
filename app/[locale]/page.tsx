@@ -188,9 +188,9 @@ function HomeVI() {
   const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]);
   const pricingPreviewIds = ["naver-blogger", "website-business", "maps-reputation"];
   const allPackages = PRICING_GROUPS.flatMap((g) => g.packages);
-  const pricingPreview = pricingPreviewIds.map((id) =>
-    allPackages.find((p) => p.id === id)
-  ).filter(Boolean);
+  const pricingPreview = pricingPreviewIds
+    .map((id) => allPackages.find((p) => p.id === id))
+    .filter((p): p is (typeof allPackages)[number] => p !== undefined);
 
   return (
     <Shell locale="vi" alternateKey="home">
