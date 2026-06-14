@@ -1,5 +1,5 @@
-import { Button } from "./Button";
 import { IconArrowRight } from "./Icons";
+import { ContactTriggerButton } from "./ContactModal";
 import { SERVICE_BRAND, type ServiceBrand } from "./serviceBrand";
 import type { PricingGroup } from "@/content/pricing.vi";
 
@@ -100,14 +100,10 @@ export function PricingList({ groups }: { groups: PricingGroup[] }) {
 
                     {/* CTA */}
                     <div className="shrink-0 pl-[54px] sm:w-auto sm:pl-0">
-                      <Button
-                        href={pkg.ctaHref}
-                        variant="secondary"
-                        className="w-full text-sm sm:w-auto"
-                      >
+                      <ContactTriggerButton className="w-full sm:w-auto">
                         {pkg.ctaLabel}
                         <IconArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
-                      </Button>
+                      </ContactTriggerButton>
                     </div>
                   </div>
                 );

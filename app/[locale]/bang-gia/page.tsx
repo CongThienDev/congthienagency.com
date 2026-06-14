@@ -7,6 +7,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { PricingList } from "@/components/PricingList";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { CTASection } from "@/components/CTASection";
+import { ContactModalProvider } from "@/components/ContactModal";
 import { JsonLd } from "@/components/JsonLd";
 import {
   PRICING_META,
@@ -42,6 +43,7 @@ export default async function Page({ params }: Params) {
 
   return (
     <Shell locale="vi" alternateKey="pricing">
+      <ContactModalProvider>
       <JsonLd
         data={graphDocument([breadcrumbGraph(BREADCRUMB), faqGraph(PRICING_FAQS)])}
       />
@@ -87,6 +89,7 @@ export default async function Page({ params }: Params) {
         primaryHref="/vi/lien-he"
         primaryLabel="Nhận báo giá"
       />
+      </ContactModalProvider>
     </Shell>
   );
 }
