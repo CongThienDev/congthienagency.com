@@ -4,7 +4,7 @@ import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb } from "@/components/Bits";
 import { SectionHeader } from "@/components/SectionHeader";
-import { PricingCard } from "@/components/PricingCard";
+import { PricingTable } from "@/components/PricingTable";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
@@ -58,30 +58,11 @@ export default async function Page({ params }: Params) {
         </Container>
       </section>
 
-      {PRICING_GROUPS.map((group) => (
-        <section key={group.id} className="py-12 first:pt-16 sm:py-14">
-          <Container>
-            <SectionHeader eyebrow={group.id} title={group.title} sub={group.intro} />
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {group.packages.map((pkg) => (
-                <PricingCard
-                  key={pkg.id}
-                  name={pkg.name}
-                  priceLabel={pkg.priceLabel}
-                  priceUnit={pkg.priceUnit}
-                  tagline={pkg.tagline}
-                  features={pkg.features}
-                  ctaHref={pkg.ctaHref}
-                  ctaLabel={pkg.ctaLabel}
-                  highlight={pkg.highlight}
-                  disclaimer={pkg.disclaimer}
-                  cluster={pkg.cluster}
-                />
-              ))}
-            </div>
-          </Container>
-        </section>
-      ))}
+      <section className="py-12 first:pt-16 sm:py-14">
+        <Container>
+          <PricingTable groups={PRICING_GROUPS} />
+        </Container>
+      </section>
 
       <section className="pb-8">
         <Container>
