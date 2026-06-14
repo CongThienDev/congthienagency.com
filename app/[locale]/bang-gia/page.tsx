@@ -4,9 +4,10 @@ import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb } from "@/components/Bits";
 import { SectionHeader } from "@/components/SectionHeader";
-import { PricingCard } from "@/components/PricingCard";
+import { PricingList } from "@/components/PricingList";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { CTASection } from "@/components/CTASection";
+import { ContactModalProvider } from "@/components/ContactModal";
 import { JsonLd } from "@/components/JsonLd";
 import {
   PRICING_META,
@@ -42,6 +43,7 @@ export default async function Page({ params }: Params) {
 
   return (
     <Shell locale="vi" alternateKey="pricing">
+      <ContactModalProvider>
       <JsonLd
         data={graphDocument([breadcrumbGraph(BREADCRUMB), faqGraph(PRICING_FAQS)])}
       />
@@ -58,44 +60,25 @@ export default async function Page({ params }: Params) {
         </Container>
       </section>
 
-      {PRICING_GROUPS.map((group) => (
-        <section key={group.id} className="py-12 first:pt-16 sm:py-14">
-          <Container>
-            <SectionHeader eyebrow={group.id} title={group.title} sub={group.intro} />
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {group.packages.map((pkg) => (
-                <PricingCard
-                  key={pkg.id}
-                  name={pkg.name}
-                  priceLabel={pkg.priceLabel}
-                  priceUnit={pkg.priceUnit}
-                  tagline={pkg.tagline}
-                  features={pkg.features}
-                  ctaHref={pkg.ctaHref}
-                  ctaLabel={pkg.ctaLabel}
-                  highlight={pkg.highlight}
-                  disclaimer={pkg.disclaimer}
-                  cluster={pkg.cluster}
-                />
-              ))}
-            </div>
-          </Container>
-        </section>
-      ))}
-
-      <section className="pb-8">
+      <section className="py-12 first:pt-16 sm:py-14">
         <Container>
-          <p className="rounded-card border border-line bg-white p-5 text-sm leading-relaxed text-muted">
-            {PRICING_NOTE}
-          </p>
+          <div className="mx-auto max-w-4xl">
+            <PricingList groups={PRICING_GROUPS} />
+            <p className="mt-8 flex items-start gap-2.5 px-1 text-[13px] leading-relaxed text-muted">
+              <span aria-hidden className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-line-strong" />
+              {PRICING_NOTE}
+            </p>
+          </div>
         </Container>
       </section>
 
       <section className="py-12 sm:py-16">
         <Container>
-          <SectionHeader eyebrow="FAQ" title="Câu hỏi về bảng giá" />
-          <div className="mt-8">
-            <FAQAccordion faqs={PRICING_FAQS} />
+          <div className="mx-auto max-w-4xl">
+            <SectionHeader eyebrow="FAQ" title="Câu hỏi về bảng giá" />
+            <div className="mt-8">
+              <FAQAccordion faqs={PRICING_FAQS} />
+            </div>
           </div>
         </Container>
       </section>
@@ -106,6 +89,7 @@ export default async function Page({ params }: Params) {
         primaryHref="/vi/lien-he"
         primaryLabel="Nhận báo giá"
       />
+      </ContactModalProvider>
     </Shell>
   );
 }

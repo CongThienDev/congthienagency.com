@@ -122,18 +122,8 @@ export const PROJECTS: Project[] = [
         suggestion: "/images/projects/serena-retreat/hero.webp",
         alt: "Website spa Serena Retreat trên màn hình desktop và mobile",
       },
-      {
-        slot: "booking",
-        suggestion: "/images/projects/serena-retreat/booking.webp",
-        alt: "Giao diện đặt liệu trình của website Serena Retreat",
-      },
-      {
-        slot: "pagespeed",
-        suggestion: "/images/projects/serena-retreat/pagespeed.webp",
-        alt: "Kết quả PageSpeed Insights SEO 100/100 của Serena Retreat",
-      },
     ],
-    previewImage: "/images/projects/serena-retreat/hero.jpg",
+    previewImage: "/images/projects/serena-retreat/hero.webp",
     schema: { serviceType: "Web design" },
   },
   {
@@ -218,18 +208,8 @@ export const PROJECTS: Project[] = [
         suggestion: "/images/projects/ruong-house/hero.webp",
         alt: "Website Ruong House trên màn hình desktop và mobile",
       },
-      {
-        slot: "cart",
-        suggestion: "/images/projects/ruong-house/cart.webp",
-        alt: "Giỏ hàng và thanh toán của website Ruong House",
-      },
-      {
-        slot: "pagespeed",
-        suggestion: "/images/projects/ruong-house/pagespeed.webp",
-        alt: "Kết quả PageSpeed Insights SEO 100/100 của Ruong House",
-      },
     ],
-    previewImage: "/images/projects/ruong-house/hero.jpg",
+    previewImage: "/images/projects/ruong-house/hero.webp",
     schema: { serviceType: "Web design" },
   },
 ];

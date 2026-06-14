@@ -118,13 +118,79 @@ const WHY_ICONS = [
   <IconStar key="star" />,
 ];
 
+function ServiceSystemSection() {
+  const intro = HOME_VI.servicesIntro;
+
+  return (
+    <section className="relative overflow-hidden border-y border-line bg-white py-16 sm:py-24">
+      <div aria-hidden className="bg-dots absolute inset-0 opacity-40" />
+
+      <Container className="relative">
+        <Reveal>
+          <SectionHeader {...intro} align="center" />
+        </Reveal>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          {HOME_VI.services.map((service, index) => {
+            const serviceBrand = SERVICE_BRAND[service.brand];
+
+            return (
+              <Reveal key={service.href} delay={index * 70}>
+                <Link
+                  href={service.href}
+                  className="group flex h-full overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white shadow-[0_18px_45px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_28px_65px_rgba(15,23,42,0.14)]"
+                >
+                  <div className="flex w-full flex-col">
+                    <div className="relative overflow-visible border-b border-slate-100">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={SERVICE_IMAGES[index]}
+                        alt=""
+                        aria-hidden
+                        loading="lazy"
+                        className="aspect-[5/4] w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
+                      />
+                      <div
+                        aria-hidden
+                        className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/12 via-slate-950/0 to-transparent"
+                      />
+                      <span
+                        className={`absolute bottom-0 left-1/2 z-10 grid h-10 w-10 -translate-x-1/2 translate-y-[36%] place-items-center rounded-[0.95rem] border border-white/90 bg-white shadow-[0_10px_22px_rgba(15,23,42,0.14)] ${serviceBrand.accentText}`}
+                      >
+                        {serviceBrand.logoImage}
+                      </span>
+                    </div>
+                    <div className="flex flex-1 flex-col px-6 pb-5 pt-6 text-center">
+                      <h3 className="mt-1 text-[1.05rem] font-bold tracking-tight text-ink sm:text-[1.12rem]">
+                        {service.title}
+                      </h3>
+                      <p className="mt-2 text-[0.96rem] leading-6 text-slate-500">
+                        {service.desc}
+                      </p>
+
+                      <span className="mt-auto inline-flex items-center justify-center gap-2 pt-3 text-sm font-semibold text-blue-700">
+                        Xem chi tiết
+                        <IconArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </Reveal>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function HomeVI() {
   const c = HOME_VI;
   const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]);
-  const pricingPreviewIds = ["website-business", "naver-blogger", "maps-reputation"];
-  const pricingPreview = PRICING_GROUPS.flatMap((g) => g.packages).filter((p) =>
-    pricingPreviewIds.includes(p.id)
-  );
+  const pricingPreviewIds = ["naver-blogger", "website-business", "maps-reputation"];
+  const allPackages = PRICING_GROUPS.flatMap((g) => g.packages);
+  const pricingPreview = pricingPreviewIds
+    .map((id) => allPackages.find((p) => p.id === id))
+    .filter((p): p is (typeof allPackages)[number] => p !== undefined);
 
   return (
     <Shell locale="vi" alternateKey="home">
@@ -270,35 +336,7 @@ function HomeVI() {
       </section>
 
       {/* ── Services ── */}
-      <section className="relative border-y border-line bg-white py-16 sm:py-24">
-        <div aria-hidden className="bg-dots absolute inset-0 opacity-40" />
-        <Container className="relative">
-          <Reveal>
-            <SectionHeader {...c.servicesIntro} align="center" />
-          </Reveal>
-          <div className="mt-12 grid gap-5 lg:grid-cols-3">
-            {c.services.map((s, i) => (
-              <Reveal
-                key={s.href + s.title}
-                delay={i * 80}
-                className={i === 0 || i === 3 ? "lg:col-span-2" : ""}
-              >
-                <ServiceCard
-                  title={s.title}
-                  desc={s.desc}
-                  href={s.href}
-                  tag={s.tag}
-                  brand={s.brand}
-                  featured={"featured" in s && Boolean(s.featured)}
-                  bullets={"bullets" in s ? (s.bullets as string[]) : undefined}
-                  chips={s.chips}
-                  image={SERVICE_IMAGES[i]}
-                />
-              </Reveal>
-            ))}
-          </div>
-        </Container>
-      </section>
+      <ServiceSystemSection />
 
       {/* ── Why Công Thiên ── */}
       <section className="py-16 sm:py-24">
@@ -444,7 +482,6 @@ function HomeVI() {
                   ctaHref={pkg.ctaHref}
                   ctaLabel={pkg.ctaLabel}
                   highlight={pkg.highlight}
-                  disclaimer={pkg.disclaimer}
                   cluster={pkg.cluster}
                 />
               </Reveal>

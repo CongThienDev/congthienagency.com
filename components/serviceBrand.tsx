@@ -18,7 +18,15 @@ type BrandStyle = {
 export const SERVICE_BRAND: Record<ServiceBrand, BrandStyle> = {
   website: {
     icon: <IconCode className="h-5 w-5" />,
-    logoImage: <IconCode className="h-5 w-5" />,
+    logoImage: (
+      <Image
+        src="/icon-service/website-icon.svg"
+        alt="Công Thiên Agency"
+        width={26}
+        height={26}
+        className="rounded-[6px] object-contain"
+      />
+    ),
     badge: "bg-blue-600 text-white shadow-blue",
     badgeDark: "bg-blue-600 text-white shadow-blue",
     chip: "border-blue-200 bg-blue-50 text-blue-700",
@@ -28,7 +36,7 @@ export const SERVICE_BRAND: Record<ServiceBrand, BrandStyle> = {
     icon: <IconNaver className="h-[18px] w-[18px]" />,
     logoImage: (
       <Image
-        src="/icon-service/naver-icon.jpeg"
+        src="/icon-service/naver-icon.webp"
         alt="Naver"
         width={24}
         height={24}
@@ -44,7 +52,7 @@ export const SERVICE_BRAND: Record<ServiceBrand, BrandStyle> = {
     icon: <IconMapsColor className="h-[22px] w-[22px]" />,
     logoImage: (
       <Image
-        src="/icon-service/map-icon.png"
+        src="/icon-service/map-icon.webp"
         alt="Google Maps"
         width={26}
         height={26}
