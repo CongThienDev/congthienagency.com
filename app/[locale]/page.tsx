@@ -186,10 +186,11 @@ function ServiceSystemSection() {
 function HomeVI() {
   const c = HOME_VI;
   const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg", "/images/hero/macbook-hero.jpg"]);
-  const pricingPreviewIds = ["website-business", "naver-blogger", "maps-reputation"];
-  const pricingPreview = PRICING_GROUPS.flatMap((g) => g.packages).filter((p) =>
-    pricingPreviewIds.includes(p.id)
-  );
+  const pricingPreviewIds = ["naver-blogger", "website-business", "maps-reputation"];
+  const allPackages = PRICING_GROUPS.flatMap((g) => g.packages);
+  const pricingPreview = pricingPreviewIds.map((id) =>
+    allPackages.find((p) => p.id === id)
+  ).filter(Boolean);
 
   return (
     <Shell locale="vi" alternateKey="home">
@@ -481,7 +482,6 @@ function HomeVI() {
                   ctaHref={pkg.ctaHref}
                   ctaLabel={pkg.ctaLabel}
                   highlight={pkg.highlight}
-                  disclaimer={pkg.disclaimer}
                   cluster={pkg.cluster}
                 />
               </Reveal>
