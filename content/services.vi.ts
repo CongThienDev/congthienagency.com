@@ -530,9 +530,14 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Trang chuyên ngành spa" },
+      { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Ngành · Spa" },
+      { label: "Naver cho nhà hàng", href: "/vi/naver-marketing/cho-nha-hang", note: "Ngành · Nhà hàng" },
+      { label: "Naver cho khách sạn", href: "/vi/naver-marketing/cho-khach-san", note: "Ngành · Khách sạn" },
+      { label: "Naver cho tour", href: "/vi/naver-marketing/cho-tour", note: "Ngành · Tour & trải nghiệm" },
       { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Gói Naver Blogger Review" },
+      { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an", note: "Theo khu vực Hội An" },
       { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Theo khu vực Đà Nẵng" },
+      { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Blog" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/naver-hero.webp", alt: "Naver Marketing tiếp cận khách Hàn Quốc" },
@@ -622,6 +627,7 @@ export const SERVICES: Service[] = [
       { label: "Website spa Hội An", href: "/vi/thiet-ke-website/spa-hoi-an", note: "Nền tảng chốt booking" },
       { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Chi tiết gói blogger" },
       { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Theo khu vực" },
+      { label: "Bộ từ khóa Naver cho du lịch", href: "/vi/blog/bo-tu-khoa-naver-cho-du-lich", note: "Blog" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/naver-spa-hero.webp", alt: "Naver Blog cho spa Hội An Đà Nẵng" },
@@ -704,9 +710,10 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Theo ngành spa" },
+      { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an", note: "Khu vực lân cận" },
+      { label: "Naver cho khách sạn", href: "/vi/naver-marketing/cho-khach-san", note: "Theo ngành khách sạn" },
       { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Chi tiết gói blogger" },
-      { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Tăng uy tín địa phương" },
+      { label: "Vì sao khách Hàn dùng Naver", href: "/vi/blog/vi-sao-khach-han-dung-naver", note: "Blog" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/naver-danang-hero.webp", alt: "Naver Marketing Đà Nẵng cho khách Hàn" },
@@ -791,7 +798,8 @@ export const SERVICES: Service[] = [
     related: [
       { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Áp dụng cho ngành spa" },
       { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Theo khu vực Đà Nẵng" },
-      { label: "Bảng giá", href: "/vi/bang-gia", note: "Chi tiết gói Naver" },
+      { label: "Naver KOC và blogger Hàn", href: "/vi/blog/naver-koc-blogger-han-la-gi", note: "Blog" },
+      { label: "Cách viết bài Naver Blog chuẩn", href: "/vi/blog/cach-viet-bai-naver-blog-chuan", note: "Blog" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/blogger-han-hero.webp", alt: "Booking blogger Hàn Quốc Naver Blogger Review" },
@@ -873,9 +881,14 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Trang dịch vụ chi tiết" },
-      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Nền tảng đi kèm Maps" },
-      { label: "Social Marketing", href: "/vi/social-marketing", note: "Tăng uy tín đa kênh" },
+      { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Chiến lược đánh giá" },
+      { label: "Google Maps cho spa", href: "/vi/google-maps-marketing/cho-spa", note: "Ngành · Spa" },
+      { label: "Google Maps cho nhà hàng", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Ngành · Nhà hàng" },
+      { label: "Google Maps cho khách sạn", href: "/vi/google-maps-marketing/cho-khach-san", note: "Ngành · Khách sạn" },
+      { label: "Google Maps cho tour", href: "/vi/google-maps-marketing/cho-tour", note: "Ngành · Tour & trải nghiệm" },
+      { label: "Local SEO Hội An", href: "/vi/google-maps-marketing/hoi-an", note: "Khu vực · Hội An" },
+      { label: "Local SEO Đà Nẵng", href: "/vi/google-maps-marketing/da-nang", note: "Khu vực · Đà Nẵng" },
+      { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/google-maps-hero.webp", alt: "Google Maps Marketing Hội An Đà Nẵng" },
@@ -963,8 +976,9 @@ export const SERVICES: Service[] = [
     ],
     related: [
       { label: "Google Maps Marketing", href: "/vi/google-maps-marketing", note: "Trang dịch vụ tổng quan" },
-      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Nền tảng đi kèm" },
-      { label: "Bảng giá", href: "/vi/bang-gia", note: "Chi tiết gói Review & Reputation" },
+      { label: "Google Maps cho nhà hàng", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Theo ngành" },
+      { label: "Cách có thêm đánh giá Google thật", href: "/vi/blog/cach-co-them-danh-gia-google-that", note: "Blog" },
+      { label: "Google Business Profile cần có gì", href: "/vi/blog/google-business-profile-can-co-gi", note: "Blog" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/maps-review-hero.webp", alt: "Google Maps Review và Reputation Marketing" },
@@ -1047,14 +1061,1156 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
+      { label: "Hỗ trợ xác minh Fanpage", href: "/vi/social-marketing/xac-minh-fanpage", note: "Dịch vụ · Xác minh" },
+      { label: "Tăng trưởng kênh social", href: "/vi/social-marketing/tang-truong-kenh", note: "Dịch vụ · Tăng trưởng" },
+      { label: "Hỗ trợ khôi phục tài khoản Facebook", href: "/vi/social-marketing/khoi-phuc-tai-khoan-facebook", note: "Dịch vụ · Khôi phục" },
       { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Uy tín đa kênh" },
+      { label: "Social proof là gì", href: "/vi/blog/social-proof-la-gi", note: "Blog" },
       { label: "Bảng giá", href: "/vi/bang-gia", note: "Chi tiết gói Social" },
-      { label: "Liên hệ", href: "/vi/lien-he", note: "Trao đổi nhu cầu cụ thể" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/social-hero.webp", alt: "Social Marketing và hỗ trợ Facebook" },
     ],
     schema: { serviceType: "Social Marketing", offerMinPriceVnd: 3000000 },
+  },
+
+  /* ───────────────────────── NAVER SPOKE — CHO NHÀ HÀNG ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/cho-nha-hang",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver cho nhà hàng", href: "/vi/naver-marketing/cho-nha-hang" },
+    ],
+    primaryKeyword: "Naver Blog cho nhà hàng",
+    metaTitle: "Naver Blog cho nhà hàng: đón khách Hàn tại Hội An – Đà Nẵng | Công Thiên Agency",
+    metaDescription:
+      "Naver Blog cho nhà hàng giúp khách Hàn tìm thấy quán của bạn khi tra “맛집” tại Hội An – Đà Nẵng: booking blogger Hàn, review món ăn và social proof tiếng Hàn.",
+    eyebrow: "Naver · Nhà hàng",
+    h1: "Naver Blog cho nhà hàng: xuất hiện khi khách Hàn tìm quán ngon tại Hội An – Đà Nẵng",
+    heroSub:
+      "Khách Hàn tra “맛집” (quán ngon) trên Naver trước mỗi bữa ăn. Tôi giúp nhà hàng của bạn có bài review tiếng Hàn đáng tin ngay tại điểm đó.",
+    heroCta: "Nhận tư vấn Naver cho nhà hàng qua Zalo",
+    intro:
+      "Với khách Hàn, chọn nơi ăn uống gần như luôn bắt đầu bằng việc tra “맛집” trên Naver. Họ đọc blog review món ăn, xem hình ảnh và không gian rồi mới quyết định. Naver Blog cho nhà hàng tập trung tạo nội dung trải nghiệm ẩm thực thật bằng tiếng Hàn để quán của bạn được chọn.",
+    sections: [
+      {
+        heading: "Khách Hàn chọn quán ăn thế nào?",
+        body:
+          "Họ tìm theo món và khu vực — ví dụ hải sản Đà Nẵng, món Việt phố cổ Hội An — rồi đọc Naver Blog để xem món, giá và cảm nhận của người Hàn khác. Nếu nhà hàng của bạn không có review ở đó, khách sẽ chọn quán đã có.",
+      },
+      {
+        heading: "Naver Blog cho nhà hàng gồm những gì?",
+        bullets: [
+          "Booking blogger Hàn trải nghiệm thực đơn và viết bài thật.",
+          "Nội dung tập trung món signature, không gian và mức giá.",
+          "Tối ưu theo bộ từ khóa ẩm thực mà khách Hàn hay dùng.",
+          "Có thể kết hợp gói tài khoản Naver đăng bài định kỳ.",
+        ],
+      },
+      {
+        heading: "Kết hợp website và Google Maps",
+        body:
+          "Nội dung Naver mạnh nhất khi đi cùng website nhà hàng có menu rõ ràng và hồ sơ Google Maps tối ưu — tạo trải nghiệm tin cậy từ lúc khách Hàn tìm kiếm đến khi đến quán.",
+      },
+    ],
+    whoFor: [
+      "Nhà hàng, quán ăn đón khách Hàn tại Hội An – Đà Nẵng",
+      "Hải sản, đặc sản miền Trung",
+      "Quán món Việt, BBQ, lẩu được khách Hàn yêu thích",
+      "Cafe, nhà hàng view đẹp gần khu khách Hàn lưu trú",
+    ],
+    process: [
+      { step: "Tư vấn", detail: "Phân tích thực đơn và bộ từ khóa ẩm thực cho khách Hàn." },
+      { step: "Chọn blogger", detail: "Tìm blogger Hàn phù hợp phong cách quán." },
+      { step: "Trải nghiệm & viết", detail: "Sắp xếp lịch trải nghiệm và brief nội dung món ăn." },
+      { step: "Đăng & tổng hợp", detail: "Đăng bài, tối ưu từ khóa và bàn giao link." },
+    ],
+    priceFrom: "Naver Blogger Review 8.000.000đ / 4 bài",
+    priceNote: "Có thể kết hợp gói tài khoản + 8 bài/tháng 6.000.000đ/tháng.",
+    proof: {
+      ...PROOF_RUONG,
+      text: "Ruong House cho thấy năng lực xây website trải nghiệm – ẩm thực, nơi nội dung Naver có thể dẫn khách Hàn về một trang dịch vụ chuyên nghiệp.",
+    },
+    faqs: [
+      {
+        q: "Naver Blog cho nhà hàng phù hợp với quán mới mở không?",
+        a: "Có — đây là cách nhanh để tạo review tiếng Hàn đầu tiên, giúp khách Hàn tin tưởng quán chưa có nhiều đánh giá.",
+      },
+      {
+        q: "Một gói gồm bao nhiêu bài?",
+        a: "Gói Naver Blogger Review gồm 4 bài (8.000.000đ); có thể bổ sung gói đăng bài hàng tháng.",
+      },
+      {
+        q: "Nhà hàng cần chuẩn bị gì?",
+        a: "Thực đơn, vài món signature, hình ảnh không gian và lịch để sắp xếp trải nghiệm cho blogger.",
+      },
+      {
+        q: "Có cần website trước không?",
+        a: "Không bắt buộc, nhưng website có menu và đặt bàn giúp chuyển sự quan tâm từ Naver thành khách thực tế hiệu quả hơn.",
+      },
+    ],
+    related: [
+      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Nền tảng đón khách" },
+      { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Ngành cùng cụm Naver" },
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Chi tiết gói blogger" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/naver-nha-hang-hero.webp", alt: "Naver Blog cho nhà hàng Hội An Đà Nẵng" },
+    ],
+    schema: { serviceType: "Naver Blog cho nhà hàng", offerPriceVnd: 8000000 },
+  },
+
+  /* ───────────────────────── NAVER SPOKE — CHO KHÁCH SẠN ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/cho-khach-san",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver cho khách sạn", href: "/vi/naver-marketing/cho-khach-san" },
+    ],
+    primaryKeyword: "Naver Blog cho khách sạn",
+    metaTitle: "Naver Blog cho khách sạn & homestay: đón khách Hàn | Công Thiên Agency",
+    metaDescription:
+      "Naver Blog cho khách sạn, resort, homestay tại Hội An – Đà Nẵng: booking blogger Hàn review phòng và dịch vụ, tạo social proof tiếng Hàn cho khách Hàn đặt phòng.",
+    eyebrow: "Naver · Khách sạn",
+    h1: "Naver Blog cho khách sạn & homestay: tạo niềm tin với khách Hàn trước khi đặt phòng",
+    heroSub:
+      "Khách Hàn đọc review phòng trên Naver trước khi đặt. Tôi giúp khách sạn, resort và homestay của bạn có nội dung tiếng Hàn đáng tin tại điểm đó.",
+    heroCta: "Nhận tư vấn Naver cho khách sạn qua Zalo",
+    intro:
+      "Đặt phòng là quyết định cần nhiều niềm tin, và khách Hàn thường đọc Naver Blog để xem phòng thật, dịch vụ và vị trí trước khi chốt. Naver Blog cho khách sạn tập trung tạo nội dung trải nghiệm lưu trú bằng tiếng Hàn, giúp khách yên tâm chọn cơ sở của bạn giữa nhiều lựa chọn.",
+    sections: [
+      {
+        heading: "Vì sao khách sạn cần nội dung Naver?",
+        bullets: [
+          "Khách Hàn so sánh nhiều cơ sở và tin review thật hơn ảnh quảng cáo.",
+          "Naver Blog cho thấy phòng thật, tiện ích, bữa sáng và vị trí.",
+          "Đặt phòng giá trị cao cần social proof bằng chính ngôn ngữ của khách.",
+          "Cạnh tranh lưu trú cho khách Hàn tại Hội An – Đà Nẵng rất lớn.",
+        ],
+      },
+      {
+        heading: "Naver Blog cho khách sạn gồm những gì?",
+        body:
+          "Blogger Hàn trải nghiệm lưu trú và viết bài về phòng, dịch vụ, không gian chung và trải nghiệm xung quanh. Nội dung tối ưu theo bộ từ khóa khách sạn/homestay mà khách Hàn hay tìm, kèm hình ảnh thật của cơ sở.",
+      },
+      {
+        heading: "Kết hợp website đặt phòng và Google Maps",
+        body:
+          "Nội dung Naver phát huy tốt nhất khi dẫn khách về website có thông tin phòng, giá và kênh đặt rõ ràng, cùng hồ sơ Google Maps được tối ưu — tạo hành trình tin cậy từ tìm kiếm đến đặt phòng.",
+      },
+    ],
+    whoFor: [
+      "Khách sạn, resort đón khách Hàn",
+      "Homestay, villa khu phố cổ / ven biển",
+      "Boutique hotel muốn tạo review tiếng Hàn",
+      "Cơ sở lưu trú mới cần xây niềm tin ban đầu",
+    ],
+    process: [
+      { step: "Tư vấn", detail: "Xác định loại phòng, dịch vụ và bộ từ khóa cho khách Hàn." },
+      { step: "Chọn blogger", detail: "Tìm blogger Hàn phù hợp phân khúc lưu trú." },
+      { step: "Trải nghiệm & viết", detail: "Sắp xếp lưu trú trải nghiệm và brief nội dung." },
+      { step: "Đăng & tổng hợp", detail: "Đăng bài, tối ưu từ khóa và bàn giao link." },
+    ],
+    priceFrom: "Naver Blogger Review 8.000.000đ / 4 bài",
+    priceNote: "Có thể kết hợp gói tài khoản + 8 bài/tháng 6.000.000đ/tháng.",
+    faqs: [
+      {
+        q: "Naver Blog cho khách sạn phù hợp với cơ sở mới không?",
+        a: "Rất phù hợp — review tiếng Hàn đầu tiên giúp cơ sở mới tạo niềm tin với khách Hàn khi chưa có nhiều đánh giá.",
+      },
+      {
+        q: "Blogger có ở lại trải nghiệm thật không?",
+        a: "Có — blogger Hàn trải nghiệm lưu trú thực tế rồi viết bài, đó là điều tạo độ tin cậy với người đọc.",
+      },
+      {
+        q: "Khách sạn cần chuẩn bị gì?",
+        a: "Một đêm lưu trú trải nghiệm, thông tin loại phòng/dịch vụ, hình ảnh và lịch phù hợp để sắp xếp.",
+      },
+      {
+        q: "Chi phí bắt đầu từ bao nhiêu?",
+        a: "Gói Naver Blogger Review từ 8.000.000đ/4 bài; chiến dịch KOC quy mô lớn báo giá riêng.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Thị trường khách Hàn lớn" },
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Chi tiết gói blogger" },
+      { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Uy tín địa phương" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/naver-khach-san-hero.webp", alt: "Naver Blog cho khách sạn homestay Hội An Đà Nẵng" },
+    ],
+    schema: { serviceType: "Naver Blog cho khách sạn", offerPriceVnd: 8000000 },
+  },
+
+  /* ───────────────────────── NAVER SPOKE — CHO TOUR ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/cho-tour",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver cho tour", href: "/vi/naver-marketing/cho-tour" },
+    ],
+    primaryKeyword: "Naver Blog cho tour",
+    metaTitle: "Naver Blog cho tour & trải nghiệm: đón khách Hàn | Công Thiên Agency",
+    metaDescription:
+      "Naver Blog cho tour, cooking class và trải nghiệm tại Hội An – Đà Nẵng: booking blogger Hàn review lịch trình thật, tạo social proof tiếng Hàn để khách Hàn đặt tour.",
+    eyebrow: "Naver · Tour & trải nghiệm",
+    h1: "Naver Blog cho tour & trải nghiệm: giúp khách Hàn đặt tour của bạn tại Hội An – Đà Nẵng",
+    heroSub:
+      "Khách Hàn lên kế hoạch tour trước chuyến đi và đọc review trên Naver. Tôi giúp tour của bạn có nội dung trải nghiệm tiếng Hàn đáng tin.",
+    heroCta: "Nhận tư vấn Naver cho tour qua Zalo",
+    intro:
+      "Khách Hàn thường đặt tour, cooking class và trải nghiệm từ trước chuyến đi, sau khi đọc Naver Blog để hình dung lịch trình và cảm nhận thật. Naver Blog cho tour tập trung kể lại trải nghiệm bằng tiếng Hàn, giúp khách hình dung rõ và yên tâm đặt chỗ.",
+    sections: [
+      {
+        heading: "Khách Hàn chọn tour thế nào?",
+        body:
+          "Họ tìm trên Naver theo loại trải nghiệm và địa danh, đọc blog mô tả lịch trình, thời lượng, điểm đến và cảm nhận. Một bài review chi tiết bằng tiếng Hàn giúp khách quyết định nhanh và tin tưởng hơn.",
+      },
+      {
+        heading: "Naver Blog cho tour gồm những gì?",
+        bullets: [
+          "Booking blogger Hàn tham gia trải nghiệm thật và viết bài.",
+          "Nội dung mô tả lịch trình, điểm nhấn và cảm xúc trải nghiệm.",
+          "Tối ưu theo bộ từ khóa tour/trải nghiệm khách Hàn hay tìm.",
+          "Có thể kết hợp gói tài khoản Naver đăng bài định kỳ.",
+        ],
+      },
+      {
+        heading: "Kết hợp website booking để chốt đặt chỗ",
+        body:
+          "Nội dung Naver dẫn khách về website tour có lịch trình, giá và đặt chỗ – thanh toán online (như mô hình đã làm cho Ruong House) — biến sự quan tâm thành booking thực tế.",
+      },
+    ],
+    whoFor: [
+      "Tour, cooking class, craft workshop đón khách Hàn",
+      "Trải nghiệm địa phương tại Hội An – Đà Nẵng",
+      "Dịch vụ tham quan, half-day/full-day tour",
+      "Doanh nghiệp trải nghiệm muốn tạo review tiếng Hàn",
+    ],
+    process: [
+      { step: "Tư vấn", detail: "Xác định loại trải nghiệm và bộ từ khóa cho khách Hàn." },
+      { step: "Chọn blogger", detail: "Tìm blogger Hàn phù hợp loại tour." },
+      { step: "Trải nghiệm & viết", detail: "Sắp xếp tham gia tour và brief nội dung lịch trình." },
+      { step: "Đăng & tổng hợp", detail: "Đăng bài, tối ưu từ khóa và bàn giao link." },
+    ],
+    priceFrom: "Naver Blogger Review 8.000.000đ / 4 bài",
+    priceNote: "Có thể kết hợp gói tài khoản + 8 bài/tháng 6.000.000đ/tháng.",
+    proof: {
+      ...PROOF_RUONG,
+      text: "Ruong House — website cooking class & trải nghiệm có booking và thanh toán, là ví dụ nơi nội dung Naver dẫn khách Hàn về trang đặt chỗ chuyên nghiệp.",
+    },
+    faqs: [
+      {
+        q: "Naver Blog cho tour phù hợp loại trải nghiệm nào?",
+        a: "Cooking class, craft workshop, tour tham quan và trải nghiệm địa phương — những loại khách Hàn đặt trước chuyến đi.",
+      },
+      {
+        q: "Một gói gồm bao nhiêu bài?",
+        a: "Gói Naver Blogger Review gồm 4 bài (8.000.000đ); có thể bổ sung gói đăng bài hàng tháng.",
+      },
+      {
+        q: "Cần chuẩn bị gì cho buổi trải nghiệm?",
+        a: "Một suất tour/trải nghiệm, thông tin lịch trình, điểm nhấn và lịch phù hợp để sắp xếp cho blogger.",
+      },
+      {
+        q: "Có cần website đặt tour trước không?",
+        a: "Không bắt buộc, nhưng website có lịch trình và đặt chỗ online giúp chuyển quan tâm từ Naver thành booking hiệu quả hơn.",
+      },
+    ],
+    related: [
+      { label: "Website cooking class Hội An", href: "/vi/thiet-ke-website/cooking-class-hoi-an", note: "Nền tảng đặt tour" },
+      { label: "Case study Ruong House", href: "/vi/du-an/ruong-house", note: "Dự án tham khảo" },
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Chi tiết gói blogger" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/naver-tour-hero.webp", alt: "Naver Blog cho tour trải nghiệm Hội An Đà Nẵng" },
+    ],
+    schema: { serviceType: "Naver Blog cho tour", offerPriceVnd: 8000000 },
+  },
+
+  /* ───────────────────────── NAVER SPOKE — HỘI AN ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/hoi-an",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an" },
+    ],
+    primaryKeyword: "Naver Marketing Hội An",
+    metaTitle: "Naver Marketing Hội An: tiếp cận khách Hàn phố cổ | Công Thiên Agency",
+    metaDescription:
+      "Naver Marketing Hội An cho spa, nhà hàng, homestay, cooking class và tour: booking blogger Hàn, nội dung Naver Blog và social proof tiếng Hàn cho khách Hàn đến phố cổ.",
+    eyebrow: "Naver · Hội An",
+    h1: "Naver Marketing Hội An — đưa doanh nghiệp phố cổ đến đúng nơi khách Hàn tìm kiếm",
+    heroSub:
+      "Khách Hàn đến Hội An thường lên kế hoạch kỹ và đặt trước qua Naver. Tôi giúp doanh nghiệp của bạn hiện diện đúng nơi họ ra quyết định.",
+    heroCta: "Nhận tư vấn Naver Hội An qua Zalo",
+    intro:
+      "Hội An là điểm đến di sản mà khách Hàn yêu thích — nhưng cũng là nơi họ chuẩn bị rất kỹ trước khi đến: tra cứu spa, quán ăn, homestay và lớp trải nghiệm trên Naver từ trước chuyến đi. Khác với Đà Nẵng nghiêng về resort biển quy mô lớn, Hội An mang tính trải nghiệm, boutique và đi bộ. Naver Marketing tại Hội An tập trung tạo nội dung tiếng Hàn đúng với ngữ cảnh đó để doanh nghiệp của bạn được chọn.",
+    sections: [
+      {
+        heading: "Vì sao Hội An cần cách tiếp cận Naver riêng?",
+        bullets: [
+          "Khách Hàn đến Hội An thường đặt trải nghiệm trước chuyến đi nhiều hơn quyết định tại chỗ.",
+          "Phố cổ thiên về boutique spa, homestay, cooking class — cần nội dung kể trải nghiệm, không phải quảng cáo.",
+          "Nhiều khách đi Hội An như chuyến trong ngày từ Đà Nẵng, nên thông tin lịch trình rõ ràng rất quan trọng.",
+          "Yếu tố di sản, không gian và câu chuyện địa phương là điểm khách Hàn đặc biệt thích chia sẻ trên Naver Blog.",
+        ],
+      },
+      {
+        heading: "Naver Marketing Hội An gồm những gì?",
+        body:
+          "Tôi chọn blogger Hàn phù hợp với tệp khách đến phố cổ, sắp xếp trải nghiệm thật tại doanh nghiệp của bạn và tạo nội dung Naver Blog tối ưu theo bộ từ khóa khách Hàn dùng cho Hội An. Nội dung tập trung không gian, trải nghiệm và cảm nhận — đúng chất Hội An.",
+      },
+      {
+        heading: "Phù hợp với nhiều ngành tại phố cổ",
+        body:
+          "Spa và wellness, nhà hàng và quán đặc sản, homestay và villa, cooking class và craft workshop — mỗi ngành có bộ từ khóa và cách kể chuyện riêng. Tôi triển khai theo từng ngành thay vì dùng một nội dung chung.",
+      },
+      {
+        heading: "Kết hợp website và Google Maps để khép kín hành trình",
+        body:
+          "Nội dung Naver dẫn khách Hàn về website có thông tin và đặt dịch vụ rõ ràng (như mô hình đã làm cho Ruong House và Serena Retreat), cùng hồ sơ Google Maps tối ưu — tạo trải nghiệm tin cậy từ tìm kiếm trên Naver đến lúc đặt và đến nơi.",
+      },
+    ],
+    whoFor: [
+      "Spa, wellness boutique tại khu phố cổ Hội An",
+      "Nhà hàng, quán đặc sản phục vụ khách Hàn",
+      "Homestay, villa, boutique hotel tại Hội An",
+      "Cooking class, craft workshop và tour trải nghiệm",
+    ],
+    process: [
+      { step: "Tư vấn", detail: "Xác định ngành, tệp khách Hàn và bộ từ khóa Naver cho Hội An." },
+      { step: "Chọn blogger", detail: "Tìm blogger Hàn phù hợp trải nghiệm phố cổ." },
+      { step: "Triển khai", detail: "Sắp xếp trải nghiệm thật, viết và đăng nội dung tối ưu." },
+      { step: "Tổng hợp", detail: "Bàn giao link bài và đánh giá hiệu quả nội dung." },
+    ],
+    priceFrom: "Naver Blogger Review từ 8.000.000đ / 4 bài",
+    priceNote: "Gói tài khoản + 8 bài/tháng: 6.000.000đ/tháng. KOC báo giá theo chiến dịch.",
+    proof: {
+      ...PROOF_RUONG,
+      text: "Ruong House — website cooking class & craft workshop tại Hội An, là ví dụ nơi nội dung Naver có thể dẫn khách Hàn về trang đặt trải nghiệm chuyên nghiệp.",
+    },
+    faqs: [
+      {
+        q: "Naver Marketing Hội An khác Đà Nẵng thế nào?",
+        a: "Hội An thiên về trải nghiệm, boutique và di sản; Đà Nẵng nghiêng về resort biển quy mô lớn. Bộ từ khóa, blogger và cách kể chuyện được tối ưu riêng cho từng ngữ cảnh.",
+      },
+      {
+        q: "Ngành nào ở Hội An hợp với Naver nhất?",
+        a: "Spa, nhà hàng, homestay/villa và cooking class — những ngành khách Hàn tra cứu và đặt trước nhiều trên Naver.",
+      },
+      {
+        q: "Doanh nghiệp nhỏ ở phố cổ có làm được không?",
+        a: "Rất phù hợp — Naver Blog đặc biệt hiệu quả với mô hình boutique, nơi trải nghiệm thật và câu chuyện địa phương tạo khác biệt.",
+      },
+      {
+        q: "Chi phí bắt đầu từ bao nhiêu?",
+        a: "Gói Naver Blogger Review từ 8.000.000đ/4 bài; gói tài khoản đăng bài hàng tháng 6.000.000đ/tháng; KOC báo giá theo chiến dịch.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Khu vực lân cận" },
+      { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Theo ngành" },
+      { label: "Naver cho tour", href: "/vi/naver-marketing/cho-tour", note: "Trải nghiệm phố cổ" },
+      { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/naver-hoi-an-hero.webp", alt: "Naver Marketing Hội An cho khách Hàn" },
+    ],
+    schema: { serviceType: "Naver Marketing Hội An", offerMinPriceVnd: 8000000 },
+  },
+
+  /* ───────────────────────── MAPS SPOKE — CHO SPA ───────────────────────── */
+  {
+    path: "/vi/google-maps-marketing/cho-spa",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
+      { label: "Google Maps cho spa", href: "/vi/google-maps-marketing/cho-spa" },
+    ],
+    primaryKeyword: "Google Maps cho spa",
+    metaTitle: "Google Maps cho spa: tăng hiển thị & đánh giá thật | Công Thiên Agency",
+    metaDescription:
+      "Tối ưu Google Business Profile cho spa tại Hội An – Đà Nẵng: danh mục, hình ảnh treatment, đánh giá từ khách hàng thật và Local SEO để khách tìm thấy spa của bạn.",
+    eyebrow: "Google Maps · Spa",
+    h1: "Google Maps cho spa: xuất hiện khi khách tìm “spa gần đây” tại Hội An – Đà Nẵng",
+    heroSub:
+      "Phần lớn khách tìm spa ngay khi đang ở gần. Tôi tối ưu hồ sơ Google Maps và xây đánh giá thật để spa của bạn được chọn.",
+    heroCta: "Nhận tư vấn Google Maps cho spa qua Zalo",
+    intro:
+      "Khách của spa thường tìm dịch vụ ngay khi đang ở Hội An hoặc Đà Nẵng, qua truy vấn như “spa gần đây”, “massage phố cổ” hay “spa Hội An”. Google Maps là nơi họ so sánh và chọn. Dịch vụ tập trung tối ưu hồ sơ spa và xây đánh giá thật để bạn nổi bật ngay tại bước quyết định.",
+    sections: [
+      {
+        heading: "Vì sao spa phụ thuộc nhiều vào Google Maps?",
+        bullets: [
+          "Khách du lịch tìm spa theo vị trí và chọn trong vài lựa chọn gần nhất.",
+          "Số sao, đánh giá và hình ảnh treatment quyết định ấn tượng đầu tiên.",
+          "Hồ sơ thiếu ảnh không gian thư giãn khiến spa kém hấp dẫn.",
+          "Cạnh tranh spa tại khu phố cổ và ven biển rất cao.",
+        ],
+      },
+      {
+        heading: "Tối ưu hồ sơ spa gồm những gì?",
+        body:
+          "Hoàn thiện Google Business Profile với danh mục spa chính xác, hình ảnh không gian và treatment, danh sách dịch vụ, giờ mở cửa và bài đăng cập nhật. Song song là quy trình thu hút đánh giá thật từ khách sau liệu trình — đúng chính sách Google.",
+      },
+      {
+        heading: "Kết hợp website spa và Naver cho khách Hàn",
+        body:
+          "Hồ sơ Google Maps mạnh hơn khi đi cùng website spa có đặt lịch (như Serena Retreat) và thông tin nhất quán. Với spa đón khách Hàn, có thể kết hợp Naver để phủ cả kênh tìm kiếm của người Hàn.",
+      },
+    ],
+    whoFor: [
+      "Spa, day spa, massage tại Hội An – Đà Nẵng",
+      "Trung tâm wellness, trị liệu",
+      "Spa đón khách du lịch và khách quốc tế",
+      "Spa mới mở cần xây đánh giá ban đầu",
+    ],
+    process: [
+      { step: "Audit hồ sơ", detail: "Rà soát hồ sơ Google Maps spa hiện tại." },
+      { step: "Tối ưu", detail: "Hoàn thiện danh mục, hình ảnh treatment, dịch vụ, mô tả." },
+      { step: "Quy trình review", detail: "Thiết lập cách thu hút đánh giá thật sau liệu trình." },
+      { step: "Đo lường", detail: "Theo dõi hiển thị, đánh giá và đề xuất tiếp theo." },
+    ],
+    priceFrom: "Từ 3.500.000đ / chiến dịch",
+    priceNote: "Báo giá tùy hiện trạng hồ sơ và phạm vi tối ưu.",
+    proof: {
+      ...PROOF_SERENA,
+      text: "Serena Retreat — website spa tại Hội An kèm hỗ trợ tạo Google Maps, ví dụ về hồ sơ địa phương đồng bộ với website đặt lịch.",
+    },
+    faqs: [
+      {
+        q: "Dịch vụ có mua đánh giá cho spa không?",
+        a: "Không. Tôi tối ưu hồ sơ và xây quy trình thu hút đánh giá từ khách thật sau liệu trình, đúng chính sách Google.",
+      },
+      {
+        q: "Spa mới mở chưa có đánh giá thì bắt đầu thế nào?",
+        a: "Bắt đầu bằng hồ sơ hoàn chỉnh và quy trình mời khách hài lòng đánh giá ngay sau dịch vụ để tích lũy đánh giá thật đầu tiên.",
+      },
+      {
+        q: "Bao lâu spa thấy thay đổi?",
+        a: "Tối ưu hồ sơ có hiệu lực ngay; đánh giá và uy tín tăng dần theo lượng khách thật và quy trình triển khai.",
+      },
+      {
+        q: "Có cần website spa không?",
+        a: "Không bắt buộc, nhưng website spa có đặt lịch giúp hồ sơ Maps mạnh hơn nhờ thông tin nhất quán.",
+      },
+    ],
+    related: [
+      { label: "Website spa Hội An", href: "/vi/thiet-ke-website/spa-hoi-an", note: "Nền tảng đi kèm" },
+      { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Kênh khách Hàn" },
+      { label: "Google Business Profile cần có gì", href: "/vi/blog/google-business-profile-can-co-gi", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/maps-spa-hero.webp", alt: "Google Maps cho spa Hội An Đà Nẵng" },
+    ],
+    schema: { serviceType: "Google Maps cho spa", offerMinPriceVnd: 3500000 },
+  },
+
+  /* ───────────────────────── MAPS SPOKE — CHO NHÀ HÀNG ───────────────────────── */
+  {
+    path: "/vi/google-maps-marketing/cho-nha-hang",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
+      { label: "Google Maps cho nhà hàng", href: "/vi/google-maps-marketing/cho-nha-hang" },
+    ],
+    primaryKeyword: "Google Maps cho nhà hàng",
+    metaTitle: "Google Maps cho nhà hàng: tăng khách & đánh giá thật | Công Thiên Agency",
+    metaDescription:
+      "Tối ưu Google Business Profile cho nhà hàng tại Hội An – Đà Nẵng: danh mục, ảnh món ăn, menu, đánh giá từ khách thật và Local SEO để khách tìm thấy quán của bạn.",
+    eyebrow: "Google Maps · Nhà hàng",
+    h1: "Google Maps cho nhà hàng: nổi bật khi khách tìm chỗ ăn tại Hội An – Đà Nẵng",
+    heroSub:
+      "Khách du lịch chọn quán ăn ngay trên Google Maps qua hình ảnh và đánh giá. Tôi tối ưu hồ sơ và xây đánh giá thật để quán bạn được chọn.",
+    heroCta: "Nhận tư vấn Google Maps cho nhà hàng qua Zalo",
+    intro:
+      "Trước mỗi bữa ăn, khách du lịch mở Google Maps tìm “nhà hàng Hội An”, “quán ngon gần đây” hay món cụ thể, rồi chọn dựa trên hình ảnh món ăn và số sao. Một hồ sơ nhà hàng đầy đủ và nhiều đánh giá thật tạo lợi thế rõ rệt tại đúng bước quyết định.",
+    sections: [
+      {
+        heading: "Khách chọn quán ăn trên Google Maps thế nào?",
+        bullets: [
+          "Tìm theo món và khu vực rồi so sánh vài quán gần nhất.",
+          "Ảnh món ăn và không gian quyết định khách có ghé hay không.",
+          "Số sao và đánh giá gần đây ảnh hưởng mạnh đến lựa chọn.",
+          "Menu, giờ mở cửa và vị trí rõ ràng giúp khách quyết định nhanh.",
+        ],
+      },
+      {
+        heading: "Tối ưu hồ sơ nhà hàng gồm những gì?",
+        body:
+          "Hoàn thiện Google Business Profile với danh mục ẩm thực chính xác, ảnh món signature và không gian, menu và giá tham khảo, giờ mở cửa và bài đăng. Đồng thời xây quy trình mời khách hài lòng để lại đánh giá thật sau bữa ăn.",
+      },
+      {
+        heading: "Kết hợp website nhà hàng và uy tín đa kênh",
+        body:
+          "Hồ sơ Maps mạnh hơn khi đi cùng website có menu rõ ràng và thông tin nhất quán. Với quán đón khách Hàn, nội dung Naver có thể bổ trợ để phủ thêm kênh tìm kiếm của người Hàn.",
+      },
+    ],
+    whoFor: [
+      "Nhà hàng, quán ăn tại Hội An – Đà Nẵng",
+      "Hải sản, đặc sản miền Trung",
+      "Cafe, brunch, không gian view đẹp",
+      "Quán phục vụ khách du lịch quốc tế",
+    ],
+    process: [
+      { step: "Audit hồ sơ", detail: "Rà soát hồ sơ Google Maps nhà hàng hiện tại." },
+      { step: "Tối ưu", detail: "Hoàn thiện danh mục, ảnh món, menu, mô tả, bài đăng." },
+      { step: "Quy trình review", detail: "Thiết lập cách thu hút đánh giá thật sau bữa ăn." },
+      { step: "Đo lường", detail: "Theo dõi hiển thị, đánh giá và đề xuất tiếp theo." },
+    ],
+    priceFrom: "Từ 3.500.000đ / chiến dịch",
+    priceNote: "Báo giá tùy hiện trạng hồ sơ và phạm vi tối ưu.",
+    proof: {
+      ...PROOF_RUONG,
+      text: "Ruong House — dự án trải nghiệm – ẩm thực tại Hội An kèm hỗ trợ tạo Google Maps, ví dụ về hồ sơ địa phương đồng bộ với website.",
+    },
+    faqs: [
+      {
+        q: "Dịch vụ có mua đánh giá cho nhà hàng không?",
+        a: "Không. Tôi tối ưu hồ sơ và xây quy trình thu hút đánh giá từ khách thật sau bữa ăn, đúng chính sách Google.",
+      },
+      {
+        q: "Ảnh món ăn quan trọng thế nào?",
+        a: "Rất quan trọng — ảnh món và không gian là yếu tố khách xem đầu tiên và thường quyết định họ có ghé quán hay không.",
+      },
+      {
+        q: "Quán mới mở nên bắt đầu từ đâu?",
+        a: "Hồ sơ hoàn chỉnh với ảnh món đẹp và quy trình mời khách đánh giá ngay sau bữa ăn để tích lũy đánh giá thật.",
+      },
+      {
+        q: "Có cần website nhà hàng không?",
+        a: "Không bắt buộc, nhưng website có menu giúp hồ sơ Maps mạnh hơn nhờ thông tin nhất quán.",
+      },
+    ],
+    related: [
+      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Nền tảng đi kèm" },
+      { label: "Naver cho nhà hàng", href: "/vi/naver-marketing/cho-nha-hang", note: "Kênh khách Hàn" },
+      { label: "Vì sao hình ảnh Google Maps quan trọng", href: "/vi/blog/vi-sao-hinh-anh-google-maps-quan-trong", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/maps-nha-hang-hero.webp", alt: "Google Maps cho nhà hàng Hội An Đà Nẵng" },
+    ],
+    schema: { serviceType: "Google Maps cho nhà hàng", offerMinPriceVnd: 3500000 },
+  },
+
+  /* ───────────────────────── MAPS SPOKE — CHO KHÁCH SẠN ───────────────────────── */
+  {
+    path: "/vi/google-maps-marketing/cho-khach-san",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
+      { label: "Google Maps cho khách sạn", href: "/vi/google-maps-marketing/cho-khach-san" },
+    ],
+    primaryKeyword: "Google Maps cho khách sạn",
+    metaTitle: "Google Maps cho khách sạn & homestay: uy tín đặt phòng | Công Thiên Agency",
+    metaDescription:
+      "Tối ưu Google Business Profile cho khách sạn, resort, homestay tại Hội An – Đà Nẵng: hình ảnh phòng, tiện ích, đánh giá từ khách thật và Local SEO tăng uy tín đặt phòng.",
+    eyebrow: "Google Maps · Khách sạn",
+    h1: "Google Maps cho khách sạn & homestay: xây uy tín trước khi khách đặt phòng",
+    heroSub:
+      "Khách so sánh nơi lưu trú qua đánh giá và hình ảnh trên Google Maps. Tôi tối ưu hồ sơ và xây đánh giá thật để cơ sở của bạn nổi bật.",
+    heroCta: "Nhận tư vấn Google Maps cho khách sạn qua Zalo",
+    intro:
+      "Đặt phòng là quyết định cần nhiều niềm tin. Khách thường kiểm tra Google Maps để xem phòng thật, tiện ích, vị trí và đánh giá trước khi chốt — kể cả khi đã thấy cơ sở trên kênh đặt phòng khác. Một hồ sơ đầy đủ và nhiều đánh giá thật giúp khách sạn, resort và homestay của bạn tạo lợi thế.",
+    sections: [
+      {
+        heading: "Vì sao khách sạn cần hồ sơ Google Maps mạnh?",
+        bullets: [
+          "Khách kiểm tra đánh giá và hình ảnh phòng trước khi đặt.",
+          "Vị trí và chỉ đường trên Maps ảnh hưởng đến trải nghiệm khách.",
+          "Đánh giá gần đây phản ánh chất lượng dịch vụ hiện tại.",
+          "Cạnh tranh lưu trú tại Hội An – Đà Nẵng rất lớn.",
+        ],
+      },
+      {
+        heading: "Tối ưu hồ sơ khách sạn gồm những gì?",
+        body:
+          "Hoàn thiện Google Business Profile với danh mục lưu trú chính xác, hình ảnh phòng và không gian chung, tiện ích, mô tả và bài đăng. Song song là quy trình mời khách để lại đánh giá thật khi trả phòng — đúng chính sách Google.",
+      },
+      {
+        heading: "Kết hợp website đặt phòng và Naver cho khách Hàn",
+        body:
+          "Hồ sơ Maps mạnh hơn khi đi cùng website có thông tin phòng, giá và kênh đặt rõ ràng. Với cơ sở đón nhiều khách Hàn, nội dung Naver bổ trợ để phủ thêm kênh tìm kiếm của người Hàn.",
+      },
+    ],
+    whoFor: [
+      "Khách sạn, resort tại Hội An – Đà Nẵng",
+      "Homestay, villa khu phố cổ / ven biển",
+      "Boutique hotel cần xây đánh giá",
+      "Cơ sở lưu trú mới cần tạo niềm tin ban đầu",
+    ],
+    process: [
+      { step: "Audit hồ sơ", detail: "Rà soát hồ sơ Google Maps lưu trú hiện tại." },
+      { step: "Tối ưu", detail: "Hoàn thiện danh mục, ảnh phòng, tiện ích, mô tả, bài đăng." },
+      { step: "Quy trình review", detail: "Thiết lập cách thu hút đánh giá thật khi khách trả phòng." },
+      { step: "Đo lường", detail: "Theo dõi hiển thị, đánh giá và đề xuất tiếp theo." },
+    ],
+    priceFrom: "Từ 3.500.000đ / chiến dịch",
+    priceNote: "Báo giá tùy hiện trạng hồ sơ và phạm vi tối ưu.",
+    faqs: [
+      {
+        q: "Dịch vụ có mua đánh giá cho khách sạn không?",
+        a: "Không. Tôi tối ưu hồ sơ và xây quy trình thu hút đánh giá từ khách thật khi trả phòng, đúng chính sách Google.",
+      },
+      {
+        q: "Đã có trên kênh đặt phòng khác, vẫn cần Google Maps chứ?",
+        a: "Có — nhiều khách kiểm tra chéo Google Maps để xem đánh giá và hình ảnh trước khi quyết định, kể cả khi đã thấy cơ sở nơi khác.",
+      },
+      {
+        q: "Cơ sở mới nên bắt đầu thế nào?",
+        a: "Hồ sơ hoàn chỉnh với ảnh phòng thật và quy trình mời khách đánh giá khi trả phòng để tích lũy đánh giá thật đầu tiên.",
+      },
+      {
+        q: "Có cần website đặt phòng không?",
+        a: "Không bắt buộc, nhưng website có thông tin phòng giúp hồ sơ Maps mạnh hơn nhờ thông tin nhất quán.",
+      },
+    ],
+    related: [
+      { label: "Naver cho khách sạn", href: "/vi/naver-marketing/cho-khach-san", note: "Kênh khách Hàn" },
+      { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Chiến lược đánh giá" },
+      { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/maps-khach-san-hero.webp", alt: "Google Maps cho khách sạn homestay Hội An Đà Nẵng" },
+    ],
+    schema: { serviceType: "Google Maps cho khách sạn", offerMinPriceVnd: 3500000 },
+  },
+
+  /* ───────────────────────── MAPS SPOKE — HỘI AN (LOCAL SEO) ───────────────────────── */
+  {
+    path: "/vi/google-maps-marketing/hoi-an",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
+      { label: "Local SEO Hội An", href: "/vi/google-maps-marketing/hoi-an" },
+    ],
+    primaryKeyword: "Local SEO Hội An",
+    metaTitle: "Local SEO Hội An: tối ưu Google Maps cho doanh nghiệp phố cổ | Công Thiên Agency",
+    metaDescription:
+      "Local SEO Hội An: tối ưu Google Business Profile và đánh giá thật để spa, nhà hàng, homestay và tour xuất hiện khi khách tìm dịch vụ tại Hội An và khu phố cổ.",
+    eyebrow: "Google Maps · Hội An",
+    h1: "Local SEO Hội An — giúp doanh nghiệp phố cổ hiển thị khi khách tìm trên Google Maps",
+    heroSub:
+      "Khách đến Hội An tìm dịch vụ ngay trên điện thoại. Tôi tối ưu hồ sơ Google Maps và đánh giá thật để bạn xuất hiện đúng lúc đó.",
+    heroCta: "Nhận tư vấn Local SEO Hội An qua Zalo",
+    intro:
+      "Hội An là điểm đến đi bộ, nơi khách du lịch liên tục tìm spa, quán ăn, homestay và trải nghiệm ngay khi đang ở phố cổ. Local SEO Hội An tập trung giúp doanh nghiệp hiển thị trên Google Maps và kết quả địa phương đúng lúc khách đang tìm — yếu tố quyết định với mô hình phục vụ khách du lịch.",
+    sections: [
+      {
+        heading: "Vì sao Local SEO quan trọng tại Hội An?",
+        bullets: [
+          "Khách du lịch tìm dịch vụ theo vị trí, ngay khi đang ở phố cổ.",
+          "Quyết định nhanh dựa trên số sao, hình ảnh và khoảng cách.",
+          "Mật độ doanh nghiệp dịch vụ tại khu phố cổ rất cao.",
+          "Nhiều khách đi Hội An trong ngày từ Đà Nẵng, cần thông tin rõ ràng.",
+        ],
+      },
+      {
+        heading: "Local SEO Hội An gồm những gì?",
+        body:
+          "Tối ưu Google Business Profile với danh mục và thông tin chính xác, hình ảnh thật, đồng bộ NAP giữa hồ sơ và website, xây đánh giá từ khách hàng thật và duy trì bài đăng. Mục tiêu là tăng độ liên quan và độ nổi bật của hồ sơ trong khu vực Hội An.",
+      },
+      {
+        heading: "Phù hợp với doanh nghiệp phố cổ",
+        body:
+          "Spa boutique, nhà hàng đặc sản, homestay, villa và cooking class — những mô hình đặc trưng của Hội An — đều hưởng lợi từ Local SEO. Có thể kết hợp Naver Marketing Hội An để phủ thêm nhóm khách Hàn.",
+      },
+    ],
+    whoFor: [
+      "Spa, wellness tại khu phố cổ Hội An",
+      "Nhà hàng, quán đặc sản phục vụ khách du lịch",
+      "Homestay, villa, boutique hotel tại Hội An",
+      "Cooking class, workshop và tour trải nghiệm",
+    ],
+    process: [
+      { step: "Audit hồ sơ", detail: "Rà soát hồ sơ Google Maps và hiển thị địa phương tại Hội An." },
+      { step: "Tối ưu", detail: "Hoàn thiện hồ sơ, đồng bộ NAP với website, cập nhật hình ảnh." },
+      { step: "Quy trình review", detail: "Thiết lập cách thu hút đánh giá thật từ khách." },
+      { step: "Đo lường", detail: "Theo dõi hiển thị địa phương và đề xuất tiếp theo." },
+    ],
+    priceFrom: "Từ 3.500.000đ / chiến dịch",
+    priceNote: "Báo giá tùy ngành, hiện trạng hồ sơ và phạm vi tối ưu.",
+    proof: {
+      ...PROOF_RUONG,
+      text: "Ruong House tại Hội An — website kèm hỗ trợ tạo Google Maps, ví dụ về hồ sơ địa phương đồng bộ với website đặt trải nghiệm.",
+    },
+    faqs: [
+      {
+        q: "Local SEO Hội An khác Google Maps Marketing chung thế nào?",
+        a: "Đây là cùng phương pháp nhưng tập trung vào hiển thị trong khu vực Hội An và đặc thù khách du lịch phố cổ.",
+      },
+      {
+        q: "Doanh nghiệp nhỏ ở phố cổ có làm được không?",
+        a: "Rất phù hợp — hồ sơ Google Maps tối ưu và đánh giá thật đặc biệt hiệu quả với mô hình boutique đón khách du lịch.",
+      },
+      {
+        q: "Có giúp đồng bộ thông tin với website không?",
+        a: "Có — đồng bộ NAP và dữ liệu giữa hồ sơ Maps và website là phần quan trọng của Local SEO.",
+      },
+      {
+        q: "Chi phí từ bao nhiêu?",
+        a: "Từ 3.500.000đ/chiến dịch, tùy ngành và phạm vi tối ưu.",
+      },
+    ],
+    related: [
+      { label: "Local SEO Đà Nẵng", href: "/vi/google-maps-marketing/da-nang", note: "Khu vực lân cận" },
+      { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an", note: "Kênh khách Hàn" },
+      { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/maps-hoi-an-hero.webp", alt: "Local SEO Hội An tối ưu Google Maps" },
+    ],
+    schema: { serviceType: "Local SEO Hội An", offerMinPriceVnd: 3500000 },
+  },
+
+  /* ───────────────────────── MAPS SPOKE — ĐÀ NẴNG (LOCAL SEO) ───────────────────────── */
+  {
+    path: "/vi/google-maps-marketing/da-nang",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
+      { label: "Local SEO Đà Nẵng", href: "/vi/google-maps-marketing/da-nang" },
+    ],
+    primaryKeyword: "Local SEO Đà Nẵng",
+    metaTitle: "Local SEO Đà Nẵng: tối ưu Google Maps cho doanh nghiệp | Công Thiên Agency",
+    metaDescription:
+      "Local SEO Đà Nẵng: tối ưu Google Business Profile và đánh giá thật để spa, nhà hàng, khách sạn và tour xuất hiện khi khách tìm dịch vụ tại Đà Nẵng.",
+    eyebrow: "Google Maps · Đà Nẵng",
+    h1: "Local SEO Đà Nẵng — tối ưu Google Maps cho doanh nghiệp dịch vụ – du lịch",
+    heroSub:
+      "Đà Nẵng cạnh tranh cao và khách tìm dịch vụ theo vị trí. Tôi tối ưu hồ sơ Google Maps và đánh giá thật để bạn nổi bật.",
+    heroCta: "Nhận tư vấn Local SEO Đà Nẵng qua Zalo",
+    intro:
+      "Đà Nẵng là thị trường du lịch lớn với mật độ spa, nhà hàng, khách sạn và tour dày đặc. Khách tìm dịch vụ theo khu vực — biển Mỹ Khê, trung tâm, gần cầu Rồng — và chọn qua Google Maps. Local SEO Đà Nẵng giúp doanh nghiệp hiển thị nổi bật giữa cạnh tranh tại đúng bước khách quyết định.",
+    sections: [
+      {
+        heading: "Vì sao Local SEO quan trọng tại Đà Nẵng?",
+        bullets: [
+          "Lượng khách du lịch lớn tìm dịch vụ theo vị trí mỗi ngày.",
+          "Cạnh tranh cao giữa các spa, nhà hàng, khách sạn cùng khu vực.",
+          "Số sao và đánh giá gần đây ảnh hưởng mạnh đến lựa chọn.",
+          "Khách quốc tế phụ thuộc nhiều vào hồ sơ Maps và hình ảnh.",
+        ],
+      },
+      {
+        heading: "Local SEO Đà Nẵng gồm những gì?",
+        body:
+          "Tối ưu Google Business Profile theo khu vực phục vụ, hình ảnh thật, đồng bộ NAP với website, xây đánh giá từ khách hàng thật và duy trì bài đăng. Mục tiêu là tăng độ liên quan và độ nổi bật của hồ sơ trong các khu vực trọng điểm của Đà Nẵng.",
+      },
+      {
+        heading: "Kết hợp Naver cho thị trường khách Hàn lớn",
+        body:
+          "Đà Nẵng đón lượng khách Hàn rất lớn. Local SEO trên Google Maps phục vụ khách quốc tế nói chung, còn Naver Marketing Đà Nẵng phủ riêng nhóm khách Hàn — hai kênh kết hợp tạo độ phủ tìm kiếm toàn diện.",
+      },
+    ],
+    whoFor: [
+      "Spa, wellness tại Đà Nẵng",
+      "Nhà hàng, quán ăn khu biển / trung tâm",
+      "Khách sạn, resort, homestay",
+      "Tour, dịch vụ du lịch tại Đà Nẵng",
+    ],
+    process: [
+      { step: "Audit hồ sơ", detail: "Rà soát hồ sơ Google Maps và hiển thị địa phương tại Đà Nẵng." },
+      { step: "Tối ưu", detail: "Hoàn thiện hồ sơ, đồng bộ NAP với website, cập nhật hình ảnh." },
+      { step: "Quy trình review", detail: "Thiết lập cách thu hút đánh giá thật từ khách." },
+      { step: "Đo lường", detail: "Theo dõi hiển thị địa phương và đề xuất tiếp theo." },
+    ],
+    priceFrom: "Từ 3.500.000đ / chiến dịch",
+    priceNote: "Báo giá tùy ngành, hiện trạng hồ sơ và phạm vi tối ưu.",
+    faqs: [
+      {
+        q: "Local SEO Đà Nẵng khác Hội An thế nào?",
+        a: "Cùng phương pháp, nhưng tối ưu theo khu vực, mật độ cạnh tranh và đặc thù khách của Đà Nẵng.",
+      },
+      {
+        q: "Ngành nào hợp nhất ở Đà Nẵng?",
+        a: "Spa, nhà hàng, khách sạn/resort và tour — những ngành phụ thuộc nhiều vào tìm kiếm địa phương và đánh giá.",
+      },
+      {
+        q: "Có kết hợp được với Naver cho khách Hàn không?",
+        a: "Có — Google Maps phục vụ khách quốc tế nói chung, Naver phủ riêng khách Hàn; kết hợp tạo độ phủ toàn diện.",
+      },
+      {
+        q: "Chi phí từ bao nhiêu?",
+        a: "Từ 3.500.000đ/chiến dịch, tùy ngành và phạm vi tối ưu.",
+      },
+    ],
+    related: [
+      { label: "Local SEO Hội An", href: "/vi/google-maps-marketing/hoi-an", note: "Khu vực lân cận" },
+      { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Kênh khách Hàn" },
+      { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Chiến lược đánh giá" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/maps-da-nang-hero.webp", alt: "Local SEO Đà Nẵng tối ưu Google Maps" },
+    ],
+    schema: { serviceType: "Local SEO Đà Nẵng", offerMinPriceVnd: 3500000 },
+  },
+
+  /* ───────────────────────── MAPS SPOKE — CHO TOUR ───────────────────────── */
+  {
+    path: "/vi/google-maps-marketing/cho-tour",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
+      { label: "Google Maps cho tour", href: "/vi/google-maps-marketing/cho-tour" },
+    ],
+    primaryKeyword: "Google Maps cho tour",
+    metaTitle: "Google Maps cho tour & trải nghiệm: tăng đặt chỗ | Công Thiên Agency",
+    metaDescription:
+      "Tối ưu Google Business Profile cho tour, cooking class và trải nghiệm tại Hội An – Đà Nẵng: hình ảnh, đánh giá từ khách thật và Local SEO để khách tìm thấy và đặt tour.",
+    eyebrow: "Google Maps · Tour & trải nghiệm",
+    h1: "Google Maps cho tour & trải nghiệm: nổi bật khi khách tìm hoạt động tại Hội An – Đà Nẵng",
+    heroSub:
+      "Khách du lịch tìm trải nghiệm trên Google Maps và chọn theo đánh giá. Tôi tối ưu hồ sơ và xây đánh giá thật để tour của bạn được chọn.",
+    heroCta: "Nhận tư vấn Google Maps cho tour qua Zalo",
+    intro:
+      "Khách du lịch tìm “cooking class Hội An”, “tour Đà Nẵng” hay trải nghiệm địa phương trên Google Maps, rồi so sánh qua đánh giá và hình ảnh. Một hồ sơ tour đầy đủ và nhiều đánh giá thật giúp bạn tạo niềm tin và nổi bật ngay tại bước khách quyết định đặt chỗ.",
+    sections: [
+      {
+        heading: "Vì sao tour cần hồ sơ Google Maps mạnh?",
+        bullets: [
+          "Khách tìm hoạt động và trải nghiệm theo khu vực đang ở.",
+          "Đánh giá thật là yếu tố chốt mạnh với dịch vụ trải nghiệm.",
+          "Hình ảnh lịch trình và khoảnh khắc thật tạo cảm hứng đặt tour.",
+          "Vị trí điểm hẹn rõ ràng giúp khách yên tâm tham gia.",
+        ],
+      },
+      {
+        heading: "Tối ưu hồ sơ tour gồm những gì?",
+        body:
+          "Hoàn thiện Google Business Profile với danh mục trải nghiệm chính xác, hình ảnh hoạt động thật, mô tả lịch trình, điểm hẹn và bài đăng. Song song là quy trình mời khách để lại đánh giá thật sau khi kết thúc trải nghiệm — đúng chính sách Google.",
+      },
+      {
+        heading: "Kết hợp website đặt tour và Naver cho khách Hàn",
+        body:
+          "Hồ sơ Maps mạnh hơn khi đi cùng website có lịch trình và đặt chỗ rõ ràng (như mô hình Ruong House). Với tour đón khách Hàn, nội dung Naver bổ trợ để phủ thêm kênh tìm kiếm của người Hàn.",
+      },
+    ],
+    whoFor: [
+      "Tour, cooking class, craft workshop tại Hội An – Đà Nẵng",
+      "Trải nghiệm địa phương, half-day/full-day tour",
+      "Dịch vụ tham quan, hoạt động ngoài trời",
+      "Doanh nghiệp trải nghiệm mới cần xây đánh giá",
+    ],
+    process: [
+      { step: "Audit hồ sơ", detail: "Rà soát hồ sơ Google Maps tour hiện tại." },
+      { step: "Tối ưu", detail: "Hoàn thiện danh mục, ảnh hoạt động, lịch trình, điểm hẹn." },
+      { step: "Quy trình review", detail: "Thiết lập cách thu hút đánh giá thật sau trải nghiệm." },
+      { step: "Đo lường", detail: "Theo dõi hiển thị, đánh giá và đề xuất tiếp theo." },
+    ],
+    priceFrom: "Từ 3.500.000đ / chiến dịch",
+    priceNote: "Báo giá tùy hiện trạng hồ sơ và phạm vi tối ưu.",
+    proof: {
+      ...PROOF_RUONG,
+      text: "Ruong House — cooking class & craft workshop tại Hội An kèm hỗ trợ tạo Google Maps, ví dụ về hồ sơ trải nghiệm đồng bộ với website đặt chỗ.",
+    },
+    faqs: [
+      {
+        q: "Dịch vụ có mua đánh giá cho tour không?",
+        a: "Không. Tôi tối ưu hồ sơ và xây quy trình thu hút đánh giá từ khách thật sau trải nghiệm, đúng chính sách Google.",
+      },
+      {
+        q: "Tour mới chưa có đánh giá thì bắt đầu thế nào?",
+        a: "Hồ sơ hoàn chỉnh với ảnh hoạt động thật và quy trình mời khách đánh giá ngay sau trải nghiệm để tích lũy đánh giá thật đầu tiên.",
+      },
+      {
+        q: "Khách quốc tế có tìm tour trên Google Maps không?",
+        a: "Có — nhiều khách quốc tế tìm hoạt động và trải nghiệm trên Google Maps; riêng khách Hàn nên kết hợp thêm Naver.",
+      },
+      {
+        q: "Có cần website đặt tour không?",
+        a: "Không bắt buộc, nhưng website có lịch trình và đặt chỗ giúp hồ sơ Maps mạnh hơn nhờ thông tin nhất quán.",
+      },
+    ],
+    related: [
+      { label: "Website cooking class Hội An", href: "/vi/thiet-ke-website/cooking-class-hoi-an", note: "Nền tảng đặt tour" },
+      { label: "Naver cho tour", href: "/vi/naver-marketing/cho-tour", note: "Kênh khách Hàn" },
+      { label: "Cách lên top Google Maps", href: "/vi/blog/cach-len-top-google-maps", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/maps-tour-hero.webp", alt: "Google Maps cho tour trải nghiệm Hội An Đà Nẵng" },
+    ],
+    schema: { serviceType: "Google Maps cho tour", offerMinPriceVnd: 3500000 },
+  },
+
+  /* ───────────────────────── SOCIAL SPOKE — XÁC MINH FANPAGE ───────────────────────── */
+  {
+    path: "/vi/social-marketing/xac-minh-fanpage",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Social Marketing", href: "/vi/social-marketing" },
+      { label: "Hỗ trợ xác minh Fanpage", href: "/vi/social-marketing/xac-minh-fanpage" },
+    ],
+    primaryKeyword: "hỗ trợ xác minh Fanpage",
+    metaTitle: "Hỗ trợ xác minh Fanpage & Meta Verified | Công Thiên Agency",
+    metaDescription:
+      "Dịch vụ hỗ trợ xác minh Fanpage (Meta Verified Support): chuẩn bị và hoàn thiện hồ sơ để tăng khả năng đủ điều kiện. Kết quả phụ thuộc xét duyệt của Meta, không cam kết 100%.",
+    eyebrow: "Social · Xác minh Fanpage",
+    h1: "Hỗ trợ xác minh Fanpage (Meta Verified Support) cho doanh nghiệp",
+    heroSub:
+      "Chuẩn bị và hoàn thiện hồ sơ xác minh đúng cách để tăng khả năng đủ điều kiện. Kết quả cuối thuộc xét duyệt của Meta — tôi minh bạch về điều đó.",
+    heroCta: "Nhận tư vấn xác minh Fanpage qua Zalo",
+    intro:
+      "Dấu xác minh giúp Fanpage tăng độ tin cậy và giảm rủi ro bị mạo danh — đặc biệt quan trọng với doanh nghiệp cạnh tranh bằng niềm tin. Dịch vụ này hỗ trợ bạn chuẩn bị và hoàn thiện hồ sơ để tăng khả năng đủ điều kiện. Quan trọng: quy trình xét duyệt hoàn toàn thuộc về Meta, nên đây là dịch vụ hỗ trợ chuẩn bị, không cam kết chắc chắn được duyệt.",
+    sections: [
+      {
+        heading: "Vì sao nên xác minh Fanpage?",
+        bullets: [
+          "Tăng độ tin cậy hiển thị với khách, nhất là khách quốc tế.",
+          "Giảm rủi ro bị mạo danh hoặc nhầm lẫn thương hiệu.",
+          "Củng cố hình ảnh chuyên nghiệp trước khi khách booking.",
+          "Một số quyền lợi bảo vệ và hỗ trợ tài khoản đi kèm Meta Verified.",
+        ],
+      },
+      {
+        heading: "Dịch vụ hỗ trợ những gì?",
+        body:
+          "Tôi rà soát và hoàn thiện hồ sơ Fanpage, đảm bảo thông tin nhất quán với website và các kênh, chuẩn bị giấy tờ theo yêu cầu và hướng dẫn quy trình đăng ký xác minh của Meta. Mục tiêu là đưa hồ sơ về trạng thái tốt nhất để tăng khả năng đủ điều kiện.",
+      },
+      {
+        heading: "Minh bạch về kết quả",
+        body:
+          "Tôi không hứa “bao đậu 100%”. Quyết định duyệt xác minh thuộc về Meta dựa trên điều kiện và chính sách của họ. Cam kết của tôi là chuẩn bị hồ sơ đúng, an toàn cho tài khoản và nói rõ kỳ vọng thực tế.",
+      },
+    ],
+    whoFor: [
+      "Doanh nghiệp muốn tăng uy tín Fanpage",
+      "Thương hiệu cạnh tranh bằng niềm tin với khách quốc tế",
+      "Fanpage đã hoạt động ổn định, muốn xác minh",
+      "Doanh nghiệp lo ngại bị mạo danh thương hiệu",
+    ],
+    process: [
+      { step: "Đánh giá", detail: "Rà soát hồ sơ Fanpage và mức độ sẵn sàng xác minh." },
+      { step: "Hoàn thiện", detail: "Tối ưu thông tin, nhận diện và chuẩn bị giấy tờ." },
+      { step: "Hỗ trợ đăng ký", detail: "Hướng dẫn quy trình đăng ký xác minh của Meta." },
+      { step: "Theo dõi", detail: "Đồng hành xử lý phản hồi và đề xuất tiếp theo." },
+    ],
+    priceFrom: "Từ 3.000.000đ / page",
+    priceNote: "Đây là phí hỗ trợ chuẩn bị hồ sơ. Kết quả xác minh phụ thuộc xét duyệt của Meta, không cam kết 100%.",
+    faqs: [
+      {
+        q: "Dịch vụ có đảm bảo được duyệt tick xanh 100% không?",
+        a: "Không. Đây là dịch vụ hỗ trợ chuẩn bị và hoàn thiện hồ sơ; kết quả cuối phụ thuộc điều kiện và xét duyệt của Meta.",
+      },
+      {
+        q: "Fanpage mới có xác minh được không?",
+        a: "Có thể, nếu đáp ứng điều kiện của Meta về thông tin và tính xác thực — không chỉ phụ thuộc tuổi trang. Tôi giúp đưa hồ sơ về trạng thái tốt nhất.",
+      },
+      {
+        q: "Cần chuẩn bị giấy tờ gì?",
+        a: "Thông tin Fanpage đầy đủ, nhất quán với thương hiệu và giấy tờ doanh nghiệp theo yêu cầu của Meta tại thời điểm đăng ký.",
+      },
+      {
+        q: "Chi phí bao nhiêu?",
+        a: "Từ 3.000.000đ/page cho phần hỗ trợ chuẩn bị hồ sơ; phí đăng ký Meta Verified (nếu có) theo quy định của Meta.",
+      },
+    ],
+    related: [
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Trang dịch vụ tổng quan" },
+      { label: "Meta Verified là gì", href: "/vi/blog/meta-verified-la-gi", note: "Blog" },
+      { label: "Fanpage mới có lên tick xanh được không", href: "/vi/blog/fanpage-moi-co-len-tick-xanh-duoc-khong", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/social-verify-hero.webp", alt: "Hỗ trợ xác minh Fanpage Meta Verified" },
+    ],
+    schema: { serviceType: "Hỗ trợ xác minh Fanpage", offerMinPriceVnd: 3000000 },
+  },
+
+  /* ───────────────────────── SOCIAL SPOKE — TĂNG TRƯỞNG KÊNH ───────────────────────── */
+  {
+    path: "/vi/social-marketing/tang-truong-kenh",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Social Marketing", href: "/vi/social-marketing" },
+      { label: "Tăng trưởng kênh social", href: "/vi/social-marketing/tang-truong-kenh" },
+    ],
+    primaryKeyword: "tăng trưởng kênh social",
+    metaTitle: "Social Growth Package: tăng trưởng kênh bền vững | Công Thiên Agency",
+    metaDescription:
+      "Social Growth Package giúp khởi động và tăng trưởng kênh Facebook, Instagram, TikTok kết hợp nội dung thật để xây nhận diện thương hiệu bền vững, tránh chỉ số ảo.",
+    eyebrow: "Social · Tăng trưởng kênh",
+    h1: "Social Growth Package — tăng trưởng kênh social kết hợp nội dung thật",
+    heroSub:
+      "Tăng trưởng kênh chỉ có giá trị khi đi cùng nội dung thật. Tôi giúp khởi động và phát triển kênh để xây nhận diện thương hiệu, không chạy theo con số ảo.",
+    heroCta: "Nhận tư vấn tăng trưởng kênh qua Zalo",
+    intro:
+      "Một kênh social mới thường khó tạo niềm tin khi còn trống trải. Social Growth Package hỗ trợ khởi động chỉ số ban đầu và phát triển kênh Facebook, Instagram, TikTok — nhưng luôn kết hợp nội dung thật, vì follower ảo không tạo chuyển đổi và tiềm ẩn rủi ro.",
+    sections: [
+      {
+        heading: "Tăng trưởng kênh để làm gì?",
+        bullets: [
+          "Giúp kênh mới không trông trống trải khi khách ghé kiểm tra.",
+          "Tạo nền tảng nhận diện để chạy nội dung và quảng bá hiệu quả hơn.",
+          "Củng cố social proof khi đi cùng tương tác thật.",
+          "Chuẩn bị kênh sẵn sàng cho các chiến dịch tiếp theo.",
+        ],
+      },
+      {
+        heading: "Cách tiếp cận bền vững",
+        body:
+          "Tôi định hướng tăng trưởng kết hợp nội dung thật và quảng bá đúng tệp, thay vì chỉ tăng con số. Mục tiêu là một kênh đáng tin giúp khách quyết định booking — không phải lượng follower trông đẹp nhưng không tương tác.",
+      },
+      {
+        heading: "Kết hợp Fanpage và đa kênh",
+        body:
+          "Tăng trưởng kênh hiệu quả nhất khi đi cùng Fanpage chỉn chu, nội dung đều đặn và sự nhất quán với website, Google Maps. Tôi có thể triển khai đồng bộ để mọi điểm chạm đều củng cố niềm tin của khách.",
+      },
+    ],
+    whoFor: [
+      "Doanh nghiệp mới mở kênh social",
+      "Spa, nhà hàng, tour cần nền tảng nhận diện",
+      "Thương hiệu chuẩn bị chạy nội dung và quảng bá",
+      "Kênh cần khởi động chỉ số ban đầu một cách an toàn",
+    ],
+    process: [
+      { step: "Đánh giá", detail: "Rà soát hiện trạng kênh và mục tiêu tăng trưởng." },
+      { step: "Kế hoạch", detail: "Định hướng nội dung và mức khởi động phù hợp." },
+      { step: "Triển khai", detail: "Tăng trưởng kết hợp nội dung và quảng bá đúng tệp." },
+      { step: "Theo dõi", detail: "Đo lường tương tác thật và đề xuất tiếp theo." },
+    ],
+    priceFrom: "Từ 100.000đ / 1.000 followers",
+    priceNote: "Nên kết hợp nội dung thật để bền vững; báo giá cuối tùy nền tảng và mục tiêu.",
+    faqs: [
+      {
+        q: "Đây có phải “buff follow” không?",
+        a: "Nhiều người gọi vậy, nhưng tôi định hướng tăng trưởng kèm nội dung để xây nhận diện thương hiệu thật, tránh chỉ số ảo không tạo chuyển đổi.",
+      },
+      {
+        q: "Follower tăng có giúp bán hàng không?",
+        a: "Chỉ khi đi cùng nội dung thật và tương tác thật. Con số đơn thuần không tạo booking, nên tôi luôn kết hợp nội dung.",
+      },
+      {
+        q: "Áp dụng cho nền tảng nào?",
+        a: "Facebook, Instagram và TikTok, tùy nơi tệp khách của bạn hoạt động nhiều nhất.",
+      },
+      {
+        q: "Chi phí bắt đầu từ bao nhiêu?",
+        a: "Từ 100.000đ/1.000 followers; báo giá cuối tùy nền tảng, mục tiêu và nội dung đi kèm.",
+      },
+    ],
+    related: [
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Trang dịch vụ tổng quan" },
+      { label: "Buff follow có nên dùng không", href: "/vi/blog/buff-follow-co-nen-dung-khong", note: "Blog" },
+      { label: "Social proof là gì", href: "/vi/blog/social-proof-la-gi", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/social-growth-hero.webp", alt: "Social Growth Package tăng trưởng kênh social" },
+    ],
+    schema: { serviceType: "Social Growth Package", offerMinPriceVnd: 100000 },
+  },
+
+  /* ───────────────────────── SOCIAL SPOKE — KHÔI PHỤC TÀI KHOẢN FACEBOOK ───────────────────────── */
+  {
+    path: "/vi/social-marketing/khoi-phuc-tai-khoan-facebook",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Social Marketing", href: "/vi/social-marketing" },
+      { label: "Hỗ trợ khôi phục tài khoản Facebook", href: "/vi/social-marketing/khoi-phuc-tai-khoan-facebook" },
+    ],
+    primaryKeyword: "khôi phục tài khoản Facebook",
+    metaTitle: "Hỗ trợ khôi phục tài khoản & Fanpage Facebook | Công Thiên Agency",
+    metaDescription:
+      "Hỗ trợ khôi phục tài khoản hoặc Fanpage Facebook bị khóa/hạn chế: chuẩn bị hồ sơ và quy trình kháng nghị. Kết quả phụ thuộc chính sách và quyết định của Meta.",
+    eyebrow: "Social · Khôi phục tài khoản",
+    h1: "Hỗ trợ khôi phục tài khoản & Fanpage Facebook bị khóa",
+    heroSub:
+      "Khi tài khoản hoặc Fanpage gặp sự cố, tôi hỗ trợ chuẩn bị hồ sơ và quy trình kháng nghị đúng cách. Kết quả cuối phụ thuộc quyết định của Meta.",
+    heroCta: "Nhận tư vấn khôi phục tài khoản qua Zalo",
+    intro:
+      "Mất quyền truy cập tài khoản hoặc Fanpage có thể gây gián đoạn lớn cho doanh nghiệp, nhất là khi đó là kênh tiếp cận khách chính. Dịch vụ này hỗ trợ bạn chuẩn bị hồ sơ và đi đúng quy trình kháng nghị của Meta để tăng khả năng khôi phục. Quan trọng: kết quả cuối phụ thuộc chính sách và quyết định của Meta.",
+    sections: [
+      {
+        heading: "Các trường hợp thường gặp",
+        bullets: [
+          "Fanpage bị hạn chế hoặc vô hiệu hóa.",
+          "Tài khoản bị khóa do nghi ngờ vi phạm chính sách.",
+          "Mất quyền quản trị Fanpage sau sự cố.",
+          "Tài khoản bị mạo danh hoặc chiếm quyền.",
+        ],
+      },
+      {
+        heading: "Dịch vụ hỗ trợ những gì?",
+        body:
+          "Tôi giúp xác định tình trạng, chuẩn bị thông tin và giấy tờ cần thiết, rồi đi đúng quy trình kháng nghị chính thức của Meta. Việc làm đúng quy trình ngay từ đầu giúp tăng khả năng được xem xét khôi phục.",
+      },
+      {
+        heading: "Minh bạch về kết quả",
+        body:
+          "Tôi không cam kết chắc chắn lấy lại được, vì quyết định cuối thuộc về Meta dựa trên chính sách của họ. Cam kết của tôi là hỗ trợ đúng quy trình, an toàn, và nói rõ kỳ vọng thực tế ngay từ đầu.",
+      },
+    ],
+    whoFor: [
+      "Doanh nghiệp bị khóa Fanpage đang dùng để tiếp cận khách",
+      "Chủ tài khoản bị hạn chế hoặc vô hiệu hóa",
+      "Thương hiệu mất quyền quản trị sau sự cố",
+      "Doanh nghiệp bị mạo danh trên Facebook",
+    ],
+    process: [
+      { step: "Đánh giá", detail: "Xác định tình trạng và nguyên nhân khóa/hạn chế." },
+      { step: "Chuẩn bị hồ sơ", detail: "Tập hợp thông tin và giấy tờ cần cho kháng nghị." },
+      { step: "Kháng nghị", detail: "Đi đúng quy trình kháng nghị chính thức của Meta." },
+      { step: "Theo dõi", detail: "Đồng hành xử lý phản hồi và đề xuất bước tiếp theo." },
+    ],
+    priceFrom: "Báo giá theo từng trường hợp",
+    priceNote: "Phí hỗ trợ tùy mức độ phức tạp. Kết quả khôi phục phụ thuộc chính sách và quyết định của Meta.",
+    faqs: [
+      {
+        q: "Có chắc lấy lại được tài khoản không?",
+        a: "Không thể cam kết chắc chắn. Tôi hỗ trợ chuẩn bị hồ sơ và đi đúng quy trình kháng nghị; kết quả cuối phụ thuộc quyết định của Meta.",
+      },
+      {
+        q: "Mất bao lâu để xử lý?",
+        a: "Tùy trường hợp và tốc độ phản hồi của Meta. Việc làm đúng quy trình ngay từ đầu giúp rút ngắn thời gian xem xét.",
+      },
+      {
+        q: "Cần chuẩn bị gì?",
+        a: "Thông tin tài khoản/Fanpage, bằng chứng quyền sở hữu và giấy tờ liên quan theo yêu cầu của Meta.",
+      },
+      {
+        q: "Chi phí thế nào?",
+        a: "Báo giá theo từng trường hợp tùy mức độ phức tạp; tôi trao đổi rõ trước khi bắt đầu.",
+      },
+    ],
+    related: [
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Trang dịch vụ tổng quan" },
+      { label: "Hỗ trợ xác minh Fanpage", href: "/vi/social-marketing/xac-minh-fanpage", note: "Dịch vụ cùng nhóm" },
+      { label: "Cách xây Fanpage chuyên nghiệp", href: "/vi/blog/cach-xay-fanpage-chuyen-nghiep", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/social-recovery-hero.webp", alt: "Hỗ trợ khôi phục tài khoản Facebook" },
+    ],
+    schema: { serviceType: "Hỗ trợ khôi phục tài khoản Facebook" },
   },
 ];
 
