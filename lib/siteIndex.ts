@@ -16,6 +16,15 @@ export type IndexablePage = {
 const HOMEPAGE_IMAGES = [
   OG_IMAGE,
   "/images/hero/macbook-hero.jpg",
+  "/images/illustrations/growth.png",
+  "/images/services/service-website.jpg",
+  "/images/services/service-naver.jpg",
+  "/images/services/service-maps.jpg",
+  "/images/services/service-social.jpg",
+  "/images/illustrations/spa.png",
+  "/images/illustrations/restaurant.png",
+  "/images/illustrations/homestay.png",
+  "/images/illustrations/cooking-class-tour.png",
   "/logo/cong-thien-agency-signature-blue.svg",
 ];
 
