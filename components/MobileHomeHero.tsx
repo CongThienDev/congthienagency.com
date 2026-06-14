@@ -11,7 +11,7 @@ export function MobileHomeHero({
   return (
     <section className="relative min-h-[calc(100svh-68px)] overflow-hidden bg-[#f7f5f1] lg:hidden">
       <Image
-        src="/hero-section/hero-section-mobile-ver-doc.png"
+        src="/hero-section/hero-section-mobile-ver-doc.webp"
         alt=""
         fill
         priority
@@ -20,7 +20,7 @@ export function MobileHomeHero({
         aria-hidden
       />
       <Image
-        src="/hero-section/hero-section-mobile-ver-ngang.png"
+        src="/hero-section/hero-section-mobile-ver-ngang.webp"
         alt=""
         fill
         priority
