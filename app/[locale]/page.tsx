@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { cloneElement } from "react";
+import { BedDouble, Flower2, MapPinned, Utensils } from "lucide-react";
 import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
@@ -16,21 +18,17 @@ import { PricingCard } from "@/components/PricingCard";
 import { JsonLd } from "@/components/JsonLd";
 import {
   IconArrowRight,
-  IconBed,
   IconBolt,
   IconCalendarCheck,
   IconChat,
   IconCode,
-  IconCompass,
   IconCreditCard,
-  IconDish,
   IconGauge,
   IconGlobe,
   IconMapPin,
   IconMapsColor,
   IconSearch,
   IconShield,
-  IconSpa,
   IconStar,
   IconUsers,
 } from "@/components/Icons";
@@ -79,17 +77,24 @@ const SERVICE_ICONS = [
 ];
 
 const INDUSTRY_ICONS = [
-  <IconSpa key="spa" className="h-6 w-6" />,
-  <IconDish key="dish" className="h-6 w-6" />,
-  <IconBed key="bed" className="h-6 w-6" />,
-  <IconCompass key="compass" className="h-6 w-6" />,
+  <Flower2 key="spa" className="h-5 w-5" strokeWidth={1.8} />,
+  <Utensils key="dish" className="h-5 w-5" strokeWidth={1.8} />,
+  <BedDouble key="bed" className="h-5 w-5" strokeWidth={1.8} />,
+  <MapPinned key="compass" className="h-5 w-5" strokeWidth={1.8} />,
 ];
 
 const INDUSTRY_IMAGES = [
-  "/images/illustrations/industry-spa.svg",
-  "/images/illustrations/industry-restaurant.svg",
-  "/images/illustrations/industry-hotel.svg",
-  "/images/illustrations/industry-tour.svg",
+  "/images/illustrations/spa.png",
+  "/images/illustrations/restaurant.png",
+  "/images/illustrations/homestay.png",
+  "/images/illustrations/cooking-class-tour.png",
+];
+
+const INDUSTRY_ICON_STYLES = [
+  "text-blue-600",
+  "text-amber-500",
+  "text-blue-600",
+  "text-emerald-500",
 ];
 
 const SERVICE_IMAGES = [
@@ -459,26 +464,36 @@ function HomeVI() {
           <Reveal>
             <SectionHeader {...c.industriesIntro} align="center" />
           </Reveal>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {c.industries.map((ind, i) => (
               <Reveal key={ind.title} delay={i * 70}>
-                <div className="group card-hover card-gradient-border h-full overflow-hidden rounded-card text-center shadow-soft">
-                  <div className="relative overflow-hidden">
+                <div className="group h-full overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white text-center shadow-[0_18px_45px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_28px_65px_rgba(15,23,42,0.14)]">
+                  <div className="relative overflow-visible border-b border-slate-100">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={INDUSTRY_IMAGES[i]}
                       alt=""
                       aria-hidden
                       loading="lazy"
-                      className="aspect-[2/1] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="aspect-[5/4] w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
                     />
-                    <span className="absolute bottom-0 left-1/2 grid h-12 w-12 -translate-x-1/2 translate-y-1/2 place-items-center rounded-2xl bg-white text-blue-600 shadow-soft ring-1 ring-blue-100">
-                      {INDUSTRY_ICONS[i]}
+                    <div
+                      aria-hidden
+                      className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/12 via-slate-950/0 to-transparent"
+                    />
+                    <span
+                      className={`absolute bottom-0 left-1/2 z-10 grid h-12 w-12 -translate-x-1/2 translate-y-[58%] place-items-center rounded-[1.05rem] border border-white/90 bg-white shadow-[0_12px_28px_rgba(15,23,42,0.16)] ${INDUSTRY_ICON_STYLES[i]}`}
+                    >
+                      {cloneElement(INDUSTRY_ICONS[i], { className: "h-5 w-5" })}
                     </span>
                   </div>
-                  <div className="px-6 pb-6 pt-8">
-                    <h3 className="text-[15px] font-bold tracking-tight text-ink">{ind.title}</h3>
-                    <p className="mt-2 text-[13px] leading-relaxed text-muted">{ind.desc}</p>
+                  <div className="px-7 pb-8 pt-12">
+                    <h3 className="text-[1.05rem] font-bold tracking-tight text-ink sm:text-[1.12rem]">
+                      {ind.title}
+                    </h3>
+                    <p className="mt-3 text-[0.98rem] leading-8 text-slate-500">
+                      {ind.desc}
+                    </p>
                   </div>
                 </div>
               </Reveal>
