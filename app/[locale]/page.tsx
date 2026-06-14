@@ -84,10 +84,10 @@ const INDUSTRY_ICONS = [
 ];
 
 const INDUSTRY_IMAGES = [
-  "/images/illustrations/spa.png",
-  "/images/illustrations/restaurant.png",
-  "/images/illustrations/homestay.png",
-  "/images/illustrations/cooking-class-tour.png",
+  "/images/illustrations/spa.webp",
+  "/images/illustrations/restaurant.webp",
+  "/images/illustrations/homestay.webp",
+  "/images/illustrations/cooking-class-tour.webp",
 ];
 
 const INDUSTRY_ICON_STYLES = [
@@ -98,10 +98,10 @@ const INDUSTRY_ICON_STYLES = [
 ];
 
 const SERVICE_IMAGES = [
-  "/images/services/service-website.jpg",
-  "/images/services/service-naver.jpg",
-  "/images/services/service-maps.jpg",
-  "/images/services/service-social.jpg",
+  "/images/services/service-website.webp",
+  "/images/services/service-naver.webp",
+  "/images/services/service-maps.webp",
+  "/images/services/service-social.webp",
 ];
 
 const TRUST_ICONS = [
@@ -301,7 +301,7 @@ function HomeVI() {
                 </h2>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/illustrations/growth.png"
+                  src="/images/illustrations/growth.webp"
                   alt="Khách tìm thấy doanh nghiệp dịch vụ tại Hội An qua website và Google Maps, rồi đi đến bước đặt dịch vụ"
                   loading="lazy"
                   width={440}
