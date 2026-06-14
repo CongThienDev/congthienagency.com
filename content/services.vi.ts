@@ -138,8 +138,7 @@ export const SERVICES: Service[] = [
       { label: "Bảng giá", href: "/vi/bang-gia", note: "Xem chi phí gói Website Business" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/website-hero.webp", alt: "Thiết kế website doanh nghiệp Hội An Đà Nẵng" },
-      { slot: "proof", suggestion: "/images/proof/serena-pagespeed.webp", alt: "PageSpeed SEO 100/100 của Serena Retreat" },
+      { slot: "hero", suggestion: "/images/services/service-website.webp", alt: "Thiết kế website doanh nghiệp Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Thiết kế website", offerMinPriceVnd: 10000000 },
   },
@@ -243,9 +242,7 @@ export const SERVICES: Service[] = [
       { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Tăng uy tín địa phương" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/spa-hoi-an-hero.webp", alt: "Thiết kế website spa Hội An" },
-      { slot: "feature", suggestion: "/images/proof/serena-booking-flow.webp", alt: "Luồng booking và thanh toán website spa" },
-      { slot: "proof", suggestion: "/images/proof/serena-pagespeed.webp", alt: "PageSpeed SEO 100/100 website spa Serena Retreat" },
+      { slot: "hero", suggestion: "/images/illustrations/spa.webp", alt: "Thiết kế website spa Hội An" },
     ],
     schema: { serviceType: "Thiết kế website spa", offerMinPriceVnd: 10000000 },
   },
@@ -345,8 +342,7 @@ export const SERVICES: Service[] = [
       { label: "Bảng giá", href: "/vi/bang-gia", note: "Chi phí gói Website Business" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/nha-hang-hoi-an-hero.webp", alt: "Thiết kế website nhà hàng Hội An" },
-      { slot: "feature", suggestion: "/images/services/menu-mobile.webp", alt: "Trang menu website nhà hàng trên mobile" },
+      { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Thiết kế website nhà hàng Hội An" },
     ],
     schema: { serviceType: "Thiết kế website nhà hàng", offerMinPriceVnd: 10000000 },
   },
@@ -446,8 +442,7 @@ export const SERVICES: Service[] = [
       { label: "Naver Marketing", href: "/vi/naver-marketing", note: "Tiếp cận khách Hàn cho trải nghiệm" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/cooking-class-hero.webp", alt: "Thiết kế website cooking class Hội An" },
-      { slot: "proof", suggestion: "/images/proof/ruong-pagespeed.webp", alt: "PageSpeed SEO 100/100 website Ruong House" },
+      { slot: "hero", suggestion: "/images/illustrations/cooking-class-tour.webp", alt: "Thiết kế website cooking class Hội An" },
     ],
     schema: { serviceType: "Thiết kế website cooking class", offerMinPriceVnd: 10000000 },
   },
@@ -540,7 +535,7 @@ export const SERVICES: Service[] = [
       { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/naver-hero.webp", alt: "Naver Marketing tiếp cận khách Hàn Quốc" },
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver Marketing tiếp cận khách Hàn Quốc" },
     ],
     schema: { serviceType: "Naver Marketing", offerMinPriceVnd: 8000000 },
   },
@@ -630,7 +625,7 @@ export const SERVICES: Service[] = [
       { label: "Bộ từ khóa Naver cho du lịch", href: "/vi/blog/bo-tu-khoa-naver-cho-du-lich", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/naver-spa-hero.webp", alt: "Naver Blog cho spa Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/illustrations/spa.webp", alt: "Naver Blog cho spa Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Naver Blog cho spa", offerPriceVnd: 8000000 },
   },
@@ -716,7 +711,7 @@ export const SERVICES: Service[] = [
       { label: "Vì sao khách Hàn dùng Naver", href: "/vi/blog/vi-sao-khach-han-dung-naver", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/naver-danang-hero.webp", alt: "Naver Marketing Đà Nẵng cho khách Hàn" },
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver Marketing Đà Nẵng cho khách Hàn" },
     ],
     schema: { serviceType: "Naver Marketing Đà Nẵng", offerMinPriceVnd: 8000000 },
   },
@@ -802,7 +797,7 @@ export const SERVICES: Service[] = [
       { label: "Cách viết bài Naver Blog chuẩn", href: "/vi/blog/cach-viet-bai-naver-blog-chuan", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/blogger-han-hero.webp", alt: "Booking blogger Hàn Quốc Naver Blogger Review" },
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Booking blogger Hàn Quốc Naver Blogger Review" },
     ],
     schema: { serviceType: "Booking blogger Hàn Quốc", offerPriceVnd: 8000000 },
   },
@@ -891,7 +886,7 @@ export const SERVICES: Service[] = [
       { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/google-maps-hero.webp", alt: "Google Maps Marketing Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Google Maps Marketing Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Google Maps Marketing", offerMinPriceVnd: 3500000 },
   },
@@ -981,7 +976,7 @@ export const SERVICES: Service[] = [
       { label: "Google Business Profile cần có gì", href: "/vi/blog/google-business-profile-can-co-gi", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/maps-review-hero.webp", alt: "Google Maps Review và Reputation Marketing" },
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Google Maps Review và Reputation Marketing" },
     ],
     schema: { serviceType: "Google Maps Review & Reputation", offerMinPriceVnd: 3500000 },
   },
@@ -1069,7 +1064,7 @@ export const SERVICES: Service[] = [
       { label: "Bảng giá", href: "/vi/bang-gia", note: "Chi tiết gói Social" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/social-hero.webp", alt: "Social Marketing và hỗ trợ Facebook" },
+      { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "Social Marketing và hỗ trợ Facebook" },
     ],
     schema: { serviceType: "Social Marketing", offerMinPriceVnd: 3000000 },
   },
@@ -1158,7 +1153,7 @@ export const SERVICES: Service[] = [
       { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Chi tiết gói blogger" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/naver-nha-hang-hero.webp", alt: "Naver Blog cho nhà hàng Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Naver Blog cho nhà hàng Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Naver Blog cho nhà hàng", offerPriceVnd: 8000000 },
   },
@@ -1243,7 +1238,7 @@ export const SERVICES: Service[] = [
       { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Uy tín địa phương" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/naver-khach-san-hero.webp", alt: "Naver Blog cho khách sạn homestay Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/illustrations/homestay.webp", alt: "Naver Blog cho khách sạn homestay Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Naver Blog cho khách sạn", offerPriceVnd: 8000000 },
   },
@@ -1332,7 +1327,7 @@ export const SERVICES: Service[] = [
       { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Chi tiết gói blogger" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/naver-tour-hero.webp", alt: "Naver Blog cho tour trải nghiệm Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/illustrations/cooking-class-tour.webp", alt: "Naver Blog cho tour trải nghiệm Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Naver Blog cho tour", offerPriceVnd: 8000000 },
   },
@@ -1427,7 +1422,7 @@ export const SERVICES: Service[] = [
       { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/naver-hoi-an-hero.webp", alt: "Naver Marketing Hội An cho khách Hàn" },
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver Marketing Hội An cho khách Hàn" },
     ],
     schema: { serviceType: "Naver Marketing Hội An", offerMinPriceVnd: 8000000 },
   },
@@ -1516,7 +1511,7 @@ export const SERVICES: Service[] = [
       { label: "Google Business Profile cần có gì", href: "/vi/blog/google-business-profile-can-co-gi", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/maps-spa-hero.webp", alt: "Google Maps cho spa Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/illustrations/spa.webp", alt: "Google Maps cho spa Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Google Maps cho spa", offerMinPriceVnd: 3500000 },
   },
@@ -1605,7 +1600,7 @@ export const SERVICES: Service[] = [
       { label: "Vì sao hình ảnh Google Maps quan trọng", href: "/vi/blog/vi-sao-hinh-anh-google-maps-quan-trong", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/maps-nha-hang-hero.webp", alt: "Google Maps cho nhà hàng Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Google Maps cho nhà hàng Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Google Maps cho nhà hàng", offerMinPriceVnd: 3500000 },
   },
@@ -1690,7 +1685,7 @@ export const SERVICES: Service[] = [
       { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/maps-khach-san-hero.webp", alt: "Google Maps cho khách sạn homestay Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/illustrations/homestay.webp", alt: "Google Maps cho khách sạn homestay Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Google Maps cho khách sạn", offerMinPriceVnd: 3500000 },
   },
@@ -1779,7 +1774,7 @@ export const SERVICES: Service[] = [
       { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/maps-hoi-an-hero.webp", alt: "Local SEO Hội An tối ưu Google Maps" },
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Local SEO Hội An tối ưu Google Maps" },
     ],
     schema: { serviceType: "Local SEO Hội An", offerMinPriceVnd: 3500000 },
   },
@@ -1864,7 +1859,7 @@ export const SERVICES: Service[] = [
       { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Chiến lược đánh giá" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/maps-da-nang-hero.webp", alt: "Local SEO Đà Nẵng tối ưu Google Maps" },
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Local SEO Đà Nẵng tối ưu Google Maps" },
     ],
     schema: { serviceType: "Local SEO Đà Nẵng", offerMinPriceVnd: 3500000 },
   },
@@ -1953,7 +1948,7 @@ export const SERVICES: Service[] = [
       { label: "Cách lên top Google Maps", href: "/vi/blog/cach-len-top-google-maps", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/maps-tour-hero.webp", alt: "Google Maps cho tour trải nghiệm Hội An Đà Nẵng" },
+      { slot: "hero", suggestion: "/images/illustrations/cooking-class-tour.webp", alt: "Google Maps cho tour trải nghiệm Hội An Đà Nẵng" },
     ],
     schema: { serviceType: "Google Maps cho tour", offerMinPriceVnd: 3500000 },
   },
@@ -2038,7 +2033,7 @@ export const SERVICES: Service[] = [
       { label: "Fanpage mới có lên tick xanh được không", href: "/vi/blog/fanpage-moi-co-len-tick-xanh-duoc-khong", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/social-verify-hero.webp", alt: "Hỗ trợ xác minh Fanpage Meta Verified" },
+      { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "Hỗ trợ xác minh Fanpage Meta Verified" },
     ],
     schema: { serviceType: "Hỗ trợ xác minh Fanpage", offerMinPriceVnd: 3000000 },
   },
@@ -2123,7 +2118,7 @@ export const SERVICES: Service[] = [
       { label: "Social proof là gì", href: "/vi/blog/social-proof-la-gi", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/social-growth-hero.webp", alt: "Social Growth Package tăng trưởng kênh social" },
+      { slot: "hero", suggestion: "/images/illustrations/growth.webp", alt: "Social Growth Package tăng trưởng kênh social" },
     ],
     schema: { serviceType: "Social Growth Package", offerMinPriceVnd: 100000 },
   },
@@ -2208,7 +2203,7 @@ export const SERVICES: Service[] = [
       { label: "Cách xây Fanpage chuyên nghiệp", href: "/vi/blog/cach-xay-fanpage-chuyen-nghiep", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/social-recovery-hero.webp", alt: "Hỗ trợ khôi phục tài khoản Facebook" },
+      { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "Hỗ trợ khôi phục tài khoản Facebook" },
     ],
     schema: { serviceType: "Hỗ trợ khôi phục tài khoản Facebook" },
   },
