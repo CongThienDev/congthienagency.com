@@ -13,6 +13,7 @@ export function ServiceCard({
   featured = false,
   bullets,
   chips,
+  image,
   ctaLabel = "Xem chi tiết",
 }: {
   title: string;
@@ -24,6 +25,7 @@ export function ServiceCard({
   featured?: boolean;
   bullets?: string[];
   chips?: string[];
+  image?: string;
   ctaLabel?: string;
 }) {
   const b = brand ? SERVICE_BRAND[brand] : undefined;
@@ -36,19 +38,8 @@ export function ServiceCard({
       ? "bg-blue-600 text-white shadow-blue"
       : "bg-blue-50 text-blue-600 ring-1 ring-blue-100";
 
-  return (
-    <Link
-      href={href}
-      className={`group card-hover relative flex flex-col overflow-hidden rounded-card p-6 sm:p-7 ${
-        featured
-          ? "card-gradient-border-dark text-white shadow-lift"
-          : "card-gradient-border shadow-soft"
-      }`}
-    >
-      {featured && (
-        <div aria-hidden className="bg-glow-dark absolute inset-0 opacity-80" />
-      )}
-      <div className="relative flex h-full flex-col">
+  const content = (
+    <div className="relative flex h-full flex-col p-6 sm:p-7">
         <div className="flex items-start justify-between">
           {badgeIcon && (
             <span
@@ -120,7 +111,53 @@ export function ServiceCard({
           {ctaLabel}
           <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
         </span>
-      </div>
+    </div>
+  );
+
+  return (
+    <Link
+      href={href}
+      className={`group card-hover relative flex overflow-hidden rounded-card ${
+        featured
+          ? "card-gradient-border-dark text-white shadow-lift"
+          : "card-gradient-border shadow-soft"
+      } ${image && featured ? "flex-col lg:flex-row" : "flex-col"}`}
+    >
+      {featured && (
+        <div aria-hidden className="bg-glow-dark absolute inset-0 opacity-80" />
+      )}
+
+      {/* non-featured: full-bleed banner on top */}
+      {image && !featured && (
+        <div className="relative overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={image}
+            alt=""
+            aria-hidden
+            loading="lazy"
+            className="aspect-[2/1] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+      )}
+
+      {image && featured ? (
+        <>
+          <div className="relative flex-1">{content}</div>
+          <div className="relative hidden shrink-0 items-center justify-center pr-2 lg:flex lg:w-[44%]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={image}
+              alt=""
+              aria-hidden
+              loading="lazy"
+              className="w-full max-w-md object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+            />
+          </div>
+        </>
+      ) : (
+        content
+      )}
     </Link>
   );
 }
@@ -133,6 +170,7 @@ export function PortfolioCard({
   deliveryTime,
   features,
   proofs,
+  previewImage,
 }: {
   href: string;
   name: string;
@@ -141,12 +179,31 @@ export function PortfolioCard({
   deliveryTime?: string;
   features?: string[];
   proofs?: { icon: ReactNode; label: string }[];
+  previewImage?: string;
 }) {
   return (
     <Link
       href={href}
       className="group card-hover card-gradient-border flex flex-col overflow-hidden rounded-card shadow-soft"
     >
+      {previewImage ? (
+        <div className="relative m-3 mb-0 overflow-hidden rounded-xl border border-line">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={previewImage}
+            alt={`${name} — bản xem trước website`}
+            loading="lazy"
+            width={480}
+            height={300}
+            className="aspect-[8/5] w-full object-cover transition-transform duration-500 group-hover:-translate-y-1.5"
+          />
+          <div className="absolute right-3.5 top-3.5 flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 shadow-soft">
+            <span className="grid h-4 w-4 place-items-center rounded-full bg-blue-600 text-[8px] font-bold text-white">✓</span>
+            <span className="font-mono text-[10px] font-semibold text-ink">SEO 100/100</span>
+          </div>
+        </div>
+      ) : (
+      <>
       {/* mock screenshot area — swap for a real <Image> when assets exist */}
       <div className="relative m-3 mb-0 overflow-hidden rounded-xl border border-line bg-gradient-to-br from-blue-950 via-blue-900 to-ink">
         <div className="bg-grid absolute inset-0 opacity-[0.12]" />
@@ -174,6 +231,8 @@ export function PortfolioCard({
           <span className="font-mono text-[10px] font-semibold text-ink">SEO 100/100</span>
         </div>
       </div>
+      </>
+      )}
 
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-center justify-between gap-3">

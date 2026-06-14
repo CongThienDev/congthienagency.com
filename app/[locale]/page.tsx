@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { cloneElement } from "react";
+import { BedDouble, Flower2, MapPinned, Utensils } from "lucide-react";
 import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
@@ -16,21 +18,17 @@ import { PricingCard } from "@/components/PricingCard";
 import { JsonLd } from "@/components/JsonLd";
 import {
   IconArrowRight,
-  IconBed,
   IconBolt,
   IconCalendarCheck,
   IconChat,
   IconCode,
-  IconCompass,
   IconCreditCard,
-  IconDish,
   IconGauge,
   IconGlobe,
   IconMapPin,
   IconMapsColor,
   IconSearch,
   IconShield,
-  IconSpa,
   IconStar,
   IconUsers,
 } from "@/components/Icons";
@@ -79,10 +77,31 @@ const SERVICE_ICONS = [
 ];
 
 const INDUSTRY_ICONS = [
-  <IconSpa key="spa" className="h-6 w-6" />,
-  <IconDish key="dish" className="h-6 w-6" />,
-  <IconBed key="bed" className="h-6 w-6" />,
-  <IconCompass key="compass" className="h-6 w-6" />,
+  <Flower2 key="spa" className="h-5 w-5" strokeWidth={1.8} />,
+  <Utensils key="dish" className="h-5 w-5" strokeWidth={1.8} />,
+  <BedDouble key="bed" className="h-5 w-5" strokeWidth={1.8} />,
+  <MapPinned key="compass" className="h-5 w-5" strokeWidth={1.8} />,
+];
+
+const INDUSTRY_IMAGES = [
+  "/images/illustrations/spa.png",
+  "/images/illustrations/restaurant.png",
+  "/images/illustrations/homestay.png",
+  "/images/illustrations/cooking-class-tour.png",
+];
+
+const INDUSTRY_ICON_STYLES = [
+  "text-blue-600",
+  "text-amber-500",
+  "text-blue-600",
+  "text-emerald-500",
+];
+
+const SERVICE_IMAGES = [
+  "/images/services/service-website.jpg",
+  "/images/services/service-naver.jpg",
+  "/images/services/service-maps.jpg",
+  "/images/services/service-social.jpg",
 ];
 
 const TRUST_ICONS = [
@@ -205,27 +224,43 @@ function HomeVI() {
       </section>
 
       {/* ── Pain points ── */}
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-16 lg:py-18">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div className="grid items-start gap-7 lg:grid-cols-[0.82fr_1.18fr] lg:gap-9">
             <Reveal>
-              <div className="lg:sticky lg:top-28">
-                <SectionHeader {...c.painIntro} />
-                <div className="mt-8 hidden lg:block">
-                  <Button href={SITE.contact.zalo} external>
+              <div className="max-w-md lg:-mt-10">
+                <p className="label-mono text-[0.68rem] text-blue-600">{c.painIntro.eyebrow}</p>
+                <h2 className="mt-3 max-w-[11ch] text-[1.85rem] font-semibold leading-[1.04] tracking-tight text-ink text-balance sm:text-[2.1rem] lg:text-[2.3rem]">
+                  {c.painIntro.title}
+                </h2>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/illustrations/growth.png"
+                  alt="Khách tìm thấy doanh nghiệp dịch vụ tại Hội An qua website và Google Maps, rồi đi đến bước đặt dịch vụ"
+                  loading="lazy"
+                  width={440}
+                  height={340}
+                  className="mt-7 aspect-[5/4] w-full max-w-[21.5rem] rounded-[1.55rem] object-cover object-center shadow-soft lg:max-w-[22.5rem]"
+                />
+                <div className="mt-4 hidden lg:block">
+                  <Button href={SITE.contact.zalo} external className="px-5 py-2.5 text-sm">
                     <IconChat className="h-4 w-4" />
                     Trao đổi vấn đề của bạn
                   </Button>
                 </div>
               </div>
             </Reveal>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid items-start gap-4 sm:grid-cols-2 lg:gap-4.5">
               {c.painPoints.map((p, i) => (
                 <Reveal key={p.num} delay={i * 70}>
-                  <div className="card-hover card-gradient-border h-full rounded-card p-6 shadow-soft">
-                    <span className="font-mono text-sm font-semibold text-blue-600">{p.num}</span>
-                    <h3 className="mt-3 text-base font-bold tracking-tight text-ink">{p.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted">{p.desc}</p>
+                  <div className="card-hover card-gradient-border flex h-full min-h-[12.5rem] flex-col rounded-[1.5rem] p-5 shadow-soft lg:min-h-[12.75rem]">
+                    <span className="font-mono text-[0.76rem] font-semibold text-blue-600">{p.num}</span>
+                    <h3 className="mt-3 max-w-[15ch] text-[0.98rem] font-bold leading-[1.2] tracking-tight text-ink sm:text-[1.03rem]">
+                      {p.title}
+                    </h3>
+                    <p className="mt-3 max-w-[29ch] text-[0.92rem] leading-7 text-muted">
+                      {p.desc}
+                    </p>
                   </div>
                 </Reveal>
               ))}
@@ -257,6 +292,7 @@ function HomeVI() {
                   featured={"featured" in s && Boolean(s.featured)}
                   bullets={"bullets" in s ? (s.bullets as string[]) : undefined}
                   chips={s.chips}
+                  image={SERVICE_IMAGES[i]}
                 />
               </Reveal>
             ))}
@@ -371,6 +407,7 @@ function HomeVI() {
                     category={p.category}
                     location={`${p.location} · ${p.year}`}
                     deliveryTime={p.stats[0]?.value}
+                    previewImage={p.previewImage}
                     proofs={[
                       { icon: <IconGauge className="h-4 w-4 text-blue-600" />, label: "PageSpeed Insights SEO 100/100" },
                       { icon: <IconCreditCard className="h-4 w-4 text-blue-600" />, label: payment ? `Thanh toán: ${payment.value}` : "Booking + thanh toán online" },
@@ -434,15 +471,37 @@ function HomeVI() {
           <Reveal>
             <SectionHeader {...c.industriesIntro} align="center" />
           </Reveal>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {c.industries.map((ind, i) => (
               <Reveal key={ind.title} delay={i * 70}>
-                <div className="group card-hover card-gradient-border h-full rounded-card p-6 text-center shadow-soft">
-                  <span className="mx-auto grid h-13 w-13 place-items-center rounded-2xl bg-blue-50 text-blue-600 ring-1 ring-blue-100 transition-transform duration-300 group-hover:scale-110">
-                    {INDUSTRY_ICONS[i]}
-                  </span>
-                  <h3 className="mt-4 text-[15px] font-bold tracking-tight text-ink">{ind.title}</h3>
-                  <p className="mt-2 text-[13px] leading-relaxed text-muted">{ind.desc}</p>
+                <div className="group h-full overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white text-center shadow-[0_18px_45px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_28px_65px_rgba(15,23,42,0.14)]">
+                  <div className="relative overflow-visible border-b border-slate-100">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={INDUSTRY_IMAGES[i]}
+                      alt=""
+                      aria-hidden
+                      loading="lazy"
+                      className="aspect-[5/4] w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
+                    />
+                    <div
+                      aria-hidden
+                      className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/12 via-slate-950/0 to-transparent"
+                    />
+                    <span
+                      className={`absolute bottom-0 left-1/2 z-10 grid h-12 w-12 -translate-x-1/2 translate-y-[58%] place-items-center rounded-[1.05rem] border border-white/90 bg-white shadow-[0_12px_28px_rgba(15,23,42,0.16)] ${INDUSTRY_ICON_STYLES[i]}`}
+                    >
+                      {cloneElement(INDUSTRY_ICONS[i], { className: "h-5 w-5" })}
+                    </span>
+                  </div>
+                  <div className="px-7 pb-8 pt-12">
+                    <h3 className="text-[1.05rem] font-bold tracking-tight text-ink sm:text-[1.12rem]">
+                      {ind.title}
+                    </h3>
+                    <p className="mt-3 text-[0.98rem] leading-8 text-slate-500">
+                      {ind.desc}
+                    </p>
+                  </div>
                 </div>
               </Reveal>
             ))}

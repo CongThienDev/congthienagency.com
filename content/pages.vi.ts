@@ -17,29 +17,28 @@ export const HOME_VI = {
   ],
   painIntro: {
     eyebrow: "Vấn đề thường gặp",
-    title: "Khách tìm — nhưng không thấy bạn, hoặc thấy mà không đặt được",
-    sub: "Phần lớn doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng đang gặp ít nhất một trong những vấn đề này.",
+    title: "Khách đang tìm bạn. Nhưng họ chưa đặt được.",
   },
   painPoints: [
     {
       num: "01",
-      title: "Chỉ có Fanpage, không có website",
-      desc: "Khách quốc tế và khách Hàn muốn xem website chính chủ trước khi đặt. Fanpage không đủ tạo niềm tin.",
+      title: "Có Fanpage, chưa có website",
+      desc: "Khách quốc tế và khách Hàn muốn xem website chính chủ trước khi đặt dịch vụ.",
     },
     {
       num: "02",
-      title: "Khách Hàn không tìm thấy bạn",
-      desc: "Người Hàn tìm kiếm trên Naver, không phải Google. Không hiện diện trên Naver là mất hẳn nhóm khách này.",
+      title: "Khách Hàn chưa tìm thấy bạn",
+      desc: "Khách Hàn tìm trên Naver, không phải Google. Vắng mặt ở đó là mất một nhóm khách lớn.",
     },
     {
       num: "03",
-      title: "Google Maps sơ sài, ít đánh giá",
-      desc: "Hồ sơ Maps thiếu thông tin và đánh giá khiến khách chọn đối thủ ngay bên cạnh.",
+      title: "Google Maps ít thông tin, ít đánh giá",
+      desc: "Hồ sơ Maps sơ sài làm khách thiếu tin tưởng và dễ chọn đối thủ ở ngay bên cạnh.",
     },
     {
       num: "04",
-      title: "Khách muốn đặt nhưng không đặt được",
-      desc: "Không có luồng booking và thanh toán online — khách phải nhắn tin chờ phản hồi, rồi bỏ đi.",
+      title: "Khách muốn đặt, nhưng chưa đặt được",
+      desc: "Thiếu booking và thanh toán online khiến khách phải chờ phản hồi rồi rời đi.",
     },
   ],
   servicesIntro: {
