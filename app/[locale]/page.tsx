@@ -118,6 +118,39 @@ const WHY_ICONS = [
   <IconStar key="star" />,
 ];
 
+const WEBSITE_CLUSTER_LINKS = [
+  { label: "Website khách sạn & homestay Hội An", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an", note: "Spoke dịch vụ" },
+  { label: "Website tour du lịch Hội An", href: "/vi/thiet-ke-website/website-tour-du-lich-hoi-an", note: "Spoke dịch vụ" },
+  { label: "Website đa ngôn ngữ", href: "/vi/thiet-ke-website/website-da-ngon-ngu", note: "Spoke dịch vụ" },
+  { label: "Website booking online", href: "/vi/thiet-ke-website/website-booking-online", note: "Spoke dịch vụ" },
+  { label: "Website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi", note: "Bài blog" },
+  { label: "Website đa ngôn ngữ cho khách quốc tế", href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te", note: "Bài blog" },
+  { label: "Nên làm website hay chỉ dùng OTA/Facebook", href: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook", note: "Bài blog" },
+  { label: "Website khách sạn khác gì website spa", href: "/vi/blog/website-khach-san-khac-gi-website-spa", note: "Bài blog" },
+];
+
+const NAVER_CLUSTER_LINKS = [
+  { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Spoke dịch vụ" },
+  { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver", note: "Spoke dịch vụ" },
+  { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Spoke dịch vụ" },
+  { label: "Naver KOC", href: "/vi/naver-marketing/naver-koc", note: "Spoke dịch vụ" },
+  { label: "Naver Place khác Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao", note: "Bài blog" },
+  { label: "Bao lâu thì Naver có tín hiệu", href: "/vi/blog/bao-lau-thi-naver-co-tin-hieu", note: "Bài blog" },
+  { label: "Cách đo hiệu quả chiến dịch Naver", href: "/vi/blog/cach-do-hieu-qua-chien-dich-naver", note: "Bài blog" },
+  { label: "Chuẩn bị trước khi book blogger Hàn", href: "/vi/blog/ho-so-doanh-nghiep-truoc-khi-book-blogger-han", note: "Bài blog" },
+];
+
+const MAPS_CLUSTER_LINKS = [
+  { label: "Audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile", note: "Spoke dịch vụ" },
+  { label: "Xử lý không hiển thị trên Google Maps", href: "/vi/google-maps-marketing/xu-ly-khong-hien-thi-tren-google-maps", note: "Spoke dịch vụ" },
+  { label: "Quản lý review tiêu cực", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc", note: "Spoke dịch vụ" },
+  { label: "Tối ưu hình ảnh Google Maps", href: "/vi/google-maps-marketing/toi-uu-hinh-anh-google-maps", note: "Spoke dịch vụ" },
+  { label: "Google Business Profile audit gồm những gì", href: "/vi/blog/google-business-profile-audit-gom-nhung-gi", note: "Bài blog" },
+  { label: "Khi nào cần gộp hồ sơ trùng Google Maps", href: "/vi/blog/khi-nao-can-gop-ho-so-trung-google-maps", note: "Bài blog" },
+  { label: "Website hỗ trợ Google Maps ra sao", href: "/vi/blog/website-ho-tro-google-maps-ra-sao", note: "Bài blog" },
+  { label: "Quy trình xin review thật sau dịch vụ", href: "/vi/blog/quy-trinh-xin-review-that-sau-dich-vu", note: "Bài blog" },
+];
+
 function ServiceSystemSection() {
   const intro = HOME_VI.servicesIntro;
 
@@ -177,6 +210,115 @@ function ServiceSystemSection() {
               </Reveal>
             );
           })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function WebsiteClusterLinksSection() {
+  return (
+    <section className="border-b border-line bg-white py-14 sm:py-16">
+      <Container>
+        <div className="max-w-3xl">
+          <p className="label-mono text-blue-600">Website cluster</p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+            Đi sâu hơn vào cụm Website
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted">
+            Khối liên kết này đẩy trực tiếp từ homepage sang các spoke dịch vụ mới và các bài giải thích
+            mới để cụm Website có thêm điểm vào nội bộ rõ ràng hơn.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {WEBSITE_CLUSTER_LINKS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group rounded-card border border-line bg-white p-5 shadow-soft transition-all hover:-translate-y-1 hover:border-blue-200"
+            >
+              <span className="label-mono text-blue-600">{item.note}</span>
+              <p className="mt-2 text-sm font-semibold leading-relaxed text-ink group-hover:text-blue-700">
+                {item.label}
+              </p>
+              <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-blue-700">
+                Xem trang
+                <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+              </span>
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function NaverClusterLinksSection() {
+  return (
+    <section className="border-b border-line bg-white py-14 sm:py-16">
+      <Container>
+        <div className="max-w-3xl">
+          <p className="label-mono text-blue-600">Naver cluster</p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+            Đi sâu hơn vào cụm Naver
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted">
+            Khối liên kết này đẩy trực tiếp từ homepage sang các spoke thương mại mới của Naver và các bài giải thích mới để cụm Naver có thêm điểm vào nội bộ rõ ràng hơn.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {NAVER_CLUSTER_LINKS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group rounded-card border border-line bg-white p-5 shadow-soft transition-all hover:-translate-y-1 hover:border-blue-200"
+            >
+              <span className="label-mono text-blue-600">{item.note}</span>
+              <p className="mt-2 text-sm font-semibold leading-relaxed text-ink group-hover:text-blue-700">
+                {item.label}
+              </p>
+              <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-blue-700">
+                Xem trang
+                <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+              </span>
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function MapsClusterLinksSection() {
+  return (
+    <section className="border-b border-line bg-white py-14 sm:py-16">
+      <Container>
+        <div className="max-w-3xl">
+          <p className="label-mono text-blue-600">Google Maps cluster</p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+            Đi sâu hơn vào cụm Google Maps
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted">
+            Khối liên kết này đẩy trực tiếp từ homepage sang các spoke problem-solution mới của Google Maps và các bài giải thích mới để cụm này có thêm điểm vào nội bộ rõ ràng hơn.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {MAPS_CLUSTER_LINKS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group rounded-card border border-line bg-white p-5 shadow-soft transition-all hover:-translate-y-1 hover:border-blue-200"
+            >
+              <span className="label-mono text-blue-600">{item.note}</span>
+              <p className="mt-2 text-sm font-semibold leading-relaxed text-ink group-hover:text-blue-700">
+                {item.label}
+              </p>
+              <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-blue-700">
+                Xem trang
+                <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+              </span>
+            </Link>
+          ))}
         </div>
       </Container>
     </section>
@@ -337,6 +479,9 @@ function HomeVI() {
 
       {/* ── Services ── */}
       <ServiceSystemSection />
+      <WebsiteClusterLinksSection />
+      <NaverClusterLinksSection />
+      <MapsClusterLinksSection />
 
       {/* ── Why Công Thiên ── */}
       <section className="py-16 sm:py-24">

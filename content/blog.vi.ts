@@ -1,5 +1,9 @@
+export type InlineLinkPart =
+  | { type: "text"; text: string }
+  | { type: "link"; text: string; href: string };
+
 export type BlogBlock =
-  | { type: "p"; text: string }
+  | { type: "p"; text?: string; parts?: InlineLinkPart[] }
   | { type: "h2"; text: string }
   | { type: "ul"; items: string[] };
 
@@ -422,6 +426,321 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Thiết kế website",
         href: "/vi/thiet-ke-website",
         note: "Dịch vụ",
+      },
+    ],
+  },
+  {
+    slug: "website-booking-online-can-nhung-gi",
+    path: "/vi/blog/website-booking-online-can-nhung-gi",
+    cluster: "website",
+    title: "Website booking online cần những gì để chốt khách tốt hơn?",
+    metaTitle:
+      "Website booking online cần những gì? | Công Thiên Agency",
+    metaDescription:
+      "Checklist các thành phần cần có của một website booking online hiệu quả: flow đặt chỗ, thanh toán, email xác nhận, mobile UX và yếu tố tạo niềm tin trước khi khách booking.",
+    excerpt:
+      "Nhiều website có form liên hệ nhưng chưa thực sự là website booking online. Đây là những thành phần cốt lõi.",
+    date: "2026-06-15",
+    readingMinutes: 7,
+    primaryKeyword: "website booking online cần những gì",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Website booking online cần gì",
+        href: "/vi/blog/website-booking-online-can-nhung-gi",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Một website có nút “Liên hệ” chưa chắc đã là website booking online. Nếu bạn muốn xem cấu trúc một trang dịch vụ đi đúng hướng chuyển đổi, hãy xem " },
+          { type: "link", text: "dịch vụ website booking online", href: "/vi/thiet-ke-website/website-booking-online" },
+          { type: "text", text: ". Muốn chốt khách tốt hơn, bạn cần một flow giúp người dùng đi từ xem dịch vụ sang đặt chỗ với ít ma sát nhất có thể." },
+        ],
+      },
+      { type: "h2", text: "Những phần cốt lõi của một website booking online" },
+      {
+        type: "ul",
+        items: [
+          "Trang dịch vụ hoặc tour đủ rõ để khách hiểu mình đang đặt cái gì.",
+          "Bước chọn dịch vụ, thời gian hoặc gói phù hợp.",
+          "Form nhập thông tin ngắn gọn, không hỏi thừa.",
+          "Thanh toán hoặc thu cọc nếu mô hình vận hành cần.",
+          "Email xác nhận tự động sau khi đặt để khách yên tâm.",
+        ],
+      },
+      { type: "h2", text: "Mobile UX quyết định rất nhiều" },
+      {
+        type: "p",
+        text: "Phần lớn khách du lịch tra cứu và booking trên điện thoại. Nếu flow đặt chỗ rối, nút nhỏ hoặc phải tải quá lâu, bạn sẽ mất khách dù dịch vụ tốt. Website booking online phải được thiết kế cho mobile trước.",
+      },
+      { type: "h2", text: "Niềm tin quan trọng không kém tính năng" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Ngoài flow kỹ thuật, khách còn cần lý do để tin bạn: hình ảnh thật, chính sách rõ ràng, review, Google Maps và thương hiệu nhất quán. Nếu bạn đang cân nhắc kênh nào nên là trung tâm, bài " },
+          { type: "link", text: "nên làm website hay chỉ dùng OTA/Facebook", href: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook" },
+          { type: "text", text: " sẽ giúp bạn nhìn rõ hơn vai trò của website trong toàn bộ hệ thống. Booking online hiệu quả là sự kết hợp giữa UX, công nghệ và niềm tin." },
+        ],
+      },
+    ],
+    related: [
+      {
+        label: "Website booking online",
+        href: "/vi/thiet-ke-website/website-booking-online",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Website tour du lịch Hội An",
+        href: "/vi/thiet-ke-website/website-tour-du-lich-hoi-an",
+        note: "Spoke liên quan",
+      },
+      {
+        label: "Website đa ngôn ngữ cho khách quốc tế",
+        href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te",
+        note: "Bài liên quan",
+      },
+      {
+        label: "Nên làm website hay chỉ dùng OTA/Facebook",
+        href: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook",
+        note: "Bài chiến lược",
+      },
+    ],
+  },
+  {
+    slug: "website-da-ngon-ngu-cho-khach-quoc-te",
+    path: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te",
+    cluster: "website",
+    title: "Website đa ngôn ngữ cho khách quốc tế cần lưu ý những gì?",
+    metaTitle:
+      "Website đa ngôn ngữ cho khách quốc tế: cần lưu ý gì? | Công Thiên Agency",
+    metaDescription:
+      "Phân tích những điểm quan trọng khi làm website đa ngôn ngữ cho khách quốc tế: cấu trúc ngôn ngữ, trải nghiệm người dùng, SEO và lý do bản dịch máy thường chưa đủ.",
+    excerpt:
+      "Đa ngôn ngữ không chỉ là dịch chữ. Đây là những điều cần đúng để website thật sự phục vụ khách quốc tế.",
+    date: "2026-06-15",
+    readingMinutes: 6,
+    primaryKeyword: "website đa ngôn ngữ cho khách quốc tế",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Website đa ngôn ngữ cho khách quốc tế",
+        href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nhiều doanh nghiệp biết mình cần website đa ngôn ngữ, nhưng lại xem đó chỉ là công việc dịch chữ. Nếu bạn muốn xem trang dịch vụ giải bài toán này theo hướng thương mại, hãy xem " },
+          { type: "link", text: "dịch vụ website đa ngôn ngữ", href: "/vi/thiet-ke-website/website-da-ngon-ngu" },
+          { type: "text", text: ". Thực tế, đa ngôn ngữ là bài toán trải nghiệm và niềm tin: khách có hiểu dịch vụ đủ rõ để booking hay không." },
+        ],
+      },
+      { type: "h2", text: "Những điểm cần làm đúng ngay từ đầu" },
+      {
+        type: "ul",
+        items: [
+          "Cấu trúc URL và điều hướng rõ ràng theo từng ngôn ngữ.",
+          "Nội dung dịch tự nhiên, tránh cảm giác máy móc hoặc sai ngữ cảnh.",
+          "CTA, giá, chính sách và thông tin liên hệ dễ hiểu với khách quốc tế.",
+          "Metadata và SEO cần được tối ưu cho từng ngôn ngữ, không chỉ phần nội dung trên trang.",
+        ],
+      },
+      { type: "h2", text: "Vì sao dịch máy thường chưa đủ?" },
+      {
+        type: "p",
+        text: "Dịch máy có thể giúp hiểu cơ bản, nhưng thường không tạo cảm giác chuyên nghiệp với khách đang chuẩn bị chi tiền. Đặc biệt với khách Hàn, hành trình từ Naver sang một website tiếng Hàn hoặc ít nhất là nội dung được bản địa hóa tốt sẽ thuyết phục hơn nhiều.",
+      },
+      { type: "h2", text: "Bắt đầu từ đâu là thực tế nhất?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Bạn không nhất thiết phải dịch toàn bộ website ngay. Cách thực tế là ưu tiên những trang ảnh hưởng trực tiếp đến booking trước: trang dịch vụ, bảng giá, liên hệ và các landing page chính. Sau đó mở rộng dần khi nội dung và ngân sách cho phép. Với doanh nghiệp lưu trú hoặc tour, bạn cũng nên đọc thêm bài " },
+          { type: "link", text: "website khách sạn khác gì website spa", href: "/vi/blog/website-khach-san-khac-gi-website-spa" },
+          { type: "text", text: " để thấy vì sao cấu trúc nội dung theo ngành ảnh hưởng trực tiếp đến cách triển khai đa ngôn ngữ." },
+        ],
+      },
+    ],
+    related: [
+      {
+        label: "Website đa ngôn ngữ",
+        href: "/vi/thiet-ke-website/website-da-ngon-ngu",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Website khách sạn & homestay Hội An",
+        href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an",
+        note: "Spoke liên quan",
+      },
+      {
+        label: "Website booking online",
+        href: "/vi/thiet-ke-website/website-booking-online",
+        note: "Tăng chuyển đổi",
+      },
+      {
+        label: "Website booking online cần những gì",
+        href: "/vi/blog/website-booking-online-can-nhung-gi",
+        note: "Bài liên quan",
+      },
+    ],
+  },
+  {
+    slug: "nen-lam-website-hay-chi-dung-ota-facebook",
+    path: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook",
+    cluster: "website",
+    title: "Nên làm website hay chỉ dùng OTA và Facebook?",
+    metaTitle:
+      "Nên làm website hay chỉ dùng OTA/Facebook? | Công Thiên Agency",
+    metaDescription:
+      "So sánh thẳng giữa website riêng, OTA và Facebook cho doanh nghiệp du lịch: điểm mạnh, điểm yếu và khi nào nên kết hợp cả ba thay vì phụ thuộc vào một kênh.",
+    excerpt:
+      "OTA và Facebook giúp có khách nhanh, nhưng website mới là tài sản lâu dài. Đây là cách nhìn thực tế giữa ba kênh.",
+    date: "2026-06-15",
+    readingMinutes: 7,
+    primaryKeyword: "nên làm website hay chỉ dùng OTA Facebook",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Website hay chỉ dùng OTA Facebook",
+        href: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Rất nhiều doanh nghiệp lưu trú, tour và dịch vụ du lịch bắt đầu bằng OTA hoặc Facebook vì nhanh và quen thuộc. Nhưng khi muốn xây thương hiệu hoặc tăng direct booking, câu hỏi sớm muộn cũng xuất hiện: có cần website riêng hay chưa? Nếu bạn đang ở nhóm lưu trú, hãy đối chiếu thêm với " },
+          { type: "link", text: "spoke website khách sạn và homestay Hội An", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an" },
+          { type: "text", text: " để thấy website riêng thường giải quyết phần nào của bài toán này." },
+        ],
+      },
+      { type: "h2", text: "Điểm mạnh của OTA và Facebook" },
+      {
+        type: "ul",
+        items: [
+          "OTA có sẵn lưu lượng người dùng đang tìm chỗ ở hoặc dịch vụ.",
+          "Facebook giúp đăng nội dung nhanh và trò chuyện trực tiếp với khách.",
+          "Cả hai đều phù hợp để bắt đầu khi ngân sách còn nhỏ.",
+        ],
+      },
+      { type: "h2", text: "Giới hạn khi chỉ dựa vào kênh bên ngoài" },
+      {
+        type: "p",
+        text: "Bạn không kiểm soát hoàn toàn trải nghiệm, dữ liệu khách hay cách thương hiệu được trình bày. OTA lấy phí trung gian; Facebook phụ thuộc thuật toán. Khi khách muốn kiểm tra kỹ hơn, thiếu website riêng khiến thương hiệu trông kém chắc chắn hơn.",
+      },
+      { type: "h2", text: "Cách tiếp cận thực tế nhất" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Không phải chọn một bỏ một. Cách bền vững hơn là dùng OTA và Facebook như kênh kéo khách, còn website là trung tâm để xây thương hiệu, gom thông tin chuẩn, nhận booking trực tiếp và liên kết với Google Maps hoặc Naver. Nếu mục tiêu của bạn là chốt trực tiếp ngay trên site, hãy xem thêm " },
+          { type: "link", text: "website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi" },
+          { type: "text", text: ". Khi ba kênh hỗ trợ nhau, hiệu quả thường tốt hơn nhiều so với phụ thuộc vào một nơi." },
+        ],
+      },
+    ],
+    related: [
+      {
+        label: "Website khách sạn & homestay Hội An",
+        href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an",
+        note: "Spoke lưu trú",
+      },
+      {
+        label: "Website booking online",
+        href: "/vi/thiet-ke-website/website-booking-online",
+        note: "Spoke chuyển đổi",
+      },
+      {
+        label: "Website booking online cần những gì",
+        href: "/vi/blog/website-booking-online-can-nhung-gi",
+        note: "Bài liên quan",
+      },
+      {
+        label: "Website khách sạn khác gì website spa",
+        href: "/vi/blog/website-khach-san-khac-gi-website-spa",
+        note: "Bài so sánh",
+      },
+    ],
+  },
+  {
+    slug: "website-khach-san-khac-gi-website-spa",
+    path: "/vi/blog/website-khach-san-khac-gi-website-spa",
+    cluster: "website",
+    title: "Website khách sạn khác gì website spa?",
+    metaTitle:
+      "Website khách sạn khác gì website spa? | Công Thiên Agency",
+    metaDescription:
+      "So sánh website khách sạn và website spa theo mục tiêu chuyển đổi, cấu trúc nội dung, flow booking và yếu tố niềm tin để tránh dùng một mẫu chung cho hai ngành khác nhau.",
+    excerpt:
+      "Cùng là website dịch vụ du lịch, nhưng khách sạn và spa có hành vi booking rất khác nhau. Cấu trúc website vì thế cũng khác.",
+    date: "2026-06-15",
+    readingMinutes: 6,
+    primaryKeyword: "website khách sạn khác gì website spa",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Website khách sạn khác gì website spa",
+        href: "/vi/blog/website-khach-san-khac-gi-website-spa",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nhiều người nghĩ chỉ cần một mẫu website đẹp là dùng được cho mọi loại hình du lịch. Nhưng website khách sạn và website spa phục vụ hai kiểu quyết định rất khác nhau, nên cấu trúc chuyển đổi cũng không thể giống nhau. Nếu bạn muốn xem một ví dụ bên lưu trú, hãy bắt đầu từ " },
+          { type: "link", text: "spoke website khách sạn và homestay Hội An", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Khác nhau ở mục tiêu chuyển đổi" },
+      {
+        type: "ul",
+        items: [
+          "Website khách sạn tập trung vào loại phòng, tiện nghi, vị trí và direct booking.",
+          "Website spa tập trung vào treatment, cảm giác thư giãn, thời lượng và đặt lịch theo dịch vụ.",
+          "Khách đặt phòng thường so sánh nhiều lựa chọn; khách spa lại phản ứng mạnh với cảm xúc, hình ảnh và sự tin tưởng.",
+        ],
+      },
+      { type: "h2", text: "Flow booking cũng khác" },
+      {
+        type: "p",
+        text: "Khách sạn cần logic về ngày ở, loại phòng, số khách hoặc inquiry đặt phòng. Spa thường cần chọn treatment, thời gian, therapist hoặc gói dịch vụ. Nếu dùng cùng một cấu trúc, website sẽ không tối ưu cho hành vi thực tế của khách.",
+      },
+      { type: "h2", text: "Thiết kế đúng ngành giúp website bán tốt hơn" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Website hiệu quả không phải website đẹp chung chung, mà là website phản ánh đúng cách khách ra quyết định trong ngành đó. Đây là lý do tôi tách spoke riêng cho spa, khách sạn, nhà hàng và tour thay vì gom tất cả vào một trang mẫu. Khi cần phục vụ khách quốc tế, bước tiếp theo thường là " },
+          { type: "link", text: "thiết kế website đa ngôn ngữ", href: "/vi/thiet-ke-website/website-da-ngon-ngu" },
+          { type: "text", text: " để nội dung và CTA khớp với từng nhóm khách." },
+        ],
+      },
+    ],
+    related: [
+      {
+        label: "Website khách sạn & homestay Hội An",
+        href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an",
+        note: "Spoke lưu trú",
+      },
+      {
+        label: "Website đa ngôn ngữ",
+        href: "/vi/thiet-ke-website/website-da-ngon-ngu",
+        note: "Spoke hỗ trợ",
+      },
+      {
+        label: "Nên làm website hay chỉ dùng OTA/Facebook",
+        href: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook",
+        note: "Bài chiến lược",
+      },
+      {
+        label: "Website đa ngôn ngữ cho khách quốc tế",
+        href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te",
+        note: "Bài liên quan",
       },
     ],
   },
@@ -868,6 +1187,274 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
+    slug: "naver-place-khac-naver-blog-the-nao",
+    path: "/vi/blog/naver-place-khac-naver-blog-the-nao",
+    cluster: "naver",
+    title: "Naver Place khác Naver Blog thế nào?",
+    metaTitle: "Naver Place khác Naver Blog thế nào? | Công Thiên Agency",
+    metaDescription:
+      "Phân biệt Naver Place và Naver Blog: vai trò, cách khách Hàn sử dụng và vì sao doanh nghiệp du lịch nên làm cả hai thay vì chỉ chọn một.",
+    excerpt:
+      "Naver Place và Naver Blog không thay thế nhau. Một cái giúp khách thấy địa điểm, cái kia giúp họ tin hơn qua trải nghiệm.",
+    date: "2026-06-15",
+    readingMinutes: 6,
+    primaryKeyword: "Naver Place khác Naver Blog",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Naver Place khác Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nhiều doanh nghiệp nghe đến Naver Marketing nhưng chưa phân biệt rõ Naver Place và Naver Blog. Nếu bạn muốn xem hướng commercial tương ứng cho hai phần này, bắt đầu từ " },
+          { type: "link", text: "tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place" },
+          { type: "text", text: " và " },
+          { type: "link", text: "viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog" },
+          { type: "text", text: ". Thực tế, đây là hai phần khác nhau trong cùng hệ sinh thái: một phần giúp khách Hàn nhìn thấy địa điểm, phần còn lại giúp họ tin địa điểm đó đáng để chọn." },
+        ],
+      },
+      { type: "h2", text: "Naver Place là gì trong hành trình của khách?" },
+      {
+        type: "p",
+        text: "Naver Place giống vai trò của hồ sơ địa điểm: khách xem bản đồ, tên địa điểm, hình ảnh, giờ mở cửa và các tín hiệu review xung quanh. Đây thường là nơi họ so sánh nhanh giữa nhiều lựa chọn.",
+      },
+      { type: "h2", text: "Naver Blog đóng vai trò gì?" },
+      {
+        type: "p",
+        text: "Naver Blog là nơi kể câu chuyện trải nghiệm. Khách đọc bài review, nhìn hình ảnh và đánh giá xem cảm nhận đó có đáng tin hay không. Blog thường tác động mạnh ở giai đoạn khách muốn đào sâu hơn trước khi quyết định.",
+      },
+      { type: "h2", text: "Vì sao nên làm cả hai?" },
+      {
+        type: "ul",
+        items: [
+          "Place giúp khách tìm và định vị địa điểm nhanh.",
+          "Blog giúp tăng social proof và chiều sâu trải nghiệm.",
+          "Bài blog review có thể làm hồ sơ Place dày hơn.",
+          "Khi đi cùng nhau, doanh nghiệp mạnh ở cả tìm thấy lẫn thuyết phục.",
+        ],
+      },
+      { type: "h2", text: "Doanh nghiệp nên bắt đầu từ đâu?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu doanh nghiệp chưa có gì, thường nên bắt đầu bằng blogger review hoặc content Naver để tạo tín hiệu ban đầu, sau đó tối ưu Place để gom các tín hiệu này lại thành một điểm chạm địa điểm rõ ràng. Nếu bạn đang đi theo nhịp dài hạn, bước kế tiếp hợp lý là " },
+          { type: "link", text: "quản lý tài khoản Naver theo tháng", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    related: [
+      { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Dịch vụ" },
+      { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Dịch vụ" },
+      { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver", note: "Dịch vụ" },
+      { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Bài nền tảng" },
+      { label: "Cách viết bài Naver Blog chuẩn", href: "/vi/blog/cach-viet-bai-naver-blog-chuan", note: "Bài liên quan" },
+    ],
+  },
+  {
+    slug: "bao-lau-thi-naver-co-tin-hieu",
+    path: "/vi/blog/bao-lau-thi-naver-co-tin-hieu",
+    cluster: "naver",
+    title: "Bao lâu thì Naver có tín hiệu sau khi bắt đầu làm nội dung?",
+    metaTitle: "Bao lâu thì Naver có tín hiệu? | Công Thiên Agency",
+    metaDescription:
+      "Giải thích thực tế về thời gian Naver bắt đầu có tín hiệu: phụ thuộc vào loại nội dung, tần suất đăng, độ phù hợp từ khóa và việc doanh nghiệp làm chiến dịch ngắn hạn hay xây tài khoản dài hạn.",
+    excerpt:
+      "Naver không phải nút bật/tắt. Tín hiệu thường đến theo nhịp nội dung, từ khóa và sự đều đặn của kênh.",
+    date: "2026-06-15",
+    readingMinutes: 6,
+    primaryKeyword: "bao lâu thì Naver có tín hiệu",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Bao lâu thì Naver có tín hiệu", href: "/vi/blog/bao-lau-thi-naver-co-tin-hieu" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Đây là một trong những câu hỏi thực tế nhất khi doanh nghiệp bắt đầu làm Naver: bao lâu thì thấy tín hiệu? Nếu bạn đang đi theo hướng xây kênh dài hạn, hãy đối chiếu thêm với " },
+          { type: "link", text: "quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver" },
+          { type: "text", text: ". Câu trả lời trung thực là không có một mốc cố định cho mọi trường hợp, vì Naver phản ứng theo loại nội dung, độ đều, mức cạnh tranh từ khóa và độ đáng tin của kênh." },
+        ],
+      },
+      { type: "h2", text: "Những yếu tố ảnh hưởng thời gian có tín hiệu" },
+      {
+        type: "ul",
+        items: [
+          "Bạn đang làm blogger review một đợt hay xây tài khoản nội dung theo tháng.",
+          "Bộ từ khóa có đúng với ý định tìm kiếm của khách Hàn hay không.",
+          "Tần suất đăng bài và độ nhất quán của nội dung.",
+          "Mức độ sẵn có của hình ảnh, trải nghiệm thật và tín hiệu thương hiệu khác.",
+        ],
+      },
+      { type: "h2", text: "Tín hiệu ngắn hạn và dài hạn khác nhau" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Một đợt blogger review có thể tạo social proof và độ hiện diện nhanh hơn. Nhưng tài khoản Naver riêng được quản lý theo tháng mới là thứ giúp tín hiệu tích lũy và ổn định hơn theo thời gian. Đây cũng là khác biệt giữa " },
+          { type: "link", text: "booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han" },
+          { type: "text", text: " và " },
+          { type: "link", text: "quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Nên đặt kỳ vọng như thế nào?" },
+      {
+        type: "p",
+        text: "Thay vì mong chờ một ngày cụ thể sẽ “lên top”, doanh nghiệp nên nhìn vào các tín hiệu nhỏ hơn: bài bắt đầu xuất hiện, hồ sơ Place dày hơn, khách Hàn hỏi đến từ Naver nhiều hơn, hoặc có thêm social proof tiếng Hàn để dùng trong hành trình bán hàng.",
+      },
+      { type: "h2", text: "Điều quan trọng nhất là nhịp làm bền" },
+      {
+        type: "p",
+        text: "Naver phù hợp với cách làm đều đặn hơn là kỳ vọng một bài duy nhất giải quyết mọi thứ. Đây là lý do nhiều doanh nghiệp bắt đầu bằng review để tạo đà rồi chuyển sang vận hành tài khoản theo tháng.",
+      },
+    ],
+    related: [
+      { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver", note: "Dịch vụ" },
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Dịch vụ" },
+      { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Dịch vụ" },
+      { label: "Cách đo hiệu quả chiến dịch Naver", href: "/vi/blog/cach-do-hieu-qua-chien-dich-naver", note: "Bài liên quan" },
+      { label: "Bộ từ khóa Naver cho du lịch", href: "/vi/blog/bo-tu-khoa-naver-cho-du-lich", note: "Bài liên quan" },
+    ],
+  },
+  {
+    slug: "cach-do-hieu-qua-chien-dich-naver",
+    path: "/vi/blog/cach-do-hieu-qua-chien-dich-naver",
+    cluster: "naver",
+    title: "Cách đo hiệu quả chiến dịch Naver cho doanh nghiệp du lịch",
+    metaTitle: "Cách đo hiệu quả chiến dịch Naver | Công Thiên Agency",
+    metaDescription:
+      "Những chỉ dấu thực tế để đo hiệu quả chiến dịch Naver: link bài, số bài được đăng, độ phủ từ khóa, tín hiệu social proof và chất lượng điểm chạm mà khách Hàn nhìn thấy.",
+    excerpt:
+      "Chiến dịch Naver không nên được đo chỉ bằng một chỉ số. Đây là cách nhìn đúng hơn về hiệu quả.",
+    date: "2026-06-15",
+    readingMinutes: 6,
+    primaryKeyword: "cách đo hiệu quả chiến dịch Naver",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Cách đo hiệu quả chiến dịch Naver", href: "/vi/blog/cach-do-hieu-qua-chien-dich-naver" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nhiều người hỏi “làm sao biết chiến dịch Naver có hiệu quả hay không?”. Nếu bạn đang nói đến chiến dịch theo đợt lớn, hãy đặt cạnh " },
+          { type: "link", text: "dịch vụ Naver KOC", href: "/vi/naver-marketing/naver-koc" },
+          { type: "text", text: " hoặc " },
+          { type: "link", text: "booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han" },
+          { type: "text", text: ". Vấn đề là Naver không nên bị đánh giá bằng một chỉ số duy nhất. Với doanh nghiệp du lịch, hiệu quả thường nằm ở việc bạn có thêm những điểm chạm đáng tin để khách Hàn nhìn thấy trước khi quyết định." },
+        ],
+      },
+      { type: "h2", text: "Những chỉ dấu nên theo dõi" },
+      {
+        type: "ul",
+        items: [
+          "Có bao nhiêu bài đã được đăng và còn hiển thị.",
+          "Bộ từ khóa nào bắt đầu có tín hiệu xuất hiện tốt hơn.",
+          "Hồ sơ Naver Place có dày hơn nhờ blog review hay không.",
+          "Đội bán hàng hoặc vận hành có nhận thêm lead / câu hỏi từ khách Hàn hay không.",
+        ],
+      },
+      { type: "h2", text: "Social proof cũng là một kết quả" },
+      {
+        type: "p",
+        text: "Ngay cả khi bạn chưa thấy tác động trực tiếp lên booking, việc sở hữu thêm bài tiếng Hàn, nội dung trải nghiệm và điểm chạm sạch trên Naver đã là một tài sản có thể dùng để bán hàng tốt hơn.",
+      },
+      { type: "h2", text: "Tách mục tiêu chiến dịch cho đúng" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu mục tiêu là có social proof nhanh, blogger review tiêu chuẩn là đủ. Nếu mục tiêu là độ phủ chiến dịch, bạn phải đo theo logic của KOC. Nếu mục tiêu là hiện diện dài hạn, hãy đo theo nhịp " },
+          { type: "link", text: "vận hành tài khoản Naver theo tháng", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Đừng chỉ hỏi “có lên top không?”" },
+      {
+        type: "p",
+        text: "Đó là câu hỏi quá hẹp. Cách nhìn đúng hơn là: khách Hàn có thấy doanh nghiệp đáng tin hơn trên Naver không, và doanh nghiệp có đang tích lũy thêm tài sản nội dung tiếng Hàn sau mỗi đợt triển khai hay không.",
+      },
+    ],
+    related: [
+      { label: "Naver KOC", href: "/vi/naver-marketing/naver-koc", note: "Dịch vụ" },
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Dịch vụ" },
+      { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver", note: "Dịch vụ" },
+      { label: "Bao lâu thì Naver có tín hiệu", href: "/vi/blog/bao-lau-thi-naver-co-tin-hieu", note: "Bài liên quan" },
+      { label: "Naver KOC và blogger Hàn", href: "/vi/blog/naver-koc-blogger-han-la-gi", note: "Bài liên quan" },
+    ],
+  },
+  {
+    slug: "ho-so-doanh-nghiep-truoc-khi-book-blogger-han",
+    path: "/vi/blog/ho-so-doanh-nghiep-truoc-khi-book-blogger-han",
+    cluster: "naver",
+    title: "Hồ sơ doanh nghiệp cần chuẩn bị gì trước khi book blogger Hàn?",
+    metaTitle: "Cần chuẩn bị gì trước khi book blogger Hàn? | Công Thiên Agency",
+    metaDescription:
+      "Checklist hồ sơ doanh nghiệp trước khi booking blogger Hàn: thông tin dịch vụ, điểm mạnh, hình ảnh, lịch trải nghiệm và cách tiếp đón để bài review Naver có chất lượng tốt hơn.",
+    excerpt:
+      "Chiến dịch blogger Hàn tốt bắt đầu từ khâu chuẩn bị. Đây là checklist doanh nghiệp nên có trước khi mời blogger trải nghiệm.",
+    date: "2026-06-15",
+    readingMinutes: 6,
+    primaryKeyword: "chuẩn bị gì trước khi book blogger Hàn",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Chuẩn bị trước khi book blogger Hàn", href: "/vi/blog/ho-so-doanh-nghiep-truoc-khi-book-blogger-han" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Một chiến dịch blogger Hàn không chỉ phụ thuộc vào việc chọn đúng blogger. Nếu bạn đang chuẩn bị cho một campaign quy mô lớn hơn, hãy đặt cùng với " },
+          { type: "link", text: "dịch vụ Naver KOC", href: "/vi/naver-marketing/naver-koc" },
+          { type: "text", text: ". Chất lượng bài review còn phụ thuộc rất lớn vào mức độ doanh nghiệp chuẩn bị trước: thông tin có rõ không, trải nghiệm có mượt không, và blogger có đủ chất liệu để viết một bài đáng tin hay không." },
+        ],
+      },
+      { type: "h2", text: "Những thứ nên chuẩn bị trước" },
+      {
+        type: "ul",
+        items: [
+          "Mô tả ngắn gọn dịch vụ, điểm mạnh và lý do khách Hàn nên quan tâm.",
+          "Hình ảnh thật của không gian, dịch vụ, món ăn hoặc phòng.",
+          "Danh sách thông tin thực tế: giờ mở cửa, địa chỉ, giá tham khảo, cách đặt.",
+          "Khung thời gian và người phụ trách để sắp xếp buổi trải nghiệm.",
+        ],
+      },
+      { type: "h2", text: "Trải nghiệm thực tế phải đủ tốt để viết" },
+      {
+        type: "p",
+        text: "Blogger Hàn không thể viết ra một bài có chiều sâu nếu doanh nghiệp chỉ đưa vài tấm ảnh hoặc một brief sơ sài. Họ cần đủ chất liệu từ trải nghiệm thật để kể câu chuyện thuyết phục người đọc Hàn.",
+      },
+      { type: "h2", text: "Chuẩn bị tốt giúp chiến dịch tiết kiệm hơn" },
+      {
+        type: "p",
+        text: "Khi brief rõ ngay từ đầu, doanh nghiệp giảm rủi ro triển khai chậm, tránh hiểu lầm và tăng khả năng bài viết đúng trọng tâm. Đây là phần làm nhỏ nhưng tác động rất lớn đến chất lượng đầu ra của chiến dịch.",
+      },
+      { type: "h2", text: "Đây là lúc nên nghĩ theo hệ thống" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu đã chuẩn bị hồ sơ doanh nghiệp cho blogger, bạn cũng đang chuẩn bị một phần nền tảng để làm tiếp " },
+          { type: "link", text: "tài khoản Naver hàng tháng", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver" },
+          { type: "text", text: ", " },
+          { type: "link", text: "Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place" },
+          { type: "text", text: " và website đích cho khách Hàn sau này. Chính sự nối tiếp này làm Naver Marketing hiệu quả hơn một đợt review đơn lẻ." },
+        ],
+      },
+    ],
+    related: [
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Dịch vụ" },
+      { label: "Naver KOC", href: "/vi/naver-marketing/naver-koc", note: "Dịch vụ" },
+      { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver", note: "Dịch vụ" },
+      { label: "Chuẩn bị hình ảnh cho bài Naver", href: "/vi/blog/chuan-bi-hinh-anh-cho-bai-naver", note: "Bài liên quan" },
+      { label: "Cách đo hiệu quả chiến dịch Naver", href: "/vi/blog/cach-do-hieu-qua-chien-dich-naver", note: "Bài liên quan" },
+    ],
+  },
+  {
     slug: "chi-phi-naver-marketing",
     path: "/vi/blog/chi-phi-naver-marketing",
     cluster: "naver",
@@ -1039,6 +1626,292 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
+    slug: "google-business-profile-audit-gom-nhung-gi",
+    path: "/vi/blog/google-business-profile-audit-gom-nhung-gi",
+    cluster: "maps",
+    title: "Google Business Profile audit gồm những gì?",
+    metaTitle: "Google Business Profile audit gồm những gì? | Công Thiên Agency",
+    metaDescription:
+      "Một buổi Google Business Profile audit nên rà soát những gì: danh mục, NAP, hình ảnh, review, hồ sơ trùng, website và các điểm nghẽn ảnh hưởng tới hiển thị trên Google Maps.",
+    excerpt:
+      "Audit Google Business Profile không chỉ là nhìn số sao. Đây là các lớp dữ liệu cần kiểm tra để biết hồ sơ đang nghẽn ở đâu.",
+    date: "2026-06-15",
+    readingMinutes: 7,
+    primaryKeyword: "Google Business Profile audit",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Google Business Profile audit gồm những gì",
+        href: "/vi/blog/google-business-profile-audit-gom-nhung-gi",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nhiều doanh nghiệp biết hồ sơ Google Maps của mình “có gì đó không ổn”, nhưng không biết bắt đầu kiểm tra từ đâu. Một buổi " },
+          { type: "link", text: "audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile" },
+          { type: "text", text: " tốt sẽ bóc tách hồ sơ thành nhiều lớp rõ ràng thay vì chỉ nhìn số sao hay vài ảnh bìa." },
+        ],
+      },
+      { type: "h2", text: "1. Nền tảng hồ sơ và danh mục" },
+      {
+        type: "ul",
+        items: [
+          "Tên doanh nghiệp có đúng chuẩn và không nhồi từ khóa hay không.",
+          "Danh mục chính, danh mục phụ có phản ánh đúng dịch vụ thật hay không.",
+          "Giờ mở cửa, khu vực phục vụ, số điện thoại và website có đầy đủ không.",
+        ],
+      },
+      { type: "h2", text: "2. NAP và độ đồng bộ giữa các kênh" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Audit cần kiểm tra tên, địa chỉ, số điện thoại có nhất quán giữa website, Google Maps, Facebook và các kênh khác hay không. Nếu không đồng bộ, tín hiệu địa phương sẽ yếu đi. Đây là lý do bài " },
+          { type: "link", text: "website hỗ trợ Google Maps ra sao", href: "/vi/blog/website-ho-tro-google-maps-ra-sao" },
+          { type: "text", text: " quan trọng với cả doanh nghiệp đang làm Maps." },
+        ],
+      },
+      { type: "h2", text: "3. Hình ảnh, dịch vụ và độ đầy của hồ sơ" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Một hồ sơ có thể đủ thông tin nhưng vẫn yếu vì hình ảnh cũ, thiếu góc chụp quan trọng hoặc danh sách dịch vụ sơ sài. Khi audit thấy phần này mỏng, bước tiếp theo thường là " },
+          { type: "link", text: "tối ưu hình ảnh Google Maps", href: "/vi/google-maps-marketing/toi-uu-hinh-anh-google-maps" },
+          { type: "text", text: " và làm lại nội dung trong hồ sơ." },
+        ],
+      },
+      { type: "h2", text: "4. Review, phản hồi và tín hiệu độ nổi bật" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Audit cũng phải nhìn cách review đang tăng, giọng phản hồi có ổn định không và hồ sơ có đang bị kéo xuống bởi review xấu chưa xử lý hay không. Nếu đây là điểm nghẽn chính, doanh nghiệp cần " },
+          { type: "link", text: "quản lý review tiêu cực", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc" },
+          { type: "text", text: " song song với quy trình xin review thật." },
+        ],
+      },
+      { type: "h2", text: "5. Hồ sơ trùng và lỗi hiển thị" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Một phần quan trọng khác là kiểm tra xem doanh nghiệp có nhiều hồ sơ trùng hoặc dấu hiệu mất hiển thị theo truy vấn hay không. Đây là điểm thường dẫn sang spoke " },
+          { type: "link", text: "xử lý không hiển thị trên Google Maps", href: "/vi/google-maps-marketing/xu-ly-khong-hien-thi-tren-google-maps" },
+          { type: "text", text: " nếu tình trạng đã rõ." },
+        ],
+      },
+    ],
+    related: [
+      { label: "Audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile", note: "Dịch vụ" },
+      { label: "Xử lý không hiển thị trên Google Maps", href: "/vi/google-maps-marketing/xu-ly-khong-hien-thi-tren-google-maps", note: "Spoke liên quan" },
+      { label: "Khi nào cần gộp hồ sơ trùng Google Maps", href: "/vi/blog/khi-nao-can-gop-ho-so-trung-google-maps", note: "Bài liên quan" },
+      { label: "Google Business Profile cần có gì", href: "/vi/blog/google-business-profile-can-co-gi", note: "Bài nền" },
+    ],
+  },
+  {
+    slug: "khi-nao-can-gop-ho-so-trung-google-maps",
+    path: "/vi/blog/khi-nao-can-gop-ho-so-trung-google-maps",
+    cluster: "maps",
+    title: "Khi nào cần gộp hồ sơ trùng trên Google Maps?",
+    metaTitle: "Khi nào cần gộp hồ sơ trùng Google Maps? | Công Thiên Agency",
+    metaDescription:
+      "Dấu hiệu doanh nghiệp đang có hồ sơ trùng trên Google Maps, vì sao điều này làm loãng tín hiệu Local SEO và khi nào nên xử lý/gộp hồ sơ để tránh mất hiển thị.",
+    excerpt:
+      "Hai hồ sơ cho cùng một doanh nghiệp không giúp bạn mạnh hơn. Thường nó chỉ làm tín hiệu bị chia nhỏ và gây rối cho cả khách lẫn Google.",
+    date: "2026-06-15",
+    readingMinutes: 6,
+    primaryKeyword: "gộp hồ sơ trùng Google Maps",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Khi nào cần gộp hồ sơ trùng Google Maps",
+        href: "/vi/blog/khi-nao-can-gop-ho-so-trung-google-maps",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Một doanh nghiệp có nhiều hồ sơ trên Google Maps không phải lúc nào cũng là “càng nhiều càng tốt”. Phần lớn trường hợp, đó là dấu hiệu dữ liệu đang bị phân tán và cần được kiểm tra trong một buổi " },
+          { type: "link", text: "audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Dấu hiệu bạn có thể đang có hồ sơ trùng" },
+      {
+        type: "ul",
+        items: [
+          "Tìm tên doanh nghiệp thấy hai hồ sơ gần giống nhau.",
+          "Khách gửi review nhưng review không đổ về đúng hồ sơ chính.",
+          "Thông tin địa chỉ hoặc số điện thoại xuất hiện ở nhiều biến thể khác nhau.",
+          "Nhân viên cũ, agency cũ hoặc chủ cũ từng tạo một hồ sơ khác.",
+        ],
+      },
+      { type: "h2", text: "Vì sao hồ sơ trùng là vấn đề?" },
+      {
+        type: "p",
+        text: "Hồ sơ trùng làm Google khó hiểu đâu là hồ sơ đại diện chính thức, khiến review, hình ảnh và tín hiệu uy tín bị chia nhỏ. Với khách, nó tạo cảm giác thiếu chuyên nghiệp hoặc gây nhầm lẫn khi họ gọi nhầm số hay đi nhầm địa chỉ.",
+      },
+      { type: "h2", text: "Khi nào nên xử lý ngay?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu hồ sơ chính khó hiển thị, review bị phân tán hoặc có một hồ sơ sai thông tin đang đứng cạnh hồ sơ thật, bạn nên xử lý sớm. Đây là nhóm case thường nằm trong spoke " },
+          { type: "link", text: "xử lý không hiển thị trên Google Maps", href: "/vi/google-maps-marketing/xu-ly-khong-hien-thi-tren-google-maps" },
+          { type: "text", text: " vì nó tác động trực tiếp đến khả năng hiển thị." },
+        ],
+      },
+      { type: "h2", text: "Không phải mọi trường hợp đều gộp giống nhau" },
+      {
+        type: "p",
+        text: "Có trường hợp doanh nghiệp đổi địa điểm, đổi tên thương hiệu hoặc vận hành nhiều cơ sở thật. Khi đó cần phân biệt rõ đâu là trùng lặp sai, đâu là địa điểm hợp lệ. Xử lý thiếu cẩn thận có thể làm mất dữ liệu review hoặc gây rối thêm.",
+      },
+    ],
+    related: [
+      { label: "Xử lý không hiển thị trên Google Maps", href: "/vi/google-maps-marketing/xu-ly-khong-hien-thi-tren-google-maps", note: "Dịch vụ" },
+      { label: "Google Business Profile audit gồm những gì", href: "/vi/blog/google-business-profile-audit-gom-nhung-gi", note: "Bài liên quan" },
+      { label: "Vì sao doanh nghiệp không hiển thị trên Google Maps", href: "/vi/blog/doanh-nghiep-khong-hien-thi-tren-google-maps", note: "Bài nền" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing", note: "Pillar" },
+    ],
+  },
+  {
+    slug: "website-ho-tro-google-maps-ra-sao",
+    path: "/vi/blog/website-ho-tro-google-maps-ra-sao",
+    cluster: "maps",
+    title: "Website hỗ trợ Google Maps mạnh hơn như thế nào?",
+    metaTitle: "Website hỗ trợ Google Maps ra sao? | Công Thiên Agency",
+    metaDescription:
+      "Website không thay Google Maps, nhưng giúp hồ sơ mạnh hơn nhờ NAP nhất quán, landing page dịch vụ, schema và tín hiệu Local SEO rõ hơn cho Google.",
+    excerpt:
+      "Google Maps và website không phải hai việc tách rời. Website tốt thường là lớp hậu thuẫn quan trọng cho hồ sơ địa phương.",
+    date: "2026-06-15",
+    readingMinutes: 7,
+    primaryKeyword: "website hỗ trợ Google Maps",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Website hỗ trợ Google Maps ra sao",
+        href: "/vi/blog/website-ho-tro-google-maps-ra-sao",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nhiều chủ doanh nghiệp nghĩ chỉ cần tối ưu Google Maps là đủ. Thực tế, website là lớp dữ liệu giúp Google tin hơn rằng doanh nghiệp của bạn là thật, đang hoạt động và phục vụ đúng những dịch vụ đã khai báo trong hồ sơ. Đó là lý do " },
+          { type: "link", text: "thiết kế website chuẩn SEO", href: "/vi/thiet-ke-website" },
+          { type: "text", text: " và Local SEO thường đi cùng nhau." },
+        ],
+      },
+      { type: "h2", text: "NAP nhất quán là nền tảng" },
+      {
+        type: "p",
+        text: "Tên doanh nghiệp, địa chỉ và số điện thoại trên website cần khớp với Google Maps. Nếu website dùng một phiên bản địa chỉ, còn hồ sơ dùng phiên bản khác, tín hiệu sẽ yếu đi và dễ gây nhầm lẫn.",
+      },
+      { type: "h2", text: "Landing page dịch vụ giúp tăng mức độ liên quan" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Khi website có các trang dịch vụ rõ ràng cho spa, nhà hàng, khách sạn hay tour, Google hiểu bối cảnh hoạt động của doanh nghiệp tốt hơn. Điều này hỗ trợ cho cả " },
+          { type: "link", text: "audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile" },
+          { type: "text", text: " lẫn các truy vấn local dài hơn." },
+        ],
+      },
+      { type: "h2", text: "Schema và dữ liệu cấu trúc giúp nối tín hiệu" },
+      {
+        type: "p",
+        text: "Schema địa phương trên website không tự đẩy bạn lên top Maps ngay, nhưng nó giúp Google đọc rõ hơn về doanh nghiệp, dịch vụ, khu vực phục vụ và các thông tin liên hệ chính thức.",
+      },
+      { type: "h2", text: "Website còn hỗ trợ chuyển đổi sau cú click" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Một hồ sơ Maps tốt kéo được click; website tốt mới giúp khách hiểu dịch vụ và đặt nhanh hơn. Nếu hồ sơ Maps đã có traffic nhưng khách vẫn do dự, nên xem lại cả lớp chuyển đổi này. Xem thêm spoke " },
+          { type: "link", text: "tối ưu hình ảnh Google Maps", href: "/vi/google-maps-marketing/toi-uu-hinh-anh-google-maps" },
+          { type: "text", text: " để tăng sức thuyết phục ngay từ bước đầu." },
+        ],
+      },
+    ],
+    related: [
+      { label: "Thiết kế website", href: "/vi/thiet-ke-website", note: "Dịch vụ nền" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing", note: "Pillar" },
+      { label: "Audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile", note: "Spoke liên quan" },
+      { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Bài nền" },
+    ],
+  },
+  {
+    slug: "quy-trinh-xin-review-that-sau-dich-vu",
+    path: "/vi/blog/quy-trinh-xin-review-that-sau-dich-vu",
+    cluster: "maps",
+    title: "Quy trình xin review thật sau dịch vụ để tăng Google Maps bền vững",
+    metaTitle: "Quy trình xin review thật sau dịch vụ | Công Thiên Agency",
+    metaDescription:
+      "Cách xây quy trình xin review thật sau dịch vụ: chọn đúng thời điểm, dùng QR/link phù hợp và huấn luyện đội ngũ để tăng đánh giá Google bền vững, đúng chính sách.",
+    excerpt:
+      "Review thật không tăng đều nhờ may mắn. Nó thường đến từ một quy trình nhỏ nhưng được vận hành nhất quán mỗi ngày.",
+    date: "2026-06-15",
+    readingMinutes: 6,
+    primaryKeyword: "quy trình xin review thật",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Quy trình xin review thật sau dịch vụ",
+        href: "/vi/blog/quy-trinh-xin-review-that-sau-dich-vu",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Đánh giá Google tăng bền không phải vì một chiến dịch ngắn hạn, mà vì doanh nghiệp có một quy trình mời khách đánh giá đủ tự nhiên để lặp lại mỗi ngày. Đây cũng là phần lõi trong các gói " },
+          { type: "link", text: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation" },
+          { type: "text", text: " cho doanh nghiệp dịch vụ." },
+        ],
+      },
+      { type: "h2", text: "1. Chọn đúng thời điểm" },
+      {
+        type: "p",
+        text: "Thời điểm tốt nhất là ngay sau khi khách vừa có trải nghiệm tích cực: kết thúc liệu trình, thanh toán xong bữa ăn, check-out thuận lợi hoặc vừa kết thúc tour. Nếu để quá lâu, cảm xúc giảm đi và tỷ lệ phản hồi thấp hơn nhiều.",
+      },
+      { type: "h2", text: "2. Làm thao tác thật đơn giản" },
+      {
+        type: "ul",
+        items: [
+          "Dùng mã QR dẫn thẳng đến trang review.",
+          "Gửi link cảm ơn sau dịch vụ qua kênh khách đã quen dùng.",
+          "Đặt câu nhắc ngắn, tự nhiên thay vì đọc như kịch bản máy móc.",
+        ],
+      },
+      { type: "h2", text: "3. Đội ngũ phải hiểu mục tiêu" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nhân viên tuyến đầu cần biết khi nào nên mời khách đánh giá, khi nào nên ưu tiên giải quyết phàn nàn riêng trước. Đây là phần gắn chặt với spoke " },
+          { type: "link", text: "quản lý review tiêu cực", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc" },
+          { type: "text", text: " để tránh biến một trải nghiệm chưa tốt thành review xấu công khai." },
+        ],
+      },
+      { type: "h2", text: "4. Theo dõi đều, không ép số lượng" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Doanh nghiệp nên nhìn xu hướng theo tuần hoặc tháng: số review mới, chất lượng nội dung review và cách phản hồi. Nếu quy trình đang yếu, hãy quay lại " },
+          { type: "link", text: "audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile" },
+          { type: "text", text: " để xem điểm nghẽn nằm ở đâu." },
+        ],
+      },
+    ],
+    related: [
+      { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Dịch vụ" },
+      { label: "Quản lý review tiêu cực", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc", note: "Spoke liên quan" },
+      { label: "Cách có thêm đánh giá Google thật", href: "/vi/blog/cach-co-them-danh-gia-google-that", note: "Bài nền" },
+      { label: "Cách phản hồi đánh giá tiêu cực trên Google Maps", href: "/vi/blog/phan-hoi-danh-gia-tieu-cuc-google", note: "Bài liên quan" },
+    ],
+  },
+  {
     slug: "local-seo-la-gi",
     path: "/vi/blog/local-seo-la-gi",
     cluster: "maps",
@@ -1059,7 +1932,11 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Local SEO (SEO địa phương) là tập hợp các kỹ thuật giúp doanh nghiệp xuất hiện khi khách tìm một dịch vụ gần vị trí của họ — ví dụ “spa gần đây”, “nhà hàng Hội An” hay “massage phố cổ”. Với doanh nghiệp dịch vụ – du lịch, đây là loại tìm kiếm sát với hành vi đặt dịch vụ nhất.",
+        parts: [
+          { type: "text", text: "Local SEO (SEO địa phương) là tập hợp các kỹ thuật giúp doanh nghiệp xuất hiện khi khách tìm một dịch vụ gần vị trí của họ — ví dụ “spa gần đây”, “nhà hàng Hội An” hay “massage phố cổ”. Với doanh nghiệp dịch vụ – du lịch, đây là loại tìm kiếm sát với hành vi đặt dịch vụ nhất. Với nhiều doanh nghiệp, điểm bắt đầu thực tế nhất thường là một buổi " },
+          { type: "link", text: "audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile" },
+          { type: "text", text: " để biết hồ sơ địa phương đang mạnh hay yếu ở đâu." },
+        ],
       },
       {
         type: "p",
@@ -1084,12 +1961,20 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Bản đồ kết quả địa phương hoạt động thế nào?" },
       {
         type: "p",
-        text: "Google ưu tiên ba yếu tố chính khi xếp hạng kết quả địa phương: mức độ liên quan (hồ sơ khớp với điều khách tìm), khoảng cách (gần vị trí khách) và độ nổi bật (uy tín tổng thể, gồm đánh giá và thông tin đầy đủ). Local SEO tác động vào những yếu tố bạn kiểm soát được: hồ sơ, thông tin, hình ảnh và đánh giá thật.",
+        parts: [
+          { type: "text", text: "Google ưu tiên ba yếu tố chính khi xếp hạng kết quả địa phương: mức độ liên quan (hồ sơ khớp với điều khách tìm), khoảng cách (gần vị trí khách) và độ nổi bật (uy tín tổng thể, gồm đánh giá và thông tin đầy đủ). Local SEO tác động vào những yếu tố bạn kiểm soát được: hồ sơ, thông tin, hình ảnh và đánh giá thật. Nếu hồ sơ đang rất yếu ở lớp hiển thị nền, bạn thường phải xử lý theo hướng " },
+          { type: "link", text: "không hiển thị trên Google Maps", href: "/vi/google-maps-marketing/xu-ly-khong-hien-thi-tren-google-maps" },
+          { type: "text", text: " trước khi nói tới tăng trưởng tiếp theo." },
+        ],
       },
       { type: "h2", text: "Bắt đầu Local SEO từ đâu?" },
       {
         type: "p",
-        text: "Bước nền tảng là hoàn thiện Google Business Profile và đồng bộ thông tin với website. Sau đó xây quy trình thu hút đánh giá từ khách hàng thật một cách bền vững. Tôi tiếp cận Local SEO như một hệ thống — hồ sơ, website và đánh giá hỗ trợ lẫn nhau — thay vì làm rời rạc từng phần.",
+        parts: [
+          { type: "text", text: "Bước nền tảng là hoàn thiện Google Business Profile và đồng bộ thông tin với website. Sau đó xây quy trình thu hút đánh giá từ khách hàng thật một cách bền vững. Tôi tiếp cận Local SEO như một hệ thống — hồ sơ, website và đánh giá hỗ trợ lẫn nhau — thay vì làm rời rạc từng phần. Nếu muốn nhìn theo lớp triển khai cụ thể hơn, xem thêm bài " },
+          { type: "link", text: "website hỗ trợ Google Maps ra sao", href: "/vi/blog/website-ho-tro-google-maps-ra-sao" },
+          { type: "text", text: "." },
+        ],
       },
     ],
     related: [
@@ -1134,7 +2019,11 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Google Business Profile (trước đây gọi là Google My Business) là hồ sơ doanh nghiệp hiển thị trên Google Maps và kết quả tìm kiếm. Đây thường là điểm chạm đầu tiên giữa bạn và khách — và một hồ sơ hoàn chỉnh tạo ấn tượng chuyên nghiệp ngay lập tức, trong khi hồ sơ thiếu thông tin khiến khách nghi ngờ.",
+        parts: [
+          { type: "text", text: "Google Business Profile (trước đây gọi là Google My Business) là hồ sơ doanh nghiệp hiển thị trên Google Maps và kết quả tìm kiếm. Đây thường là điểm chạm đầu tiên giữa bạn và khách — và một hồ sơ hoàn chỉnh tạo ấn tượng chuyên nghiệp ngay lập tức, trong khi hồ sơ thiếu thông tin khiến khách nghi ngờ. Nếu bạn chưa chắc hồ sơ của mình đang thiếu ở đâu, nên bắt đầu bằng " },
+          { type: "link", text: "Google Business Profile audit", href: "/vi/google-maps-marketing/audit-google-business-profile" },
+          { type: "text", text: " thay vì chỉnh từng phần theo cảm tính." },
+        ],
       },
       { type: "h2", text: "Thông tin cơ bản phải chính xác" },
       {
@@ -1154,7 +2043,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Hình ảnh — yếu tố khách xem đầu tiên" },
       {
         type: "p",
-        text: "Khách lướt hình ảnh trước khi đọc chữ. Hồ sơ cần ảnh không gian, dịch vụ, món hoặc treatment, và ảnh thật của doanh nghiệp thay vì ảnh kho. Bộ ảnh đầy đủ, sáng và chân thực giúp khách hình dung trải nghiệm và tăng niềm tin.",
+        parts: [
+          { type: "text", text: "Khách lướt hình ảnh trước khi đọc chữ. Hồ sơ cần ảnh không gian, dịch vụ, món hoặc treatment, và ảnh thật của doanh nghiệp thay vì ảnh kho. Bộ ảnh đầy đủ, sáng và chân thực giúp khách hình dung trải nghiệm và tăng niềm tin. Nếu phần này đang mỏng, spoke " },
+          { type: "link", text: "tối ưu hình ảnh Google Maps", href: "/vi/google-maps-marketing/toi-uu-hinh-anh-google-maps" },
+          { type: "text", text: " sẽ là bước đi trực tiếp hơn nhiều so với chỉ đăng thêm ảnh rời rạc." },
+        ],
       },
       { type: "h2", text: "Mô tả, dịch vụ và bài đăng" },
       {
@@ -1169,7 +2062,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Đánh giá thật và phản hồi" },
       {
         type: "p",
-        text: "Đánh giá từ khách hàng thật là yếu tố chốt mạnh nhất. Quan trọng không kém là phản hồi — trả lời chuyên nghiệp cả đánh giá tích cực lẫn tiêu cực cho thấy doanh nghiệp quan tâm và đáng tin. Tôi xây quy trình khuyến khích khách hài lòng để lại đánh giá thật, đúng chính sách Google, thay vì dùng đánh giá ảo.",
+        parts: [
+          { type: "text", text: "Đánh giá từ khách hàng thật là yếu tố chốt mạnh nhất. Quan trọng không kém là phản hồi — trả lời chuyên nghiệp cả đánh giá tích cực lẫn tiêu cực cho thấy doanh nghiệp quan tâm và đáng tin. Tôi xây quy trình khuyến khích khách hài lòng để lại đánh giá thật, đúng chính sách Google, thay vì dùng đánh giá ảo. Với những hồ sơ đã bắt đầu có review xấu, nên nhìn thêm lớp " },
+          { type: "link", text: "quản lý review tiêu cực", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc" },
+          { type: "text", text: " để không làm mất uy tín chung của hồ sơ." },
+        ],
       },
       { type: "h2", text: "Hồ sơ hoàn chỉnh là nền tảng, không phải đích đến" },
       {
@@ -1515,7 +2412,11 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Một trong những vấn đề khiến chủ doanh nghiệp lo lắng nhất là khi khách tìm dịch vụ nhưng không thấy mình trên Google Maps. Dưới đây là những nguyên nhân phổ biến nhất và hướng khắc phục cho từng trường hợp.",
+        parts: [
+          { type: "text", text: "Một trong những vấn đề khiến chủ doanh nghiệp lo lắng nhất là khi khách tìm dịch vụ nhưng không thấy mình trên Google Maps. Dưới đây là những nguyên nhân phổ biến nhất và hướng khắc phục cho từng trường hợp. Nếu bạn đang gặp đúng tình huống này, spoke " },
+          { type: "link", text: "xử lý không hiển thị trên Google Maps", href: "/vi/google-maps-marketing/xu-ly-khong-hien-thi-tren-google-maps" },
+          { type: "text", text: " là nơi mình gom riêng các bước rà soát theo hướng thương mại hơn." },
+        ],
       },
       { type: "h2", text: "Hồ sơ chưa được xác minh" },
       {
@@ -1530,7 +2431,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Thông tin trùng lặp hoặc không nhất quán" },
       {
         type: "p",
-        text: "Nhiều hồ sơ trùng cho cùng một địa điểm, hoặc thông tin NAP (Tên – Địa chỉ – Số điện thoại) khác nhau giữa các kênh, khiến Google bối rối và giảm độ tin cậy. Khắc phục: gộp/xử lý hồ sơ trùng và đồng bộ NAP nhất quán giữa website, hồ sơ và các nền tảng.",
+        parts: [
+          { type: "text", text: "Nhiều hồ sơ trùng cho cùng một địa điểm, hoặc thông tin NAP (Tên – Địa chỉ – Số điện thoại) khác nhau giữa các kênh, khiến Google bối rối và giảm độ tin cậy. Khắc phục: gộp/xử lý hồ sơ trùng và đồng bộ NAP nhất quán giữa website, hồ sơ và các nền tảng. Nếu nghi đang bị phân tán tín hiệu do nhiều hồ sơ, xem thêm bài " },
+          { type: "link", text: "khi nào cần gộp hồ sơ trùng Google Maps", href: "/vi/blog/khi-nao-can-gop-ho-so-trung-google-maps" },
+          { type: "text", text: "." },
+        ],
       },
       { type: "h2", text: "Cạnh tranh cao và độ nổi bật thấp" },
       {
@@ -1540,7 +2445,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Khi nào nên nhờ hỗ trợ?" },
       {
         type: "p",
-        text: "Nếu đã kiểm tra các nguyên nhân trên mà vẫn khó hiển thị, một buổi audit hồ sơ bài bản thường tìm ra điểm nghẽn. Tôi rà soát toàn bộ hồ sơ, danh mục, thông tin trùng lặp và độ đồng bộ với website, rồi đưa ra hướng khắc phục cụ thể cho từng trường hợp.",
+        parts: [
+          { type: "text", text: "Nếu đã kiểm tra các nguyên nhân trên mà vẫn khó hiển thị, một buổi audit hồ sơ bài bản thường tìm ra điểm nghẽn. Tôi rà soát toàn bộ hồ sơ, danh mục, thông tin trùng lặp và độ đồng bộ với website, rồi đưa ra hướng khắc phục cụ thể cho từng trường hợp. Bước này phù hợp nhất với " },
+          { type: "link", text: "audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile" },
+          { type: "text", text: " trước khi triển khai các chỉnh sửa sâu hơn." },
+        ],
       },
     ],
     related: [
