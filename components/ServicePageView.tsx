@@ -82,6 +82,23 @@ export function ServicePageView({ service }: { service: Service }) {
                 {s.body && (
                   <p className="mt-3 text-sm leading-relaxed text-muted">{s.body}</p>
                 )}
+                {s.bodyParts && (
+                  <p className="mt-3 text-sm leading-relaxed text-muted">
+                    {s.bodyParts.map((part, partIndex) =>
+                      part.type === "link" ? (
+                        <Link
+                          key={`${part.href}-${partIndex}`}
+                          href={part.href}
+                          className="font-medium text-blue-700 underline decoration-blue-200 underline-offset-4 transition-colors hover:text-blue-800"
+                        >
+                          {part.text}
+                        </Link>
+                      ) : (
+                        <span key={`${part.text.slice(0, 16)}-${partIndex}`}>{part.text}</span>
+                      )
+                    )}
+                  </p>
+                )}
                 {s.bullets && (
                   <ul className="mt-3 flex flex-col gap-2">
                     {s.bullets.map((b) => (

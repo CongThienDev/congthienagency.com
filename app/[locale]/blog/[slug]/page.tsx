@@ -97,7 +97,21 @@ export default async function Page({ params }: Params) {
                 );
               return (
                 <p key={i} className="text-base leading-relaxed text-ink-soft">
-                  {block.text}
+                  {block.parts
+                    ? block.parts.map((part, partIndex) =>
+                        part.type === "link" ? (
+                          <Link
+                            key={`${part.href}-${partIndex}`}
+                            href={part.href}
+                            className="font-medium text-blue-700 underline decoration-blue-200 underline-offset-4 transition-colors hover:text-blue-800"
+                          >
+                            {part.text}
+                          </Link>
+                        ) : (
+                          <span key={`${part.text.slice(0, 16)}-${partIndex}`}>{part.text}</span>
+                        )
+                      )
+                    : block.text}
                 </p>
               );
             })}
