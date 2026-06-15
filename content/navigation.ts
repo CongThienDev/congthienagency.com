@@ -8,6 +8,7 @@ export const NAV_VI: NavItem[] = [
   { label: "Website", href: "/vi/thiet-ke-website" },
   { label: "Naver Marketing", href: "/vi/naver-marketing" },
   { label: "Google Maps", href: "/vi/google-maps-marketing" },
+  { label: "Quét mã QR", href: "/vi/quet-ma-qr" },
   { label: "Portfolio", href: "/vi/du-an" },
   { label: "Bảng giá", href: "/vi/bang-gia" },
   { label: "Blog", href: "/vi/blog" },
@@ -27,12 +28,14 @@ export const FOOTER_VI = {
     { label: "Naver Marketing", href: "/vi/naver-marketing" },
     { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing" },
     { label: "Social Marketing", href: "/vi/social-marketing" },
+    { label: "Dịch vụ quét mã QR", href: "/vi/quet-ma-qr" },
   ],
   industries: [
     { label: "Website spa Hội An", href: "/vi/thiet-ke-website/spa-hoi-an" },
     { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an" },
     { label: "Website cooking class Hội An", href: "/vi/thiet-ke-website/cooking-class-hoi-an" },
     { label: "Naver cho spa", href: "/vi/naver-marketing/cho-spa" },
+    { label: "Tuyển CTV quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien" },
   ],
   company: [
     { label: "Giới thiệu", href: "/vi/gioi-thieu" },

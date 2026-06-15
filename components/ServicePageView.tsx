@@ -49,7 +49,13 @@ export function ServicePageView({ service }: { service: Service }) {
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-muted">{service.heroSub}</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Button href="/vi/lien-he" size="lg">{service.heroCta}</Button>
+              <Button
+                href={service.heroCtaHref ?? "/vi/lien-he"}
+                external={service.heroCtaHref?.startsWith("http") ?? false}
+                size="lg"
+              >
+                {service.heroCta}
+              </Button>
               {service.priceFrom && (
                 <span className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-5 py-3 text-sm font-semibold text-blue-800">
                   {service.priceFrom}

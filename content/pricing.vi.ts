@@ -1,6 +1,6 @@
 export type PricingPackage = {
   id: string;
-  cluster: "website" | "naver" | "maps" | "social";
+  cluster: "website" | "naver" | "maps" | "social" | "qr";
   name: string;
   priceLabel: string;
   priceUnit?: string;
@@ -188,6 +188,31 @@ export const PRICING_GROUPS: PricingGroup[] = [
         ],
         ctaHref: "/vi/lien-he",
         ctaLabel: "Tư vấn Social Growth",
+      },
+    ],
+  },
+  {
+    id: "qr",
+    title: "Quét mã QR & Activation",
+    intro:
+      "Triển khai chiến dịch quét mã QR, tải app và mở tài khoản theo KPI cho agency và nhãn hàng — bằng đội cộng tác viên thật, báo cáo minh bạch.",
+    packages: [
+      {
+        id: "qr-campaign",
+        cluster: "qr",
+        name: "Chiến dịch quét mã QR theo KPI",
+        priceLabel: "Báo giá theo chiến dịch",
+        tagline: "Nhận chạy đủ số lượt quét mã / tải app theo KPI bạn cần.",
+        features: [
+          "Kế hoạch triển khai theo KPI và mốc thời gian",
+          "Mạng lưới cộng tác viên thật theo khu vực",
+          "Theo dõi tiến độ lượt quét / cài đặt theo ngày",
+          "Báo cáo số liệu nghiệm thu minh bạch",
+        ],
+        ctaHref: "/vi/quet-ma-qr",
+        ctaLabel: "Gửi brief chiến dịch",
+        disclaimer:
+          "Chạy bằng người dùng thật, tài khoản chính chủ, nghiệm thu theo lượt hoàn thành hợp lệ — không bơm số ảo. Báo giá theo loại chiến dịch, số lượt và khu vực.",
       },
     ],
   },

@@ -44,7 +44,7 @@ export function Header({
         <div className="flex h-[68px] items-center justify-between gap-4">
           <Link
             href={home}
-            className="group flex items-center"
+            className="group flex shrink-0 items-center"
             onClick={() => setOpen(false)}
           >
             <Image
@@ -81,7 +81,7 @@ export function Header({
             })}
           </nav>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex shrink-0 items-center gap-2.5">
             <div className="hidden md:block">
               <LanguageSwitcher locale={locale} alternateKey={alternateKey} />
             </div>

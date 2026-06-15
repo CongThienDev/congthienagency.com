@@ -2,13 +2,14 @@ import { Button } from "./Button";
 import { IconCheck } from "./Icons";
 import { SERVICE_BRAND, type ServiceBrand } from "./serviceBrand";
 
-type Cluster = "website" | "naver" | "maps" | "social";
+type Cluster = "website" | "naver" | "maps" | "social" | "qr";
 
 const CLUSTER_BRAND: Record<Cluster, ServiceBrand> = {
   website: "website",
   naver: "naver",
   maps: "maps",
   social: "facebook",
+  qr: "website",
 };
 
 const CLUSTER_ACCENT: Record<Cluster, string> = {
@@ -16,6 +17,7 @@ const CLUSTER_ACCENT: Record<Cluster, string> = {
   naver: "from-[#03cf5d] to-emerald-500",
   maps: "from-blue-500 to-cyan-400",
   social: "from-[#1877F2] to-blue-400",
+  qr: "from-violet-600 to-fuchsia-500",
 };
 
 const CLUSTER_CHECK: Record<Cluster, string> = {
@@ -23,6 +25,7 @@ const CLUSTER_CHECK: Record<Cluster, string> = {
   naver: "text-emerald-500",
   maps: "text-blue-400",
   social: "text-blue-500",
+  qr: "text-violet-500",
 };
 
 export function PricingCard({

@@ -51,6 +51,10 @@ const MAPS_ARTICLES = [
   { label: "Website hỗ trợ Google Maps ra sao", href: "/vi/blog/website-ho-tro-google-maps-ra-sao" },
   { label: "Quy trình xin review thật sau dịch vụ", href: "/vi/blog/quy-trinh-xin-review-that-sau-dich-vu" },
 ];
+const QR_PAGES = [
+  { label: "Dịch vụ quét mã QR & tải app theo KPI", href: "/vi/quet-ma-qr" },
+  { label: "Tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien" },
+];
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale } = await params;
@@ -219,6 +223,28 @@ export default async function Page({ params }: Params) {
                 ))}
               </div>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-line bg-white py-16 sm:py-20">
+        <Container>
+          <SectionHeader
+            eyebrow="Quét mã QR"
+            title="Cụm Quét mã QR & Activation"
+            sub="Nhận triển khai chiến dịch quét mã QR / tải app theo KPI cho agency, và tuyển cộng tác viên trực tiếp thực thi — hai điểm vào nội bộ cho cluster Quét mã QR."
+          />
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            {QR_PAGES.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex items-center justify-between rounded-card border border-line bg-white px-5 py-4 shadow-soft transition-all hover:border-blue-200"
+              >
+                <span className="font-medium text-ink group-hover:text-blue-700">{item.label}</span>
+                <IconArrowRight className="h-4 w-4 text-blue-700 transition-transform duration-200 group-hover:translate-x-1" />
+              </Link>
+            ))}
           </div>
         </Container>
       </section>

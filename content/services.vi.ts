@@ -1,3 +1,5 @@
+import { SITE } from "@/content/site";
+
 export type ServiceInlinePart =
   | { type: "text"; text: string }
   | { type: "link"; text: string; href: string };
@@ -15,7 +17,7 @@ export type ImageSlot = { slot: string; suggestion: string; alt: string };
 
 export type Service = {
   path: string; // full url path, e.g. /vi/thiet-ke-website/spa-hoi-an
-  cluster: "website" | "naver" | "maps" | "social";
+  cluster: "website" | "naver" | "maps" | "social" | "qr";
   isPillar: boolean;
   breadcrumb: { label: string; href: string }[];
   primaryKeyword: string;
@@ -25,6 +27,8 @@ export type Service = {
   h1: string;
   heroSub: string;
   heroCta: string;
+  /** Optional override for the hero CTA target. External URLs (http…) open in a new tab. Defaults to /vi/lien-he. */
+  heroCtaHref?: string;
   intro: string;
   sections: ServiceSection[];
   deliverables?: { title: string; items: string[] };
@@ -3384,6 +3388,192 @@ export const SERVICES: Service[] = [
       { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "Hỗ trợ khôi phục tài khoản Facebook" },
     ],
     schema: { serviceType: "Hỗ trợ khôi phục tài khoản Facebook" },
+  },
+
+  /* ───────────────────────── QR / ACTIVATION PILLAR ───────────────────────── */
+  {
+    path: "/vi/quet-ma-qr",
+    cluster: "qr",
+    isPillar: true,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ quét mã QR", href: "/vi/quet-ma-qr" },
+    ],
+    primaryKeyword: "dịch vụ quét mã QR theo chiến dịch KPI",
+    metaTitle: "Dịch vụ quét mã QR & tải app theo KPI cho agency, nhãn hàng | Công Thiên Agency",
+    metaDescription:
+      "Nhận triển khai chiến dịch quét mã QR, tải app và mở tài khoản theo KPI cho agency và nhãn hàng tại Hội An – Đà Nẵng và toàn quốc. Đội cộng tác viên thật, người dùng thật, báo cáo minh bạch.",
+    eyebrow: "Dịch vụ · Quét mã QR",
+    h1: "Dịch vụ quét mã QR & tải app theo KPI cho agency và nhãn hàng",
+    heroSub:
+      "Bạn có một chiến dịch cần đủ số lượt quét mã QR, tải app hoặc mở tài khoản trong thời gian ngắn? Tôi nhận triển khai trọn gói theo KPI bằng đội cộng tác viên thật trên khắp Hội An – Đà Nẵng và toàn quốc.",
+    heroCta: "Gửi yêu cầu chiến dịch qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Các nhãn hàng như Heineken, ví điện tử (Momo, ZaloPay) và ngân hàng số (Cake, VPBank, MB Bank…) thường xuyên chạy chiến dịch tiếp thị bằng mã QR: quét tại quán, tải app, định danh tài khoản hay nhận voucher. Khi agency được giao KPI kiểu “10.000 lượt quét mã”, việc khó nhất là gom đủ người thật làm đúng, đủ và đúng hạn. Đó là phần tôi nhận: điều phối mạng lưới cộng tác viên để chạy chiến dịch quét mã QR và tải app đạt KPI, hợp lệ với điều khoản của từng nền tảng.",
+    sections: [
+      {
+        heading: "Tôi nhận loại chiến dịch quét mã nào?",
+        bullets: [
+          "Chiến dịch quét mã QR tại điểm bán: quán ăn, nhà hàng, sự kiện, hội chợ (kiểu activation của Heineken, bia, FMCG).",
+          "Tải app & định danh tài khoản: ví điện tử, ngân hàng số, app thương mại điện tử theo lượt cài đặt thật.",
+          "Chiến dịch affiliate / referral qua nền tảng trung gian (AccessTrade và tương tự) bằng link – mã QR hợp lệ.",
+          "Khảo sát, xem quảng cáo, tương tác mini app Zalo để tích điểm – đổi voucher.",
+        ],
+      },
+      {
+        heading: "Vì sao agency nên thuê ngoài phần thực thi?",
+        body:
+          "KPI số lượt quét lớn cần mạng lưới người thật trải rộng nhiều khu vực — thứ mà một team in-house khó tự gom trong vài ngày. Khi giao cho tôi, bạn chỉ cần đưa brief, mã/link và KPI; tôi lo phần tuyển, điều phối, theo dõi tiến độ và tổng hợp số liệu để bạn báo cáo lại cho nhãn hàng.",
+      },
+      {
+        heading: "Cam kết người thật & minh bạch số liệu",
+        body:
+          "Tôi chạy bằng cộng tác viên và người dùng thật, mỗi tài khoản do chính chủ sở hữu, tuân thủ điều khoản của nền tảng đang chạy. Thu nhập và nghiệm thu tính theo lượt hoàn thành hợp lệ thực tế — không bơm số ảo, vì số ảo dễ bị nền tảng huỷ và làm hỏng uy tín cả hai bên.",
+      },
+    ],
+    deliverables: {
+      title: "Khi nhận một chiến dịch, tôi bàn giao",
+      items: [
+        "Kế hoạch triển khai theo KPI và mốc thời gian rõ ràng",
+        "Mạng lưới cộng tác viên thật theo khu vực bạn cần",
+        "Theo dõi tiến độ lượt quét / lượt cài đặt theo ngày",
+        "Báo cáo số liệu nghiệm thu minh bạch cuối chiến dịch",
+        "Đầu mối liên hệ duy nhất xử lý phát sinh trong suốt chiến dịch",
+      ],
+    },
+    whoFor: [
+      "Agency activation / trade marketing",
+      "Nhãn hàng FMCG, bia, đồ uống",
+      "Ví điện tử, ngân hàng số, fintech",
+      "Nền tảng affiliate cần đẩy KPI cài đặt",
+    ],
+    process: [
+      { step: "Nhận brief", detail: "Bạn gửi mục tiêu, KPI, mã/link và khu vực cần chạy." },
+      { step: "Lên kế hoạch", detail: "Tôi chốt số lượng, mốc thời gian và cách nghiệm thu." },
+      { step: "Triển khai", detail: "Điều phối cộng tác viên chạy lượt quét / tải app thật." },
+      { step: "Báo cáo", detail: "Tổng hợp số liệu hợp lệ và bàn giao cho bạn." },
+    ],
+    priceFrom: "Báo giá theo KPI từng chiến dịch",
+    priceNote:
+      "Chi phí tính theo loại chiến dịch, số lượt KPI, khu vực và thời hạn. Trao đổi brief để nhận báo giá rõ ràng trước khi bắt đầu.",
+    faqs: [
+      {
+        q: "Anh có chạy được chiến dịch toàn quốc không?",
+        a: "Có. Tôi điều phối cộng tác viên theo khu vực; tập trung mạnh ở Hội An – Đà Nẵng và mở rộng các tỉnh thành khác tùy KPI.",
+      },
+      {
+        q: "Làm sao đảm bảo là người thật, không phải số ảo?",
+        a: "Mỗi lượt là người dùng thật với tài khoản chính chủ, nghiệm thu theo lượt hoàn thành hợp lệ. Tôi không bơm số ảo vì nền tảng sẽ huỷ và cả hai bên đều thiệt.",
+      },
+      {
+        q: "Chi phí và thanh toán thế nào?",
+        a: "Báo giá theo KPI từng chiến dịch. Thường chốt số lượng, đơn giá mỗi lượt và mốc nghiệm thu trước khi chạy.",
+      },
+      {
+        q: "Agency cần chuẩn bị gì?",
+        a: "Brief chiến dịch, mã QR hoặc link hợp lệ từ nhãn hàng/nền tảng, KPI và khu vực mong muốn. Phần còn lại tôi lo.",
+      },
+    ],
+    related: [
+      { label: "Tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien", note: "Tuyển dụng" },
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Dịch vụ liên quan" },
+      { label: "Liên hệ", href: "/vi/lien-he", note: "Gửi brief chiến dịch" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/og/og-default.jpg", alt: "Dịch vụ quét mã QR theo KPI cho agency" },
+    ],
+    schema: { serviceType: "Dịch vụ triển khai chiến dịch quét mã QR theo KPI" },
+  },
+
+  /* ───────────────────────── QR SPOKE · TUYỂN CTV ───────────────────────── */
+  {
+    path: "/vi/quet-ma-qr/tuyen-cong-tac-vien",
+    cluster: "qr",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ quét mã QR", href: "/vi/quet-ma-qr" },
+      { label: "Tuyển cộng tác viên", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien" },
+    ],
+    primaryKeyword: "tuyển cộng tác viên quét mã QR tải app kiếm tiền",
+    metaTitle: "Tuyển cộng tác viên quét mã QR – tải app kiếm tiền online | Công Thiên Agency",
+    metaDescription:
+      "Tuyển cộng tác viên quét mã QR, tải app và mời bạn bè nhận thưởng theo lượt. Làm online tại nhà, không cọc, thu nhập theo hiệu suất. Liên hệ Zalo 0934.868.001.",
+    eyebrow: "Tuyển dụng · Quét mã QR",
+    h1: "Tuyển cộng tác viên quét mã QR – tải app kiếm tiền online",
+    heroSub:
+      "Bạn rảnh và muốn kiếm thêm thu nhập từ điện thoại? Tôi đang tuyển cộng tác viên tham gia các chiến dịch quét mã QR, tải app và giới thiệu nhận thưởng theo từng lượt hoàn thành.",
+    heroCta: "Đăng ký làm CTV qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Tôi nhận chiến dịch quét mã QR và tải app từ các nhãn hàng, ví điện tử, ngân hàng số và nền tảng affiliate, rồi chia việc cho mạng lưới cộng tác viên. Công việc đơn giản, làm online bằng điện thoại, phù hợp sinh viên, mẹ bỉm, người làm tự do muốn kiếm thêm lúc rảnh. Thu nhập tính theo số lượt bạn hoàn thành hợp lệ.",
+    sections: [
+      {
+        heading: "Công việc cụ thể là gì?",
+        bullets: [
+          "Quét mã QR của chiến dịch và làm theo hướng dẫn (xem quảng cáo, làm khảo sát, nhận voucher).",
+          "Tải app ví điện tử / ngân hàng số rồi định danh tài khoản chính chủ của bạn.",
+          "Lấy mã QR giới thiệu cá nhân để mời bạn bè, người thân cùng tham gia.",
+          "Mỗi lượt hoàn thành hợp lệ được trả thưởng theo đơn giá từng chiến dịch.",
+        ],
+      },
+      {
+        heading: "Quyền lợi cộng tác viên",
+        bullets: [
+          "Làm online tại nhà, chủ động thời gian, chỉ cần điện thoại.",
+          "Không thu phí, không yêu cầu đặt cọc trước.",
+          "Thanh toán theo lượt hoàn thành, đối soát rõ ràng.",
+          "Có thêm thưởng khi mời được cộng tác viên mới tham gia.",
+        ],
+      },
+      {
+        heading: "Làm việc minh bạch, đúng quy định",
+        body:
+          "Bạn chỉ dùng tài khoản chính chủ của mình và làm đúng hướng dẫn từng chiến dịch — tuyệt đối không mượn giấy tờ người khác hay tạo tài khoản giả, vì các nền tảng sẽ huỷ lượt và không trả thưởng. Thu nhập phụ thuộc số lượt bạn làm và số chiến dịch đang chạy, không phải con số cố định cam kết.",
+      },
+    ],
+    whoFor: [
+      "Sinh viên muốn kiếm thêm",
+      "Mẹ bỉm sữa ở nhà",
+      "Người làm tự do, freelancer",
+      "Ai có thời gian rảnh và điện thoại",
+    ],
+    process: [
+      { step: "Đăng ký", detail: "Nhắn Zalo 0934.868.001 để lại tên và khu vực của bạn." },
+      { step: "Nhận hướng dẫn", detail: "Tôi gửi chiến dịch đang chạy và cách làm chi tiết." },
+      { step: "Làm nhiệm vụ", detail: "Quét mã, tải app hoặc giới thiệu theo hướng dẫn." },
+      { step: "Nhận thưởng", detail: "Đối soát số lượt hợp lệ và thanh toán cho bạn." },
+    ],
+    priceNote:
+      "Thu nhập tính theo số lượt hoàn thành hợp lệ và số chiến dịch đang chạy — không phải mức cố định cam kết. Không thu phí, không đặt cọc.",
+    faqs: [
+      {
+        q: "Có cần đặt cọc hay đóng phí không?",
+        a: "Không. Tôi không thu bất kỳ khoản phí hay tiền cọc nào. Nếu ai đó yêu cầu bạn nộp tiền để nhận việc, đó là dấu hiệu lừa đảo.",
+      },
+      {
+        q: "Một lượt được trả bao nhiêu?",
+        a: "Tùy chiến dịch. Các chương trình mời người dùng mới thường dao động 20.000đ – 100.000đ mỗi lượt thành công; chiến dịch khác có đơn giá riêng, tôi báo trước khi bạn nhận.",
+      },
+      {
+        q: "Một tháng kiếm được bao nhiêu?",
+        a: "Không có con số cố định. Thu nhập phụ thuộc số lượt bạn hoàn thành và số chiến dịch đang chạy. Tôi không cam kết mức thu nhập để tránh hứa hẹn sai.",
+      },
+      {
+        q: "Cần chuẩn bị gì để bắt đầu?",
+        a: "Một điện thoại smartphone, tài khoản chính chủ (số điện thoại, ví/ngân hàng nếu chiến dịch yêu cầu) và thời gian rảnh. Nhắn Zalo để bắt đầu.",
+      },
+    ],
+    related: [
+      { label: "Dịch vụ quét mã QR theo KPI", href: "/vi/quet-ma-qr", note: "Trang dịch vụ" },
+      { label: "Liên hệ", href: "/vi/lien-he", note: "Đăng ký nhanh" },
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Dịch vụ liên quan" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/og/og-default.jpg", alt: "Tuyển cộng tác viên quét mã QR tải app kiếm tiền" },
+    ],
+    schema: { serviceType: "Tuyển cộng tác viên quét mã QR" },
   },
 ];
 

@@ -3,13 +3,14 @@ import { ContactTriggerButton } from "./ContactModal";
 import { SERVICE_BRAND, type ServiceBrand } from "./serviceBrand";
 import type { PricingGroup } from "@/content/pricing.vi";
 
-type Cluster = "website" | "naver" | "maps" | "social";
+type Cluster = "website" | "naver" | "maps" | "social" | "qr";
 
 const CLUSTER_BRAND: Record<Cluster, ServiceBrand> = {
   website: "website",
   naver: "naver",
   maps: "maps",
   social: "facebook",
+  qr: "website",
 };
 
 const CLUSTER_DOT: Record<Cluster, string> = {
@@ -17,6 +18,7 @@ const CLUSTER_DOT: Record<Cluster, string> = {
   naver: "bg-[#03c75a]",
   maps: "bg-[#4285f4]",
   social: "bg-[#1877f2]",
+  qr: "bg-violet-600",
 };
 
 export function PricingList({ groups }: { groups: PricingGroup[] }) {
