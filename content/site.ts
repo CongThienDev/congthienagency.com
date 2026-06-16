@@ -4,8 +4,8 @@ export const SITE = {
   brandTagline: "Marketing Online · Website · Naver · Google Maps",
   logoPath: "/brand/congthien-agency-logo.svg",
   founder: "Lê Công Thiên",
-  domain: "congthienagency.com",
-  url: "https://congthienagency.com",
+  domain: "www.congthienagency.com",
+  url: "https://www.congthienagency.com",
   defaultLocale: "vi" as const,
   locales: ["vi", "en"] as const,
   description:
