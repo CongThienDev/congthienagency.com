@@ -4,49 +4,83 @@ import Link from "next/link";
 import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb } from "@/components/Bits";
-import { BlogCard } from "@/components/Cards";
 import { JsonLd } from "@/components/JsonLd";
+import { BlogCard } from "@/components/Cards";
 import { IconArrowRight } from "@/components/Icons";
-import { BLOG_HUB, BLOG_POSTS } from "@/content/blog.vi";
+import { BLOG_HUB, BLOG_POSTS, type BlogPost } from "@/content/blog.vi";
 import { graphDocument, breadcrumbGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
-type Params = { params: Promise<{ locale: string }> };
+type Params = {
+  params: Promise<{ locale: string }>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+};
 const PATH = "/vi/blog";
+const PAGE_SIZE = 6;
 const BREADCRUMB = [
   { label: "Trang chủ", href: "/vi" },
   { label: "Blog", href: PATH },
 ];
-const WEBSITE_CLUSTER_PICKS = [
-  { label: "Website khách sạn & homestay Hội An", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an", note: "Spoke dịch vụ" },
-  { label: "Website tour du lịch Hội An", href: "/vi/thiet-ke-website/website-tour-du-lich-hoi-an", note: "Spoke dịch vụ" },
-  { label: "Website đa ngôn ngữ", href: "/vi/thiet-ke-website/website-da-ngon-ngu", note: "Spoke dịch vụ" },
-  { label: "Website booking online", href: "/vi/thiet-ke-website/website-booking-online", note: "Spoke dịch vụ" },
-  { label: "Website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi", note: "Bài blog" },
-  { label: "Website đa ngôn ngữ cho khách quốc tế", href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te", note: "Bài blog" },
-  { label: "Nên làm website hay chỉ dùng OTA/Facebook", href: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook", note: "Bài blog" },
-  { label: "Website khách sạn khác gì website spa", href: "/vi/blog/website-khach-san-khac-gi-website-spa", note: "Bài blog" },
-];
-const NAVER_CLUSTER_PICKS = [
-  { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Spoke dịch vụ" },
-  { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver", note: "Spoke dịch vụ" },
-  { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Spoke dịch vụ" },
-  { label: "Naver KOC", href: "/vi/naver-marketing/naver-koc", note: "Spoke dịch vụ" },
-  { label: "Naver Place khác Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao", note: "Bài blog" },
-  { label: "Bao lâu thì Naver có tín hiệu", href: "/vi/blog/bao-lau-thi-naver-co-tin-hieu", note: "Bài blog" },
-  { label: "Cách đo hiệu quả chiến dịch Naver", href: "/vi/blog/cach-do-hieu-qua-chien-dich-naver", note: "Bài blog" },
-  { label: "Chuẩn bị trước khi book blogger Hàn", href: "/vi/blog/ho-so-doanh-nghiep-truoc-khi-book-blogger-han", note: "Bài blog" },
-];
-const MAPS_CLUSTER_PICKS = [
-  { label: "Audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile", note: "Spoke dịch vụ" },
-  { label: "Xử lý không hiển thị trên Google Maps", href: "/vi/google-maps-marketing/xu-ly-khong-hien-thi-tren-google-maps", note: "Spoke dịch vụ" },
-  { label: "Quản lý review tiêu cực", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc", note: "Spoke dịch vụ" },
-  { label: "Tối ưu hình ảnh Google Maps", href: "/vi/google-maps-marketing/toi-uu-hinh-anh-google-maps", note: "Spoke dịch vụ" },
-  { label: "Google Business Profile audit gồm những gì", href: "/vi/blog/google-business-profile-audit-gom-nhung-gi", note: "Bài blog" },
-  { label: "Khi nào cần gộp hồ sơ trùng Google Maps", href: "/vi/blog/khi-nao-can-gop-ho-so-trung-google-maps", note: "Bài blog" },
-  { label: "Website hỗ trợ Google Maps ra sao", href: "/vi/blog/website-ho-tro-google-maps-ra-sao", note: "Bài blog" },
-  { label: "Quy trình xin review thật sau dịch vụ", href: "/vi/blog/quy-trinh-xin-review-that-sau-dich-vu", note: "Bài blog" },
-];
+
+type BlogCluster = BlogPost["cluster"];
+
+const CATEGORY_ORDER: BlogCluster[] = ["naver", "website", "maps", "social", "general"];
+
+const CATEGORY_META: Record<BlogCluster, { label: string; title: string; description: string }> = {
+  naver: {
+    label: "Naver",
+    title: "Naver Marketing",
+    description: "Bài viết về Naver Blog, blogger Hàn, Naver Place và cách tiếp cận khách Hàn.",
+  },
+  website: {
+    label: "Website",
+    title: "Website & SEO",
+    description: "Website cho spa, khách sạn, tour, booking online và nền tảng chuyển đổi.",
+  },
+  maps: {
+    label: "Google Maps",
+    title: "Google Maps",
+    description: "Google Business Profile, review thật, local SEO và xử lý vấn đề hiển thị.",
+  },
+  social: {
+    label: "Social",
+    title: "Social Marketing",
+    description: "Fanpage, social proof, tăng trưởng kênh và cách giữ thương hiệu đáng tin.",
+  },
+  general: {
+    label: "Khác",
+    title: "Kiến thức chung",
+    description: "Các ghi chú nền tảng hỗ trợ chiến lược marketing online tổng thể.",
+  },
+};
+
+function pageParamValue(
+  searchParams: Record<string, string | string[] | undefined>,
+  key: string,
+  pageCount: number
+) {
+  const raw = searchParams[key];
+  const value = Array.isArray(raw) ? raw[0] : raw;
+  const page = Number.parseInt(value ?? "1", 10);
+  if (!Number.isFinite(page)) return 1;
+  return Math.min(Math.max(page, 1), pageCount);
+}
+
+function buildPageHref(
+  searchParams: Record<string, string | string[] | undefined>,
+  key: string,
+  page: number
+) {
+  const nextParams = new URLSearchParams();
+  for (const [paramKey, value] of Object.entries(searchParams)) {
+    if (paramKey === key || value == null) continue;
+    const paramValue = Array.isArray(value) ? value[0] : value;
+    if (paramValue) nextParams.set(paramKey, paramValue);
+  }
+  if (page > 1) nextParams.set(key, String(page));
+  const query = nextParams.toString();
+  return `${PATH}${query ? `?${query}` : ""}#${key}`;
+}
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale } = await params;
@@ -59,127 +93,124 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   });
 }
 
-export default async function Page({ params }: Params) {
+export default async function Page({ params, searchParams }: Params) {
   const { locale } = await params;
   if (locale !== "vi") notFound();
+  const currentSearchParams = (await searchParams) ?? {};
   const posts = [...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date));
+  const grouped = CATEGORY_ORDER.map((cluster) => ({
+    key: cluster,
+    label: CATEGORY_META[cluster].label,
+    title: CATEGORY_META[cluster].title,
+    description: CATEGORY_META[cluster].description,
+    posts: posts.filter((post) => post.cluster === cluster),
+  })).filter((group) => group.posts.length > 0);
 
   return (
     <Shell locale="vi">
       <JsonLd data={graphDocument([breadcrumbGraph(BREADCRUMB)])} />
-      <section className="bg-glow border-b border-line">
-        <Container className="py-12 sm:py-16">
+      <section className="relative overflow-hidden border-b border-line bg-white">
+        <div aria-hidden className="absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(37,99,235,0.11),transparent_34%),linear-gradient(180deg,#fff_0%,#f7f9ff_100%)]" />
+        <div aria-hidden className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent" />
+        <Container className="relative py-12 sm:py-16">
           <Breadcrumb items={BREADCRUMB} />
-          <div className="mt-6 max-w-3xl animate-rise">
-            <p className="label-mono text-blue-600">{BLOG_HUB.eyebrow}</p>
-            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-5xl text-balance">
-              {BLOG_HUB.h1}
-            </h1>
-            <p className="mt-5 text-lg leading-relaxed text-muted">{BLOG_HUB.heroSub}</p>
+          <div className="mt-8 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
+            <div className="max-w-3xl animate-rise">
+              <p className="label-mono text-blue-600">{BLOG_HUB.eyebrow}</p>
+              <h1 className="mt-3 text-4xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl text-balance">
+                Blog kiến thức Marketing Online theo từng nhóm chủ đề.
+              </h1>
+            </div>
+            <div className="animate-rise lg:pb-2" style={{ animationDelay: "120ms" }}>
+              <p className="max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+                Tổng hợp bài viết về Naver, Website, Google Maps và Social Marketing, sắp xếp theo từng cụm để bạn dễ theo dõi đúng chủ đề mình quan tâm.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {grouped.map((group) => (
+                  <Link
+                    key={group.key}
+                    href={`#${group.key}`}
+                    className="rounded-full border border-line bg-white/80 px-4 py-2 text-sm font-semibold text-ink-soft shadow-soft backdrop-blur transition-all hover:-translate-y-0.5 hover:border-blue-200 hover:text-blue-700"
+                  >
+                    {group.label}
+                    <span className="ml-2 font-mono text-[11px] text-muted">{group.posts.length}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </Container>
       </section>
 
-      <section className="py-16 sm:py-20">
+      <section className="py-14 sm:py-18">
         <Container>
-          <div className="mb-10 rounded-[2rem] border border-line bg-white p-6 shadow-soft sm:p-8">
-            <div className="max-w-3xl">
-              <p className="label-mono text-blue-600">Website cluster</p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink">
-                Cụm Website mới
-              </h2>
-              <p className="mt-3 text-base leading-relaxed text-muted">
-                Blog hub giờ nối trực tiếp sang cả spoke dịch vụ mới và các bài mới của cụm Website để tăng số điểm vào nội bộ cho nhóm chủ đề này.
-              </p>
-            </div>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {WEBSITE_CLUSTER_PICKS.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="group rounded-card border border-line bg-white p-4 transition-all hover:border-blue-200"
+          <div className="space-y-10">
+            {grouped.map((group) => {
+              const pageCount = Math.ceil(group.posts.length / PAGE_SIZE);
+              const currentPage = pageParamValue(currentSearchParams, group.key, pageCount);
+              const startIndex = (currentPage - 1) * PAGE_SIZE;
+              const pagePosts = group.posts.slice(startIndex, startIndex + PAGE_SIZE);
+              const previousPage = currentPage === 1 ? pageCount : currentPage - 1;
+              const nextPage = currentPage === pageCount ? 1 : currentPage + 1;
+
+              return (
+                <section
+                  key={group.key}
+                  id={group.key}
+                  className="scroll-mt-28 rounded-[2rem] border border-line bg-white p-5 shadow-soft sm:p-7"
+                  aria-labelledby={`${group.key}-heading`}
                 >
-                  <span className="label-mono text-blue-600">{item.note}</span>
-                  <p className="mt-2 text-sm font-semibold leading-relaxed text-ink group-hover:text-blue-700">
-                    {item.label}
-                  </p>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-blue-700">
-                    Xem liên kết
-                    <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="mb-10 rounded-[2rem] border border-line bg-white p-6 shadow-soft sm:p-8">
-            <div className="max-w-3xl">
-              <p className="label-mono text-blue-600">Naver cluster</p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink">
-                Cụm Naver mới
-              </h2>
-              <p className="mt-3 text-base leading-relaxed text-muted">
-                Blog hub giờ nối trực tiếp sang các spoke thương mại mới và các bài mới của cụm Naver để tăng số điểm vào nội bộ cho nhóm chủ đề này.
-              </p>
-            </div>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {NAVER_CLUSTER_PICKS.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="group rounded-card border border-line bg-white p-4 transition-all hover:border-blue-200"
-                >
-                  <span className="label-mono text-blue-600">{item.note}</span>
-                  <p className="mt-2 text-sm font-semibold leading-relaxed text-ink group-hover:text-blue-700">
-                    {item.label}
-                  </p>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-blue-700">
-                    Xem liên kết
-                    <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="mb-10 rounded-[2rem] border border-line bg-white p-6 shadow-soft sm:p-8">
-            <div className="max-w-3xl">
-              <p className="label-mono text-blue-600">Google Maps cluster</p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink">
-                Cụm Google Maps mới
-              </h2>
-              <p className="mt-3 text-base leading-relaxed text-muted">
-                Blog hub giờ nối trực tiếp sang các spoke problem-solution mới và các bài mới của cụm Google Maps để tăng số điểm vào nội bộ cho nhóm chủ đề này.
-              </p>
-            </div>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {MAPS_CLUSTER_PICKS.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="group rounded-card border border-line bg-white p-4 transition-all hover:border-blue-200"
-                >
-                  <span className="label-mono text-blue-600">{item.note}</span>
-                  <p className="mt-2 text-sm font-semibold leading-relaxed text-ink group-hover:text-blue-700">
-                    {item.label}
-                  </p>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-blue-700">
-                    Xem liên kết
-                    <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {posts.map((p) => (
-              <BlogCard
-                key={p.slug}
-                href={p.path}
-                title={p.title}
-                excerpt={p.excerpt}
-                date={p.date}
-                readingMinutes={p.readingMinutes}
-              />
-            ))}
+                  <div className="flex flex-col gap-5 border-b border-line pb-5 lg:flex-row lg:items-end lg:justify-between">
+                    <div className="max-w-2xl">
+                      <p className="label-mono text-blue-600">{group.label}</p>
+                      <h2
+                        id={`${group.key}-heading`}
+                        className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl"
+                      >
+                        {group.title}
+                      </h2>
+                      <p className="mt-3 text-sm leading-relaxed text-muted">
+                        {group.description}
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="font-mono text-xs font-semibold uppercase tracking-[0.16em] text-muted">
+                        {group.posts.length} bài · {currentPage}/{pageCount}
+                      </span>
+                      <div className="flex rounded-full border border-line bg-paper p-1">
+                        <Link
+                          href={buildPageHref(currentSearchParams, group.key, previousPage)}
+                          aria-label={`Trang trước của ${group.title}`}
+                          className="grid h-9 w-9 place-items-center rounded-full text-ink-soft transition-all hover:bg-white hover:text-blue-700 hover:shadow-soft"
+                        >
+                          <IconArrowRight className="h-4 w-4 rotate-180" />
+                        </Link>
+                        <Link
+                          href={buildPageHref(currentSearchParams, group.key, nextPage)}
+                          aria-label={`Trang sau của ${group.title}`}
+                          className="grid h-9 w-9 place-items-center rounded-full text-ink-soft transition-all hover:bg-white hover:text-blue-700 hover:shadow-soft"
+                        >
+                          <IconArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    {pagePosts.map((post) => (
+                      <BlogCard
+                        key={post.slug}
+                        href={post.path}
+                        title={post.title}
+                        excerpt={post.excerpt}
+                        date={post.date}
+                        readingMinutes={post.readingMinutes}
+                      />
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
           </div>
         </Container>
       </section>

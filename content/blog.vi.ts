@@ -20,6 +20,7 @@ export type BlogPost = {
   primaryKeyword: string;
   breadcrumb: { label: string; href: string }[];
   body: BlogBlock[];
+  faqs?: { q: string; a: string }[];
   related: { label: string; href: string; note: string }[];
 };
 
@@ -197,6 +198,222 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Naver Marketing cho spa",
         href: "/vi/naver-marketing/cho-spa",
         note: "Ngành nghề",
+      },
+    ],
+  },
+  {
+    slug: "what-is-naver-blog-complete-guide",
+    path: "/vi/blog/what-is-naver-blog-complete-guide",
+    cluster: "naver",
+    title: "What is Naver Blog? A Complete Guide to the Platform",
+    metaTitle: "What is Naver Blog? A Complete Guide to the Platform",
+    metaDescription:
+      "A practical guide to Naver Blog: what it is, how Korean users read reviews, why it matters for tourism businesses, and how to turn Naver content into Zalo/WhatsApp leads.",
+    excerpt:
+      "Naver Blog is one of the main review touchpoints for Korean customers before they choose a spa, restaurant, hotel or tour.",
+    date: "2026-06-16",
+    readingMinutes: 8,
+    primaryKeyword: "What is Naver Blog",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "What is Naver Blog",
+        href: "/vi/blog/what-is-naver-blog-complete-guide",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Naver Blog is a blogging platform inside the Naver ecosystem, the search and content environment Korean users rely on every day. For businesses in tourism, hospitality, wellness and F&B, it matters because many Korean customers read blog reviews before they decide where to go.",
+      },
+      { type: "h2", text: "How Naver Blog works" },
+      {
+        type: "p",
+        text: "Naver Blog posts can appear when users search on Naver for places, experiences, food, spa services or travel ideas. Instead of reading only a short business profile, Korean users often look for detailed posts with photos, personal impressions, location context and practical information.",
+      },
+      { type: "h2", text: "Why Korean customers trust Naver Blog reviews" },
+      {
+        type: "ul",
+        items: [
+          "The content feels closer to a real experience than a direct advertisement.",
+          "Photos help users evaluate the atmosphere, service quality and location before visiting.",
+          "Long-form review content answers questions that a short social post cannot cover.",
+          "Naver Blog is connected to how Korean users search, compare and plan trips.",
+        ],
+      },
+      { type: "h2", text: "Who should use Naver Blog marketing?" },
+      {
+        type: "p",
+        text: "Naver Blog is especially useful for spas, restaurants, hotels, homestays, cooking classes, local tours and experience-based businesses that want to reach Korean travelers before they arrive in Vietnam.",
+      },
+      { type: "h2", text: "What a good Naver Blog post should include" },
+      {
+        type: "ul",
+        items: [
+          "A search-focused title that matches how Korean users describe the service.",
+          "Natural Korean writing, not machine-translated Vietnamese copy.",
+          "Real photos of the space, service, food, room or experience.",
+          "Useful details: location, price context, booking flow, opening hours and who the service is for.",
+          "A clear next step such as Zalo, WhatsApp, website booking or Naver Place.",
+        ],
+      },
+      { type: "h2", text: "How Naver Blog supports Google SEO" },
+      {
+        type: "p",
+        text: "Naver Blog itself targets Korean users on Naver, but your website should also have crawlable pages explaining the service. That is why this guide links back to a dedicated service page: Google can understand the topic, while customers can contact the business through Zalo or WhatsApp.",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "If your business needs review content in Korean, start from the " },
+          { type: "link", text: "Naver Blog review writing service", href: "/vi/naver-marketing/viet-bai-naver-blog" },
+          { type: "text", text: " and prepare your current website, location, photos and target customer profile before requesting a quote." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What is Naver Blog?",
+        a: "Naver Blog is a blogging platform inside the Naver ecosystem. Korean users often read Naver Blog reviews before choosing restaurants, spas, hotels, tours and local experiences.",
+      },
+      {
+        q: "Is Naver Blog useful for businesses in Vietnam?",
+        a: "Yes. It is useful for businesses that serve Korean travelers, especially in tourism, hospitality, restaurants, wellness and local experiences.",
+      },
+      {
+        q: "Should a business use Naver Blog or Google SEO?",
+        a: "Use both when Korean customers are important. Naver Blog helps Korean users discover and trust the business, while Google SEO helps the website rank and convert broader search demand.",
+      },
+      {
+        q: "How can customers contact after reading a Naver Blog article?",
+        a: "The article should include a clear next step such as Zalo, WhatsApp, website booking, phone number or Naver Place so the reader can act immediately.",
+      },
+    ],
+    related: [
+      {
+        label: "Naver Blog - Dịch vụ viết bài review",
+        href: "/vi/naver-marketing/viet-bai-naver-blog",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Quảng cáo Naver Blog là gì?",
+        href: "/vi/blog/quang-cao-naver-blog-la-gi",
+        note: "Bài hướng dẫn",
+      },
+      {
+        label: "Cách viết bài Naver Blog chuẩn",
+        href: "/vi/blog/cach-viet-bai-naver-blog-chuan",
+        note: "Checklist",
+      },
+    ],
+  },
+  {
+    slug: "quang-cao-naver-blog-la-gi",
+    path: "/vi/blog/quang-cao-naver-blog-la-gi",
+    cluster: "naver",
+    title: "Quảng cáo Naver Blog là gì? Cách thức hoạt động và chi phí",
+    metaTitle: "Quảng cáo Naver Blog là gì? Cách thức hoạt động và chi phí",
+    metaDescription:
+      "Tìm hiểu quảng cáo Naver Blog là gì, cách hoạt động, các hình thức review/KOC/tài khoản doanh nghiệp, chi phí tham khảo và cách tạo lead qua Zalo/WhatsApp.",
+    excerpt:
+      "Quảng cáo Naver Blog không chỉ là chạy ads. Với khách Hàn, bài review tự nhiên và hình ảnh thật thường tạo niềm tin tốt hơn.",
+    date: "2026-06-16",
+    readingMinutes: 8,
+    primaryKeyword: "quảng cáo Naver Blog là gì",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Quảng cáo Naver Blog là gì",
+        href: "/vi/blog/quang-cao-naver-blog-la-gi",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Quảng cáo Naver Blog là cách doanh nghiệp xuất hiện trước khách Hàn thông qua nội dung blog trong hệ sinh thái Naver. Với ngành spa, nhà hàng, khách sạn và tour, hình thức hiệu quả thường là bài review trải nghiệm, bài trên tài khoản doanh nghiệp hoặc chiến dịch blogger/KOC bằng tiếng Hàn.",
+      },
+      { type: "h2", text: "Quảng cáo Naver Blog hoạt động như thế nào?" },
+      {
+        type: "p",
+        text: "Người Hàn tìm kiếm bằng từ khóa trên Naver, đọc các bài blog liên quan, xem hình ảnh và đánh giá cảm nhận trước khi chọn dịch vụ. Bài viết càng tự nhiên, có ảnh thật, thông tin rõ và đúng ý định tìm kiếm thì càng có cơ hội tạo niềm tin.",
+      },
+      { type: "h2", text: "Các hình thức phổ biến" },
+      {
+        type: "ul",
+        items: [
+          "Booking blogger Hàn viết review sau khi trải nghiệm thật.",
+          "Đăng bài định kỳ trên tài khoản Naver Blog của doanh nghiệp.",
+          "Kết hợp KOC Hàn khi cần chiến dịch lớn hơn hoặc nhiều điểm chạm hơn.",
+          "Tối ưu Naver Place để bài review và hồ sơ địa điểm hỗ trợ nhau.",
+        ],
+      },
+      { type: "h2", text: "Chi phí quảng cáo Naver Blog" },
+      {
+        type: "p",
+        text: "Chi phí phụ thuộc vào hình thức triển khai. Gói blogger review thường tính theo số bài và yêu cầu trải nghiệm; gói tài khoản doanh nghiệp thường tính theo số bài/tháng; KOC hoặc campaign lớn cần báo giá riêng theo mục tiêu, ngành và phạm vi.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Gói Naver Blogger Review tham khảo: từ 8.000.000đ / 4 bài.",
+          "Gói nội dung định kỳ: phụ thuộc số bài, độ dài và việc có đăng bài hay không.",
+          "Gói KOC/campaign: báo giá theo số creator, khu vực, ngành và yêu cầu sản xuất nội dung.",
+        ],
+      },
+      { type: "h2", text: "Cách biến bài Naver Blog thành lead" },
+      {
+        type: "p",
+        text: "Bài viết không nên dừng ở việc giới thiệu. Cần có CTA rõ: nhắn Zalo, WhatsApp, đặt lịch trên website, xem Naver Place hoặc gọi hotline. Với khách du lịch, đường liên hệ càng đơn giản thì khả năng chuyển đổi càng cao.",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu bạn cần triển khai bài review cho spa, nhà hàng, khách sạn hoặc tour, xem " },
+          { type: "link", text: "dịch vụ viết bài review Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog" },
+          { type: "text", text: " hoặc nhắn Zalo/WhatsApp để nhận báo giá theo ngành và số bài." },
+        ],
+      },
+      { type: "h2", text: "Có nên cam kết top Naver hoặc top Google không?" },
+      {
+        type: "p",
+        text: "Không nên cam kết thứ hạng tuyệt đối. Làm đúng là tối ưu nội dung, từ khóa, hình ảnh, liên kết, tần suất đăng và trải nghiệm người đọc. Thứ hạng còn phụ thuộc cạnh tranh, độ mạnh tài khoản, lịch sử nội dung và tín hiệu thương hiệu.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Quảng cáo Naver Blog là gì?",
+        a: "Đó là hoạt động dùng bài viết Naver Blog, blogger review, KOC hoặc nội dung trên tài khoản doanh nghiệp để tiếp cận khách Hàn đang tìm kiếm và đọc review trên Naver.",
+      },
+      {
+        q: "Chi phí quảng cáo Naver Blog bao nhiêu?",
+        a: "Gói blogger review tham khảo từ 8.000.000đ / 4 bài. Chi phí thực tế phụ thuộc số bài, ngành, yêu cầu hình ảnh, tài khoản đăng bài và phạm vi chiến dịch.",
+      },
+      {
+        q: "Quảng cáo Naver Blog có phù hợp với spa và nhà hàng không?",
+        a: "Có. Spa, nhà hàng, khách sạn, tour và cooking class thường phù hợp vì khách Hàn muốn xem ảnh, trải nghiệm và review trước khi đặt.",
+      },
+      {
+        q: "Làm sao đo hiệu quả bài Naver Blog?",
+        a: "Có thể theo dõi số bài được index/hiển thị, traffic referral, tin nhắn Zalo/WhatsApp, booking từ website và phản hồi của khách Hàn khi liên hệ.",
+      },
+    ],
+    related: [
+      {
+        label: "Naver Blog - Dịch vụ viết bài review",
+        href: "/vi/naver-marketing/viet-bai-naver-blog",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Booking blogger Hàn Quốc",
+        href: "/vi/naver-marketing/booking-blogger-han",
+        note: "Gói review",
+      },
+      {
+        label: "What is Naver Blog?",
+        href: "/vi/blog/what-is-naver-blog-complete-guide",
+        note: "Guide",
       },
     ],
   },

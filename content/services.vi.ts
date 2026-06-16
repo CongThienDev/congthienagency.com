@@ -1239,25 +1239,36 @@ export const SERVICES: Service[] = [
       { label: "Naver Marketing", href: "/vi/naver-marketing" },
       { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog" },
     ],
-    primaryKeyword: "dịch vụ viết bài Naver Blog",
-    metaTitle: "Dịch vụ viết bài Naver Blog cho khách Hàn | Công Thiên Agency",
+    primaryKeyword: "Naver Blog dịch vụ viết bài review",
+    metaTitle: "Naver Blog - Dịch vụ viết bài review | Congthienagency.com",
     metaDescription:
-      "Dịch vụ viết bài Naver Blog bằng tiếng Hàn cho spa, nhà hàng, khách sạn và tour. Nội dung bám bộ từ khóa, phong cách tự nhiên và phù hợp hành vi đọc của khách Hàn.",
-    eyebrow: "Naver · Viết bài",
-    h1: "Dịch vụ viết bài Naver Blog cho doanh nghiệp muốn tiếp cận khách Hàn",
+      "Dịch vụ viết bài review Naver Blog bằng tiếng Hàn cho spa, nhà hàng, khách sạn và tour. Có tư vấn chiến lược, chi phí rõ ràng, FAQ và liên hệ nhanh qua Zalo/WhatsApp.",
+    eyebrow: "Naver Blog · Review tiếng Hàn",
+    h1: "Naver Blog - Dịch vụ viết bài review giúp doanh nghiệp tiếp cận khách Hàn",
     heroSub:
-      "Không phải doanh nghiệp nào cũng cần bắt đầu bằng booking blogger. Nhiều trường hợp cần một hệ thống bài viết đều đặn, bám từ khóa và đúng giọng Naver ngay trên kênh của mình.",
-    heroCta: "Nhận tư vấn viết bài Naver Blog",
+      "Tạo bài review tiếng Hàn tự nhiên, có cấu trúc SEO Naver, hình ảnh thật và lời kêu gọi hành động rõ ràng để khách Hàn tin tưởng trước khi nhắn Zalo, WhatsApp hoặc đặt dịch vụ.",
+    heroCta: "Tư vấn Naver Blog qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
     intro:
-      "Viết bài Naver Blog không chỉ là dịch nội dung sang tiếng Hàn. Bài viết cần đúng phong cách người Hàn quen đọc, bám bộ từ khóa tìm kiếm và đủ tự nhiên để không mang cảm giác quảng cáo lộ liễu. Đây là dịch vụ dành cho doanh nghiệp muốn xây nội dung Naver một cách bài bản thay vì đăng rời rạc.",
+      "Naver Blog là một trong những điểm chạm quan trọng khi khách Hàn tìm hiểu spa, nhà hàng, khách sạn, tour hoặc trải nghiệm tại Việt Nam. Dịch vụ viết bài review Naver Blog của Công Thiên Agency tập trung vào nội dung có ích cho người đọc Hàn: giải thích rõ trải nghiệm, đưa hình ảnh thật, bám từ khóa Naver và dẫn khách về kênh liên hệ phù hợp như Zalo, WhatsApp, website hoặc Naver Place.",
     sections: [
+      {
+        heading: "What is Naver Blog? Nền tảng này hoạt động thế nào?",
+        body:
+          "Naver Blog là hệ sinh thái blog nằm trong công cụ tìm kiếm Naver của Hàn Quốc. Người dùng Hàn thường đọc bài review, ảnh trải nghiệm và cảm nhận thực tế trước khi chọn spa, nhà hàng, khách sạn hoặc tour. Vì vậy một bài Naver Blog tốt không chỉ để giới thiệu thương hiệu, mà còn tạo bằng chứng xã hội bằng tiếng Hàn ở đúng nơi khách đang tìm kiếm.",
+      },
+      {
+        heading: "Quảng cáo Naver Blog là gì?",
+        body:
+          "Với doanh nghiệp du lịch, “quảng cáo Naver Blog” thường không giống banner ads. Cách làm hiệu quả hơn là xây bài review, booking blogger/KOC hoặc đăng nội dung đều trên tài khoản Naver Blog để tăng độ tin cậy. Bài viết cần tự nhiên, có hình thật, có địa điểm, có từ khóa ngành và có đường dẫn liên hệ rõ ràng.",
+      },
       {
         heading: "Dịch vụ này phù hợp khi nào?",
         bullets: [
-          "Khi doanh nghiệp đã có hoặc đang xây tài khoản Naver riêng.",
-          "Khi cần đăng bài đều theo tháng thay vì chỉ một đợt blogger review.",
-          "Khi muốn bám bộ từ khóa theo ngành và khu vực.",
-          "Khi cần nội dung tiếng Hàn tự nhiên, không phải dịch máy.",
+          "Khi doanh nghiệp muốn khách Hàn tìm thấy bài review trước khi ra quyết định.",
+          "Khi cần nội dung tiếng Hàn tự nhiên, không phải dịch máy từ tiếng Việt.",
+          "Khi muốn bám bộ từ khóa như spa Hội An, nhà hàng Đà Nẵng, tour Hội An, khách sạn Việt Nam.",
+          "Khi cần dẫn khách về Zalo, WhatsApp, website, Naver Place hoặc form đặt dịch vụ.",
         ],
       },
       {
@@ -1278,22 +1289,57 @@ export const SERVICES: Service[] = [
           { type: "text", text: ". Khi đó, nội dung không chỉ phục vụ tìm kiếm mà còn làm dày tín hiệu tin cậy quanh địa điểm." },
         ],
       },
+      {
+        heading: "Chi phí viết bài review Naver Blog",
+        body:
+          "Chi phí phụ thuộc vào số bài, độ dài, yêu cầu hình ảnh, đăng trên tài khoản doanh nghiệp hay kết hợp blogger Hàn. Với campaign cần social proof nhanh, có thể bắt đầu bằng gói Naver Blogger Review 8.000.000đ / 4 bài. Với doanh nghiệp muốn xây kênh dài hạn, nên dùng gói đăng bài theo tháng.",
+      },
+      {
+        heading: "Trang được tối ưu để Google crawl và hiểu nội dung",
+        body:
+          "Trang này có cấu trúc heading rõ ràng, breadcrumb, FAQ, Service schema, metadata, sitemap và internal links tới các bài hướng dẫn Naver liên quan. Đây là nền tảng kỹ thuật giúp Google hiểu chủ đề, nhưng thứ hạng cuối cùng còn phụ thuộc cạnh tranh từ khóa, backlink, tín hiệu thương hiệu và chất lượng nội dung sau khi xuất bản.",
+      },
     ],
+    deliverables: {
+      title: "Một gói viết bài review Naver Blog gồm có",
+      items: [
+        "Tư vấn mục tiêu và nhóm khách Hàn cần tiếp cận",
+        "Nghiên cứu cụm từ khóa theo ngành, khu vực và ý định tìm kiếm",
+        "Outline bài review theo cấu trúc người Hàn quen đọc",
+        "Viết nội dung tiếng Hàn tự nhiên, tránh văn phong dịch máy",
+        "Gợi ý hình ảnh thật cần chuẩn bị cho bài review",
+        "CTA dẫn về Zalo, WhatsApp, website, Naver Place hoặc trang đặt dịch vụ",
+        "Liên kết nội bộ giữa Naver Blog, Naver Place và website nếu có",
+      ],
+    },
     whoFor: [
-      "Doanh nghiệp đã có tài khoản Naver Blog",
-      "Spa, nhà hàng, khách sạn muốn đăng bài định kỳ",
-      "Doanh nghiệp cần bộ nội dung theo từ khóa Naver",
-      "Thương hiệu muốn xây tài sản nội dung tiếng Hàn dài hạn",
+      "Spa, massage, wellness phục vụ khách Hàn",
+      "Nhà hàng, cafe, hải sản, cooking class",
+      "Khách sạn, homestay, villa tại Hội An – Đà Nẵng",
+      "Tour, local experience, dịch vụ du lịch muốn có review tiếng Hàn",
+      "Doanh nghiệp đã có tài khoản Naver Blog hoặc muốn bắt đầu từ đầu",
     ],
     process: [
-      { step: "Xác định chủ đề", detail: "Chốt mục tiêu, ngành và bộ từ khóa cho từng đợt nội dung." },
-      { step: "Lên outline", detail: "Xây cấu trúc bài phù hợp phong cách Naver và hành vi người đọc Hàn." },
-      { step: "Viết & rà soát", detail: "Soạn bài tiếng Hàn, rà ngữ điệu và tính tự nhiên." },
-      { step: "Đăng & tối ưu", detail: "Đăng bài đúng nhịp và điều chỉnh theo tín hiệu hiển thị." },
+      { step: "Audit nhanh", detail: "Xem ngành, địa điểm, website, Google Maps, Naver Place và nội dung hiện có." },
+      { step: "Lên keyword map", detail: "Chọn chủ đề theo nhu cầu khách Hàn: review, giá, vị trí, trải nghiệm, cách đặt." },
+      { step: "Viết bài review", detail: "Soạn nội dung tiếng Hàn tự nhiên, có cấu trúc tiêu đề, đoạn ngắn và CTA rõ." },
+      { step: "Đăng & đo lường", detail: "Đăng bài hoặc bàn giao content, sau đó theo dõi index, hiển thị và lead qua Zalo/WhatsApp." },
     ],
-    priceFrom: "Báo giá theo số bài / tháng",
-    priceNote: "Phù hợp nhất khi kết hợp cùng dịch vụ quản lý tài khoản Naver hàng tháng.",
+    priceFrom: "Từ 8.000.000đ / 4 bài review",
+    priceNote: "Giá phụ thuộc số bài, ngành, hình ảnh, tài khoản đăng bài và việc có booking blogger Hàn hay không. Nhắn Zalo/WhatsApp để nhận báo giá theo case thực tế.",
     faqs: [
+      {
+        q: "Naver Blog là gì?",
+        a: "Naver Blog là nền tảng blog trong hệ sinh thái tìm kiếm Naver của Hàn Quốc. Khách Hàn thường đọc bài review, hình ảnh và trải nghiệm trên Naver Blog trước khi chọn dịch vụ.",
+      },
+      {
+        q: "Quảng cáo Naver Blog là gì?",
+        a: "Trong thực tế marketing du lịch, quảng cáo Naver Blog thường là hoạt động tạo bài review, booking blogger/KOC hoặc đăng nội dung tối ưu từ khóa để doanh nghiệp xuất hiện và tạo niềm tin với khách Hàn.",
+      },
+      {
+        q: "Chi phí viết bài review Naver Blog bao nhiêu?",
+        a: "Gói tham khảo bắt đầu từ 8.000.000đ / 4 bài review. Chi phí thay đổi theo số bài, yêu cầu hình ảnh, đăng trên tài khoản doanh nghiệp hay qua blogger Hàn.",
+      },
       {
         q: "Dịch vụ viết bài có bao gồm đăng bài không?",
         a: "Có thể bao gồm cả đăng bài nếu bạn dùng gói quản lý tài khoản theo tháng; nếu không, có thể tách riêng phần content.",
@@ -1310,18 +1356,28 @@ export const SERVICES: Service[] = [
         q: "Có cần chuẩn bị hình ảnh không?",
         a: "Có. Hình ảnh thật, phù hợp bối cảnh là phần rất quan trọng của một bài Naver Blog hiệu quả.",
       },
+      {
+        q: "Trang này có giúp lên top Google ngay không?",
+        a: "Không thể cam kết lên top ngay vì còn phụ thuộc cạnh tranh, backlink, thương hiệu và lịch sử domain. Tuy nhiên trang được tối ưu metadata, breadcrumb, FAQ schema, Service schema, sitemap và nội dung chuyên sâu để Google crawl/index tốt hơn.",
+      },
+      {
+        q: "Làm sao liên hệ tư vấn nhanh nhất?",
+        a: `Bạn có thể nhắn Zalo ${SITE.contact.phoneDisplay} hoặc WhatsApp để gửi ngành nghề, địa điểm, website/Naver hiện có và mục tiêu muốn tiếp cận khách Hàn.`,
+      },
     ],
     related: [
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Tạo review nhanh" },
       { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver", note: "Đi cùng dịch vụ này" },
       { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Bổ trợ tín hiệu địa điểm" },
       { label: "Naver KOC", href: "/vi/naver-marketing/naver-koc", note: "Khi cần campaign lớn hơn" },
       { label: "Cách viết bài Naver Blog chuẩn", href: "/vi/blog/cach-viet-bai-naver-blog-chuan", note: "Blog" },
+      { label: "Chi phí Naver Marketing", href: "/vi/blog/chi-phi-naver-marketing", note: "Bảng giá tham khảo" },
       { label: "Naver Place khác Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao", note: "Blog" },
     ],
     images: [
-      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Dịch vụ viết bài Naver Blog" },
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver Blog dịch vụ viết bài review tiếng Hàn" },
     ],
-    schema: { serviceType: "Viết bài Naver Blog" },
+    schema: { serviceType: "Dịch vụ viết bài review Naver Blog", offerPriceVnd: 8000000 },
   },
 
   /* ───────────────────────── NAVER SPOKE — QUẢN LÝ TÀI KHOẢN NAVER ───────────────────────── */

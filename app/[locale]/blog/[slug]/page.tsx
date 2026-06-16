@@ -7,7 +7,7 @@ import { Breadcrumb } from "@/components/Bits";
 import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
 import { BLOG_POSTS, getPost } from "@/content/blog.vi";
-import { graphDocument, breadcrumbGraph, blogPostingGraph } from "@/lib/schema";
+import { graphDocument, breadcrumbGraph, blogPostingGraph, faqGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import { resolveAbsoluteImageUrls, resolvePrimaryImage } from "@/lib/siteIndex";
 
@@ -37,6 +37,17 @@ export default async function Page({ params }: Params) {
   const post = getPost(slug);
   if (!post) notFound();
   const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg"]);
+  const schemaNodes = [
+    breadcrumbGraph(post.breadcrumb),
+    blogPostingGraph({
+      title: post.title,
+      description: post.metaDescription,
+      path: post.path,
+      datePublished: post.date,
+      images: imageUrls,
+    }),
+  ];
+  if (post.faqs?.length) schemaNodes.push(faqGraph(post.faqs));
 
   const d = new Date(post.date).toLocaleDateString("vi-VN", {
     day: "2-digit",
@@ -47,16 +58,7 @@ export default async function Page({ params }: Params) {
   return (
     <Shell locale="vi">
       <JsonLd
-        data={graphDocument([
-          breadcrumbGraph(post.breadcrumb),
-          blogPostingGraph({
-            title: post.title,
-            description: post.metaDescription,
-            path: post.path,
-            datePublished: post.date,
-            images: imageUrls,
-          }),
-        ])}
+        data={graphDocument(schemaNodes)}
       />
       <section className="border-b border-line bg-glow">
         <Container className="py-12 sm:py-16">
@@ -133,6 +135,25 @@ export default async function Page({ params }: Params) {
                     </span>
                     <span aria-hidden className="text-blue-700 transition-transform group-hover:translate-x-1">→</span>
                   </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {post.faqs && post.faqs.length > 0 && (
+            <div className="mx-auto mt-12 max-w-2xl border-t border-line pt-8">
+              <p className="label-mono text-muted">FAQ</p>
+              <div className="mt-4 flex flex-col gap-3">
+                {post.faqs.map((faq) => (
+                  <details
+                    key={faq.q}
+                    className="group rounded-xl border border-line bg-white px-4 py-3"
+                  >
+                    <summary className="cursor-pointer list-none font-medium text-ink group-open:text-blue-700">
+                      {faq.q}
+                    </summary>
+                    <p className="mt-2 text-sm leading-relaxed text-muted">{faq.a}</p>
+                  </details>
                 ))}
               </div>
             </div>
