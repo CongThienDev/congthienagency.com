@@ -54,10 +54,10 @@ export function PricingList({ groups }: { groups: PricingGroup[] }) {
                 return (
                   <div
                     key={pkg.id}
-                    className="group flex flex-col gap-5 px-6 py-6 transition-colors duration-200 hover:bg-blue-50/40 sm:flex-row sm:items-center sm:gap-6 sm:px-8"
+                    className="group flex flex-col gap-5 px-6 py-6 transition-colors duration-200 hover:bg-blue-50/40 sm:grid sm:grid-cols-[minmax(0,1fr)_minmax(15rem,max-content)_max-content] sm:items-center sm:gap-6 sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,max-content)_max-content]"
                   >
                     {/* Name + description */}
-                    <div className="flex min-w-0 flex-1 items-start gap-3.5">
+                    <div className="flex min-w-0 items-start gap-3.5">
                       <span
                         className={`mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl ${brand.badge}`}
                       >
@@ -76,13 +76,13 @@ export function PricingList({ groups }: { groups: PricingGroup[] }) {
                     </div>
 
                     {/* Price */}
-                    <div className="shrink-0 pl-[54px] sm:w-44 sm:pl-0 sm:text-right">
+                    <div className="shrink-0 pl-[54px] sm:pl-0 sm:text-right sm:justify-self-end">
                       {isQuote ? (
-                        <p className="text-base font-semibold text-ink-soft">
+                        <p className="inline-flex whitespace-nowrap text-base font-semibold text-ink-soft sm:justify-end">
                           Báo giá riêng
                         </p>
                       ) : (
-                        <>
+                        <div className="inline-flex items-baseline gap-1 whitespace-nowrap sm:justify-end">
                           {hasTuPrefix && (
                             <span className="mr-1 font-mono text-[10px] font-medium uppercase tracking-[0.15em] text-muted">
                               Từ
@@ -92,17 +92,17 @@ export function PricingList({ groups }: { groups: PricingGroup[] }) {
                             {priceDisplay}
                           </span>
                           {pkg.priceUnit && (
-                            <p className="mt-1 text-[12px] text-muted">
+                            <span className="text-[12px] text-muted">
                               {pkg.priceUnit}
-                            </p>
+                            </span>
                           )}
-                        </>
+                        </div>
                       )}
                     </div>
 
                     {/* CTA */}
-                    <div className="shrink-0 pl-[54px] sm:w-auto sm:pl-0">
-                      <ContactTriggerButton className="w-full sm:w-auto">
+                    <div className="shrink-0 pl-[54px] sm:pl-0 sm:justify-self-end">
+                      <ContactTriggerButton className="w-full sm:min-w-[260px] sm:w-auto">
                         {pkg.ctaLabel}
                         <IconArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
                       </ContactTriggerButton>

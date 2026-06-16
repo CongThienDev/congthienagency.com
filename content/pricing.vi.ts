@@ -73,7 +73,7 @@ export const PRICING_GROUPS: PricingGroup[] = [
         cluster: "naver",
         name: "Naver Blogger Review",
         priceLabel: "8.000.000đ",
-        priceUnit: "/ 4 bài",
+        priceUnit: "/ 4 bài khác nhau",
         priceFromVnd: 8000000,
         tagline: "Bài review trên blog Naver của cộng tác viên người Hàn.",
         features: [
@@ -92,7 +92,7 @@ export const PRICING_GROUPS: PricingGroup[] = [
         priceLabel: "6.000.000đ",
         priceUnit: "/ tháng",
         priceFromVnd: 6000000,
-        tagline: "Vận hành nội dung định kỳ trên tài khoản Naver.",
+        tagline: "Tạo tài khoản và Vận hành nội dung trên tài khoản Naver.",
         features: [
           "Đăng nội dung tiếng Hàn định kỳ hàng tháng",
           "Xây dựng hình ảnh thương hiệu bằng tiếng Hàn",
