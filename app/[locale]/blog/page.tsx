@@ -24,7 +24,7 @@ const BREADCRUMB = [
 
 type BlogCluster = BlogPost["cluster"];
 
-const CATEGORY_ORDER: BlogCluster[] = ["naver", "website", "maps", "social", "general"];
+const CATEGORY_ORDER: BlogCluster[] = ["naver", "website", "maps", "qr", "social", "general"];
 
 const CATEGORY_META: Record<BlogCluster, { label: string; title: string; description: string }> = {
   naver: {
@@ -46,6 +46,11 @@ const CATEGORY_META: Record<BlogCluster, { label: string; title: string; descrip
     label: "Social",
     title: "Social Marketing",
     description: "Fanpage, social proof, tăng trưởng kênh và cách giữ thương hiệu đáng tin.",
+  },
+  qr: {
+    label: "QR & Zalo",
+    title: "Quét mã QR & Zalo",
+    description: "Quét mã QR, Zalo lead, activation tại điểm bán và thu data offline.",
   },
   general: {
     label: "Khác",

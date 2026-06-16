@@ -10,7 +10,7 @@ export type BlogBlock =
 export type BlogPost = {
   slug: string;
   path: string;
-  cluster: "website" | "naver" | "maps" | "social" | "general";
+  cluster: "website" | "naver" | "maps" | "social" | "qr" | "general";
   title: string;
   metaTitle: string;
   metaDescription: string;
@@ -3036,6 +3036,436 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         label: "Cách xây Fanpage chuyên nghiệp",
         href: "/vi/blog/cach-xay-fanpage-chuyen-nghiep",
+        note: "Bài liên quan",
+      },
+    ],
+  },
+  {
+    slug: "top-cach-dung-naver-blog-tiep-can-khach-han",
+    path: "/vi/blog/top-cach-dung-naver-blog-tiep-can-khach-han",
+    cluster: "naver",
+    title: "Top 7 cách dùng Naver Blog để tiếp cận khách Hàn trước mùa cao điểm",
+    metaTitle: "Top 7 cách dùng Naver Blog để tiếp cận khách Hàn | Công Thiên Agency",
+    metaDescription:
+      "Top 7 cách dùng Naver Blog để tiếp cận khách Hàn: nội dung review, từ khóa, ảnh thật, lịch đăng và CTA về Zalo/WhatsApp để biến lượt đọc thành lead.",
+    excerpt:
+      "Nếu khách Hàn là thị trường bạn muốn khai thác, Naver Blog là một trong những điểm chạm quan trọng nhất trước khi họ quyết định booking.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "cách dùng Naver Blog để tiếp cận khách Hàn",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Top 7 cách dùng Naver Blog",
+        href: "/vi/blog/top-cach-dung-naver-blog-tiep-can-khach-han",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Khi khách Hàn tìm spa, nhà hàng, tour hoặc khách sạn, họ thường đọc Naver Blog trước khi nhắn tin hay gọi đặt lịch. Đây là lý do bài viết kiểu Top rất hợp để kéo traffic: nó trả lời trực tiếp câu hỏi ‘làm sao để tiếp cận khách Hàn hiệu quả hơn?’.",
+      },
+      { type: "h2", text: "Top 7 cách nên triển khai" },
+      {
+        type: "ul",
+        items: [
+          "Viết bài review theo trải nghiệm thật, không dùng giọng quảng cáo quá lộ liễu.",
+          "Dùng tiêu đề bám đúng hành vi tìm kiếm của khách Hàn.",
+          "Thêm ảnh thật về không gian, dịch vụ, món ăn hoặc phòng ở.",
+          "Nhắc rõ địa điểm, cách đi, thời gian phục vụ và mức giá tham khảo.",
+          "Đặt CTA về Zalo, WhatsApp hoặc website booking ở cuối bài.",
+          "Đăng đều theo lịch để Naver thấy tài khoản có hoạt động ổn định.",
+          "Liên kết bài blog với Naver Place và website chính chủ của bạn.",
+        ],
+      },
+      { type: "h2", text: "Bài viết nên dẫn về đâu?" },
+      {
+        type: "p",
+        text: "Một bài Naver tốt không nên kết thúc bằng cảm nhận chung chung. Nó cần dẫn người đọc đến bước tiếp theo: xem website, nhắn Zalo, nhắn WhatsApp hoặc xem Naver Place để đặt lịch nhanh hơn.",
+      },
+      { type: "h2", text: "Khi nào nên thuê dịch vụ?" },
+      {
+        type: "p",
+        text: "Nếu bạn chưa có nguồn nội dung tiếng Hàn, chưa biết chọn từ khóa hoặc cần triển khai nhiều bài trong thời gian ngắn, việc dùng dịch vụ viết bài review Naver Blog sẽ tiết kiệm thời gian và giữ được tính nhất quán của nội dung.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Top Naver Blog này dành cho ai?",
+        a: "Phù hợp với spa, nhà hàng, khách sạn, tour và trải nghiệm du lịch muốn tiếp cận khách Hàn trước khi họ đặt dịch vụ.",
+      },
+      {
+        q: "Naver Blog có thay thế website không?",
+        a: "Không. Naver Blog giúp tiếp cận khách Hàn, còn website là nơi tăng độ tin cậy và chốt chuyển đổi tốt hơn.",
+      },
+      {
+        q: "Bài Naver Blog nên dẫn khách về đâu?",
+        a: "Nên có CTA rõ về Zalo, WhatsApp, website booking hoặc Naver Place để khách hành động ngay.",
+      },
+      {
+        q: "Có nên cam kết top Naver không?",
+        a: "Không nên cam kết thứ hạng tuyệt đối. Cần làm đúng nội dung, từ khóa, ảnh và tần suất đăng để tăng xác suất hiển thị.",
+      },
+    ],
+    related: [
+      {
+        label: "Naver Blog - Dịch vụ viết bài review",
+        href: "/vi/naver-marketing/viet-bai-naver-blog",
+        note: "Dịch vụ",
+      },
+      {
+        label: "What is Naver Blog?",
+        href: "/vi/blog/what-is-naver-blog-complete-guide",
+        note: "Guide",
+      },
+      {
+        label: "Quảng cáo Naver Blog là gì?",
+        href: "/vi/blog/quang-cao-naver-blog-la-gi",
+        note: "Bài liên quan",
+      },
+    ],
+  },
+  {
+    slug: "top-website-booking-online-phai-co-gi",
+    path: "/vi/blog/top-website-booking-online-phai-co-gi",
+    cluster: "website",
+    title: "Top 7 yếu tố website booking online phải có nếu muốn tăng khách",
+    metaTitle: "Top 7 yếu tố website booking online phải có | Công Thiên Agency",
+    metaDescription:
+      "Top 7 yếu tố website booking online cần có: CTA rõ, mobile UX, tốc độ, SEO, form đặt chỗ, đa ngôn ngữ và tín hiệu tin cậy để tăng booking.",
+    excerpt:
+      "Một website booking online tốt không chỉ đẹp. Nó phải khiến khách hiểu dịch vụ nhanh và đặt chỗ dễ hơn.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "website booking online phải có gì",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Top 7 website booking online",
+        href: "/vi/blog/top-website-booking-online-phai-co-gi",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Khi khách tìm spa, khách sạn, tour hay lớp trải nghiệm, website thường là nơi họ kiểm tra thông tin cuối cùng trước khi booking. Nếu trang của bạn rối, tải chậm hoặc thiếu tín hiệu tin cậy, bạn sẽ mất khách ngay ở bước này.",
+      },
+      { type: "h2", text: "Top 7 yếu tố cần có" },
+      {
+        type: "ul",
+        items: [
+          "Tiêu đề và CTA rõ ràng ngay phần đầu trang.",
+          "Thiết kế mobile-first để khách dễ thao tác trên điện thoại.",
+          "Booking flow ngắn gọn, ít bước, ít ma sát.",
+          "Tốc độ tải tốt và tối ưu SEO kỹ thuật.",
+          "Ảnh thật, review thật, địa chỉ thật và thông tin liên hệ rõ ràng.",
+          "Có đa ngôn ngữ nếu phục vụ khách quốc tế.",
+          "Tích hợp email xác nhận hoặc tin nhắn sau khi đặt.",
+        ],
+      },
+      { type: "h2", text: "Website nên làm gì cho SEO?" },
+      {
+        type: "p",
+        text: "Một website booking online không nên chỉ là landing page giới thiệu. Nó cần có nội dung đủ sâu, cấu trúc rõ, schema hợp lệ và câu chữ bám đúng từ khóa mà khách đang tìm trên Google.",
+      },
+      { type: "h2", text: "Khi nào cần làm lại website?" },
+      {
+        type: "p",
+        text: "Nếu website hiện tại không tạo ra booking, không hiện tốt trên mobile hoặc không có nội dung đủ rõ cho khách quốc tế, đó là dấu hiệu nên làm lại cấu trúc và nội dung thay vì chỉ đổi giao diện.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Website booking online có cần SEO không?",
+        a: "Có. SEO giúp khách tìm thấy bạn, còn trải nghiệm booking giúp họ chuyển đổi sau khi vào website.",
+      },
+      {
+        q: "Một website booking online cần bao nhiêu trang?",
+        a: "Tùy ngành, nhưng tối thiểu nên có trang dịch vụ, trang chi tiết, FAQ, liên hệ và nội dung hỗ trợ chuyển đổi.",
+      },
+      {
+        q: "Website booking online nên ưu tiên mobile hay desktop?",
+        a: "Nên ưu tiên mobile trước vì phần lớn khách du lịch và khách dịch vụ tra cứu bằng điện thoại.",
+      },
+      {
+        q: "Trang nào nên link từ bài Top này?",
+        a: "Nên dẫn khách về dịch vụ website booking online và các bài liên quan về website đa ngôn ngữ, booking và chuyển đổi.",
+      },
+    ],
+    related: [
+      {
+        label: "Website booking online",
+        href: "/vi/thiet-ke-website/website-booking-online",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Website spa Hội An cần gì",
+        href: "/vi/blog/website-spa-hoi-an-can-gi",
+        note: "Bài liên quan",
+      },
+      {
+        label: "Website đa ngôn ngữ cho khách quốc tế",
+        href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te",
+        note: "Bài liên quan",
+      },
+    ],
+  },
+  {
+    slug: "top-toi-uu-google-maps-de-len-top",
+    path: "/vi/blog/top-toi-uu-google-maps-de-len-top",
+    cluster: "maps",
+    title: "Top 7 việc cần làm để Google Maps của bạn dễ lên top hơn",
+    metaTitle: "Top 7 việc cần làm để Google Maps dễ lên top | Công Thiên Agency",
+    metaDescription:
+      "Top 7 việc cần làm để tối ưu Google Maps: hồ sơ GBP, danh mục, ảnh, review thật, phản hồi, bài đăng và tín hiệu địa phương.",
+    excerpt:
+      "Google Maps thường là điểm chạm đầu tiên của khách tại địa phương. Tối ưu đúng sẽ giúp bạn được nhìn thấy nhiều hơn.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "tối ưu Google Maps để lên top",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Top tối ưu Google Maps",
+        href: "/vi/blog/top-toi-uu-google-maps-de-len-top",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Với spa, nhà hàng, khách sạn hay tour, Google Maps thường là nơi khách xem trước khi quyết định đi hay không. Một hồ sơ được tối ưu tốt sẽ giúp doanh nghiệp nổi bật hơn trong khu vực tìm kiếm.",
+      },
+      { type: "h2", text: "Top 7 việc cần làm" },
+      {
+        type: "ul",
+        items: [
+          "Hoàn thiện Google Business Profile đúng thông tin.",
+          "Chọn danh mục và dịch vụ khớp với nhu cầu tìm kiếm.",
+          "Đăng ảnh thật, ảnh cập nhật và ảnh có ngữ cảnh sử dụng.",
+          "Thu thập review thật từ khách đã trải nghiệm.",
+          "Phản hồi đánh giá đều đặn và chuyên nghiệp.",
+          "Cập nhật bài đăng, giờ mở cửa và thông tin liên hệ.",
+          "Đồng bộ tín hiệu địa phương với website và social.",
+        ],
+      },
+      { type: "h2", text: "Vì sao Google Maps quan trọng?" },
+      {
+        type: "p",
+        text: "Người dùng thường quyết định rất nhanh khi đang ở gần địa điểm. Nếu hồ sơ của bạn đầy đủ, hình ảnh đẹp và có phản hồi tốt, khả năng họ bấm gọi hoặc chỉ đường sẽ cao hơn rõ rệt.",
+      },
+      { type: "h2", text: "Tránh làm gì?" },
+      {
+        type: "p",
+        text: "Không nên dùng cách làm thiếu minh bạch như review ảo hoặc thông tin sai lệch. Google ưu tiên tín hiệu thật và doanh nghiệp cũng an toàn hơn khi làm đúng chính sách.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Google Maps có cần review thật không?",
+        a: "Có. Review thật là một trong những tín hiệu quan trọng nhất để tăng độ tin cậy và khả năng chuyển đổi.",
+      },
+      {
+        q: "Tối ưu Google Maps có giống chạy quảng cáo không?",
+        a: "Không. Tối ưu Google Maps là tối ưu hồ sơ, nội dung, tín hiệu và phản hồi người dùng chứ không chỉ là chạy ads.",
+      },
+      {
+        q: "Bao lâu thì thấy hiệu quả?",
+        a: "Tùy độ cạnh tranh và hiện trạng hồ sơ, nhưng thường cần vài tuần đến vài tháng để thấy thay đổi rõ hơn.",
+      },
+      {
+        q: "Bài này nên link về đâu?",
+        a: "Nên dẫn về dịch vụ Google Maps Review & Reputation để khách có thể liên hệ khi cần triển khai thực tế.",
+      },
+    ],
+    related: [
+      {
+        label: "Google Maps Review & Reputation",
+        href: "/vi/google-maps-marketing/review-reputation",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Tối ưu Google Maps cho doanh nghiệp du lịch",
+        href: "/vi/blog/toi-uu-google-maps-cho-doanh-nghiep",
+        note: "Bài liên quan",
+      },
+      {
+        label: "Audit Google Business Profile",
+        href: "/vi/google-maps-marketing/audit-google-business-profile",
+        note: "Dịch vụ",
+      },
+    ],
+  },
+  {
+    slug: "top-cach-quet-ma-zalo-thu-lead",
+    path: "/vi/blog/top-cach-quet-ma-zalo-thu-lead",
+    cluster: "qr",
+    title: "Top 7 cách quét mã Zalo để thu lead ngay tại điểm bán",
+    metaTitle: "Top 7 cách quét mã Zalo để thu lead | Công Thiên Agency",
+    metaDescription:
+      "Top 7 cách quét mã Zalo để thu lead tại cửa hàng, showroom hoặc điểm dịch vụ: đặt QR, ưu đãi, kịch bản nhân sự và follow-up.",
+    excerpt:
+      "Quét mã Zalo đúng cách giúp biến lượt ghé quầy thành tệp lead có thể chăm sóc lại sau này.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "quét mã Zalo để thu lead",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Top quét mã Zalo thu lead",
+        href: "/vi/blog/top-cach-quet-ma-zalo-thu-lead",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Nếu bạn có cửa hàng, quầy tư vấn, showroom hay điểm dịch vụ, quét mã Zalo là một cách đơn giản để thu lead mà không phụ thuộc hoàn toàn vào quảng cáo. Điều quan trọng là phải thiết kế luồng đủ rõ để khách sẵn sàng quét.",
+      },
+      { type: "h2", text: "Top 7 cách triển khai hiệu quả" },
+      {
+        type: "ul",
+        items: [
+          "Đặt QR ở vị trí dễ nhìn, dễ quét và không bị che khuất.",
+          "Gắn lợi ích rõ ràng: ưu đãi, tài liệu, tư vấn hoặc báo giá.",
+          "Dùng câu kêu gọi hành động ngắn, dễ hiểu.",
+          "Đào tạo nhân sự nhắc khách quét QR đúng thời điểm.",
+          "Phân nhóm lead ngay sau khi khách kết nối.",
+          "Follow-up nhanh bằng tin nhắn hữu ích, không spam.",
+          "Theo dõi số quét để đo hiệu quả từng điểm đặt.",
+        ],
+      },
+      { type: "h2", text: "Sai lầm thường gặp" },
+      {
+        type: "p",
+        text: "Nhiều nơi đặt mã QR nhưng không có lý do để khách quét, hoặc quét xong thì không có bước chăm sóc tiếp theo. Khi đó QR chỉ là một tấm ảnh, không phải công cụ tạo lead.",
+      },
+      { type: "h2", text: "Khi nào nên chạy chiến dịch QR?" },
+      {
+        type: "p",
+        text: "Khi bạn có điểm chạm offline rõ ràng và muốn chuyển khách ghé thăm thành data để remarketing, chăm sóc hoặc mời quay lại, chiến dịch quét mã QR sẽ phát huy hiệu quả tốt hơn cả quảng cáo rộng.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Quét mã Zalo có phù hợp với mọi ngành không?",
+        a: "Phù hợp nhất với ngành có điểm bán hoặc điểm tư vấn trực tiếp như spa, showroom, F&B, tour và dịch vụ địa phương.",
+      },
+      {
+        q: "Làm sao để khách chịu quét mã?",
+        a: "Cần có lợi ích rõ ràng như ưu đãi, tài liệu, tư vấn nhanh hoặc quyền lợi chỉ có khi kết nối.",
+      },
+      {
+        q: "Sau khi quét mã Zalo nên làm gì?",
+        a: "Nên có kịch bản chào, phân nhóm nhu cầu và follow-up nhanh để chuyển lead thành khách.",
+      },
+      {
+        q: "Bài này nên dẫn về dịch vụ nào?",
+        a: "Nên dẫn về dịch vụ quét mã QR để khách có thể triển khai chiến dịch có KPI và báo cáo rõ ràng.",
+      },
+    ],
+    related: [
+      {
+        label: "Chiến dịch quét mã QR theo KPI",
+        href: "/vi/quet-ma-qr",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Tuyển cộng tác viên quét mã QR",
+        href: "/vi/quet-ma-qr/tuyen-cong-tac-vien",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Quy trình triển khai",
+        href: "/vi/quy-trinh",
+        note: "Quy trình",
+      },
+    ],
+  },
+  {
+    slug: "top-cach-tang-follow-facebook-doanh-nghiep",
+    path: "/vi/blog/top-cach-tang-follow-facebook-doanh-nghiep",
+    cluster: "social",
+    title: "Top 7 cách tăng follow Facebook cho doanh nghiệp dịch vụ",
+    metaTitle: "Top 7 cách tăng follow Facebook cho doanh nghiệp dịch vụ | Công Thiên Agency",
+    metaDescription:
+      "Top 7 cách tăng follow Facebook cho doanh nghiệp dịch vụ theo hướng bền vững: content, profile, social proof, minigame, chia sẻ và CTA.",
+    excerpt:
+      "Follow Facebook chỉ có giá trị khi nó đi cùng nội dung thật, tín hiệu thật và khả năng tạo tin tưởng cho khách hàng.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "tăng follow Facebook cho doanh nghiệp dịch vụ",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Top tăng follow Facebook",
+        href: "/vi/blog/top-cach-tang-follow-facebook-doanh-nghiep",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Nhiều doanh nghiệp muốn tăng follow Facebook thật nhanh, nhưng con số chỉ có ý nghĩa khi nó tạo ra niềm tin và lượt nhắn tin thực tế. Một bài Top đúng cách sẽ vừa kéo traffic vừa định hướng tăng trưởng bền vững.",
+      },
+      { type: "h2", text: "Top 7 cách nên áp dụng" },
+      {
+        type: "ul",
+        items: [
+          "Hoàn thiện profile và ảnh đại diện, ảnh bìa thật chuyên nghiệp.",
+          "Đăng nội dung đều, có chủ đề rõ và phù hợp khách mục tiêu.",
+          "Đưa social proof vào bài viết: review, case study, hình ảnh khách thật.",
+          "Kêu gọi follow bằng lý do cụ thể, không xin follow chung chung.",
+          "Kết hợp video ngắn, album ảnh và bài chia sẻ kinh nghiệm.",
+          "Đưa traffic từ website, Google Maps và Naver về Fanpage.",
+          "Theo dõi tương tác thật thay vì chỉ nhìn số follow.",
+        ],
+      },
+      { type: "h2", text: "Điều gì không nên làm?" },
+      {
+        type: "p",
+        text: "Không nên đuổi theo follow ảo hay buff số lượng mà bỏ qua tương tác thật. Với doanh nghiệp dịch vụ, điều khách nhìn là độ tin cậy, không phải con số đơn thuần.",
+      },
+      { type: "h2", text: "Khi nào cần tăng follow?" },
+      {
+        type: "p",
+        text: "Khi Fanpage mới, thương hiệu chưa có social proof hoặc bạn cần tăng tín hiệu để hỗ trợ booking, tăng follow thật kết hợp nội dung đúng là hướng đi hợp lý hơn mua số ảo.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Tăng follow Facebook có giúp bán hàng không?",
+        a: "Có, nếu follow đến từ đúng tệp và đi cùng nội dung có giá trị, social proof và CTA rõ ràng.",
+      },
+      {
+        q: "Có nên buff follow để nhanh hơn không?",
+        a: "Không nên nếu mục tiêu là chuyển đổi bền vững. Follow ảo thường không tạo tương tác và có thể làm kênh kém tin cậy.",
+      },
+      {
+        q: "Doanh nghiệp dịch vụ nên đăng gì để tăng follow?",
+        a: "Nên đăng case study, review thật, hình ảnh dịch vụ, tips hữu ích và nội dung giải đáp câu hỏi của khách.",
+      },
+      {
+        q: "Bài này nên link về đâu?",
+        a: "Nên dẫn về dịch vụ tăng trưởng kênh hoặc xác minh Fanpage để khách có thể đi tiếp nếu cần triển khai thực tế.",
+      },
+    ],
+    related: [
+      {
+        label: "Tăng trưởng kênh social",
+        href: "/vi/social-marketing/tang-truong-kenh",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Xác minh Fanpage",
+        href: "/vi/social-marketing/xac-minh-fanpage",
+        note: "Dịch vụ",
+      },
+      {
+        label: "Buff follow có nên dùng không?",
+        href: "/vi/blog/buff-follow-co-nen-dung-khong",
         note: "Bài liên quan",
       },
     ],
