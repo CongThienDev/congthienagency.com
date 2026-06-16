@@ -91,7 +91,11 @@ export function getAllIndexablePages(): IndexablePage[] {
     title: post.metaTitle,
     changeFrequency: "monthly",
     priority: 0.7,
-    imageCandidates: [OG_IMAGE],
+    imageCandidates: [
+      ...(post.heroImage ? [post.heroImage.src] : []),
+      ...post.body.flatMap((block) => (block.type === "img" ? [block.src] : [])),
+      OG_IMAGE,
+    ],
   }));
 
   return [

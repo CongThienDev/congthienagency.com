@@ -3631,6 +3631,585 @@ export const SERVICES: Service[] = [
     ],
     schema: { serviceType: "Tuyển cộng tác viên quét mã QR" },
   },
+
+  /* ───────────────────────── QR SPOKE · ACTIVATION SỰ KIỆN ───────────────────────── */
+  {
+    path: "/vi/quet-ma-qr/cho-su-kien-activation",
+    cluster: "qr",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ quét mã QR", href: "/vi/quet-ma-qr" },
+      { label: "Quét mã QR cho sự kiện & activation", href: "/vi/quet-ma-qr/cho-su-kien-activation" },
+    ],
+    primaryKeyword: "quét mã QR cho sự kiện activation",
+    metaTitle: "Quét mã QR cho sự kiện & activation – đủ KPI lượt quét | Công Thiên Agency",
+    metaDescription:
+      "Triển khai quét mã QR cho sự kiện, activation, sampling và hội chợ: gom đủ lượt quét, tải app, nhận voucher bằng đội cộng tác viên thật tại Hội An – Đà Nẵng và toàn quốc.",
+    eyebrow: "Dịch vụ · Quét mã QR",
+    h1: "Quét mã QR cho sự kiện & activation: đủ lượt quét, đúng tiến độ",
+    heroSub:
+      "Booth sampling, hội chợ, lễ hội hay activation của nhãn hàng đều cần đủ lượt quét mã QR trong khung giờ ngắn. Tôi điều phối đội cộng tác viên thật để chiến dịch của bạn đạt KPI ngay tại điểm tổ chức.",
+    heroCta: "Gửi brief sự kiện qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Trong một buổi activation, KPI thường gắn với số lượt quét mã QR, tải app hoặc nhận voucher tại booth. Nhưng lượng khách tự nhiên ghé booth thường không đủ, nhất là ở các sự kiện đông đối thủ hoặc địa điểm xa trung tâm. Tôi nhận phần thực thi: đưa cộng tác viên thật đến đúng địa điểm, đúng khung giờ để gom đủ lượt quét hợp lệ, giúp nhãn hàng và agency yên tâm về con số báo cáo cuối ngày.",
+    sections: [
+      {
+        heading: "Tôi hỗ trợ những loại sự kiện nào?",
+        bullets: [
+          "Booth sampling FMCG, bia, đồ uống tại siêu thị, hội chợ, lễ hội.",
+          "Activation ra mắt sản phẩm, roadshow, sự kiện thương hiệu.",
+          "Gian hàng ví điện tử, ngân hàng số cần lượt tải app & định danh tại chỗ.",
+          "Mini game quét QR đổi quà, tích điểm trên mini app Zalo.",
+        ],
+      },
+      {
+        heading: "Vì sao cần đội thực thi tại sự kiện?",
+        body:
+          "Sự kiện chỉ diễn ra trong vài giờ hoặc vài ngày — không có cơ hội làm lại. Nếu lượt quét không đủ, KPI của agency với nhãn hàng bị ảnh hưởng trực tiếp. Đội cộng tác viên thật giúp giữ nhịp lượt quét đều, tránh tình trạng booth vắng ở khung giờ thấp điểm và đảm bảo con số cuối ngày đạt mục tiêu.",
+      },
+      {
+        heading: "Người thật, lượt hợp lệ, báo cáo rõ ràng",
+        body:
+          "Mỗi lượt quét là người thật với tài khoản chính chủ, làm đúng kịch bản của nhãn hàng và đúng điều khoản nền tảng. Tôi tổng hợp số lượt theo khung giờ để bạn có dữ liệu báo cáo minh bạch — không bơm số ảo vì số ảo dễ bị nền tảng loại và làm hỏng uy tín chiến dịch.",
+      },
+    ],
+    deliverables: {
+      title: "Khi nhận một sự kiện, tôi bàn giao",
+      items: [
+        "Kế hoạch nhân sự theo khung giờ và KPI từng ca",
+        "Đội cộng tác viên thật có mặt đúng địa điểm, đúng giờ",
+        "Theo dõi lượt quét / tải app theo thời gian thực trong ngày",
+        "Báo cáo tổng hợp số liệu hợp lệ sau sự kiện",
+        "Một đầu mối xử lý phát sinh xuyên suốt sự kiện",
+      ],
+    },
+    whoFor: [
+      "Agency activation / event / trade marketing",
+      "Nhãn hàng FMCG, bia, đồ uống chạy booth",
+      "Ví điện tử, ngân hàng số cần lượt tải app tại chỗ",
+      "Đơn vị tổ chức hội chợ, lễ hội, roadshow",
+    ],
+    process: [
+      { step: "Nhận brief", detail: "Bạn gửi địa điểm, thời gian, KPI và kịch bản tại booth." },
+      { step: "Lên ca", detail: "Tôi phân bổ cộng tác viên theo khung giờ và mục tiêu mỗi ca." },
+      { step: "Chạy sự kiện", detail: "Đội có mặt tại chỗ, gom lượt quét đều theo tiến độ." },
+      { step: "Báo cáo", detail: "Tổng hợp số liệu hợp lệ và bàn giao cuối sự kiện." },
+    ],
+    priceFrom: "Báo giá theo sự kiện & KPI",
+    priceNote:
+      "Chi phí tính theo địa điểm, số lượt KPI, số ca và thời lượng sự kiện. Gửi brief để nhận báo giá rõ ràng trước khi chốt.",
+    faqs: [
+      {
+        q: "Sự kiện ở tỉnh khác có chạy được không?",
+        a: "Có. Tôi mạnh nhất ở Hội An – Đà Nẵng và điều phối được cộng tác viên ở nhiều tỉnh thành tùy quy mô và thời gian báo trước.",
+      },
+      {
+        q: "Cần báo trước bao lâu?",
+        a: "Càng sớm càng tốt để bố trí nhân sự. Với sự kiện lớn nên báo trước vài ngày đến một tuần để đảm bảo đủ người đúng khung giờ.",
+      },
+      {
+        q: "Làm sao biết lượt quét là thật?",
+        a: "Mỗi lượt là người thật với tài khoản chính chủ, làm đúng kịch bản. Tôi đối soát theo lượt hợp lệ thực tế, không tính số ảo.",
+      },
+      {
+        q: "Có kèm nhân sự đứng booth không?",
+        a: "Tùy brief. Tôi tập trung phần gom lượt quét/tải app; nếu cần PG/PB đứng booth có thể trao đổi để phối hợp thêm.",
+      },
+    ],
+    related: [
+      { label: "Dịch vụ quét mã QR theo KPI", href: "/vi/quet-ma-qr", note: "Trang dịch vụ chính" },
+      { label: "Quét mã QR & tải app theo KPI", href: "/vi/quet-ma-qr/tai-app-theo-kpi", note: "Dịch vụ liên quan" },
+      { label: "Liên hệ", href: "/vi/lien-he", note: "Gửi brief sự kiện" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/qr-activation.webp", alt: "Quét mã QR tại booth activation sự kiện" },
+      { slot: "inline", suggestion: "/images/services/qr-event-booth.webp", alt: "Cộng tác viên gom lượt quét mã QR tại sự kiện" },
+    ],
+    schema: { serviceType: "Triển khai quét mã QR cho sự kiện và activation" },
+  },
+
+  /* ───────────────────────── QR SPOKE · TẢI APP THEO KPI ───────────────────────── */
+  {
+    path: "/vi/quet-ma-qr/tai-app-theo-kpi",
+    cluster: "qr",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ quét mã QR", href: "/vi/quet-ma-qr" },
+      { label: "Quét mã QR & tải app theo KPI", href: "/vi/quet-ma-qr/tai-app-theo-kpi" },
+    ],
+    primaryKeyword: "dịch vụ tải app theo KPI cho nhãn hàng",
+    metaTitle: "Dịch vụ tải app & mở tài khoản theo KPI cho fintech, nhãn hàng | Công Thiên Agency",
+    metaDescription:
+      "Đẩy lượt tải app, định danh tài khoản và referral theo KPI cho ví điện tử, ngân hàng số và nền tảng affiliate. Người dùng thật, tài khoản chính chủ, nghiệm thu minh bạch.",
+    eyebrow: "Dịch vụ · Quét mã QR",
+    h1: "Dịch vụ tải app & mở tài khoản theo KPI cho ví, ngân hàng số, affiliate",
+    heroSub:
+      "Bạn cần đẩy nhanh số lượt cài đặt app, định danh tài khoản hay referral hợp lệ? Tôi nhận triển khai theo KPI bằng người dùng thật, tài khoản chính chủ, đúng điều khoản nền tảng.",
+    heroCta: "Gửi yêu cầu KPI qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Ví điện tử (Momo, ZaloPay), ngân hàng số (Cake, VPBank NEO, MB Bank…) và các nền tảng affiliate (AccessTrade và tương tự) thường đặt mục tiêu theo lượt tải app, định danh eKYC hoặc referral thành công. Khi KPI lớn và thời gian gấp, việc gom đủ người dùng thật làm đúng quy trình là phần khó nhất. Đó là phần tôi nhận: điều phối mạng lưới cộng tác viên để đạt số lượt cài đặt và mở tài khoản hợp lệ, đúng chính sách của từng app.",
+    sections: [
+      {
+        heading: "Tôi nhận loại KPI nào?",
+        bullets: [
+          "Lượt tải & mở app ví điện tử, ngân hàng số theo cài đặt thật.",
+          "Định danh tài khoản (eKYC) bằng giấy tờ chính chủ của cộng tác viên.",
+          "Referral / giới thiệu người dùng mới qua link – mã QR hợp lệ.",
+          "Chiến dịch affiliate qua nền tảng trung gian theo lượt chuyển đổi.",
+        ],
+      },
+      {
+        heading: "Vì sao nên thuê ngoài phần thực thi KPI?",
+        body:
+          "KPI cài đặt lớn cần mạng lưới người dùng thật trải rộng, mỗi người một thiết bị và tài khoản chính chủ. Team in-house khó gom đủ trong thời gian ngắn. Khi giao cho tôi, bạn đưa app, link/mã và KPI; tôi lo phần tuyển, điều phối, theo dõi và tổng hợp số liệu nghiệm thu.",
+      },
+      {
+        heading: "Tài khoản chính chủ, đúng chính sách app",
+        body:
+          "Mỗi lượt cài đặt và định danh đều dùng giấy tờ và tài khoản chính chủ của cộng tác viên, làm đúng quy trình của app. Tôi không tạo tài khoản giả hay mượn giấy tờ vì các nền tảng fintech có hệ thống chống gian lận chặt chẽ — lượt gian lận sẽ bị huỷ và ảnh hưởng uy tín cả hai bên. Nghiệm thu tính theo lượt hợp lệ thực tế.",
+      },
+    ],
+    deliverables: {
+      title: "Khi nhận một chiến dịch KPI, tôi bàn giao",
+      items: [
+        "Kế hoạch theo KPI và mốc thời gian rõ ràng",
+        "Mạng lưới người dùng thật, tài khoản chính chủ theo khu vực",
+        "Theo dõi lượt cài đặt / định danh theo ngày",
+        "Báo cáo số liệu nghiệm thu minh bạch",
+        "Một đầu mối xử lý phát sinh xuyên suốt chiến dịch",
+      ],
+    },
+    whoFor: [
+      "Ví điện tử, ngân hàng số, fintech",
+      "Agency phụ trách growth / user acquisition",
+      "Nền tảng affiliate cần đẩy KPI cài đặt",
+      "Nhãn hàng có app riêng cần tăng lượt tải",
+    ],
+    process: [
+      { step: "Nhận brief", detail: "Bạn gửi app, link/mã, KPI và yêu cầu định danh nếu có." },
+      { step: "Lên kế hoạch", detail: "Tôi chốt số lượng, mốc thời gian và cách nghiệm thu." },
+      { step: "Triển khai", detail: "Điều phối người dùng thật cài đặt và định danh đúng quy trình." },
+      { step: "Báo cáo", detail: "Tổng hợp lượt hợp lệ và bàn giao số liệu cho bạn." },
+    ],
+    priceFrom: "Báo giá theo KPI từng chiến dịch",
+    priceNote:
+      "Chi phí tính theo loại KPI (cài đặt / định danh / referral), số lượt, khu vực và thời hạn. Trao đổi brief để nhận đơn giá mỗi lượt trước khi chạy.",
+    faqs: [
+      {
+        q: "App fintech kiểm soát gian lận chặt, anh xử lý sao?",
+        a: "Tôi chỉ dùng người dùng thật với tài khoản và giấy tờ chính chủ, làm đúng quy trình app. Cách này hợp lệ và bền hơn nhiều so với tài khoản ảo vốn sẽ bị hệ thống loại.",
+      },
+      {
+        q: "Có làm được định danh eKYC không?",
+        a: "Có, với điều kiện cộng tác viên dùng giấy tờ chính chủ của họ. Tôi không nhận yêu cầu mượn hay làm giả giấy tờ.",
+      },
+      {
+        q: "Nghiệm thu và thanh toán thế nào?",
+        a: "Chốt đơn giá mỗi lượt hợp lệ và mốc nghiệm thu trước khi chạy. Cuối chiến dịch đối soát theo lượt thật.",
+      },
+      {
+        q: "Chạy được KPI lớn toàn quốc không?",
+        a: "Có, tùy quy mô và thời gian báo trước. Tôi mạnh ở Hội An – Đà Nẵng và mở rộng các tỉnh khác theo nhu cầu KPI.",
+      },
+    ],
+    related: [
+      { label: "Dịch vụ quét mã QR theo KPI", href: "/vi/quet-ma-qr", note: "Trang dịch vụ chính" },
+      { label: "Quét mã QR cho sự kiện", href: "/vi/quet-ma-qr/cho-su-kien-activation", note: "Dịch vụ liên quan" },
+      { label: "Tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien", note: "Tuyển dụng" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/qr-tai-app-kpi.webp", alt: "Dịch vụ tải app theo KPI cho ví điện tử và ngân hàng số" },
+      { slot: "inline", suggestion: "/images/services/qr-ekyc-dinh-danh.webp", alt: "Định danh tài khoản app bằng giấy tờ chính chủ" },
+    ],
+    schema: { serviceType: "Dịch vụ tải app và mở tài khoản theo KPI" },
+  },
+
+  /* ───────────────────────── QR SPOKE · QUÉT MÃ ZALO THU LEAD (B2B) ───────────────────────── */
+  {
+    path: "/vi/quet-ma-zalo-thu-lead",
+    cluster: "qr",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ quét mã QR", href: "/vi/quet-ma-qr" },
+      { label: "Quét mã Zalo thu lead tại điểm bán", href: "/vi/quet-ma-zalo-thu-lead" },
+    ],
+    primaryKeyword: "quét mã Zalo thu lead tại điểm bán",
+    metaTitle: "Quét mã Zalo thu lead tại cửa hàng, showroom | Công Thiên Agency",
+    metaDescription:
+      "Thiết lập luồng quét mã QR Zalo OA tại quầy, showroom, điểm dịch vụ để thu lead và chăm sóc lại khách. Standee QR, kịch bản nhân sự, ưu đãi và follow-up bài bản.",
+    eyebrow: "Dịch vụ · Quét mã QR",
+    h1: "Quét mã Zalo thu lead tại cửa hàng, showroom & điểm dịch vụ",
+    heroSub:
+      "Khách ghé quầy rồi đi mà bạn không có cách liên hệ lại? Tôi giúp bạn thiết lập luồng quét mã QR Zalo OA tại điểm bán để biến lượt ghé thành tệp lead có thể chăm sóc về sau.",
+    heroCta: "Tư vấn quét mã Zalo qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Với cửa hàng, showroom, spa hay nhà hàng, phần lớn khách ghé một lần rồi rời đi mà không để lại thông tin. Một mã QR Zalo OA đặt đúng chỗ, kèm lý do đủ hấp dẫn để khách quét, sẽ giúp bạn thu được tệp lead chủ động — không phụ thuộc hoàn toàn vào quảng cáo. Tôi giúp doanh nghiệp thiết kế trọn luồng: từ vị trí đặt QR, ưu đãi, kịch bản nhân sự đến cách follow-up sau khi khách quét.",
+    sections: [
+      {
+        heading: "Vì sao nên thu lead bằng quét mã Zalo?",
+        bullets: [
+          "Khách đã đến tận nơi là lead nóng — bỏ lỡ là mất luôn cơ hội bán lại.",
+          "Zalo OA cho phép nhắn lại, gửi ưu đãi và chăm sóc khách miễn phí trong giới hạn.",
+          "Tệp lead là tài sản của bạn, không phụ thuộc thuật toán quảng cáo.",
+          "Chi phí thấp hơn nhiều so với chạy ads để có cùng số lead.",
+        ],
+      },
+      {
+        heading: "Tôi giúp bạn thiết lập những gì?",
+        bullets: [
+          "Thiết kế standee / wobbler / sticker QR đặt đúng điểm chạm.",
+          "Xây lý do để khách quét: ưu đãi, tích điểm, quà, nội dung hữu ích.",
+          "Kịch bản để nhân sự mời khách quét đúng thời điểm, không gượng.",
+          "Luồng follow-up sau khi quét: tin nhắn chào, phân loại, chăm sóc lại.",
+        ],
+      },
+      {
+        heading: "Làm đúng cách để khách sẵn sàng quét",
+        body:
+          "Một mã QR dán lên tường mà không có lý do thì rất ít người quét. Tôi tập trung vào trải nghiệm: đặt QR ở nơi khách có thời gian (bàn chờ, quầy thanh toán), gắn ưu đãi rõ ràng và huấn luyện nhân sự mời đúng lúc. Khi luồng đủ mượt, tỷ lệ khách quét và để lại thông tin tăng đáng kể.",
+      },
+    ],
+    deliverables: {
+      title: "Khi triển khai, bạn nhận được",
+      items: [
+        "Thiết kế ấn phẩm QR Zalo OA phù hợp không gian điểm bán",
+        "Kịch bản mời khách quét cho nhân sự",
+        "Cấu trúc ưu đãi / lý do quét theo ngành của bạn",
+        "Luồng tin nhắn chào và phân loại lead sau khi quét",
+        "Gợi ý đo lường: số lượt quét, số lead, tỷ lệ phản hồi",
+      ],
+    },
+    whoFor: [
+      "Cửa hàng bán lẻ, showroom",
+      "Spa, salon, phòng khám",
+      "Nhà hàng, quán cà phê",
+      "Doanh nghiệp dịch vụ có khách ghé trực tiếp",
+    ],
+    process: [
+      { step: "Khảo sát", detail: "Tìm hiểu điểm bán, luồng khách và mục tiêu thu lead." },
+      { step: "Thiết kế luồng", detail: "Lên vị trí QR, ưu đãi, kịch bản và tin nhắn follow-up." },
+      { step: "Triển khai", detail: "Bàn giao ấn phẩm QR và hướng dẫn nhân sự thực hiện." },
+      { step: "Tối ưu", detail: "Theo dõi số lượt quét và lead để điều chỉnh cho tốt hơn." },
+    ],
+    priceFrom: "Báo giá theo quy mô điểm bán",
+    priceNote:
+      "Chi phí tùy số điểm bán, số ấn phẩm thiết kế và mức độ thiết lập luồng chăm sóc. Nhắn Zalo để nhận báo giá theo trường hợp cụ thể.",
+    faqs: [
+      {
+        q: "Tôi chưa có Zalo OA thì sao?",
+        a: "Tôi hướng dẫn hoặc hỗ trợ tạo Zalo OA cho doanh nghiệp trước, sau đó mới thiết lập luồng quét mã thu lead.",
+      },
+      {
+        q: "Làm sao để khách chịu quét mã?",
+        a: "Mấu chốt là lý do quét: ưu đãi, tích điểm hoặc nội dung hữu ích, cộng với việc nhân sự mời đúng thời điểm. Tôi thiết kế cả hai phần này.",
+      },
+      {
+        q: "Có đo được hiệu quả không?",
+        a: "Có. Bạn theo dõi số lượt quét, số lead mới và tỷ lệ phản hồi qua Zalo OA để biết luồng đang chạy tốt đến đâu.",
+      },
+      {
+        q: "Khác gì với chạy quảng cáo?",
+        a: "Quảng cáo tiếp cận khách mới nhưng tốn phí liên tục. Quét mã Zalo tận dụng khách đã đến tận nơi và giữ họ thành tệp lead lâu dài của bạn.",
+      },
+    ],
+    related: [
+      { label: "Dịch vụ quét mã QR theo KPI", href: "/vi/quet-ma-qr", note: "Trang dịch vụ chính" },
+      { label: "Top cách quét mã Zalo thu lead", href: "/vi/blog/top-cach-quet-ma-zalo-thu-lead", note: "Bài viết" },
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Dịch vụ liên quan" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/quet-ma-zalo-quay.webp", alt: "Standee quét mã Zalo OA thu lead tại quầy cửa hàng" },
+      { slot: "inline", suggestion: "/images/services/quet-ma-zalo-khach.webp", alt: "Khách quét mã Zalo nhận ưu đãi tại điểm bán" },
+    ],
+    schema: { serviceType: "Thiết lập quét mã Zalo thu lead tại điểm bán" },
+  },
+
+  /* ───────────────────────── QR SPOKE · ĐÀ NẴNG ───────────────────────── */
+  {
+    path: "/vi/quet-ma-qr/da-nang",
+    cluster: "qr",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ quét mã QR", href: "/vi/quet-ma-qr" },
+      { label: "Quét mã QR tại Đà Nẵng", href: "/vi/quet-ma-qr/da-nang" },
+    ],
+    primaryKeyword: "dịch vụ quét mã QR tại Đà Nẵng",
+    metaTitle: "Dịch vụ quét mã QR & cộng tác viên tại Đà Nẵng | Công Thiên Agency",
+    metaDescription:
+      "Triển khai chiến dịch quét mã QR, tải app theo KPI và tuyển cộng tác viên tại Đà Nẵng. Đội người thật tại địa phương, chạy nhanh cho sự kiện, activation và fintech.",
+    eyebrow: "Dịch vụ · Quét mã QR",
+    h1: "Dịch vụ quét mã QR & cộng tác viên tại Đà Nẵng",
+    heroSub:
+      "Bạn cần chạy chiến dịch quét mã QR, tải app hay tổ chức activation tại Đà Nẵng? Tôi có sẵn mạng lưới cộng tác viên thật tại địa phương để triển khai nhanh, đạt KPI.",
+    heroCta: "Gửi yêu cầu Đà Nẵng qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Đà Nẵng là trung tâm sự kiện, du lịch và hoạt động thương mại của khu vực miền Trung, nơi các nhãn hàng và fintech thường xuyên chạy activation, booth sampling và chương trình tải app. Với mạng lưới cộng tác viên thật ngay tại Đà Nẵng, tôi giúp agency và nhãn hàng triển khai chiến dịch quét mã QR đạt KPI mà không phải điều người từ xa đến.",
+    sections: [
+      {
+        heading: "Tôi hỗ trợ gì tại Đà Nẵng?",
+        bullets: [
+          "Chiến dịch quét mã QR & activation tại sự kiện, hội chợ, lễ hội Đà Nẵng.",
+          "Lượt tải app, định danh tài khoản fintech theo KPI tại địa phương.",
+          "Tuyển và điều phối cộng tác viên người Đà Nẵng cho chiến dịch dài hạn.",
+          "Thiết lập quét mã Zalo thu lead cho cửa hàng, showroom tại Đà Nẵng.",
+        ],
+      },
+      {
+        heading: "Vì sao chọn đội tại địa phương?",
+        body:
+          "Cộng tác viên ở ngay Đà Nẵng giúp bạn tiết kiệm chi phí di chuyển, phản ứng nhanh khi sự kiện thay đổi và am hiểu địa điểm tổ chức. Điều này đặc biệt quan trọng với các activation diễn ra trong thời gian ngắn, cần đủ người đúng giờ tại đúng địa điểm.",
+      },
+      {
+        heading: "Người thật, đúng chính sách nền tảng",
+        body:
+          "Như mọi chiến dịch khác, tôi chạy bằng cộng tác viên và người dùng thật với tài khoản chính chủ, nghiệm thu theo lượt hợp lệ. Không bơm số ảo — vừa tránh bị nền tảng huỷ, vừa giữ uy tín cho cả nhãn hàng và agency.",
+      },
+    ],
+    whoFor: [
+      "Agency cần chạy chiến dịch tại Đà Nẵng",
+      "Nhãn hàng tổ chức activation miền Trung",
+      "Fintech cần lượt tải app tại Đà Nẵng",
+      "Cửa hàng, doanh nghiệp Đà Nẵng muốn thu lead",
+    ],
+    process: [
+      { step: "Nhận brief", detail: "Bạn gửi mục tiêu, KPI, địa điểm và thời gian tại Đà Nẵng." },
+      { step: "Lên kế hoạch", detail: "Tôi bố trí cộng tác viên địa phương theo khung giờ." },
+      { step: "Triển khai", detail: "Đội chạy lượt quét / tải app thật tại Đà Nẵng." },
+      { step: "Báo cáo", detail: "Tổng hợp số liệu hợp lệ và bàn giao cho bạn." },
+    ],
+    priceFrom: "Báo giá theo KPI & quy mô",
+    priceNote:
+      "Chi phí tính theo loại chiến dịch, số lượt KPI và thời hạn tại Đà Nẵng. Gửi brief để nhận báo giá rõ ràng.",
+    faqs: [
+      {
+        q: "Đội cộng tác viên ở ngay Đà Nẵng chứ?",
+        a: "Đúng vậy. Tôi ưu tiên cộng tác viên tại Đà Nẵng và khu vực lân cận để chạy nhanh, tiết kiệm chi phí di chuyển.",
+      },
+      {
+        q: "Có chạy được cả Hội An không?",
+        a: "Có. Hội An – Đà Nẵng là khu vực tôi mạnh nhất, có thể phối hợp chạy chiến dịch ở cả hai nơi.",
+      },
+      {
+        q: "Sự kiện gấp trong vài ngày có kịp không?",
+        a: "Thường là kịp với chiến dịch quy mô vừa. Báo càng sớm tôi càng dễ bố trí đủ người đúng khung giờ.",
+      },
+    ],
+    related: [
+      { label: "Dịch vụ quét mã QR theo KPI", href: "/vi/quet-ma-qr", note: "Trang dịch vụ chính" },
+      { label: "Quét mã QR cho sự kiện", href: "/vi/quet-ma-qr/cho-su-kien-activation", note: "Dịch vụ liên quan" },
+      { label: "Tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien", note: "Tuyển dụng" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/qr-da-nang.webp", alt: "Dịch vụ quét mã QR và cộng tác viên tại Đà Nẵng" },
+    ],
+    schema: { serviceType: "Dịch vụ quét mã QR tại Đà Nẵng" },
+  },
+
+  /* ───────────────────────── NAVER SPOKE · BẢNG GIÁ CHI TIẾT ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/bang-gia-chi-tiet",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Bảng giá chi tiết", href: "/vi/naver-marketing/bang-gia-chi-tiet" },
+    ],
+    primaryKeyword: "bảng giá dịch vụ Naver Marketing",
+    metaTitle: "Bảng giá dịch vụ Naver Marketing chi tiết 2026 | Công Thiên Agency",
+    metaDescription:
+      "Bảng giá Naver Marketing gồm những gì: viết bài Naver Blog, booking blogger/KOC Hàn, tối ưu Naver Place và quản lý tài khoản. Các yếu tố ảnh hưởng chi phí và cách nhận báo giá.",
+    eyebrow: "Dịch vụ · Naver",
+    h1: "Bảng giá dịch vụ Naver Marketing: gồm những gì và phụ thuộc yếu tố nào?",
+    heroSub:
+      "Bạn muốn biết làm Naver Marketing tốn bao nhiêu trước khi quyết định? Trang này giải thích rõ các hạng mục, yếu tố ảnh hưởng chi phí và cách nhận báo giá theo đúng nhu cầu của bạn.",
+    heroCta: "Nhận báo giá Naver qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Chi phí Naver Marketing không cố định vì mỗi doanh nghiệp có ngành nghề, mục tiêu và số lượng nội dung khác nhau. Thay vì đưa một con số chung dễ gây hiểu lầm, tôi báo giá theo từng hạng mục thực tế bạn cần. Trang này giúp bạn hiểu cấu trúc giá để dễ so sánh và ra quyết định.",
+    sections: [
+      {
+        heading: "Bảng giá thường gồm các hạng mục nào?",
+        bullets: [
+          "Viết bài review Naver Blog tiếng Hàn (tính theo số bài).",
+          "Booking blogger / KOC Hàn (tính theo tầm ảnh hưởng và số bài).",
+          "Tối ưu Naver Place: hồ sơ, hình ảnh, thông tin doanh nghiệp.",
+          "Quản lý tài khoản Naver Blog doanh nghiệp theo tháng.",
+        ],
+      },
+      {
+        heading: "Yếu tố ảnh hưởng đến chi phí",
+        bullets: [
+          "Số lượng bài viết và tần suất đăng mỗi tháng.",
+          "Có booking blogger/KOC Hàn hay tự đăng bằng tài khoản doanh nghiệp.",
+          "Ngành nghề và độ khó của nội dung (spa, nhà hàng, tour, khách sạn).",
+          "Yêu cầu hình ảnh, dịch thuật và mức độ tối ưu SEO Naver.",
+        ],
+      },
+      {
+        heading: "Vì sao nên báo giá theo case thực tế?",
+        body:
+          "Một spa cần 3 bài/tháng sẽ khác hẳn một chuỗi khách sạn cần booking nhiều KOC. Báo giá theo nhu cầu thật giúp bạn không trả cho phần không cần và biết rõ mình nhận được gì. Tôi luôn nêu rõ số bài, hạng mục và cách đo hiệu quả trước khi bắt đầu.",
+      },
+    ],
+    deliverables: {
+      title: "Khi nhận báo giá, bạn sẽ thấy rõ",
+      items: [
+        "Danh sách hạng mục và số lượng cụ thể",
+        "Đơn giá từng phần, không gộp mập mờ",
+        "Phạm vi công việc và những gì không bao gồm",
+        "Cách đo hiệu quả: index, hiển thị, lead qua Zalo/WhatsApp",
+        "Mốc thời gian triển khai dự kiến",
+      ],
+    },
+    whoFor: [
+      "Spa, nhà hàng, khách sạn muốn tiếp cận khách Hàn",
+      "Doanh nghiệp tour, trải nghiệm tại Hội An – Đà Nẵng",
+      "Chủ doanh nghiệp đang so sánh chi phí trước khi đầu tư",
+      "Đơn vị cần báo giá rõ ràng để lập ngân sách",
+    ],
+    process: [
+      { step: "Gửi nhu cầu", detail: "Bạn cho biết ngành, mục tiêu và số nội dung mong muốn." },
+      { step: "Tư vấn gói", detail: "Tôi đề xuất hạng mục phù hợp và giải thích lý do." },
+      { step: "Báo giá", detail: "Gửi bảng giá chi tiết theo từng phần, minh bạch." },
+      { step: "Chốt & triển khai", detail: "Thống nhất phạm vi rồi bắt đầu theo kế hoạch." },
+    ],
+    priceFrom: "Báo giá theo hạng mục thực tế",
+    priceNote:
+      "Chi phí phụ thuộc số bài, ngành nghề, hình ảnh, tài khoản đăng bài và có booking blogger Hàn hay không. Nhắn Zalo để nhận bảng giá theo đúng nhu cầu của bạn.",
+    faqs: [
+      {
+        q: "Làm Naver Marketing rẻ nhất khoảng bao nhiêu?",
+        a: "Gói nhỏ thường bắt đầu từ một vài bài Naver Blog mỗi tháng. Con số cụ thể tùy ngành và yêu cầu nội dung; tôi báo giá rõ trước khi bắt đầu.",
+      },
+      {
+        q: "Booking blogger Hàn có đắt không?",
+        a: "Chi phí tùy tầm ảnh hưởng của blogger/KOC và số bài. Tôi tư vấn chọn mức phù hợp ngân sách thay vì chạy theo người nổi tiếng không cần thiết.",
+      },
+      {
+        q: "Có gói theo tháng không?",
+        a: "Có. Nhiều doanh nghiệp chọn gói quản lý theo tháng để đăng bài đều và theo dõi hiệu quả liên tục.",
+      },
+      {
+        q: "Báo giá có kèm cam kết thứ hạng không?",
+        a: "Tôi không cam kết thứ hạng cụ thể vì Naver phụ thuộc nhiều yếu tố. Thay vào đó tôi cam kết khối lượng, chất lượng nội dung và minh bạch cách đo hiệu quả.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing tổng quan", href: "/vi/naver-marketing", note: "Trang dịch vụ chính" },
+      { label: "Naver hay Google cho khách Hàn?", href: "/vi/naver-marketing/naver-vs-google", note: "So sánh" },
+      { label: "Chi phí Naver Marketing", href: "/vi/blog/chi-phi-naver-marketing", note: "Bài viết" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/naver-bang-gia.webp", alt: "Bảng giá dịch vụ Naver Marketing chi tiết" },
+    ],
+    schema: { serviceType: "Tư vấn và báo giá dịch vụ Naver Marketing" },
+  },
+
+  /* ───────────────────────── NAVER SPOKE · NAVER VS GOOGLE ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/naver-vs-google",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver hay Google cho khách Hàn", href: "/vi/naver-marketing/naver-vs-google" },
+    ],
+    primaryKeyword: "Naver hay Google cho khách Hàn Quốc",
+    metaTitle: "Naver hay Google: khách Hàn tìm dịch vụ ở đâu? | Công Thiên Agency",
+    metaDescription:
+      "So sánh Naver và Google để tiếp cận khách Hàn Quốc: thói quen tìm kiếm, độ tin tưởng, kênh nào hiệu quả cho spa, nhà hàng, khách sạn và tour tại Hội An – Đà Nẵng.",
+    eyebrow: "Dịch vụ · Naver",
+    h1: "Naver hay Google: khách Hàn tìm spa, nhà hàng, tour ở đâu?",
+    heroSub:
+      "Nếu khách mục tiêu của bạn là người Hàn Quốc, chọn sai kênh tìm kiếm sẽ lãng phí ngân sách. Trang này so sánh Naver và Google để bạn biết nên đầu tư vào đâu trước.",
+    heroCta: "Tư vấn chọn kênh qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Khách Việt và khách quốc tế nói chung dùng Google, nhưng người Hàn Quốc lại có thói quen tìm kiếm rất riêng. Họ tin và dùng Naver như cổng thông tin chính: tìm review, blog, bản đồ và đặt dịch vụ. Hiểu sự khác biệt này giúp doanh nghiệp du lịch tại Hội An – Đà Nẵng phân bổ ngân sách đúng chỗ.",
+    sections: [
+      {
+        heading: "Người Hàn tìm kiếm khác như thế nào?",
+        bullets: [
+          "Phần lớn khách Hàn mở Naver trước khi mở Google để tra cứu.",
+          "Họ đọc Naver Blog và review của người Hàn để ra quyết định.",
+          "Naver Place đóng vai trò như bản đồ + hồ sơ doanh nghiệp với khách Hàn.",
+          "Nội dung tiếng Hàn tạo cảm giác tin tưởng hơn nội dung dịch máy.",
+        ],
+      },
+      {
+        heading: "Khi nào nên ưu tiên Naver?",
+        body:
+          "Nếu tệp khách chính của bạn là người Hàn — tour Hàn, khách sạn đón đoàn Hàn, spa/nhà hàng gần khu khách Hàn lui tới — thì Naver thường mang lại hiệu quả cao hơn cho cùng một ngân sách so với chỉ chạy Google. Naver là nơi họ thật sự tìm và tin tưởng.",
+      },
+      {
+        heading: "Khi nào Google vẫn quan trọng?",
+        body:
+          "Google vẫn cần thiết cho khách Việt, khách Âu – Mỹ và để website của bạn được index, hiển thị trên Google Maps. Thực tế tốt nhất là kết hợp: Google cho tệp khách quốc tế chung, Naver cho khách Hàn — thay vì bỏ hẳn một bên.",
+      },
+    ],
+    deliverables: {
+      title: "Tôi giúp bạn quyết định bằng cách",
+      items: [
+        "Phân tích tệp khách mục tiêu thật của doanh nghiệp",
+        "Đề xuất tỷ trọng đầu tư Naver / Google hợp lý",
+        "Lên nội dung Naver phù hợp hành vi khách Hàn",
+        "Kết nối Naver với website và Google Maps hiện có",
+        "Cách đo hiệu quả từng kênh để điều chỉnh dần",
+      ],
+    },
+    whoFor: [
+      "Doanh nghiệp có nhiều khách Hàn Quốc",
+      "Tour, khách sạn đón đoàn khách Hàn",
+      "Spa, nhà hàng gần khu khách Hàn",
+      "Chủ doanh nghiệp phân vân chọn Naver hay Google",
+    ],
+    process: [
+      { step: "Phân tích khách", detail: "Xác định tỷ lệ khách Hàn và mục tiêu của bạn." },
+      { step: "Đề xuất kênh", detail: "Gợi ý phân bổ Naver / Google theo tệp khách." },
+      { step: "Triển khai", detail: "Xây nội dung Naver và kết nối với kênh hiện có." },
+      { step: "Đo & tối ưu", detail: "Theo dõi lead từng kênh để điều chỉnh ngân sách." },
+    ],
+    priceFrom: "Tư vấn miễn phí chọn kênh",
+    priceNote:
+      "Tôi tư vấn miễn phí việc chọn Naver hay Google dựa trên tệp khách của bạn; chi phí chỉ tính khi triển khai nội dung. Nhắn Zalo để được tư vấn.",
+    faqs: [
+      {
+        q: "Khách Hàn có dùng Google không?",
+        a: "Có, nhưng phần lớn ưu tiên Naver trước cho việc tra cứu review, blog và bản đồ. Với khách Hàn, Naver thường là điểm chạm quyết định.",
+      },
+      {
+        q: "Tôi nên làm cả hai hay chọn một?",
+        a: "Nếu ngân sách cho phép, kết hợp là tốt nhất: Google cho khách quốc tế chung, Naver cho khách Hàn. Nếu phải chọn, hãy ưu tiên theo tệp khách chính.",
+      },
+      {
+        q: "Naver có thay thế được website không?",
+        a: "Không. Naver là kênh tiếp cận; website vẫn là tài sản chính chủ để khách đặt dịch vụ và để Google index. Tốt nhất là Naver dẫn khách về website.",
+      },
+      {
+        q: "Làm sao biết khách của tôi là Hàn hay không?",
+        a: "Qua dữ liệu booking, nguồn khách hiện tại và đặc thù ngành. Tôi giúp bạn phân tích trước khi quyết định đầu tư kênh nào.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing tổng quan", href: "/vi/naver-marketing", note: "Trang dịch vụ chính" },
+      { label: "Bảng giá Naver chi tiết", href: "/vi/naver-marketing/bang-gia-chi-tiet", note: "Bảng giá" },
+      { label: "Vì sao khách Hàn dùng Naver", href: "/vi/blog/vi-sao-khach-han-dung-naver", note: "Bài viết" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/naver-vs-google.webp", alt: "So sánh Naver và Google để tiếp cận khách Hàn Quốc" },
+    ],
+    schema: { serviceType: "Tư vấn chọn kênh Naver hoặc Google cho khách Hàn" },
+  },
 ];
 
 export function getService(path: string): Service | undefined {

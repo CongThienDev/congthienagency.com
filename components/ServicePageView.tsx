@@ -15,9 +15,12 @@ import {
 } from "@/lib/schema";
 import { SITE } from "@/content/site";
 import { resolveAbsoluteImageUrls } from "@/lib/siteIndex";
+import { ResponsiveImage } from "./ResponsiveImage";
 
 export function ServicePageView({ service }: { service: Service }) {
   const imageUrls = resolveAbsoluteImageUrls(service.images.map((image) => image.suggestion));
+  const heroImage = service.images.find((im) => im.slot === "hero") ?? service.images[0];
+  const inlineImage = service.images.find((im) => im.slot === "inline" && im !== heroImage);
   const nodes = [
     breadcrumbGraph(service.breadcrumb),
     serviceGraph({
@@ -67,16 +70,26 @@ export function ServicePageView({ service }: { service: Service }) {
       </section>
 
       {/* Intro */}
-      <section className="py-14 sm:py-16">
+      <section className="pt-14 sm:pt-16">
         <Container>
           <p className="max-w-3xl text-lg leading-relaxed text-ink-soft">
             {service.intro}
           </p>
+          {heroImage && (
+            <div className="mt-10">
+              <ResponsiveImage
+                src={heroImage.suggestion}
+                alt={heroImage.alt}
+                aspectRatio="video"
+                priority
+              />
+            </div>
+          )}
         </Container>
       </section>
 
       {/* Sections */}
-      <section className="pb-4">
+      <section className="pt-14 pb-4 sm:pt-16">
         <Container>
           <div className="grid gap-8 lg:grid-cols-3">
             {service.sections.map((s) => (
@@ -118,6 +131,15 @@ export function ServicePageView({ service }: { service: Service }) {
               </div>
             ))}
           </div>
+          {inlineImage && (
+            <div className="mt-10">
+              <ResponsiveImage
+                src={inlineImage.suggestion}
+                alt={inlineImage.alt}
+                aspectRatio="video"
+              />
+            </div>
+          )}
         </Container>
       </section>
 
