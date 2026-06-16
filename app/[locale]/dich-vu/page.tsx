@@ -32,6 +32,8 @@ const NAVER_SPOKES = [
   { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver" },
   { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place" },
   { label: "Naver KOC", href: "/vi/naver-marketing/naver-koc" },
+  { label: "Bảng giá Naver chi tiết", href: "/vi/naver-marketing/bang-gia-chi-tiet" },
+  { label: "Naver hay Google cho khách Hàn", href: "/vi/naver-marketing/naver-vs-google" },
 ];
 const NAVER_ARTICLES = [
   { label: "Naver Place khác Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao" },
@@ -53,6 +55,10 @@ const MAPS_ARTICLES = [
 ];
 const QR_PAGES = [
   { label: "Dịch vụ quét mã QR & tải app theo KPI", href: "/vi/quet-ma-qr" },
+  { label: "Quét mã QR cho sự kiện & activation", href: "/vi/quet-ma-qr/cho-su-kien-activation" },
+  { label: "Tải app & mở tài khoản theo KPI", href: "/vi/quet-ma-qr/tai-app-theo-kpi" },
+  { label: "Quét mã Zalo thu lead tại điểm bán", href: "/vi/quet-ma-zalo-thu-lead" },
+  { label: "Quét mã QR tại Đà Nẵng", href: "/vi/quet-ma-qr/da-nang" },
   { label: "Tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien" },
 ];
 

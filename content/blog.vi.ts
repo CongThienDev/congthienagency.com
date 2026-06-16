@@ -5,7 +5,8 @@ export type InlineLinkPart =
 export type BlogBlock =
   | { type: "p"; text?: string; parts?: InlineLinkPart[] }
   | { type: "h2"; text: string }
-  | { type: "ul"; items: string[] };
+  | { type: "ul"; items: string[] }
+  | { type: "img"; src: string; alt: string; caption?: string };
 
 export type BlogPost = {
   slug: string;
@@ -18,6 +19,7 @@ export type BlogPost = {
   date: string; // ISO
   readingMinutes: number;
   primaryKeyword: string;
+  heroImage?: { src: string; alt: string };
   breadcrumb: { label: string; href: string }[];
   body: BlogBlock[];
   faqs?: { q: string; a: string }[];
@@ -3468,6 +3470,554 @@ export const BLOG_POSTS: BlogPost[] = [
         href: "/vi/blog/buff-follow-co-nen-dung-khong",
         note: "Bài liên quan",
       },
+    ],
+  },
+  {
+    slug: "quet-ma-qr-tai-app-kiem-tien-co-that-khong",
+    path: "/vi/blog/quet-ma-qr-tai-app-kiem-tien-co-that-khong",
+    cluster: "qr",
+    title: "Quét mã QR tải app kiếm tiền có thật không? Cách phân biệt thật – lừa đảo",
+    metaTitle: "Quét mã QR tải app kiếm tiền có thật không? | Công Thiên Agency",
+    metaDescription:
+      "Quét mã QR tải app kiếm tiền có thật không? Giải thích cơ chế thật phía sau, dấu hiệu lừa đảo cần tránh và cách tham gia an toàn, không cọc, không phí.",
+    excerpt:
+      "Hình thức kiếm tiền bằng quét mã QR, tải app là có thật — nhưng cũng đầy bẫy. Đây là cách phân biệt.",
+    date: "2026-06-16",
+    readingMinutes: 8,
+    primaryKeyword: "quét mã QR tải app kiếm tiền có thật không",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Quét mã QR tải app kiếm tiền có thật không",
+        href: "/vi/blog/quet-ma-qr-tai-app-kiem-tien-co-that-khong",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Cụm từ “quét mã QR tải app kiếm tiền” xuất hiện ở khắp nơi: nhóm Facebook, Zalo, TikTok. Câu hỏi nhiều người đặt ra là: việc này có thật không, hay chỉ là chiêu lừa? Câu trả lời ngắn: cơ chế phía sau là có thật, nhưng có rất nhiều bên lợi dụng nó để lừa người tham gia.",
+      },
+      { type: "h2", text: "Cơ chế thật phía sau là gì?" },
+      {
+        type: "p",
+        text: "Các nhãn hàng, ví điện tử, ngân hàng số và nền tảng affiliate sẵn sàng trả tiền để có thêm người dùng mới tải app, mở tài khoản hoặc quét mã tại sự kiện. Đây là chi phí marketing hợp pháp. Họ giao KPI cho agency, agency chia việc cho cộng tác viên, và cộng tác viên nhận thưởng cho mỗi lượt hoàn thành hợp lệ. Vì vậy thu nhập từ quét mã QR – tải app là có thật.",
+      },
+      { type: "h2", text: "Vì sao vẫn nhiều người bị lừa?" },
+      {
+        type: "p",
+        text: "Kẻ xấu mượn vỏ bọc “việc nhẹ lương cao” để dụ nạn nhân nộp tiền cọc, đóng phí kích hoạt hoặc nạp tiền làm nhiệm vụ rồi chiếm đoạt. Mô hình thật không bao giờ bắt cộng tác viên nộp tiền trước.",
+      },
+      { type: "h2", text: "Dấu hiệu lừa đảo cần tránh" },
+      {
+        type: "ul",
+        items: [
+          "Yêu cầu đặt cọc, đóng phí kích hoạt hoặc nạp tiền để làm nhiệm vụ.",
+          "Cam kết thu nhập cố định cao bất thường, “không làm cũng có tiền”.",
+          "Bắt nạp tiền vào app lạ rồi hứa hoàn lại kèm hoa hồng.",
+          "Yêu cầu mượn giấy tờ người khác hoặc tạo tài khoản giả.",
+          "Giục gấp, tạo áp lực, không cho thời gian kiểm chứng.",
+        ],
+      },
+      { type: "h2", text: "Cách tham gia an toàn" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Chỉ làm với bên minh bạch: không thu phí, không cọc, dùng tài khoản chính chủ và trả thưởng theo lượt hoàn thành thật. Đó cũng là nguyên tắc tôi áp dụng khi " },
+          { type: "link", text: "tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien" },
+          { type: "text", text: " — thu nhập theo hiệu suất, không hứa hẹn con số cố định." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Quét mã QR tải app kiếm tiền có hợp pháp không?",
+        a: "Có, nếu bạn dùng tài khoản chính chủ và làm đúng quy trình của nhãn hàng. Đây là hình thức tiếp thị giới thiệu người dùng hợp pháp.",
+      },
+      {
+        q: "Một lượt thường được trả bao nhiêu?",
+        a: "Tùy chiến dịch. Chương trình mời người dùng mới cho app ví/ngân hàng thường dao động vài chục đến hơn trăm nghìn đồng mỗi lượt thành công.",
+      },
+      {
+        q: "Có cần đóng tiền để tham gia không?",
+        a: "Không. Mô hình thật không thu phí hay đặt cọc. Ai bắt bạn nộp tiền trước gần như chắc chắn là lừa đảo.",
+      },
+      {
+        q: "Thu nhập có cố định không?",
+        a: "Không. Thu nhập phụ thuộc số lượt bạn hoàn thành và số chiến dịch đang chạy, nên cảnh giác với mọi lời hứa lương cố định cao.",
+      },
+    ],
+    related: [
+      { label: "Tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien", note: "Dịch vụ" },
+      { label: "Dịch vụ quét mã QR theo KPI", href: "/vi/quet-ma-qr", note: "Dịch vụ" },
+      { label: "Tránh bẫy việc nhẹ lương cao khi quét mã QR", href: "/vi/blog/tranh-bay-viec-nhe-luong-cao-quet-ma-qr", note: "Bài liên quan" },
+    ],
+  },
+  {
+    slug: "cong-tac-vien-quet-ma-qr-la-gi",
+    path: "/vi/blog/cong-tac-vien-quet-ma-qr-la-gi",
+    cluster: "qr",
+    title: "Cộng tác viên quét mã QR là gì? Công việc, thu nhập và cách bắt đầu",
+    metaTitle: "Cộng tác viên quét mã QR là gì? Công việc & thu nhập | Công Thiên Agency",
+    metaDescription:
+      "Cộng tác viên quét mã QR là gì, làm những công việc nào, thu nhập tính ra sao và cần chuẩn bị gì để bắt đầu an toàn, không cọc, không phí.",
+    excerpt:
+      "Tìm hiểu công việc cộng tác viên quét mã QR – tải app: làm gì, thu nhập thế nào và cách bắt đầu đúng.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "cộng tác viên quét mã QR là gì",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Cộng tác viên quét mã QR là gì",
+        href: "/vi/blog/cong-tac-vien-quet-ma-qr-la-gi",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Cộng tác viên quét mã QR là người tham gia các chiến dịch tiếp thị của nhãn hàng, ví điện tử, ngân hàng số hoặc nền tảng affiliate bằng cách quét mã QR, tải app, mở tài khoản hoặc giới thiệu người dùng mới — và nhận thưởng theo từng lượt hoàn thành hợp lệ.",
+      },
+      { type: "h2", text: "Công việc cụ thể gồm những gì?" },
+      {
+        type: "ul",
+        items: [
+          "Quét mã QR của chiến dịch và làm theo hướng dẫn (xem quảng cáo, khảo sát, nhận voucher).",
+          "Tải app ví điện tử / ngân hàng số rồi định danh tài khoản chính chủ.",
+          "Lấy mã QR giới thiệu cá nhân để mời bạn bè, người thân tham gia.",
+          "Tham gia mini game, tích điểm trên mini app Zalo của nhãn hàng.",
+        ],
+      },
+      { type: "h2", text: "Thu nhập tính như thế nào?" },
+      {
+        type: "p",
+        text: "Mỗi lượt hoàn thành hợp lệ được trả một mức thưởng tùy chiến dịch. Thu nhập không cố định mà phụ thuộc số lượt bạn làm và số chiến dịch đang chạy. Người làm đều và biết mời thêm bạn bè thường có thu nhập tốt hơn, nhưng không nên tin vào bất kỳ lời hứa “lương cố định cao” nào.",
+      },
+      { type: "h2", text: "Cần chuẩn bị gì để bắt đầu?" },
+      {
+        type: "ul",
+        items: [
+          "Một điện thoại smartphone dùng được bình thường.",
+          "Tài khoản chính chủ: số điện thoại, ví/ngân hàng nếu chiến dịch yêu cầu.",
+          "Thời gian rảnh và sự cẩn thận khi làm theo hướng dẫn.",
+        ],
+      },
+      { type: "h2", text: "Lưu ý để làm an toàn" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Chỉ dùng tài khoản chính chủ của bạn, không mượn giấy tờ người khác, không nộp phí hay đặt cọc. Nếu muốn tham gia, bạn có thể tham khảo chương trình " },
+          { type: "link", text: "tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien" },
+          { type: "text", text: " — minh bạch, không cọc, trả thưởng theo lượt thật." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Cộng tác viên quét mã QR có cần kinh nghiệm không?",
+        a: "Không. Công việc đơn giản, chỉ cần làm đúng hướng dẫn từng chiến dịch và có điện thoại.",
+      },
+      {
+        q: "Làm online tại nhà được không?",
+        a: "Phần lớn nhiệm vụ quét mã / tải app làm online bằng điện thoại. Một số chiến dịch sự kiện cần có mặt tại địa điểm.",
+      },
+      {
+        q: "Có bị thu phí không?",
+        a: "Không. Bên làm đúng không thu phí và không yêu cầu đặt cọc. Yêu cầu nộp tiền trước là dấu hiệu lừa đảo.",
+      },
+    ],
+    related: [
+      { label: "Tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien", note: "Dịch vụ" },
+      { label: "Quét mã QR tải app kiếm tiền có thật không?", href: "/vi/blog/quet-ma-qr-tai-app-kiem-tien-co-that-khong", note: "Bài liên quan" },
+      { label: "Dịch vụ quét mã QR theo KPI", href: "/vi/quet-ma-qr", note: "Dịch vụ" },
+    ],
+  },
+  {
+    slug: "tranh-bay-viec-nhe-luong-cao-quet-ma-qr",
+    path: "/vi/blog/tranh-bay-viec-nhe-luong-cao-quet-ma-qr",
+    cluster: "qr",
+    title: "Tránh bẫy “việc nhẹ lương cao” khi quét mã QR, tải app nhận thưởng",
+    metaTitle: "Tránh bẫy việc nhẹ lương cao khi quét mã QR | Công Thiên Agency",
+    metaDescription:
+      "Nhận diện các chiêu lừa “việc nhẹ lương cao” núp bóng quét mã QR, tải app nhận thưởng: cọc, phí, nạp tiền làm nhiệm vụ — và cách tự bảo vệ mình.",
+    excerpt:
+      "Quét mã QR nhận thưởng là thật, nhưng bị lợi dụng nhiều. Đây là cách nhận diện và tránh bẫy.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "việc nhẹ lương cao quét mã QR lừa đảo",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Tránh bẫy việc nhẹ lương cao quét mã QR",
+        href: "/vi/blog/tranh-bay-viec-nhe-luong-cao-quet-ma-qr",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Khi hình thức quét mã QR, tải app nhận thưởng trở nên phổ biến, kẻ xấu cũng nhanh chóng núp bóng nó để lừa đảo dưới chiêu “việc nhẹ lương cao”. Hiểu rõ ranh giới giữa cơ hội thật và bẫy lừa giúp bạn kiếm thêm thu nhập mà không mất tiền oan.",
+      },
+      { type: "h2", text: "Các chiêu lừa phổ biến" },
+      {
+        type: "ul",
+        items: [
+          "Bắt đóng “phí kích hoạt”, “phí giữ chỗ” hoặc đặt cọc trước khi nhận việc.",
+          "Yêu cầu nạp tiền vào app/ví lạ để “làm nhiệm vụ” rồi hứa hoàn lại kèm hoa hồng.",
+          "Nhiệm vụ đầu trả tiền thật để tạo niềm tin, nhiệm vụ sau bắt nạp số tiền lớn.",
+          "Mạo danh thương hiệu lớn, dùng logo và tin nhắn giống thật để lấy lòng tin.",
+          "Dụ mượn CMND/CCCD, tài khoản ngân hàng để mở tài khoản hộ.",
+        ],
+      },
+      { type: "h2", text: "Quy tắc vàng để tự bảo vệ" },
+      {
+        type: "p",
+        text: "Công việc quét mã QR – tải app thật trả tiền cho bạn, chứ không bao giờ bắt bạn trả tiền trước. Bất kỳ yêu cầu nộp phí, đặt cọc hay nạp tiền nào cũng nên xem là dấu hiệu lừa đảo và dừng lại ngay.",
+      },
+      { type: "h2", text: "Nếu nghi ngờ thì làm gì?" },
+      {
+        type: "ul",
+        items: [
+          "Không chuyển tiền, không cung cấp OTP, mật khẩu hay giấy tờ.",
+          "Kiểm tra lại thông tin bên tuyển dụng qua kênh chính thức.",
+          "Hỏi rõ cơ chế trả thưởng: ai trả, trả theo lượt nào, có hợp đồng/đối soát không.",
+          "Tin vào nguyên tắc: thật thì không thu phí, không cọc.",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu muốn tham gia một chương trình minh bạch, bạn có thể tham khảo cách tôi " },
+          { type: "link", text: "tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien" },
+          { type: "text", text: ": không phí, không cọc, dùng tài khoản chính chủ và trả thưởng theo lượt hoàn thành thật." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Vì sao có người vẫn nhận được tiền lúc đầu?",
+        a: "Đó là chiêu tạo niềm tin: kẻ lừa trả vài lượt nhỏ ban đầu để bạn yên tâm, rồi mới dụ nạp số tiền lớn và chiếm đoạt.",
+      },
+      {
+        q: "Quét mã QR nhận thưởng có phải lúc nào cũng lừa không?",
+        a: "Không. Cơ chế là có thật và hợp pháp. Vấn đề nằm ở bên trung gian: bên đòi phí/cọc là lừa, bên trả thưởng theo lượt thật là đáng tin.",
+      },
+      {
+        q: "Lỡ chuyển tiền cho bên lừa thì sao?",
+        a: "Ngừng giao dịch ngay, lưu lại bằng chứng và trình báo cơ quan công an. Không nộp thêm tiền theo yêu cầu “rút vốn”.",
+      },
+    ],
+    related: [
+      { label: "Quét mã QR tải app kiếm tiền có thật không?", href: "/vi/blog/quet-ma-qr-tai-app-kiem-tien-co-that-khong", note: "Bài liên quan" },
+      { label: "Tuyển cộng tác viên quét mã QR", href: "/vi/quet-ma-qr/tuyen-cong-tac-vien", note: "Dịch vụ" },
+      { label: "Cộng tác viên quét mã QR là gì?", href: "/vi/blog/cong-tac-vien-quet-ma-qr-la-gi", note: "Bài liên quan" },
+    ],
+  },
+  {
+    slug: "cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep",
+    path: "/vi/blog/cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep",
+    cluster: "qr",
+    title: "Cách tạo mã QR Zalo OA cho doanh nghiệp để thu lead tại điểm bán",
+    metaTitle: "Cách tạo mã QR Zalo OA cho doanh nghiệp thu lead | Công Thiên Agency",
+    metaDescription:
+      "Hướng dẫn tạo mã QR Zalo OA cho doanh nghiệp, đặt ở đâu, tạo lý do để khách quét và cách follow-up để biến lượt quét thành lead thật.",
+    excerpt:
+      "Tạo mã QR Zalo OA chỉ là bước đầu — quan trọng là đặt đúng chỗ và có lý do để khách quét.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "cách tạo mã QR Zalo OA cho doanh nghiệp",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Cách tạo mã QR Zalo OA cho doanh nghiệp",
+        href: "/vi/blog/cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Mã QR Zalo OA (Official Account) giúp khách quét một phát là kết nối ngay với doanh nghiệp của bạn trên Zalo, để bạn có thể nhắn lại, gửi ưu đãi và chăm sóc về sau. Tạo mã chỉ mất vài phút, nhưng để nó thực sự ra lead thì cần làm đúng cách.",
+      },
+      { type: "h2", text: "Các bước tạo mã QR Zalo OA" },
+      {
+        type: "ul",
+        items: [
+          "Tạo Zalo Official Account cho doanh nghiệp tại trang quản lý Zalo OA.",
+          "Hoàn thiện hồ sơ: tên, logo, mô tả, thông tin liên hệ rõ ràng.",
+          "Vào phần mã QR của OA để lấy mã kết nối / mã quan tâm.",
+          "Tải mã về và đưa vào ấn phẩm: standee, sticker, menu, hóa đơn.",
+        ],
+      },
+      { type: "h2", text: "Đặt mã QR ở đâu cho hiệu quả?" },
+      {
+        type: "ul",
+        items: [
+          "Quầy thanh toán — nơi khách dừng lại và có thời gian.",
+          "Bàn chờ, khu vực ngồi đợi của spa, salon, phòng khám.",
+          "Trên menu, tent card, hóa đơn của nhà hàng, quán cà phê.",
+          "Tại booth sự kiện, hội chợ kèm ưu đãi nhận ngay khi quét.",
+        ],
+      },
+      { type: "h2", text: "Tạo lý do để khách quét" },
+      {
+        type: "p",
+        text: "Một mã QR không có lý do thì rất ít người quét. Hãy gắn lợi ích rõ ràng: ưu đãi lần đầu, tích điểm thành viên, quà tặng, hoặc nội dung hữu ích. Câu kêu gọi nên ngắn và cụ thể, ví dụ “Quét nhận voucher 10% cho lần ghé tiếp theo”.",
+      },
+      { type: "h2", text: "Sau khi khách quét thì làm gì?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Cần có tin nhắn chào tự động, phân loại nhu cầu và follow-up đúng lúc để biến lượt quét thành khách thật. Nếu muốn thiết lập trọn luồng từ ấn phẩm đến kịch bản chăm sóc, bạn có thể xem dịch vụ " },
+          { type: "link", text: "quét mã Zalo thu lead tại điểm bán", href: "/vi/quet-ma-zalo-thu-lead" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Tạo Zalo OA và mã QR có mất phí không?",
+        a: "Tạo OA và lấy mã QR cơ bản là miễn phí. Một số tính năng nâng cao của Zalo OA có thể tính phí theo gói.",
+      },
+      {
+        q: "Mã QR Zalo OA khác mã QR thường thế nào?",
+        a: "Mã QR Zalo OA đưa khách thẳng tới trang OA để quan tâm và nhắn tin, nhờ đó bạn thu được kết nối để chăm sóc lại, thay vì chỉ mở một đường link.",
+      },
+      {
+        q: "Làm sao tăng tỷ lệ khách quét?",
+        a: "Đặt mã ở nơi khách có thời gian, gắn ưu đãi rõ ràng và để nhân sự mời khách quét đúng thời điểm.",
+      },
+    ],
+    related: [
+      { label: "Quét mã Zalo thu lead tại điểm bán", href: "/vi/quet-ma-zalo-thu-lead", note: "Dịch vụ" },
+      { label: "Top cách quét mã Zalo để thu lead", href: "/vi/blog/top-cach-quet-ma-zalo-thu-lead", note: "Bài liên quan" },
+      { label: "Dịch vụ quét mã QR theo KPI", href: "/vi/quet-ma-qr", note: "Dịch vụ" },
+    ],
+  },
+  {
+    slug: "naver-hay-google-cho-khach-han",
+    path: "/vi/blog/naver-hay-google-cho-khach-han",
+    cluster: "naver",
+    title: "Naver hay Google: khách Hàn tìm dịch vụ ở đâu trước khi đặt?",
+    metaTitle: "Naver hay Google cho khách Hàn Quốc? | Công Thiên Agency",
+    metaDescription:
+      "Khách Hàn Quốc tìm spa, nhà hàng, tour trên Naver hay Google? So sánh thói quen tìm kiếm để doanh nghiệp Hội An – Đà Nẵng đầu tư đúng kênh.",
+    excerpt:
+      "Chọn sai kênh tìm kiếm là lãng phí ngân sách. Đây là cách khách Hàn thật sự tra cứu trước khi đặt.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "Naver hay Google cho khách Hàn",
+    heroImage: { src: "/images/blog/naver-vs-google-han.webp", alt: "Khách Hàn Quốc tìm dịch vụ trên Naver bằng điện thoại" },
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Naver hay Google cho khách Hàn",
+        href: "/vi/blog/naver-hay-google-cho-khach-han",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Nếu doanh nghiệp của bạn muốn đón khách Hàn Quốc, có một câu hỏi quyết định hiệu quả ngân sách: họ tìm spa, nhà hàng hay tour của bạn trên Naver hay Google? Trả lời sai dẫn đến đầu tư nhầm chỗ và bỏ lỡ khách.",
+      },
+      { type: "h2", text: "Người Hàn ưu tiên Naver" },
+      {
+        type: "p",
+        text: "Khác với khách Việt và khách phương Tây quen dùng Google, phần lớn người Hàn mở Naver đầu tiên. Naver vừa là công cụ tìm kiếm, vừa là nơi đọc blog review, xem bản đồ Naver Place và tra cứu thông tin doanh nghiệp. Với họ, nội dung tiếng Hàn trên Naver đáng tin hơn nhiều so với bản dịch máy trên kênh khác.",
+      },
+      { type: "h2", text: "Khi nào Naver hiệu quả hơn Google?" },
+      {
+        type: "ul",
+        items: [
+          "Tệp khách chính là người Hàn: tour Hàn, khách sạn đón đoàn Hàn.",
+          "Dịch vụ gần khu vực khách Hàn thường lui tới.",
+          "Bạn muốn khách Hàn đọc review thật bằng tiếng Hàn trước khi đặt.",
+          "Ngân sách có hạn và cần tập trung đúng nơi khách tìm kiếm.",
+        ],
+      },
+      { type: "h2", text: "Google vẫn cần, nhưng cho mục tiêu khác" },
+      {
+        type: "p",
+        text: "Google quan trọng để tiếp cận khách Việt, khách quốc tế chung và để website của bạn được index, hiển thị trên Google Maps. Cách làm tốt nhất không phải chọn một bỏ một, mà phân bổ: Naver cho khách Hàn, Google cho phần còn lại.",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu chưa chắc nên ưu tiên kênh nào, bạn có thể xem phần so sánh chi tiết và nhận tư vấn tại dịch vụ " },
+          { type: "link", text: "Naver hay Google cho khách Hàn", href: "/vi/naver-marketing/naver-vs-google" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Khách Hàn có dùng Google Maps không?",
+        a: "Có dùng, nhưng nhiều người Hàn quen Naver Place hơn khi ở nước ngoài. Tốt nhất bạn nên hiện diện tốt ở cả hai.",
+      },
+      {
+        q: "Tôi nên bắt đầu với Naver hay Google trước?",
+        a: "Nếu khách chính là người Hàn, ưu tiên Naver trước. Nếu khách đa dạng, làm song song và phân bổ theo tỷ lệ khách thực tế.",
+      },
+      {
+        q: "Làm Naver có cần biết tiếng Hàn không?",
+        a: "Bạn không cần, nhưng nội dung nên do người viết tốt tiếng Hàn thực hiện để tạo tin tưởng. Đó là phần dịch vụ Naver hỗ trợ.",
+      },
+    ],
+    related: [
+      { label: "Naver hay Google cho khách Hàn", href: "/vi/naver-marketing/naver-vs-google", note: "Dịch vụ" },
+      { label: "Vì sao khách Hàn dùng Naver", href: "/vi/blog/vi-sao-khach-han-dung-naver", note: "Bài liên quan" },
+      { label: "Naver Marketing tổng quan", href: "/vi/naver-marketing", note: "Dịch vụ" },
+    ],
+  },
+  {
+    slug: "khi-nao-nen-dau-tu-naver-marketing",
+    path: "/vi/blog/khi-nao-nen-dau-tu-naver-marketing",
+    cluster: "naver",
+    title: "Khi nào doanh nghiệp nên đầu tư Naver Marketing?",
+    metaTitle: "Khi nào nên đầu tư Naver Marketing? | Công Thiên Agency",
+    metaDescription:
+      "Dấu hiệu cho thấy doanh nghiệp du lịch nên đầu tư Naver Marketing để đón khách Hàn: tệp khách, mùa cao điểm, ngân sách và mục tiêu tăng trưởng.",
+    excerpt:
+      "Naver không dành cho mọi doanh nghiệp. Đây là lúc đầu tư Naver thật sự đáng tiền.",
+    date: "2026-06-16",
+    readingMinutes: 6,
+    primaryKeyword: "khi nào nên đầu tư Naver Marketing",
+    heroImage: { src: "/images/blog/dau-tu-naver-marketing.webp", alt: "Doanh nghiệp du lịch lên kế hoạch đầu tư Naver Marketing" },
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Khi nào nên đầu tư Naver Marketing",
+        href: "/vi/blog/khi-nao-nen-dau-tu-naver-marketing",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Naver Marketing rất hiệu quả để đón khách Hàn, nhưng không phải doanh nghiệp nào cũng cần làm ngay. Hiểu đúng thời điểm giúp bạn đầu tư khi nó thật sự mang lại khách, thay vì chạy theo trào lưu.",
+      },
+      { type: "h2", text: "Dấu hiệu nên đầu tư Naver ngay" },
+      {
+        type: "ul",
+        items: [
+          "Khách Hàn chiếm tỷ lệ đáng kể hoặc đang tăng trong tệp khách của bạn.",
+          "Bạn làm tour, khách sạn, spa, nhà hàng phục vụ khách Hàn.",
+          "Sắp vào mùa cao điểm khách Hàn và cần hiện diện trước đó vài tháng.",
+          "Đối thủ cùng phân khúc đã có review tiếng Hàn còn bạn thì chưa.",
+        ],
+      },
+      { type: "h2", text: "Khi nào nên khoan?" },
+      {
+        type: "p",
+        text: "Nếu khách của bạn gần như không phải người Hàn, hoặc website và Google Maps còn chưa hoàn thiện, hãy ưu tiên nền tảng cơ bản trước. Naver sẽ phát huy tốt nhất khi bạn đã có kênh đặt dịch vụ rõ ràng để dẫn khách Hàn về.",
+      },
+      { type: "h2", text: "Đầu tư Naver cần chuẩn bị gì?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Tối thiểu bạn cần hồ sơ doanh nghiệp rõ ràng, hình ảnh thật và một kênh để khách liên hệ. Về ngân sách, bạn có thể tham khảo " },
+          { type: "link", text: "bảng giá Naver chi tiết", href: "/vi/naver-marketing/bang-gia-chi-tiet" },
+          { type: "text", text: " để lập kế hoạch phù hợp." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Mới mở doanh nghiệp có nên làm Naver luôn không?",
+        a: "Nếu bạn nhắm khách Hàn từ đầu thì nên xây hiện diện Naver sớm, song song với hoàn thiện website và Google Maps.",
+      },
+      {
+        q: "Nên đầu tư Naver trước mùa cao điểm bao lâu?",
+        a: "Lý tưởng là vài tháng, vì nội dung Naver cần thời gian được index và tích lũy độ tin cậy trước khi khách tìm đến.",
+      },
+      {
+        q: "Đầu tư Naver bao lâu thì thấy hiệu quả?",
+        a: "Thường cần vài tuần đến vài tháng tùy ngành và khối lượng nội dung. Đây là kênh xây dựng dần, không phải bật tắt như quảng cáo.",
+      },
+    ],
+    related: [
+      { label: "Bảng giá Naver chi tiết", href: "/vi/naver-marketing/bang-gia-chi-tiet", note: "Dịch vụ" },
+      { label: "Chi phí Naver Marketing", href: "/vi/blog/chi-phi-naver-marketing", note: "Bài liên quan" },
+      { label: "Naver Marketing tổng quan", href: "/vi/naver-marketing", note: "Dịch vụ" },
+    ],
+  },
+  {
+    slug: "sai-lam-thuong-gap-khi-lam-naver-marketing",
+    path: "/vi/blog/sai-lam-thuong-gap-khi-lam-naver-marketing",
+    cluster: "naver",
+    title: "5 sai lầm thường gặp khi làm Naver Marketing cho khách Hàn",
+    metaTitle: "5 sai lầm thường gặp khi làm Naver Marketing | Công Thiên Agency",
+    metaDescription:
+      "Những sai lầm khiến Naver Marketing kém hiệu quả: dịch máy, không có CTA, bỏ quên Naver Place, thiếu hình ảnh thật và không đo lường. Cách tránh.",
+    excerpt:
+      "Làm Naver nhưng không ra khách thường vì những lỗi cơ bản này. Tránh được là tiết kiệm ngân sách.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "sai lầm khi làm Naver Marketing",
+    heroImage: { src: "/images/blog/sai-lam-naver-marketing.webp", alt: "Rà soát sai lầm thường gặp khi làm Naver Marketing" },
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      {
+        label: "Sai lầm khi làm Naver Marketing",
+        href: "/vi/blog/sai-lam-thuong-gap-khi-lam-naver-marketing",
+      },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Nhiều doanh nghiệp đầu tư Naver Marketing nhưng không thấy khách Hàn liên hệ. Phần lớn nguyên nhân nằm ở những sai lầm cơ bản dưới đây, hoàn toàn có thể tránh.",
+      },
+      { type: "h2", text: "1. Dùng nội dung dịch máy" },
+      {
+        type: "p",
+        text: "Khách Hàn nhận ra ngay nội dung dịch máy và mất tin tưởng. Bài Naver nên do người viết tốt tiếng Hàn thực hiện, tự nhiên và đúng văn phong người Hàn.",
+      },
+      { type: "h2", text: "2. Viết bài không có lời kêu gọi hành động" },
+      {
+        type: "p",
+        text: "Một bài hay nhưng không dẫn khách làm gì tiếp theo sẽ lãng phí. Luôn cần CTA rõ: nhắn Zalo, WhatsApp, xem website hoặc Naver Place để đặt dịch vụ.",
+      },
+      { type: "h2", text: "3. Bỏ quên Naver Place" },
+      {
+        type: "p",
+        text: "Naver Place giống hồ sơ bản đồ với khách Hàn. Thiếu hoặc để trống Naver Place khiến khách khó tìm thấy và khó tin tưởng doanh nghiệp.",
+      },
+      { type: "h2", text: "4. Thiếu hình ảnh thật" },
+      {
+        type: "p",
+        text: "Hình ảnh thật về không gian, món ăn, trải nghiệm giúp khách Hàn hình dung và tin tưởng. Ảnh chung chung hoặc lấy trên mạng làm giảm hiệu quả.",
+      },
+      { type: "h2", text: "5. Không đo lường gì cả" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Không theo dõi bài được index, hiển thị và lead thì không biết nên điều chỉnh gì. Hãy chọn đối tác nêu rõ cách đo hiệu quả ngay từ đầu — như trong " },
+          { type: "link", text: "dịch vụ Naver Marketing", href: "/vi/naver-marketing" },
+          { type: "text", text: " tôi luôn minh bạch phần này." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Tự làm Naver có dễ mắc các lỗi này không?",
+        a: "Khá dễ, đặc biệt là dịch máy và bỏ quên Naver Place. Có người am hiểu Naver và tiếng Hàn sẽ giúp tránh phần lớn lỗi.",
+      },
+      {
+        q: "Đã làm Naver nhưng không ra khách thì sửa từ đâu?",
+        a: "Rà soát lần lượt: chất lượng nội dung tiếng Hàn, CTA, Naver Place, hình ảnh và cách đo lường. Thường lỗi nằm ở một vài điểm trong số này.",
+      },
+      {
+        q: "Bao lâu nên đánh giá lại hiệu quả Naver?",
+        a: "Nên theo dõi hàng tháng và đánh giá tổng thể sau vài tháng, vì Naver tích lũy hiệu quả theo thời gian.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing tổng quan", href: "/vi/naver-marketing", note: "Dịch vụ" },
+      { label: "Cách viết bài Naver Blog chuẩn", href: "/vi/blog/cach-viet-bai-naver-blog-chuan", note: "Bài liên quan" },
+      { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Bài liên quan" },
     ],
   },
 ];

@@ -29,6 +29,7 @@ export const FOOTER_VI = {
     { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing" },
     { label: "Social Marketing", href: "/vi/social-marketing" },
     { label: "Dịch vụ quét mã QR", href: "/vi/quet-ma-qr" },
+    { label: "Quét mã Zalo thu lead", href: "/vi/quet-ma-zalo-thu-lead" },
   ],
   industries: [
     { label: "Website spa Hội An", href: "/vi/thiet-ke-website/spa-hoi-an" },

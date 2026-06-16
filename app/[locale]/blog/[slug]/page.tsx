@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb } from "@/components/Bits";
+import { ResponsiveImage } from "@/components/ResponsiveImage";
 import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
 import { BLOG_POSTS, getPost } from "@/content/blog.vi";
@@ -27,7 +28,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     path: post.path,
     locale: "vi",
     type: "article",
-    image: resolvePrimaryImage(["/images/og/og-default.jpg"]),
+    image: resolvePrimaryImage([
+      ...(post.heroImage ? [post.heroImage.src] : []),
+      "/images/og/og-default.jpg",
+    ]),
   });
 }
 
@@ -36,7 +40,12 @@ export default async function Page({ params }: Params) {
   if (locale !== "vi") notFound();
   const post = getPost(slug);
   if (!post) notFound();
-  const imageUrls = resolveAbsoluteImageUrls(["/images/og/og-default.jpg"]);
+  const bodyImages = post.body.flatMap((b) => (b.type === "img" ? [b.src] : []));
+  const imageUrls = resolveAbsoluteImageUrls([
+    ...(post.heroImage ? [post.heroImage.src] : []),
+    ...bodyImages,
+    "/images/og/og-default.jpg",
+  ]);
   const schemaNodes = [
     breadcrumbGraph(post.breadcrumb),
     blogPostingGraph({
@@ -73,6 +82,16 @@ export default async function Page({ params }: Params) {
               {post.title}
             </h1>
           </div>
+          {post.heroImage && (
+            <div className="mt-8">
+              <ResponsiveImage
+                src={post.heroImage.src}
+                alt={post.heroImage.alt}
+                aspectRatio="video"
+                priority
+              />
+            </div>
+          )}
         </Container>
       </section>
 
@@ -96,6 +115,17 @@ export default async function Page({ params }: Params) {
                       </li>
                     ))}
                   </ul>
+                );
+              if (block.type === "img")
+                return (
+                  <figure key={i} className="my-2">
+                    <ResponsiveImage src={block.src} alt={block.alt} aspectRatio="video" />
+                    {block.caption && (
+                      <figcaption className="mt-2 text-center text-sm text-muted">
+                        {block.caption}
+                      </figcaption>
+                    )}
+                  </figure>
                 );
               return (
                 <p key={i} className="text-base leading-relaxed text-ink-soft">
