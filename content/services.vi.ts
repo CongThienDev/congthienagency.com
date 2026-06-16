@@ -959,6 +959,11 @@ export const SERVICES: Service[] = [
       { label: "Naver KOC", href: "/vi/naver-marketing/naver-koc", note: "Spoke · Campaign" },
       { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an", note: "Theo khu vực Hội An" },
       { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Theo khu vực Đà Nẵng" },
+      { label: "Naver Marketing Agency Vietnam", href: "/vi/naver-marketing/naver-marketing-agency-vietnam", note: "SEO · English keyword" },
+      { label: "Naver Blog Marketing Vietnam", href: "/vi/naver-marketing/naver-blog-marketing-vietnam", note: "SEO · English keyword" },
+      { label: "Naver SEO Agency for Hotels", href: "/vi/naver-marketing/naver-seo-agency-for-hotels", note: "SEO · Hotel keyword" },
+      { label: "How to attract Korean tourists with Naver", href: "/vi/naver-marketing/attract-korean-tourists-with-naver", note: "SEO · Guide" },
+      { label: "Naver Map optimization for restaurants", href: "/vi/naver-marketing/naver-map-optimization-restaurants-vietnam", note: "SEO · Restaurant keyword" },
       { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Blog" },
     ],
     images: [
@@ -4209,6 +4214,521 @@ export const SERVICES: Service[] = [
       { slot: "hero", suggestion: "/images/services/naver-vs-google.webp", alt: "So sánh Naver và Google để tiếp cận khách Hàn Quốc" },
     ],
     schema: { serviceType: "Tư vấn chọn kênh Naver hoặc Google cho khách Hàn" },
+  },
+
+  /* ───────────────────────── NAVER SEO LANDING — AGENCY VIETNAM ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/naver-marketing-agency-vietnam",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver Marketing Agency Vietnam", href: "/vi/naver-marketing/naver-marketing-agency-vietnam" },
+    ],
+    primaryKeyword: "Naver marketing agency Vietnam",
+    metaTitle: "Naver Marketing Agency Vietnam | Công Thiên Agency",
+    metaDescription:
+      "Naver marketing agency in Vietnam for hotels, restaurants, spas and tours targeting Korean tourists. Naver Blog, Naver Place, Korean blogger reviews and SEO-ready content.",
+    eyebrow: "Naver · Vietnam Agency",
+    h1: "Naver Marketing Agency Vietnam for brands targeting Korean tourists",
+    heroSub:
+      "Dịch vụ Naver Marketing tại Việt Nam cho khách sạn, nhà hàng, spa và tour muốn tiếp cận khách Hàn trước khi họ đặt dịch vụ.",
+    heroCta: "Tư vấn Naver Marketing qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "If your business in Vietnam depends on Korean tourists, Naver is not an optional channel. Công Thiên Agency helps tourism and hospitality brands build Korean-language visibility through Naver Blog content, Korean blogger reviews, Naver Place optimization and SEO-ready landing pages that connect back to your website, Google Maps, Zalo and WhatsApp.",
+    sections: [
+      {
+        heading: "Why work with a Naver marketing agency in Vietnam?",
+        bullets: [
+          "Korean tourists often search Naver before choosing a hotel, restaurant, spa or local tour in Vietnam.",
+          "Naver Blog reviews create trust in Korean before the customer contacts your business.",
+          "Naver Place helps Korean customers understand your location, opening hours and key information.",
+          "A local Vietnam team can connect Naver content with your website, Google Maps, booking flow and real operations.",
+        ],
+      },
+      {
+        heading: "What the agency service includes",
+        body:
+          "The work can include Naver strategy, keyword mapping, Korean-language content planning, Naver Blog posts, Korean blogger/KOC reviews, Naver Place setup guidance and SEO landing pages on your own website. The goal is to create a consistent discovery path for Korean tourists, from search to trust to booking.",
+      },
+      {
+        heading: "Best-fit businesses",
+        body:
+          "This service is strongest for hotels, boutique stays, restaurants, cafes, spas, wellness brands, cooking classes, local tours and travel experiences in Vietnam, especially in Hội An, Đà Nẵng and other destinations with strong Korean travel demand.",
+      },
+    ],
+    deliverables: {
+      title: "Naver marketing deliverables",
+      items: [
+        "Naver search and competitor audit for your Vietnam market",
+        "Korean tourist keyword map by service, location and intent",
+        "Naver Blog content plan and review article direction",
+        "Korean blogger or KOC review coordination when needed",
+        "Naver Place optimization checklist and content guidance",
+        "Internal link plan connecting Naver, website and Google Maps",
+      ],
+    },
+    whoFor: [
+      "Hotels and resorts in Vietnam",
+      "Restaurants and cafes serving Korean tourists",
+      "Spas and wellness businesses",
+      "Tours, cooking classes and local experiences",
+    ],
+    process: [
+      { step: "Audit", detail: "Review your website, Google Maps, Naver visibility and Korean tourist intent." },
+      { step: "Strategy", detail: "Build a keyword and content map for Naver Blog, Place and landing pages." },
+      { step: "Execution", detail: "Create content, coordinate reviews and connect channels into one discovery path." },
+      { step: "Optimize", detail: "Track links, leads and content performance, then adjust the monthly plan." },
+    ],
+    priceFrom: "Naver Blogger Review từ 8.000.000đ / 4 bài",
+    priceNote:
+      "Gói triển khai tùy ngành, khu vực, số bài và nhu cầu blogger/KOC. Nhắn Zalo để nhận plan theo business thật.",
+    faqs: [
+      {
+        q: "What is a Naver marketing agency in Vietnam?",
+        a: "It is an agency that helps Vietnam-based businesses reach Korean tourists through Naver Blog, Naver Place, Korean reviews, Korean-language content and SEO landing pages.",
+      },
+      {
+        q: "Is Naver important for Korean tourists visiting Vietnam?",
+        a: "Yes. Many Korean travelers use Naver to read blog reviews, compare locations and validate businesses before booking hotels, restaurants, spas or tours.",
+      },
+      {
+        q: "Do you write Korean content or only Vietnamese content?",
+        a: "The Naver content direction is built for Korean readers. Website service pages can be written in Vietnamese or English depending on the Google keyword target.",
+      },
+      {
+        q: "Can Naver marketing work together with Google SEO?",
+        a: "Yes. The strongest setup connects Naver Blog and Naver Place with a fast website, Google-indexable service pages and an optimized Google Business Profile.",
+      },
+      {
+        q: "Which Vietnam locations do you serve?",
+        a: "The service can support businesses across Vietnam, with especially strong fit for Hội An, Đà Nẵng and tourism destinations serving Korean visitors.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing tổng quan", href: "/vi/naver-marketing", note: "Trang dịch vụ chính" },
+      { label: "Naver Blog Marketing Vietnam", href: "/vi/naver-marketing/naver-blog-marketing-vietnam", note: "Keyword liên quan" },
+      { label: "Naver SEO cho khách sạn", href: "/vi/naver-marketing/naver-seo-agency-for-hotels", note: "Ngành khách sạn" },
+      { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Naver Place" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver marketing agency Vietnam for Korean tourists" },
+    ],
+    schema: { serviceType: "Naver marketing agency Vietnam", offerMinPriceVnd: 8000000 },
+  },
+
+  /* ───────────────────────── NAVER SEO LANDING — BLOG MARKETING VIETNAM ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/naver-blog-marketing-vietnam",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver Blog Marketing Vietnam", href: "/vi/naver-marketing/naver-blog-marketing-vietnam" },
+    ],
+    primaryKeyword: "Naver blog marketing Vietnam",
+    metaTitle: "Naver Blog Marketing Vietnam | Công Thiên Agency",
+    metaDescription:
+      "Naver Blog marketing in Vietnam for brands targeting Korean travelers. Korean blog reviews, keyword content, blogger coordination and trust-building articles.",
+    eyebrow: "Naver Blog · Vietnam",
+    h1: "Naver Blog Marketing Vietnam for Korean traveler trust",
+    heroSub:
+      "Xây nội dung Naver Blog tiếng Hàn giúp khách Hàn đọc review, hiểu trải nghiệm và tin doanh nghiệp Việt Nam trước khi đặt dịch vụ.",
+    heroCta: "Tư vấn Naver Blog qua Zalo",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Naver Blog marketing in Vietnam is about earning attention and trust where Korean travelers already research. Instead of only translating sales copy, we create review-style content, useful travel context, keyword-led blog topics and clear calls to action that help Korean readers move from search to inquiry.",
+    sections: [
+      {
+        heading: "Why Naver Blog matters in Vietnam tourism",
+        bullets: [
+          "Korean travelers read Naver Blog reviews to understand real experiences before booking.",
+          "Blog content can explain location, prices, service details and travel tips in a familiar Korean format.",
+          "Review-style posts create social proof that ads and short social captions cannot replace.",
+          "Naver Blog can support Google SEO when your website links and landing pages are structured clearly.",
+        ],
+      },
+      {
+        heading: "Content that fits how Korean users read",
+        body:
+          "A strong Naver Blog article usually needs a natural title, real photos, location context, service details, price/value signals, honest experience language and a clear next step. For Vietnam tourism brands, the content should answer practical questions Korean tourists ask before they message or book.",
+      },
+      {
+        heading: "Organic blog content plus blogger reviews",
+        body:
+          "You can build content on your own Naver Blog account for long-term assets, book Korean bloggers for faster third-party proof, or combine both. The right mix depends on your timeline, budget and current Korean market demand.",
+      },
+    ],
+    deliverables: {
+      title: "Naver Blog marketing scope",
+      items: [
+        "Korean tourist topic and keyword research",
+        "Naver Blog article outlines by industry and location",
+        "Review-style Korean content direction",
+        "Image checklist for natural Naver posts",
+        "CTA structure for Zalo, WhatsApp, website or Naver Place",
+        "Internal links to service pages and related Naver content",
+      ],
+    },
+    whoFor: [
+      "Vietnam hotels, restaurants, spas and tours",
+      "Brands that need Korean review content",
+      "Businesses building a long-term Naver Blog account",
+      "Campaigns combining owned content and Korean blogger posts",
+    ],
+    process: [
+      { step: "Research", detail: "Map Korean search intent by city, category and decision stage." },
+      { step: "Plan", detail: "Choose owned blog posts, blogger reviews or a combined content plan." },
+      { step: "Create", detail: "Write or brief Korean review-style articles with real photos and CTAs." },
+      { step: "Connect", detail: "Link Naver Blog to website, Place, maps and booking/contact channels." },
+    ],
+    priceFrom: "Từ 8.000.000đ / 4 bài review",
+    priceNote:
+      "Chi phí phụ thuộc số bài, tài khoản đăng, chất lượng hình ảnh và việc có booking blogger Hàn hay không.",
+    faqs: [
+      {
+        q: "What is Naver Blog marketing in Vietnam?",
+        a: "It is the process of using Naver Blog content, Korean-language reviews and related links to help Korean travelers discover and trust Vietnam-based businesses.",
+      },
+      {
+        q: "Is Naver Blog different from Naver Place?",
+        a: "Yes. Naver Blog is content and review-led, while Naver Place is a business/location profile. They work best together for tourism and hospitality businesses.",
+      },
+      {
+        q: "Should I use my own Naver Blog or Korean bloggers?",
+        a: "Use your own Naver Blog for long-term content assets and Korean bloggers for faster third-party trust. Many campaigns combine both.",
+      },
+      {
+        q: "Can you target hotel, restaurant, spa and tour keywords?",
+        a: "Yes. The keyword map can be built around your category, destination, Korean traveler intent and booking stage.",
+      },
+      {
+        q: "Does Naver Blog marketing guarantee top rankings?",
+        a: "No agency should promise permanent rankings. The goal is to create better Korean content, stronger trust signals and more indexable assets around your business.",
+      },
+    ],
+    related: [
+      { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Dịch vụ chi tiết" },
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Third-party review" },
+      { label: "Naver Marketing Agency Vietnam", href: "/vi/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
+      { label: "Naver Place khác Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao", note: "Bài giải thích" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver Blog marketing Vietnam for Korean travelers" },
+    ],
+    schema: { serviceType: "Naver Blog marketing Vietnam", offerPriceVnd: 8000000 },
+  },
+
+  /* ───────────────────────── NAVER SEO LANDING — HOTELS ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/naver-seo-agency-for-hotels",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver SEO Agency for Hotels", href: "/vi/naver-marketing/naver-seo-agency-for-hotels" },
+    ],
+    primaryKeyword: "Naver SEO agency for hotels",
+    metaTitle: "Naver SEO Agency for Hotels in Vietnam | Công Thiên",
+    metaDescription:
+      "Naver SEO agency for hotels in Vietnam: Korean blog reviews, Naver Place, hotel landing pages and content strategy to attract Korean travelers and direct bookings.",
+    eyebrow: "Naver SEO · Hotels",
+    h1: "Naver SEO agency for hotels targeting Korean travelers",
+    heroSub:
+      "Tối ưu Naver cho khách sạn, resort, homestay và villa tại Việt Nam muốn tăng niềm tin với khách Hàn và hỗ trợ direct booking.",
+    heroCta: "Tư vấn Naver SEO khách sạn",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Hotels that target Korean travelers need more than OTA listings. Korean guests often validate rooms, location, breakfast, nearby attractions and real guest experiences through Naver. This Naver SEO service helps hotels in Vietnam build Korean-language search assets across Naver Blog, Naver Place and their own website landing pages.",
+    sections: [
+      {
+        heading: "Hotel Naver SEO is trust-led",
+        bullets: [
+          "Korean travelers compare hotels through reviews, photos and location details before booking.",
+          "Naver Blog articles can show room experience, amenities, breakfast, neighborhood and travel routes.",
+          "Naver Place helps connect hotel information with map-based discovery.",
+          "A hotel website landing page helps convert interest into direct inquiries or bookings.",
+        ],
+      },
+      {
+        heading: "What we optimize for hotels",
+        body:
+          "The work focuses on Korean search intent, room and amenity messaging, location context, Naver Blog review topics, blogger coordination and website pages that explain why Korean guests should book directly instead of only relying on OTA platforms.",
+      },
+      {
+        heading: "Direct booking support",
+        body:
+          "Naver SEO should not stop at visibility. It should lead Korean guests toward a clear booking or contact path: hotel website, booking form, Zalo, WhatsApp, phone or a direct reservation page.",
+      },
+    ],
+    deliverables: {
+      title: "Hotel Naver SEO deliverables",
+      items: [
+        "Hotel Naver visibility and competitor audit",
+        "Korean keyword map for hotel, location and room intent",
+        "Naver Blog review content plan for rooms and guest experience",
+        "Naver Place optimization guidance",
+        "Hotel landing page SEO recommendations",
+        "Internal linking from Naver content to booking/contact channels",
+      ],
+    },
+    whoFor: [
+      "Hotels and resorts serving Korean travelers",
+      "Boutique hotels and homestays in Vietnam",
+      "Villas and stays seeking more direct bookings",
+      "Properties that already receive Korean guests from OTA channels",
+    ],
+    process: [
+      { step: "Audit", detail: "Review Naver, website, OTA, Google Maps and direct booking readiness." },
+      { step: "Keyword map", detail: "Select Korean search themes for hotel category, location and intent." },
+      { step: "Content", detail: "Plan Naver Blog reviews and website pages that support hotel trust." },
+      { step: "Conversion", detail: "Connect content to direct inquiry or booking paths." },
+    ],
+    priceFrom: "Naver Blogger Review từ 8.000.000đ / 4 bài",
+    priceNote:
+      "Khách sạn có thể cần blogger stay review, Naver Place và website booking page; báo giá theo quy mô phòng và mục tiêu.",
+    faqs: [
+      {
+        q: "What does a Naver SEO agency for hotels do?",
+        a: "It helps hotels improve visibility and trust among Korean travelers through Naver Blog content, Korean reviews, Naver Place and SEO landing pages.",
+      },
+      {
+        q: "Is Naver useful for hotels in Vietnam?",
+        a: "Yes, especially for hotels, resorts and homestays that already serve Korean guests or want to increase Korean direct inquiries.",
+      },
+      {
+        q: "Can Naver SEO reduce OTA dependence?",
+        a: "It can support direct booking by building Korean-language trust assets and linking users to your official website or contact channels, but it should work alongside OTA rather than replace it overnight.",
+      },
+      {
+        q: "Do hotel blogger reviews require a stay?",
+        a: "For authentic hotel content, a real stay or site experience is usually recommended because Korean readers expect real photos and practical details.",
+      },
+      {
+        q: "Can this work for homestays and villas?",
+        a: "Yes. Boutique stays, homestays and villas can use the same Naver SEO approach with room, location and experience-led content.",
+      },
+    ],
+    related: [
+      { label: "Naver cho khách sạn", href: "/vi/naver-marketing/cho-khach-san", note: "Trang ngành tiếng Việt" },
+      { label: "Website khách sạn", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an", note: "Direct booking" },
+      { label: "Naver Marketing Agency Vietnam", href: "/vi/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
+      { label: "Google Maps cho khách sạn", href: "/vi/google-maps-marketing/cho-khach-san", note: "Local SEO" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/homestay.webp", alt: "Naver SEO agency for hotels in Vietnam" },
+    ],
+    schema: { serviceType: "Naver SEO agency for hotels", offerMinPriceVnd: 8000000 },
+  },
+
+  /* ───────────────────────── NAVER SEO LANDING — ATTRACT KOREAN TOURISTS ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/attract-korean-tourists-with-naver",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Attract Korean Tourists with Naver", href: "/vi/naver-marketing/attract-korean-tourists-with-naver" },
+    ],
+    primaryKeyword: "How to attract Korean tourists with Naver",
+    metaTitle: "How to Attract Korean Tourists with Naver | Vietnam",
+    metaDescription:
+      "Learn how Vietnam hotels, restaurants, spas and tours can attract Korean tourists with Naver Blog, Naver Place, Korean reviews, website SEO and clear booking paths.",
+    eyebrow: "Naver Strategy · Korean Tourists",
+    h1: "How to attract Korean tourists with Naver in Vietnam",
+    heroSub:
+      "Một trang chiến lược cho doanh nghiệp du lịch Việt Nam muốn biến Naver thành kênh khách Hàn: từ tìm kiếm, đọc review đến nhắn tin và đặt dịch vụ.",
+    heroCta: "Nhận tư vấn chiến lược Naver",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "To attract Korean tourists with Naver, you need to appear in the places they already trust: Naver Blog reviews, Naver Place results, Korean-language search content and clear booking pages. For Vietnam tourism businesses, the best strategy is not one isolated post, but a connected path from discovery to confidence to conversion.",
+    sections: [
+      {
+        heading: "Step 1: Understand Korean search behavior",
+        body:
+          "Korean travelers often search by destination, category and review intent. They want practical information: location, price, photos, opening hours, how to book and whether other Korean visitors had a good experience.",
+      },
+      {
+        heading: "Step 2: Build Naver trust assets",
+        bullets: [
+          "Use Naver Blog articles to explain real experiences in Korean.",
+          "Use Korean blogger reviews when you need third-party trust quickly.",
+          "Optimize Naver Place so location and business information are easier to understand.",
+          "Keep your website fast, indexable and ready to receive Korean traffic.",
+        ],
+      },
+      {
+        heading: "Step 3: Convert traffic into bookings",
+        body:
+          "Every Naver touchpoint should lead somewhere useful: a hotel room page, restaurant menu, spa treatment page, tour booking page, Zalo, WhatsApp or reservation form. Without a clear next step, visibility becomes wasted attention.",
+      },
+    ],
+    deliverables: {
+      title: "What I help you build",
+      items: [
+        "Korean tourist search intent map for your business",
+        "Naver Blog and blogger review campaign plan",
+        "Naver Place optimization checklist",
+        "Website landing page and booking path recommendations",
+        "Internal linking strategy between Naver, Google Maps and your site",
+        "Monthly content roadmap for Korean tourist demand",
+      ],
+    },
+    whoFor: [
+      "Vietnam tourism businesses targeting Korean visitors",
+      "Hotels, restaurants, spas and tours",
+      "Brands that need Korean reviews and clearer booking paths",
+      "Owners unsure how to start Naver marketing",
+    ],
+    process: [
+      { step: "Diagnose", detail: "Identify where Korean tourists currently discover or miss your business." },
+      { step: "Prioritize", detail: "Choose the fastest Naver actions by industry, location and budget." },
+      { step: "Build", detail: "Create Naver Blog, Place, review and website assets in the right order." },
+      { step: "Improve", detail: "Review inquiries, content topics and conversion paths monthly." },
+    ],
+    priceFrom: "Tư vấn miễn phí chọn hướng Naver",
+    priceNote:
+      "Sau tư vấn, có thể triển khai gói Naver Blogger Review, quản lý tài khoản Naver hoặc tối ưu Naver Place tùy mục tiêu.",
+    faqs: [
+      {
+        q: "How do I attract Korean tourists with Naver?",
+        a: "Start with Korean search intent, create Naver Blog review content, optimize Naver Place, use Korean bloggers when needed and connect all traffic to clear booking or contact pages.",
+      },
+      {
+        q: "Which business types benefit most from Naver?",
+        a: "Hotels, restaurants, spas, cafes, tours, cooking classes and local experiences that depend on Korean travelers usually benefit most.",
+      },
+      {
+        q: "Do I need a Korean-language website?",
+        a: "Not always at the start, but you need a trustworthy landing page and clear contact path. Korean content on Naver can bridge the language gap while your website supports conversion.",
+      },
+      {
+        q: "Should I start with Naver Blog or Naver Place?",
+        a: "If you need trust and reviews, start with Naver Blog or blogger reviews. If location discovery is weak, fix Naver Place early. Many businesses need both.",
+      },
+      {
+        q: "How fast can Naver bring Korean leads?",
+        a: "Blogger review campaigns can create faster trust signals, while owned Naver Blog and SEO work are better viewed as monthly assets that compound over time.",
+      },
+    ],
+    related: [
+      { label: "Naver hay Google cho khách Hàn", href: "/vi/naver-marketing/naver-vs-google", note: "So sánh kênh" },
+      { label: "Naver Blog Marketing Vietnam", href: "/vi/naver-marketing/naver-blog-marketing-vietnam", note: "Content strategy" },
+      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Review nhanh" },
+      { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an", note: "Theo khu vực" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "How to attract Korean tourists with Naver in Vietnam" },
+    ],
+    schema: { serviceType: "Naver strategy for attracting Korean tourists" },
+  },
+
+  /* ───────────────────────── NAVER SEO LANDING — MAP RESTAURANTS ───────────────────────── */
+  {
+    path: "/vi/naver-marketing/naver-map-optimization-restaurants-vietnam",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "Naver Map Optimization Restaurants Vietnam", href: "/vi/naver-marketing/naver-map-optimization-restaurants-vietnam" },
+    ],
+    primaryKeyword: "Naver Map optimization for restaurants in Vietnam",
+    metaTitle: "Naver Map Optimization for Restaurants in Vietnam",
+    metaDescription:
+      "Naver Map optimization for restaurants in Vietnam targeting Korean diners: Naver Place setup, Korean menu signals, blog reviews, map trust and Google Maps alignment.",
+    eyebrow: "Naver Map · Restaurants",
+    h1: "Naver Map optimization for restaurants in Vietnam",
+    heroSub:
+      "Tối ưu Naver Place/Naver Map cho nhà hàng Việt Nam muốn được khách Hàn tìm thấy, hiểu menu và chọn đến ăn khi du lịch.",
+    heroCta: "Tư vấn Naver Map nhà hàng",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "For Korean diners in Vietnam, maps and blog reviews work together. Naver Map optimization for restaurants means making your place easier to understand in Korean: location, category, opening hours, menu highlights, photos, review content and links that help guests decide before they arrive.",
+    sections: [
+      {
+        heading: "What Korean diners need before choosing a restaurant",
+        bullets: [
+          "Clear location and opening hours on a trusted map platform.",
+          "Food photos, menu highlights and signature dishes they can understand.",
+          "Korean-language blog reviews showing real dining experiences.",
+          "Consistent information between Naver, website and Google Maps.",
+        ],
+      },
+      {
+        heading: "Naver Map, Naver Place and Naver Blog",
+        body:
+          "For restaurants, Naver Map discovery is closely connected with Naver Place information and Naver Blog content. A map profile without Korean context is weak; a blog review without accurate location details also loses conversion. The best setup connects both.",
+      },
+      {
+        heading: "Restaurant optimization priorities",
+        body:
+          "The priority is to make the restaurant easy to trust and easy to visit: correct location, category clarity, Korean-friendly dish descriptions, strong photos, review articles and links to menu, booking, Zalo, WhatsApp or Google Maps.",
+      },
+    ],
+    deliverables: {
+      title: "Restaurant Naver Map optimization scope",
+      items: [
+        "Naver Place/Naver Map information audit",
+        "Restaurant category, location and Korean intent checklist",
+        "Menu and signature dish messaging for Korean diners",
+        "Naver Blog review plan connected to map discovery",
+        "Photo and content checklist for restaurant trust",
+        "Alignment with website menu and Google Maps profile",
+      ],
+    },
+    whoFor: [
+      "Restaurants and cafes serving Korean tourists",
+      "Vietnamese food, seafood, BBQ and local specialty restaurants",
+      "New restaurants needing Korean visibility",
+      "Restaurants in Hội An, Đà Nẵng and Vietnam tourism areas",
+    ],
+    process: [
+      { step: "Audit", detail: "Check existing Naver, Google Maps, website, menu and Korean review signals." },
+      { step: "Optimize", detail: "Improve place information, content direction, photos and Korean-friendly messaging." },
+      { step: "Review", detail: "Add Naver Blog or blogger review content to support map discovery." },
+      { step: "Align", detail: "Connect Naver Map, website menu, Google Maps and contact/booking channels." },
+    ],
+    priceFrom: "Từ 8.000.000đ / 4 bài review",
+    priceNote:
+      "Có thể triển khai riêng phần Naver Place/Naver Map hoặc kết hợp Naver Blogger Review cho nhà hàng.",
+    faqs: [
+      {
+        q: "What is Naver Map optimization for restaurants?",
+        a: "It is the process of improving restaurant visibility and trust for Korean users through Naver Place information, map signals, Korean content, blog reviews and consistent links.",
+      },
+      {
+        q: "Is Naver Map the same as Naver Place?",
+        a: "They are closely connected. Naver Place is the business profile information, while Naver Map is how users discover and navigate to places. Restaurants should optimize both together.",
+      },
+      {
+        q: "Do restaurants in Vietnam need Naver if they already have Google Maps?",
+        a: "If Korean tourists are an important customer group, yes. Google Maps is still important, but many Korean diners use Naver content and map behavior before choosing a restaurant.",
+      },
+      {
+        q: "Can Naver Blog reviews help Naver Map performance?",
+        a: "They can support trust and discovery because blog reviews give Korean users real dining context, photos and reasons to visit the restaurant.",
+      },
+      {
+        q: "What should a restaurant prepare?",
+        a: "Prepare menu, signature dishes, opening hours, address, high-quality photos, booking/contact links and any Korean-friendly details such as spice level or dietary notes.",
+      },
+    ],
+    related: [
+      { label: "Naver cho nhà hàng", href: "/vi/naver-marketing/cho-nha-hang", note: "Trang ngành tiếng Việt" },
+      { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Place optimization" },
+      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Menu & đặt bàn" },
+      { label: "Google Maps cho nhà hàng", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Local SEO" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Naver Map optimization for restaurants in Vietnam" },
+    ],
+    schema: { serviceType: "Naver Map optimization for restaurants in Vietnam", offerMinPriceVnd: 8000000 },
   },
 ];
 
