@@ -18,14 +18,29 @@ const PATH = "/vi/dich-vu";
 const WEBSITE_SPOKES = [
   { label: "Website khách sạn & homestay Hội An", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an" },
   { label: "Website tour du lịch Hội An", href: "/vi/thiet-ke-website/website-tour-du-lich-hoi-an" },
+  { label: "Website café & bar Hội An", href: "/vi/thiet-ke-website/website-cafe-bar-hoi-an" },
   { label: "Website đa ngôn ngữ", href: "/vi/thiet-ke-website/website-da-ngon-ngu" },
   { label: "Website booking online", href: "/vi/thiet-ke-website/website-booking-online" },
+  { label: "Landing page chiến dịch", href: "/vi/thiet-ke-website/landing-page-chien-dich" },
 ];
 const WEBSITE_ARTICLES = [
   { label: "Website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi" },
   { label: "Website đa ngôn ngữ cho khách quốc tế", href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te" },
-  { label: "Nên làm website hay chỉ dùng OTA/Facebook", href: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook" },
-  { label: "Website khách sạn khác gì website spa", href: "/vi/blog/website-khach-san-khac-gi-website-spa" },
+  { label: "Landing page là gì, khi nào cần", href: "/vi/blog/landing-page-la-gi-khi-nao-doanh-nghiep-can" },
+  { label: "Bảo trì website doanh nghiệp cần làm gì", href: "/vi/blog/bao-tri-website-doanh-nghiep-can-lam-gi" },
+  { label: "Website tích hợp Google Maps tăng khách", href: "/vi/blog/website-tich-hop-google-maps-de-tang-khach" },
+];
+const SOCIAL_SPOKES = [
+  { label: "Threads Growth — phát triển kênh Threads", href: "/vi/social-marketing/threads-growth" },
+  { label: "Hỗ trợ xác minh Fanpage / Meta Verified", href: "/vi/social-marketing/xac-minh-fanpage" },
+  { label: "Social Growth Package", href: "/vi/social-marketing/tang-truong-kenh" },
+  { label: "Hỗ trợ khôi phục tài khoản Facebook", href: "/vi/social-marketing/khoi-phuc-tai-khoan-facebook" },
+];
+const SOCIAL_ARTICLES = [
+  { label: "Threads là gì, có nên đầu tư", href: "/vi/blog/threads-la-gi-doanh-nghiep-co-nen-dau-tu" },
+  { label: "Cách xây kênh Threads cho doanh nghiệp", href: "/vi/blog/cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu" },
+  { label: "Threads vs Instagram vs Facebook", href: "/vi/blog/threads-vs-instagram-facebook-nen-chon-gi" },
+  { label: "Social proof là gì", href: "/vi/blog/social-proof-la-gi" },
 ];
 const NAVER_SPOKES = [
   { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog" },
@@ -218,6 +233,48 @@ export default async function Page({ params }: Params) {
               <p className="label-mono text-blue-600">Bài hỗ trợ intent</p>
               <div className="mt-4 flex flex-col gap-3">
                 {MAPS_ARTICLES.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="group flex items-center justify-between rounded-card border border-line bg-white px-5 py-4 shadow-soft transition-all hover:border-blue-200"
+                  >
+                    <span className="font-medium text-ink group-hover:text-blue-700">{item.label}</span>
+                    <IconArrowRight className="h-4 w-4 text-blue-700 transition-transform duration-200 group-hover:translate-x-1" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-line bg-white py-16 sm:py-20">
+        <Container>
+          <SectionHeader
+            eyebrow="Social"
+            title="Mở rộng cụm Social Marketing"
+            sub="Nối trực tiếp sang spoke Threads Growth mới và bài hỗ trợ về Threads, Fanpage, social growth — tăng tín hiệu internal linking cho cluster Social."
+          />
+          <div className="mt-10 grid gap-10 lg:grid-cols-2">
+            <div>
+              <p className="label-mono text-blue-600">Spoke dịch vụ</p>
+              <div className="mt-4 flex flex-col gap-3">
+                {SOCIAL_SPOKES.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="group flex items-center justify-between rounded-card border border-line bg-white px-5 py-4 shadow-soft transition-all hover:border-blue-200"
+                  >
+                    <span className="font-medium text-ink group-hover:text-blue-700">{item.label}</span>
+                    <IconArrowRight className="h-4 w-4 text-blue-700 transition-transform duration-200 group-hover:translate-x-1" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="label-mono text-blue-600">Bài hỗ trợ intent</p>
+              <div className="mt-4 flex flex-col gap-3">
+                {SOCIAL_ARTICLES.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}

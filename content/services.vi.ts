@@ -4764,6 +4764,345 @@ export const SERVICES: Service[] = [
     ],
     schema: { serviceType: "Naver Map optimization for restaurants in Vietnam", offerMinPriceVnd: 8000000 },
   },
+
+  /* ───────────────────────── SOCIAL SPOKE — THREADS GROWTH ───────────────────────── */
+  {
+    path: "/vi/social-marketing/threads-growth",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Social Marketing", href: "/vi/social-marketing" },
+      { label: "Threads Growth", href: "/vi/social-marketing/threads-growth" },
+    ],
+    primaryKeyword: "phát triển kênh Threads cho doanh nghiệp",
+    metaTitle: "Threads Growth — phát triển kênh Threads cho doanh nghiệp | Công Thiên Agency",
+    metaDescription:
+      "Dịch vụ phát triển kênh Threads cho doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng: nội dung thật, định vị thương hiệu, kết hợp Instagram. Kết quả phụ thuộc thuật toán Meta, không cam kết viral.",
+    eyebrow: "Social · Threads Growth",
+    h1: "Threads Growth — phát triển kênh Threads cho doanh nghiệp dịch vụ – du lịch",
+    heroSub:
+      "Threads là kênh social mới của Meta, kết nối trực tiếp với Instagram. Tôi giúp doanh nghiệp Hội An – Đà Nẵng khởi động và phát triển kênh Threads bằng nội dung thật, định vị thương hiệu sớm trước khi nền tảng bão hòa.",
+    heroCta: "Nhận tư vấn Threads qua Zalo",
+    intro:
+      "Threads là mạng xã hội text-first do Meta phát hành tháng 7/2023, tích hợp đăng nhập bằng Instagram và đang được Adam Mosseri (CEO Instagram) định vị là đối thủ trực tiếp của X (trước đây là Twitter). Với doanh nghiệp dịch vụ – du lịch, Threads mở ra cơ hội tiếp cận tệp khách Gen Z và khách quốc tế ở giai đoạn early-mover, khi cạnh tranh từ khoá còn thấp. Congthienagency.com hỗ trợ bạn xây kênh Threads bài bản — nội dung thật, định vị thương hiệu rõ ràng — thay vì chạy theo trend ngắn hạn.",
+    sections: [
+      {
+        heading: "Vì sao doanh nghiệp nên đầu tư Threads ngay bây giờ?",
+        bullets: [
+          "Threads vượt 100 triệu user trong 5 ngày đầu (theo Meta công bố) và tiếp tục tăng trưởng — tệp khách Gen Z và khách quốc tế đang dịch chuyển sang đây.",
+          "Cạnh tranh nội dung Việt còn thấp: dễ chiếm “share of voice” trong ngành du lịch Hội An – Đà Nẵng.",
+          "Tích hợp sâu với Instagram: 1 tài khoản, 2 kênh — tận dụng follower Instagram hiện có để khởi động kênh Threads.",
+          "Định dạng text-first phù hợp kể chuyện thương hiệu — điều mà Reels và TikTok khó truyền tải.",
+        ],
+      },
+      {
+        heading: "Dịch vụ Threads Growth gồm những gì?",
+        body:
+          "Tôi rà soát hiện trạng tài khoản Instagram liên kết, lên định hướng nội dung Threads phù hợp ngành nghề (spa, nhà hàng, cooking class, khách sạn, tour) và triển khai đăng định kỳ. Nội dung tập trung kể chuyện thương hiệu, chia sẻ behind-the-scenes, tương tác với cộng đồng — không spam quảng cáo. Mục tiêu là một kênh đáng tin giúp khách tăng niềm tin trước khi booking, không phải chỉ số follower ảo.",
+      },
+      {
+        heading: "Cách tiếp cận bền vững cho Threads",
+        body:
+          "Khác với Facebook hay Instagram đã bão hòa, Threads thưởng cho nội dung có cá tính, tương tác chân thật và đăng đều. Tôi xây kế hoạch nội dung 30–60 ngày, kết hợp 3 dạng bài: kể chuyện thương hiệu (40%), giá trị thực tế cho khách (40%) và tương tác cộng đồng (20%). Mọi bài đều dùng tài khoản chính chủ, không buff, không bot.",
+      },
+      {
+        heading: "Kết hợp Threads với hệ thống marketing hiện có",
+        bodyParts: [
+          { type: "text", text: "Threads hiệu quả nhất khi đi cùng " },
+          { type: "link", text: "Fanpage chuyên nghiệp", href: "/vi/social-marketing/xac-minh-fanpage" },
+          { type: "text", text: ", " },
+          { type: "link", text: "Social Growth Package", href: "/vi/social-marketing/tang-truong-kenh" },
+          { type: "text", text: " và website doanh nghiệp đồng bộ thương hiệu. Tôi có thể triển khai trọn gói để mọi điểm chạm — Threads, Instagram, Fanpage, Google Maps, website — đều củng cố niềm tin khách trước khi đặt dịch vụ." },
+        ],
+      },
+      {
+        heading: "Minh bạch về kỳ vọng",
+        body:
+          "Threads vẫn là nền tảng mới, thuật toán Meta thay đổi liên tục và lượt tiếp cận từng bài không ổn định như Instagram. Tôi không hứa “triệu view” hay “viral”. Cam kết của tôi là chiến lược nội dung đúng định vị, tài khoản an toàn và sự nhất quán dài hạn — vì đó là cách bền vững để kênh sống lâu trên bất kỳ mạng xã hội nào.",
+      },
+    ],
+    whoFor: [
+      "Spa, nhà hàng, khách sạn, cooking class, tour tại Hội An – Đà Nẵng muốn đón đầu kênh Threads",
+      "Doanh nghiệp đã có Instagram, muốn mở rộng sang Threads tận dụng follower hiện có",
+      "Thương hiệu tập trung khách Gen Z và khách quốc tế",
+      "Doanh nghiệp muốn định vị thương hiệu sớm khi Threads chưa bão hòa",
+    ],
+    process: [
+      { step: "Đánh giá", detail: "Rà soát tài khoản Instagram liên kết và định vị thương hiệu hiện tại." },
+      { step: "Kế hoạch", detail: "Xây kế hoạch nội dung Threads 30–60 ngày phù hợp ngành nghề." },
+      { step: "Triển khai", detail: "Đăng nội dung định kỳ, tương tác cộng đồng, theo dõi engagement thật." },
+      { step: "Tối ưu", detail: "Báo cáo hàng tháng và điều chỉnh nội dung theo phản hồi thực tế." },
+    ],
+    priceFrom: "Từ 4.000.000đ / tháng",
+    priceNote: "Báo giá tuỳ tần suất đăng và mức độ kết hợp Instagram. Kết quả tiếp cận phụ thuộc thuật toán Meta, không cam kết viral.",
+    faqs: [
+      {
+        q: "Threads có thật sự đáng đầu tư cho doanh nghiệp tại Việt Nam không?",
+        a: "Có, nếu bạn nhắm tệp Gen Z hoặc khách quốc tế. Threads đã vượt 100 triệu user toàn cầu và tích hợp sâu với Instagram, nên doanh nghiệp đã có Instagram chỉ tốn thêm chi phí nội dung, không cần xây kênh từ con số 0.",
+      },
+      {
+        q: "Cần đã có Instagram mới làm Threads được không?",
+        a: "Phải có tài khoản Instagram, vì Threads dùng chung tài khoản. Nếu chưa có Instagram, tôi sẽ thiết lập đồng thời cả hai trong gói triển khai.",
+      },
+      {
+        q: "Dịch vụ có cam kết bao nhiêu follower hay view không?",
+        a: "Không. Threads thưởng cho nội dung chân thật và đăng đều, nhưng thuật toán Meta thay đổi liên tục nên tôi không hứa con số cụ thể. Cam kết của tôi là chiến lược nội dung đúng và tài khoản an toàn.",
+      },
+      {
+        q: "Có dùng buff follow / bot không?",
+        a: "Không. Toàn bộ nội dung và tương tác đều bằng tài khoản chính chủ. Buff trên Threads rất rủi ro vì Meta phát hiện và hạn chế tài khoản nhanh chóng.",
+      },
+      {
+        q: "Chi phí bắt đầu từ bao nhiêu?",
+        a: "Từ 4.000.000đ/tháng cho gói nội dung định kỳ. Báo giá cuối tuỳ tần suất đăng (3–7 bài/tuần) và mức độ kết hợp Instagram.",
+      },
+      {
+        q: "Tôi có thể tự làm Threads thay vì thuê agency không?",
+        a: "Hoàn toàn có thể, đặc biệt nếu chủ doanh nghiệp am hiểu thương hiệu và có thời gian. Dịch vụ phù hợp với bạn nếu cần đăng đều, không có nhân sự content riêng, hoặc muốn lộ trình bài bản từ ngày đầu.",
+      },
+    ],
+    related: [
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Trang dịch vụ tổng quan" },
+      { label: "Social Growth Package", href: "/vi/social-marketing/tang-truong-kenh", note: "Dịch vụ liên quan" },
+      { label: "Hỗ trợ xác minh Fanpage", href: "/vi/social-marketing/xac-minh-fanpage", note: "Dịch vụ liên quan" },
+      { label: "Threads là gì, doanh nghiệp có nên đầu tư?", href: "/vi/blog/threads-la-gi-doanh-nghiep-co-nen-dau-tu", note: "Blog" },
+      { label: "Cách xây kênh Threads cho doanh nghiệp dịch vụ", href: "/vi/blog/cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/threads-growth.webp", alt: "Phát triển kênh Threads cho doanh nghiệp dịch vụ du lịch" },
+    ],
+    schema: { serviceType: "Threads Growth Service", offerMinPriceVnd: 4000000 },
+  },
+
+
+  /* ───────────────────────── WEBSITE SPOKE — LANDING PAGE CHIẾN DỊCH ───────────────────────── */
+  {
+    path: "/vi/thiet-ke-website/landing-page-chien-dich",
+    cluster: "website",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Thiết kế website", href: "/vi/thiet-ke-website" },
+      { label: "Landing page chiến dịch", href: "/vi/thiet-ke-website/landing-page-chien-dich" },
+    ],
+    primaryKeyword: "thiết kế landing page chiến dịch",
+    metaTitle: "Thiết kế landing page chiến dịch chuyển đổi cao | Công Thiên Agency",
+    metaDescription:
+      "Thiết kế landing page cho chiến dịch quảng cáo, ra mắt sản phẩm, sự kiện mùa cao điểm tại Hội An – Đà Nẵng. Tốc độ tải dưới 2 giây, tối ưu chuyển đổi, không cần CMS phức tạp.",
+    eyebrow: "Website · Landing page",
+    h1: "Thiết kế landing page chiến dịch — tối ưu chuyển đổi, không lãng phí ngân sách ads",
+    heroSub:
+      "Landing page là vũ khí chuyên dụng cho chiến dịch quảng cáo và ra mắt mùa cao điểm. Tôi xây trang đơn nhanh dưới 2 giây, mỗi yếu tố đều có lý do — để mỗi đồng ads của bạn không chảy vào một website chậm và rối.",
+    heroCta: "Nhận tư vấn landing page qua Zalo",
+    intro:
+      "Một website đầy đủ phù hợp với doanh nghiệp dài hạn, nhưng landing page là lựa chọn đúng cho chiến dịch ngắn: ra mắt tour mới, ưu đãi mùa cao điểm, khuyến mãi Tết, sự kiện booking. Congthienagency.com thiết kế landing page độc lập, tốc độ cao, đo lường được, để mỗi đồng ngân sách quảng cáo chạy về Google Ads, Meta Ads hay Naver đều có cơ hội chuyển đổi tốt nhất.",
+    sections: [
+      {
+        heading: "Khi nào doanh nghiệp cần landing page riêng?",
+        bullets: [
+          "Chạy quảng cáo Google Ads, Meta Ads, Naver — cần trang đáp đúng từ khoá tìm kiếm.",
+          "Ra mắt dịch vụ mới, tour mới, gói combo mùa cao điểm cần test thị trường nhanh.",
+          "Sự kiện đơn lẻ: workshop, retreat, cooking class theo lứa, không cần CMS dài hạn.",
+          "Cần chuyển đổi cao hơn (booking, để lại số) hơn là giới thiệu chung chung.",
+        ],
+      },
+      {
+        heading: "Landing page khác website thông thường ở điểm nào?",
+        body:
+          "Website có nhiều trang, nhiều menu, phục vụ nhiều mục đích. Landing page chỉ có một mục tiêu duy nhất — khách đặt lịch, để lại số điện thoại hoặc thanh toán. Mọi chữ, mọi nút, mọi hình ảnh đều phục vụ mục tiêu đó. Không có menu đi lạc, không có blog, không có link ra ngoài.",
+      },
+      {
+        heading: "Cấu trúc landing page tôi áp dụng",
+        bodyParts: [
+          { type: "text", text: "Tôi xây landing page theo cấu trúc đã chứng minh hiệu quả: hero section (đề xuất giá trị + CTA), social proof, chi tiết gói, FAQ giải đáp lo lắng, CTA cuối. Trang đạt PageSpeed 95+ trên mobile, có schema Offer/Event để xuất hiện rich result trên Google. Tham khảo ví dụ thực tế tại " },
+          { type: "link", text: "dự án Serena Retreat", href: "/vi/du-an/serena-retreat" },
+          { type: "text", text: " — một spa có cả website đầy đủ lẫn landing page mùa cao điểm." },
+        ],
+      },
+      {
+        heading: "Kết hợp landing page với hệ thống marketing hiện có",
+        bodyParts: [
+          { type: "text", text: "Landing page hiệu quả nhất khi đi cùng " },
+          { type: "link", text: "website chính của doanh nghiệp", href: "/vi/thiet-ke-website" },
+          { type: "text", text: ", " },
+          { type: "link", text: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
+          { type: "text", text: " và Fanpage. Khách thấy quảng cáo → vào landing page → quyết định nhanh → nếu cần tìm hiểu thêm có thể về website chính. Tôi có thể triển khai trọn gói." },
+        ],
+      },
+      {
+        heading: "Minh bạch về kết quả",
+        body:
+          "Tôi không cam kết tỉ lệ chuyển đổi cụ thể — vì còn phụ thuộc chất lượng ads, giá dịch vụ, mùa và đối thủ. Cam kết của tôi là kỹ thuật chuẩn: tốc độ tải <2s, schema đúng, đo lường đúng qua Google Tag Manager / Meta Pixel, A/B test dễ. Phần còn lại là chất lượng chiến dịch của bạn.",
+      },
+    ],
+    whoFor: [
+      "Doanh nghiệp chạy Google Ads, Meta Ads, Naver Ads tại Hội An – Đà Nẵng",
+      "Spa, nhà hàng, cooking class ra mắt tour/khoá học mới",
+      "Khách sạn, homestay cần trang riêng cho ưu đãi mùa cao điểm",
+      "Sự kiện đơn lẻ: workshop, retreat, hội thảo",
+    ],
+    process: [
+      { step: "Brief", detail: "Trao đổi mục tiêu chiến dịch, tệp khách và ngân sách ads." },
+      { step: "Wireframe", detail: "Phác thảo cấu trúc trang và message chính trong 2 ngày." },
+      { step: "Thiết kế", detail: "Giao diện riêng theo thương hiệu và tốc độ tải." },
+      { step: "Bàn giao", detail: "Tích hợp Tag Manager, Pixel, schema; bàn giao truy cập đầy đủ." },
+    ],
+    priceFrom: "Từ 6.000.000đ / landing page",
+    priceNote: "Báo giá tuỳ độ phức tạp tích hợp (form booking, thanh toán, tracking). Tốc độ tải <2s là cam kết kỹ thuật.",
+    faqs: [
+      {
+        q: "Landing page có thay được website chính không?",
+        a: "Không. Landing page chỉ phục vụ một mục tiêu (chuyển đổi từ ads), không thay thế website đầy đủ. Doanh nghiệp dài hạn vẫn cần cả hai.",
+      },
+      {
+        q: "Bao lâu thì hoàn thành một landing page?",
+        a: "Trung bình 7–10 ngày từ lúc chốt brief đến lúc live. Nếu tích hợp thanh toán hoặc form phức tạp, có thể 12–14 ngày.",
+      },
+      {
+        q: "Có hỗ trợ A/B test không?",
+        a: "Có. Tôi tích hợp Google Optimize hoặc giải pháp tương tự để bạn test 2 phiên bản tiêu đề/CTA/hình ảnh, ra quyết định dựa trên dữ liệu.",
+      },
+      {
+        q: "Tốc độ <2 giây có ý nghĩa gì với ads?",
+        a: "Mỗi giây tăng thêm có thể làm tỉ lệ thoát tăng 10–30%. Trang nhanh giảm chi phí mỗi chuyển đổi và tăng điểm chất lượng quảng cáo Google.",
+      },
+      {
+        q: "Sau chiến dịch có thể tái sử dụng landing page không?",
+        a: "Có. Landing page được code module hoá, bạn có thể nhân bản cho chiến dịch mới, đổi nội dung và ảnh trong vài giờ.",
+      },
+      {
+        q: "Tôi có thể tự chỉnh sửa nội dung không?",
+        a: "Có. Bạn được bàn giao bảng quản trị nội dung đơn giản để đổi text, ảnh và CTA mà không cần code.",
+      },
+    ],
+    related: [
+      { label: "Thiết kế website", href: "/vi/thiet-ke-website", note: "Trang dịch vụ trụ cột" },
+      { label: "Website booking online", href: "/vi/thiet-ke-website/website-booking-online", note: "Dịch vụ liên quan" },
+      { label: "Landing page là gì, khi nào cần", href: "/vi/blog/landing-page-la-gi-khi-nao-doanh-nghiep-can", note: "Blog" },
+      { label: "PageSpeed SEO 100/100 nghĩa là gì", href: "/vi/blog/pagespeed-seo-100-nghia-la-gi", note: "Blog" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/landing-page-chien-dich.webp", alt: "Thiết kế landing page chiến dịch tối ưu chuyển đổi" },
+    ],
+    schema: { serviceType: "Landing Page Design", offerMinPriceVnd: 6000000 },
+  },
+
+  /* ───────────────────────── WEBSITE SPOKE — WEBSITE CAFE/BAR HỘI AN ───────────────────────── */
+  {
+    path: "/vi/thiet-ke-website/website-cafe-bar-hoi-an",
+    cluster: "website",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Thiết kế website", href: "/vi/thiet-ke-website" },
+      { label: "Website café & bar Hội An", href: "/vi/thiet-ke-website/website-cafe-bar-hoi-an" },
+    ],
+    primaryKeyword: "thiết kế website café bar Hội An",
+    metaTitle: "Thiết kế website café & bar Hội An concept đẹp | Công Thiên Agency",
+    metaDescription:
+      "Thiết kế website cho café concept, bar, rooftop tại Hội An – Đà Nẵng. Bộ ảnh không gian, menu PDF nhanh, đặt bàn online, tích hợp Google Maps và Instagram.",
+    eyebrow: "Website · Café & Bar",
+    h1: "Thiết kế website café & bar tại Hội An — bộ mặt số cho concept thật",
+    heroSub:
+      "Khách đến café không vì menu, mà vì không khí và câu chuyện. Tôi xây website giúp khách cảm nhận được điều đó trước khi đẩy cửa bước vào — kết hợp ảnh chất lượng cao, đặt bàn online và liên kết Google Maps.",
+    heroCta: "Nhận tư vấn website café qua Zalo",
+    intro:
+      "Café concept và bar tại Hội An – Đà Nẵng phụ thuộc rất nhiều vào không khí: ánh sáng, decor, playlist, chỗ ngồi yêu thích. Một website tốt không chỉ liệt kê menu — nó truyền tải được \"vibe\" để khách Hàn, khách phương Tây và khách Việt thấy ngay đây là chỗ họ muốn đến. Congthienagency.com thiết kế website café với bộ ảnh chuyên nghiệp, menu PDF tải nhanh và tính năng đặt bàn online — tất cả tích hợp Google Maps và Instagram.",
+    sections: [
+      {
+        heading: "Vì sao café concept cần website riêng?",
+        bullets: [
+          "Khách quốc tế tin website chính chủ hơn Fanpage — đặc biệt khách Hàn, Nhật, châu Âu.",
+          "Menu cập nhật nhanh, không bị giới hạn font/định dạng như khi đăng ảnh Facebook.",
+          "Tích hợp đặt bàn online — quan trọng vào weekend và mùa cao điểm.",
+          "Website mạnh hỗ trợ Google Maps lên top khi khách tìm \"café Hội An\".",
+        ],
+      },
+      {
+        heading: "Mục đích duy nhất: làm khách quyết định đến trong 90 giây",
+        body:
+          "Khách café không đọc trang giới thiệu dài — họ scroll nhanh qua ảnh, đọc menu, kiểm tra giờ mở cửa và bấm chỉ đường. Tôi thiết kế website tối ưu cho hành vi đó: ảnh hero load instant, menu accessible trong 2 click, nút \"Chỉ đường\" và \"Đặt bàn\" luôn nổi.",
+      },
+      {
+        heading: "Bộ tính năng tiêu chuẩn cho café & bar",
+        bullets: [
+          "Trang chủ với bộ ảnh không gian chất lượng cao và caption gợi cảm xúc.",
+          "Trang menu có ảnh từng món, giá và mô tả ngắn — hỗ trợ song ngữ Việt – Anh.",
+          "Tính năng đặt bàn online tích hợp lịch (có thể kết nối Google Calendar).",
+          "Trang sự kiện / live music / workshop cho café concept.",
+          "Tích hợp Instagram feed để khách thấy không khí mới nhất.",
+          "Link Google Maps, Zalo, số điện thoại — bấm là gọi/chỉ đường ngay.",
+        ],
+      },
+      {
+        heading: "Kết hợp với Google Maps và Social",
+        bodyParts: [
+          { type: "text", text: "Website café hiệu quả nhất khi đi cùng " },
+          { type: "link", text: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
+          { type: "text", text: " và " },
+          { type: "link", text: "Social Marketing", href: "/vi/social-marketing" },
+          { type: "text", text: " — vì khách thường tìm trên Google Maps trước, vào Instagram check vibe, rồi mới vào website xem menu chi tiết. Ba kênh cùng đồng bộ thương hiệu tạo hiệu ứng kép." },
+        ],
+      },
+      {
+        heading: "Minh bạch về thời gian và chi phí",
+        body:
+          "Một website café tốt cần ít nhất 4–6 tuần: 1 tuần brief, 1 tuần chụp ảnh, 2–3 tuần thiết kế và phát triển, 1 tuần test và bàn giao. Tôi không nhận làm \"gấp 7 ngày\" vì chất lượng ảnh và copywriting cần thời gian. Báo giá rõ ràng trước khi bắt đầu, không phát sinh.",
+      },
+    ],
+    whoFor: [
+      "Café concept, café specialty tại Hội An – Đà Nẵng",
+      "Bar, rooftop, cocktail lounge phục vụ khách quốc tế",
+      "Café kết hợp cooking class, workshop, sự kiện",
+      "Chuỗi 2–3 chi nhánh café cần website thương hiệu chung",
+    ],
+    process: [
+      { step: "Brief", detail: "Khảo sát concept, tệp khách, mục tiêu kinh doanh." },
+      { step: "Chụp ảnh", detail: "Đề xuất chụp ảnh chuyên nghiệp (có thể giới thiệu studio đối tác)." },
+      { step: "Thiết kế", detail: "Giao diện riêng truyền tải vibe quán." },
+      { step: "Bàn giao", detail: "Đặt bàn online, Google Maps, Instagram feed, hướng dẫn quản trị." },
+    ],
+    priceFrom: "Từ 12.000.000đ / website",
+    priceNote: "Giá không gồm chi phí chụp ảnh chuyên nghiệp (nếu cần). Báo giá cuối tuỳ số trang menu và tính năng đặt bàn.",
+    faqs: [
+      {
+        q: "Café nhỏ có cần website không hay chỉ Fanpage là đủ?",
+        a: "Nếu khách chính là người Việt đi qua đường thì Fanpage + Google Maps đủ. Nếu phục vụ khách quốc tế thì cần website — vì khách Hàn, Nhật, châu Âu kiểm tra website trước khi quyết định ghé.",
+      },
+      {
+        q: "Có cần đặt bàn online cho café không?",
+        a: "Không bắt buộc, nhưng rất nên có nếu café đông vào weekend hoặc có khu vực hot (rooftop, bar). Đặt bàn online giảm tỉ lệ khách bỏ đi vì hết chỗ.",
+      },
+      {
+        q: "Website có hiển thị menu tiếng Hàn được không?",
+        a: "Có. Tôi hỗ trợ đa ngôn ngữ (Việt, Anh, Hàn) với menu PDF song song hoặc menu HTML chuyển ngữ. Tham khảo thêm dịch vụ website đa ngôn ngữ.",
+      },
+      {
+        q: "Có giúp chụp ảnh quán không?",
+        a: "Tôi không trực tiếp chụp, nhưng giới thiệu studio đối tác chuyên về food/space tại Hội An. Bạn cũng có thể dùng ảnh sẵn có nếu chất lượng đủ tốt.",
+      },
+      {
+        q: "Có tích hợp Google Maps để khách chỉ đường được không?",
+        a: "Có. Mọi website đều có nút \"Chỉ đường\" mở trực tiếp Google Maps, kèm địa chỉ, giờ mở cửa, số điện thoại — đồng bộ với Google Business Profile của quán.",
+      },
+      {
+        q: "Sau khi bàn giao tôi có thể tự đổi menu không?",
+        a: "Có. Bạn được bàn giao bảng quản trị đơn giản để đổi món, giá, ảnh menu mà không cần code. Hướng dẫn video kèm theo.",
+      },
+    ],
+    related: [
+      { label: "Thiết kế website", href: "/vi/thiet-ke-website", note: "Trang dịch vụ trụ cột" },
+      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Dịch vụ liên quan" },
+      { label: "Website đa ngôn ngữ", href: "/vi/thiet-ke-website/website-da-ngon-ngu", note: "Dịch vụ liên quan" },
+      { label: "Google Maps cho nhà hàng", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Dịch vụ liên quan" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/website-cafe-bar-hoi-an.webp", alt: "Thiết kế website café concept tại Hội An Đà Nẵng" },
+    ],
+    schema: { serviceType: "Website Design for Cafe and Bar", offerMinPriceVnd: 12000000 },
+  },
+
 ];
 
 export function getService(path: string): Service | undefined {

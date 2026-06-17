@@ -38,7 +38,7 @@ import { HOME_EN } from "@/content/pages.en";
 import { PROJECTS } from "@/content/projects.vi";
 import { GLOBAL_FAQS } from "@/content/faqs.vi";
 import { PRICING_GROUPS } from "@/content/pricing.vi";
-import { graphDocument, faqGraph, webPageGraph } from "@/lib/schema";
+import { graphDocument, faqGraph, webPageGraph, organizationGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import { SITE } from "@/content/site";
 import { resolveAbsoluteImageUrls, resolvePrimaryImage } from "@/lib/siteIndex";
@@ -196,6 +196,7 @@ function HomeVI() {
     <Shell locale="vi" alternateKey="home">
       <JsonLd
         data={graphDocument([
+          ...organizationGraph(),
           webPageGraph({
             name: c.metaTitle,
             description: c.metaDescription,
@@ -635,6 +636,7 @@ function HomeEN() {
     <Shell locale="en" alternateKey="home">
       <JsonLd
         data={graphDocument([
+          ...organizationGraph(),
           webPageGraph({
             name: c.metaTitle,
             description: c.metaDescription,

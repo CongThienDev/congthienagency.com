@@ -48,6 +48,7 @@ export const BLOG_HUB = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "tai-sao-doanh-nghiep-can-website-rieng",
+    heroImage: { src: "/images/blog/tai-sao-doanh-nghiep-can-website-rieng.webp", alt: "Doanh nghiệp du lịch quản lý website riêng trên laptop" },
     path: "/vi/blog/tai-sao-doanh-nghiep-can-website-rieng",
     cluster: "website",
     title: "Tại sao doanh nghiệp du lịch cần website riêng, không chỉ Facebook?",
@@ -107,6 +108,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-spa-hoi-an-can-gi",
+    heroImage: { src: "/images/blog/website-spa-hoi-an-can-gi.webp", alt: "Không gian spa thư giãn minh hoạ cho website spa Hội An" },
     path: "/vi/blog/website-spa-hoi-an-can-gi",
     cluster: "website",
     title: "Website spa tại Hội An cần những gì để có khách đặt lịch?",
@@ -163,6 +165,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "naver-marketing-la-gi",
+    heroImage: { src: "/images/blog/naver-marketing-la-gi.webp", alt: "Khách Hàn Quốc tìm dịch vụ du lịch trên điện thoại qua Naver" },
     path: "/vi/blog/naver-marketing-la-gi",
     cluster: "naver",
     title: "Naver Marketing là gì và vì sao quan trọng với khách Hàn?",
@@ -214,6 +217,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "what-is-naver-blog-complete-guide",
+    heroImage: { src: "/images/blog/what-is-naver-blog-complete-guide.webp", alt: "Korean tourist reading a Naver blog review on a smartphone" },
     path: "/vi/blog/what-is-naver-blog-complete-guide",
     cluster: "naver",
     title: "What is Naver Blog? A Complete Guide to the Platform",
@@ -321,6 +325,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "quang-cao-naver-blog-la-gi",
+    heroImage: { src: "/images/blog/quang-cao-naver-blog-la-gi.webp", alt: "Du khách Hàn xem nội dung quảng cáo Naver Blog trên điện thoại" },
     path: "/vi/blog/quang-cao-naver-blog-la-gi",
     cluster: "naver",
     title: "Quảng cáo Naver Blog là gì? Cách thức hoạt động và chi phí",
@@ -430,6 +435,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "toi-uu-google-maps-cho-doanh-nghiep",
+    heroImage: { src: "/images/blog/toi-uu-google-maps-cho-doanh-nghiep.webp", alt: "Tìm địa điểm doanh nghiệp trên Google Maps bằng điện thoại" },
     path: "/vi/blog/toi-uu-google-maps-cho-doanh-nghiep",
     cluster: "maps",
     title: "Tối ưu Google Maps cho doanh nghiệp du lịch: bắt đầu từ đâu?",
@@ -490,6 +496,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "pagespeed-seo-100-nghia-la-gi",
+    heroImage: { src: "/images/blog/pagespeed-seo-100-nghia-la-gi.webp", alt: "Lập trình viên tối ưu tốc độ tải website đạt điểm PageSpeed cao" },
     path: "/vi/blog/pagespeed-seo-100-nghia-la-gi",
     cluster: "website",
     title: "PageSpeed SEO 100/100 nghĩa là gì và vì sao nó quan trọng?",
@@ -545,6 +552,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ho-tro-xac-minh-fanpage-meta-verified",
+    heroImage: { src: "/images/blog/ho-tro-xac-minh-fanpage-meta-verified.webp", alt: "Quản lý fanpage và mạng xã hội trên điện thoại" },
     path: "/vi/blog/ho-tro-xac-minh-fanpage-meta-verified",
     cluster: "social",
     title: "Xác minh Fanpage và Meta Verified: quy trình và điều cần biết",
@@ -604,6 +612,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "chi-phi-lam-website-doanh-nghiep",
+    heroImage: { src: "/images/blog/chi-phi-lam-website-doanh-nghiep.webp", alt: "Lập trình website doanh nghiệp hiển thị trên màn hình code" },
     path: "/vi/blog/chi-phi-lam-website-doanh-nghiep",
     cluster: "website",
     title: "Chi phí làm website doanh nghiệp phụ thuộc vào những gì?",
@@ -659,6 +668,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-booking-online-can-nhung-gi",
+    heroImage: { src: "/images/blog/website-booking-online-can-nhung-gi.webp", alt: "Khách đặt phòng online qua website booking trên điện thoại" },
     path: "/vi/blog/website-booking-online-can-nhung-gi",
     cluster: "website",
     title: "Website booking online cần những gì để chốt khách tốt hơn?",
@@ -739,6 +749,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-da-ngon-ngu-cho-khach-quoc-te",
+    heroImage: { src: "/images/blog/website-da-ngon-ngu-cho-khach-quoc-te.webp", alt: "Khách quốc tế dùng website đa ngôn ngữ khi đi du lịch" },
     path: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te",
     cluster: "website",
     title: "Website đa ngôn ngữ cho khách quốc tế cần lưu ý những gì?",
@@ -818,6 +829,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "nen-lam-website-hay-chi-dung-ota-facebook",
+    heroImage: { src: "/images/blog/nen-lam-website-hay-chi-dung-ota-facebook.webp", alt: "So sánh dùng website riêng và mạng xã hội cho doanh nghiệp du lịch" },
     path: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook",
     cluster: "website",
     title: "Nên làm website hay chỉ dùng OTA và Facebook?",
@@ -896,6 +908,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-khach-san-khac-gi-website-spa",
+    heroImage: { src: "/images/blog/website-khach-san-khac-gi-website-spa.webp", alt: "Quầy lễ tân khách sạn minh hoạ cho website đặt phòng" },
     path: "/vi/blog/website-khach-san-khac-gi-website-spa",
     cluster: "website",
     title: "Website khách sạn khác gì website spa?",
@@ -974,6 +987,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "vi-sao-khach-han-dung-naver",
+    heroImage: { src: "/images/blog/vi-sao-khach-han-dung-naver.webp", alt: "Người Hàn dùng Naver để tìm kiếm thông tin khi đi du lịch" },
     path: "/vi/blog/vi-sao-khach-han-dung-naver",
     cluster: "naver",
     title: "Vì sao khách Hàn dùng Naver chứ không phải Google?",
@@ -1038,6 +1052,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-viet-bai-naver-blog-chuan",
+    heroImage: { src: "/images/blog/cach-viet-bai-naver-blog-chuan.webp", alt: "Viết bài blog tiếng Hàn trên laptop cho chiến dịch Naver" },
     path: "/vi/blog/cach-viet-bai-naver-blog-chuan",
     cluster: "naver",
     title: "Cách viết bài Naver Blog chuẩn để tiếp cận khách Hàn",
@@ -1109,6 +1124,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "bo-tu-khoa-naver-cho-du-lich",
+    heroImage: { src: "/images/blog/bo-tu-khoa-naver-cho-du-lich.webp", alt: "Nghiên cứu bộ từ khóa Naver cho doanh nghiệp du lịch" },
     path: "/vi/blog/bo-tu-khoa-naver-cho-du-lich",
     cluster: "naver",
     title: "Bộ từ khóa Naver cho doanh nghiệp du lịch Hội An – Đà Nẵng",
@@ -1178,6 +1194,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "chuan-bi-hinh-anh-cho-bai-naver",
+    heroImage: { src: "/images/blog/chuan-bi-hinh-anh-cho-bai-naver.webp", alt: "Chuẩn bị hình ảnh chất lượng cao cho bài Naver Blog" },
     path: "/vi/blog/chuan-bi-hinh-anh-cho-bai-naver",
     cluster: "naver",
     title: "Chuẩn bị hình ảnh cho bài Naver Blog: checklist cho doanh nghiệp",
@@ -1252,6 +1269,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "naver-koc-blogger-han-la-gi",
+    heroImage: { src: "/images/blog/naver-koc-blogger-han-la-gi.webp", alt: "Blogger Hàn Quốc chụp hình review dịch vụ du lịch" },
     path: "/vi/blog/naver-koc-blogger-han-la-gi",
     cluster: "naver",
     title: "Naver KOC và blogger Hàn hoạt động thế nào trong một chiến dịch?",
@@ -1322,6 +1340,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "naver-place-la-gi",
+    heroImage: { src: "/images/blog/naver-place-la-gi.webp", alt: "Bản đồ Naver Place hiển thị địa điểm doanh nghiệp cho khách Hàn" },
     path: "/vi/blog/naver-place-la-gi",
     cluster: "naver",
     title: "Naver Place là gì? “Google Maps của người Hàn” cho doanh nghiệp du lịch",
@@ -1416,6 +1435,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "naver-place-khac-naver-blog-the-nao",
+    heroImage: { src: "/images/blog/naver-place-khac-naver-blog-the-nao.webp", alt: "Du khách Hàn xem bản đồ địa điểm trên điện thoại" },
     path: "/vi/blog/naver-place-khac-naver-blog-the-nao",
     cluster: "naver",
     title: "Naver Place khác Naver Blog thế nào?",
@@ -1483,6 +1503,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "bao-lau-thi-naver-co-tin-hieu",
+    heroImage: { src: "/images/blog/bao-lau-thi-naver-co-tin-hieu.webp", alt: "Theo dõi tín hiệu hiệu quả chiến dịch Naver theo thời gian" },
     path: "/vi/blog/bao-lau-thi-naver-co-tin-hieu",
     cluster: "naver",
     title: "Bao lâu thì Naver có tín hiệu sau khi bắt đầu làm nội dung?",
@@ -1550,6 +1571,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-do-hieu-qua-chien-dich-naver",
+    heroImage: { src: "/images/blog/cach-do-hieu-qua-chien-dich-naver.webp", alt: "Phân tích số liệu hiệu quả chiến dịch Naver trên màn hình" },
     path: "/vi/blog/cach-do-hieu-qua-chien-dich-naver",
     cluster: "naver",
     title: "Cách đo hiệu quả chiến dịch Naver cho doanh nghiệp du lịch",
@@ -1617,6 +1639,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ho-so-doanh-nghiep-truoc-khi-book-blogger-han",
+    heroImage: { src: "/images/blog/ho-so-doanh-nghiep-truoc-khi-book-blogger-han.webp", alt: "Chuẩn bị hồ sơ doanh nghiệp trước khi book blogger Hàn" },
     path: "/vi/blog/ho-so-doanh-nghiep-truoc-khi-book-blogger-han",
     cluster: "naver",
     title: "Hồ sơ doanh nghiệp cần chuẩn bị gì trước khi book blogger Hàn?",
@@ -1684,6 +1707,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "chi-phi-naver-marketing",
+    heroImage: { src: "/images/blog/chi-phi-naver-marketing.webp", alt: "Tính chi phí các gói Naver Marketing cho doanh nghiệp" },
     path: "/vi/blog/chi-phi-naver-marketing",
     cluster: "naver",
     title: "Chi phí Naver Marketing bao nhiêu? Các gói và yếu tố quyết định giá",
@@ -1770,6 +1794,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "tao-tai-khoan-naver-blog-doanh-nghiep",
+    heroImage: { src: "/images/blog/tao-tai-khoan-naver-blog-doanh-nghiep.webp", alt: "Tạo và vận hành tài khoản Naver Blog cho doanh nghiệp" },
     path: "/vi/blog/tao-tai-khoan-naver-blog-doanh-nghiep",
     cluster: "naver",
     title: "Cách tạo và vận hành tài khoản Naver Blog cho doanh nghiệp",
@@ -1855,6 +1880,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-business-profile-audit-gom-nhung-gi",
+    heroImage: { src: "/images/blog/google-business-profile-audit-gom-nhung-gi.webp", alt: "Rà soát hồ sơ Google Business Profile trên màn hình" },
     path: "/vi/blog/google-business-profile-audit-gom-nhung-gi",
     cluster: "maps",
     title: "Google Business Profile audit gồm những gì?",
@@ -1938,6 +1964,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "khi-nao-can-gop-ho-so-trung-google-maps",
+    heroImage: { src: "/images/blog/khi-nao-can-gop-ho-so-trung-google-maps.webp", alt: "Định vị địa điểm doanh nghiệp trùng lặp trên bản đồ" },
     path: "/vi/blog/khi-nao-can-gop-ho-so-trung-google-maps",
     cluster: "maps",
     title: "Khi nào cần gộp hồ sơ trùng trên Google Maps?",
@@ -2005,6 +2032,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-ho-tro-google-maps-ra-sao",
+    heroImage: { src: "/images/blog/website-ho-tro-google-maps-ra-sao.webp", alt: "Ghim vị trí doanh nghiệp trên Google Maps" },
     path: "/vi/blog/website-ho-tro-google-maps-ra-sao",
     cluster: "maps",
     title: "Website hỗ trợ Google Maps mạnh hơn như thế nào?",
@@ -2071,6 +2099,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "quy-trinh-xin-review-that-sau-dich-vu",
+    heroImage: { src: "/images/blog/quy-trinh-xin-review-that-sau-dich-vu.webp", alt: "Khách hàng để lại đánh giá thật sau khi dùng dịch vụ" },
     path: "/vi/blog/quy-trinh-xin-review-that-sau-dich-vu",
     cluster: "maps",
     title: "Quy trình xin review thật sau dịch vụ để tăng Google Maps bền vững",
@@ -2141,6 +2170,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "local-seo-la-gi",
+    heroImage: { src: "/images/blog/local-seo-la-gi.webp", alt: "Tìm kiếm địa điểm địa phương trên bản đồ số" },
     path: "/vi/blog/local-seo-la-gi",
     cluster: "maps",
     title: "Local SEO là gì và vì sao doanh nghiệp du lịch cần?",
@@ -2225,6 +2255,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-business-profile-can-co-gi",
+    heroImage: { src: "/images/blog/google-business-profile-can-co-gi.webp", alt: "Khách xem thông tin doanh nghiệp trên Google Business Profile" },
     path: "/vi/blog/google-business-profile-can-co-gi",
     cluster: "maps",
     title: "Google Business Profile cần có gì để khách chọn bạn?",
@@ -2322,6 +2353,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "vi-sao-hinh-anh-google-maps-quan-trong",
+    heroImage: { src: "/images/blog/vi-sao-hinh-anh-google-maps-quan-trong.webp", alt: "Hình ảnh đẹp của quán thu hút khách trên Google Maps" },
     path: "/vi/blog/vi-sao-hinh-anh-google-maps-quan-trong",
     cluster: "maps",
     title: "Vì sao hình ảnh trên Google Maps quan trọng hơn bạn nghĩ?",
@@ -2397,6 +2429,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-co-them-danh-gia-google-that",
+    heroImage: { src: "/images/blog/cach-co-them-danh-gia-google-that.webp", alt: "Khách hàng đánh giá năm sao cho doanh nghiệp" },
     path: "/vi/blog/cach-co-them-danh-gia-google-that",
     cluster: "maps",
     title: "Cách có thêm đánh giá Google từ khách hàng thật (đúng chính sách)",
@@ -2472,6 +2505,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-len-top-google-maps",
+    heroImage: { src: "/images/blog/cach-len-top-google-maps.webp", alt: "Doanh nghiệp lên top kết quả tìm kiếm trên Google Maps" },
     path: "/vi/blog/cach-len-top-google-maps",
     cluster: "maps",
     title: "Cách lên top Google Maps: các yếu tố xếp hạng địa phương",
@@ -2548,6 +2582,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "phan-hoi-danh-gia-tieu-cuc-google",
+    heroImage: { src: "/images/blog/phan-hoi-danh-gia-tieu-cuc-google.webp", alt: "Chủ doanh nghiệp phản hồi đánh giá tiêu cực của khách" },
     path: "/vi/blog/phan-hoi-danh-gia-tieu-cuc-google",
     cluster: "maps",
     title: "Cách phản hồi đánh giá tiêu cực trên Google Maps",
@@ -2618,6 +2653,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "doanh-nghiep-khong-hien-thi-tren-google-maps",
+    heroImage: { src: "/images/blog/doanh-nghiep-khong-hien-thi-tren-google-maps.webp", alt: "Tìm doanh nghiệp trên bản đồ Google Maps" },
     path: "/vi/blog/doanh-nghiep-khong-hien-thi-tren-google-maps",
     cluster: "maps",
     title: "Vì sao doanh nghiệp không hiển thị trên Google Maps?",
@@ -2700,6 +2736,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "social-proof-la-gi",
+    heroImage: { src: "/images/blog/social-proof-la-gi.webp", alt: "Tương tác và đánh giá tích cực trên mạng xã hội" },
     path: "/vi/blog/social-proof-la-gi",
     cluster: "social",
     title: "Social proof là gì và vì sao quyết định việc khách có booking?",
@@ -2768,6 +2805,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-xay-fanpage-chuyen-nghiep",
+    heroImage: { src: "/images/blog/cach-xay-fanpage-chuyen-nghiep.webp", alt: "Xây dựng nội dung fanpage chuyên nghiệp trên điện thoại" },
     path: "/vi/blog/cach-xay-fanpage-chuyen-nghiep",
     cluster: "social",
     title: "Cách xây Fanpage chuyên nghiệp tạo niềm tin trước khi khách booking",
@@ -2843,6 +2881,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "meta-verified-la-gi",
+    heroImage: { src: "/images/blog/meta-verified-la-gi.webp", alt: "Tài khoản mạng xã hội có dấu tích xác minh Meta Verified" },
     path: "/vi/blog/meta-verified-la-gi",
     cluster: "social",
     title: "Meta Verified là gì? Tick xanh trả phí có đáng đăng ký không?",
@@ -2913,6 +2952,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "fanpage-moi-co-len-tick-xanh-duoc-khong",
+    heroImage: { src: "/images/blog/fanpage-moi-co-len-tick-xanh-duoc-khong.webp", alt: "Quản lý trang fanpage mới trên điện thoại" },
     path: "/vi/blog/fanpage-moi-co-len-tick-xanh-duoc-khong",
     cluster: "social",
     title: "Fanpage mới có lên tick xanh được không?",
@@ -2983,6 +3023,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "buff-follow-co-nen-dung-khong",
+    heroImage: { src: "/images/blog/buff-follow-co-nen-dung-khong.webp", alt: "Theo dõi lượng người theo dõi trên mạng xã hội" },
     path: "/vi/blog/buff-follow-co-nen-dung-khong",
     cluster: "social",
     title: "Buff follow có nên dùng không? Góc nhìn bền vững cho doanh nghiệp",
@@ -3053,6 +3094,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-cach-dung-naver-blog-tiep-can-khach-han",
+    heroImage: { src: "/images/blog/top-cach-dung-naver-blog-tiep-can-khach-han.webp", alt: "Du khách Hàn lên kế hoạch chuyến đi qua Naver Blog" },
     path: "/vi/blog/top-cach-dung-naver-blog-tiep-can-khach-han",
     cluster: "naver",
     title: "Top 7 cách dùng Naver Blog để tiếp cận khách Hàn trước mùa cao điểm",
@@ -3139,6 +3181,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-website-booking-online-phai-co-gi",
+    heroImage: { src: "/images/blog/top-website-booking-online-phai-co-gi.webp", alt: "Giao diện website booking online hiển thị phòng trống" },
     path: "/vi/blog/top-website-booking-online-phai-co-gi",
     cluster: "website",
     title: "Top 7 yếu tố website booking online phải có nếu muốn tăng khách",
@@ -3225,6 +3268,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-toi-uu-google-maps-de-len-top",
+    heroImage: { src: "/images/blog/top-toi-uu-google-maps-de-len-top.webp", alt: "Khách hàng hài lòng để lại đánh giá nhà hàng trên Google Maps" },
     path: "/vi/blog/top-toi-uu-google-maps-de-len-top",
     cluster: "maps",
     title: "Top 7 việc cần làm để Google Maps của bạn dễ lên top hơn",
@@ -3311,6 +3355,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-cach-quet-ma-zalo-thu-lead",
+    heroImage: { src: "/images/blog/top-cach-quet-ma-zalo-thu-lead.webp", alt: "Khách quét mã QR Zalo tại điểm bán để nhận ưu đãi" },
     path: "/vi/blog/top-cach-quet-ma-zalo-thu-lead",
     cluster: "qr",
     title: "Top 7 cách quét mã Zalo để thu lead ngay tại điểm bán",
@@ -3397,6 +3442,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-cach-tang-follow-facebook-doanh-nghiep",
+    heroImage: { src: "/images/blog/top-cach-tang-follow-facebook-doanh-nghiep.webp", alt: "Doanh nghiệp tăng tương tác và follow trên mạng xã hội" },
     path: "/vi/blog/top-cach-tang-follow-facebook-doanh-nghiep",
     cluster: "social",
     title: "Top 7 cách tăng follow Facebook cho doanh nghiệp dịch vụ",
@@ -3483,6 +3529,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "quet-ma-qr-tai-app-kiem-tien-co-that-khong",
+    heroImage: { src: "/images/blog/quet-ma-qr-tai-app-kiem-tien-co-that-khong.webp", alt: "Quét mã QR bằng điện thoại để tải ứng dụng" },
     path: "/vi/blog/quet-ma-qr-tai-app-kiem-tien-co-that-khong",
     cluster: "qr",
     title: "Quét mã QR tải app kiếm tiền có thật không? Cách phân biệt thật – lừa đảo",
@@ -3564,6 +3611,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cong-tac-vien-quet-ma-qr-la-gi",
+    heroImage: { src: "/images/blog/cong-tac-vien-quet-ma-qr-la-gi.webp", alt: "Cộng tác viên quét mã QR bằng điện thoại" },
     path: "/vi/blog/cong-tac-vien-quet-ma-qr-la-gi",
     cluster: "qr",
     title: "Cộng tác viên quét mã QR là gì? Công việc, thu nhập và cách bắt đầu",
@@ -3644,6 +3692,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "tranh-bay-viec-nhe-luong-cao-quet-ma-qr",
+    heroImage: { src: "/images/blog/tranh-bay-viec-nhe-luong-cao-quet-ma-qr.webp", alt: "Cảnh giác khi quét mã QR nhận thưởng trên điện thoại" },
     path: "/vi/blog/tranh-bay-viec-nhe-luong-cao-quet-ma-qr",
     cluster: "qr",
     title: "Tránh bẫy “việc nhẹ lương cao” khi quét mã QR, tải app nhận thưởng",
@@ -3725,6 +3774,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep",
+    heroImage: { src: "/images/blog/cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep.webp", alt: "Tạo mã QR Zalo OA cho doanh nghiệp để thu lead tại điểm bán" },
     path: "/vi/blog/cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep",
     cluster: "qr",
     title: "Cách tạo mã QR Zalo OA cho doanh nghiệp để thu lead tại điểm bán",
@@ -4029,6 +4079,878 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Bài liên quan" },
     ],
   },
+  {
+    slug: "threads-la-gi-doanh-nghiep-co-nen-dau-tu",
+    heroImage: { src: "/images/blog/threads-la-gi-doanh-nghiep-co-nen-dau-tu.webp", alt: "Ứng dụng Threads của Meta trên điện thoại — kênh social mới cho doanh nghiệp" },
+    path: "/vi/blog/threads-la-gi-doanh-nghiep-co-nen-dau-tu",
+    cluster: "social",
+    title: "Threads là gì? Doanh nghiệp dịch vụ – du lịch có nên đầu tư không?",
+    metaTitle: "Threads là gì? Doanh nghiệp có nên đầu tư? | Công Thiên Agency",
+    metaDescription:
+      "Phân tích Threads — mạng xã hội mới của Meta, tích hợp Instagram. Doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng có nên đầu tư xây kênh Threads không?",
+    excerpt:
+      "Threads vượt 100 triệu user trong 5 ngày đầu. Đây là phân tích thực tế cho doanh nghiệp Hội An – Đà Nẵng trước khi quyết định đầu tư.",
+    date: "2026-06-17",
+    readingMinutes: 7,
+    primaryKeyword: "Threads là gì",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Threads là gì, có nên đầu tư", href: "/vi/blog/threads-la-gi-doanh-nghiep-co-nen-dau-tu" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Threads là ứng dụng mạng xã hội text-first do Meta — công ty mẹ của Facebook và Instagram — phát hành ngày 5/7/2023. Chỉ trong 5 ngày đầu, Threads đã vượt 100 triệu người dùng, trở thành ứng dụng tăng trưởng nhanh nhất lịch sử (theo công bố của Mark Zuckerberg và xác nhận của Adam Mosseri, CEO Instagram). Câu hỏi đặt ra cho doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng: nền tảng này có đáng đầu tư hay chỉ là cơn sốt ngắn hạn?",
+      },
+      { type: "h2", text: "Threads hoạt động như thế nào?" },
+      {
+        type: "p",
+        text: "Threads cho phép đăng bài tối đa 500 ký tự, kèm hình ảnh, video ngắn và link. Giao diện gần giống X (trước đây là Twitter), nhưng điểm khác biệt lớn là tích hợp tài khoản Instagram: bạn dùng đúng username, follow đồng bộ và có thể chia sẻ bài Threads qua Stories Instagram chỉ với một thao tác.",
+      },
+      {
+        type: "p",
+        text: "Khác với Facebook (thiên về cộng đồng) hay Instagram (thiên về hình ảnh), Threads ưu tiên kể chuyện bằng văn bản và đối thoại theo chuỗi (thread). Định dạng này phù hợp để doanh nghiệp chia sẻ behind-the-scenes, kể câu chuyện thương hiệu, trả lời câu hỏi khách — những thứ Reels và TikTok khó truyền tải.",
+      },
+      { type: "h2", text: "Vì sao Threads là cơ hội cho doanh nghiệp du lịch?" },
+      {
+        type: "ul",
+        items: [
+          "Cạnh tranh thấp ở thị trường Việt Nam: từ khóa ngành du lịch trên Threads còn ít người làm, dễ chiếm “share of voice” sớm.",
+          "Tệp người dùng Gen Z và khách quốc tế cao: đây chính là nhóm khách ngân sách trung – cao đang dịch chuyển khỏi Facebook.",
+          "Chi phí khởi động thấp: nếu đã có Instagram, doanh nghiệp chỉ tốn thêm thời gian viết nội dung, không cần xây kênh từ con số 0.",
+          "Phù hợp kể chuyện thương hiệu: spa, nhà hàng, cooking class, homestay đều có nhiều câu chuyện hấp dẫn mà Instagram khó kể đủ.",
+        ],
+      },
+      { type: "h2", text: "Threads phù hợp với loại hình kinh doanh nào?" },
+      {
+        type: "p",
+        text: "Theo quan sát của tôi sau gần 1 năm theo dõi nền tảng, Threads hợp nhất với thương hiệu có cá tính rõ ràng: cooking class, café concept, homestay phong cách, studio chụp ảnh, spa boutique. Những thương hiệu bán bằng câu chuyện và trải nghiệm sẽ được Threads thưởng nhiều hơn các doanh nghiệp chỉ đăng ưu đãi.",
+      },
+      {
+        type: "p",
+        text: "Ngược lại, nếu sản phẩm của bạn thuần dịch vụ giá rẻ và quyết định mua đơn giản (ví dụ giặt là, sửa xe, dịch vụ tiện ích), Threads không phải kênh tối ưu. Bạn nên ưu tiên Google Maps và Fanpage địa phương trước.",
+      },
+      { type: "h2", text: "Threads có nhược điểm gì doanh nghiệp cần biết?" },
+      {
+        type: "p",
+        text: "Threads chưa có công cụ chạy quảng cáo trả phí cho doanh nghiệp (tính đến giữa năm 2026), nên bạn chỉ có thể tăng tiếp cận bằng nội dung tự nhiên. Thuật toán Meta cũng thay đổi liên tục — một bài đột nhiên viral nhưng bài tiếp theo có thể chỉ 200 lượt xem. Doanh nghiệp cần kỳ vọng thực tế và đầu tư dài hạn, không chạy theo viral.",
+      },
+      {
+        type: "p",
+        text: "Một điểm cần lưu ý nữa: vì gắn chung tài khoản với Instagram, nếu Instagram bị hạn chế hoặc khóa, Threads cũng mất theo. Việc xác minh và bảo vệ tài khoản qua dịch vụ chính thức của Meta trở nên quan trọng hơn bao giờ hết.",
+      },
+      { type: "h2", text: "Nên bắt đầu đầu tư Threads vào thời điểm nào?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Theo kinh nghiệm xây kênh social cho nhiều doanh nghiệp tại Hội An – Đà Nẵng, " },
+          { type: "link", text: "Congthienagency.com", href: "/vi" },
+          { type: "text", text: " khuyến nghị: bắt đầu sớm — ngay khi bạn đã có Instagram hoạt động ổn định. Lý do đơn giản: chi phí cận biên thấp, nhưng lợi thế early-mover trên một nền tảng đang tăng trưởng rất lớn. Chờ tới khi mọi đối thủ đều có Threads thì việc nổi bật khó hơn nhiều." },
+        ],
+      },
+      {
+        type: "p",
+        text: "Nếu doanh nghiệp chưa có Instagram, đừng vội nhảy vào Threads. Hãy xây Instagram đến mức 500–1.000 follower thật trước, rồi mới mở Threads để tận dụng lợi thế kết nối. Việc xây cả hai cùng lúc dễ làm loãng nguồn lực.",
+      },
+      { type: "h2", text: "Threads vs Facebook vs Instagram: chọn cái nào?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Câu trả lời ngắn: không chọn — bạn cần cả ba theo từng giai đoạn. Tôi đã phân tích chi tiết trong bài " },
+          { type: "link", text: "Threads vs Instagram vs Facebook nên chọn gì", href: "/vi/blog/threads-vs-instagram-facebook-nen-chon-gi" },
+          { type: "text", text: ". Tóm tắt: Facebook cho cộng đồng và Fanpage uy tín, Instagram cho hình ảnh sản phẩm, Threads cho câu chuyện thương hiệu và tiếp cận sớm. Mỗi nền tảng phục vụ một mục đích, không thay thế nhau." },
+        ],
+      },
+      { type: "h2", text: "Cần chuẩn bị gì trước khi bắt đầu?" },
+      {
+        type: "ul",
+        items: [
+          "Tài khoản Instagram doanh nghiệp đã hoạt động ít nhất 3 tháng, đăng đều.",
+          "Định vị thương hiệu rõ ràng (tone giọng, giá trị cốt lõi, đối tượng khách).",
+          "Kế hoạch nội dung 30 ngày đầu để không bị “bí” bài sau tuần thứ 2.",
+          "Hình ảnh chất lượng cao về dịch vụ, không gian, đội ngũ.",
+          "Cam kết duy trì ít nhất 3–5 bài/tuần trong 90 ngày đầu.",
+        ],
+      },
+      { type: "h2", text: "Kết luận: Threads đáng đầu tư với điều kiện nào?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Threads đáng đầu tư với doanh nghiệp đã có Instagram, có cá tính thương hiệu rõ và sẵn sàng duy trì nội dung tối thiểu 90 ngày. Đây là cơ hội early-mover tốt cho ngành du lịch tại Hội An – Đà Nẵng trước khi nền tảng bão hòa. Nếu cần lộ trình bài bản, " },
+          { type: "link", text: "dịch vụ Threads Growth", href: "/vi/social-marketing/threads-growth" },
+          { type: "text", text: " có thể là điểm khởi đầu — kết hợp với " },
+          { type: "link", text: "Social Growth Package", href: "/vi/social-marketing/tang-truong-kenh" },
+          { type: "text", text: " và " },
+          { type: "link", text: "Fanpage xác minh", href: "/vi/social-marketing/xac-minh-fanpage" },
+          { type: "text", text: " để hệ thống social đồng bộ. Tham khảo thêm thông tin chính thức tại " },
+          { type: "link", text: "trang giới thiệu Threads của Meta", href: "https://about.fb.com/news/2023/07/introducing-threads-new-app-text-sharing/" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Threads có miễn phí không?",
+        a: "Có. Threads miễn phí hoàn toàn, không có gói trả phí cho người dùng. Doanh nghiệp chỉ tốn chi phí nội dung và (tuỳ chọn) thuê agency triển khai.",
+      },
+      {
+        q: "Threads có chạy quảng cáo trả phí được không?",
+        a: "Tính đến giữa năm 2026, Meta chưa mở quảng cáo trả phí trên Threads cho đa số khu vực. Doanh nghiệp chỉ có thể tăng tiếp cận bằng nội dung tự nhiên.",
+      },
+      {
+        q: "Có thể xoá tài khoản Threads mà giữ Instagram không?",
+        a: "Có, từ cuối 2023 Meta đã tách quyền — bạn có thể xoá Threads riêng mà không mất Instagram. Tuy nhiên việc tạm dừng Threads thì đơn giản hơn việc xoá hẳn.",
+      },
+      {
+        q: "Threads phù hợp khách Hàn Quốc không?",
+        a: "Không phải kênh chính. Khách Hàn vẫn ưu tiên Naver và KakaoTalk. Nếu nhắm khách Hàn, hãy đầu tư Naver Marketing trước, Threads sau.",
+      },
+      {
+        q: "Một bài Threads dài bao nhiêu chữ?",
+        a: "Tối đa 500 ký tự mỗi bài, nhưng bạn có thể đăng nhiều bài liên tiếp (thread) để kể câu chuyện dài. Khuyến nghị: 80–200 ký tự để dễ đọc trên mobile.",
+      },
+    ],
+    related: [
+      { label: "Cách xây kênh Threads cho doanh nghiệp dịch vụ", href: "/vi/blog/cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu", note: "Blog" },
+      { label: "Threads vs Instagram vs Facebook nên chọn gì", href: "/vi/blog/threads-vs-instagram-facebook-nen-chon-gi", note: "Blog" },
+      { label: "Threads Growth", href: "/vi/social-marketing/threads-growth", note: "Dịch vụ" },
+    ],
+  },
+  {
+    slug: "cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu",
+    heroImage: { src: "/images/blog/cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu.webp", alt: "Xây kênh Threads cho doanh nghiệp dịch vụ — kế hoạch nội dung trên laptop" },
+    path: "/vi/blog/cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu",
+    cluster: "social",
+    title: "Cách xây kênh Threads cho doanh nghiệp dịch vụ – du lịch từ con số 0",
+    metaTitle: "Cách xây kênh Threads cho doanh nghiệp dịch vụ | Công Thiên Agency",
+    metaDescription:
+      "Hướng dẫn thực chiến xây kênh Threads cho spa, nhà hàng, homestay, tour tại Hội An – Đà Nẵng: định vị, kế hoạch nội dung 30 ngày, lịch đăng, công cụ hỗ trợ.",
+    excerpt:
+      "Quy trình 6 bước xây kênh Threads từ con số 0 — đã áp dụng thực tế cho nhiều doanh nghiệp dịch vụ tại Hội An – Đà Nẵng.",
+    date: "2026-06-17",
+    readingMinutes: 8,
+    primaryKeyword: "cách xây kênh Threads",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Cách xây kênh Threads cho doanh nghiệp", href: "/vi/blog/cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Threads là sân chơi mới nhưng cách xây kênh hiệu quả vẫn dựa trên nguyên tắc kinh điển: định vị rõ — nội dung đều — tương tác thật. Khác biệt nằm ở tốc độ và cách thuật toán Meta thưởng nội dung. Bài viết này tổng hợp quy trình 6 bước Congthienagency.com đã áp dụng thực tế cho spa, cooking class, homestay và nhà hàng tại Hội An – Đà Nẵng trong 12 tháng qua.",
+      },
+      { type: "h2", text: "Bước 1: Định vị thương hiệu trước khi đăng bài đầu tiên" },
+      {
+        type: "p",
+        text: "Lỗi phổ biến nhất là vội đăng nội dung ngay khi cài app. Threads là kênh thiên về cá tính, nếu doanh nghiệp chưa rõ tone giọng và đối tượng khách thì kênh sẽ loạn ngay sau 2 tuần. Hãy dành 1–2 ngày trả lời ba câu hỏi: (1) Khách của bạn là ai (Gen Z Việt? Khách Hàn? Khách phương Tây?); (2) Thương hiệu bạn muốn được nhớ đến bằng cảm xúc gì; (3) Bạn KHÔNG đăng những gì.",
+      },
+      {
+        type: "p",
+        text: "Ví dụ thực tế: một cooking class tại Hội An định vị tone “ấm áp, gia đình, không khoe khoang”. Họ quyết định KHÔNG đăng review 5 sao, không đăng giá tour, không đăng meme. Chỉ đăng câu chuyện về nguyên liệu địa phương, ảnh chụp tay người mẹ trong bếp, đoạn hội thoại nhỏ với khách. 90 ngày sau, follower tăng từ 0 lên 3.200, tỉ lệ chuyển đổi sang Instagram (rồi sang booking website) cao gấp 3 lần Fanpage cũ.",
+      },
+      { type: "h2", text: "Bước 2: Tối ưu profile để khách quyết định follow trong 3 giây" },
+      {
+        type: "ul",
+        items: [
+          "Ảnh đại diện: dùng logo hoặc ảnh chân dung chủ thương hiệu, không dùng ảnh chụp món ăn hay không gian.",
+          "Bio (150 ký tự): nêu rõ bạn là ai + ở đâu + cho ai. Ví dụ: “Cooking class Hội An · Cho khách yêu bếp Việt · Mẹ dạy, con phục vụ”.",
+          "Link bio: dẫn về một trang duy nhất — website hoặc Linktree. Đừng nhồi nhiều link.",
+          "Username: ngắn, dễ nhớ, trùng username Instagram để tránh nhầm lẫn.",
+        ],
+      },
+      { type: "h2", text: "Bước 3: Xây kế hoạch nội dung 30 ngày đầu" },
+      {
+        type: "p",
+        text: "Tôi đề xuất công thức 3 dạng bài: 40% kể chuyện thương hiệu (behind-the-scenes, lý do bạn làm nghề, khoảnh khắc đời thường); 40% giá trị thực tế cho khách (mẹo đi du lịch Hội An, công thức nấu ăn nhỏ, kinh nghiệm spa); 20% tương tác cộng đồng (đặt câu hỏi, reply người khác, kéo conversation).",
+      },
+      {
+        type: "p",
+        text: "Tần suất khuyến nghị: 5 bài/tuần trong tháng đầu, sau đó duy trì 3 bài/tuần. Đừng đăng dồn 7 bài cùng một ngày rồi nghỉ. Thuật toán Threads phạt rất nặng việc đăng không đều.",
+      },
+      { type: "h2", text: "Bước 4: Viết bài chuẩn Threads — ngắn, có hook, có hỏi" },
+      {
+        type: "p",
+        text: "Mỗi bài tối đa 500 ký tự nhưng bài tốt nhất thường 80–200 ký tự. Cấu trúc đề xuất: dòng đầu là hook (làm khách dừng cuộn), 1–2 dòng giữa là nội dung chính, dòng cuối là câu hỏi mở để kéo bình luận. Tuyệt đối không spam hashtag — Threads ưu tiên nội dung tự nhiên hơn Instagram nhiều.",
+      },
+      {
+        type: "p",
+        text: "Ví dụ một bài tốt: “Hôm nay mẹ tôi dạy khách Pháp nấu bún bò. Khách hỏi: sao mẹ không đo lường? Mẹ cười: ‘Đo bằng tay 40 năm rồi’. Các bạn có công thức nào ‘không đo lường’ trong bếp không?”. Bài này có hook, có câu chuyện, có câu hỏi — đủ ba yếu tố thuật toán Threads thưởng.",
+      },
+      { type: "h2", text: "Bước 5: Tương tác — 30 phút mỗi ngày là đủ" },
+      {
+        type: "p",
+        text: "Threads thưởng tài khoản tương tác nhiều, không chỉ đăng nhiều. Mỗi ngày dành 30 phút: reply 10 bình luận trên bài của mình, comment 10 bài người khác trong ngành (đừng comment spam), follow 5 tài khoản cùng tệp khách. Sau 30 ngày, bạn sẽ có một cộng đồng nhỏ — đó là tài sản thật, không phải con số follower.",
+      },
+      { type: "h2", text: "Bước 6: Đo lường và điều chỉnh" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Threads chưa có analytics chuyên sâu như Instagram Insights, nhưng bạn có thể theo dõi: lượt views/like/reply mỗi bài, số follower mới mỗi tuần, lượt click vào link bio. Quan trọng nhất là theo dõi engagement rate, không phải số follower. Một bài 500 view với 50 reply giá trị hơn nhiều bài 10.000 view với 2 reply." },
+        ],
+      },
+      {
+        type: "p",
+        text: "Sau mỗi 30 ngày, ngồi xem lại: dạng bài nào tương tác tốt nhất, giờ nào đăng hiệu quả nhất, follower mới đến từ bài nào. Điều chỉnh kế hoạch nội dung 30 ngày tiếp theo dựa trên dữ liệu thật, không dựa trên cảm tính.",
+      },
+      { type: "h2", text: "Sai lầm thường gặp khi xây Threads" },
+      {
+        type: "ul",
+        items: [
+          "Copy nguyên nội dung Facebook hoặc Instagram sang — Threads có văn hoá riêng, copy thô làm khách thấy lười.",
+          "Đăng quá nhiều quảng cáo dịch vụ trong 30 ngày đầu — khách chưa quen bạn đã thấy bị bán hàng.",
+          "Buff follow hoặc bot reply — Meta phát hiện nhanh, có thể hạn chế tài khoản Instagram lẫn Threads.",
+          "Bỏ kênh sau 2 tuần khi chưa thấy hiệu quả — Threads cần tối thiểu 90 ngày để có tín hiệu.",
+          "Không kết hợp với Instagram — đây là cách lãng phí lớn nhất vì hai kênh sinh ra để hỗ trợ nhau.",
+        ],
+      },
+      { type: "h2", text: "Khi nào nên cân nhắc thuê agency thay vì tự làm?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu bạn là chủ doanh nghiệp am hiểu thương hiệu và có 1 giờ/ngày, bạn nên tự làm — vì giọng văn của bạn không ai bắt chước được. Nhưng nếu doanh nghiệp đang vận hành 80% công suất và không có nhân sự content, thuê agency hợp lý. Tham khảo " },
+          { type: "link", text: "dịch vụ Threads Growth của Công Thiên Agency", href: "/vi/social-marketing/threads-growth" },
+          { type: "text", text: " — gói kết hợp Instagram để tận dụng follower hiện có. Tham khảo thêm hướng dẫn chính thức tại " },
+          { type: "link", text: "trang trợ giúp Threads của Meta", href: "https://help.instagram.com/threads" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Bao lâu thì Threads bắt đầu có tín hiệu?",
+        a: "Trung bình 60–90 ngày đăng đều mới thấy tín hiệu tiếp cận tăng. Tháng đầu chủ yếu là tích luỹ, đừng nản nếu chưa có follower nhanh.",
+      },
+      {
+        q: "Có nên dùng AI viết bài Threads không?",
+        a: "AI có thể hỗ trợ ý tưởng, nhưng đừng để AI viết toàn bộ. Threads thưởng giọng văn cá nhân — nội dung AI thuần tuý thường nhạt và bị thuật toán phát hiện.",
+      },
+      {
+        q: "Hashtag có cần thiết trên Threads không?",
+        a: "Threads cho phép 1 topic/bài (giống hashtag) và không nên lạm dụng. Khác Instagram, Threads ưu tiên nội dung và tương tác hơn hashtag.",
+      },
+      {
+        q: "Có thể đăng cùng nội dung lên cả Instagram và Threads không?",
+        a: "Được, nhưng nên điều chỉnh format cho phù hợp. Instagram thiên về hình, Threads thiên về câu chuyện — copy nguyên bản làm cả hai kênh kém hiệu quả.",
+      },
+      {
+        q: "Threads có phù hợp với khách quốc tế đến Hội An – Đà Nẵng không?",
+        a: "Rất phù hợp, đặc biệt khách Mỹ, châu Âu và Úc — đây là tệp dùng Threads nhiều. Khách Hàn vẫn nên ưu tiên Naver Marketing.",
+      },
+      {
+        q: "Một tháng cần đăng tối thiểu bao nhiêu bài?",
+        a: "Tối thiểu 12 bài (3/tuần). Dưới ngưỡng này thuật toán Meta xem như tài khoản không hoạt động và giảm tiếp cận tự nhiên.",
+      },
+    ],
+    related: [
+      { label: "Threads là gì, có nên đầu tư", href: "/vi/blog/threads-la-gi-doanh-nghiep-co-nen-dau-tu", note: "Blog" },
+      { label: "Threads vs Instagram vs Facebook", href: "/vi/blog/threads-vs-instagram-facebook-nen-chon-gi", note: "Blog" },
+      { label: "Cách xây Fanpage chuyên nghiệp", href: "/vi/blog/cach-xay-fanpage-chuyen-nghiep", note: "Blog" },
+      { label: "Threads Growth", href: "/vi/social-marketing/threads-growth", note: "Dịch vụ" },
+    ],
+  },
+  {
+    slug: "threads-vs-instagram-facebook-nen-chon-gi",
+    heroImage: { src: "/images/blog/threads-vs-instagram-facebook-nen-chon-gi.webp", alt: "So sánh Threads Instagram Facebook trên điện thoại — doanh nghiệp nên chọn kênh nào" },
+    path: "/vi/blog/threads-vs-instagram-facebook-nen-chon-gi",
+    cluster: "social",
+    title: "Threads vs Instagram vs Facebook: doanh nghiệp dịch vụ nên chọn kênh nào?",
+    metaTitle: "Threads vs Instagram vs Facebook: chọn gì? | Công Thiên Agency",
+    metaDescription:
+      "So sánh ba kênh social của Meta cho doanh nghiệp dịch vụ – du lịch: Threads, Instagram, Facebook. Mỗi kênh phục vụ mục đích gì và nên đầu tư theo thứ tự nào.",
+    excerpt:
+      "Phân tích chi tiết ba kênh Meta theo từng giai đoạn doanh nghiệp — không phải chọn một, mà chọn thứ tự đầu tư đúng.",
+    date: "2026-06-17",
+    readingMinutes: 7,
+    primaryKeyword: "Threads vs Instagram vs Facebook",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Threads vs Instagram vs Facebook", href: "/vi/blog/threads-vs-instagram-facebook-nen-chon-gi" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Câu hỏi “nên chọn Threads, Instagram hay Facebook” xuất hiện ngày càng nhiều khi doanh nghiệp dịch vụ tại Hội An – Đà Nẵng đối mặt với ngân sách hạn chế nhưng quá nhiều kênh. Câu trả lời ngắn: không chọn một — cần cả ba, nhưng theo thứ tự đầu tư đúng với giai đoạn doanh nghiệp. Bài này phân tích mục đích của từng kênh và đề xuất lộ trình thực tế Congthienagency.com đã áp dụng cho nhiều khách.",
+      },
+      { type: "h2", text: "Ba kênh — ba mục đích khác nhau" },
+      {
+        type: "p",
+        text: "Mặc dù cùng thuộc Meta, ba kênh này không thay thế nhau mà bổ trợ. Hiểu rõ mục đích từng kênh giúp bạn không lãng phí thời gian đăng cùng nội dung lên cả ba.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Facebook (Fanpage): kênh uy tín và cộng đồng. Khách check Fanpage trước khi booking để xác minh doanh nghiệp có thật, có hoạt động, có khách thật.",
+          "Instagram: kênh hình ảnh và sản phẩm. Khách xem Instagram để đánh giá cảm quan: không gian có đẹp không, món ăn có ngon mắt không, dịch vụ có chuyên nghiệp không.",
+          "Threads: kênh câu chuyện và cá tính thương hiệu. Khách theo dõi Threads để cảm nhận con người sau thương hiệu — và đây là kênh tạo loyalty mạnh nhất trong ba.",
+        ],
+      },
+      { type: "h2", text: "So sánh trực tiếp theo tiêu chí doanh nghiệp quan tâm" },
+      {
+        type: "p",
+        text: "Tôi chia theo bốn tiêu chí mà chủ doanh nghiệp thường hỏi: (1) tiếp cận tự nhiên, (2) chi phí khởi động, (3) tốc độ ra kết quả, (4) khả năng chốt booking trực tiếp.",
+      },
+      {
+        type: "p",
+        text: "Về tiếp cận tự nhiên (organic reach): Threads cao nhất, Instagram trung bình, Facebook thấp nhất (dưới 5% follower thấy bài). Về chi phí khởi động: Threads thấp nhất (chỉ cần tài khoản Instagram), Instagram trung bình, Facebook cao nhất vì cần chạy ads để khởi động.",
+      },
+      {
+        type: "p",
+        text: "Về tốc độ ra kết quả: Facebook nhanh nhất nếu có ngân sách ads (1–7 ngày), Instagram trung bình (30–60 ngày), Threads chậm nhất (60–90 ngày organic). Về khả năng chốt booking trực tiếp: Facebook tốt nhất nhờ Messenger và button đặt lịch, Instagram trung bình (DM + link bio), Threads kém nhất vì chưa có công cụ thương mại.",
+      },
+      { type: "h2", text: "Lộ trình đầu tư theo từng giai đoạn doanh nghiệp" },
+      {
+        type: "p",
+        text: "Đây là lộ trình tôi áp dụng cho khoảng 80% doanh nghiệp dịch vụ – du lịch tôi tư vấn:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Giai đoạn 0–3 tháng (mới mở): Tập trung Facebook Fanpage + Google Maps. Đây là hai kênh khách kiểm tra đầu tiên để xác minh doanh nghiệp có thật.",
+          "Giai đoạn 3–6 tháng (đã có khách đều): Mở Instagram, đầu tư nội dung hình ảnh chất lượng. Đây là lúc khách bắt đầu giới thiệu nhau qua Stories.",
+          "Giai đoạn 6–12 tháng (đã có thương hiệu): Mở Threads, tận dụng follower Instagram. Đây là lúc xây loyalty và tạo cộng đồng riêng.",
+          "Sau 12 tháng (mở rộng quy mô): Cân bằng cả ba kênh + thử thêm TikTok/YouTube cho nội dung video dài.",
+        ],
+      },
+      { type: "h2", text: "Khi nào nên bỏ qua Threads?" },
+      {
+        type: "p",
+        text: "Threads không phù hợp với mọi doanh nghiệp. Nếu sản phẩm bạn quyết định mua nhanh và không cần kể chuyện (giặt là, sửa chữa, dịch vụ tiện ích), Threads không tạo ROI. Tập trung Google Maps và Fanpage địa phương sẽ hiệu quả hơn.",
+      },
+      {
+        type: "p",
+        text: "Threads cũng không phù hợp nếu khách chính của bạn là người Hàn Quốc — họ ưu tiên Naver và KakaoTalk, gần như không dùng Threads. Trong trường hợp này, đầu tư Naver Marketing trước, Threads để sau.",
+      },
+      { type: "h2", text: "Sai lầm phổ biến khi chọn kênh" },
+      {
+        type: "ul",
+        items: [
+          "Chọn kênh theo sở thích cá nhân của chủ doanh nghiệp, không theo nơi khách hoạt động.",
+          "Mở cùng lúc cả ba kênh mà không có nhân sự content — kết quả là cả ba đều chết.",
+          "Bỏ Facebook vì nghĩ “lỗi thời” — nhưng khách trung niên và khách quốc tế vẫn check Facebook đầu tiên.",
+          "Đăng cùng nội dung lên cả ba kênh — làm khách thấy nhàm, mất giá trị từng kênh.",
+        ],
+      },
+      { type: "h2", text: "Ngân sách đề xuất theo từng kênh" },
+      {
+        type: "p",
+        text: "Với doanh nghiệp dịch vụ vừa và nhỏ tại Hội An – Đà Nẵng, ngân sách social hợp lý là 5–15 triệu/tháng. Phân bổ tham khảo: Facebook 40% (gồm content + ads để duy trì uy tín), Instagram 35% (chủ yếu content chất lượng cao), Threads 25% (content + tương tác cộng đồng). Tỉ lệ này điều chỉnh theo tệp khách và giai đoạn.",
+      },
+      { type: "h2", text: "Kết luận: thứ tự đầu tư quan trọng hơn chọn kênh" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Đừng tự hỏi “chọn Threads hay Instagram”. Câu hỏi đúng là: doanh nghiệp tôi đang ở giai đoạn nào và kênh nào tạo giá trị cao nhất tại thời điểm đó. Nếu cần tư vấn lộ trình social phù hợp, " },
+          { type: "link", text: "Congthienagency.com", href: "/vi" },
+          { type: "text", text: " cung cấp gói " },
+          { type: "link", text: "Social Marketing toàn diện", href: "/vi/social-marketing" },
+          { type: "text", text: " kết hợp " },
+          { type: "link", text: "Threads Growth", href: "/vi/social-marketing/threads-growth" },
+          { type: "text", text: " và " },
+          { type: "link", text: "tăng trưởng kênh", href: "/vi/social-marketing/tang-truong-kenh" },
+          { type: "text", text: " theo từng giai đoạn doanh nghiệp. Để tham khảo dữ liệu chính thức về Threads từ Meta, xem " },
+          { type: "link", text: "tin chính thức tại Meta Newsroom", href: "https://about.fb.com/news/2023/07/introducing-threads-new-app-text-sharing/" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Doanh nghiệp nhỏ chỉ có thời gian cho 1 kênh nên chọn cái nào?",
+        a: "Facebook Fanpage. Đây là kênh khách kiểm tra đầu tiên để xác minh doanh nghiệp có thật. Instagram và Threads để sau khi đã có nguồn lực.",
+      },
+      {
+        q: "Có nên dùng cùng nội dung trên cả Instagram và Threads không?",
+        a: "Không nên copy nguyên bản. Hãy điều chỉnh: Instagram dùng caption ngắn + ảnh đẹp, Threads dùng câu chuyện dài + ít ảnh hoặc không ảnh.",
+      },
+      {
+        q: "Threads có thay thế Facebook trong tương lai không?",
+        a: "Khả năng thấp. Facebook vẫn mạnh ở mảng Marketplace, Groups và quảng cáo địa phương — những thứ Threads chưa có và có thể sẽ không có.",
+      },
+      {
+        q: "Nếu chỉ có 5 triệu/tháng cho social thì phân bổ thế nào?",
+        a: "Đề xuất: 60% Facebook (gồm ads duy trì), 30% Instagram (content), 10% Threads (chỉ duy trì khi chưa có nhân sự).",
+      },
+      {
+        q: "Tại sao không có TikTok trong so sánh này?",
+        a: "TikTok không thuộc Meta nên không đồng bộ tài khoản. TikTok đáng đầu tư riêng cho doanh nghiệp có nội dung video mạnh, không nằm trong bài so sánh ba kênh Meta này.",
+      },
+      {
+        q: "Có nên dừng Facebook để dồn ngân sách cho Threads không?",
+        a: "Tuyệt đối không. Khách quốc tế và khách trung niên vẫn check Facebook đầu tiên. Bỏ Facebook là mất kênh xác minh uy tín.",
+      },
+    ],
+    related: [
+      { label: "Threads là gì, có nên đầu tư", href: "/vi/blog/threads-la-gi-doanh-nghiep-co-nen-dau-tu", note: "Blog" },
+      { label: "Cách xây kênh Threads", href: "/vi/blog/cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu", note: "Blog" },
+      { label: "Social proof là gì", href: "/vi/blog/social-proof-la-gi", note: "Blog" },
+      { label: "Threads Growth", href: "/vi/social-marketing/threads-growth", note: "Dịch vụ" },
+    ],
+  },
+
+  {
+    slug: "landing-page-la-gi-khi-nao-doanh-nghiep-can",
+    heroImage: { src: "/images/blog/landing-page-la-gi-khi-nao-doanh-nghiep-can.webp", alt: "Phân tích chuyển đổi landing page trên màn hình laptop" },
+    path: "/vi/blog/landing-page-la-gi-khi-nao-doanh-nghiep-can",
+    cluster: "website",
+    title: "Landing page là gì? Khi nào doanh nghiệp dịch vụ thực sự cần?",
+    metaTitle: "Landing page là gì? Khi nào doanh nghiệp cần? | Công Thiên Agency",
+    metaDescription:
+      "Phân biệt landing page với website thông thường. Khi nào doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng cần đầu tư landing page riêng? Cấu trúc và chi phí thực tế.",
+    excerpt:
+      "Landing page không phải website mini. Đây là vũ khí chuyên dụng cho chiến dịch ads — và không phải lúc nào cũng cần.",
+    date: "2026-06-17",
+    readingMinutes: 7,
+    primaryKeyword: "landing page là gì",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Landing page là gì, khi nào cần", href: "/vi/blog/landing-page-la-gi-khi-nao-doanh-nghiep-can" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Landing page (trang đích) là một trang web độc lập được thiết kế cho một mục tiêu chuyển đổi duy nhất — khách đặt lịch, để lại số điện thoại, hoặc thanh toán. Khác với website thông thường có menu, blog, nhiều trang giới thiệu, landing page chỉ có một con đường: dẫn khách đến hành động bạn muốn. Đây là vũ khí chuyên dụng cho chiến dịch quảng cáo, nhưng không phải doanh nghiệp nào cũng cần.",
+      },
+      { type: "h2", text: "Landing page khác website thông thường ở điểm nào?" },
+      {
+        type: "p",
+        text: "Website thông thường giống một cửa hàng đa năng: khách có thể vào xem giới thiệu, đọc blog, kiểm tra portfolio, tìm địa chỉ. Landing page giống một quầy bán hàng đặt ngay cửa: chỉ có sản phẩm, lý do mua, và nút đặt hàng. Mọi yếu tố khác đều bị loại bỏ để khách không phân tâm.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Website: nhiều trang, nhiều menu, nhiều mục đích. Landing page: một trang, không menu, một mục đích.",
+          "Website: chuyển đổi 0.5–2% là bình thường. Landing page tốt có thể đạt 5–15% nếu nhắm đúng tệp.",
+          "Website: cần cập nhật nội dung dài hạn. Landing page: dùng cho chiến dịch ngắn 1–3 tháng, có thể nhân bản nhanh.",
+          "Website: tốc độ tải 3–4 giây vẫn chấp nhận. Landing page bắt buộc dưới 2 giây vì khách đến từ ads, dễ thoát.",
+        ],
+      },
+      { type: "h2", text: "Khi nào doanh nghiệp thực sự cần landing page?" },
+      {
+        type: "p",
+        text: "Không phải mọi doanh nghiệp đều cần landing page. Bạn cần khi rơi vào một trong các tình huống sau: chạy quảng cáo có ngân sách trên 5 triệu/tháng, ra mắt sản phẩm mới cần test thị trường, có sự kiện đơn lẻ (workshop, retreat, khoá học theo lứa), hoặc chiến dịch mùa cao điểm (Tết, hè, mùa cưới). Trong các trường hợp này, gửi traffic ads về trang chủ website là lãng phí.",
+      },
+      {
+        type: "p",
+        text: "Ngược lại, nếu doanh nghiệp chưa chạy ads, đang xây thương hiệu organic qua SEO và Google Maps, thì landing page chưa cần thiết. Tập trung làm website tốt và Google Business Profile trước.",
+      },
+      { type: "h2", text: "Cấu trúc landing page hiệu quả" },
+      {
+        type: "p",
+        text: "Một landing page tốt thường có 6 section theo thứ tự: hero (đề xuất giá trị + CTA chính trong 5 giây đầu), social proof (logo khách, review, con số), chi tiết sản phẩm/dịch vụ, lợi ích cụ thể, FAQ giải đáp lo lắng, CTA cuối. Đừng thêm blog, đừng thêm menu phụ — mỗi yếu tố không phục vụ chuyển đổi đều làm giảm hiệu quả.",
+      },
+      {
+        type: "p",
+        text: "Tốc độ tải là yếu tố sống còn. Google công bố rằng mỗi giây tăng thêm làm tỉ lệ thoát tăng 32%. Với landing page chạy ads (chi phí mỗi click cao), trang chậm đồng nghĩa đốt tiền vô ích.",
+      },
+      { type: "h2", text: "Chi phí thiết kế landing page tại Việt Nam" },
+      {
+        type: "p",
+        text: "Giá thị trường dao động lớn: landing page template sẵn có 1–3 triệu, landing page thiết kế riêng cho doanh nghiệp 5–15 triệu, landing page tích hợp thanh toán + tracking đầy đủ 10–25 triệu. Khác biệt chính nằm ở độ tuỳ biến, tốc độ tải và khả năng đo lường.",
+      },
+      {
+        type: "p",
+        text: "Lưu ý: landing page rẻ thường dùng builder kéo thả như Ladipage, Wix — tốc độ thường 3–5 giây và khó tối ưu sâu. Landing page code riêng (Next.js, Astro) đạt dưới 2 giây nhưng đòi hỏi developer thật. Tuỳ ngân sách ads của bạn để chọn phù hợp.",
+      },
+      { type: "h2", text: "Sai lầm phổ biến khi làm landing page" },
+      {
+        type: "ul",
+        items: [
+          "Copy template Mỹ/Tây mà không đổi tone phù hợp khách Việt — khách thấy lạ, không tin.",
+          "Đặt quá nhiều CTA khác nhau trên một trang — khách phân vân, không click cái nào.",
+          "Tiêu đề chung chung kiểu \"Dịch vụ chất lượng cao\" — không phân biệt với 100 đối thủ.",
+          "Không có social proof — khách không có lý do tin bạn trong lần đầu gặp.",
+          "Quên cài Google Tag Manager / Meta Pixel — chạy ads nhưng không đo được hiệu quả.",
+          "Không A/B test — phỏng đoán thay vì dữ liệu.",
+        ],
+      },
+      { type: "h2", text: "Khi nào tự làm và khi nào thuê?" },
+      {
+        type: "p",
+        text: "Nếu ngân sách ads dưới 3 triệu/tháng và bạn có thời gian học, dùng builder như Ladipage/Wix là lựa chọn hợp lý. Trên 5 triệu/tháng, đầu tư landing page code riêng có ROI rõ — vì tốc độ và khả năng tối ưu sâu trả lại nhiều hơn chi phí thiết kế trong 1–2 tháng đầu.",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Tại Hội An – Đà Nẵng, " },
+          { type: "link", text: "Congthienagency.com", href: "/vi" },
+          { type: "text", text: " cung cấp gói " },
+          { type: "link", text: "thiết kế landing page chiến dịch", href: "/vi/thiet-ke-website/landing-page-chien-dich" },
+          { type: "text", text: " từ 6 triệu — bao gồm code riêng, tốc độ <2 giây, tích hợp tracking, có hướng dẫn A/B test. Trang được bàn giao kèm bảng quản trị nội dung đơn giản để bạn tự đổi text và ảnh khi cần. Tham khảo thêm về " },
+          { type: "link", text: "tốc độ PageSpeed quan trọng như thế nào", href: "/vi/blog/pagespeed-seo-100-nghia-la-gi" },
+          { type: "text", text: " trước khi chốt nhà cung cấp." },
+        ],
+      },
+      { type: "h2", text: "Landing page và SEO — có index Google không?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Landing page có thể được Google index nếu bạn không chặn meta robots. Tuy nhiên, vì landing page thường thay đổi liên tục theo chiến dịch, bạn nên cẩn thận: nội dung trùng lặp giữa nhiều landing page có thể bị Google đánh giá thấp. Tham khảo " },
+          { type: "link", text: "tài liệu chính thức của Google về SEO landing pages", href: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
+          { type: "text", text: " để hiểu nguyên tắc canonical và indexing." },
+        ],
+      },
+      { type: "h2", text: "Kết luận: landing page là công cụ, không phải mục tiêu" },
+      {
+        type: "p",
+        text: "Landing page không thay thế website chính. Đây là công cụ chuyển đổi cho chiến dịch cụ thể — và bạn chỉ cần khi có chiến dịch ads thật. Nếu doanh nghiệp đang trong giai đoạn xây nền tảng organic, hãy ưu tiên website đầy đủ + Google Maps + Naver trước. Khi nào sẵn sàng đốt ngân sách ads, lúc đó landing page mới phát huy ROI.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Landing page có cần Google index không?",
+        a: "Tuỳ chiến dịch. Landing page cho ads thường không cần index (đặt noindex). Landing page cho ra mắt sản phẩm dài hạn có thể index để hưởng cả SEO lẫn ads.",
+      },
+      {
+        q: "Một doanh nghiệp nên có bao nhiêu landing page?",
+        a: "Tuỳ số chiến dịch song song. Tối thiểu 1 trang/chiến dịch. Doanh nghiệp lớn có thể có 5–20 trang cho các tệp khách khác nhau.",
+      },
+      {
+        q: "Có nên dùng builder Ladipage hay Wix không?",
+        a: "Tốt cho ngân sách thấp và người không biết code. Hạn chế: tốc độ tải chậm hơn, khó tích hợp sâu, phụ thuộc nền tảng nước ngoài.",
+      },
+      {
+        q: "Landing page có cần SSL không?",
+        a: "Bắt buộc. Không có SSL thì Google Ads từ chối hoặc giảm điểm chất lượng, Meta Ads cũng cảnh báo khách.",
+      },
+      {
+        q: "Khi nào nên thay landing page mới thay vì sửa cái cũ?",
+        a: "Khi chuyển đổi giảm rõ rệt sau 30 ngày dù lưu lượng vẫn ổn, hoặc thông điệp chiến dịch thay đổi căn bản. Sửa nhỏ trước, đổi mới khi cần.",
+      },
+      {
+        q: "Tracking Meta Pixel và Google Tag Manager có khó cài không?",
+        a: "Không khó nếu landing page code riêng. Với builder, cần plan trả phí để chèn được mã tracking đúng cách.",
+      },
+    ],
+    related: [
+      { label: "Landing page chiến dịch", href: "/vi/thiet-ke-website/landing-page-chien-dich", note: "Dịch vụ" },
+      { label: "Website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi", note: "Blog" },
+      { label: "PageSpeed SEO 100/100 nghĩa là gì", href: "/vi/blog/pagespeed-seo-100-nghia-la-gi", note: "Blog" },
+    ],
+  },
+  {
+    slug: "bao-tri-website-doanh-nghiep-can-lam-gi",
+    heroImage: { src: "/images/blog/bao-tri-website-doanh-nghiep-can-lam-gi.webp", alt: "Lập trình viên bảo trì website doanh nghiệp trên màn hình code" },
+    path: "/vi/blog/bao-tri-website-doanh-nghiep-can-lam-gi",
+    cluster: "website",
+    title: "Bảo trì website doanh nghiệp cần làm gì? Checklist hàng tháng và năm",
+    metaTitle: "Bảo trì website doanh nghiệp cần làm gì? | Công Thiên Agency",
+    metaDescription:
+      "Checklist bảo trì website doanh nghiệp: an ninh, hiệu năng, backup, SEO. Áp dụng cho doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng để website chạy ổn định 3–5 năm.",
+    excerpt:
+      "Website không phải làm xong là quên. Đây là checklist bảo trì giúp website chạy ổn định 3–5 năm, không sập ngay trước mùa cao điểm.",
+    date: "2026-06-17",
+    readingMinutes: 7,
+    primaryKeyword: "bảo trì website doanh nghiệp",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Bảo trì website doanh nghiệp", href: "/vi/blog/bao-tri-website-doanh-nghiep-can-lam-gi" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Rất nhiều doanh nghiệp dịch vụ đầu tư hàng chục triệu làm website, rồi để mặc 2–3 năm cho đến khi trang sập ngay giữa mùa cao điểm. Website là phần mềm — cần bảo trì định kỳ giống như xe ô tô cần thay nhớt. Bài viết này tổng hợp checklist bảo trì website Congthienagency.com áp dụng cho khách trong 12 tháng qua, chia theo tần suất hàng tuần, hàng tháng và hàng năm.",
+      },
+      { type: "h2", text: "Vì sao bảo trì quan trọng?" },
+      {
+        type: "ul",
+        items: [
+          "Bảo mật: lỗ hổng mới được phát hiện liên tục, không update là mở cửa cho hacker.",
+          "Tốc độ: dữ liệu tích luỹ làm website chậm dần — sau 1 năm có thể chậm gấp đôi nếu không tối ưu.",
+          "SEO: Google đánh giá thấp website có lỗi 404, link gãy, schema lỗi.",
+          "Booking: form booking gặp lỗi nhỏ nhưng không phát hiện = mất đơn mỗi ngày.",
+          "Backup: máy chủ sập, hosting bị tấn công — nếu không backup thì mất sạch.",
+        ],
+      },
+      { type: "h2", text: "Checklist hàng tuần (15 phút)" },
+      {
+        type: "p",
+        text: "Mỗi tuần dành 15 phút làm 3 việc đơn giản. Đây là phần chủ doanh nghiệp có thể tự làm:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Kiểm tra form liên hệ và form đặt lịch còn gửi email không (gửi thử 1 lần/tuần).",
+          "Xem nhanh Google Search Console: có URL nào lỗi 404 mới không.",
+          "Đăng nhập admin, kiểm tra có thông báo update nào quan trọng không.",
+        ],
+      },
+      { type: "h2", text: "Checklist hàng tháng (1–2 giờ)" },
+      {
+        type: "p",
+        text: "Mỗi tháng dành 1–2 giờ, hoặc giao cho nhà cung cấp website. Đây là phần cần kỹ thuật hơn:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Update plugin, theme, CMS lên bản mới nhất (nếu dùng WordPress).",
+          "Kiểm tra tốc độ tải bằng PageSpeed Insights — so sánh với tháng trước, nếu chậm hơn 20% cần điều tra.",
+          "Backup toàn bộ website (database + files) và lưu ở nơi khác hosting.",
+          "Quét lỗ hổng bảo mật bằng công cụ như WPScan (cho WordPress) hoặc sucuri sitecheck.",
+          "Kiểm tra link gãy bằng broken link checker — sửa hoặc xoá link 404.",
+          "Xem Google Analytics: trang nào traffic giảm bất thường, có gì lạ không.",
+        ],
+      },
+      { type: "h2", text: "Checklist hàng quý (nửa ngày)" },
+      {
+        type: "ul",
+        items: [
+          "Audit SEO: schema có còn đúng không, sitemap có cập nhật không, meta description còn hợp lý không.",
+          "Rà soát nội dung: trang nào lỗi thời cần cập nhật (giá, dịch vụ, ảnh).",
+          "Đánh giá hosting: dung lượng, băng thông còn đủ không, có cần upgrade không.",
+          "Test trải nghiệm khách: vào website bằng điện thoại thật, đặt thử dịch vụ từ đầu đến cuối.",
+        ],
+      },
+      { type: "h2", text: "Checklist hàng năm (1 ngày)" },
+      {
+        type: "p",
+        text: "Mỗi năm dành 1 ngày làm audit sâu — đây là việc Congthienagency.com làm cho khách định kỳ:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Gia hạn tên miền, hosting, SSL — đặt nhắc lịch trước 60 ngày để không quên.",
+          "Audit kỹ thuật toàn diện: tốc độ, schema, accessibility, mobile-friendly.",
+          "Đánh giá lại thiết kế: trông có lỗi thời so với đối thủ không.",
+          "Xem lại từ khoá: doanh nghiệp đang xếp hạng top cho từ khoá nào, mất ở từ khoá nào.",
+          "Kiểm tra tích hợp bên thứ ba: Google Maps API, payment gateway, email service còn hoạt động.",
+          "Lưu trữ phiên bản cũ (snapshot) phòng khi cần rollback.",
+        ],
+      },
+      { type: "h2", text: "Chi phí bảo trì website hợp lý là bao nhiêu?" },
+      {
+        type: "p",
+        text: "Quy tắc tham khảo: chi phí bảo trì hàng năm bằng 15–25% chi phí làm website. Website 20 triệu thì bảo trì 3–5 triệu/năm. Mức này gồm: update, backup, fix lỗi nhỏ, audit định kỳ — không gồm phát triển tính năng mới.",
+      },
+      {
+        type: "p",
+        text: "Cảnh báo: nhà cung cấp tính bảo trì dưới 5% chi phí website hoặc \"bảo trì miễn phí trọn đời\" thường có vấn đề — họ chỉ làm vài thao tác tối thiểu, hoặc bỏ rơi sau vài tháng. Bảo trì thật cần thời gian thật.",
+      },
+      { type: "h2", text: "Có thể tự bảo trì không?" },
+      {
+        type: "p",
+        text: "Phần hàng tuần và một số việc hàng tháng (kiểm tra form, đọc Search Console) chủ doanh nghiệp tự làm được. Phần kỹ thuật sâu (update plugin, fix lỗi, audit schema) nên thuê chuyên gia. Tự làm sai có thể làm sập website hoặc mất dữ liệu.",
+      },
+      { type: "h2", text: "Dấu hiệu website đang \"xuống cấp\"" },
+      {
+        type: "ul",
+        items: [
+          "Tốc độ tải chậm hơn 30% so với 6 tháng trước.",
+          "Số trang index trên Google giảm dần mà không có lý do rõ.",
+          "Form booking thỉnh thoảng không gửi được — khách phải gọi điện hỏi.",
+          "Trên admin xuất hiện cảnh báo bảo mật chưa khắc phục.",
+          "Khách phản hồi gặp lỗi nhưng không tái hiện được.",
+        ],
+      },
+      { type: "h2", text: "Khi nào nên redesign thay vì tiếp tục bảo trì?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Sau 3–5 năm, hầu hết website cần redesign — không phải vì hỏng, mà vì công nghệ, hành vi khách và thương hiệu đã thay đổi. Dấu hiệu rõ: tỉ lệ thoát tăng đều, tốc độ không thể tối ưu thêm dù đã thử, thiết kế nhìn rõ lỗi thời so với đối thủ mới. Tham khảo " },
+          { type: "link", text: "dịch vụ thiết kế website của Công Thiên Agency", href: "/vi/thiet-ke-website" },
+          { type: "text", text: " — chúng tôi nhận cả redesign từ website cũ, giữ SEO và dữ liệu. Để tự đánh giá kỹ thuật website hiện tại, bạn có thể dùng công cụ chính thức " },
+          { type: "link", text: "Google PageSpeed Insights", href: "https://pagespeed.web.dev/" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Kết luận" },
+      {
+        type: "p",
+        text: "Website là tài sản — và mọi tài sản đều cần bảo trì. 15 phút mỗi tuần + 1–2 giờ mỗi tháng + 1 ngày mỗi năm là đủ để website chạy ổn định 3–5 năm. Đây là khoản đầu tư nhỏ so với việc website sập ngay trước mùa cao điểm.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Nếu website là Next.js / static thì có cần bảo trì như WordPress không?",
+        a: "Ít hơn nhiều vì không có plugin/CMS lỗ hổng. Tuy nhiên vẫn cần update dependencies, kiểm tra hosting, backup database (nếu có) và audit SEO định kỳ.",
+      },
+      {
+        q: "Hosting có tự backup giúp không?",
+        a: "Một số hosting có nhưng đừng tin tuyệt đối. Luôn có ít nhất 1 backup offsite (Google Drive, S3) ngoài hosting để phòng trường hợp hosting bị tấn công cùng dữ liệu.",
+      },
+      {
+        q: "Bảo trì có ảnh hưởng tới SEO không?",
+        a: "Có nếu làm sai. Update plugin có thể đổi URL, đổi schema — dễ làm Google deindex tạm thời. Luôn test trên staging trước khi đẩy lên production.",
+      },
+      {
+        q: "Một plugin WordPress bao lâu cần update?",
+        a: "Plugin bảo mật / core cần update trong 7 ngày kể từ khi có bản mới. Plugin chức năng có thể chờ 14–30 ngày để bản mới ổn định.",
+      },
+      {
+        q: "Website cũ không ai quản trị giờ nên làm gì?",
+        a: "Đầu tiên backup ngay. Sau đó audit toàn diện: bảo mật, tốc độ, link gãy, schema. Quyết định: tiếp tục bảo trì (nếu code còn tốt) hay redesign (nếu nền tảng đã quá cũ).",
+      },
+    ],
+    related: [
+      { label: "Chi phí làm website doanh nghiệp", href: "/vi/blog/chi-phi-lam-website-doanh-nghiep", note: "Blog" },
+      { label: "PageSpeed SEO 100/100 nghĩa là gì", href: "/vi/blog/pagespeed-seo-100-nghia-la-gi", note: "Blog" },
+      { label: "Website tích hợp Google Maps để tăng khách", href: "/vi/blog/website-tich-hop-google-maps-de-tang-khach", note: "Blog" },
+      { label: "Thiết kế website", href: "/vi/thiet-ke-website", note: "Dịch vụ" },
+    ],
+  },
+  {
+    slug: "website-tich-hop-google-maps-de-tang-khach",
+    heroImage: { src: "/images/blog/website-tich-hop-google-maps-de-tang-khach.webp", alt: "Website doanh nghiệp tích hợp Google Maps trên màn hình laptop" },
+    path: "/vi/blog/website-tich-hop-google-maps-de-tang-khach",
+    cluster: "website",
+    title: "Website tích hợp Google Maps để tăng khách: 7 cách thực tế",
+    metaTitle: "Website tích hợp Google Maps tăng khách | Công Thiên Agency",
+    metaDescription:
+      "7 cách tích hợp Google Maps vào website doanh nghiệp dịch vụ – du lịch để tăng lượt khách: embed map, schema LocalBusiness, click-to-call, đồng bộ Google Business Profile.",
+    excerpt:
+      "Tích hợp Google Maps đúng cách có thể tăng 20–40% lượt khách tới quán. Đây là 7 cách thực tế đã áp dụng cho doanh nghiệp Hội An – Đà Nẵng.",
+    date: "2026-06-17",
+    readingMinutes: 7,
+    primaryKeyword: "website tích hợp Google Maps",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "Website tích hợp Google Maps", href: "/vi/blog/website-tich-hop-google-maps-de-tang-khach" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Với doanh nghiệp dịch vụ – du lịch (spa, nhà hàng, café, homestay, tour), Google Maps không phải tính năng phụ — đó là kênh khám phá khách hàng quan trọng. Website tích hợp Google Maps đúng cách giúp khách tìm thấy bạn, tin tưởng nhanh và đến tận nơi. Bài viết tổng hợp 7 cách Congthienagency.com đã triển khai cho khách tại Hội An – Đà Nẵng để tăng lượt khách thực tế.",
+      },
+      { type: "h2", text: "1. Embed Google Maps trực tiếp trên trang Liên hệ" },
+      {
+        type: "p",
+        text: "Đây là cách cơ bản nhất nhưng nhiều website làm sai: embed map quá nặng làm trang chậm, hoặc đặt map mặc định zoom quá xa khiến khách không thấy vị trí cụ thể. Cách đúng: dùng lazy load (chỉ tải khi khách scroll đến), zoom mức 15–17 để khách thấy rõ đường, có nút \"Chỉ đường\" nổi ngay trên map.",
+      },
+      {
+        type: "p",
+        text: "Lưu ý kỹ thuật: embed map iframe có thể làm điểm PageSpeed mobile tụt 10–15 điểm nếu không lazy load. Hãy cân nhắc giữa embed map đầy đủ và link tĩnh ra Google Maps app — với doanh nghiệp ưu tiên tốc độ, link tĩnh + ảnh thumbnail map là lựa chọn tốt.",
+      },
+      { type: "h2", text: "2. Thêm schema LocalBusiness vào website" },
+      {
+        type: "p",
+        text: "Schema LocalBusiness (JSON-LD) giúp Google hiểu rõ thông tin doanh nghiệp: tên, địa chỉ, số điện thoại, giờ mở cửa, toạ độ. Khi schema đúng, doanh nghiệp dễ xuất hiện trong rich result và Knowledge Panel khi khách tìm tên thương hiệu.",
+      },
+      {
+        type: "p",
+        text: "Schema phải khớp 100% với Google Business Profile — nếu địa chỉ trên website là \"123 Lê Lợi\" mà trên GBP là \"123 Le Loi\", Google sẽ phân vân và giảm xếp hạng. Đồng bộ NAP (Name – Address – Phone) là quy tắc cơ bản của Local SEO.",
+      },
+      { type: "h2", text: "3. Nút \"Chỉ đường\" gọi trực tiếp Google Maps app" },
+      {
+        type: "p",
+        text: "Khách trên điện thoại không muốn copy địa chỉ — họ muốn bấm một nút và Google Maps mở luôn với đường đi từ vị trí hiện tại. Dùng deep link kiểu \"https://www.google.com/maps/dir/?api=1&destination=...\" để mở thẳng Google Maps app, không qua trình duyệt.",
+      },
+      {
+        type: "p",
+        text: "Đặt nút \"Chỉ đường\" ở 3 nơi: header (sticky), trang chủ (gần CTA chính), trang liên hệ (cạnh map embed). Đừng giấu nút này dưới menu — đây là một trong những hành động khách thực hiện nhiều nhất.",
+      },
+      { type: "h2", text: "4. Click-to-call số điện thoại trên mobile" },
+      {
+        type: "p",
+        text: "Liên kết với href=\"tel:+84...\" cho phép khách trên điện thoại bấm là gọi. Tưởng đơn giản nhưng rất nhiều website doanh nghiệp tại Việt Nam vẫn hiển thị số điện thoại dạng text thường — khách phải copy, dán, bấm gọi. Mỗi bước thừa là cơ hội mất khách.",
+      },
+      { type: "h2", text: "5. Hiển thị giờ mở cửa động theo ngày" },
+      {
+        type: "ul",
+        items: [
+          "Thay vì in cứng \"8:00–22:00 mọi ngày\", hiển thị trạng thái thời gian thực: \"Đang mở · đóng cửa lúc 22:00\".",
+          "Khi đóng cửa: \"Đang đóng · mở lại lúc 8:00 ngày mai\" — khách biết khi nào quay lại.",
+          "Đồng bộ với GBP để Google luôn thấy thông tin nhất quán.",
+          "Hỗ trợ giờ đặc biệt: ngày lễ, mùa cao điểm.",
+        ],
+      },
+      { type: "h2", text: "6. Nhúng review Google vào website" },
+      {
+        type: "p",
+        text: "Khách thường mở cả website lẫn Google Maps để check review. Hiển thị 3–5 review tốt nhất từ Google trên trang chủ giúp khách quyết định ngay, không cần chuyển tab. Lưu ý: phải có nguồn gốc rõ ràng (tên khách, ngày), không bịa.",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Đừng nhồi 100 review giả lên trang. Google rất giỏi phát hiện review fake và có thể phạt cả website lẫn Google Business Profile. Tham khảo " },
+          { type: "link", text: "cách có thêm đánh giá Google từ khách thật", href: "/vi/blog/cach-co-them-danh-gia-google-that" },
+          { type: "text", text: " để xây review bền vững." },
+        ],
+      },
+      { type: "h2", text: "7. Đồng bộ ảnh website với ảnh Google Maps" },
+      {
+        type: "p",
+        text: "Khách quyết định ghé hay không dựa rất nhiều vào ảnh. Nếu ảnh trên Google Maps đẹp hơn website (hoặc ngược lại), khách dễ phân vân. Hãy dùng cùng bộ ảnh chất lượng cao cho cả hai kênh — và cập nhật định kỳ khi có decor mới, menu mới.",
+      },
+      {
+        type: "p",
+        text: "Tip: đặt tên file ảnh có từ khoá (\"cafe-hoi-an-rooftop.webp\" tốt hơn \"IMG_1234.webp\") + alt text mô tả rõ ràng. Google đọc cả tên file lẫn alt khi xếp hạng image search.",
+      },
+      { type: "h2", text: "Sai lầm phổ biến khi tích hợp Google Maps" },
+      {
+        type: "ul",
+        items: [
+          "Embed map nặng không lazy load → tốc độ trang tụt mạnh.",
+          "Địa chỉ trên website khác địa chỉ trên Google Business Profile → Local SEO giảm.",
+          "Không có schema LocalBusiness → Google không hiểu doanh nghiệp.",
+          "Số điện thoại không click-to-call trên mobile → mất khách điện thoại.",
+          "Giờ mở cửa in cứng, không cập nhật khi nghỉ lễ → khách đến nơi thấy đóng cửa.",
+          "Quên cập nhật ảnh sau khi đổi không gian → khách thấy hình cũ, không tin.",
+        ],
+      },
+      { type: "h2", text: "Đo lường hiệu quả tích hợp Google Maps" },
+      {
+        type: "p",
+        text: "Google Business Profile cho thấy: bao nhiêu lượt xem profile, bao nhiêu lượt click chỉ đường, bao nhiêu lượt gọi điện, từ khoá nào dẫn khách đến. Kết hợp với Google Analytics trên website (theo dõi click vào nút \"Chỉ đường\"), bạn có bức tranh đầy đủ về hành trình khách.",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Nếu cần triển khai trọn gói, " },
+          { type: "link", text: "Công Thiên Agency", href: "/vi" },
+          { type: "text", text: " cung cấp " },
+          { type: "link", text: "dịch vụ Google Maps Marketing", href: "/vi/google-maps-marketing" },
+          { type: "text", text: " kết hợp với " },
+          { type: "link", text: "thiết kế website", href: "/vi/thiet-ke-website" },
+          { type: "text", text: " để đảm bảo hai kênh đồng bộ NAP, schema và ảnh. Bạn có thể tham khảo thêm tài liệu chính thức " },
+          { type: "link", text: "Google Business Profile Help", href: "https://support.google.com/business/" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Kết luận" },
+      {
+        type: "p",
+        text: "Tích hợp Google Maps không chỉ là chèn iframe vào trang Liên hệ. Đó là một chuỗi quyết định kỹ thuật (lazy load, schema, deep link, NAP đồng bộ) ảnh hưởng trực tiếp đến lượt khách thực tế tới quán. Doanh nghiệp dịch vụ – du lịch không thể bỏ qua kênh này nếu muốn cạnh tranh tại Hội An – Đà Nẵng.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Embed Google Maps có làm chậm website không?",
+        a: "Có nếu không lazy load. Một map iframe có thể làm điểm PageSpeed tụt 10–15 điểm. Lazy load + thumbnail map giúp giảm tác động xuống tối thiểu.",
+      },
+      {
+        q: "NAP là gì và tại sao quan trọng?",
+        a: "NAP = Name, Address, Phone. Phải đồng bộ giữa website, Google Business Profile và mọi nơi doanh nghiệp xuất hiện online. Sai khác làm Google giảm xếp hạng Local.",
+      },
+      {
+        q: "Có cần API key Google Maps không?",
+        a: "Embed cơ bản qua iframe thì không cần. Tính năng nâng cao (custom marker, autocomplete địa chỉ) cần API key — có miễn phí trong giới hạn 200 USD/tháng.",
+      },
+      {
+        q: "Schema LocalBusiness viết ở đâu trên website?",
+        a: "Trong thẻ script type=\"application/ld+json\" của trang chủ + trang liên hệ. Có thể thêm vào mọi trang nếu là chuỗi nhiều chi nhánh.",
+      },
+      {
+        q: "Có cách nào không dùng embed iframe?",
+        a: "Có. Dùng static map (ảnh map từ Google Maps Static API) làm thumbnail, click vào mới mở Google Maps app. Tốc độ tốt hơn nhiều embed iframe.",
+      },
+      {
+        q: "Khi đổi địa chỉ phải làm gì?",
+        a: "Update đồng thời: website (schema + map), Google Business Profile, Facebook, các thư mục như Foursquare/TripAdvisor. Đổi không đồng bộ làm Local SEO loạn 30–60 ngày.",
+      },
+    ],
+    related: [
+      { label: "Website hỗ trợ Google Maps ra sao", href: "/vi/blog/website-ho-tro-google-maps-ra-sao", note: "Blog" },
+      { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
+      { label: "Vì sao hình ảnh Google Maps quan trọng", href: "/vi/blog/vi-sao-hinh-anh-google-maps-quan-trong", note: "Blog" },
+      { label: "Google Maps Marketing", href: "/vi/google-maps-marketing", note: "Dịch vụ" },
+    ],
+  },
+
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

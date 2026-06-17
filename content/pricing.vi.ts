@@ -41,6 +41,25 @@ export const PRICING_GROUPS: PricingGroup[] = [
       "Website chuẩn SEO, tối ưu mobile, có thể tích hợp booking và thanh toán online.",
     packages: [
       {
+        id: "website-landing-page",
+        cluster: "website",
+        name: "Landing page chiến dịch",
+        priceLabel: "Từ 6.000.000đ",
+        priceUnit: "/ landing page",
+        priceFromVnd: 6000000,
+        tagline: "Trang đơn tốc độ cao cho chiến dịch ads ngắn hạn.",
+        features: [
+          "Thiết kế riêng theo chiến dịch (ra mắt, ưu đãi, sự kiện)",
+          "Tốc độ tải dưới 2 giây — không lãng phí ngân sách ads",
+          "Tích hợp Google Tag Manager, Meta Pixel để đo chuyển đổi",
+          "Schema Offer / Event để xuất hiện rich result Google",
+          "Hỗ trợ A/B test tiêu đề, CTA, hình ảnh",
+          "Bàn giao kèm bảng quản trị nội dung đơn giản",
+        ],
+        ctaHref: "/vi/lien-he",
+        ctaLabel: "Tư vấn landing page",
+      },
+      {
         id: "website-business",
         cluster: "website",
         name: "Website Business",
@@ -171,6 +190,26 @@ export const PRICING_GROUPS: PricingGroup[] = [
         ctaLabel: "Hỗ trợ xác minh",
         disclaimer:
           "Đây là dịch vụ hỗ trợ chuẩn bị hồ sơ và quy trình. Kết quả phê duyệt cuối cùng phụ thuộc hoàn toàn vào quá trình xét duyệt của Meta — không cam kết 100% được duyệt.",
+      },
+      {
+        id: "threads-growth",
+        cluster: "social",
+        name: "Threads Growth — phát triển kênh Threads",
+        priceLabel: "Từ 4.000.000đ",
+        priceUnit: "/ tháng",
+        priceFromVnd: 4000000,
+        tagline: "Xây kênh Threads bằng nội dung thật, tận dụng Instagram.",
+        features: [
+          "Định vị thương hiệu và kế hoạch nội dung 30–60 ngày",
+          "Đăng định kỳ 3–7 bài/tuần theo gói",
+          "Tương tác cộng đồng và phản hồi bình luận",
+          "Báo cáo tăng trưởng và engagement hàng tháng",
+          "Kết hợp với Instagram để tăng hiệu quả",
+        ],
+        ctaHref: "/vi/lien-he",
+        ctaLabel: "Tư vấn Threads Growth",
+        disclaimer:
+          "Đây là kênh social của Meta. Kết quả tiếp cận và follower phụ thuộc thuật toán Meta và chất lượng nội dung — không cam kết viral.",
       },
       {
         id: "social-growth",
