@@ -34,6 +34,15 @@ export const BLOG_HUB = {
   h1: "Blog kiến thức Marketing Online",
   heroSub:
     "Những bài viết thực chiến giúp doanh nghiệp dịch vụ – du lịch hiểu rõ website, SEO, Naver và Google Maps trước khi đầu tư.",
+  intro: [
+    "Đây không phải blog tin tức chung chung. Mỗi bài viết trong hub này được viết để trả lời một câu hỏi mua hàng hoặc vận hành rất cụ thể mà spa, nhà hàng, khách sạn, tour và cooking class thường gặp trước khi đầu tư website hay marketing.",
+    "Tôi dùng blog này để đào sâu từng cụm chủ đề thay vì nhồi tất cả vào một trang dịch vụ: khi nào nên làm website riêng, website booking online cần gì, Naver phù hợp với doanh nghiệp nào, Google Maps nên tối ưu từ đâu.",
+  ],
+  focusLinks: [
+    { label: "Thiết kế website", href: "/vi/thiet-ke-website", note: "Trang dịch vụ trụ cột" },
+    { label: "Naver Marketing", href: "/vi/naver-marketing", note: "Trang dịch vụ trụ cột" },
+    { label: "Google Maps Marketing", href: "/vi/google-maps-marketing", note: "Trang dịch vụ trụ cột" },
+  ],
 };
 
 export const BLOG_POSTS: BlogPost[] = [

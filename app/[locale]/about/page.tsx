@@ -68,6 +68,17 @@ export default async function Page({ params }: Params) {
               ))}
             </div>
             <div className="flex flex-col gap-4">
+              <div className="rounded-card border border-blue-100 bg-blue-50/70 p-5">
+                <p className="label-mono text-blue-600">What this page proves</p>
+                <ul className="mt-3 flex flex-col gap-2">
+                  {c.proof.map((item) => (
+                    <li key={item} className="flex gap-2.5 text-sm text-ink-soft">
+                      <span aria-hidden className="mt-1 text-blue-600">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               {c.values.map((v) => (
                 <div key={v.title} className="rounded-card border border-line bg-white p-5 shadow-soft">
                   <h3 className="font-semibold text-ink">{v.title}</h3>

@@ -93,6 +93,21 @@ export const SERVICES: Service[] = [
         body:
           "Cả hai dự án tham khảo đều đạt PageSpeed SEO 100/100. Mỗi website được tối ưu cấu trúc URL, metadata, schema JSON-LD, sitemap và tốc độ tải để Google dễ hiểu và xếp hạng.",
       },
+      {
+        heading: "Trang này khác gì trang chủ của agency?",
+        body:
+          "Trang chủ của Công Thiên Agency giới thiệu toàn bộ hệ thống marketing. Còn trang này đi riêng vào dịch vụ thiết kế website: cấu trúc trang, luồng booking, thanh toán online, SEO kỹ thuật và cách website trở thành trung tâm chuyển đổi cho doanh nghiệp du lịch.",
+      },
+      {
+        heading: "Khi nào nên đọc trang dịch vụ này trước?",
+        bodyParts: [
+          { type: "text", text: "Nếu bạn đang cân nhắc làm website mới, thêm booking online hoặc muốn hiểu website nên đóng vai trò gì trong hệ thống marketing, hãy bắt đầu ở đây. Sau đó có thể đọc tiếp " },
+          { type: "link", text: "website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi" },
+          { type: "text", text: " và " },
+          { type: "link", text: "website đa ngôn ngữ cho khách quốc tế", href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te" },
+          { type: "text", text: " để đi sâu vào từng tình huống cụ thể." },
+        ],
+      },
     ],
     deliverables: {
       title: "Một dự án website gồm có",
@@ -144,6 +159,8 @@ export const SERVICES: Service[] = [
     related: [
       { label: "Website spa Hội An", href: "/vi/thiet-ke-website/spa-hoi-an", note: "Trang dịch vụ chuyên ngành spa" },
       { label: "Naver Marketing", href: "/vi/naver-marketing", note: "Tiếp cận khách Hàn Quốc" },
+      { label: "Website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi", note: "Bài hỗ trợ chuyên sâu" },
+      { label: "Website đa ngôn ngữ cho khách quốc tế", href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te", note: "Bài hỗ trợ chuyên sâu" },
       { label: "Bảng giá", href: "/vi/bang-gia", note: "Xem chi phí gói Website Business" },
     ],
     images: [
@@ -910,6 +927,21 @@ export const SERVICES: Service[] = [
         body:
           "Mục tiêu là tăng khả năng hiển thị trên Naver Search và tạo thêm nguồn social proof tiếng Hàn theo bộ từ khóa đã thống nhất — không cam kết thứ hạng vĩnh viễn.",
       },
+      {
+        heading: "Trang này khác gì các bài blog Naver?",
+        body:
+          "Trang này là trang dịch vụ chính, dùng để giải thích phạm vi triển khai, quy trình, báo giá tham khảo và đối tượng phù hợp. Các bài blog Naver đi sâu vào từng câu hỏi nhỏ như thời điểm đầu tư, sai lầm thường gặp hoặc cách đo hiệu quả, chứ không thay thế trang dịch vụ này.",
+      },
+      {
+        heading: "Nên đọc gì tiếp theo nếu đang cân nhắc đầu tư?",
+        bodyParts: [
+          { type: "text", text: "Nếu bạn đang ở giai đoạn ra quyết định, hãy đọc tiếp " },
+          { type: "link", text: "khi nào nên đầu tư Naver Marketing", href: "/vi/blog/khi-nao-nen-dau-tu-naver-marketing" },
+          { type: "text", text: " và " },
+          { type: "link", text: "5 sai lầm thường gặp khi làm Naver Marketing", href: "/vi/blog/sai-lam-thuong-gap-khi-lam-naver-marketing" },
+          { type: "text", text: " để phân biệt rõ giữa nhu cầu thật, kỳ vọng hợp lý và các lỗi triển khai phổ biến." },
+        ],
+      },
     ],
     whoFor: [
       "Spa, wellness phục vụ khách Hàn",
@@ -964,6 +996,8 @@ export const SERVICES: Service[] = [
       { label: "Naver SEO Agency for Hotels", href: "/vi/naver-marketing/naver-seo-agency-for-hotels", note: "SEO · Hotel keyword" },
       { label: "How to attract Korean tourists with Naver", href: "/vi/naver-marketing/attract-korean-tourists-with-naver", note: "SEO · Guide" },
       { label: "Naver Map optimization for restaurants", href: "/vi/naver-marketing/naver-map-optimization-restaurants-vietnam", note: "SEO · Restaurant keyword" },
+      { label: "Khi nào nên đầu tư Naver Marketing", href: "/vi/blog/khi-nao-nen-dau-tu-naver-marketing", note: "Bài hỗ trợ quyết định" },
+      { label: "5 sai lầm thường gặp khi làm Naver Marketing", href: "/vi/blog/sai-lam-thuong-gap-khi-lam-naver-marketing", note: "Bài hỗ trợ triển khai" },
       { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Blog" },
     ],
     images: [
