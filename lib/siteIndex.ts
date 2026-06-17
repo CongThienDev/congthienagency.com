@@ -41,6 +41,7 @@ const VI_CORE_PAGES: IndexablePage[] = [
   { path: "/vi/blog", title: "Blog", changeFrequency: "weekly", priority: 0.8, imageCandidates: CORE_PAGE_IMAGES },
   { path: "/vi/cau-hoi-thuong-gap", title: "Câu hỏi thường gặp", changeFrequency: "weekly", priority: 0.75, imageCandidates: CORE_PAGE_IMAGES },
   { path: "/vi/tu-dien-marketing", title: "Từ điển Marketing", changeFrequency: "monthly", priority: 0.75, imageCandidates: CORE_PAGE_IMAGES },
+  { path: "/vi/ve-chung-toi", title: "Về chúng tôi — hồ sơ entity", changeFrequency: "monthly", priority: 0.8, imageCandidates: CORE_PAGE_IMAGES },
 ];
 
 const EN_CORE_PAGES: IndexablePage[] = [

@@ -43,6 +43,7 @@ export const FOOTER_VI = {
   ],
   company: [
     { label: "Giới thiệu", href: "/vi/gioi-thieu" },
+    { label: "Về chúng tôi (hồ sơ entity)", href: "/vi/ve-chung-toi" },
     { label: "Quy trình", href: "/vi/quy-trinh" },
     { label: "Bảng giá", href: "/vi/bang-gia" },
     { label: "Dự án", href: "/vi/du-an" },

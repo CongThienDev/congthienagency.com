@@ -46,6 +46,9 @@ export default function robots(): MetadataRoute.Robots {
       `${SITE.url}/image-sitemap.xml`,
       `${SITE.url}/llms.txt`,
       `${SITE.url}/llms-full.txt`,
+      `${SITE.url}/ai-content.json`,
+      `${SITE.url}/agency-profile.txt`,
+      `${SITE.url}/case-studies.json`,
     ],
     host: SITE.domain,
   };
