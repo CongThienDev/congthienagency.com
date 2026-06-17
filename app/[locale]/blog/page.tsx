@@ -123,8 +123,11 @@ export default async function Page({ params, searchParams }: Params) {
             <div className="max-w-3xl animate-rise">
               <p className="label-mono text-blue-600">{BLOG_HUB.eyebrow}</p>
               <h1 className="mt-3 text-4xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl text-balance">
-                Blog kiến thức Marketing Online theo từng nhóm chủ đề.
+                {BLOG_HUB.h1}
               </h1>
+              <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+                {BLOG_HUB.heroSub}
+              </p>
             </div>
             <div className="animate-rise lg:pb-2" style={{ animationDelay: "120ms" }}>
               <p className="max-w-xl text-base leading-relaxed text-muted sm:text-lg">
@@ -139,6 +142,30 @@ export default async function Page({ params, searchParams }: Params) {
                   >
                     {group.label}
                     <span className="ml-2 font-mono text-[11px] text-muted">{group.posts.length}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 grid gap-4 lg:grid-cols-[1.3fr_0.7fr]">
+            <div className="rounded-[1.75rem] border border-line bg-white/85 p-5 shadow-soft">
+              {BLOG_HUB.intro.map((paragraph) => (
+                <p key={paragraph} className="text-sm leading-relaxed text-ink-soft not-first:mt-3">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <div className="rounded-[1.75rem] border border-line bg-white/85 p-5 shadow-soft">
+              <p className="label-mono text-blue-600">Bắt đầu từ các trang trụ cột</p>
+              <div className="mt-4 flex flex-col gap-3">
+                {BLOG_HUB.focusLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="rounded-2xl border border-line px-4 py-3 transition-all hover:border-blue-200 hover:text-blue-700"
+                  >
+                    <span className="label-mono text-blue-600">{item.note}</span>
+                    <span className="mt-1 block font-medium text-ink">{item.label}</span>
                   </Link>
                 ))}
               </div>

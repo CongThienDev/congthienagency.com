@@ -52,11 +52,11 @@ export const HOME_EN = {
 export const ABOUT_EN = {
   metaTitle: "About Cong Thien Agency | CongThienDev",
   metaDescription:
-    "Cong Thien Agency, founded by Le Cong Thien (CongThienDev), specializes in online marketing, websites, Naver and Google Maps for tourism businesses in Hoi An – Da Nang.",
+    "About Cong Thien Agency and founder Le Cong Thien (CongThienDev): websites with booking, Naver marketing, Google Maps reputation, and direct implementation for tourism businesses in Hoi An – Da Nang.",
   eyebrow: "About",
   h1: "About Cong Thien Agency",
   heroSub:
-    "I'm Le Cong Thien (CongThienDev) — I personally design, code and run marketing for hospitality and tourism businesses.",
+    "I'm Le Cong Thien (CongThienDev) — I personally design, code and run marketing systems for hospitality and tourism businesses instead of outsourcing the work to layers of middlemen.",
   breadcrumb: [
     { label: "Home", href: "/en" },
     { label: "About", href: "/en/about" },
@@ -77,6 +77,15 @@ export const ABOUT_EN = {
       ],
     },
     {
+      heading: "What clients usually hire me for",
+      bullets: [
+        "A real website with booking, payment, and clear conversion paths.",
+        "A Naver presence for Korean travelers before they arrive in Vietnam.",
+        "A stronger Google Maps profile with a compliant reputation process.",
+        "A practical system that connects website, maps, content and messaging.",
+      ],
+    },
+    {
       heading: "Service area",
       body:
         "I work with businesses across Hoi An – Da Nang and all of Vietnam. Everything can be handled online, so distance is never an obstacle.",
@@ -86,6 +95,11 @@ export const ABOUT_EN = {
     { title: "Transparent", desc: "Honest about scope, clear pricing, no empty promises." },
     { title: "Real work", desc: "Verifiable, working products — not just promises." },
     { title: "Sustainable", desc: "Platform-compliant methods for lasting reputation." },
+  ],
+  proof: [
+    "Direct design-and-code execution by the founder.",
+    "Booking and payment flows implemented on real hospitality websites.",
+    "Technical SEO setup covering metadata, schema, sitemap and speed.",
   ],
 };
 

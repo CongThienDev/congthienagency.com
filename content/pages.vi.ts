@@ -1,12 +1,12 @@
 /* ─────────────────────────── HOMEPAGE /vi ─────────────────────────── */
 export const HOME_VI = {
-  metaTitle: "Công Thiên Agency — Website, Naver & Google Maps cho doanh nghiệp du lịch",
+  metaTitle: "Công Thiên Agency | Marketing Online cho doanh nghiệp du lịch",
   metaDescription:
-    "Marketing Online cho doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng: thiết kế website có booking & thanh toán, Naver Marketing, Google Maps Review & Reputation. PageSpeed SEO 100/100.",
+    "Công Thiên Agency là agency Marketing Online cho doanh nghiệp dịch vụ – du lịch tại Hội An – Đà Nẵng, triển khai website, Naver, Google Maps và social theo hệ thống rõ ràng.",
   eyebrow: "Marketing Online · Hội An – Đà Nẵng",
-  h1: "Website & Marketing Online cho doanh nghiệp du lịch tại Hội An – Đà Nẵng",
+  h1: "Agency Marketing Online cho doanh nghiệp du lịch tại Hội An – Đà Nẵng",
   heroSub:
-    "Tôi xây website thật có booking và thanh toán, kết hợp Naver, Google Maps và Social để khách tìm thấy bạn và đặt dịch vụ — minh bạch, đo lường được.",
+    "Tôi xây hệ thống marketing online xoay quanh website, Naver, Google Maps và Social để doanh nghiệp được tìm thấy, được tin tưởng và có khách đặt dịch vụ — minh bạch, đo lường được.",
   heroPrimaryCta: { label: "Nhận tư vấn qua Zalo", href: "/vi/lien-he" },
   heroSecondaryCta: { label: "Xem dự án đã làm", href: "/vi/du-an" },
   trust: [
