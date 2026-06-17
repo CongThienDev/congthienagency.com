@@ -48,6 +48,7 @@ export const BLOG_HUB = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "tai-sao-doanh-nghiep-can-website-rieng",
+    heroImage: { src: "/images/blog/tai-sao-doanh-nghiep-can-website-rieng.webp", alt: "Doanh nghiệp du lịch quản lý website riêng trên laptop" },
     path: "/vi/blog/tai-sao-doanh-nghiep-can-website-rieng",
     cluster: "website",
     title: "Tại sao doanh nghiệp du lịch cần website riêng, không chỉ Facebook?",
@@ -107,6 +108,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-spa-hoi-an-can-gi",
+    heroImage: { src: "/images/blog/website-spa-hoi-an-can-gi.webp", alt: "Không gian spa thư giãn minh hoạ cho website spa Hội An" },
     path: "/vi/blog/website-spa-hoi-an-can-gi",
     cluster: "website",
     title: "Website spa tại Hội An cần những gì để có khách đặt lịch?",
@@ -163,6 +165,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "naver-marketing-la-gi",
+    heroImage: { src: "/images/blog/naver-marketing-la-gi.webp", alt: "Khách Hàn Quốc tìm dịch vụ du lịch trên điện thoại qua Naver" },
     path: "/vi/blog/naver-marketing-la-gi",
     cluster: "naver",
     title: "Naver Marketing là gì và vì sao quan trọng với khách Hàn?",
@@ -214,6 +217,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "what-is-naver-blog-complete-guide",
+    heroImage: { src: "/images/blog/what-is-naver-blog-complete-guide.webp", alt: "Korean tourist reading a Naver blog review on a smartphone" },
     path: "/vi/blog/what-is-naver-blog-complete-guide",
     cluster: "naver",
     title: "What is Naver Blog? A Complete Guide to the Platform",
@@ -321,6 +325,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "quang-cao-naver-blog-la-gi",
+    heroImage: { src: "/images/blog/quang-cao-naver-blog-la-gi.webp", alt: "Du khách Hàn xem nội dung quảng cáo Naver Blog trên điện thoại" },
     path: "/vi/blog/quang-cao-naver-blog-la-gi",
     cluster: "naver",
     title: "Quảng cáo Naver Blog là gì? Cách thức hoạt động và chi phí",
@@ -430,6 +435,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "toi-uu-google-maps-cho-doanh-nghiep",
+    heroImage: { src: "/images/blog/toi-uu-google-maps-cho-doanh-nghiep.webp", alt: "Tìm địa điểm doanh nghiệp trên Google Maps bằng điện thoại" },
     path: "/vi/blog/toi-uu-google-maps-cho-doanh-nghiep",
     cluster: "maps",
     title: "Tối ưu Google Maps cho doanh nghiệp du lịch: bắt đầu từ đâu?",
@@ -490,6 +496,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "pagespeed-seo-100-nghia-la-gi",
+    heroImage: { src: "/images/blog/pagespeed-seo-100-nghia-la-gi.webp", alt: "Lập trình viên tối ưu tốc độ tải website đạt điểm PageSpeed cao" },
     path: "/vi/blog/pagespeed-seo-100-nghia-la-gi",
     cluster: "website",
     title: "PageSpeed SEO 100/100 nghĩa là gì và vì sao nó quan trọng?",
@@ -545,6 +552,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ho-tro-xac-minh-fanpage-meta-verified",
+    heroImage: { src: "/images/blog/ho-tro-xac-minh-fanpage-meta-verified.webp", alt: "Quản lý fanpage và mạng xã hội trên điện thoại" },
     path: "/vi/blog/ho-tro-xac-minh-fanpage-meta-verified",
     cluster: "social",
     title: "Xác minh Fanpage và Meta Verified: quy trình và điều cần biết",
@@ -604,6 +612,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "chi-phi-lam-website-doanh-nghiep",
+    heroImage: { src: "/images/blog/chi-phi-lam-website-doanh-nghiep.webp", alt: "Lập trình website doanh nghiệp hiển thị trên màn hình code" },
     path: "/vi/blog/chi-phi-lam-website-doanh-nghiep",
     cluster: "website",
     title: "Chi phí làm website doanh nghiệp phụ thuộc vào những gì?",
@@ -659,6 +668,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-booking-online-can-nhung-gi",
+    heroImage: { src: "/images/blog/website-booking-online-can-nhung-gi.webp", alt: "Khách đặt phòng online qua website booking trên điện thoại" },
     path: "/vi/blog/website-booking-online-can-nhung-gi",
     cluster: "website",
     title: "Website booking online cần những gì để chốt khách tốt hơn?",
@@ -739,6 +749,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-da-ngon-ngu-cho-khach-quoc-te",
+    heroImage: { src: "/images/blog/website-da-ngon-ngu-cho-khach-quoc-te.webp", alt: "Khách quốc tế dùng website đa ngôn ngữ khi đi du lịch" },
     path: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te",
     cluster: "website",
     title: "Website đa ngôn ngữ cho khách quốc tế cần lưu ý những gì?",
@@ -818,6 +829,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "nen-lam-website-hay-chi-dung-ota-facebook",
+    heroImage: { src: "/images/blog/nen-lam-website-hay-chi-dung-ota-facebook.webp", alt: "So sánh dùng website riêng và mạng xã hội cho doanh nghiệp du lịch" },
     path: "/vi/blog/nen-lam-website-hay-chi-dung-ota-facebook",
     cluster: "website",
     title: "Nên làm website hay chỉ dùng OTA và Facebook?",
@@ -896,6 +908,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-khach-san-khac-gi-website-spa",
+    heroImage: { src: "/images/blog/website-khach-san-khac-gi-website-spa.webp", alt: "Quầy lễ tân khách sạn minh hoạ cho website đặt phòng" },
     path: "/vi/blog/website-khach-san-khac-gi-website-spa",
     cluster: "website",
     title: "Website khách sạn khác gì website spa?",
@@ -974,6 +987,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "vi-sao-khach-han-dung-naver",
+    heroImage: { src: "/images/blog/vi-sao-khach-han-dung-naver.webp", alt: "Người Hàn dùng Naver để tìm kiếm thông tin khi đi du lịch" },
     path: "/vi/blog/vi-sao-khach-han-dung-naver",
     cluster: "naver",
     title: "Vì sao khách Hàn dùng Naver chứ không phải Google?",
@@ -1038,6 +1052,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-viet-bai-naver-blog-chuan",
+    heroImage: { src: "/images/blog/cach-viet-bai-naver-blog-chuan.webp", alt: "Viết bài blog tiếng Hàn trên laptop cho chiến dịch Naver" },
     path: "/vi/blog/cach-viet-bai-naver-blog-chuan",
     cluster: "naver",
     title: "Cách viết bài Naver Blog chuẩn để tiếp cận khách Hàn",
@@ -1109,6 +1124,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "bo-tu-khoa-naver-cho-du-lich",
+    heroImage: { src: "/images/blog/bo-tu-khoa-naver-cho-du-lich.webp", alt: "Nghiên cứu bộ từ khóa Naver cho doanh nghiệp du lịch" },
     path: "/vi/blog/bo-tu-khoa-naver-cho-du-lich",
     cluster: "naver",
     title: "Bộ từ khóa Naver cho doanh nghiệp du lịch Hội An – Đà Nẵng",
@@ -1178,6 +1194,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "chuan-bi-hinh-anh-cho-bai-naver",
+    heroImage: { src: "/images/blog/chuan-bi-hinh-anh-cho-bai-naver.webp", alt: "Chuẩn bị hình ảnh chất lượng cao cho bài Naver Blog" },
     path: "/vi/blog/chuan-bi-hinh-anh-cho-bai-naver",
     cluster: "naver",
     title: "Chuẩn bị hình ảnh cho bài Naver Blog: checklist cho doanh nghiệp",
@@ -1252,6 +1269,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "naver-koc-blogger-han-la-gi",
+    heroImage: { src: "/images/blog/naver-koc-blogger-han-la-gi.webp", alt: "Blogger Hàn Quốc chụp hình review dịch vụ du lịch" },
     path: "/vi/blog/naver-koc-blogger-han-la-gi",
     cluster: "naver",
     title: "Naver KOC và blogger Hàn hoạt động thế nào trong một chiến dịch?",
@@ -1322,6 +1340,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "naver-place-la-gi",
+    heroImage: { src: "/images/blog/naver-place-la-gi.webp", alt: "Bản đồ Naver Place hiển thị địa điểm doanh nghiệp cho khách Hàn" },
     path: "/vi/blog/naver-place-la-gi",
     cluster: "naver",
     title: "Naver Place là gì? “Google Maps của người Hàn” cho doanh nghiệp du lịch",
@@ -1416,6 +1435,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "naver-place-khac-naver-blog-the-nao",
+    heroImage: { src: "/images/blog/naver-place-khac-naver-blog-the-nao.webp", alt: "Du khách Hàn xem bản đồ địa điểm trên điện thoại" },
     path: "/vi/blog/naver-place-khac-naver-blog-the-nao",
     cluster: "naver",
     title: "Naver Place khác Naver Blog thế nào?",
@@ -1483,6 +1503,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "bao-lau-thi-naver-co-tin-hieu",
+    heroImage: { src: "/images/blog/bao-lau-thi-naver-co-tin-hieu.webp", alt: "Theo dõi tín hiệu hiệu quả chiến dịch Naver theo thời gian" },
     path: "/vi/blog/bao-lau-thi-naver-co-tin-hieu",
     cluster: "naver",
     title: "Bao lâu thì Naver có tín hiệu sau khi bắt đầu làm nội dung?",
@@ -1550,6 +1571,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-do-hieu-qua-chien-dich-naver",
+    heroImage: { src: "/images/blog/cach-do-hieu-qua-chien-dich-naver.webp", alt: "Phân tích số liệu hiệu quả chiến dịch Naver trên màn hình" },
     path: "/vi/blog/cach-do-hieu-qua-chien-dich-naver",
     cluster: "naver",
     title: "Cách đo hiệu quả chiến dịch Naver cho doanh nghiệp du lịch",
@@ -1617,6 +1639,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ho-so-doanh-nghiep-truoc-khi-book-blogger-han",
+    heroImage: { src: "/images/blog/ho-so-doanh-nghiep-truoc-khi-book-blogger-han.webp", alt: "Chuẩn bị hồ sơ doanh nghiệp trước khi book blogger Hàn" },
     path: "/vi/blog/ho-so-doanh-nghiep-truoc-khi-book-blogger-han",
     cluster: "naver",
     title: "Hồ sơ doanh nghiệp cần chuẩn bị gì trước khi book blogger Hàn?",
@@ -1684,6 +1707,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "chi-phi-naver-marketing",
+    heroImage: { src: "/images/blog/chi-phi-naver-marketing.webp", alt: "Tính chi phí các gói Naver Marketing cho doanh nghiệp" },
     path: "/vi/blog/chi-phi-naver-marketing",
     cluster: "naver",
     title: "Chi phí Naver Marketing bao nhiêu? Các gói và yếu tố quyết định giá",
@@ -1770,6 +1794,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "tao-tai-khoan-naver-blog-doanh-nghiep",
+    heroImage: { src: "/images/blog/tao-tai-khoan-naver-blog-doanh-nghiep.webp", alt: "Tạo và vận hành tài khoản Naver Blog cho doanh nghiệp" },
     path: "/vi/blog/tao-tai-khoan-naver-blog-doanh-nghiep",
     cluster: "naver",
     title: "Cách tạo và vận hành tài khoản Naver Blog cho doanh nghiệp",
@@ -1855,6 +1880,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-business-profile-audit-gom-nhung-gi",
+    heroImage: { src: "/images/blog/google-business-profile-audit-gom-nhung-gi.webp", alt: "Rà soát hồ sơ Google Business Profile trên màn hình" },
     path: "/vi/blog/google-business-profile-audit-gom-nhung-gi",
     cluster: "maps",
     title: "Google Business Profile audit gồm những gì?",
@@ -1938,6 +1964,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "khi-nao-can-gop-ho-so-trung-google-maps",
+    heroImage: { src: "/images/blog/khi-nao-can-gop-ho-so-trung-google-maps.webp", alt: "Định vị địa điểm doanh nghiệp trùng lặp trên bản đồ" },
     path: "/vi/blog/khi-nao-can-gop-ho-so-trung-google-maps",
     cluster: "maps",
     title: "Khi nào cần gộp hồ sơ trùng trên Google Maps?",
@@ -2005,6 +2032,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "website-ho-tro-google-maps-ra-sao",
+    heroImage: { src: "/images/blog/website-ho-tro-google-maps-ra-sao.webp", alt: "Ghim vị trí doanh nghiệp trên Google Maps" },
     path: "/vi/blog/website-ho-tro-google-maps-ra-sao",
     cluster: "maps",
     title: "Website hỗ trợ Google Maps mạnh hơn như thế nào?",
@@ -2071,6 +2099,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "quy-trinh-xin-review-that-sau-dich-vu",
+    heroImage: { src: "/images/blog/quy-trinh-xin-review-that-sau-dich-vu.webp", alt: "Khách hàng để lại đánh giá thật sau khi dùng dịch vụ" },
     path: "/vi/blog/quy-trinh-xin-review-that-sau-dich-vu",
     cluster: "maps",
     title: "Quy trình xin review thật sau dịch vụ để tăng Google Maps bền vững",
@@ -2141,6 +2170,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "local-seo-la-gi",
+    heroImage: { src: "/images/blog/local-seo-la-gi.webp", alt: "Tìm kiếm địa điểm địa phương trên bản đồ số" },
     path: "/vi/blog/local-seo-la-gi",
     cluster: "maps",
     title: "Local SEO là gì và vì sao doanh nghiệp du lịch cần?",
@@ -2225,6 +2255,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-business-profile-can-co-gi",
+    heroImage: { src: "/images/blog/google-business-profile-can-co-gi.webp", alt: "Khách xem thông tin doanh nghiệp trên Google Business Profile" },
     path: "/vi/blog/google-business-profile-can-co-gi",
     cluster: "maps",
     title: "Google Business Profile cần có gì để khách chọn bạn?",
@@ -2322,6 +2353,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "vi-sao-hinh-anh-google-maps-quan-trong",
+    heroImage: { src: "/images/blog/vi-sao-hinh-anh-google-maps-quan-trong.webp", alt: "Hình ảnh đẹp của quán thu hút khách trên Google Maps" },
     path: "/vi/blog/vi-sao-hinh-anh-google-maps-quan-trong",
     cluster: "maps",
     title: "Vì sao hình ảnh trên Google Maps quan trọng hơn bạn nghĩ?",
@@ -2397,6 +2429,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-co-them-danh-gia-google-that",
+    heroImage: { src: "/images/blog/cach-co-them-danh-gia-google-that.webp", alt: "Khách hàng đánh giá năm sao cho doanh nghiệp" },
     path: "/vi/blog/cach-co-them-danh-gia-google-that",
     cluster: "maps",
     title: "Cách có thêm đánh giá Google từ khách hàng thật (đúng chính sách)",
@@ -2472,6 +2505,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-len-top-google-maps",
+    heroImage: { src: "/images/blog/cach-len-top-google-maps.webp", alt: "Doanh nghiệp lên top kết quả tìm kiếm trên Google Maps" },
     path: "/vi/blog/cach-len-top-google-maps",
     cluster: "maps",
     title: "Cách lên top Google Maps: các yếu tố xếp hạng địa phương",
@@ -2548,6 +2582,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "phan-hoi-danh-gia-tieu-cuc-google",
+    heroImage: { src: "/images/blog/phan-hoi-danh-gia-tieu-cuc-google.webp", alt: "Chủ doanh nghiệp phản hồi đánh giá tiêu cực của khách" },
     path: "/vi/blog/phan-hoi-danh-gia-tieu-cuc-google",
     cluster: "maps",
     title: "Cách phản hồi đánh giá tiêu cực trên Google Maps",
@@ -2618,6 +2653,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "doanh-nghiep-khong-hien-thi-tren-google-maps",
+    heroImage: { src: "/images/blog/doanh-nghiep-khong-hien-thi-tren-google-maps.webp", alt: "Tìm doanh nghiệp trên bản đồ Google Maps" },
     path: "/vi/blog/doanh-nghiep-khong-hien-thi-tren-google-maps",
     cluster: "maps",
     title: "Vì sao doanh nghiệp không hiển thị trên Google Maps?",
@@ -2700,6 +2736,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "social-proof-la-gi",
+    heroImage: { src: "/images/blog/social-proof-la-gi.webp", alt: "Tương tác và đánh giá tích cực trên mạng xã hội" },
     path: "/vi/blog/social-proof-la-gi",
     cluster: "social",
     title: "Social proof là gì và vì sao quyết định việc khách có booking?",
@@ -2768,6 +2805,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-xay-fanpage-chuyen-nghiep",
+    heroImage: { src: "/images/blog/cach-xay-fanpage-chuyen-nghiep.webp", alt: "Xây dựng nội dung fanpage chuyên nghiệp trên điện thoại" },
     path: "/vi/blog/cach-xay-fanpage-chuyen-nghiep",
     cluster: "social",
     title: "Cách xây Fanpage chuyên nghiệp tạo niềm tin trước khi khách booking",
@@ -2843,6 +2881,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "meta-verified-la-gi",
+    heroImage: { src: "/images/blog/meta-verified-la-gi.webp", alt: "Tài khoản mạng xã hội có dấu tích xác minh Meta Verified" },
     path: "/vi/blog/meta-verified-la-gi",
     cluster: "social",
     title: "Meta Verified là gì? Tick xanh trả phí có đáng đăng ký không?",
@@ -2913,6 +2952,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "fanpage-moi-co-len-tick-xanh-duoc-khong",
+    heroImage: { src: "/images/blog/fanpage-moi-co-len-tick-xanh-duoc-khong.webp", alt: "Quản lý trang fanpage mới trên điện thoại" },
     path: "/vi/blog/fanpage-moi-co-len-tick-xanh-duoc-khong",
     cluster: "social",
     title: "Fanpage mới có lên tick xanh được không?",
@@ -2983,6 +3023,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "buff-follow-co-nen-dung-khong",
+    heroImage: { src: "/images/blog/buff-follow-co-nen-dung-khong.webp", alt: "Theo dõi lượng người theo dõi trên mạng xã hội" },
     path: "/vi/blog/buff-follow-co-nen-dung-khong",
     cluster: "social",
     title: "Buff follow có nên dùng không? Góc nhìn bền vững cho doanh nghiệp",
@@ -3053,6 +3094,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-cach-dung-naver-blog-tiep-can-khach-han",
+    heroImage: { src: "/images/blog/top-cach-dung-naver-blog-tiep-can-khach-han.webp", alt: "Du khách Hàn lên kế hoạch chuyến đi qua Naver Blog" },
     path: "/vi/blog/top-cach-dung-naver-blog-tiep-can-khach-han",
     cluster: "naver",
     title: "Top 7 cách dùng Naver Blog để tiếp cận khách Hàn trước mùa cao điểm",
@@ -3139,6 +3181,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-website-booking-online-phai-co-gi",
+    heroImage: { src: "/images/blog/top-website-booking-online-phai-co-gi.webp", alt: "Giao diện website booking online hiển thị phòng trống" },
     path: "/vi/blog/top-website-booking-online-phai-co-gi",
     cluster: "website",
     title: "Top 7 yếu tố website booking online phải có nếu muốn tăng khách",
@@ -3225,6 +3268,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-toi-uu-google-maps-de-len-top",
+    heroImage: { src: "/images/blog/top-toi-uu-google-maps-de-len-top.webp", alt: "Khách hàng hài lòng để lại đánh giá nhà hàng trên Google Maps" },
     path: "/vi/blog/top-toi-uu-google-maps-de-len-top",
     cluster: "maps",
     title: "Top 7 việc cần làm để Google Maps của bạn dễ lên top hơn",
@@ -3311,6 +3355,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-cach-quet-ma-zalo-thu-lead",
+    heroImage: { src: "/images/blog/top-cach-quet-ma-zalo-thu-lead.webp", alt: "Khách quét mã QR Zalo tại điểm bán để nhận ưu đãi" },
     path: "/vi/blog/top-cach-quet-ma-zalo-thu-lead",
     cluster: "qr",
     title: "Top 7 cách quét mã Zalo để thu lead ngay tại điểm bán",
@@ -3397,6 +3442,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "top-cach-tang-follow-facebook-doanh-nghiep",
+    heroImage: { src: "/images/blog/top-cach-tang-follow-facebook-doanh-nghiep.webp", alt: "Doanh nghiệp tăng tương tác và follow trên mạng xã hội" },
     path: "/vi/blog/top-cach-tang-follow-facebook-doanh-nghiep",
     cluster: "social",
     title: "Top 7 cách tăng follow Facebook cho doanh nghiệp dịch vụ",
@@ -3483,6 +3529,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "quet-ma-qr-tai-app-kiem-tien-co-that-khong",
+    heroImage: { src: "/images/blog/quet-ma-qr-tai-app-kiem-tien-co-that-khong.webp", alt: "Quét mã QR bằng điện thoại để tải ứng dụng" },
     path: "/vi/blog/quet-ma-qr-tai-app-kiem-tien-co-that-khong",
     cluster: "qr",
     title: "Quét mã QR tải app kiếm tiền có thật không? Cách phân biệt thật – lừa đảo",
@@ -3564,6 +3611,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cong-tac-vien-quet-ma-qr-la-gi",
+    heroImage: { src: "/images/blog/cong-tac-vien-quet-ma-qr-la-gi.webp", alt: "Cộng tác viên quét mã QR bằng điện thoại" },
     path: "/vi/blog/cong-tac-vien-quet-ma-qr-la-gi",
     cluster: "qr",
     title: "Cộng tác viên quét mã QR là gì? Công việc, thu nhập và cách bắt đầu",
@@ -3644,6 +3692,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "tranh-bay-viec-nhe-luong-cao-quet-ma-qr",
+    heroImage: { src: "/images/blog/tranh-bay-viec-nhe-luong-cao-quet-ma-qr.webp", alt: "Cảnh giác khi quét mã QR nhận thưởng trên điện thoại" },
     path: "/vi/blog/tranh-bay-viec-nhe-luong-cao-quet-ma-qr",
     cluster: "qr",
     title: "Tránh bẫy “việc nhẹ lương cao” khi quét mã QR, tải app nhận thưởng",
@@ -3725,6 +3774,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep",
+    heroImage: { src: "/images/blog/cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep.webp", alt: "Tạo mã QR Zalo OA cho doanh nghiệp để thu lead tại điểm bán" },
     path: "/vi/blog/cach-tao-ma-qr-zalo-oa-cho-doanh-nghiep",
     cluster: "qr",
     title: "Cách tạo mã QR Zalo OA cho doanh nghiệp để thu lead tại điểm bán",
