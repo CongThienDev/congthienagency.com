@@ -47,6 +47,8 @@ export const FOOTER_VI = {
     { label: "Bảng giá", href: "/vi/bang-gia" },
     { label: "Dự án", href: "/vi/du-an" },
     { label: "Blog", href: "/vi/blog" },
+    { label: "Câu hỏi thường gặp", href: "/vi/cau-hoi-thuong-gap" },
+    { label: "Từ điển Marketing", href: "/vi/tu-dien-marketing" },
     { label: "Liên hệ", href: "/vi/lien-he" },
   ],
 };

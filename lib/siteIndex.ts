@@ -39,6 +39,8 @@ const VI_CORE_PAGES: IndexablePage[] = [
   { path: "/vi/lien-he", title: "Liên hệ", changeFrequency: "monthly", priority: 0.6, imageCandidates: CORE_PAGE_IMAGES },
   { path: "/vi/du-an", title: "Dự án", changeFrequency: "weekly", priority: 0.8, imageCandidates: CORE_PAGE_IMAGES },
   { path: "/vi/blog", title: "Blog", changeFrequency: "weekly", priority: 0.8, imageCandidates: CORE_PAGE_IMAGES },
+  { path: "/vi/cau-hoi-thuong-gap", title: "Câu hỏi thường gặp", changeFrequency: "weekly", priority: 0.75, imageCandidates: CORE_PAGE_IMAGES },
+  { path: "/vi/tu-dien-marketing", title: "Từ điển Marketing", changeFrequency: "monthly", priority: 0.75, imageCandidates: CORE_PAGE_IMAGES },
 ];
 
 const EN_CORE_PAGES: IndexablePage[] = [
