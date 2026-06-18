@@ -44,21 +44,19 @@ export function TrustStrip({
         {items.map((it) => (
           <div
             key={it.label}
-            className="group flex items-center gap-3.5 px-5 py-5 transition-colors hover:bg-blue-50/40 sm:px-6"
+            className="group grid grid-cols-[auto_1fr] items-center gap-x-3.5 px-5 py-5 transition-colors hover:bg-blue-50/40 sm:px-6"
           >
             {it.icon && (
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600 ring-1 ring-blue-100 transition-transform duration-300 group-hover:scale-110">
+              <span className="row-span-2 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600 ring-1 ring-blue-100 transition-transform duration-300 group-hover:scale-110">
                 {it.icon}
               </span>
             )}
-            <div className="min-w-0">
-              <dt className="truncate text-lg font-bold tracking-tight text-ink sm:text-xl">
-                {it.value}
-              </dt>
-              <dd className="truncate text-[11px] font-medium text-muted sm:text-xs">
-                {it.label}
-              </dd>
-            </div>
+            <dt className="truncate text-lg font-bold tracking-tight text-ink sm:text-xl">
+              {it.value}
+            </dt>
+            <dd className="truncate text-[11px] font-medium text-muted sm:text-xs">
+              {it.label}
+            </dd>
           </div>
         ))}
       </dl>
