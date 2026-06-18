@@ -44,13 +44,31 @@ export function MobileHomeHero({
         </div>
 
         <h1
-          className="animate-rise mt-5 max-w-[18.5rem] text-[1.88rem] font-bold leading-[1.08] tracking-[-0.04em] text-ink"
+          className="animate-rise mt-5 text-[1.88rem] font-bold leading-[1.08] tracking-tight text-ink text-balance sm:text-5xl lg:text-[3.4rem]"
           style={{ animationDelay: "80ms" }}
         >
-          <span className="block">Website, Naver &amp;</span>
-          <span className="block">Google Maps</span>
-          <span className="mt-1 block text-blue-600">cho spa, nhà hàng</span>
-          <span className="block text-blue-600">tại Hội An</span>
+          {/* Mobile: 4 lines */}
+          <span className="block lg:hidden">Website, Naver &amp;</span>
+          <span className="block lg:hidden">Google Maps</span>
+          <span className="mt-1 block lg:hidden text-blue-600">cho spa, nhà hàng</span>
+          <span className="block lg:hidden text-blue-600">tại Hội An</span>
+
+          {/* Desktop: 1 line with underline */}
+          <span className="hidden lg:inline">
+            Website, Naver &amp; Google Maps cho{" "}
+            <span className="relative whitespace-nowrap text-blue-700">
+              spa, nhà hàng
+              <svg
+                aria-hidden
+                viewBox="0 0 200 9"
+                className="absolute -bottom-1.5 left-0 w-full text-blue-300"
+                preserveAspectRatio="none"
+              >
+                <path d="M1 7C40 2.5 120 1.5 199 5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+              </svg>
+            </span>{" "}
+            tại Hội An
+          </span>
         </h1>
 
         <div

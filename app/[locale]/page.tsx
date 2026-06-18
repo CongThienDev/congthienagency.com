@@ -230,7 +230,7 @@ function HomeVI() {
                 </span>
               </div>
 
-              <h1
+              <div
                 className="animate-rise mt-5 text-[2.1rem] font-bold leading-[1.08] tracking-tight text-ink text-balance sm:text-5xl lg:text-[3.4rem]"
                 style={{ animationDelay: "80ms" }}
               >
@@ -247,7 +247,7 @@ function HomeVI() {
                   </svg>
                 </span>{" "}
                 tại Hội An
-              </h1>
+              </div>
 
               <p
                 className="animate-rise mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg"

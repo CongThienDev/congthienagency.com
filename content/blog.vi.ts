@@ -90,7 +90,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Website cho phép đặt và thanh toán online" },
       {
         type: "p",
-        text: "Khác với Fanpage, website có thể tích hợp booking và thanh toán, giúp khách đặt dịch vụ ngay cả ngoài giờ làm việc — như cách tôi đã triển khai cho Serena Retreat và Ruong House.",
+        parts: [
+          { type: "text", text: "Khác với Fanpage, website có thể tích hợp booking và thanh toán, giúp khách đặt dịch vụ ngay cả ngoài giờ làm việc — như cách tôi đã triển khai cho Serena Retreat và Ruong House. Tìm hiểu thêm về " },
+          { type: "link", text: "dịch vụ thiết kế website", href: "/vi/thiet-ke-website" },
+          { type: "text", text: " phù hợp với từng ngành du lịch tại Hội An." },
+        ],
       },
     ],
     related: [
@@ -199,7 +203,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Vì sao hiệu quả với doanh nghiệp du lịch" },
       {
         type: "p",
-        text: "Nội dung tiếng Hàn tự nhiên trên Naver giúp doanh nghiệp xuất hiện đúng lúc khách Hàn đang cân nhắc lựa chọn, tăng độ tin tưởng trước khi họ đặt dịch vụ.",
+        parts: [
+          { type: "text", text: "Nội dung tiếng Hàn tự nhiên trên Naver giúp doanh nghiệp xuất hiện đúng lúc khách Hàn đang cân nhắc lựa chọn, tăng độ tin tưởng trước khi họ đặt dịch vụ. Xem chi tiết về " },
+          { type: "link", text: "dịch vụ Naver Marketing", href: "/vi/naver-marketing" },
+          { type: "text", text: " tôi đang triển khai tại Hội An – Đà Nẵng." },
+        ],
       },
     ],
     related: [
@@ -879,7 +887,9 @@ export const BLOG_POSTS: BlogPost[] = [
         parts: [
           { type: "text", text: "Không phải chọn một bỏ một. Cách bền vững hơn là dùng OTA và Facebook như kênh kéo khách, còn website là trung tâm để xây thương hiệu, gom thông tin chuẩn, nhận booking trực tiếp và liên kết với Google Maps hoặc Naver. Nếu mục tiêu của bạn là chốt trực tiếp ngay trên site, hãy xem thêm " },
           { type: "link", text: "website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi" },
-          { type: "text", text: ". Khi ba kênh hỗ trợ nhau, hiệu quả thường tốt hơn nhiều so với phụ thuộc vào một nơi." },
+          { type: "text", text: ". Khi ba kênh hỗ trợ nhau, hiệu quả thường tốt hơn nhiều so với phụ thuộc vào một nơi — và " },
+          { type: "link", text: "thiết kế website đúng chuẩn", href: "/vi/thiet-ke-website" },
+          { type: "text", text: " là nền tảng duy nhất bạn hoàn toàn kiểm soát." },
         ],
       },
     ],
@@ -3978,7 +3988,9 @@ export const BLOG_POSTS: BlogPost[] = [
         parts: [
           { type: "text", text: "Tối thiểu bạn cần hồ sơ doanh nghiệp rõ ràng, hình ảnh thật và một kênh để khách liên hệ. Về ngân sách, bạn có thể tham khảo " },
           { type: "link", text: "bảng giá Naver chi tiết", href: "/vi/naver-marketing/bang-gia-chi-tiet" },
-          { type: "text", text: " để lập kế hoạch phù hợp." },
+          { type: "text", text: " để lập kế hoạch phù hợp, hoặc tìm hiểu toàn bộ " },
+          { type: "link", text: "dịch vụ Naver Marketing", href: "/vi/naver-marketing" },
+          { type: "text", text: " để biết quy trình và cam kết triển khai." },
         ],
       },
     ],
@@ -4596,7 +4608,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Kết luận: landing page là công cụ, không phải mục tiêu" },
       {
         type: "p",
-        text: "Landing page không thay thế website chính. Đây là công cụ chuyển đổi cho chiến dịch cụ thể — và bạn chỉ cần khi có chiến dịch ads thật. Nếu doanh nghiệp đang trong giai đoạn xây nền tảng organic, hãy ưu tiên website đầy đủ + Google Maps + Naver trước. Khi nào sẵn sàng đốt ngân sách ads, lúc đó landing page mới phát huy ROI.",
+        parts: [
+          { type: "text", text: "Landing page không thay thế website chính. Đây là công cụ chuyển đổi cho chiến dịch cụ thể — và bạn chỉ cần khi có chiến dịch ads thật. Nếu doanh nghiệp đang trong giai đoạn xây nền tảng organic, hãy ưu tiên website đầy đủ + Google Maps + Naver trước. Xem thêm các bài phân tích thực tế tại " },
+          { type: "link", text: "blog marketing Hội An", href: "/vi/blog" },
+          { type: "text", text: " để có lộ trình xây kênh rõ hơn trước khi quyết định ngân sách ads." },
+        ],
       },
     ],
     faqs: [
