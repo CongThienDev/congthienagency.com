@@ -10,13 +10,13 @@ Production website for Công Thiên Agency, a founder-led marketing and web agen
 
 ## PageSpeed Snapshot
 
-Desktop (`June 18, 2026`)
+Desktop (`June 19, 2026`)
 
-![Desktop PageSpeed snapshot](docs/assets/readme/pagespeed-desktop-2026-06-18.png)
+![Desktop PageSpeed snapshot](docs/assets/readme/pagespeed-desktop-2026-06-19.png)
 
-Mobile (`June 18, 2026`)
+Mobile (`June 19, 2026`)
 
-![Mobile PageSpeed snapshot](docs/assets/readme/pagespeed-mobile-2026-06-18.png)
+![Mobile PageSpeed snapshot](docs/assets/readme/pagespeed-mobile-2026-06-19.png)
 
 ## Stack
 
