@@ -14,7 +14,7 @@ export type IndexablePage = {
   imageCandidates: string[];
 };
 
-const CONTENT_LAST_MODIFIED = "2026-06-18";
+const CONTENT_LAST_MODIFIED = "2026-06-18"; // bump this only when shared layout/nav changes
 
 const HOMEPAGE_IMAGES = [
   OG_IMAGE,
@@ -79,7 +79,7 @@ export function getAllIndexablePages(): IndexablePage[] {
   const servicePages: IndexablePage[] = SERVICES.map((service) => ({
     path: service.path,
     title: service.metaTitle,
-    lastModified: CONTENT_LAST_MODIFIED,
+    lastModified: service.lastModified ?? CONTENT_LAST_MODIFIED,
     changeFrequency: "weekly",
     priority: service.isPillar ? 0.8 : 0.75,
     imageCandidates: [OG_IMAGE, ...service.images.map((image) => image.suggestion)],
