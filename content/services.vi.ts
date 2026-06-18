@@ -5119,6 +5119,837 @@ export const SERVICES: Service[] = [
     schema: { serviceType: "Website Design for Cafe and Bar", offerMinPriceVnd: 12000000 },
   },
 
+  /* ───────────────── EN: Naver Blog English ───────────────── */
+  {
+    path: "/en/naver-marketing/naver-blog-english",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Blog English", href: "/en/naver-marketing/naver-blog-english" },
+    ],
+    primaryKeyword: "Naver Blog English",
+    metaTitle: "Naver Blog English: Guide & Marketing Support for Vietnam Brands",
+    metaDescription:
+      "Is Naver Blog available in English? A clear guide for non-Korean readers — interface language, English content options on Naver Blog and how Vietnam brands work around it.",
+    eyebrow: "Naver Blog · English",
+    h1: "Naver Blog in English: what works, what doesn't",
+    heroSub:
+      "Naver Blog is a Korean platform with no official English interface. This page explains how English speakers read, write and use Naver Blog — and how Vietnam brands publish content that reaches Korean travelers.",
+    heroCta: "Talk to a Naver content lead",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Many people search for 'Naver Blog English' to know whether Naver Blog has an English version, whether English posts work on Naver, or how to read Korean blog content as a non-Korean reader. The short answer: Naver Blog is built for the Korean market and does not have a real English UI. But there are still ways to publish English content, translate Korean posts, and use Naver Blog as a marketing channel for Vietnam tourism brands.",
+    sections: [
+      {
+        heading: "Is Naver Blog available in English?",
+        body:
+          "Naver Blog does not offer an official English interface. The dashboard, menu, comment system and search results are in Korean. Browser translation (Chrome, Edge, Safari) can translate posts, but the writing experience and discovery are still Korean-first.",
+      },
+      {
+        heading: "Can you write Naver Blog posts in English?",
+        bullets: [
+          "Yes — Naver accepts English text in posts, but Korean users mostly search in Korean.",
+          "English-only posts rarely rank for Korean travel queries.",
+          "The most effective pattern is Korean primary content with an English summary section for global readers.",
+          "Bilingual posts can support brand pages, press releases or international team profiles.",
+        ],
+      },
+      {
+        heading: "How English-speaking brands use Naver Blog for Vietnam tourism",
+        body:
+          "Vietnam hotels, tours, spas and restaurants that target Korean guests usually publish in Korean. The English-speaking owner or marketing manager works with a Korean writer or partner agency, reviews briefs in English, and approves Korean drafts before publishing on Naver Blog.",
+      },
+      {
+        heading: "Reading Naver Blog content as an English speaker",
+        bullets: [
+          "Open the post in Chrome or Edge and use the built-in translate option.",
+          "Use Papago (Naver's translation tool) for more natural Korean → English results.",
+          "Check the original photos, prices and locations — they are universal even when text is Korean.",
+          "Note that Korean review tone is often softer and more story-driven than English reviews.",
+        ],
+      },
+      {
+        heading: "When English content on Naver Blog actually helps",
+        body:
+          "English content on Naver Blog is useful for global PR, investor pages, English-speaking expat audiences in Korea and bilingual brand storytelling. It is not the right channel if your goal is Korean tourist acquisition — for that, Korean-language Naver Blog content remains the standard.",
+      },
+    ],
+    deliverables: {
+      title: "What we help with",
+      items: [
+        "Naver Blog content strategy for non-Korean speaking owners",
+        "Korean writing briefs and translation review in English",
+        "Bilingual Naver Blog post structure",
+        "Korean keyword research with English explanations",
+        "English summaries for Korean-first posts",
+        "Coordination between English-speaking brand team and Korean writers",
+      ],
+    },
+    whoFor: [
+      "Vietnam hotels, tours and F&B brands run by English-speaking owners",
+      "International marketing managers handling Korean-speaking markets",
+      "Brands needing bilingual Naver Blog content",
+      "Teams who want to read and approve Korean drafts before publishing",
+    ],
+    process: [
+      { step: "Audit", detail: "Review current Naver presence and clarify what English content is needed." },
+      { step: "Brief", detail: "Build content briefs in English with Korean keyword targets." },
+      { step: "Write", detail: "Korean writer drafts the post; English summary is added when needed." },
+      { step: "Review", detail: "Brand team reviews English brief + translation before publish." },
+      { step: "Publish", detail: "Post on Naver Blog, track Korean search performance and iterate." },
+    ],
+    priceFrom: "From 8,000,000 VND / 4 posts",
+    priceNote:
+      "Pricing depends on translation depth, number of posts and whether English summaries or bilingual versions are required.",
+    faqs: [
+      {
+        q: "Does Naver Blog have an English version?",
+        a: "No. Naver Blog is built entirely for the Korean market. The dashboard, editor, search index and comment system are all in Korean. There is no language toggle or official English UI. English speakers can use browser translation tools to read posts, but the publishing and discovery experience remains Korean-first.",
+      },
+      {
+        q: "Can I write Naver Blog posts entirely in English?",
+        a: "Technically yes — Naver accepts English text inside blog posts. However, Korean users search in Korean, so English-only posts get almost no organic traffic from Naver search. English posts are useful for brand pages, press releases or expat-facing content, but not for Korean tourist acquisition.",
+      },
+      {
+        q: "How can I read Korean Naver Blog posts as an English speaker?",
+        a: "The fastest method is opening the post in Chrome or Edge and using the built-in page translation feature. For higher-quality Korean-to-English translation, use Naver's own Papago translator at papago.naver.com. Photos, prices and location details in posts are universal and readable regardless of language.",
+      },
+      {
+        q: "Should Vietnam brands write Naver Blog content in English?",
+        a: "Only if the goal is bilingual PR, investor communication or reaching English-speaking expats in Korea. For the primary goal of attracting Korean tourists to Vietnam hotels, restaurants, spas and tours, Korean-language Naver Blog content is the standard and performs significantly better in Naver search results.",
+      },
+      {
+        q: "Can your team handle the Korean writing for us?",
+        a: "Yes. Công Thiên Agency briefs content in English so your team understands the direction, then Korean writers produce the final post. You review an English summary or translation before we publish. This workflow lets non-Korean-speaking brand owners maintain quality control over their Naver Blog presence.",
+      },
+      {
+        q: "What is Papago and how does it help with Naver Blog?",
+        a: "Papago is Naver's own AI translation service, available at papago.naver.com. It handles Korean-English translation more naturally than Google Translate because it is trained on Korean language patterns. English-speaking brand managers can use Papago to review Korean draft posts before approving them for publication on Naver Blog.",
+      },
+      {
+        q: "Is bilingual content on Naver Blog effective for SEO?",
+        a: "Bilingual posts (Korean primary with an English summary section) do not harm Naver SEO and can help brand credibility with international audiences. However, the Korean portion is what drives Naver search ranking. The English section serves readers who land on the post via direct link, social share or browser translation.",
+      },
+      {
+        q: "How long does it take to see results from Naver Blog marketing?",
+        a: "Korean influencer blog reviews can generate traffic within 2–4 weeks of publishing. Brand-owned Naver Blog accounts building organic authority typically need 3–6 months of consistent posting to see meaningful search visibility. The timeline depends on competition in your category, city and keyword targets.",
+      },
+      {
+        q: "Do I need a Korean phone number to create a Naver Blog?",
+        a: "Creating a Naver account used to require Korean phone verification, but Naver now allows sign-up with international email for basic accounts. However, some features and trust signals are tied to Korean-verified accounts. Công Thiên Agency can set up and manage the Naver Blog account on your behalf.",
+      },
+      {
+        q: "How is Naver Blog different from a regular website blog?",
+        a: "A regular website blog lives on your own domain and is indexed by Google. A Naver Blog lives on blog.naver.com and is indexed by Naver's own search engine. For Korean travelers, Naver search is the starting point — not Google. Publishing on Naver Blog puts your content where Korean users actually search, read and trust reviews.",
+      },
+    ],
+    related: [
+      { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "Korean content marketing" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Full-funnel Naver" },
+      { label: "Attract Korean Tourists with Naver", href: "/en/naver-marketing/attract-korean-tourists-with-naver", note: "Tourism playbook" },
+      { label: "Naver Blogs overview", href: "/en/naver-marketing/naver-blogs", note: "Platform overview" },
+      { label: "Naver Blog official", href: "https://blog.naver.com", note: "External · Naver Blog platform" },
+      { label: "Papago translator", href: "https://papago.naver.com", note: "External · Naver translation tool" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver Blog English guide for Vietnam brands" },
+    ],
+    schema: { serviceType: "Naver Blog English content strategy", offerPriceVnd: 8000000 },
+  },
+
+  /* ───────────────── VI: Naver Blog tiếng Anh ───────────────── */
+  {
+    path: "/vi/naver-marketing/naver-blog-tieng-anh",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ", href: "/vi/dich-vu" },
+      { label: "Naver Blog tiếng Anh", href: "/vi/naver-marketing/naver-blog-tieng-anh" },
+    ],
+    primaryKeyword: "Naver Blog tiếng Anh",
+    metaTitle: "Naver Blog tiếng Anh: hướng dẫn & viết bài cho khách quốc tế",
+    metaDescription:
+      "Naver Blog có bản tiếng Anh không, viết bài tiếng Anh trên Naver Blog có hiệu quả không, và cách thương hiệu Việt Nam tiếp cận người Hàn khi chủ doanh nghiệp không biết tiếng Hàn.",
+    eyebrow: "Naver Blog · Tiếng Anh",
+    h1: "Naver Blog tiếng Anh: dùng được không và dùng thế nào",
+    heroSub:
+      "Naver Blog là nền tảng Hàn Quốc, không có giao diện tiếng Anh chính thức. Bài viết này giải thích rõ Naver Blog tiếng Anh hoạt động ra sao, đọc và viết kiểu gì, và doanh nghiệp Việt Nam nên xử lý nội dung Naver thế nào khi chủ thương hiệu không biết tiếng Hàn.",
+    heroCta: "Tư vấn nội dung Naver",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Rất nhiều người tìm 'Naver Blog tiếng Anh' để biết Naver Blog có bản tiếng Anh không, viết bài tiếng Anh trên Naver có lên top được không, hoặc làm sao đọc bài blog tiếng Hàn khi mình không biết tiếng Hàn. Câu trả lời ngắn: Naver Blog được làm cho thị trường Hàn Quốc và không có giao diện tiếng Anh chính thức. Nhưng vẫn có cách viết nội dung tiếng Anh, dịch bài Hàn sang Anh, và dùng Naver Blog như một kênh marketing cho thương hiệu du lịch Việt Nam.",
+    sections: [
+      {
+        heading: "Naver Blog có giao diện tiếng Anh không?",
+        body:
+          "Không. Dashboard quản lý, menu, hệ thống bình luận và kết quả tìm kiếm Naver đều bằng tiếng Hàn. Trình duyệt Chrome, Edge, Safari có thể dịch bài viết sang tiếng Anh, nhưng phần viết bài và tìm kiếm vẫn ưu tiên tiếng Hàn.",
+      },
+      {
+        heading: "Viết bài Naver Blog bằng tiếng Anh có ổn không?",
+        bullets: [
+          "Naver chấp nhận nội dung tiếng Anh trong bài viết.",
+          "Người Hàn chủ yếu tìm bằng tiếng Hàn, nên bài tiếng Anh thường không lên top từ khoá du lịch.",
+          "Hiệu quả nhất là bài tiếng Hàn là chính, có thêm phần tóm tắt tiếng Anh cho người đọc quốc tế.",
+          "Bài song ngữ hợp với trang thương hiệu, thông cáo báo chí hoặc giới thiệu đội ngũ.",
+        ],
+      },
+      {
+        heading: "Chủ doanh nghiệp không biết tiếng Hàn vẫn dùng Naver Blog được",
+        body:
+          "Khách sạn, tour, spa, nhà hàng Việt Nam phục vụ khách Hàn thường viết Naver Blog bằng tiếng Hàn. Chủ thương hiệu nói tiếng Anh sẽ làm việc với writer Hàn hoặc agency Naver, duyệt brief bằng tiếng Anh, xem bản dịch tiếng Anh trước khi đăng bài tiếng Hàn.",
+      },
+      {
+        heading: "Cách đọc bài Naver Blog tiếng Hàn nếu không biết tiếng Hàn",
+        bullets: [
+          "Mở bài bằng Chrome hoặc Edge và bật dịch trang tự động.",
+          "Dùng Papago (công cụ dịch của Naver) cho bản dịch Hàn → Anh tự nhiên hơn Google Translate.",
+          "Hình ảnh, giá tiền, địa điểm trong bài vẫn đọc được bình thường dù chữ là tiếng Hàn.",
+          "Văn phong review Hàn thường mềm và kể chuyện, khác kiểu review thẳng của tiếng Anh.",
+        ],
+      },
+      {
+        heading: "Khi nào nội dung tiếng Anh trên Naver Blog thực sự có ích",
+        body:
+          "Nội dung tiếng Anh trên Naver Blog hợp với PR quốc tế, trang nhà đầu tư, cộng đồng người nước ngoài sống tại Hàn và brand storytelling song ngữ. Nếu mục tiêu là thu hút khách Hàn đến Việt Nam, vẫn nên dùng nội dung tiếng Hàn là chính.",
+      },
+    ],
+    deliverables: {
+      title: "Phạm vi hỗ trợ",
+      items: [
+        "Chiến lược Naver Blog cho chủ thương hiệu không biết tiếng Hàn",
+        "Brief tiếng Anh + review bản dịch trước khi đăng",
+        "Cấu trúc bài song ngữ Hàn–Anh",
+        "Nghiên cứu keyword tiếng Hàn kèm giải thích tiếng Anh",
+        "Phần tóm tắt tiếng Anh trong bài tiếng Hàn",
+        "Phối hợp giữa team thương hiệu (tiếng Anh) và writer Hàn",
+      ],
+    },
+    whoFor: [
+      "Khách sạn, tour, F&B Việt Nam có chủ nói tiếng Anh",
+      "Marketing manager quốc tế phụ trách thị trường Hàn",
+      "Thương hiệu cần nội dung Naver song ngữ",
+      "Đội ngũ muốn duyệt nội dung Hàn trước khi đăng",
+    ],
+    process: [
+      { step: "Audit", detail: "Đánh giá hiện trạng Naver và xác định nội dung tiếng Anh nào thực sự cần." },
+      { step: "Brief", detail: "Xây brief nội dung bằng tiếng Anh với từ khoá tiếng Hàn mục tiêu." },
+      { step: "Viết", detail: "Writer Hàn viết bài; thêm phần tóm tắt tiếng Anh khi cần." },
+      { step: "Duyệt", detail: "Brand team duyệt brief tiếng Anh + bản dịch trước khi đăng." },
+      { step: "Đăng", detail: "Đăng bài, theo dõi traffic tiếng Hàn và tối ưu tiếp." },
+    ],
+    priceFrom: "Từ 8.000.000đ / 4 bài",
+    priceNote:
+      "Giá phụ thuộc độ sâu phần dịch, số lượng bài và việc có làm bản tóm tắt hay bài song ngữ hay không.",
+    faqs: [
+      {
+        q: "Naver Blog có bản tiếng Anh chính thức không?",
+        a: "Không. Naver Blog được xây dựng hoàn toàn cho thị trường Hàn Quốc. Dashboard quản lý, trình soạn thảo, hệ thống tìm kiếm và bình luận đều bằng tiếng Hàn. Không có nút chuyển ngôn ngữ hay giao diện tiếng Anh chính thức. Người dùng nói tiếng Anh có thể dùng tính năng dịch trang của trình duyệt để đọc bài viết.",
+      },
+      {
+        q: "Viết hoàn toàn bằng tiếng Anh trên Naver Blog có lên top được không?",
+        a: "Naver chấp nhận nội dung tiếng Anh trong bài viết, nhưng người dùng Hàn Quốc tìm kiếm bằng tiếng Hàn. Bài tiếng Anh thuần gần như không có traffic từ Naver Search. Nội dung tiếng Anh chỉ phù hợp cho PR quốc tế, trang thương hiệu hoặc nội dung hướng đến cộng đồng người nước ngoài tại Hàn.",
+      },
+      {
+        q: "Tôi không biết tiếng Hàn thì đọc bài Naver Blog kiểu gì?",
+        a: "Cách nhanh nhất là mở bài viết bằng Chrome hoặc Edge và bật dịch trang tự động. Để có bản dịch Hàn–Anh tự nhiên hơn, dùng công cụ Papago của Naver tại papago.naver.com. Ảnh chụp, giá tiền và thông tin địa điểm trong bài vẫn đọc được bình thường bất kể ngôn ngữ.",
+      },
+      {
+        q: "Doanh nghiệp Việt nên viết Naver Blog tiếng Anh hay tiếng Hàn?",
+        a: "Nếu mục tiêu chính là thu hút khách Hàn Quốc đến khách sạn, nhà hàng, spa hay tour tại Việt Nam thì phải viết tiếng Hàn. Tiếng Anh chỉ nên dùng cho bài PR quốc tế, truyền thông nhà đầu tư hoặc nội dung song ngữ phục vụ đối tượng đọc đa ngôn ngữ.",
+      },
+      {
+        q: "Bên bạn có viết bài tiếng Hàn giúp được không?",
+        a: "Có. Công Thiên Agency brief nội dung bằng tiếng Anh để team thương hiệu hiểu rõ hướng đi, sau đó writer Hàn Quốc viết bài hoàn chỉnh. Bạn duyệt bản tóm tắt hoặc bản dịch tiếng Anh trước khi đăng. Quy trình này giúp chủ doanh nghiệp không biết tiếng Hàn vẫn kiểm soát được chất lượng nội dung Naver Blog.",
+      },
+      {
+        q: "Papago là gì và hỗ trợ Naver Blog thế nào?",
+        a: "Papago là dịch vụ dịch thuật AI của Naver, truy cập tại papago.naver.com. Papago xử lý dịch Hàn–Anh tự nhiên hơn Google Translate vì được huấn luyện chuyên sâu trên dữ liệu tiếng Hàn. Chủ thương hiệu nói tiếng Anh có thể dùng Papago để review bản nháp tiếng Hàn trước khi duyệt đăng trên Naver Blog.",
+      },
+      {
+        q: "Nội dung song ngữ trên Naver Blog có tốt cho SEO không?",
+        a: "Bài song ngữ (tiếng Hàn chính + tóm tắt tiếng Anh) không gây hại cho Naver SEO và có thể tăng uy tín thương hiệu với đối tượng quốc tế. Tuy nhiên, phần tiếng Hàn mới là phần quyết định thứ hạng tìm kiếm Naver. Phần tiếng Anh phục vụ người đọc đến từ link trực tiếp, chia sẻ social hoặc dịch trang tự động.",
+      },
+      {
+        q: "Bao lâu thì Naver Blog có kết quả?",
+        a: "Bài review từ blogger Hàn có thể tạo traffic trong 2–4 tuần sau khi đăng. Blog thương hiệu tự xây dựng organic authority thường cần 3–6 tháng đăng đều để có visibility tìm kiếm rõ rệt. Thời gian phụ thuộc mức cạnh tranh ngành, thành phố và từ khoá mục tiêu.",
+      },
+      {
+        q: "Có cần số điện thoại Hàn Quốc để mở Naver Blog không?",
+        a: "Trước đây cần xác minh số Hàn, nhưng hiện tại Naver cho phép đăng ký bằng email quốc tế cho tài khoản cơ bản. Tuy nhiên, một số tính năng và tín hiệu uy tín vẫn gắn với tài khoản xác minh Hàn. Công Thiên Agency có thể mở và quản lý tài khoản Naver Blog thay cho bạn.",
+      },
+      {
+        q: "Naver Blog khác gì blog trên website riêng?",
+        a: "Blog trên website riêng nằm trên domain của bạn và được Google index. Naver Blog nằm trên blog.naver.com và được Naver Search index. Với khách Hàn, Naver Search là điểm xuất phát tìm kiếm — không phải Google. Đăng bài trên Naver Blog đưa nội dung vào đúng nơi người Hàn thực sự tìm, đọc và tin tưởng review.",
+      },
+    ],
+    related: [
+      { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Dịch vụ viết bài chính" },
+      { label: "Booking blogger Hàn", href: "/vi/naver-marketing/booking-blogger-han", note: "Review từ blogger Hàn" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Trang EN tổng hợp" },
+      { label: "Naver Blogs là gì", href: "/vi/naver-marketing/naver-blogs", note: "Giới thiệu nền tảng" },
+      { label: "Naver Blog chính thức", href: "https://blog.naver.com", note: "External · Nền tảng Naver Blog" },
+      { label: "Papago dịch thuật", href: "https://papago.naver.com", note: "External · Công cụ dịch của Naver" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Hướng dẫn Naver Blog tiếng Anh cho thương hiệu Việt Nam" },
+    ],
+    schema: { serviceType: "Tư vấn Naver Blog song ngữ", offerPriceVnd: 8000000 },
+  },
+
+  /* ───────────────── EN: Naver Blogs ───────────────── */
+  {
+    path: "/en/naver-marketing/naver-blogs",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Blogs", href: "/en/naver-marketing/naver-blogs" },
+    ],
+    primaryKeyword: "Naver blogs",
+    metaTitle: "Naver Blogs: What They Are and How Vietnam Brands Use Them",
+    metaDescription:
+      "Naver blogs are Korean-language review and lifestyle posts on naver.com. Learn how the platform works, why Korean travelers trust it, and how Vietnam brands publish content there.",
+    eyebrow: "Naver · Platform overview",
+    h1: "Naver Blogs explained: the trust layer of Korean search",
+    heroSub:
+      "Naver blogs are personal and brand blogs hosted on naver.com — the largest search engine in Korea. They power most of the review and recommendation results Korean travelers see before booking.",
+    heroCta: "Plan a Naver content strategy",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Naver blogs are the long-form content layer of Naver, Korea's dominant search engine. Each user can run their own blog, post photos, write reviews and share experiences. For Korean travelers researching Vietnam, Naver blogs are often more trusted than ads, Instagram or even Google results.",
+    sections: [
+      {
+        heading: "What are Naver blogs?",
+        body:
+          "A Naver blog is a personal or brand blog published on the blog.naver.com domain. Anyone with a Naver account can create one. Posts can include text, photos, videos and links. Naver search results often surface blog posts above other websites for review and recommendation queries.",
+      },
+      {
+        heading: "Why Korean users trust Naver blogs",
+        bullets: [
+          "Long-form posts with photos feel more authentic than short social ads.",
+          "Naver promotes blog content heavily in its search results.",
+          "Travelers read multiple blog reviews before deciding where to stay or eat.",
+          "Korean blog tone is story-driven and detail-rich, which builds confidence.",
+        ],
+      },
+      {
+        heading: "Types of Naver blogs for Vietnam tourism",
+        bullets: [
+          "Brand blogs — owned by the business, used for long-term Korean SEO assets.",
+          "Influencer blogs — popular Korean bloggers booked for paid or invited reviews.",
+          "Traveler blogs — organic posts from Korean tourists, hard to control but valuable.",
+          "Agency-managed blogs — content pipelines run by partners like Công Thiên Agency.",
+        ],
+      },
+      {
+        heading: "How Naver blogs fit a full Korean marketing plan",
+        body:
+          "Naver blogs work best when combined with Naver Place (business profile), Naver Map (location search) and a clear CTA path back to your website, Zalo, WhatsApp or booking system. Standalone blog posts without a connected funnel rarely convert.",
+      },
+    ],
+    deliverables: {
+      title: "Naver blogs scope of work",
+      items: [
+        "Audit of current Naver blogs and Korean visibility",
+        "Brand Naver blog setup and content calendar",
+        "Korean blogger outreach and booking",
+        "Review-style post outlines and image briefs",
+        "CTA structure connecting blog → Place → website / Zalo",
+        "Internal Naver linking strategy across blog, Place and Map",
+      ],
+    },
+    whoFor: [
+      "Vietnam hotels, restaurants, spas and tour operators",
+      "Brands building long-term Korean search visibility",
+      "Marketing teams comparing organic blogs vs paid blogger reviews",
+      "Owners who want a structured Naver presence, not one-off posts",
+    ],
+    process: [
+      { step: "Audit", detail: "Map your current Naver visibility and identify content gaps." },
+      { step: "Plan", detail: "Choose brand blog, influencer reviews or a mixed model." },
+      { step: "Produce", detail: "Build Korean posts with photos, prices and clear CTAs." },
+      { step: "Connect", detail: "Link blog content to Naver Place, website and contact channels." },
+      { step: "Track", detail: "Monitor Korean search performance and refresh evergreen posts." },
+    ],
+    priceFrom: "From 8,000,000 VND / 4 posts",
+    priceNote:
+      "Total cost depends on blog ownership, content volume, photo production and whether Korean influencer booking is included.",
+    faqs: [
+      {
+        q: "What exactly is a Naver blog?",
+        a: "A Naver blog is a personal or brand blog hosted on blog.naver.com, the blog platform of Naver — Korea's largest search engine. Each blog can publish long-form posts with photos, videos, maps and links. Naver search results prioritize blog posts for review, recommendation and experience queries, making Naver blogs the primary trust layer for Korean consumers researching purchases and travel.",
+      },
+      {
+        q: "Are Naver blogs different from Korean influencer Instagram?",
+        a: "Yes, fundamentally. Naver blogs are search-driven and long-form — users find them through Naver search when actively researching a destination or product. Instagram is feed-driven and short — users scroll past content passively. For Korean travelers comparing hotels or restaurants in Vietnam, Naver blog reviews carry more weight because they appear at the moment of intent. Both channels can be used together for maximum coverage.",
+      },
+      {
+        q: "Do I need my own Naver blog or just influencer reviews?",
+        a: "Owned Naver blogs build long-term search assets that you control — every post compounds over time. Korean influencer blog reviews deliver faster third-party proof and credibility. Most effective Vietnam tourism campaigns combine both: a brand blog for evergreen content and periodic influencer posts for fresh social proof and wider reach.",
+      },
+      {
+        q: "Can Naver blogs help with Google rankings?",
+        a: "Indirectly yes. Naver blog posts increase brand mentions, Korean-language coverage and backlink signals across the web. When Korean travelers search on Google for Vietnam destinations, having Naver blog content strengthens overall brand authority. The primary benefit is Naver search visibility, with Google as a secondary bonus.",
+      },
+      {
+        q: "How fast do Naver blogs show results?",
+        a: "Korean influencer blog reviews can generate measurable traffic within 2–4 weeks of publishing, especially if the blogger has an established audience. Brand-owned Naver blogs building organic search authority typically need 3–6 months of consistent, keyword-targeted posting to see meaningful visibility in Naver search results.",
+      },
+      {
+        q: "How many Naver blog posts does a Vietnam hotel or restaurant need?",
+        a: "A minimum viable Naver blog presence usually starts with 8–12 posts covering your core service, location, seasonal angles and comparison topics. Ongoing campaigns typically publish 4–8 new posts per month to maintain freshness in Naver search. The exact volume depends on competition in your city and category.",
+      },
+      {
+        q: "What makes a good Naver blog post for Korean travelers?",
+        a: "A strong Naver blog post uses a natural Korean title with a target keyword, includes 15–30 real photos, provides specific details like prices, directions, operating hours and menu highlights, uses honest review-style language and ends with a clear call to action — Zalo, WhatsApp, booking link or Naver Place profile.",
+      },
+      {
+        q: "Is Naver blogs the same as Naver Café?",
+        a: "No. Naver blogs are individual publishing platforms (one author per blog). Naver Café is a community forum system where multiple members post in a shared space. Both appear in Naver search results, but blogs are better for brand-controlled content and SEO, while Cafés are useful for community engagement and user-generated discussions.",
+      },
+      {
+        q: "Can Naver blogs link to my website?",
+        a: "Yes. Naver blog posts can include outbound links to your website, booking page, Zalo, WhatsApp or any external URL. These links drive referral traffic and help connect your Naver content to your conversion funnel. Posts should also link to your Naver Place profile for local search reinforcement.",
+      },
+      {
+        q: "What does Công Thiên Agency charge for Naver blog management?",
+        a: "Naver blog packages start from 8,000,000 VND for 4 review-style posts. Total cost depends on whether you need brand blog setup, content calendar management, photo production, Korean influencer booking or multilingual coordination. Contact us via Zalo for a scope-matched quote.",
+      },
+    ],
+    related: [
+      { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "Korean content marketing" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
+      { label: "Naver Blog English guide", href: "/en/naver-marketing/naver-blog-english", note: "For non-Korean readers" },
+      { label: "Attract Korean Tourists with Naver", href: "/en/naver-marketing/attract-korean-tourists-with-naver", note: "Tourism playbook" },
+      { label: "Naver Blog official", href: "https://blog.naver.com", note: "External · Naver Blog platform" },
+      { label: "Naver search engine", href: "https://www.naver.com", note: "External · Korea's #1 search engine" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver blogs overview for Vietnam brands" },
+    ],
+    schema: { serviceType: "Naver blogs strategy", offerPriceVnd: 8000000 },
+  },
+
+  /* ───────────────── VI: Naver Blogs là gì ───────────────── */
+  {
+    path: "/vi/naver-marketing/naver-blogs",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ", href: "/vi/dich-vu" },
+      { label: "Naver Blogs", href: "/vi/naver-marketing/naver-blogs" },
+    ],
+    primaryKeyword: "Naver blogs",
+    metaTitle: "Naver Blogs là gì? Cách doanh nghiệp Việt Nam dùng Naver Blog",
+    metaDescription:
+      "Naver blogs là hệ thống blog cá nhân và thương hiệu trên Naver. Giải thích cách Naver Blog hoạt động, vì sao khách Hàn tin và cách thương hiệu Việt Nam xuất hiện trên đó.",
+    eyebrow: "Naver · Tổng quan nền tảng",
+    h1: "Naver Blogs: lớp nội dung tin cậy của tìm kiếm Hàn Quốc",
+    heroSub:
+      "Naver blogs là blog cá nhân và blog thương hiệu trên naver.com — công cụ tìm kiếm lớn nhất Hàn Quốc. Đây là nơi khách Hàn đọc review và quyết định trước khi đặt phòng, đặt tour, đặt bàn.",
+    heroCta: "Tư vấn chiến lược Naver",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Naver blogs là tầng nội dung dài của Naver — công cụ tìm kiếm chiếm thị phần lớn nhất tại Hàn Quốc. Mỗi tài khoản Naver có thể mở blog riêng, đăng ảnh, viết review, chia sẻ trải nghiệm. Với khách Hàn tìm thông tin du lịch Việt Nam, Naver blogs thường đáng tin hơn quảng cáo, Instagram hay thậm chí Google.",
+    sections: [
+      {
+        heading: "Naver blogs là gì?",
+        body:
+          "Naver blog là blog cá nhân hoặc blog thương hiệu nằm trên tên miền blog.naver.com. Ai có tài khoản Naver đều mở được. Bài viết có thể là chữ, ảnh, video, liên kết. Naver thường ưu tiên hiển thị bài blog trong kết quả tìm kiếm về review và gợi ý.",
+      },
+      {
+        heading: "Vì sao người Hàn tin Naver blogs",
+        bullets: [
+          "Bài dài kèm ảnh thật cảm giác chân thực hơn quảng cáo ngắn.",
+          "Naver chủ động ưu tiên blog trong kết quả tìm kiếm.",
+          "Khách Hàn thường đọc nhiều bài blog trước khi quyết định.",
+          "Văn phong blog Hàn kể chuyện, chi tiết, tạo sự yên tâm.",
+        ],
+      },
+      {
+        heading: "Các loại Naver blogs cho du lịch Việt Nam",
+        bullets: [
+          "Brand blog — blog của chính doanh nghiệp, xây tài sản SEO Hàn dài hạn.",
+          "Influencer blog — blogger Hàn nổi tiếng nhận book review trả phí hoặc invited.",
+          "Traveler blog — bài tự nhiên của khách Hàn, khó kiểm soát nhưng giá trị cao.",
+          "Agency-managed blog — pipeline nội dung do agency như Công Thiên Agency vận hành.",
+        ],
+      },
+      {
+        heading: "Naver blogs trong chiến lược marketing Hàn tổng thể",
+        body:
+          "Naver blogs phát huy hiệu quả nhất khi kết hợp với Naver Place (hồ sơ doanh nghiệp), Naver Map (tìm kiếm vị trí) và đường dẫn CTA rõ ràng về website, Zalo, WhatsApp hoặc hệ thống booking. Bài blog đứng một mình mà không có funnel đi kèm thường khó chuyển đổi.",
+      },
+    ],
+    deliverables: {
+      title: "Phạm vi dịch vụ Naver blogs",
+      items: [
+        "Audit hiện trạng Naver blogs và độ phủ tiếng Hàn",
+        "Mở brand Naver blog và lịch nội dung",
+        "Outreach và book blogger Hàn",
+        "Outline bài review và brief hình ảnh",
+        "Cấu trúc CTA blog → Place → website / Zalo",
+        "Internal link giữa blog, Place và Map",
+      ],
+    },
+    whoFor: [
+      "Khách sạn, nhà hàng, spa, tour Việt Nam",
+      "Thương hiệu xây độ phủ tìm kiếm Hàn dài hạn",
+      "Đội ngũ marketing đang so sánh organic blog vs blogger book",
+      "Chủ doanh nghiệp muốn Naver bài bản, không làm lẻ tẻ",
+    ],
+    process: [
+      { step: "Audit", detail: "Đánh giá độ phủ Naver hiện tại và xác định lỗ hổng nội dung." },
+      { step: "Plan", detail: "Chọn brand blog, influencer review hoặc kết hợp." },
+      { step: "Produce", detail: "Sản xuất bài tiếng Hàn có ảnh, giá, CTA rõ ràng." },
+      { step: "Connect", detail: "Liên kết blog với Place, website và kênh liên hệ." },
+      { step: "Track", detail: "Theo dõi traffic tìm kiếm Hàn và refresh bài evergreen." },
+    ],
+    priceFrom: "Từ 8.000.000đ / 4 bài",
+    priceNote:
+      "Chi phí phụ thuộc tài khoản đăng, số lượng bài, chất lượng ảnh và có book blogger Hàn hay không.",
+    faqs: [
+      {
+        q: "Naver blogs khác gì blog thông thường?",
+        a: "Blog thông thường nằm trên domain riêng của bạn và được Google index. Naver blogs nằm trên blog.naver.com — thuộc hệ sinh thái Naver, công cụ tìm kiếm lớn nhất Hàn Quốc. Naver ưu tiên hiển thị bài blog trong kết quả tìm kiếm cho các truy vấn review, gợi ý và trải nghiệm. Với khách Hàn, Naver Search là điểm bắt đầu — không phải Google.",
+      },
+      {
+        q: "Naver blogs có khác Instagram của blogger Hàn không?",
+        a: "Khác hoàn toàn về cơ chế. Naver blogs hướng tìm kiếm và viết dài — người dùng tìm thấy khi đang chủ động research điểm đến hoặc sản phẩm. Instagram hướng feed và ngắn — người dùng lướt qua nội dung một cách thụ động. Với khách Hàn đang so sánh khách sạn hay nhà hàng tại Việt Nam, bài review Naver blog có trọng lượng hơn vì xuất hiện đúng lúc có intent. Hai kênh dùng song song cho coverage tối đa.",
+      },
+      {
+        q: "Cần blog riêng hay chỉ book blogger là đủ?",
+        a: "Blog riêng (brand blog) tạo tài sản SEO dài hạn mà bạn kiểm soát — mỗi bài viết tích luỹ theo thời gian. Blogger Hàn review tạo social proof bên thứ ba nhanh hơn. Chiến dịch du lịch Việt Nam hiệu quả nhất thường kết hợp cả hai: brand blog cho nội dung evergreen và blogger review định kỳ cho fresh proof và reach rộng hơn.",
+      },
+      {
+        q: "Naver blogs có hỗ trợ Google SEO không?",
+        a: "Có gián tiếp. Bài Naver blog tăng brand mention, độ phủ tiếng Hàn và tín hiệu backlink trên web. Khi khách Hàn tìm trên Google về điểm đến Việt Nam, có nội dung Naver blog tăng cường authority thương hiệu tổng thể. Lợi ích chính là visibility trên Naver Search, Google là bonus phụ.",
+      },
+      {
+        q: "Bao lâu thì Naver blogs có kết quả?",
+        a: "Bài review từ blogger Hàn có thể tạo traffic đo được trong 2–4 tuần sau khi đăng, đặc biệt nếu blogger có audience sẵn. Brand blog tự xây organic authority thường cần 3–6 tháng đăng đều, nhắm từ khoá cụ thể để có visibility rõ rệt trên Naver Search.",
+      },
+      {
+        q: "Khách sạn hoặc nhà hàng Việt cần bao nhiêu bài Naver blog?",
+        a: "Naver blog presence tối thiểu thường bắt đầu với 8–12 bài bao phủ dịch vụ chính, vị trí, góc mùa vụ và chủ đề so sánh. Chiến dịch đang chạy thường đăng 4–8 bài mới mỗi tháng để duy trì freshness trên Naver Search. Số lượng chính xác phụ thuộc mức cạnh tranh ngành và thành phố.",
+      },
+      {
+        q: "Bài Naver blog tốt cho khách Hàn cần những gì?",
+        a: "Một bài Naver blog hiệu quả cần tiêu đề tiếng Hàn tự nhiên có keyword mục tiêu, 15–30 ảnh thật, thông tin cụ thể như giá, đường đi, giờ mở cửa, điểm nổi bật của menu, văn phong review trung thực và CTA rõ ràng — Zalo, WhatsApp, link đặt phòng hoặc profile Naver Place.",
+      },
+      {
+        q: "Naver blogs có giống Naver Café không?",
+        a: "Không. Naver blogs là nền tảng đăng bài cá nhân (mỗi blog một tác giả). Naver Café là hệ thống diễn đàn cộng đồng nơi nhiều thành viên đăng bài chung. Cả hai đều xuất hiện trong Naver Search, nhưng blogs phù hợp hơn cho nội dung thương hiệu và SEO, còn Café hữu ích cho engagement cộng đồng và thảo luận UGC.",
+      },
+      {
+        q: "Naver blogs có link được về website không?",
+        a: "Có. Bài Naver blog có thể chứa link ra website, trang booking, Zalo, WhatsApp hoặc URL bên ngoài. Những link này mang referral traffic và kết nối nội dung Naver với conversion funnel của bạn. Bài viết cũng nên link đến Naver Place profile để tăng cường local search.",
+      },
+      {
+        q: "Công Thiên Agency tính phí quản lý Naver blog thế nào?",
+        a: "Gói Naver blog bắt đầu từ 8.000.000đ cho 4 bài review. Tổng chi phí phụ thuộc vào việc có cần setup brand blog, quản lý lịch nội dung, sản xuất ảnh, book blogger Hàn hay phối hợp đa ngôn ngữ. Liên hệ qua Zalo để nhận báo giá theo phạm vi cụ thể.",
+      },
+    ],
+    related: [
+      { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Dịch vụ viết bài chính" },
+      { label: "Booking blogger Hàn", href: "/vi/naver-marketing/booking-blogger-han", note: "Review blogger" },
+      { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Hồ sơ doanh nghiệp" },
+      { label: "Naver Blog tiếng Anh", href: "/vi/naver-marketing/naver-blog-tieng-anh", note: "Cho chủ thương hiệu nói tiếng Anh" },
+      { label: "Naver Blog chính thức", href: "https://blog.naver.com", note: "External · Nền tảng Naver Blog" },
+      { label: "Naver.com", href: "https://www.naver.com", note: "External · Công cụ tìm kiếm #1 Hàn Quốc" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver blogs cho thương hiệu Việt Nam" },
+    ],
+    schema: { serviceType: "Chiến lược Naver blogs", offerPriceVnd: 8000000 },
+  },
+
+  /* ───────────────── EN: Map Review Jobs ───────────────── */
+  {
+    path: "/en/google-maps-marketing/map-review-jobs",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Map review jobs", href: "/en/google-maps-marketing/map-review-jobs" },
+    ],
+    primaryKeyword: "map review jobs",
+    metaTitle: "Map Review Jobs: How Honest Reviewer Programs Work | Công Thiên Agency",
+    metaDescription:
+      "How map review jobs and honest reviewer programs work for Google Business Profile, who qualifies, what's allowed and what isn't, and how Vietnam businesses run ethical review reputation marketing.",
+    eyebrow: "Google Maps · Reviewer programs",
+    h1: "Map review jobs: how honest reviewer programs work",
+    heroSub:
+      "There is real demand for map review jobs — but only honest, experience-based reviews are sustainable. This page explains how ethical reviewer programs work for Google Business Profile and how we structure them at Công Thiên Agency.",
+    heroCta: "Talk about a reviewer program",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Searches like 'map review jobs' usually come from two sides: people looking for paid reviewer work, and businesses wondering if they can hire reviewers for Google Maps. We work only with honest, experience-based review reputation marketing. Fake or paid-without-experience reviews violate Google policy and put the business at risk. This page explains what's allowed, what we do, and what we do not do.",
+    sections: [
+      {
+        heading: "What are map review jobs?",
+        body:
+          "Map review jobs usually describe paid or freelance work where someone writes a review on Google Maps, Naver Map or similar platforms. Legitimate programs only allow reviews from people who actually visited or used the service. Anything else breaks Google's review policies.",
+      },
+      {
+        heading: "What we do — and do not do",
+        bullets: [
+          "We do not sell fake reviews, bot reviews or guaranteed star counts.",
+          "We coordinate honest reviewer programs where real customers share genuine experiences.",
+          "We invite past guests, partners or community members to leave honest feedback.",
+          "We help businesses respond to reviews, fix issues and protect their profile.",
+        ],
+      },
+      {
+        heading: "Who can take part in honest reviewer programs",
+        bullets: [
+          "Real past customers who agree to share their experience publicly.",
+          "Invited content creators who actually visit the venue.",
+          "Community members or partners with first-hand experience.",
+          "Anyone is free to write reviews based on truthful experience.",
+        ],
+      },
+      {
+        heading: "Why fake review jobs are a bad investment",
+        body:
+          "Google detects unnatural review patterns and can remove reviews, suspend profiles or penalize ranking. Negative attention from fake review schemes can damage brand trust permanently. Honest review reputation marketing takes longer but compounds — every real review strengthens the profile.",
+      },
+      {
+        heading: "How our review reputation service is structured",
+        body:
+          "We focus on Google Business Profile optimization, review request workflows for real customers, response templates, negative review handling and ongoing reputation reporting. The goal is more genuine reviews from people who actually experienced the service.",
+      },
+    ],
+    deliverables: {
+      title: "Reviewer program scope",
+      items: [
+        "Google Business Profile audit and optimization",
+        "Honest review request workflow for past customers",
+        "QR code and link tools for in-venue review prompts",
+        "Response templates for positive and negative reviews",
+        "Negative review escalation and reporting workflow",
+        "Monthly reputation report",
+      ],
+    },
+    whoFor: [
+      "Hotels, restaurants, spas, tours and clinics",
+      "Multi-location businesses managing reputation at scale",
+      "Owners recovering from a wave of negative reviews",
+      "Brands that want a clean, policy-compliant review strategy",
+    ],
+    process: [
+      { step: "Audit", detail: "Review the current profile, review history and risk signals." },
+      { step: "Plan", detail: "Design an honest review request flow tied to real customer touchpoints." },
+      { step: "Activate", detail: "Roll out QR codes, post-visit messages and response templates." },
+      { step: "Protect", detail: "Handle negative reviews and report policy-violating reviews where valid." },
+      { step: "Report", detail: "Monthly reputation report and next-step recommendations." },
+    ],
+    priceFrom: "From 6,000,000 VND / month",
+    priceNote:
+      "Pricing depends on number of locations, review volume and whether multi-language responses are required.",
+    faqs: [
+      {
+        q: "Can I pay people to leave fake Google reviews?",
+        a: "No. Google's review policy explicitly prohibits fake reviews, paid reviews from people who never visited, bot-generated reviews and incentivized reviews that require a specific star rating. Violations can result in review removal, profile suspension or permanent penalties. Google's algorithms detect unnatural patterns including sudden volume spikes, reviewer account age and geographic anomalies.",
+      },
+      {
+        q: "Then what is a legitimate map review job?",
+        a: "A legitimate map review job means real people who actually visited the business and used the service share their genuine experience as a Google review. This includes past customers invited to leave feedback, content creators who visit in person, community partners with first-hand experience, and staff of partner businesses who genuinely used the service. The review must reflect honest personal experience.",
+      },
+      {
+        q: "Do you guarantee a number of 5-star reviews?",
+        a: "No reputable agency should guarantee specific star ratings. Công Thiên Agency commits to the process: structured review request workflows, volume of genuine review invitations sent to real customers, response templates and reputation monitoring. The star rating reflects real customer satisfaction — our job is to make it easy for happy customers to share their experience.",
+      },
+      {
+        q: "Can you help if I already have many negative reviews?",
+        a: "Yes. We audit the full review history, identify reviews that violate Google's policies (fake competitor attacks, irrelevant content, spam), submit removal requests with evidence through Google Business Profile support, and simultaneously build a pipeline of genuine positive reviews from real customers over time. Recovery is gradual but sustainable.",
+      },
+      {
+        q: "Is this work safe for my Google Business Profile?",
+        a: "Yes. Every step follows Google's published review policies. We never use bots, fake accounts, review farms or incentivized star guarantees. The goal is sustainable reputation built on genuine customer experiences. This approach protects your profile from penalties and builds trust that compounds over time.",
+      },
+      {
+        q: "How does Google detect fake reviews?",
+        a: "Google uses machine learning to detect patterns: sudden spikes in review volume, reviews from accounts with no other activity, multiple reviews from the same IP address or device, geographic inconsistencies (reviewers located far from the business), and language patterns typical of templated or AI-generated reviews. Flagged reviews can be removed without notice.",
+      },
+      {
+        q: "What is a Google Business Profile and why does it matter for reviews?",
+        a: "A Google Business Profile (formerly Google My Business) is your business listing on Google Maps and Google Search. It displays your location, hours, photos, contact info and — critically — customer reviews. For local businesses like hotels, restaurants and spas, the review score and volume directly influence whether customers choose you over competitors in Google Maps results.",
+      },
+      {
+        q: "How do QR codes help with collecting reviews?",
+        a: "A QR code placed at checkout, on the table or at reception links directly to your Google review page. Guests scan it on their phone while the experience is fresh. This removes friction — instead of asking customers to search for your business on Google Maps, they go straight to the review form. QR codes combined with polite staff prompts significantly increase genuine review volume.",
+      },
+      {
+        q: "Can competitors leave fake negative reviews on my profile?",
+        a: "Unfortunately yes — fake negative reviews from competitors are a known problem. If you suspect a review is fake (no visit history, generic complaint, reviewer with suspicious patterns), you can flag it for removal through Google Business Profile. Công Thiên Agency helps document evidence and submit removal requests through the proper channels.",
+      },
+      {
+        q: "How long does it take to improve a Google Maps review score?",
+        a: "With consistent genuine review requests, most businesses see measurable improvement within 2–3 months. A business averaging 5–10 new real reviews per month will shift its score noticeably over a quarter. The timeline depends on current review count, score gap and how consistently the review request workflow is maintained.",
+      },
+    ],
+    related: [
+      { label: "Google Maps Review & Reputation", href: "/en/services", note: "Service hub" },
+      { label: "Audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile", note: "Profile audit" },
+      { label: "Review reputation Vietnam", href: "/vi/google-maps-marketing/review-reputation", note: "VI service page" },
+      { label: "Handle negative reviews", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc", note: "Negative review workflow" },
+      { label: "Google Business Profile Help", href: "https://support.google.com/business", note: "External · Google official support" },
+      { label: "Google review policies", href: "https://support.google.com/contributionpolicy/answer/7400114", note: "External · Google policy reference" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Map review jobs and honest reviewer programs" },
+    ],
+    schema: { serviceType: "Google Maps Review & Reputation Marketing", offerMinPriceVnd: 6000000 },
+  },
+
+  /* ───────────────── VI: Việc làm đánh giá Map ───────────────── */
+  {
+    path: "/vi/google-maps-marketing/viec-lam-danh-gia-map",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Dịch vụ", href: "/vi/dich-vu" },
+      { label: "Việc làm đánh giá Map", href: "/vi/google-maps-marketing/viec-lam-danh-gia-map" },
+    ],
+    primaryKeyword: "việc làm đánh giá map",
+    metaTitle: "Việc làm đánh giá Map: chương trình CTV đánh giá trải nghiệm thật",
+    metaDescription:
+      "Việc làm đánh giá Map cho ai, làm thế nào cho đúng chính sách Google, và cách chương trình CTV đánh giá trải nghiệm thật của Công Thiên Agency hoạt động cho khách hàng và CTV.",
+    eyebrow: "Google Maps · Chương trình CTV đánh giá",
+    h1: "Việc làm đánh giá Map: chương trình CTV đánh giá trải nghiệm thật",
+    heroSub:
+      "Có nhu cầu tìm việc làm đánh giá Map và có nhu cầu tuyển CTV đánh giá. Chúng tôi chỉ làm chương trình đánh giá có trải nghiệm thật, đúng chính sách Google, không làm review ảo. Trang này giải thích cách chương trình hoạt động cho cả khách hàng và CTV.",
+    heroCta: "Liên hệ về chương trình CTV",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Từ khoá 'việc làm đánh giá map' đến từ hai nhóm: người đang tìm việc CTV đánh giá Google Maps, và doanh nghiệp muốn thuê CTV viết review. Công Thiên Agency chỉ triển khai chương trình đánh giá có trải nghiệm thật — CTV phải đến trải nghiệm dịch vụ trước khi viết review. Review ảo, review không trải nghiệm vi phạm chính sách Google và có thể bị gỡ review hoặc khoá hồ sơ doanh nghiệp.",
+    sections: [
+      {
+        heading: "Việc làm đánh giá Map là gì?",
+        body:
+          "Là công việc CTV trải nghiệm dịch vụ tại địa điểm thực tế (khách sạn, nhà hàng, spa, tour…) rồi viết review trung thực trên Google Maps hoặc nền tảng tương tự. Chỉ những đánh giá dựa trên trải nghiệm thật mới được Google chấp nhận và mới có giá trị bền vững cho doanh nghiệp.",
+      },
+      {
+        heading: "Chúng tôi làm gì — và không làm gì",
+        bullets: [
+          "Không bán review ảo, review bot, không cam kết số sao 100%.",
+          "Triển khai chương trình CTV đến trải nghiệm thật rồi viết review trung thực.",
+          "Mời khách cũ, đối tác, cộng đồng đến trải nghiệm và chia sẻ cảm nhận.",
+          "Hỗ trợ phản hồi review, xử lý review tiêu cực, bảo vệ hồ sơ doanh nghiệp.",
+        ],
+      },
+      {
+        heading: "CTV đánh giá Map làm những gì",
+        bullets: [
+          "Đến địa điểm theo lịch hẹn được sắp xếp với doanh nghiệp.",
+          "Trải nghiệm dịch vụ thật: ăn, lưu trú, sử dụng dịch vụ.",
+          "Chụp ảnh thật trong quá trình trải nghiệm.",
+          "Viết review trung thực dựa trên cảm nhận cá nhân.",
+          "Tuân thủ chính sách review của Google và quy định bảo mật.",
+        ],
+      },
+      {
+        heading: "Vì sao review ảo là khoản đầu tư tệ",
+        body:
+          "Google có hệ thống phát hiện review bất thường. Khi bị phát hiện, review có thể bị gỡ, hồ sơ doanh nghiệp có thể bị cảnh cáo hoặc khoá tạm thời, và thương hiệu mất uy tín với khách thật. Review trải nghiệm thật xây chậm hơn nhưng tích luỹ — mỗi review thật làm hồ sơ mạnh hơn.",
+      },
+      {
+        heading: "Cách dịch vụ review reputation của chúng tôi vận hành",
+        body:
+          "Trọng tâm là tối ưu Google Business Profile, quy trình mời khách cũ để lại review thật, mẫu phản hồi review, xử lý review tiêu cực và báo cáo uy tín hàng tháng. Mục tiêu là nhiều review thật từ khách thật — không phải số sao tăng nhanh rồi biến mất.",
+      },
+    ],
+    deliverables: {
+      title: "Phạm vi chương trình CTV & review reputation",
+      items: [
+        "Audit và tối ưu Google Business Profile",
+        "Quy trình mời review từ khách hàng thật",
+        "QR code và link mời review tại điểm bán",
+        "Mẫu phản hồi review tích cực và tiêu cực",
+        "Quy trình xử lý review tiêu cực vi phạm chính sách",
+        "Báo cáo uy tín hàng tháng",
+      ],
+    },
+    whoFor: [
+      "Khách sạn, nhà hàng, spa, tour, phòng khám",
+      "Chuỗi nhiều địa điểm cần quản lý uy tín quy mô",
+      "Doanh nghiệp đang bị review tiêu cực dồn dập",
+      "Thương hiệu muốn chiến lược review sạch, đúng chính sách",
+    ],
+    process: [
+      { step: "Audit", detail: "Đánh giá hồ sơ hiện tại, lịch sử review và các tín hiệu rủi ro." },
+      { step: "Plan", detail: "Thiết kế quy trình mời review gắn với điểm chạm khách thật." },
+      { step: "Activate", detail: "Triển khai QR code, tin nhắn sau trải nghiệm, mẫu phản hồi." },
+      { step: "Protect", detail: "Xử lý review tiêu cực và báo cáo review vi phạm chính sách khi có cơ sở." },
+      { step: "Report", detail: "Báo cáo uy tín hàng tháng và đề xuất bước tiếp." },
+    ],
+    priceFrom: "Từ 6.000.000đ / tháng",
+    priceNote:
+      "Chi phí tuỳ số địa điểm, lưu lượng review và việc có cần phản hồi đa ngôn ngữ hay không.",
+    faqs: [
+      {
+        q: "Tôi đang tìm việc làm đánh giá Map, ứng tuyển thế nào?",
+        a: "Công Thiên Agency chỉ nhận CTV trải nghiệm thật — bạn phải thực sự đến địa điểm, sử dụng dịch vụ rồi mới viết review. Nhắn Zalo kèm khu vực bạn đang ở, ngành nghề quan tâm (khách sạn, nhà hàng, spa, tour) để được thêm vào danh sách CTV. Khi có chương trình phù hợp ở khu vực bạn, chúng tôi sẽ liên hệ mời tham gia.",
+      },
+      {
+        q: "Doanh nghiệp có thể thuê CTV viết review không trải nghiệm không?",
+        a: "Không. Chúng tôi không nhận bất kỳ dịch vụ review ảo, review bot hoặc review từ người chưa đến nơi nào. Đây là vi phạm trực tiếp chính sách đánh giá của Google và có thể dẫn đến gỡ review, cảnh cáo hồ sơ hoặc khoá Google Business Profile. Rủi ro cho doanh nghiệp lớn hơn rất nhiều so với lợi ích ngắn hạn.",
+      },
+      {
+        q: "Có cam kết bao nhiêu sao không?",
+        a: "Không agency uy tín nào nên cam kết số sao cụ thể. Công Thiên Agency cam kết quy trình: số lượng lời mời review gửi đến khách thật, mẫu phản hồi chuyên nghiệp, hệ thống theo dõi uy tín. Số sao phản ánh mức độ hài lòng thật của khách — việc của chúng tôi là giúp khách hài lòng dễ dàng chia sẻ trải nghiệm.",
+      },
+      {
+        q: "Tôi đang có nhiều review tiêu cực, xử lý được không?",
+        a: "Được. Chúng tôi audit toàn bộ lịch sử review, xác định review vi phạm chính sách Google (tấn công đối thủ, nội dung không liên quan, spam), gửi yêu cầu gỡ kèm bằng chứng qua hỗ trợ Google Business Profile, đồng thời xây dựng pipeline review tích cực từ khách hàng thật. Phục hồi là quá trình dần dần nhưng bền vững.",
+      },
+      {
+        q: "Chương trình này có an toàn cho hồ sơ doanh nghiệp không?",
+        a: "Có. Mọi bước đều tuân thủ chính sách đánh giá đã công bố của Google. Chúng tôi không bao giờ dùng bot, tài khoản ảo, farm review hay cam kết sao có điều kiện. Mục tiêu là uy tín bền vững xây trên trải nghiệm khách hàng thật. Cách tiếp cận này bảo vệ hồ sơ khỏi bị phạt và tạo dựng trust tích luỹ theo thời gian.",
+      },
+      {
+        q: "Google phát hiện review ảo bằng cách nào?",
+        a: "Google dùng machine learning để phát hiện: tăng đột ngột số lượng review, review từ tài khoản không có hoạt động khác, nhiều review từ cùng IP hoặc thiết bị, bất nhất địa lý (reviewer ở rất xa doanh nghiệp), và mẫu ngôn ngữ điển hình của review viết sẵn hoặc AI tạo. Review bị gắn cờ có thể bị gỡ không cần thông báo.",
+      },
+      {
+        q: "Google Business Profile là gì và vì sao liên quan đến review?",
+        a: "Google Business Profile (trước đây là Google My Business) là hồ sơ doanh nghiệp trên Google Maps và Google Search. Nó hiển thị vị trí, giờ mở cửa, ảnh, liên hệ và — quan trọng nhất — đánh giá của khách hàng. Với doanh nghiệp địa phương như khách sạn, nhà hàng, spa, điểm số và số lượng review ảnh hưởng trực tiếp đến việc khách chọn bạn hay đối thủ trên Google Maps.",
+      },
+      {
+        q: "QR code hỗ trợ thu thập review thế nào?",
+        a: "QR code đặt tại quầy thanh toán, trên bàn hoặc lễ tân dẫn thẳng đến trang viết review Google của bạn. Khách quét bằng điện thoại ngay khi trải nghiệm còn tươi. Cách này giảm ma sát — thay vì yêu cầu khách tự tìm doanh nghiệp trên Google Maps, họ đến thẳng form review. QR code kết hợp lời mời lịch sự từ nhân viên tăng đáng kể lượng review thật.",
+      },
+      {
+        q: "Đối thủ có thể đăng review tiêu cực giả trên hồ sơ tôi không?",
+        a: "Rất tiếc là có — review tiêu cực giả từ đối thủ là vấn đề phổ biến. Nếu bạn nghi ngờ review không thật (không có lịch sử ghé thăm, phàn nàn chung chung, reviewer có dấu hiệu đáng ngờ), bạn có thể report qua Google Business Profile. Công Thiên Agency hỗ trợ thu thập bằng chứng và gửi yêu cầu gỡ review qua kênh chính thức.",
+      },
+      {
+        q: "Bao lâu thì điểm review Google Maps cải thiện?",
+        a: "Với quy trình mời review thật đều đặn, phần lớn doanh nghiệp thấy cải thiện đo được trong 2–3 tháng. Doanh nghiệp đạt trung bình 5–10 review thật mới mỗi tháng sẽ thấy điểm dịch chuyển rõ rệt trong một quý. Thời gian phụ thuộc tổng số review hiện tại, khoảng cách điểm cần cải thiện và mức duy trì quy trình.",
+      },
+    ],
+    related: [
+      { label: "Review reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Dịch vụ chính" },
+      { label: "Audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile", note: "Audit hồ sơ" },
+      { label: "Quản lý review tiêu cực", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc", note: "Xử lý review xấu" },
+      { label: "Map review jobs (EN)", href: "/en/google-maps-marketing/map-review-jobs", note: "Trang tiếng Anh" },
+      { label: "Google Business Profile Help", href: "https://support.google.com/business", note: "External · Hỗ trợ chính thức Google" },
+      { label: "Chính sách đánh giá Google", href: "https://support.google.com/contributionpolicy/answer/7400114", note: "External · Chính sách Google" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Việc làm đánh giá Map – chương trình CTV trải nghiệm thật" },
+    ],
+    schema: { serviceType: "Google Maps Review & Reputation Marketing", offerMinPriceVnd: 6000000 },
+  },
+
 ];
 
 export function getService(path: string): Service | undefined {
