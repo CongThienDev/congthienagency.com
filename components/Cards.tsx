@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { type ReactNode } from "react";
 import { IconArrowRight, IconCheck } from "./Icons";
 import { SERVICE_BRAND, type ServiceBrand } from "./serviceBrand";
@@ -130,12 +131,14 @@ export function ServiceCard({
       {/* non-featured: full-bleed banner on top */}
       {image && !featured && (
         <div className="relative overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={image}
             alt=""
             aria-hidden
             loading="lazy"
+            width={960}
+            height={480}
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="aspect-[2/1] w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
@@ -145,12 +148,14 @@ export function ServiceCard({
         <>
           <div className="relative flex-1">{content}</div>
           <div className="relative hidden shrink-0 items-center justify-center pr-2 lg:flex lg:w-[44%]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={image}
               alt=""
               aria-hidden
               loading="lazy"
+              width={640}
+              height={480}
+              sizes="(max-width: 1024px) 100vw, 44vw"
               className="w-full max-w-md object-contain transition-transform duration-500 group-hover:scale-[1.03]"
             />
           </div>
@@ -188,13 +193,13 @@ export function PortfolioCard({
     >
       {previewImage ? (
         <div className="relative m-3 mb-0 overflow-hidden rounded-xl border border-line">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={previewImage}
             alt={`${name} — bản xem trước website`}
             loading="lazy"
             width={480}
             height={300}
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="aspect-[8/5] w-full object-cover transition-transform duration-500 group-hover:-translate-y-1.5"
           />
           <div className="absolute right-3.5 top-3.5 flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 shadow-soft">

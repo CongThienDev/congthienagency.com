@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { cloneElement } from "react";
 import { BedDouble, Flower2, MapPinned, Utensils } from "lucide-react";
 import { Shell } from "@/components/Shell";
@@ -141,12 +142,14 @@ function ServiceSystemSection() {
                 >
                   <div className="flex w-full flex-col">
                     <div className="relative overflow-visible border-b border-slate-100">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <Image
                         src={SERVICE_IMAGES[index]}
                         alt=""
                         aria-hidden
                         loading="lazy"
+                        width={1100}
+                        height={880}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                         className="aspect-[5/4] w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
                       />
                       <div
@@ -300,13 +303,13 @@ function HomeVI() {
                 <h2 className="mt-3 max-w-[11ch] text-[1.85rem] font-semibold leading-[1.04] tracking-tight text-ink text-balance sm:text-[2.1rem] lg:text-[2.3rem]">
                   {c.painIntro.title}
                 </h2>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/images/illustrations/growth.webp"
                   alt="Khách tìm thấy doanh nghiệp dịch vụ tại Hội An qua website và Google Maps, rồi đi đến bước đặt dịch vụ"
                   loading="lazy"
                   width={440}
                   height={340}
+                  sizes="(max-width: 1024px) 100vw, 440px"
                   className="mt-7 aspect-[5/4] w-full max-w-[21.5rem] rounded-[1.55rem] object-cover object-center shadow-soft lg:max-w-[22.5rem]"
                 />
                 <div className="mt-4 hidden lg:block">
@@ -532,12 +535,14 @@ function HomeVI() {
               <Reveal key={ind.title} delay={i * 70}>
                 <div className="group h-full overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white text-center shadow-[0_18px_45px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_28px_65px_rgba(15,23,42,0.14)]">
                   <div className="relative overflow-visible border-b border-slate-100">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={INDUSTRY_IMAGES[i]}
                       alt=""
                       aria-hidden
                       loading="lazy"
+                      width={1100}
+                      height={880}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className="aspect-[5/4] w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
                     />
                     <div

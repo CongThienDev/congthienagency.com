@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -18,28 +18,14 @@ export function Header({
   alternateKey?: keyof typeof LOCALE_ALTERNATES;
 }) {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const nav: NavItem[] = locale === "vi" ? NAV_VI : NAV_EN;
   const home = locale === "vi" ? "/vi" : "/en";
   const ctaHref = locale === "vi" ? "/vi/lien-he" : "/en/contact";
   const ctaLabel = locale === "vi" ? "Nhận tư vấn" : "Get in touch";
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "glass border-b border-line shadow-soft"
-          : "border-b border-transparent bg-paper/60 backdrop-blur-sm"
-      }`}
-    >
+    <header className="sticky top-0 z-50 border-b border-line bg-white/90 shadow-soft backdrop-blur-sm">
       <Container>
         <div className="flex h-[68px] items-center justify-between gap-4">
           <Link
