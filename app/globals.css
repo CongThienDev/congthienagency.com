@@ -213,6 +213,44 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .bg-grid,
+  .bg-dots {
+    background-image: none;
+  }
+
+  .bg-glow,
+  .bg-glow-dark {
+    background: none;
+  }
+
+  .glass,
+  .backdrop-blur,
+  .backdrop-blur-sm {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .animate-rise,
+  .animate-float,
+  .animate-float-slow,
+  .animate-pulse-dot {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .card-hover,
+  .card-hover:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-rise,
   .animate-float,

@@ -15,17 +15,17 @@ export function MobileHomeHero({
         alt=""
         fill
         priority
+        fetchPriority="high"
         className="object-cover object-center landscape:hidden"
-        sizes="100vw"
+        sizes="(orientation: portrait) 100vw, 1px"
         aria-hidden
       />
       <Image
         src="/hero-section/hero-section-mobile-ver-ngang.webp"
         alt=""
         fill
-        priority
         className="hidden object-cover object-center landscape:block"
-        sizes="100vw"
+        sizes="(orientation: landscape) 100vw, 1px"
         aria-hidden
       />
       <div
