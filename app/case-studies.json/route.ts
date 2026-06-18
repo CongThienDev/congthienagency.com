@@ -1,12 +1,9 @@
 import { SITE } from "@/content/site";
 import { PROJECTS } from "@/content/projects.vi";
+import { AI_ROOT_RESOURCES, abs } from "@/lib/aiResources";
 
 export const dynamic = "force-static";
 export const revalidate = 3600;
-
-function abs(path: string): string {
-  return path.startsWith("http") ? path : `${SITE.url}${path}`;
-}
 
 /**
  * Structured manifest of all publicly disclosed case studies / projects.
@@ -41,6 +38,14 @@ export function GET() {
       founder: SITE.founder,
       url: SITE.url,
       areaServed: SITE.areaServed,
+    },
+
+    relatedResources: {
+      llmsTxt: AI_ROOT_RESOURCES.llmsTxt,
+      llmsFullTxt: AI_ROOT_RESOURCES.llmsFullTxt,
+      aiContentJson: AI_ROOT_RESOURCES.aiContentJson,
+      agencyProfileTxt: AI_ROOT_RESOURCES.agencyProfileTxt,
+      entityProfilePage: AI_ROOT_RESOURCES.entityProfilePage,
     },
 
     totalProjects: PROJECTS.length,

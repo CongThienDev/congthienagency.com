@@ -18,6 +18,36 @@ import { resolveAbsoluteImageUrls } from "@/lib/siteIndex";
 import { ResponsiveImage } from "./ResponsiveImage";
 
 export function ServicePageView({ service }: { service: Service }) {
+  const isEnglish = service.path.startsWith("/en/");
+  const labels = isEnglish
+    ? {
+        whoFor: "Best fit for",
+        processEyebrow: "Process",
+        processTitle: "How we work",
+        proof: "Verified project",
+        proofCta: "View case study",
+        faqEyebrow: "FAQ",
+        faqTitle: "Frequently asked questions",
+        related: "Related",
+        ctaTitle: "Need help planning this for your business?",
+        ctaSub: `Message me on Zalo ${SITE.contact.phoneDisplay} for a clear plan and quote.`,
+        ctaLabel: "Contact",
+        ctaHref: "/en/contact",
+      }
+    : {
+        whoFor: "Phù hợp với",
+        processEyebrow: "Quy trình",
+        processTitle: "Cách triển khai",
+        proof: "Dự án kiểm chứng",
+        proofCta: "Xem case study",
+        faqEyebrow: "FAQ",
+        faqTitle: "Câu hỏi thường gặp",
+        related: "Liên quan",
+        ctaTitle: "Cần tư vấn cho dự án của bạn?",
+        ctaSub: `Nhắn tôi qua Zalo ${SITE.contact.phoneDisplay} để được tư vấn và nhận báo giá rõ ràng.`,
+        ctaLabel: "Liên hệ ngay",
+        ctaHref: "/vi/lien-he",
+      };
   const imageUrls = resolveAbsoluteImageUrls(service.images.map((image) => image.suggestion));
   const heroImage = service.images.find((im) => im.slot === "hero") ?? service.images[0];
   const inlineImage = service.images.find((im) => im.slot === "inline" && im !== heroImage);
@@ -53,7 +83,7 @@ export function ServicePageView({ service }: { service: Service }) {
             <p className="mt-5 text-lg leading-relaxed text-muted">{service.heroSub}</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button
-                href={service.heroCtaHref ?? "/vi/lien-he"}
+                href={service.heroCtaHref ?? labels.ctaHref}
                 external={service.heroCtaHref?.startsWith("http") ?? false}
                 size="lg"
               >
@@ -169,7 +199,7 @@ export function ServicePageView({ service }: { service: Service }) {
               {service.whoFor && (
                 <div>
                   <h2 className="text-2xl font-semibold tracking-tight text-ink">
-                    Phù hợp với
+                    {labels.whoFor}
                   </h2>
                   <div className="mt-5 flex flex-wrap gap-2">
                     {service.whoFor.map((w) => (
@@ -197,7 +227,7 @@ export function ServicePageView({ service }: { service: Service }) {
       {service.process && (
         <section className="border-y border-line bg-white py-14 sm:py-16">
           <Container>
-            <SectionHeader eyebrow="Quy trình" title="Cách triển khai" />
+            <SectionHeader eyebrow={labels.processEyebrow} title={labels.processTitle} />
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {service.process.map((p, i) => (
                 <div key={p.step} className="rounded-card border border-line p-5">
@@ -221,12 +251,12 @@ export function ServicePageView({ service }: { service: Service }) {
               href={service.proof.projectPath}
               className="group block rounded-card border border-line bg-white p-8 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift"
             >
-              <ProofBadge>Dự án kiểm chứng</ProofBadge>
+              <ProofBadge>{labels.proof}</ProofBadge>
               <p className="mt-4 max-w-3xl text-xl leading-relaxed text-ink">
                 {service.proof.text}
               </p>
               <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-700">
-                Xem case study {service.proof.projectName}
+                {labels.proofCta} {service.proof.projectName}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </span>
             </Link>
@@ -238,7 +268,7 @@ export function ServicePageView({ service }: { service: Service }) {
       {service.faqs.length > 0 && (
         <section className="pb-16">
           <Container>
-            <SectionHeader eyebrow="FAQ" title="Câu hỏi thường gặp" />
+            <SectionHeader eyebrow={labels.faqEyebrow} title={labels.faqTitle} />
             <div className="mt-8">
               <FAQAccordion faqs={service.faqs} />
             </div>
@@ -250,7 +280,7 @@ export function ServicePageView({ service }: { service: Service }) {
       {service.related.length > 0 && (
         <section className="border-t border-line bg-white py-14">
           <Container>
-            <p className="label-mono text-muted">Liên quan</p>
+            <p className="label-mono text-muted">{labels.related}</p>
             <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {service.related.map((r) => (
                 <Link
@@ -268,10 +298,10 @@ export function ServicePageView({ service }: { service: Service }) {
       )}
 
       <CTASection
-        title="Cần tư vấn cho dự án của bạn?"
-        sub={`Nhắn tôi qua Zalo ${SITE.contact.phoneDisplay} để được tư vấn và nhận báo giá rõ ràng.`}
-        primaryHref="/vi/lien-he"
-        primaryLabel="Liên hệ ngay"
+        title={labels.ctaTitle}
+        sub={labels.ctaSub}
+        primaryHref={labels.ctaHref}
+        primaryLabel={labels.ctaLabel}
       />
 
       {/* Image asset notes (dev-only reference, hidden) */}

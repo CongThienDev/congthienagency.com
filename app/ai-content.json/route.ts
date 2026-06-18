@@ -4,13 +4,10 @@ import { BLOG_POSTS } from "@/content/blog.vi";
 import { PROJECTS } from "@/content/projects.vi";
 import { PRICING_GROUPS } from "@/content/pricing.vi";
 import { GLOSSARY_SECTIONS, GLOSSARY_TERMS } from "@/content/glossary.vi";
+import { AI_PILLARS, AI_ROOT_RESOURCES, abs } from "@/lib/aiResources";
 
 export const dynamic = "force-static";
 export const revalidate = 3600;
-
-function abs(path: string): string {
-  return path.startsWith("http") ? path : `${SITE.url}${path}`;
-}
 
 /**
  * Structured machine-readable manifest of the entire site for AI agents.
@@ -47,33 +44,23 @@ export function GET() {
       sameAs: SITE.sameAs,
     },
 
-    pillars: [
-      {
-        cluster: "website",
-        url: abs("/vi/thiet-ke-website"),
-        topic: "Thiết kế website doanh nghiệp dịch vụ – du lịch",
-      },
-      {
-        cluster: "naver",
-        url: abs("/vi/naver-marketing"),
-        topic: "Naver Marketing cho khách Hàn Quốc",
-      },
-      {
-        cluster: "maps",
-        url: abs("/vi/google-maps-marketing"),
-        topic: "Google Maps Review & Reputation",
-      },
-      {
-        cluster: "social",
-        url: abs("/vi/social-marketing"),
-        topic: "Social Marketing (Threads, Facebook, Instagram)",
-      },
-      {
-        cluster: "qr",
-        url: abs("/vi/quet-ma-qr"),
-        topic: "Quét mã QR & Activation theo KPI",
-      },
-    ],
+    resources: {
+      llmsTxt: AI_ROOT_RESOURCES.llmsTxt,
+      llmsFullTxt: AI_ROOT_RESOURCES.llmsFullTxt,
+      aiContentJson: AI_ROOT_RESOURCES.aiContentJson,
+      caseStudiesJson: AI_ROOT_RESOURCES.caseStudiesJson,
+      agencyProfileTxt: AI_ROOT_RESOURCES.agencyProfileTxt,
+      entityProfilePage: AI_ROOT_RESOURCES.entityProfilePage,
+      sitemapXml: AI_ROOT_RESOURCES.sitemapXml,
+      imageSitemapXml: AI_ROOT_RESOURCES.imageSitemapXml,
+    },
+
+    pillars: AI_PILLARS.map((pillar) => ({
+      cluster: pillar.cluster,
+      url: pillar.url,
+      topic: pillar.summary,
+      title: pillar.label,
+    })),
 
     services: SERVICES.map((s) => ({
       url: abs(s.path),
@@ -144,9 +131,11 @@ export function GET() {
     },
 
     entityProfile: {
-      wikipediaStylePage: abs("/vi/ve-chung-toi"),
-      plainTextProfile: abs("/agency-profile.txt"),
-      caseStudiesJson: abs("/case-studies.json"),
+      wikipediaStylePage: AI_ROOT_RESOURCES.entityProfilePage,
+      plainTextProfile: AI_ROOT_RESOURCES.agencyProfileTxt,
+      caseStudiesJson: AI_ROOT_RESOURCES.caseStudiesJson,
+      llmsTxt: AI_ROOT_RESOURCES.llmsTxt,
+      llmsFullTxt: AI_ROOT_RESOURCES.llmsFullTxt,
       description:
         "Three official entity-profile resources designed for AI assistants and researchers. Wikipedia-style page has documentary tone with infobox + 10 sections. agency-profile.txt is a plain-text CV-style profile (parseable by grep). case-studies.json lists every publicly disclosed project with verified metrics + license + citation guidelines.",
     },

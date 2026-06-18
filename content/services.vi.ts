@@ -63,11 +63,11 @@ export const SERVICES: Service[] = [
       { label: "Thiết kế website", href: "/vi/thiet-ke-website" },
     ],
     primaryKeyword: "thiết kế website Hội An Đà Nẵng",
-    metaTitle: "Thiết kế website SEO có booking & thanh toán | Công Thiên Agency",
+    metaTitle: "Thiết kế website Hội An Đà Nẵng chuẩn SEO | Công Thiên Agency",
     metaDescription:
-      "Thiết kế website chuyên nghiệp cho spa, nhà hàng, khách sạn, tour và cooking class tại Hội An – Đà Nẵng. Có booking, thanh toán online và đạt PageSpeed SEO 100/100.",
+      "Thiết kế website Hội An – Đà Nẵng cho spa, nhà hàng, khách sạn, tour và cooking class. Chuẩn SEO, tải nhanh, có booking và thanh toán online.",
     eyebrow: "Dịch vụ · Website",
-    h1: "Thiết kế website SEO cho doanh nghiệp du lịch tại Hội An – Đà Nẵng",
+    h1: "Thiết kế website Hội An – Đà Nẵng chuẩn SEO, có booking online",
     heroSub:
       "Website làm nền tảng cho cả hệ thống marketing: khách tìm thấy bạn trên Google, xem dịch vụ rõ ràng, đặt lịch và thanh toán online ngay trên trang.",
     heroCta: "Nhận tư vấn website qua Zalo",
@@ -158,7 +158,11 @@ export const SERVICES: Service[] = [
     ],
     related: [
       { label: "Website spa Hội An", href: "/vi/thiet-ke-website/spa-hoi-an", note: "Trang dịch vụ chuyên ngành spa" },
+      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Trang dịch vụ chuyên ngành nhà hàng" },
+      { label: "Website khách sạn & homestay Hội An", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an", note: "Trang dịch vụ lưu trú" },
+      { label: "Website tour du lịch Hội An", href: "/vi/thiet-ke-website/website-tour-du-lich-hoi-an", note: "Trang dịch vụ tour" },
       { label: "Naver Marketing", href: "/vi/naver-marketing", note: "Tiếp cận khách Hàn Quốc" },
+      { label: "Local SEO Hội An", href: "/vi/google-maps-marketing/hoi-an", note: "Kết hợp website và Google Maps" },
       { label: "Website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi", note: "Bài hỗ trợ chuyên sâu" },
       { label: "Website đa ngôn ngữ cho khách quốc tế", href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te", note: "Bài hỗ trợ chuyên sâu" },
       { label: "Bảng giá", href: "/vi/bang-gia", note: "Xem chi phí gói Website Business" },
@@ -180,9 +184,9 @@ export const SERVICES: Service[] = [
       { label: "Website spa Hội An", href: "/vi/thiet-ke-website/spa-hoi-an" },
     ],
     primaryKeyword: "thiết kế website spa Hội An",
-    metaTitle: "Thiết kế website spa Hội An chuẩn SEO, có booking | Công Thiên Agency",
+    metaTitle: "Thiết kế website spa Hội An có booking | Công Thiên Agency",
     metaDescription:
-      "Dịch vụ thiết kế website spa Hội An chuyên nghiệp: booking treatment, thanh toán PayPal/Stripe, SEO 100/100 PageSpeed. Kết hợp Naver cho khách Hàn. Tư vấn miễn phí qua Zalo.",
+      "Thiết kế website spa Hội An cho spa, massage, wellness: treatment page, booking online, thanh toán PayPal/Stripe, SEO kỹ thuật và tối ưu mobile.",
     eyebrow: "Website · Spa Hội An",
     h1: "Thiết kế website spa Hội An chuyên nghiệp, tối ưu SEO và booking online",
     heroSub:
@@ -263,9 +267,11 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Dịch vụ cùng nhóm website" },
+      { label: "Thiết kế website Hội An Đà Nẵng", href: "/vi/thiet-ke-website", note: "Trang trụ cột Website" },
       { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Tiếp cận khách Hàn cho spa" },
-      { label: "Google Maps Review & Reputation", href: "/vi/google-maps-marketing/review-reputation", note: "Tăng uy tín địa phương" },
+      { label: "Google Maps cho spa", href: "/vi/google-maps-marketing/cho-spa", note: "Tăng hiển thị local cho spa" },
+      { label: "Serena Retreat", href: "/vi/du-an/serena-retreat", note: "Case study website spa" },
+      { label: "Website spa Hội An cần gì", href: "/vi/blog/website-spa-hoi-an-can-gi", note: "Bài hỗ trợ chuyên sâu" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/illustrations/spa.webp", alt: "Thiết kế website spa Hội An" },
@@ -897,11 +903,11 @@ export const SERVICES: Service[] = [
       { label: "Naver Marketing", href: "/vi/naver-marketing" },
     ],
     primaryKeyword: "Naver Marketing Việt Nam",
-    metaTitle: "Naver Marketing: tiếp cận khách Hàn Quốc | Công Thiên Agency",
+    metaTitle: "Naver Marketing Việt Nam cho khách Hàn | Công Thiên Agency",
     metaDescription:
-      "Dịch vụ Naver Marketing cho doanh nghiệp Hội An – Đà Nẵng: booking blogger Hàn, viết bài Naver Blog và xây nội dung tiếp cận khách Hàn trước khi họ đặt dịch vụ.",
+      "Dịch vụ Naver Marketing Việt Nam cho spa, nhà hàng, khách sạn và tour muốn tiếp cận khách Hàn: Naver Blog, blogger Hàn, Naver Place và KOC.",
     eyebrow: "Dịch vụ · Naver",
-    h1: "Naver Marketing — tiếp cận khách Hàn Quốc cho doanh nghiệp Hội An – Đà Nẵng",
+    h1: "Naver Marketing Việt Nam cho doanh nghiệp muốn tiếp cận khách Hàn Quốc",
     heroSub:
       "Khách Hàn tìm thông tin trên Naver trước khi đến Việt Nam. Tôi giúp doanh nghiệp xuất hiện đúng nơi đó qua nội dung Naver Blog và blogger Hàn.",
     heroCta: "Nhận tư vấn Naver qua Zalo",
@@ -991,11 +997,13 @@ export const SERVICES: Service[] = [
       { label: "Naver KOC", href: "/vi/naver-marketing/naver-koc", note: "Spoke · Campaign" },
       { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an", note: "Theo khu vực Hội An" },
       { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Theo khu vực Đà Nẵng" },
-      { label: "Naver Marketing Agency Vietnam", href: "/vi/naver-marketing/naver-marketing-agency-vietnam", note: "SEO · English keyword" },
-      { label: "Naver Blog Marketing Vietnam", href: "/vi/naver-marketing/naver-blog-marketing-vietnam", note: "SEO · English keyword" },
-      { label: "Naver SEO Agency for Hotels", href: "/vi/naver-marketing/naver-seo-agency-for-hotels", note: "SEO · Hotel keyword" },
-      { label: "How to attract Korean tourists with Naver", href: "/vi/naver-marketing/attract-korean-tourists-with-naver", note: "SEO · Guide" },
-      { label: "Naver Map optimization for restaurants", href: "/vi/naver-marketing/naver-map-optimization-restaurants-vietnam", note: "SEO · Restaurant keyword" },
+      { label: "Bảng giá Naver Marketing", href: "/vi/naver-marketing/bang-gia-chi-tiet", note: "Chi phí và phạm vi" },
+      { label: "Naver hay Google cho khách Hàn", href: "/vi/naver-marketing/naver-vs-google", note: "So sánh kênh" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "English landing page" },
+      { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "English landing page" },
+      { label: "Naver SEO Agency for Hotels", href: "/en/naver-marketing/naver-seo-agency-for-hotels", note: "English landing page" },
+      { label: "How to attract Korean tourists with Naver", href: "/en/naver-marketing/attract-korean-tourists-with-naver", note: "English guide" },
+      { label: "Naver Map optimization for restaurants", href: "/en/naver-marketing/naver-map-optimization-restaurants-vietnam", note: "English landing page" },
       { label: "Khi nào nên đầu tư Naver Marketing", href: "/vi/blog/khi-nao-nen-dau-tu-naver-marketing", note: "Bài hỗ trợ quyết định" },
       { label: "5 sai lầm thường gặp khi làm Naver Marketing", href: "/vi/blog/sai-lam-thuong-gap-khi-lam-naver-marketing", note: "Bài hỗ trợ triển khai" },
       { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Blog" },
@@ -1711,11 +1719,11 @@ export const SERVICES: Service[] = [
       { label: "Google Maps Marketing", href: "/vi/google-maps-marketing" },
     ],
     primaryKeyword: "Google Maps Marketing Hội An Đà Nẵng",
-    metaTitle: "Google Maps Marketing & Review Reputation | Công Thiên Agency",
+    metaTitle: "Google Maps Marketing Hội An Đà Nẵng | Công Thiên Agency",
     metaDescription:
-      "Tối ưu Google Business Profile, hình ảnh, danh mục và chiến lược Review & Reputation để tăng uy tín địa phương cho doanh nghiệp tại Hội An – Đà Nẵng.",
+      "Google Maps Marketing Hội An – Đà Nẵng: tối ưu Google Business Profile, hình ảnh, danh mục, Local SEO và quy trình review thật cho doanh nghiệp.",
     eyebrow: "Dịch vụ · Google Maps",
-    h1: "Google Maps Marketing — tăng uy tín địa phương cho doanh nghiệp Hội An – Đà Nẵng",
+    h1: "Google Maps Marketing Hội An – Đà Nẵng cho doanh nghiệp địa phương",
     heroSub:
       "Hồ sơ Google Maps là nơi khách quyết định tin hay không. Tôi tối ưu hồ sơ và xây chiến lược review & reputation từ khách hàng thật.",
     heroCta: "Nhận tư vấn Google Maps qua Zalo",
@@ -1786,7 +1794,9 @@ export const SERVICES: Service[] = [
       { label: "Google Maps cho tour", href: "/vi/google-maps-marketing/cho-tour", note: "Ngành · Tour & trải nghiệm" },
       { label: "Local SEO Hội An", href: "/vi/google-maps-marketing/hoi-an", note: "Khu vực · Hội An" },
       { label: "Local SEO Đà Nẵng", href: "/vi/google-maps-marketing/da-nang", note: "Khu vực · Đà Nẵng" },
+      { label: "Thiết kế website Hội An Đà Nẵng", href: "/vi/thiet-ke-website", note: "Đồng bộ website và NAP" },
       { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
+      { label: "Quy trình xin review thật", href: "/vi/blog/quy-trinh-xin-review-that-sau-dich-vu", note: "Bài hỗ trợ review" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Google Maps Marketing Hội An Đà Nẵng" },
@@ -2620,11 +2630,11 @@ export const SERVICES: Service[] = [
       { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an" },
     ],
     primaryKeyword: "Naver Marketing Hội An",
-    metaTitle: "Naver Marketing Hội An: tiếp cận khách Hàn phố cổ | Công Thiên Agency",
+    metaTitle: "Naver Marketing Hội An cho khách Hàn | Công Thiên Agency",
     metaDescription:
-      "Naver Marketing Hội An cho spa, nhà hàng, homestay, cooking class và tour: booking blogger Hàn, nội dung Naver Blog và social proof tiếng Hàn cho khách Hàn đến phố cổ.",
+      "Naver Marketing Hội An cho spa, nhà hàng, homestay, cooking class và tour phố cổ: booking blogger Hàn, Naver Blog và social proof tiếng Hàn.",
     eyebrow: "Naver · Hội An",
-    h1: "Naver Marketing Hội An — đưa doanh nghiệp phố cổ đến đúng nơi khách Hàn tìm kiếm",
+    h1: "Naver Marketing Hội An cho spa, nhà hàng, homestay và tour phố cổ",
     heroSub:
       "Khách Hàn đến Hội An thường lên kế hoạch kỹ và đặt trước qua Naver. Tôi giúp doanh nghiệp của bạn hiện diện đúng nơi họ ra quyết định.",
     heroCta: "Nhận tư vấn Naver Hội An qua Zalo",
@@ -2695,7 +2705,10 @@ export const SERVICES: Service[] = [
     related: [
       { label: "Naver Marketing Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Khu vực lân cận" },
       { label: "Naver Marketing cho spa", href: "/vi/naver-marketing/cho-spa", note: "Theo ngành" },
+      { label: "Naver cho nhà hàng", href: "/vi/naver-marketing/cho-nha-hang", note: "Theo ngành" },
+      { label: "Naver cho khách sạn", href: "/vi/naver-marketing/cho-khach-san", note: "Theo ngành" },
       { label: "Naver cho tour", href: "/vi/naver-marketing/cho-tour", note: "Trải nghiệm phố cổ" },
+      { label: "Local SEO Hội An", href: "/vi/google-maps-marketing/hoi-an", note: "Google Maps địa phương" },
       { label: "Naver Place là gì", href: "/vi/blog/naver-place-la-gi", note: "Blog" },
     ],
     images: [
@@ -2978,11 +2991,11 @@ export const SERVICES: Service[] = [
       { label: "Local SEO Hội An", href: "/vi/google-maps-marketing/hoi-an" },
     ],
     primaryKeyword: "Local SEO Hội An",
-    metaTitle: "Local SEO Hội An: tối ưu Google Maps cho doanh nghiệp phố cổ | Công Thiên Agency",
+    metaTitle: "Local SEO Hội An & Google Maps Marketing | Công Thiên Agency",
     metaDescription:
-      "Local SEO Hội An: tối ưu Google Business Profile và đánh giá thật để spa, nhà hàng, homestay và tour xuất hiện khi khách tìm dịch vụ tại Hội An và khu phố cổ.",
+      "Local SEO Hội An cho spa, nhà hàng, homestay và tour phố cổ: tối ưu Google Business Profile, hình ảnh, NAP website và đánh giá thật.",
     eyebrow: "Google Maps · Hội An",
-    h1: "Local SEO Hội An — giúp doanh nghiệp phố cổ hiển thị khi khách tìm trên Google Maps",
+    h1: "Local SEO Hội An giúp doanh nghiệp phố cổ hiển thị trên Google Maps",
     heroSub:
       "Khách đến Hội An tìm dịch vụ ngay trên điện thoại. Tôi tối ưu hồ sơ Google Maps và đánh giá thật để bạn xuất hiện đúng lúc đó.",
     heroCta: "Nhận tư vấn Local SEO Hội An qua Zalo",
@@ -3048,6 +3061,9 @@ export const SERVICES: Service[] = [
     related: [
       { label: "Local SEO Đà Nẵng", href: "/vi/google-maps-marketing/da-nang", note: "Khu vực lân cận" },
       { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an", note: "Kênh khách Hàn" },
+      { label: "Google Maps cho spa", href: "/vi/google-maps-marketing/cho-spa", note: "Theo ngành" },
+      { label: "Google Maps cho nhà hàng", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Theo ngành" },
+      { label: "Thiết kế website Hội An Đà Nẵng", href: "/vi/thiet-ke-website", note: "Đồng bộ website và NAP" },
       { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
     ],
     images: [
@@ -4252,13 +4268,13 @@ export const SERVICES: Service[] = [
 
   /* ───────────────────────── NAVER SEO LANDING — AGENCY VIETNAM ───────────────────────── */
   {
-    path: "/vi/naver-marketing/naver-marketing-agency-vietnam",
+    path: "/en/naver-marketing/naver-marketing-agency-vietnam",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
-      { label: "Trang chủ", href: "/vi" },
-      { label: "Naver Marketing", href: "/vi/naver-marketing" },
-      { label: "Naver Marketing Agency Vietnam", href: "/vi/naver-marketing/naver-marketing-agency-vietnam" },
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam" },
     ],
     primaryKeyword: "Naver marketing agency Vietnam",
     metaTitle: "Naver Marketing Agency Vietnam | Công Thiên Agency",
@@ -4267,8 +4283,8 @@ export const SERVICES: Service[] = [
     eyebrow: "Naver · Vietnam Agency",
     h1: "Naver Marketing Agency Vietnam for brands targeting Korean tourists",
     heroSub:
-      "Dịch vụ Naver Marketing tại Việt Nam cho khách sạn, nhà hàng, spa và tour muốn tiếp cận khách Hàn trước khi họ đặt dịch vụ.",
-    heroCta: "Tư vấn Naver Marketing qua Zalo",
+      "Naver Marketing services in Vietnam for hotels, restaurants, spas and tours that want to reach Korean tourists before they book.",
+    heroCta: "Get a Naver Marketing plan",
     heroCtaHref: SITE.contact.zalo,
     intro:
       "If your business in Vietnam depends on Korean tourists, Naver is not an optional channel. Công Thiên Agency helps tourism and hospitality brands build Korean-language visibility through Naver Blog content, Korean blogger reviews, Naver Place optimization and SEO-ready landing pages that connect back to your website, Google Maps, Zalo and WhatsApp.",
@@ -4316,9 +4332,9 @@ export const SERVICES: Service[] = [
       { step: "Execution", detail: "Create content, coordinate reviews and connect channels into one discovery path." },
       { step: "Optimize", detail: "Track links, leads and content performance, then adjust the monthly plan." },
     ],
-    priceFrom: "Naver Blogger Review từ 8.000.000đ / 4 bài",
+    priceFrom: "Naver Blogger Review from 8,000,000 VND / 4 posts",
     priceNote:
-      "Gói triển khai tùy ngành, khu vực, số bài và nhu cầu blogger/KOC. Nhắn Zalo để nhận plan theo business thật.",
+      "Final scope depends on industry, location, post volume and blogger/KOC needs. Message me on Zalo for a plan based on your real business.",
     faqs: [
       {
         q: "What is a Naver marketing agency in Vietnam?",
@@ -4342,10 +4358,10 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Naver Marketing tổng quan", href: "/vi/naver-marketing", note: "Trang dịch vụ chính" },
-      { label: "Naver Blog Marketing Vietnam", href: "/vi/naver-marketing/naver-blog-marketing-vietnam", note: "Keyword liên quan" },
-      { label: "Naver SEO cho khách sạn", href: "/vi/naver-marketing/naver-seo-agency-for-hotels", note: "Ngành khách sạn" },
-      { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Naver Place" },
+      { label: "Naver Marketing overview", href: "/vi/naver-marketing", note: "Vietnamese service page" },
+      { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "Related keyword" },
+      { label: "Naver SEO for hotels", href: "/en/naver-marketing/naver-seo-agency-for-hotels", note: "Hotel keyword" },
+      { label: "Naver Place optimization", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Vietnamese service page" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver marketing agency Vietnam for Korean tourists" },
@@ -4355,13 +4371,13 @@ export const SERVICES: Service[] = [
 
   /* ───────────────────────── NAVER SEO LANDING — BLOG MARKETING VIETNAM ───────────────────────── */
   {
-    path: "/vi/naver-marketing/naver-blog-marketing-vietnam",
+    path: "/en/naver-marketing/naver-blog-marketing-vietnam",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
-      { label: "Trang chủ", href: "/vi" },
-      { label: "Naver Marketing", href: "/vi/naver-marketing" },
-      { label: "Naver Blog Marketing Vietnam", href: "/vi/naver-marketing/naver-blog-marketing-vietnam" },
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam" },
     ],
     primaryKeyword: "Naver blog marketing Vietnam",
     metaTitle: "Naver Blog Marketing Vietnam | Công Thiên Agency",
@@ -4370,8 +4386,8 @@ export const SERVICES: Service[] = [
     eyebrow: "Naver Blog · Vietnam",
     h1: "Naver Blog Marketing Vietnam for Korean traveler trust",
     heroSub:
-      "Xây nội dung Naver Blog tiếng Hàn giúp khách Hàn đọc review, hiểu trải nghiệm và tin doanh nghiệp Việt Nam trước khi đặt dịch vụ.",
-    heroCta: "Tư vấn Naver Blog qua Zalo",
+      "Build Korean-language Naver Blog content that helps Korean travelers read reviews, understand the experience and trust your Vietnam business before booking.",
+    heroCta: "Get a Naver Blog plan",
     heroCtaHref: SITE.contact.zalo,
     intro:
       "Naver Blog marketing in Vietnam is about earning attention and trust where Korean travelers already research. Instead of only translating sales copy, we create review-style content, useful travel context, keyword-led blog topics and clear calls to action that help Korean readers move from search to inquiry.",
@@ -4419,9 +4435,9 @@ export const SERVICES: Service[] = [
       { step: "Create", detail: "Write or brief Korean review-style articles with real photos and CTAs." },
       { step: "Connect", detail: "Link Naver Blog to website, Place, maps and booking/contact channels." },
     ],
-    priceFrom: "Từ 8.000.000đ / 4 bài review",
+    priceFrom: "From 8,000,000 VND / 4 review posts",
     priceNote:
-      "Chi phí phụ thuộc số bài, tài khoản đăng, chất lượng hình ảnh và việc có booking blogger Hàn hay không.",
+      "Pricing depends on post volume, publishing account, photo quality and whether Korean blogger booking is included.",
     faqs: [
       {
         q: "What is Naver Blog marketing in Vietnam?",
@@ -4445,10 +4461,10 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Dịch vụ chi tiết" },
-      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Third-party review" },
-      { label: "Naver Marketing Agency Vietnam", href: "/vi/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
-      { label: "Naver Place khác Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao", note: "Bài giải thích" },
+      { label: "Naver Blog writing service", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Vietnamese service page" },
+      { label: "Korean blogger booking", href: "/vi/naver-marketing/booking-blogger-han", note: "Vietnamese service page" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
+      { label: "Naver Place vs Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao", note: "Vietnamese explainer" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver Blog marketing Vietnam for Korean travelers" },
@@ -4458,13 +4474,13 @@ export const SERVICES: Service[] = [
 
   /* ───────────────────────── NAVER SEO LANDING — HOTELS ───────────────────────── */
   {
-    path: "/vi/naver-marketing/naver-seo-agency-for-hotels",
+    path: "/en/naver-marketing/naver-seo-agency-for-hotels",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
-      { label: "Trang chủ", href: "/vi" },
-      { label: "Naver Marketing", href: "/vi/naver-marketing" },
-      { label: "Naver SEO Agency for Hotels", href: "/vi/naver-marketing/naver-seo-agency-for-hotels" },
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver SEO Agency for Hotels", href: "/en/naver-marketing/naver-seo-agency-for-hotels" },
     ],
     primaryKeyword: "Naver SEO agency for hotels",
     metaTitle: "Naver SEO Agency for Hotels in Vietnam | Công Thiên",
@@ -4473,8 +4489,8 @@ export const SERVICES: Service[] = [
     eyebrow: "Naver SEO · Hotels",
     h1: "Naver SEO agency for hotels targeting Korean travelers",
     heroSub:
-      "Tối ưu Naver cho khách sạn, resort, homestay và villa tại Việt Nam muốn tăng niềm tin với khách Hàn và hỗ trợ direct booking.",
-    heroCta: "Tư vấn Naver SEO khách sạn",
+      "Naver SEO for hotels, resorts, homestays and villas in Vietnam that want to build trust with Korean travelers and support direct bookings.",
+    heroCta: "Get a hotel Naver SEO plan",
     heroCtaHref: SITE.contact.zalo,
     intro:
       "Hotels that target Korean travelers need more than OTA listings. Korean guests often validate rooms, location, breakfast, nearby attractions and real guest experiences through Naver. This Naver SEO service helps hotels in Vietnam build Korean-language search assets across Naver Blog, Naver Place and their own website landing pages.",
@@ -4522,9 +4538,9 @@ export const SERVICES: Service[] = [
       { step: "Content", detail: "Plan Naver Blog reviews and website pages that support hotel trust." },
       { step: "Conversion", detail: "Connect content to direct inquiry or booking paths." },
     ],
-    priceFrom: "Naver Blogger Review từ 8.000.000đ / 4 bài",
+    priceFrom: "Naver Blogger Review from 8,000,000 VND / 4 posts",
     priceNote:
-      "Khách sạn có thể cần blogger stay review, Naver Place và website booking page; báo giá theo quy mô phòng và mục tiêu.",
+      "Hotels may need stay reviews, Naver Place work and website booking page improvements; quotes depend on property size and goals.",
     faqs: [
       {
         q: "What does a Naver SEO agency for hotels do?",
@@ -4548,10 +4564,10 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Naver cho khách sạn", href: "/vi/naver-marketing/cho-khach-san", note: "Trang ngành tiếng Việt" },
-      { label: "Website khách sạn", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an", note: "Direct booking" },
-      { label: "Naver Marketing Agency Vietnam", href: "/vi/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
-      { label: "Google Maps cho khách sạn", href: "/vi/google-maps-marketing/cho-khach-san", note: "Local SEO" },
+      { label: "Naver for hotels", href: "/vi/naver-marketing/cho-khach-san", note: "Vietnamese industry page" },
+      { label: "Hotel website design", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an", note: "Direct booking" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
+      { label: "Google Maps for hotels", href: "/vi/google-maps-marketing/cho-khach-san", note: "Vietnamese local SEO page" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/illustrations/homestay.webp", alt: "Naver SEO agency for hotels in Vietnam" },
@@ -4561,13 +4577,13 @@ export const SERVICES: Service[] = [
 
   /* ───────────────────────── NAVER SEO LANDING — ATTRACT KOREAN TOURISTS ───────────────────────── */
   {
-    path: "/vi/naver-marketing/attract-korean-tourists-with-naver",
+    path: "/en/naver-marketing/attract-korean-tourists-with-naver",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
-      { label: "Trang chủ", href: "/vi" },
-      { label: "Naver Marketing", href: "/vi/naver-marketing" },
-      { label: "Attract Korean Tourists with Naver", href: "/vi/naver-marketing/attract-korean-tourists-with-naver" },
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Attract Korean Tourists with Naver", href: "/en/naver-marketing/attract-korean-tourists-with-naver" },
     ],
     primaryKeyword: "How to attract Korean tourists with Naver",
     metaTitle: "How to Attract Korean Tourists with Naver | Vietnam",
@@ -4576,8 +4592,8 @@ export const SERVICES: Service[] = [
     eyebrow: "Naver Strategy · Korean Tourists",
     h1: "How to attract Korean tourists with Naver in Vietnam",
     heroSub:
-      "Một trang chiến lược cho doanh nghiệp du lịch Việt Nam muốn biến Naver thành kênh khách Hàn: từ tìm kiếm, đọc review đến nhắn tin và đặt dịch vụ.",
-    heroCta: "Nhận tư vấn chiến lược Naver",
+      "A strategy page for Vietnam tourism businesses that want to turn Naver into a Korean tourist acquisition channel, from search and reviews to messages and bookings.",
+    heroCta: "Get a Naver strategy plan",
     heroCtaHref: SITE.contact.zalo,
     intro:
       "To attract Korean tourists with Naver, you need to appear in the places they already trust: Naver Blog reviews, Naver Place results, Korean-language search content and clear booking pages. For Vietnam tourism businesses, the best strategy is not one isolated post, but a connected path from discovery to confidence to conversion.",
@@ -4625,9 +4641,9 @@ export const SERVICES: Service[] = [
       { step: "Build", detail: "Create Naver Blog, Place, review and website assets in the right order." },
       { step: "Improve", detail: "Review inquiries, content topics and conversion paths monthly." },
     ],
-    priceFrom: "Tư vấn miễn phí chọn hướng Naver",
+    priceFrom: "Free consultation for choosing a Naver direction",
     priceNote:
-      "Sau tư vấn, có thể triển khai gói Naver Blogger Review, quản lý tài khoản Naver hoặc tối ưu Naver Place tùy mục tiêu.",
+      "After the consultation, you can choose Naver Blogger Review, monthly Naver account management or Naver Place optimization depending on your goals.",
     faqs: [
       {
         q: "How do I attract Korean tourists with Naver?",
@@ -4651,10 +4667,10 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Naver hay Google cho khách Hàn", href: "/vi/naver-marketing/naver-vs-google", note: "So sánh kênh" },
-      { label: "Naver Blog Marketing Vietnam", href: "/vi/naver-marketing/naver-blog-marketing-vietnam", note: "Content strategy" },
-      { label: "Booking blogger Hàn Quốc", href: "/vi/naver-marketing/booking-blogger-han", note: "Review nhanh" },
-      { label: "Naver Marketing Hội An", href: "/vi/naver-marketing/hoi-an", note: "Theo khu vực" },
+      { label: "Naver or Google for Korean tourists", href: "/vi/naver-marketing/naver-vs-google", note: "Vietnamese comparison" },
+      { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "Content strategy" },
+      { label: "Korean blogger booking", href: "/vi/naver-marketing/booking-blogger-han", note: "Vietnamese review page" },
+      { label: "Naver Marketing Hoi An", href: "/vi/naver-marketing/hoi-an", note: "Vietnamese local page" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "How to attract Korean tourists with Naver in Vietnam" },
@@ -4664,13 +4680,13 @@ export const SERVICES: Service[] = [
 
   /* ───────────────────────── NAVER SEO LANDING — MAP RESTAURANTS ───────────────────────── */
   {
-    path: "/vi/naver-marketing/naver-map-optimization-restaurants-vietnam",
+    path: "/en/naver-marketing/naver-map-optimization-restaurants-vietnam",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
-      { label: "Trang chủ", href: "/vi" },
-      { label: "Naver Marketing", href: "/vi/naver-marketing" },
-      { label: "Naver Map Optimization Restaurants Vietnam", href: "/vi/naver-marketing/naver-map-optimization-restaurants-vietnam" },
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Map Optimization Restaurants Vietnam", href: "/en/naver-marketing/naver-map-optimization-restaurants-vietnam" },
     ],
     primaryKeyword: "Naver Map optimization for restaurants in Vietnam",
     metaTitle: "Naver Map Optimization for Restaurants in Vietnam",
@@ -4679,8 +4695,8 @@ export const SERVICES: Service[] = [
     eyebrow: "Naver Map · Restaurants",
     h1: "Naver Map optimization for restaurants in Vietnam",
     heroSub:
-      "Tối ưu Naver Place/Naver Map cho nhà hàng Việt Nam muốn được khách Hàn tìm thấy, hiểu menu và chọn đến ăn khi du lịch.",
-    heroCta: "Tư vấn Naver Map nhà hàng",
+      "Naver Place and Naver Map optimization for Vietnam restaurants that want Korean travelers to find them, understand the menu and choose to visit.",
+    heroCta: "Get a restaurant Naver Map plan",
     heroCtaHref: SITE.contact.zalo,
     intro:
       "For Korean diners in Vietnam, maps and blog reviews work together. Naver Map optimization for restaurants means making your place easier to understand in Korean: location, category, opening hours, menu highlights, photos, review content and links that help guests decide before they arrive.",
@@ -4728,9 +4744,9 @@ export const SERVICES: Service[] = [
       { step: "Review", detail: "Add Naver Blog or blogger review content to support map discovery." },
       { step: "Align", detail: "Connect Naver Map, website menu, Google Maps and contact/booking channels." },
     ],
-    priceFrom: "Từ 8.000.000đ / 4 bài review",
+    priceFrom: "From 8,000,000 VND / 4 review posts",
     priceNote:
-      "Có thể triển khai riêng phần Naver Place/Naver Map hoặc kết hợp Naver Blogger Review cho nhà hàng.",
+      "You can run Naver Place/Naver Map optimization alone or combine it with Naver Blogger Review for restaurant trust.",
     faqs: [
       {
         q: "What is Naver Map optimization for restaurants?",
@@ -4754,10 +4770,10 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Naver cho nhà hàng", href: "/vi/naver-marketing/cho-nha-hang", note: "Trang ngành tiếng Việt" },
-      { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Place optimization" },
-      { label: "Website nhà hàng Hội An", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Menu & đặt bàn" },
-      { label: "Google Maps cho nhà hàng", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Local SEO" },
+      { label: "Naver for restaurants", href: "/vi/naver-marketing/cho-nha-hang", note: "Vietnamese industry page" },
+      { label: "Naver Place optimization", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Vietnamese service page" },
+      { label: "Restaurant website design", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Menu and booking" },
+      { label: "Google Maps for restaurants", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Vietnamese local SEO page" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Naver Map optimization for restaurants in Vietnam" },
