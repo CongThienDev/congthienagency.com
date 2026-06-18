@@ -17,6 +17,7 @@ export type ImageSlot = { slot: string; suggestion: string; alt: string };
 
 export type Service = {
   path: string; // full url path, e.g. /vi/thiet-ke-website/spa-hoi-an
+  lastModified?: string; // ISO date string, e.g. "2026-06-18" — used in sitemap
   cluster: "website" | "naver" | "maps" | "social" | "qr";
   isPillar: boolean;
   breadcrumb: { label: string; href: string }[];
@@ -5122,6 +5123,7 @@ export const SERVICES: Service[] = [
   /* ───────────────── EN: Naver Blog English ───────────────── */
   {
     path: "/en/naver-marketing/naver-blog-english",
+    lastModified: "2026-06-18",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
@@ -5262,6 +5264,7 @@ export const SERVICES: Service[] = [
   /* ───────────────── VI: Naver Blog tiếng Anh ───────────────── */
   {
     path: "/vi/naver-marketing/naver-blog-tieng-anh",
+    lastModified: "2026-06-18",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
@@ -5402,6 +5405,7 @@ export const SERVICES: Service[] = [
   /* ───────────────── EN: Naver Blogs ───────────────── */
   {
     path: "/en/naver-marketing/naver-blogs",
+    lastModified: "2026-06-18",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
@@ -5537,6 +5541,7 @@ export const SERVICES: Service[] = [
   /* ───────────────── VI: Naver Blogs là gì ───────────────── */
   {
     path: "/vi/naver-marketing/naver-blogs",
+    lastModified: "2026-06-18",
     cluster: "naver",
     isPillar: false,
     breadcrumb: [
@@ -5672,6 +5677,7 @@ export const SERVICES: Service[] = [
   /* ───────────────── EN: Map Review Jobs ───────────────── */
   {
     path: "/en/google-maps-marketing/map-review-jobs",
+    lastModified: "2026-06-18",
     cluster: "maps",
     isPillar: false,
     breadcrumb: [
@@ -5812,6 +5818,7 @@ export const SERVICES: Service[] = [
   /* ───────────────── VI: Việc làm đánh giá Map ───────────────── */
   {
     path: "/vi/google-maps-marketing/viec-lam-danh-gia-map",
+    lastModified: "2026-06-18",
     cluster: "maps",
     isPillar: false,
     breadcrumb: [
