@@ -8,6 +8,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { BlogCard } from "@/components/Cards";
 import { IconArrowRight } from "@/components/Icons";
 import { BLOG_HUB, BLOG_POSTS, type BlogPost } from "@/content/blog.vi";
+import { BLOG_HUB_EN, BLOG_POSTS_EN } from "@/content/blog.en";
 import { graphDocument, breadcrumbGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
@@ -15,18 +16,24 @@ type Params = {
   params: Promise<{ locale: string }>;
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
-const PATH = "/vi/blog";
 const PAGE_SIZE = 6;
-const BREADCRUMB = [
-  { label: "Trang chủ", href: "/vi" },
-  { label: "Blog", href: PATH },
-];
 
 type BlogCluster = BlogPost["cluster"];
 
+const VI_PATH = "/vi/blog";
+const VI_BREADCRUMB = [
+  { label: "Trang chủ", href: "/vi" },
+  { label: "Blog", href: VI_PATH },
+];
+const EN_PATH = "/en/blog";
+const EN_BREADCRUMB = [
+  { label: "Home", href: "/en" },
+  { label: "Blog", href: EN_PATH },
+];
+
 const CATEGORY_ORDER: BlogCluster[] = ["naver", "website", "maps", "qr", "social", "general"];
 
-const CATEGORY_META: Record<BlogCluster, { label: string; title: string; description: string }> = {
+const CATEGORY_META_VI: Record<BlogCluster, { label: string; title: string; description: string }> = {
   naver: {
     label: "Naver",
     title: "Naver Marketing",
@@ -59,6 +66,39 @@ const CATEGORY_META: Record<BlogCluster, { label: string; title: string; descrip
   },
 };
 
+const CATEGORY_META_EN: Record<BlogCluster, { label: string; title: string; description: string }> = {
+  naver: {
+    label: "Naver",
+    title: "Naver Marketing",
+    description: "Guides on Naver Blog, Korean blogger reviews, Naver Place and reaching Korean tourists.",
+  },
+  website: {
+    label: "Website",
+    title: "Website & SEO",
+    description: "Web design for spas, hotels, tours, online booking and conversion.",
+  },
+  maps: {
+    label: "Google Maps",
+    title: "Google Maps",
+    description: "Google Business Profile, genuine reviews, local SEO and visibility optimization.",
+  },
+  social: {
+    label: "Social",
+    title: "Social Marketing",
+    description: "Fanpage, social proof, channel growth and brand trust.",
+  },
+  qr: {
+    label: "QR & Zalo",
+    title: "QR Code & Zalo",
+    description: "QR code activation, Zalo lead capture and offline-to-online data collection.",
+  },
+  general: {
+    label: "Other",
+    title: "General Knowledge",
+    description: "Foundation guides supporting broader online marketing strategy.",
+  },
+};
+
 function pageParamValue(
   searchParams: Record<string, string | string[] | undefined>,
   key: string,
@@ -74,7 +114,8 @@ function pageParamValue(
 function buildPageHref(
   searchParams: Record<string, string | string[] | undefined>,
   key: string,
-  page: number
+  page: number,
+  basePath: string
 ) {
   const nextParams = new URLSearchParams();
   for (const [paramKey, value] of Object.entries(searchParams)) {
@@ -84,25 +125,39 @@ function buildPageHref(
   }
   if (page > 1) nextParams.set(key, String(page));
   const query = nextParams.toString();
-  return `${PATH}${query ? `?${query}` : ""}#${key}`;
+  return `${basePath}${query ? `?${query}` : ""}#${key}`;
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale } = await params;
+  if (locale === "en") {
+    return buildMetadata({
+      title: BLOG_HUB_EN.metaTitle,
+      description: BLOG_HUB_EN.metaDescription,
+      path: EN_PATH,
+      locale: "en",
+    });
+  }
   if (locale !== "vi") return {};
   return buildMetadata({
     title: BLOG_HUB.metaTitle,
     description: BLOG_HUB.metaDescription,
-    path: PATH,
+    path: VI_PATH,
     locale: "vi",
   });
 }
 
 export default async function Page({ params, searchParams }: Params) {
   const { locale } = await params;
-  if (locale !== "vi") notFound();
+  if (locale !== "vi" && locale !== "en") notFound();
+  const isEn = locale === "en";
   const currentSearchParams = (await searchParams) ?? {};
-  const posts = [...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date));
+  const PATH = isEn ? EN_PATH : VI_PATH;
+  const BREADCRUMB = isEn ? EN_BREADCRUMB : VI_BREADCRUMB;
+  const hub = isEn ? BLOG_HUB_EN : BLOG_HUB;
+  const CATEGORY_META = isEn ? CATEGORY_META_EN : CATEGORY_META_VI;
+  const allPosts = isEn ? [...BLOG_POSTS_EN] : [...BLOG_POSTS];
+  const posts = allPosts.sort((a, b) => b.date.localeCompare(a.date));
   const grouped = CATEGORY_ORDER.map((cluster) => ({
     key: cluster,
     label: CATEGORY_META[cluster].label,
@@ -112,7 +167,7 @@ export default async function Page({ params, searchParams }: Params) {
   })).filter((group) => group.posts.length > 0);
 
   return (
-    <Shell locale="vi">
+    <Shell locale={locale as "vi" | "en"}>
       <JsonLd data={graphDocument([breadcrumbGraph(BREADCRUMB)])} />
       <section className="relative overflow-hidden border-b border-line bg-white">
         <div aria-hidden className="absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(37,99,235,0.11),transparent_34%),linear-gradient(180deg,#fff_0%,#f7f9ff_100%)]" />
@@ -121,17 +176,19 @@ export default async function Page({ params, searchParams }: Params) {
           <Breadcrumb items={BREADCRUMB} />
           <div className="mt-8 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
             <div className="max-w-3xl animate-rise">
-              <p className="label-mono text-blue-600">{BLOG_HUB.eyebrow}</p>
+              <p className="label-mono text-blue-600">{hub.eyebrow}</p>
               <h1 className="mt-3 text-4xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl text-balance">
-                {BLOG_HUB.h1}
+                {hub.h1}
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-                {BLOG_HUB.heroSub}
+                {hub.heroSub}
               </p>
             </div>
             <div className="animate-rise lg:pb-2" style={{ animationDelay: "120ms" }}>
               <p className="max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-                Tổng hợp bài viết về Naver, Website, Google Maps và Social Marketing, sắp xếp theo từng cụm để bạn dễ theo dõi đúng chủ đề mình quan tâm.
+                {isEn
+                  ? "Guides on Naver Marketing, Google Maps, website design and reaching Korean tourists — organized by topic for easy navigation."
+                  : "Tổng hợp bài viết về Naver, Website, Google Maps và Social Marketing, sắp xếp theo từng cụm để bạn dễ theo dõi đúng chủ đề mình quan tâm."}
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {grouped.map((group) => (
@@ -148,17 +205,19 @@ export default async function Page({ params, searchParams }: Params) {
             </div>
           </div>
           <div className="mt-8 grid gap-4 lg:grid-cols-[1.3fr_0.7fr]">
+            {"intro" in hub && (
+              <div className="rounded-[1.75rem] border border-line bg-white/85 p-5 shadow-soft">
+                {(hub as typeof BLOG_HUB).intro.map((paragraph) => (
+                  <p key={paragraph} className="text-sm leading-relaxed text-ink-soft not-first:mt-3">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            )}
             <div className="rounded-[1.75rem] border border-line bg-white/85 p-5 shadow-soft">
-              {BLOG_HUB.intro.map((paragraph) => (
-                <p key={paragraph} className="text-sm leading-relaxed text-ink-soft not-first:mt-3">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-            <div className="rounded-[1.75rem] border border-line bg-white/85 p-5 shadow-soft">
-              <p className="label-mono text-blue-600">Bắt đầu từ các trang trụ cột</p>
+              <p className="label-mono text-blue-600">{isEn ? "Start from the key service pages" : "Bắt đầu từ các trang trụ cột"}</p>
               <div className="mt-4 flex flex-col gap-3">
-                {BLOG_HUB.focusLinks.map((item) => (
+                {hub.focusLinks.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
@@ -207,19 +266,19 @@ export default async function Page({ params, searchParams }: Params) {
                     </div>
                     <div className="flex items-center gap-3">
                       <span className="font-mono text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-                        {group.posts.length} bài · {currentPage}/{pageCount}
+                        {group.posts.length} {isEn ? "posts" : "bài"} · {currentPage}/{pageCount}
                       </span>
                       <div className="flex rounded-full border border-line bg-paper p-1">
                         <Link
-                          href={buildPageHref(currentSearchParams, group.key, previousPage)}
-                          aria-label={`Trang trước của ${group.title}`}
+                          href={buildPageHref(currentSearchParams, group.key, previousPage, PATH)}
+                          aria-label={isEn ? `Previous page of ${group.title}` : `Trang trước của ${group.title}`}
                           className="grid h-9 w-9 place-items-center rounded-full text-ink-soft transition-all hover:bg-white hover:text-blue-700 hover:shadow-soft"
                         >
                           <IconArrowRight className="h-4 w-4 rotate-180" />
                         </Link>
                         <Link
-                          href={buildPageHref(currentSearchParams, group.key, nextPage)}
-                          aria-label={`Trang sau của ${group.title}`}
+                          href={buildPageHref(currentSearchParams, group.key, nextPage, PATH)}
+                          aria-label={isEn ? `Next page of ${group.title}` : `Trang sau của ${group.title}`}
                           className="grid h-9 w-9 place-items-center rounded-full text-ink-soft transition-all hover:bg-white hover:text-blue-700 hover:shadow-soft"
                         >
                           <IconArrowRight className="h-4 w-4" />

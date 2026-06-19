@@ -2244,6 +2244,51 @@ export const BLOG_POSTS: BlogPost[] = [
           { type: "text", text: "." },
         ],
       },
+      { type: "h2", text: "Review thật là nền tảng của Local SEO" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Số lượng, chất lượng và tần suất đánh giá thật từ khách hàng ảnh hưởng trực tiếp đến độ nổi bật — một trong ba yếu tố xếp hạng địa phương của Google. Hồ sơ có nhiều đánh giá thật, phản hồi chuyên nghiệp và tốc độ nhận review đều đặn sẽ dần vượt qua đối thủ cùng khu vực ngay cả khi bạn không chi thêm ngân sách quảng cáo. Xây quy trình review bền vững là khoản đầu tư Local SEO có tỷ lệ hoàn vốn tốt nhất cho doanh nghiệp dịch vụ – du lịch. Xem chi tiết cách chúng tôi triển khai điều này trong dịch vụ " },
+          { type: "link", text: "review reputation", href: "/vi/google-maps-marketing/review-reputation" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Tín hiệu địa phương từ website" },
+      {
+        type: "p",
+        text: "Website có schema LocalBusiness, đề cập rõ khu vực phục vụ (Hội An, Đà Nẵng) trong nội dung trang và có tốc độ tải nhanh sẽ củng cố tín hiệu địa phương cho toàn bộ hệ thống. Google không chỉ đọc hồ sơ Maps — nó đọc cả website và các kênh khác để xác định mức độ uy tín thực tế của doanh nghiệp. Điều này có nghĩa là một website yếu sẽ giới hạn khả năng lên top Maps dù hồ sơ được tối ưu tốt.",
+      },
+      { type: "h2", text: "Local SEO cho ngành du lịch: khách quốc tế tìm kiếm thế nào?" },
+      {
+        type: "p",
+        text: "Khách Hàn Quốc tìm kiếm trên Naver, không phải Google — đây là điểm đặc thù quan trọng. Local SEO Google chủ yếu phục vụ khách Việt, khách phương Tây và khách quốc tế không dùng Naver. Nếu tệp khách chính của bạn là người Hàn, bạn cần kết hợp Local SEO Google với hiện diện Naver để không bỏ sót phân khúc lớn nhất. Hai kênh này hỗ trợ nhau: Google Maps cho khách quốc tế đa dạng, Naver cho riêng khách Hàn.",
+      },
+      { type: "h2", text: "Sai lầm phổ biến làm Local SEO kém hiệu quả" },
+      {
+        type: "ul",
+        items: [
+          "Thông tin NAP không nhất quán giữa hồ sơ, website và Facebook — Google đọc tất cả và sự không nhất quán làm loãng tín hiệu.",
+          "Hồ sơ chưa được xác minh hoặc để trống nhiều trường thông tin quan trọng.",
+          "Phân loại doanh nghiệp sai hoặc chọn danh mục quá chung chung.",
+          "Không phản hồi review — cả review tốt lẫn review xấu.",
+          "Hình ảnh cũ, ít hoặc không phản ánh đúng thực tế hiện tại của doanh nghiệp.",
+          "Không xử lý hồ sơ trùng lặp khiến review và tín hiệu bị phân tán.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Local SEO có miễn phí không?",
+        a: "Google Business Profile và Local SEO tự nhiên là miễn phí. Chi phí nằm ở thời gian tối ưu hồ sơ và xây dựng quy trình review. Quảng cáo tìm kiếm địa phương trả tiền là lựa chọn bổ sung, không bắt buộc.",
+      },
+      {
+        q: "Local SEO phù hợp với loại hình doanh nghiệp nào?",
+        a: "Phù hợp nhất với doanh nghiệp có địa điểm vật lý hoặc khu vực phục vụ cụ thể: spa, nhà hàng, khách sạn, tour, cooking class, phòng khám, tiệm cắt tóc, cửa hàng bán lẻ. Hiệu quả thấp hơn với doanh nghiệp online thuần tuý không gắn với địa điểm.",
+      },
+      {
+        q: "Bao lâu thì Local SEO có hiệu quả?",
+        a: "Với hồ sơ đầy đủ và quy trình review thật, phần lớn doanh nghiệp thấy cải thiện trong 2–3 tháng. Local SEO là kênh dài hạn tích luỹ — hiệu quả tăng dần theo thời gian.",
+      },
     ],
     related: [
       {
@@ -2570,6 +2615,48 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         type: "p",
         text: "Thứ hạng địa phương thay đổi theo vị trí của từng khách và mức cạnh tranh khu vực, nên không ai có thể cam kết một vị trí cố định vĩnh viễn. Cách bền vững là liên tục cải thiện những yếu tố bạn kiểm soát. Tôi tập trung tối ưu hồ sơ, xây đánh giá thật và đồng bộ dữ liệu — nâng khả năng hiển thị một cách minh bạch, không hứa hẹn thứ hạng tuyệt đối.",
+      },
+      { type: "h2", text: "Hình ảnh ảnh hưởng thứ hạng thế nào?" },
+      {
+        type: "p",
+        text: "Hồ sơ có nhiều hình ảnh chất lượng nhận được nhiều lượt nhấp và tương tác hơn — Google đo lường điều này và coi đây là tín hiệu độ nổi bật. Hình ảnh cần mô tả trung thực không gian, món ăn, dịch vụ và đội ngũ. Ít nhất mười đến mười lăm ảnh là nền tảng tốt; cập nhật ảnh mới định kỳ ba đến sáu tháng giúp hồ sơ tiếp tục có tín hiệu hoạt động tích cực.",
+      },
+      { type: "h2", text: "Bài đăng trên Google Business Profile có giúp lên top không?" },
+      {
+        type: "p",
+        text: "Google Business Profile cho phép đăng bài cập nhật — thông báo khuyến mãi, món mới, sự kiện hoặc giờ đặc biệt. Bài đăng không phải yếu tố xếp hạng mạnh nhất nhưng giữ hồ sơ có tín hiệu hoạt động đều đặn, điều Google đánh giá tích cực. Duy trì một đến hai bài đăng mỗi tháng kết hợp với ảnh thật và nội dung ngắn rõ ràng là cách xây độ nổi bật từng bước mà không tốn nhiều công.",
+      },
+      { type: "h2", text: "Website chuẩn SEO hỗ trợ Google Maps thế nào?" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Google đánh giá uy tín tổng thể của doanh nghiệp, không chỉ hồ sơ Maps. Website chạy nhanh, có schema LocalBusiness, đồng bộ NAP với hồ sơ Maps, và được Google index tốt là nền tảng bổ trợ cho Local SEO. Đây là lý do bài " },
+          { type: "link", text: "website hỗ trợ Google Maps ra sao", href: "/vi/blog/website-ho-tro-google-maps-ra-sao" },
+          { type: "text", text: " quan trọng với doanh nghiệp muốn cải thiện thứ hạng Maps toàn diện, không chỉ ở hồ sơ riêng lẻ." },
+        ],
+      },
+      { type: "h2", text: "Quy trình review thật xây độ nổi bật bền vững" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Đánh giá thật từ khách hàng thật là yếu tố quan trọng nhất để xây độ nổi bật dài hạn. Không có đường tắt — mua review hoặc dùng tài khoản ảo có thể bị Google gỡ và phạt hồ sơ. Cách bền vững là xây quy trình mời review gắn vào điểm chạm dịch vụ thật: mã QR tại quầy thanh toán, tin nhắn Zalo sau trải nghiệm, mẫu phản hồi chuyên nghiệp để xử lý review tiêu cực. Tham khảo dịch vụ " },
+          { type: "link", text: "review reputation", href: "/vi/google-maps-marketing/review-reputation" },
+          { type: "text", text: " để hiểu quy trình này vận hành trong thực tế." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Lên top Google Maps mất bao lâu?",
+        a: "Phụ thuộc vào mức cạnh tranh ngành và khu vực. Với hồ sơ đầy đủ và quy trình review thật đều đặn, phần lớn doanh nghiệp thấy thứ hạng cải thiện trong hai đến ba tháng. Đây là kênh dài hạn, không phải kết quả tức thì như quảng cáo trả tiền.",
+      },
+      {
+        q: "Có cần trả tiền quảng cáo để lên top Google Maps không?",
+        a: "Không bắt buộc. Kết quả bản đồ địa phương tự nhiên (local pack) là miễn phí. Google cũng có quảng cáo tìm kiếm địa phương trả tiền, nhưng thứ hạng tự nhiên phụ thuộc vào chất lượng hồ sơ, review và độ liên quan — không phải ngân sách quảng cáo.",
+      },
+      {
+        q: "Hồ sơ mới cần bao lâu để xuất hiện trên Google Maps?",
+        a: "Sau khi xác minh Google Business Profile, hồ sơ thường xuất hiện trong vài ngày đến vài tuần. Thứ hạng trong local pack phụ thuộc vào mức độ hoàn chỉnh của hồ sơ, tín hiệu review và các yếu tố Local SEO — cần thêm thời gian để xây dựng.",
       },
     ],
     related: [
@@ -3993,6 +4080,32 @@ export const BLOG_POSTS: BlogPost[] = [
           { type: "text", text: " để biết quy trình và cam kết triển khai." },
         ],
       },
+      { type: "h2", text: "Naver và Google nên làm đồng thời hay chọn một?" },
+      {
+        type: "p",
+        text: "Câu trả lời phụ thuộc vào cơ cấu khách. Nếu khách Hàn chiếm trên 40% doanh thu, ưu tiên Naver trước là hợp lý. Nếu tệp khách đa dạng — Việt, Tây, Hàn đều có — thì làm song song từ đầu sẽ tốt hơn. Naver không thay thế Google Maps và website; ba kênh hỗ trợ lẫn nhau khi vận hành đúng. Naver Blog dẫn khách Hàn về, Google Maps phục vụ phần còn lại, và website là nơi họ đặt dịch vụ và thanh toán.",
+      },
+      { type: "h2", text: "Những ngành đầu tư Naver hiệu quả nhất tại Hội An – Đà Nẵng" },
+      {
+        type: "ul",
+        items: [
+          "Spa và wellness: khách Hàn rất chú trọng đến spa khi du lịch, tìm hiểu kỹ trên Naver trước khi đặt.",
+          "Nhà hàng và quán cà phê: đặc biệt các quán phù hợp với khẩu vị Hàn hoặc có món đặc biệt đáng để review.",
+          "Khách sạn và homestay boutique: khách Hàn so sánh nhiều lựa chọn qua blog review trước khi đặt phòng.",
+          "Cooking class và tour địa phương: trải nghiệm – khám phá là nhu cầu cao của khách Hàn tại Hội An.",
+          "Dịch vụ chụp ảnh và dịch vụ cá nhân hoá khác phù hợp với khách honeymoon Hàn.",
+        ],
+      },
+      { type: "h2", text: "Naver hiệu quả bao lâu sau khi bắt đầu?" },
+      {
+        type: "p",
+        text: "Naver Blog không phải quảng cáo bật tắt theo ngân sách — nó tích luỹ theo thời gian. Bài blog đăng hôm nay có thể tiếp tục tạo lượt xem và inquiry sáu đến mười hai tháng sau khi đăng. Bốn đến tám tuần sau khi bài đầu tiên được index là thời điểm inquiry Hàn bắt đầu xuất hiện với doanh nghiệp chưa có hiện diện Naver trước đó. Doanh nghiệp duy trì bốn đến tám bài mỗi quý thường thấy khách Hàn trở thành nguồn booking ổn định trong vòng sáu đến mười hai tháng.",
+      },
+      { type: "h2", text: "Khi nào không nên đầu tư Naver?" },
+      {
+        type: "p",
+        text: "Không phải thời điểm tốt để đầu tư Naver nếu: website hiện tại không có kênh liên hệ rõ ràng cho khách Hàn (Zalo, WhatsApp hoặc trang booking bằng tiếng Anh), Google Business Profile chưa được tối ưu cơ bản, hoặc doanh nghiệp chưa xác định rõ đối tượng khách Hàn là ai và cần gì. Naver mang khách đến cửa — nhưng nếu cửa chưa sẵn sàng, cơ hội sẽ trôi qua. Chuẩn bị nền tảng trước, rồi mới kích hoạt Naver.",
+      },
     ],
     faqs: [
       {
@@ -4006,6 +4119,10 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "Đầu tư Naver bao lâu thì thấy hiệu quả?",
         a: "Thường cần vài tuần đến vài tháng tùy ngành và khối lượng nội dung. Đây là kênh xây dựng dần, không phải bật tắt như quảng cáo.",
+      },
+      {
+        q: "Ngân sách tối thiểu để bắt đầu Naver Marketing là bao nhiêu?",
+        a: "Gói blogger review tối thiểu gồm bốn bài, bắt đầu từ 8.000.000đ. Đây là mức khởi điểm để hồ sơ có độ phủ cơ bản trên Naver. Chiến dịch đầy đủ với KOC, Naver Place và nội dung định kỳ sẽ cần ngân sách lớn hơn tuỳ quy mô.",
       },
     ],
     related: [
@@ -4964,6 +5081,227 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Local SEO là gì", href: "/vi/blog/local-seo-la-gi", note: "Blog" },
       { label: "Vì sao hình ảnh Google Maps quan trọng", href: "/vi/blog/vi-sao-hinh-anh-google-maps-quan-trong", note: "Blog" },
       { label: "Google Maps Marketing", href: "/vi/google-maps-marketing", note: "Dịch vụ" },
+    ],
+  },
+
+  /* ─────────────── KO 1: 호이안 스파 추천 ─────────────── */
+  {
+    slug: "hoi-an-spa-korean-guide",
+    heroImage: {
+      src: "/images/blog/hoi-an-spa-korean-guide.webp",
+      alt: "호이안 스파에서 휴식을 취하는 한국인 관광객",
+    },
+    path: "/vi/blog/hoi-an-spa-korean-guide",
+    cluster: "naver",
+    title: "호이안 스파 추천: 한국인 관광객을 위한 완전 선택 가이드",
+    metaTitle: "호이안 스파 추천 가이드 | 한국 관광객 필독 | Cong Thien Agency",
+    metaDescription:
+      "호이안 스파를 찾는 한국인 관광객을 위한 완전 가이드. 스파 선택 기준, 가격대, 예약 방법, 주의사항까지 모두 정리했습니다.",
+    excerpt: "호이안에서 스파를 찾고 계신가요? 한국 관광객이 꼭 알아야 할 스파 선택 기준을 정리했습니다.",
+    date: "2026-06-19",
+    readingMinutes: 8,
+    primaryKeyword: "호이안 스파 추천",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "호이안 스파 추천 가이드", href: "/vi/blog/hoi-an-spa-korean-guide" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "베트남 중부의 고대 도시 호이안(Hội An)은 한국인 관광객들 사이에서 매우 인기 있는 여행지입니다. 아름다운 등불과 노란 건물들로 유명한 구시가지 외에도, 호이안은 합리적인 가격과 높은 수준의 스파 서비스로 많은 한국 여행객들의 마음을 사로잡고 있습니다. 이 가이드는 호이안 스파를 처음 방문하는 한국인 관광객이 좋은 선택을 할 수 있도록 실용적인 정보를 담았습니다.",
+      },
+      { type: "h2", text: "호이안 스파의 특징과 장점" },
+      {
+        type: "p",
+        text: "호이안 스파는 베트남 전통 마사지 기법과 허브를 활용한 트리트먼트로 유명합니다. 베트남 민트, 레몬그라스, 진저 등 현지 허브를 사용한 핫스톤 마사지와 아로마 테라피는 특히 인기가 높습니다. 가격은 한국이나 태국 고급 스파에 비해 매우 합리적이며, 1시간 풀바디 마사지 기준 보통 200,000~500,000 VND(약 10,000~25,000원) 선입니다. 호이안 구시가지 주변에는 수십 개의 스파가 밀집해 있어 선택의 폭이 넓습니다.",
+      },
+      { type: "h2", text: "좋은 호이안 스파를 고르는 기준" },
+      {
+        type: "ul",
+        items: [
+          "구글 맵스 또는 네이버 블로그 리뷰 확인: 실제 방문객의 생생한 후기를 통해 서비스 품질을 파악하세요.",
+          "위생 상태 확인: 수건, 침대 시트, 도구 등이 청결한지 방문 전 사진으로 확인하거나 직접 확인하세요.",
+          "자격증 보유 테라피스트: 공인 마사지 자격증을 보유한 전문 테라피스트가 있는 곳을 선택하세요.",
+          "가격 투명성: 메뉴판에 명확한 가격이 표시되어 있고 추가 요금이 없는 곳을 선택하세요.",
+          "사전 예약 가능 여부: 잘로(Zalo), 왓츠앱(WhatsApp) 또는 이메일로 사전 예약이 가능한 곳이 편리합니다.",
+          "한국어 또는 영어 소통 가능 여부: 완전한 한국어가 아니더라도 기본적인 영어로 소통이 되는 스파를 선택하세요.",
+        ],
+      },
+      { type: "h2", text: "호이안 스파 주요 메뉴와 가격대" },
+      {
+        type: "p",
+        text: "호이안 스파에서 가장 인기 있는 메뉴는 베트남 전통 마사지(Vietnamese Traditional Massage), 핫스톤 마사지(Hot Stone Massage), 발 마사지(Foot Massage), 아로마 전신 마사지(Aroma Full Body Massage), 그리고 페이스 트리트먼트(Facial Treatment)입니다. 가격대는 스파 등급에 따라 크게 다릅니다. 일반 스파에서는 60분 전신 마사지에 200,000~350,000 VND, 중급 스파에서는 300,000~500,000 VND, 호텔 내 고급 스파에서는 600,000~1,500,000 VND 정도를 예상하시면 됩니다. 팁은 의무는 아니지만 서비스에 만족했다면 20,000~50,000 VND 정도를 주는 것이 관례입니다.",
+      },
+      { type: "h2", text: "예약 및 방문 시 주의사항" },
+      {
+        type: "ul",
+        items: [
+          "성수기(12월~3월, 7월~8월)에는 반드시 사전 예약하세요. 인기 스파는 당일 예약이 어렵습니다.",
+          "마사지 전 최소 2시간은 식사를 피하세요. 풀배에서 마사지를 받으면 불편할 수 있습니다.",
+          "귀중품(카메라, 노트북, 많은 현금 등)은 보관함에 맡기거나 숙소에 두고 오세요.",
+          "임신 중이거나 특정 건강 상태(심장질환, 피부 질환 등)가 있는 경우 사전에 테라피스트에게 알려주세요.",
+          "부드러운 압력이나 강한 압력 등 개인 선호도를 명확히 전달하세요. 'soft', 'medium', 'strong'으로 표현하면 됩니다.",
+        ],
+      },
+      { type: "h2", text: "네이버에서 호이안 스파 정보 찾기" },
+      {
+        type: "p",
+        text: "한국인 관광객들은 호이안 스파 정보를 주로 네이버 블로그에서 찾습니다. '호이안 스파 후기', '호이안 마사지 추천', '베트남 스파 가성비' 등의 키워드로 검색하면 실제 방문 후기를 담은 블로그 포스팅을 많이 찾을 수 있습니다. 스파 업체들의 네이버 플레이스 등록 여부도 확인해 보세요. 네이버 플레이스에 등록된 스파는 한국어 정보와 지도를 통해 위치를 더 쉽게 찾을 수 있습니다.",
+      },
+      { type: "h2", text: "스파 후 즐길 수 있는 호이안 명소" },
+      {
+        type: "p",
+        text: "스파를 마친 후에는 가볍게 이완된 몸으로 호이안 구시가지를 거니는 것을 추천합니다. 저녁 시간의 호이안 야시장과 등불 축제는 꼭 경험해 보셔야 합니다. 바오라 강변의 카페에서 베트남 커피 한 잔을 즐기거나, 현지 식당에서 호이안 특산 음식인 까오러우(Cao Lầu)나 화이트 로즈(White Rose) 만두를 맛보세요. 쿠킹 클래스(cooking class)도 호이안에서 인기 있는 체험 활동으로, 베트남 전통 요리를 직접 배울 수 있습니다.",
+      },
+      {
+        type: "p",
+        parts: [
+          {
+            type: "text",
+            text: "호이안과 다낭 지역 관광 비즈니스의 한국인 고객 유치를 위한 네이버 마케팅에 관심 있으신 사업주분들은 ",
+          },
+          {
+            type: "link",
+            text: "Naver Marketing 서비스",
+            href: "/vi/naver-marketing",
+          },
+          {
+            type: "text",
+            text: "를 참고해 주세요.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "호이안 스파 예약은 어떻게 하나요?",
+        a: "잘로(Zalo), 왓츠앱(WhatsApp), 이메일 또는 직접 방문을 통해 예약할 수 있습니다. 성수기에는 최소 하루 전 예약을 권장합니다.",
+      },
+      {
+        q: "호이안 스파 가격은 어느 정도인가요?",
+        a: "일반 스파의 경우 60분 전신 마사지에 200,000~350,000 VND(약 10,000~18,000원), 중급 스파는 300,000~500,000 VND 정도입니다. 호텔 스파는 600,000 VND 이상입니다.",
+      },
+      {
+        q: "한국어로 소통되는 스파가 있나요?",
+        a: "완전한 한국어 서비스를 제공하는 스파는 드물지만, 한국 관광객이 많은 지역의 스파들은 기본적인 한국어 단어나 메뉴판을 갖추고 있는 경우가 있습니다. 영어로도 충분히 소통이 됩니다.",
+      },
+      {
+        q: "호이안 스파와 다낭 스파 중 어느 곳이 더 좋나요?",
+        a: "호이안 스파는 고즈넉한 분위기와 합리적인 가격이 장점이며, 다낭 스파는 더 크고 현대적인 시설을 갖춘 곳이 많습니다. 역사적인 분위기를 선호한다면 호이안, 럭셔리한 경험을 원한다면 다낭을 추천합니다.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing", href: "/vi/naver-marketing", note: "서비스" },
+      { label: "베트남 다낭 네이버 마케팅 가이드", href: "/vi/blog/da-nang-naver-marketing-guide", note: "관련 가이드" },
+      { label: "Naver Marketing là gì", href: "/vi/blog/naver-marketing-la-gi", note: "관련 문서" },
+    ],
+  },
+
+  /* ─────────────── KO 2: 다낭 네이버 마케팅 가이드 ─────────────── */
+  {
+    slug: "da-nang-naver-marketing-guide",
+    heroImage: {
+      src: "/images/blog/da-nang-naver-marketing-guide.webp",
+      alt: "베트남 다낭의 한강 야경과 스마트폰으로 네이버를 검색하는 한국인",
+    },
+    path: "/vi/blog/da-nang-naver-marketing-guide",
+    cluster: "naver",
+    title: "베트남 다낭·호이안 네이버 마케팅 완전 가이드",
+    metaTitle: "다낭 네이버 마케팅 완전 가이드 | 한국인 관광객 유치 전략 | Cong Thien Agency",
+    metaDescription:
+      "베트남 다낭과 호이안에서 한국인 관광객을 유치하기 위한 네이버 마케팅 전략. 네이버 블로그, 네이버 플레이스, KOC 활용법까지 실전 가이드.",
+    excerpt: "다낭·호이안에서 한국인 손님을 늘리고 싶다면? 네이버 마케팅이 답입니다. 실전 전략을 공유합니다.",
+    date: "2026-06-19",
+    readingMinutes: 9,
+    primaryKeyword: "다낭 네이버 마케팅",
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Blog", href: "/vi/blog" },
+      { label: "다낭 네이버 마케팅 가이드", href: "/vi/blog/da-nang-naver-marketing-guide" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "베트남 중부의 다낭(Đà Nẵng)과 호이안(Hội An)은 한국인이 가장 많이 찾는 베트남 여행지 중 하나입니다. 매년 수십만 명의 한국인 관광객이 이 지역을 방문하며, 스파, 음식점, 호텔, 투어 등 다양한 업종에서 한국인 고객의 비중이 상당합니다. 문제는 한국인들이 구글(Google)이 아닌 네이버(Naver)를 통해 여행 정보를 검색하기 때문에, 구글 SEO만으로는 한국인 고객을 효과적으로 유치할 수 없다는 점입니다. 이 가이드는 다낭과 호이안 지역 사업체들이 네이버 마케팅을 통해 한국인 고객을 늘리는 실전 전략을 담고 있습니다.",
+      },
+      { type: "h2", text: "왜 한국인에게는 네이버가 중요한가?" },
+      {
+        type: "p",
+        text: "한국은 전 세계에서 구글의 시장점유율이 가장 낮은 나라 중 하나입니다. 한국인들은 일상적인 검색, 블로그 리뷰 읽기, 지도 검색 등에 네이버를 주로 사용합니다. 특히 여행 관련 정보는 네이버 블로그를 통한 실제 후기 중심으로 소비됩니다. 다낭 맛집, 호이안 스파, 베트남 투어 등을 검색할 때 한국인들은 자연스럽게 네이버를 열고 '호이안 스파 후기', '다낭 맛집 추천', '베트남 쿠킹클래스 후기' 같은 키워드로 검색합니다. 이런 검색에서 당신의 업체가 등장하지 않는다면, 한국인 고객에게 존재하지 않는 것과 다름없습니다.",
+      },
+      { type: "h2", text: "네이버 마케팅의 핵심 채널 3가지" },
+      {
+        type: "ul",
+        items: [
+          "네이버 블로그(Naver Blog): 한국인 여행자들이 가장 신뢰하는 콘텐츠 채널. 실제 방문 후기 형식의 글이 구매 결정에 가장 큰 영향을 미칩니다.",
+          "네이버 플레이스(Naver Place): 구글 맵스에 해당하는 네이버 지도 서비스. 업체 위치, 영업시간, 가격, 한국어 후기를 제공합니다.",
+          "네이버 카페(Naver Café): 베트남 여행 관련 커뮤니티. 실제 여행자들이 추천 업체를 공유하고 질문하는 공간입니다.",
+        ],
+      },
+      { type: "h2", text: "네이버 블로그 마케팅 실전 전략" },
+      {
+        type: "p",
+        text: "네이버 블로그 마케팅의 핵심은 자연스러운 한국어로 작성된 실제 후기 형식의 콘텐츠입니다. 번역기로 번역한 어색한 한국어나 홍보성이 너무 강한 글은 한국 독자들이 바로 알아채기 때문에 역효과가 날 수 있습니다. 효과적인 네이버 블로그 포스팅에는 반드시 다음 요소가 포함되어야 합니다: 검색어를 포함한 제목(예: '호이안 스파 솔직 후기'), 실제 업체 사진 15~30장, 상세한 서비스 경험 묘사, 가격 정보, 예약 방법(잘로 번호, 왓츠앱, 홈페이지), 그리고 위치 정보입니다.",
+      },
+      { type: "h2", text: "KOC 블로거 협업을 통한 빠른 인지도 상승" },
+      {
+        type: "p",
+        text: "KOC(한국 오피니언 크리에이터)는 네이버에서 일정 수준 이상의 팔로워를 가진 블로거들을 말합니다. 이들과 협업하면 일반 블로그 포스팅보다 훨씬 빠르게 한국인들에게 업체를 알릴 수 있습니다. KOC 협업 방식은 크게 세 가지입니다: 직접 방문 후기(KOC가 직접 방문해 사용 후 솔직한 후기 작성), 유료 포스팅(업체 정보와 사진을 제공하면 KOC가 포스팅), 상호 프로모션(SNS 공유, 할인 코드 제공 등)입니다. KOC 협업은 비용이 더 높지만 신뢰도와 도달률이 높아 단기간 인지도 상승에 효과적입니다.",
+      },
+      { type: "h2", text: "네이버 플레이스 최적화" },
+      {
+        type: "p",
+        text: "네이버 플레이스는 한국인 관광객이 목적지를 최종 확인하는 채널입니다. 네이버 블로그에서 업체 후기를 읽은 다음 네이버 플레이스에서 위치, 영업시간, 연락처를 확인하는 패턴이 일반적입니다. 따라서 네이버 플레이스 등록과 최적화가 필수입니다. 최적화 포인트: 한국어·베트남어 업체명 모두 입력, 정확한 위치 핀, 업데이트된 영업시간, 한국어 소개글, 고품질 사진 10장 이상, 한국어 리뷰 유도입니다.",
+      },
+      { type: "h2", text: "네이버 마케팅의 기대 효과와 타임라인" },
+      {
+        type: "p",
+        text: "네이버 마케팅은 단기 광고가 아니라 중장기 콘텐츠 마케팅입니다. 블로그 포스팅 발행 후 네이버 검색 결과에 노출되기까지 보통 1~4주가 걸립니다. 초기 4~6개 포스팅 발행 후 2~3개월 내에 한국인 고객으로부터 첫 문의가 들어오는 것을 기대할 수 있습니다. 분기별 4~8개 포스팅을 꾸준히 유지하면 6~12개월 후 한국인 예약이 안정적인 수익원이 되는 경우가 많습니다. 네이버 마케팅의 가장 큰 장점은 한번 작성된 좋은 포스팅이 광고비 없이도 6개월~2년간 지속적으로 노출된다는 점입니다.",
+      },
+      { type: "h2", text: "시작을 위한 준비사항" },
+      {
+        type: "p",
+        parts: [
+          {
+            type: "text",
+            text: "네이버 마케팅을 시작하기 전에 준비해야 할 것들: 잘로(Zalo) 또는 왓츠앱 번호(한국인 고객 문의 채널), 업체 사진 세트 최소 20장(외관, 내부, 서비스 사진), 서비스 목록과 가격표, 영업시간과 주소. 이 준비가 완료되면 네이버 마케팅 에이전시를 통해 블로그 콘텐츠 기획과 발행을 시작할 수 있습니다. 더 자세한 내용은 ",
+          },
+          {
+            type: "link",
+            text: "Naver Marketing 서비스 페이지",
+            href: "/vi/naver-marketing",
+          },
+          {
+            type: "text",
+            text: "에서 확인하거나 잘로로 직접 문의해 주세요.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "네이버 마케팅 비용은 얼마인가요?",
+        a: "네이버 블로거 리뷰 패키지는 4개 포스팅 기준 8,000,000 VND(약 40만원)부터 시작합니다. KOC 협업이나 전략 컨설팅이 포함된 패키지는 업체 규모와 요구사항에 따라 별도 견적이 제공됩니다.",
+      },
+      {
+        q: "한국어를 못해도 네이버 마케팅을 할 수 있나요?",
+        a: "네, 가능합니다. 네이버 마케팅 에이전시에서 한국어 콘텐츠 작성과 발행을 대행해드립니다. 사업주는 업체 정보와 사진만 제공하면 됩니다.",
+      },
+      {
+        q: "효과가 나타나기까지 얼마나 걸리나요?",
+        a: "일반적으로 첫 포스팅 발행 후 2~3개월 내에 첫 한국인 고객 문의를 받을 수 있습니다. 꾸준한 콘텐츠 발행을 6~12개월 유지하면 안정적인 한국인 고객 유입이 형성됩니다.",
+      },
+      {
+        q: "구글 마케팅과 네이버 마케팅을 함께 해야 하나요?",
+        a: "이상적으로는 두 채널을 병행하는 것이 좋습니다. 구글은 서양 관광객과 베트남 내국인에게 효과적이고, 네이버는 한국인 관광객에게 특화되어 있습니다. 예산이 제한적이라면 한국인 고객 비율이 높은 업체는 네이버를 먼저 시작하는 것을 권장합니다.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing", href: "/vi/naver-marketing", note: "서비스" },
+      { label: "호이안 스파 추천 가이드", href: "/vi/blog/hoi-an-spa-korean-guide", note: "관련 가이드" },
+      { label: "Naver hay Google cho khách Hàn", href: "/vi/blog/naver-hay-google-cho-khach-han", note: "관련 문서" },
+      { label: "Chi phí Naver Marketing", href: "/vi/blog/chi-phi-naver-marketing", note: "가격 정보" },
     ],
   },
 
