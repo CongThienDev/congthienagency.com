@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { BLOG_POSTS } from "@/content/blog.vi";
+import { BLOG_POSTS_EN } from "@/content/blog.en";
 import { OG_IMAGE, SITE } from "@/content/site";
 import { PROJECTS } from "@/content/projects.vi";
 import { SERVICES } from "@/content/services.vi";
@@ -53,6 +54,7 @@ const EN_CORE_PAGES: IndexablePage[] = [
   { path: "/en/services", title: "Services", lastModified: CONTENT_LAST_MODIFIED, changeFrequency: "weekly", priority: 0.8, imageCandidates: CORE_PAGE_IMAGES },
   { path: "/en/pricing", title: "Pricing", lastModified: CONTENT_LAST_MODIFIED, changeFrequency: "weekly", priority: 0.7, imageCandidates: CORE_PAGE_IMAGES },
   { path: "/en/contact", title: "Contact", lastModified: CONTENT_LAST_MODIFIED, changeFrequency: "monthly", priority: 0.6, imageCandidates: CORE_PAGE_IMAGES },
+  { path: "/en/blog", title: "Blog", lastModified: CONTENT_LAST_MODIFIED, changeFrequency: "weekly", priority: 0.8, imageCandidates: CORE_PAGE_IMAGES },
 ];
 
 function toPublicFile(assetPath: string) {
@@ -94,7 +96,7 @@ export function getAllIndexablePages(): IndexablePage[] {
     imageCandidates: [OG_IMAGE, ...project.images.map((image) => image.suggestion)],
   }));
 
-  const blogPages: IndexablePage[] = BLOG_POSTS.map((post) => ({
+  const blogPages: IndexablePage[] = [...BLOG_POSTS, ...BLOG_POSTS_EN].map((post) => ({
     path: post.path,
     title: post.metaTitle,
     lastModified: post.date,

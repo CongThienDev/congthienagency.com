@@ -8,6 +8,7 @@ import { ResponsiveImage } from "@/components/ResponsiveImage";
 import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
 import { BLOG_POSTS, getPost } from "@/content/blog.vi";
+import { BLOG_POSTS_EN, getPostEn } from "@/content/blog.en";
 import { graphDocument, breadcrumbGraph, blogPostingGraph, faqGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import { resolveAbsoluteImageUrls, resolvePrimaryImage } from "@/lib/siteIndex";
@@ -15,11 +16,29 @@ import { resolveAbsoluteImageUrls, resolvePrimaryImage } from "@/lib/siteIndex";
 type Params = { params: Promise<{ locale: string; slug: string }> };
 
 export function generateStaticParams() {
-  return BLOG_POSTS.map((p) => ({ locale: "vi", slug: p.slug }));
+  return [
+    ...BLOG_POSTS.map((p) => ({ locale: "vi", slug: p.slug })),
+    ...BLOG_POSTS_EN.map((p) => ({ locale: "en", slug: p.slug })),
+  ];
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale, slug } = await params;
+  if (locale === "en") {
+    const post = getPostEn(slug);
+    if (!post) return {};
+    return buildMetadata({
+      title: post.metaTitle,
+      description: post.metaDescription,
+      path: post.path,
+      locale: "en",
+      type: "article",
+      image: resolvePrimaryImage([
+        ...(post.heroImage ? [post.heroImage.src] : []),
+        "/images/og/og-default.jpg",
+      ]),
+    });
+  }
   const post = getPost(slug);
   if (locale !== "vi" || !post) return {};
   return buildMetadata({
@@ -37,9 +56,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function Page({ params }: Params) {
   const { locale, slug } = await params;
-  if (locale !== "vi") notFound();
-  const post = getPost(slug);
+  if (locale !== "vi" && locale !== "en") notFound();
+  const post = locale === "en" ? getPostEn(slug) : getPost(slug);
   if (!post) notFound();
+
+  const isEn = locale === "en";
   const bodyImages = post.body.flatMap((b) => (b.type === "img" ? [b.src] : []));
   const imageUrls = resolveAbsoluteImageUrls([
     ...(post.heroImage ? [post.heroImage.src] : []),
@@ -58,17 +79,15 @@ export default async function Page({ params }: Params) {
   ];
   if (post.faqs?.length) schemaNodes.push(faqGraph(post.faqs));
 
-  const d = new Date(post.date).toLocaleDateString("vi-VN", {
+  const d = new Date(post.date).toLocaleDateString(isEn ? "en-GB" : "vi-VN", {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
   });
 
   return (
-    <Shell locale="vi">
-      <JsonLd
-        data={graphDocument(schemaNodes)}
-      />
+    <Shell locale={locale as "vi" | "en"}>
+      <JsonLd data={graphDocument(schemaNodes)} />
       <section className="border-b border-line bg-glow">
         <Container className="py-12 sm:py-16">
           <Breadcrumb items={post.breadcrumb} />
@@ -76,7 +95,7 @@ export default async function Page({ params }: Params) {
             <div className="flex items-center gap-3 text-xs text-muted">
               <span>{d}</span>
               <span className="h-1 w-1 rounded-full bg-line-strong" />
-              <span>{post.readingMinutes} phút đọc</span>
+              <span>{post.readingMinutes} {isEn ? "min read" : "phút đọc"}</span>
             </div>
             <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl text-balance">
               {post.title}
@@ -151,7 +170,7 @@ export default async function Page({ params }: Params) {
 
           {post.related.length > 0 && (
             <div className="mx-auto mt-12 max-w-2xl border-t border-line pt-8">
-              <p className="label-mono text-muted">Liên quan</p>
+              <p className="label-mono text-muted">{isEn ? "Related" : "Liên quan"}</p>
               <div className="mt-4 flex flex-col gap-3">
                 {post.related.map((r) => (
                   <Link
@@ -192,10 +211,10 @@ export default async function Page({ params }: Params) {
       </article>
 
       <CTASection
-        title="Cần tư vấn cho doanh nghiệp của bạn?"
-        sub="Nhắn tôi qua Zalo để được tư vấn website, Naver và Google Maps."
-        primaryHref="/vi/lien-he"
-        primaryLabel="Liên hệ"
+        title={isEn ? "Ready to grow your business?" : "Cần tư vấn cho doanh nghiệp của bạn?"}
+        sub={isEn ? "Message me on Zalo or WhatsApp for a consultation on Naver, Google Maps or your website." : "Nhắn tôi qua Zalo để được tư vấn website, Naver và Google Maps."}
+        primaryHref={isEn ? "/en/contact" : "/vi/lien-he"}
+        primaryLabel={isEn ? "Get in touch" : "Liên hệ"}
       />
     </Shell>
   );

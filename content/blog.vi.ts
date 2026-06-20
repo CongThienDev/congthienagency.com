@@ -2235,6 +2235,36 @@ export const BLOG_POSTS: BlogPost[] = [
           { type: "text", text: " trước khi nói tới tăng trưởng tiếp theo." },
         ],
       },
+      { type: "h2", text: "Đánh giá thật — thành phần không thể thiếu" },
+      {
+        type: "p",
+        text: "Đánh giá từ khách hàng thật là tín hiệu độ nổi bật mạnh nhất mà bạn kiểm soát được. Google không chỉ đếm số lượng — nhịp đánh giá đều đặn, nội dung đa dạng và tỷ lệ phản hồi của chủ cơ sở đều được tính đến. Một quy trình đơn giản: đặt QR code tại quầy thanh toán hoặc nhắn link để lại đánh giá sau mỗi dịch vụ. Đánh giá mới đều đặn mỗi tháng tốt hơn nhiều so với đợt lớn rồi im lặng.",
+      },
+      { type: "h2", text: "Tín hiệu địa phương bổ trợ" },
+      {
+        type: "ul",
+        items: [
+          "Thông tin NAP nhất quán trên website, GBP và các kênh mạng xã hội.",
+          "Nhúng Google Maps trên trang Liên hệ của website.",
+          "Schema LocalBusiness đúng chuẩn trên website giúp Google xác minh dữ liệu địa lý.",
+          "Tên địa điểm, khu vực (Hội An, Đà Nẵng) xuất hiện tự nhiên trong nội dung website.",
+        ],
+      },
+      { type: "h2", text: "Local SEO cho khách quốc tế" },
+      {
+        type: "p",
+        text: "Tại Hội An và Đà Nẵng, khách quốc tế — đặc biệt khách Hàn, khách Tây — tìm kiếm trực tiếp bằng tiếng Anh hoặc tiếng mẹ đẻ. Hồ sơ Google Business Profile hỗ trợ nhiều ngôn ngữ; bổ sung mô tả tiếng Anh, thêm từ khóa phù hợp ('spa near Hoi An Ancient Town', 'cooking class Da Nang') giúp hồ sơ xuất hiện cho tệp khách này ngay trên Google Maps.",
+      },
+      { type: "h2", text: "Sai lầm phổ biến cần tránh" },
+      {
+        type: "ul",
+        items: [
+          "Để hồ sơ trống danh mục hoặc dùng danh mục không đúng ngành.",
+          "Thông tin địa chỉ và số điện thoại không khớp giữa website và GBP.",
+          "Không phản hồi đánh giá — kể cả tích cực lẫn tiêu cực.",
+          "Đăng ảnh một lần rồi bỏ quên, không cập nhật hình ảnh mới.",
+        ],
+      },
       { type: "h2", text: "Bắt đầu Local SEO từ đâu?" },
       {
         type: "p",
@@ -2243,6 +2273,20 @@ export const BLOG_POSTS: BlogPost[] = [
           { type: "link", text: "website hỗ trợ Google Maps ra sao", href: "/vi/blog/website-ho-tro-google-maps-ra-sao" },
           { type: "text", text: "." },
         ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Local SEO mất bao lâu để thấy kết quả?",
+        a: "Hồ sơ đầy đủ và tối ưu đúng có thể cải thiện hiển thị trong vài tuần. Tuy nhiên, xây đánh giá và uy tín tổng thể là quá trình vài tháng đến vài quý. Đây là kênh bền vững, không phải bật tắt ngay.",
+      },
+      {
+        q: "Doanh nghiệp không có địa chỉ cố định có làm Local SEO không?",
+        a: "Có thể — Google cho phép hồ sơ 'Service Area' (khu vực phục vụ) cho doanh nghiệp đến tận nơi khách. Bạn ẩn địa chỉ cụ thể nhưng vẫn khai báo khu vực phục vụ để xuất hiện trên bản đồ.",
+      },
+      {
+        q: "Có cần thuê chuyên gia hay tự làm Local SEO được?",
+        a: "Phần kỹ thuật cơ bản (tối ưu hồ sơ, đồng bộ NAP, đăng ảnh) bạn tự làm được. Phần schema website, nội dung đa ngôn ngữ và chiến lược đánh giá dài hạn thường cần hỗ trợ chuyên môn để làm đúng và hiệu quả hơn.",
       },
     ],
     related: [
@@ -2566,10 +2610,57 @@ export const BLOG_POSTS: BlogPost[] = [
           "Website chuẩn SEO củng cố uy tín tổng thể của thương hiệu.",
         ],
       },
+      { type: "h2", text: "Hình ảnh và video trên hồ sơ Google" },
+      {
+        type: "p",
+        text: "Hồ sơ có hình ảnh chất lượng nhận được nhiều lượt xem và tương tác hơn đáng kể so với hồ sơ chỉ có thông tin chữ. Đăng ảnh thực tế của không gian, món ăn, dịch vụ và đội ngũ — đừng chỉ dùng ảnh logo. Cập nhật ảnh đều đặn cũng là tín hiệu hoạt động tích cực với Google.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ảnh nội thất và ngoại thất rõ ràng, đúng thực tế.",
+          "Ảnh sản phẩm, món ăn hoặc không gian trải nghiệm.",
+          "Ảnh đội ngũ và quy trình phục vụ thật.",
+          "Video ngắn 30–60 giây nếu có điều kiện quay.",
+        ],
+      },
+      { type: "h2", text: "Bài đăng Google Business Profile" },
+      {
+        type: "p",
+        text: "GBP cho phép đăng bài cập nhật tương tự mạng xã hội — ưu đãi, sự kiện, tin tức mới. Bài đăng đều đặn (mỗi 1–2 tuần) cho Google thấy doanh nghiệp đang hoạt động và cung cấp thêm từ khóa liên quan để lập chỉ mục.",
+      },
+      { type: "h2", text: "Website chuẩn SEO củng cố hồ sơ Google Maps" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Google Maps và website của bạn bổ trợ lẫn nhau — một website rõ địa chỉ, số điện thoại và schema LocalBusiness giúp Google xác minh thông tin NAP và tăng độ tin cậy cho hồ sơ bản đồ. Tìm hiểu thêm về cách " },
+          { type: "link", text: "website hỗ trợ Google Maps", href: "/vi/blog/website-ho-tro-google-maps-ra-sao" },
+          { type: "text", text: " trong bài viết chuyên sâu." },
+        ],
+      },
+      { type: "h2", text: "Quy trình thu đánh giá thật bền vững" },
+      {
+        type: "p",
+        text: "Không chỉ số lượng, Google đánh giá cao nhịp đánh giá đều đặn. Một quy trình đơn giản: sau mỗi lần phục vụ, nhân viên nhắc khách để lại cảm nhận qua link rút gọn hoặc mã QR tại quầy. Đánh giá mới liên tục — dù chỉ vài cái mỗi tháng — tốt hơn nhiều so với 50 cái trong một đợt rồi im lặng nửa năm.",
+      },
       { type: "h2", text: "Những kỳ vọng thực tế" },
       {
         type: "p",
         text: "Thứ hạng địa phương thay đổi theo vị trí của từng khách và mức cạnh tranh khu vực, nên không ai có thể cam kết một vị trí cố định vĩnh viễn. Cách bền vững là liên tục cải thiện những yếu tố bạn kiểm soát. Tôi tập trung tối ưu hồ sơ, xây đánh giá thật và đồng bộ dữ liệu — nâng khả năng hiển thị một cách minh bạch, không hứa hẹn thứ hạng tuyệt đối.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Hồ sơ Google Business Profile cần bao nhiêu ảnh?",
+        a: "Không có con số tối thiểu cố định, nhưng khuyến nghị ít nhất 10–15 ảnh thực tế đa dạng (không gian, sản phẩm, đội ngũ). Quan trọng hơn số lượng là chất lượng và tính đại diện cho thực tế.",
+      },
+      {
+        q: "Bài đăng GBP có ảnh hưởng đến thứ hạng trên Google Maps không?",
+        a: "Bài đăng không trực tiếp thay đổi thứ hạng ngay, nhưng chúng cho thấy hồ sơ đang hoạt động — đây là tín hiệu tích cực. Cộng thêm từ khóa bổ sung qua bài đăng cũng giúp hồ sơ xuất hiện cho nhiều truy vấn hơn.",
+      },
+      {
+        q: "Tôi có thể yêu cầu khách đánh giá 5 sao không?",
+        a: "Không nên yêu cầu cụ thể 5 sao — Google coi đây là vi phạm chính sách. Bạn có thể mời khách chia sẻ trải nghiệm một cách tự nhiên. Đánh giá trung thực giúp xây dựng niềm tin bền hơn.",
       },
     ],
     related: [
@@ -3977,6 +4068,27 @@ export const BLOG_POSTS: BlogPost[] = [
           "Đối thủ cùng phân khúc đã có review tiếng Hàn còn bạn thì chưa.",
         ],
       },
+      { type: "h2", text: "Naver vs Google — khi nào dùng kênh nào?" },
+      {
+        type: "p",
+        text: "Google phủ tất cả khách quốc tế và Việt, trong khi Naver đặc biệt quan trọng với khách Hàn Quốc vì đây là công cụ tìm kiếm mặc định của họ. Nếu bạn phục vụ cả hai tệp, hai kênh bổ trợ nhau rất tốt: Google Maps cho khách tìm địa điểm gần, Naver Blog cho khách Hàn nghiên cứu trước chuyến đi. Không nên bỏ Google vì đầu tư Naver và ngược lại.",
+      },
+      { type: "h2", text: "Ngành nào hiệu quả nhất với Naver Marketing?" },
+      {
+        type: "ul",
+        items: [
+          "Spa và dịch vụ thư giãn — khách Hàn tìm 'Hội An spa' rất nhiều trước chuyến đi.",
+          "Nhà hàng và ẩm thực địa phương — nội dung Naver về món ăn Việt Nam rất được tìm kiếm.",
+          "Tour và trải nghiệm — cooking class, tour xe đạp, kayak, lặn biển.",
+          "Lưu trú boutique, homestay có phong cách Việt đặc trưng.",
+          "Các dịch vụ có yếu tố 'Instagram-able' — không gian đẹp, trải nghiệm độc đáo.",
+        ],
+      },
+      { type: "h2", text: "Thời điểm đầu tư hiệu quả nhất trong năm" },
+      {
+        type: "p",
+        text: "Khách Hàn thường có hai đợt cao điểm chính: tháng 7–8 (hè) và tháng 1–2 (tết Hàn Quốc). Để có hiện diện Naver kịp thời điểm này, bạn cần bắt đầu xây nội dung ít nhất 3–4 tháng trước — nội dung Naver cần thời gian được index, tích lũy lượt xem và tạo uy tín. Đừng chờ đến lúc sắp vào mùa mới bắt đầu.",
+      },
       { type: "h2", text: "Khi nào nên khoan?" },
       {
         type: "p",
@@ -4006,6 +4118,10 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "Đầu tư Naver bao lâu thì thấy hiệu quả?",
         a: "Thường cần vài tuần đến vài tháng tùy ngành và khối lượng nội dung. Đây là kênh xây dựng dần, không phải bật tắt như quảng cáo.",
+      },
+      {
+        q: "Ngân sách tối thiểu để bắt đầu Naver Marketing là bao nhiêu?",
+        a: "Tùy gói dịch vụ và số lượng bài viết, nhưng thông thường bạn cần chuẩn bị ngân sách ổn định ít nhất 3 tháng để thấy tín hiệu đầu tiên. Tham khảo bảng giá chi tiết để lập kế hoạch phù hợp với quy mô.",
       },
     ],
     related: [
@@ -4967,6 +5083,202 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  {
+    slug: "hoi-an-spa-korean-guide",
+    heroImage: { src: "/images/blog/hoi-an-spa-korean-guide.webp", alt: "호이안 스파 추천 — 한국인 관광객을 위한 선택 가이드" },
+    path: "/vi/blog/hoi-an-spa-korean-guide",
+    cluster: "naver",
+    title: "호이안 스파 추천: 한국인 관광객을 위한 완전 선택 가이드",
+    metaTitle: "호이안 스파 추천 2026 | 한국인 관광객 완전 가이드",
+    metaDescription:
+      "호이안 여행 중 스파를 찾는 한국인 관광객을 위한 완전 가이드. 추천 스파 선택 기준, 네이버 블로그 후기 활용법, 예약 방법까지 실용 정보 정리.",
+    excerpt:
+      "베트남 중부 호이안은 한국인 관광객들 사이에서 가장 인기 있는 스파 여행지입니다. 네이버 블로그 후기를 바탕으로 한 추천 선택 기준을 알려드립니다.",
+    date: "2026-06-19",
+    readingMinutes: 8,
+    primaryKeyword: "호이안 스파 추천",
+    breadcrumb: [
+      { label: "홈", href: "/vi" },
+      { label: "블로그", href: "/vi/blog" },
+      { label: "호이안 스파 추천 가이드", href: "/vi/blog/hoi-an-spa-korean-guide" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "베트남 중부의 고대 도시 호이안(Hội An)은 한국인 관광객들 사이에서 매우 인기 있는 여행지입니다. 아름다운 고대 거리와 함께 스파 문화가 발달하여, 합리적인 가격에 높은 수준의 마사지와 뷰티 서비스를 경험할 수 있습니다. 하지만 수많은 스파 중에서 어디를 선택해야 할지 막막하다면, 이 가이드가 도움이 될 것입니다.",
+      },
+      { type: "h2", text: "호이안 스파를 선택할 때 확인해야 할 기준" },
+      {
+        type: "ul",
+        items: [
+          "네이버 블로그 후기 — 한국인이 직접 방문하고 작성한 솔직한 리뷰를 꼭 확인하세요.",
+          "위치 — 구시가지(고대 타운) 근처인지, 이동이 편리한지 확인합니다.",
+          "가격 투명성 — 메뉴판이 명확하고 추가 요금이 없는지 확인하세요.",
+          "예약 가능 여부 — 카카오톡, WhatsApp, Zalo로 사전 예약이 가능한지 확인합니다.",
+          "영어 및 한국어 소통 가능 여부 — 서비스 요청 시 의사소통이 원활한지 중요합니다.",
+        ],
+      },
+      { type: "h2", text: "네이버에서 '호이안 스파'를 검색하면 나오는 정보" },
+      {
+        type: "p",
+        text: "한국인 관광객 대부분은 여행 전 네이버 블로그에서 '호이안 스파 추천', '호이안 마사지 후기', '호이안 스파 가격' 같은 키워드로 정보를 찾습니다. 네이버 블로그 포스팅에는 실제 방문 사진과 가격, 시술 후기가 상세히 담겨 있어 구글보다 훨씬 신뢰도가 높습니다.",
+      },
+      { type: "h2", text: "호이안 스파 종류 및 가격대" },
+      {
+        type: "ul",
+        items: [
+          "전통 베트남 마사지: 60분 기준 15~25달러 (약 2~3만원)",
+          "핫스톤 마사지: 60분 기준 20~35달러",
+          "허브볼 마사지: 60분 기준 20~30달러",
+          "아로마테라피: 60분 기준 25~40달러",
+          "바디 스크럽 + 마사지 패키지: 90~120분 기준 30~55달러",
+        ],
+      },
+      { type: "h2", text: "스파 예약 방법 — 한국인 관광객 팁" },
+      {
+        type: "p",
+        text: "호이안 스파는 당일 방문도 가능하지만, 성수기(7~8월, 설 연휴)에는 인기 스파가 마감되는 경우가 많습니다. 사전에 WhatsApp 또는 카카오톡으로 예약하는 것이 안전합니다. 네이버 블로그 포스팅에 연락처가 포함된 경우가 많으니 참고하세요.",
+      },
+      { type: "h2", text: "스파 이용 시 주의사항" },
+      {
+        type: "ul",
+        items: [
+          "시술 전 건강 상태(임신, 부상 등)를 미리 알려주세요.",
+          "팁 문화가 있습니다 — 보통 1~2달러 정도가 적당합니다.",
+          "예약 후 변경이나 취소는 최소 2시간 전에 연락하는 것이 예의입니다.",
+          "현금(달러 또는 동) 준비를 권장합니다. 카드 결제가 안 되는 곳도 있습니다.",
+        ],
+      },
+      { type: "h2", text: "공 티엔 에이전시의 네이버 마케팅 서비스" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "호이안이나 다낭에서 스파, 마사지, 뷰티 서비스를 운영 중이신가요? 한국인 관광객을 네이버 블로그와 네이버 플레이스를 통해 효과적으로 유치하는 방법을 도와드립니다. " },
+          { type: "link", text: "네이버 마케팅 서비스", href: "/vi/naver-marketing" },
+          { type: "text", text: "에 대해 더 알고 싶으시면 Zalo 또는 WhatsApp으로 문의하세요." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "호이안 스파는 얼마나 하나요?",
+        a: "기본 전통 마사지(60분)는 15~25달러(약 2~3만원)부터 시작합니다. 고급 리조트 스파의 경우 60~150달러까지 다양합니다. 네이버 블로그에서 '호이안 스파 가격'으로 검색하면 최신 정보를 확인할 수 있습니다.",
+      },
+      {
+        q: "호이안 스파에서 한국어 소통이 가능한가요?",
+        a: "고급 스파나 리조트 스파는 한국어 응대가 가능한 곳도 있습니다. 일반 스파는 영어로 소통하거나 번역 앱을 사용하는 것이 일반적입니다. 예약 시 미리 물어보는 것이 좋습니다.",
+      },
+      {
+        q: "네이버 블로그에서 호이안 스파 정보를 믿어도 되나요?",
+        a: "한국인이 직접 방문하고 작성한 네이버 블로그 후기는 신뢰도가 높습니다. 다만 작성 날짜를 확인하고, 최근 6개월 이내의 후기를 우선 참고하세요. 가격과 서비스는 시간에 따라 변동될 수 있습니다.",
+      },
+      {
+        q: "호이안 스파 예약은 언제 해야 하나요?",
+        a: "성수기(7~8월, 구정 연휴, 추석)에는 1~2일 전에 예약하는 것이 좋습니다. 비수기에는 당일 방문도 가능하지만, WhatsApp이나 Zalo로 미리 연락하면 더 안전합니다.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing dành cho spa", href: "/vi/naver-marketing/cho-spa-massage", note: "Dịch vụ" },
+      { label: "What is Naver Blog?", href: "/vi/blog/what-is-naver-blog-complete-guide", note: "Bài liên quan" },
+      { label: "Naver Marketing tổng quan", href: "/vi/naver-marketing", note: "Dịch vụ" },
+    ],
+  },
+  {
+    slug: "da-nang-naver-marketing-guide",
+    heroImage: { src: "/images/blog/da-nang-naver-marketing-guide.webp", alt: "다낭 네이버 마케팅 — 한국인 관광객 유치 전략" },
+    path: "/vi/blog/da-nang-naver-marketing-guide",
+    cluster: "naver",
+    title: "다낭 네이버 마케팅: 한국인 관광객을 효과적으로 유치하는 방법",
+    metaTitle: "다낭 네이버 마케팅 2026 | 한국인 관광객 유치 완전 가이드",
+    metaDescription:
+      "다낭에서 한국인 관광객을 유치하기 위한 네이버 마케팅 전략. 네이버 블로그, 네이버 플레이스 활용법과 한국인이 다낭에서 무엇을 검색하는지 알아봅니다.",
+    excerpt:
+      "다낭은 한국인 관광객이 가장 많이 찾는 베트남 여행지 중 하나입니다. 네이버 마케팅으로 한국인 손님을 효과적으로 유치하는 방법을 알아보세요.",
+    date: "2026-06-19",
+    readingMinutes: 9,
+    primaryKeyword: "다낭 네이버 마케팅",
+    breadcrumb: [
+      { label: "홈", href: "/vi" },
+      { label: "블로그", href: "/vi/blog" },
+      { label: "다낭 네이버 마케팅 가이드", href: "/vi/blog/da-nang-naver-marketing-guide" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "다낭(Đà Nẵng)은 매년 수십만 명의 한국인 관광객이 방문하는 베트남의 대표 여행지입니다. 아름다운 해변, 세계적 수준의 골프장, 가성비 좋은 음식과 서비스로 한국인들에게 큰 인기를 끌고 있습니다. 이런 한국인 관광객들에게 비즈니스를 알리려면 한국인들이 실제로 사용하는 플랫폼 — 바로 네이버(Naver)에 집중해야 합니다.",
+      },
+      { type: "h2", text: "한국인이 다낭 여행 전 네이버에서 검색하는 것들" },
+      {
+        type: "ul",
+        items: [
+          "'다낭 맛집' — 현지 식당과 카페 후기",
+          "'다낭 호텔 추천' — 가격과 위치 비교",
+          "'다낭 골프장' — 코스 정보와 예약 방법",
+          "'다낭 마사지 추천' — 스파와 마사지 후기",
+          "'다낭 여행 일정' — 3박 4일, 4박 5일 코스",
+          "'다낭 쇼핑' — 현지에서 사야 할 것들",
+        ],
+      },
+      { type: "h2", text: "네이버 블로그가 다낭 비즈니스에 중요한 이유" },
+      {
+        type: "p",
+        text: "한국인의 80% 이상이 여행 전 네이버에서 정보를 검색합니다. 구글과 달리 네이버에서는 블로그 포스팅이 검색 결과 상위에 노출되기 때문에, 한국인 블로거가 작성한 리뷰 하나가 수백 명의 한국인 관광객에게 당신의 비즈니스를 알릴 수 있습니다.",
+      },
+      { type: "h2", text: "다낭에서 네이버 마케팅이 효과적인 업종" },
+      {
+        type: "ul",
+        items: [
+          "레스토랑 및 카페 — '다낭 맛집' 검색량이 매우 높습니다.",
+          "스파 및 마사지 센터 — 여행 중 필수 코스로 인식됩니다.",
+          "호텔 및 리조트 — 가격 비교와 시설 후기를 꼼꼼히 봅니다.",
+          "골프장 — 한국인 골프 관광객이 다낭의 주요 방문 이유 중 하나입니다.",
+          "투어 및 액티비티 — 바나힐, 호이안 당일치기, 바다 액티비티 등.",
+        ],
+      },
+      { type: "h2", text: "다낭 비즈니스를 위한 네이버 마케팅 전략" },
+      {
+        type: "p",
+        text: "효과적인 다낭 네이버 마케팅은 세 가지 축으로 구성됩니다. 첫째, 한국인 블로거를 통한 진정성 있는 리뷰 확보. 둘째, 네이버 플레이스(지도) 등록 및 최적화. 셋째, 한국어로 작성된 자체 네이버 블로그 운영. 이 세 가지가 함께 작동할 때 한국인 관광객 유입이 가장 효과적으로 이루어집니다.",
+      },
+      { type: "h2", text: "한국인 블로거 협업 방법" },
+      {
+        type: "p",
+        text: "인플루언서 마케팅이라고 해서 무조건 큰 비용이 드는 것은 아닙니다. 다낭을 방문하는 한국인 여행 블로거들은 진정성 있는 현지 경험을 찾고 있습니다. 서비스 무료 체험 또는 할인 제공을 통해 협업하면, 그들의 네이버 블로그 포스팅이 장기간 한국인들에게 비즈니스를 홍보하는 효과를 냅니다.",
+      },
+      { type: "h2", text: "네이버 플레이스(지도) 최적화" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "네이버 플레이스는 한국인들이 현지에서 장소를 찾을 때 사용하는 지도 서비스입니다. 사업장을 네이버 플레이스에 등록하고 한국어 설명, 영업시간, 사진 등을 최적화하면 현지 도착 후 검색하는 한국인 관광객에게도 노출됩니다. " },
+          { type: "link", text: "네이버 마케팅 서비스 자세히 보기", href: "/vi/naver-marketing" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "다낭 비즈니스 네이버 마케팅 비용은 얼마인가요?",
+        a: "블로거 협업 비용, 네이버 플레이스 관리, 콘텐츠 제작 등에 따라 달라집니다. 월 기준 소규모 패키지부터 시작할 수 있으며, 자세한 견적은 상담을 통해 확인해 주세요.",
+      },
+      {
+        q: "네이버 마케팅 효과가 나타나기까지 얼마나 걸리나요?",
+        a: "블로그 포스팅은 검색 노출까지 2~4주 소요되며, 안정적인 방문객 유입까지는 보통 3~6개월의 꾸준한 콘텐츠 축적이 필요합니다. 네이버 플레이스는 등록 즉시 검색에 노출됩니다.",
+      },
+      {
+        q: "한국어를 모르는데 네이버 마케팅이 가능한가요?",
+        a: "가능합니다. 공 티엔 에이전시는 한국어 콘텐츠 제작, 한국인 블로거 섭외, 네이버 플레이스 최적화를 포함한 전체 서비스를 제공합니다. 비즈니스 오너는 서비스의 방향성만 알려주시면 됩니다.",
+      },
+      {
+        q: "구글 마케팅도 하고 있는데 네이버도 해야 하나요?",
+        a: "한국인 관광객을 타겟으로 한다면 네이버가 필수입니다. 한국인의 대다수가 여행 정보를 네이버에서 검색하기 때문에, 구글만으로는 이 고객층에 도달하기 어렵습니다. 두 채널을 병행하는 것이 가장 효과적입니다.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing dành cho Đà Nẵng", href: "/vi/naver-marketing/da-nang", note: "Dịch vụ" },
+      { label: "What is Naver Blog?", href: "/vi/blog/what-is-naver-blog-complete-guide", note: "Bài liên quan" },
+      { label: "Khi nào nên đầu tư Naver Marketing", href: "/vi/blog/khi-nao-nen-dau-tu-naver-marketing", note: "Bài liên quan" },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
