@@ -7831,6 +7831,988 @@ export const SERVICES: Service[] = [
     schema: { serviceType: "Website Booking System", offerMinPriceVnd: 8000000 },
   },
 
+  /* ───────────────── VI: quảng cáo trên naver ───────────────── */
+  {
+    path: "/vi/naver-marketing/quang-cao-tren-naver",
+    lastModified: "2026-06-20",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "quảng cáo trên naver", href: "/vi/naver-marketing/quang-cao-tren-naver" },
+    ],
+    primaryKeyword: "quảng cáo trên naver",
+    metaTitle: "quảng cáo trên naver | Cong Thien Agency",
+    metaDescription:
+      "quảng cáo trên naver cho doanh nghiệp Việt Nam muốn tiếp cận khách Hàn: Search Ad, Naver Blog, Naver Place, blogger review, chi phí, quy trình và FAQ.",
+    eyebrow: "Naver · Search Ad & Blog",
+    h1: "quảng cáo trên naver",
+    heroSub:
+      "Hướng dẫn thực tế cho doanh nghiệp Việt Nam muốn xuất hiện trong hệ sinh thái Naver: khi nào dùng quảng cáo trả phí, khi nào cần Naver Blog, Naver Place và nội dung tiếng Hàn để tạo niềm tin.",
+    heroCta: "Tư vấn quảng cáo Naver",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "quảng cáo trên naver không chỉ là mua vị trí hiển thị. Với thị trường Hàn Quốc, Naver là một hệ sinh thái tìm kiếm gồm Search Ad, Blog, Place, Map, Cafe, Knowledge iN và nhiều bề mặt nội dung khác. Người dùng Hàn thường tìm thông tin, đọc review, xem ảnh thật và so sánh địa điểm trước khi liên hệ. Vì vậy một chiến dịch hiệu quả cần kết hợp dữ liệu tìm kiếm, nội dung tiếng Hàn, hồ sơ địa điểm và đường dẫn chuyển đổi rõ ràng. Công Thiên Agency xây trang này cho nhóm doanh nghiệp du lịch, spa, nhà hàng, khách sạn và tour tại Việt Nam đang muốn hiểu đúng cách quảng cáo trên Naver trước khi chi ngân sách. Bạn có thể xem đây là bản định hướng: Naver Search Ad giúp có tín hiệu nhanh, Naver Blog tạo social proof, Naver Place hỗ trợ local intent, còn website hoặc Zalo/WhatsApp là nơi chốt lead.",
+    sections: [
+      {
+        heading: "Ý định tìm kiếm của keyword này",
+        body:
+          "Người tìm 'quảng cáo trên naver' thường chưa chắc muốn tự chạy ads ngay. Họ muốn biết Naver có những hình thức quảng cáo nào, có phù hợp với doanh nghiệp Việt Nam không, cần tiếng Hàn hay tài khoản Hàn không, ngân sách bao nhiêu và làm sao đo hiệu quả. Vì vậy trang này trả lời cả ba lớp: paid ads, content marketing và local presence.",
+      },
+      {
+        heading: "Các hình thức quảng cáo chính trên Naver",
+        bullets: [
+          "Naver Search Ad: quảng cáo theo keyword trong kết quả tìm kiếm, phù hợp khi có bộ từ khóa tiếng Hàn rõ ràng.",
+          "Naver Blog content: bài review, bài hướng dẫn hoặc bài trải nghiệm giúp khách Hàn tin trước khi đặt dịch vụ.",
+          "Naver Place và Naver Map: hồ sơ địa điểm, ảnh, thông tin liên hệ, liên kết blog và tín hiệu local.",
+          "Blogger/KOC review: dùng uy tín của người viết Hàn để tạo social proof nhanh hơn kênh brand-owned.",
+        ],
+      },
+      {
+        heading: "Khi nào nên chạy quảng cáo trả phí",
+        body:
+          "Paid ads phù hợp khi bạn đã có landing page hoặc điểm chạm đủ tốt bằng tiếng Hàn, có sản phẩm rõ, có khả năng phản hồi lead nhanh và có ngân sách test. Nếu chưa có nội dung review, chưa có hình ảnh thật, chưa có Naver Place hoặc chưa biết keyword tiếng Hàn, chạy ads dễ tạo click nhưng khó chuyển đổi.",
+      },
+      {
+        heading: "Khi nào nên ưu tiên Naver Blog",
+        bodyParts: [
+          { type: "text", text: "Nếu doanh nghiệp của bạn là spa, nhà hàng, khách sạn hoặc tour, khách Hàn thường cần đọc trải nghiệm trước khi tin. Lúc này " },
+          { type: "link", text: "dịch vụ viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog" },
+          { type: "text", text: " và " },
+          { type: "link", text: "booking blogger Hàn", href: "/vi/naver-marketing/booking-blogger-han" },
+          { type: "text", text: " thường là nền tốt hơn việc chỉ mua click." },
+        ],
+      },
+      {
+        heading: "Entity cần có để Naver hiểu thương hiệu",
+        bodyParts: [
+          { type: "text", text: "Một chiến dịch Naver nên thống nhất entity: tên thương hiệu, địa chỉ, số điện thoại, website, social, Naver Place, Naver Blog và các bài review. Với Công Thiên Agency, trang brand chính là " },
+          { type: "link", text: "https://www.congthienagency.com/vi", href: "https://www.congthienagency.com/vi" },
+          { type: "text", text: ". Khi entity nhất quán, người dùng và công cụ tìm kiếm dễ nối các điểm chạm hơn." },
+        ],
+      },
+      {
+        heading: "Backlink và external link nên dùng",
+        body:
+          "Backlink trong chiến dịch Naver không nên hiểu là spam link. Nên ưu tiên liên kết tự nhiên từ bài blog Naver, bài review, trang báo, đối tác du lịch, Google Business Profile, website chính và hồ sơ social. External link nên trỏ đến nguồn chính thức như Naver Search Ad, Naver Blog, Naver Map hoặc trang hướng dẫn của nền tảng.",
+      },
+      {
+        heading: "Cách đo hiệu quả",
+        bullets: [
+          "Số bài hoặc quảng cáo được xuất bản và index.",
+          "Độ phủ keyword tiếng Hàn theo ngành, địa điểm và intent.",
+          "Lượt click về website, Zalo, WhatsApp hoặc form booking.",
+          "Số lead có nhắc đến Naver, bài blog, blogger hoặc khách Hàn.",
+        ],
+      },
+      {
+        heading: "Rich results và cấu trúc SEO của trang",
+        body:
+          "Trang này được xây theo cấu trúc Service schema, Breadcrumb schema và FAQ schema. Các phần câu hỏi thường gặp giúp Google hiểu sâu hơn về intent, đồng thời tăng khả năng xuất hiện rich results nếu trang đủ điều kiện.",
+      },
+    ],
+    deliverables: {
+      title: "Gói tư vấn quảng cáo trên Naver gồm có",
+      items: [
+        "Audit nhanh hiện diện Naver, Google, website và social hiện tại",
+        "Nghiên cứu keyword tiếng Hàn theo ngành và địa điểm",
+        "Đề xuất nên dùng Search Ad, Naver Blog, blogger review hay Naver Place",
+        "Cấu trúc landing page hoặc CTA về Zalo, WhatsApp, booking",
+        "Kế hoạch internal link, external link và backlink sạch",
+        "FAQ, schema và metadata để hỗ trợ rich results trên Google",
+      ],
+    },
+    whoFor: [
+      "Spa, massage, wellness phục vụ khách Hàn",
+      "Nhà hàng, cafe, cooking class tại Hội An và Đà Nẵng",
+      "Khách sạn, homestay, villa muốn tăng khách Hàn",
+      "Tour và local experience cần social proof tiếng Hàn",
+      "Doanh nghiệp đang phân vân giữa chạy ads và làm Naver Blog",
+    ],
+    process: [
+      { step: "Audit", detail: "Xem website, Google Maps, social, Naver hiện có và điểm chạm khách Hàn." },
+      { step: "Keyword", detail: "Chọn cụm từ khóa tiếng Hàn theo intent: review, giá, địa điểm, cách đặt." },
+      { step: "Plan", detail: "Quyết định tỉ trọng ads, blog, Place, blogger và landing page." },
+      { step: "Measure", detail: "Theo dõi index, traffic, lead và tín hiệu social proof sau triển khai." },
+    ],
+    priceFrom: "Từ 8.000.000đ / chiến dịch",
+    priceNote:
+      "Chi phí phụ thuộc số bài, mức booking blogger, nhu cầu tối ưu Naver Place và ngân sách quảng cáo trả phí. Phí media nếu chạy Search Ad được tách riêng.",
+    faqs: [
+      {
+        q: "quảng cáo trên naver có giống chạy Google Ads không?",
+        a: "Không hoàn toàn. Google Ads thường tập trung vào keyword và landing page. Naver có lớp nội dung cộng đồng mạnh hơn, đặc biệt là Blog, Place, Map và các bài review. Với ngành du lịch, người Hàn thường đọc nhiều nội dung trước khi liên hệ, nên chiến dịch Naver cần vừa có khả năng hiển thị vừa có bằng chứng xã hội.",
+      },
+      {
+        q: "Doanh nghiệp Việt Nam có tự chạy Naver Search Ad được không?",
+        a: "Có thể, nhưng thực tế sẽ vướng ngôn ngữ, tài khoản, phương thức thanh toán, keyword tiếng Hàn và cách đọc hiệu quả. Nếu chưa quen hệ sinh thái Naver, bạn nên bắt đầu bằng audit và nội dung blog trước, sau đó mới thêm quảng cáo trả phí khi phễu chuyển đổi đã rõ.",
+      },
+      {
+        q: "Nên chạy ads hay book blogger Hàn trước?",
+        a: "Nếu thương hiệu chưa có social proof tiếng Hàn, book blogger hoặc xây Naver Blog thường là bước nền tốt hơn. Ads có thể kéo người xem, nhưng nếu họ tìm thêm và không thấy review thật, khả năng chuyển đổi thấp. Với doanh nghiệp đã có review, ads giúp tăng tốc.",
+      },
+      {
+        q: "quảng cáo trên naver cần website tiếng Hàn không?",
+        a: "Không bắt buộc nhưng rất nên có. Ít nhất bạn cần một landing page tiếng Anh hoặc tiếng Hàn đủ rõ về dịch vụ, giá, địa chỉ, ảnh thật và cách đặt. Trang đích càng sát ngôn ngữ người tìm kiếm thì lead càng dễ chuyển đổi.",
+      },
+      {
+        q: "Backlink từ Naver Blog có giúp SEO không?",
+        a: "Có giá trị theo hướng referral traffic, brand mention và tín hiệu thực thể. Không nên xem Naver Blog như nơi đặt link hàng loạt. Một bài review tốt nên có nội dung hữu ích, ảnh thật, ngữ cảnh địa điểm và link tự nhiên về website hoặc kênh đặt dịch vụ.",
+      },
+      {
+        q: "Có thể cam kết lên top Naver không?",
+        a: "Không nên cam kết thứ hạng cố định vì Naver phụ thuộc độ cạnh tranh, chất lượng tài khoản, lịch sử nội dung, tín hiệu người dùng và freshness. Cam kết hợp lý là quy trình: keyword map, bài viết, liên kết, tối ưu Place, tracking và cải thiện theo dữ liệu.",
+      },
+      {
+        q: "Nguồn chính thức để tìm hiểu quảng cáo Naver là gì?",
+        a: "Bạn có thể tham khảo Naver Search Ad tại searchad.naver.com và Naver Blog tại blog.naver.com. Với doanh nghiệp Việt Nam, phần khó không chỉ là biết nền tảng, mà là biến nền tảng đó thành nội dung và lead phù hợp với khách Hàn.",
+      },
+    ],
+    related: [
+      { label: "Công Thiên Agency", href: "https://www.congthienagency.com/vi", note: "Brand entity" },
+      { label: "Cách quảng cáo trên Naver", href: "/vi/naver-marketing/cach-quang-cao-tren-naver", note: "Bài hướng dẫn" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing", note: "Pillar" },
+      { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog", note: "Internal link" },
+      { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Internal link" },
+      { label: "Naver Search Ad", href: "https://searchad.naver.com/", note: "External link" },
+      { label: "Naver Blog", href: "https://blog.naver.com", note: "External link" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "quảng cáo trên naver cho doanh nghiệp Việt Nam" },
+    ],
+    schema: { serviceType: "quảng cáo trên naver", offerMinPriceVnd: 8000000 },
+  },
+
+  /* ───────────────── VI: cách quảng cáo trên naver ───────────────── */
+  {
+    path: "/vi/naver-marketing/cach-quang-cao-tren-naver",
+    lastModified: "2026-06-20",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Naver Marketing", href: "/vi/naver-marketing" },
+      { label: "cách quảng cáo trên naver", href: "/vi/naver-marketing/cach-quang-cao-tren-naver" },
+    ],
+    primaryKeyword: "cách quảng cáo trên naver",
+    metaTitle: "cách quảng cáo trên naver | Cong Thien Agency",
+    metaDescription:
+      "cách quảng cáo trên naver từng bước: chọn keyword tiếng Hàn, chuẩn bị Naver Blog, Place, landing page, ngân sách, đo lead và FAQ cho doanh nghiệp Việt Nam.",
+    eyebrow: "Naver · Playbook",
+    h1: "cách quảng cáo trên naver",
+    heroSub:
+      "Checklist từng bước để doanh nghiệp Việt Nam bắt đầu Naver Marketing đúng thứ tự: hiểu intent, chuẩn bị nội dung, xây điểm chạm, test ngân sách và đo tín hiệu thật.",
+    heroCta: "Nhận checklist Naver",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "cách quảng cáo trên naver tốt nhất không bắt đầu bằng việc nạp tiền vào tài khoản quảng cáo. Bước đầu là hiểu người Hàn tìm gì, họ tin loại nội dung nào, doanh nghiệp của bạn đã có đủ điểm chạm chưa và lead sẽ đi về đâu sau khi nhấp. Với Công Thiên Agency, quy trình thường bắt đầu bằng keyword map tiếng Hàn, audit website và Google Maps, kiểm tra khả năng tạo Naver Place hoặc Naver Blog, sau đó mới chọn hình thức triển khai. Nếu mục tiêu là khách Hàn đến spa, nhà hàng, khách sạn hoặc tour tại Việt Nam, quảng cáo cần được thiết kế như một hệ thống tìm kiếm và niềm tin: người dùng thấy bạn, đọc thêm review, kiểm tra địa điểm, rồi liên hệ qua website, Zalo, WhatsApp hoặc form booking.",
+    sections: [
+      {
+        heading: "Bước 1: Xác định mục tiêu kinh doanh",
+        body:
+          "Trước khi chọn kênh, hãy xác định bạn muốn gì: tăng nhận diện với khách Hàn, có bài review để sales dùng, tăng booking trực tiếp, hỗ trợ mùa cao điểm hay xây tài sản Naver dài hạn. Mỗi mục tiêu dẫn đến một cấu trúc khác nhau.",
+      },
+      {
+        heading: "Bước 2: Nghiên cứu keyword tiếng Hàn",
+        bullets: [
+          "Keyword ngành: spa, massage, restaurant, hotel, tour, cooking class bằng tiếng Hàn.",
+          "Keyword địa điểm: Hội An, Đà Nẵng, Việt Nam, khu phố cổ, biển, resort.",
+          "Keyword intent: review, giá, cách đặt, gần đây, đáng đi, cho gia đình, cho cặp đôi.",
+          "Keyword brand: tên doanh nghiệp, tên phiên âm tiếng Hàn và biến thể không dấu.",
+        ],
+      },
+      {
+        heading: "Bước 3: Chuẩn bị điểm chạm trước khi kéo traffic",
+        bodyParts: [
+          { type: "text", text: "Traffic chỉ có giá trị khi điểm chạm đủ tin. Doanh nghiệp nên có website hoặc landing page rõ ràng, " },
+          { type: "link", text: "Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog" },
+          { type: "text", text: ", Google Maps đủ ảnh/review và kênh liên hệ phản hồi nhanh. Nếu nhắm khách Hàn, trang tiếng Hàn hoặc bài review tiếng Hàn là lợi thế lớn." },
+        ],
+      },
+      {
+        heading: "Bước 4: Chọn hình thức triển khai",
+        body:
+          "Bạn có thể bắt đầu bằng bài Naver Blog trên tài khoản brand, booking blogger Hàn, tối ưu Naver Place, hoặc test Search Ad. Thứ tự hợp lý thường là nội dung và entity trước, ads sau. Với ngành cần trust cao, một bài review tốt đôi khi tạo giá trị lâu hơn một đợt click ngắn.",
+      },
+      {
+        heading: "Bước 5: Viết nội dung theo kiểu người Hàn đọc",
+        body:
+          "Nội dung Naver không nên giống brochure quảng cáo. Bài tốt cần bối cảnh, trải nghiệm, ảnh thật, giá, địa chỉ, cách đặt, điểm mạnh và cảm giác an tâm. Nếu dùng blogger, cần brief rõ nhưng không biến bài thành quảng cáo cứng.",
+      },
+      {
+        heading: "Bước 6: Gắn internal link và external link",
+        bodyParts: [
+          { type: "text", text: "Trên website, nên liên kết về các trang liên quan như " },
+          { type: "link", text: "Naver Marketing", href: "/vi/naver-marketing" },
+          { type: "text", text: ", " },
+          { type: "link", text: "quảng cáo trên naver", href: "/vi/naver-marketing/quang-cao-tren-naver" },
+          { type: "text", text: " và trang brand " },
+          { type: "link", text: "Công Thiên Agency", href: "https://www.congthienagency.com/vi" },
+          { type: "text", text: ". External link nên trỏ tới nguồn chính thức như Naver Search Ad hoặc Naver Blog khi cần giải thích nền tảng." },
+        ],
+      },
+      {
+        heading: "Bước 7: Đo lường và tối ưu",
+        bullets: [
+          "Theo dõi bài đã publish, index và thứ hạng tương đối theo keyword.",
+          "Gắn UTM hoặc link riêng cho website, Zalo, WhatsApp, booking.",
+          "Ghi nhận lead hỏi từ Naver, khách Hàn, blogger hoặc bài review.",
+          "Cập nhật bài cũ, thêm ảnh mới và mở rộng keyword theo dữ liệu thật.",
+        ],
+      },
+      {
+        heading: "Entity và rich results",
+        body:
+          "Trang hướng dẫn này dùng breadcrumb, FAQ và Service schema để tăng khả năng Google hiểu entity, dịch vụ, câu hỏi thường gặp và mối liên hệ với cluster Naver Marketing của website.",
+      },
+    ],
+    deliverables: {
+      title: "Checklist triển khai gồm có",
+      items: [
+        "Keyword map tiếng Hàn theo ngành, địa điểm và intent",
+        "Audit website, social, Google Maps, Naver Blog và Naver Place",
+        "Đề xuất thứ tự: Blog, Place, blogger, Search Ad hoặc landing page",
+        "Brief nội dung tiếng Hàn và checklist hình ảnh thật",
+        "Internal link, backlink và external link theo cụm chủ đề",
+        "FAQ schema, Service schema và metadata chuẩn SEO",
+      ],
+    },
+    whoFor: [
+      "Doanh nghiệp mới nghe về Naver nhưng chưa biết bắt đầu từ đâu",
+      "Chủ spa, nhà hàng, khách sạn muốn tiếp cận khách Hàn",
+      "Team marketing cần checklist trước khi chi ngân sách",
+      "Agency du lịch cần đối tác triển khai nội dung tiếng Hàn",
+    ],
+    process: [
+      { step: "Diagnose", detail: "Xác định mục tiêu, ngành, địa điểm, tài sản hiện có và khoảng trống." },
+      { step: "Map", detail: "Lập bản đồ keyword, nội dung, entity và kênh chuyển đổi." },
+      { step: "Launch", detail: "Triển khai bài, Place, blogger hoặc ads theo thứ tự ưu tiên." },
+      { step: "Improve", detail: "Đọc tín hiệu, bổ sung nội dung và tối ưu lead path." },
+    ],
+    priceFrom: "Từ 8.000.000đ / giai đoạn khởi động",
+    priceNote:
+      "Gói khởi động phù hợp để xây nền Naver. Ngân sách blogger, media ads, ảnh và dịch thuật chuyên sâu có thể tách riêng theo phạm vi.",
+    faqs: [
+      {
+        q: "cách quảng cáo trên naver cho doanh nghiệp mới là gì?",
+        a: "Cách an toàn là bắt đầu bằng audit và keyword map, sau đó xây nội dung hoặc review tiếng Hàn trước khi tăng ngân sách paid ads. Nếu chưa có điểm chạm đáng tin, chạy quảng cáo sớm có thể tạo click nhưng khó có lead.",
+      },
+      {
+        q: "Có cần biết tiếng Hàn để quảng cáo trên Naver không?",
+        a: "Bạn không nhất thiết phải tự biết tiếng Hàn, nhưng chiến dịch cần người hiểu tiếng Hàn để nghiên cứu keyword, viết tiêu đề, kiểm tra văn phong và đọc phản hồi. Dịch máy thô thường không đủ tự nhiên cho Naver Blog hoặc review.",
+      },
+      {
+        q: "Một chiến dịch Naver nên kéo dài bao lâu?",
+        a: "Giai đoạn khởi động nên tính theo 2-3 tháng để có đủ bài, tín hiệu index, dữ liệu lead và thời gian tối ưu. Nếu chỉ chạy một bài lẻ, bạn vẫn có social proof nhưng khó tạo độ phủ từ khóa rộng.",
+      },
+      {
+        q: "Có nên dùng cùng Google Maps không?",
+        a: "Rất nên. Khách Hàn có thể tìm trên Naver nhưng vẫn kiểm tra Google Maps, Tripadvisor, website hoặc Facebook. Một hệ thống tốt làm các điểm chạm đồng bộ để khách gặp thương hiệu ở đâu cũng thấy đáng tin.",
+      },
+      {
+        q: "Trang này có main keyword là gì?",
+        a: "Main keyword của trang là 'cách quảng cáo trên naver'. Keyword này được giữ nguyên trong H1, breadcrumb, primaryKeyword và metadata để Google hiểu đúng chủ đề.",
+      },
+      {
+        q: "External link nào nên có trong nội dung Naver?",
+        a: "Nên dùng link đến nền tảng chính thức như Naver Search Ad, Naver Blog, Naver Map, Papago nếu nói về dịch thuật, và website chính của thương hiệu. Link phải phục vụ người đọc, không nhồi để thao túng SEO.",
+      },
+      {
+        q: "Công Thiên Agency hỗ trợ phần nào?",
+        a: "Công Thiên Agency hỗ trợ định hướng chiến lược Naver, viết bài Naver Blog, booking blogger Hàn, tối ưu Naver Place, chuẩn bị landing page và đo hiệu quả lead cho doanh nghiệp dịch vụ du lịch tại Việt Nam.",
+      },
+      {
+        q: "Nên chuẩn bị ngân sách tối thiểu bao nhiêu để bắt đầu?",
+        a: "Nếu mới bắt đầu, doanh nghiệp nên chuẩn bị ngân sách cho một giai đoạn nền thay vì chỉ một bài lẻ: keyword map, 3-4 nội dung hoặc review đầu tiên, tối ưu điểm chạm liên hệ và đo tín hiệu. Mức tối thiểu thường phụ thuộc ngành và độ cạnh tranh địa điểm. Với spa, nhà hàng hoặc tour ở Hội An - Đà Nẵng, nên xem 8.000.000đ là ngưỡng khởi động để có nội dung đủ dùng, sau đó mới quyết định có thêm paid ads hay blogger tier cao hơn không.",
+      },
+    ],
+    related: [
+      { label: "Công Thiên Agency", href: "https://www.congthienagency.com/vi", note: "Brand entity" },
+      { label: "quảng cáo trên naver", href: "/vi/naver-marketing/quang-cao-tren-naver", note: "Trang dịch vụ" },
+      { label: "Naver Blogs", href: "/vi/naver-marketing/naver-blogs", note: "Internal link" },
+      { label: "Booking blogger Hàn", href: "/vi/naver-marketing/booking-blogger-han", note: "Internal link" },
+      { label: "Cách viết bài Naver Blog chuẩn", href: "/vi/blog/cach-viet-bai-naver-blog-chuan", note: "Internal link" },
+      { label: "Naver Search Ad", href: "https://searchad.naver.com/", note: "External link" },
+      { label: "Naver.com", href: "https://www.naver.com", note: "External link" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/naver-pillar.webp", alt: "cách quảng cáo trên naver từng bước" },
+    ],
+    schema: { serviceType: "cách quảng cáo trên naver", offerMinPriceVnd: 8000000 },
+  },
+
+  /* ───────────────── VI: thuê social media content ───────────────── */
+  {
+    path: "/vi/social-marketing/thue-social-media-content",
+    lastModified: "2026-06-20",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Trang chủ", href: "/vi" },
+      { label: "Social Marketing", href: "/vi/social-marketing" },
+      { label: "thuê social media content", href: "/vi/social-marketing/thue-social-media-content" },
+    ],
+    primaryKeyword: "thuê social media content",
+    metaTitle: "thuê social media content | Cong Thien Agency",
+    metaDescription:
+      "thuê social media content cho doanh nghiệp dịch vụ du lịch: kế hoạch nội dung, caption, ảnh, Reels, Fanpage, Instagram, TikTok, KPI, FAQ và schema SEO.",
+    eyebrow: "Social · Content",
+    h1: "thuê social media content",
+    heroSub:
+      "Dịch vụ content social cho doanh nghiệp muốn Fanpage, Instagram, TikTok và Threads nhìn chuyên nghiệp, đều nhịp và có khả năng hỗ trợ booking thật.",
+    heroCta: "Tư vấn content social",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "thuê social media content là lựa chọn hợp lý khi doanh nghiệp không thiếu ý tưởng kinh doanh, nhưng thiếu thời gian biến trải nghiệm thật thành bài đăng đều đặn. Với spa, nhà hàng, khách sạn, tour, cafe hoặc thương hiệu dịch vụ, social không chỉ để đăng cho có. Khách thường kiểm tra Fanpage, Instagram, TikTok hoặc Threads trước khi nhắn tin, đặt bàn, đặt lịch hoặc chuyển khoản. Một kênh social bỏ trống làm thương hiệu trông kém hoạt động; một kênh có nội dung nhưng sai giọng lại không tạo niềm tin. Công Thiên Agency xây dịch vụ này theo hướng content phục vụ quyết định mua: hồ sơ rõ, ảnh thật, caption đúng tệp, lịch đăng bền, CTA mềm, social proof và kết nối với website, Google Maps, Naver hoặc Zalo.",
+    sections: [
+      {
+        heading: "Người tìm keyword này cần gì",
+        body:
+          "Người tìm 'thuê social media content' thường muốn biết thuê ai viết bài, chi phí bao nhiêu, một tháng gồm bao nhiêu post, có thiết kế ảnh không, có quay Reels không, có lên kế hoạch không và làm sao biết content hiệu quả. Vì vậy trang này tập trung vào scope, quy trình và tiêu chí đánh giá.",
+      },
+      {
+        heading: "Social media content gồm những gì",
+        bullets: [
+          "Content calendar theo tháng, gắn với mùa vụ, ưu đãi, sản phẩm và hành vi khách.",
+          "Caption Facebook, Instagram, TikTok, Threads theo giọng thương hiệu.",
+          "Brief hình ảnh, video ngắn, Reels hoặc carousel để team có thể sản xuất đúng.",
+          "CTA dẫn về inbox, Zalo, website, Google Maps, booking form hoặc landing page.",
+        ],
+      },
+      {
+        heading: "Content tốt không chỉ là caption hay",
+        body:
+          "Một bài viết social hiệu quả cần đúng vai trò trong hành trình khách hàng. Có bài để khách biết bạn tồn tại, có bài giải thích dịch vụ, có bài xử lý lo lắng, có bài đưa social proof, có bài bán gói cụ thể. Nếu tháng nào cũng chỉ đăng ảnh đẹp và caption chung chung, kênh nhìn có vẻ hoạt động nhưng không tạo chuyển đổi.",
+      },
+      {
+        heading: "Entity và niềm tin thương hiệu",
+        bodyParts: [
+          { type: "text", text: "Social content nên đồng bộ với website chính, Google Maps và các trang dịch vụ. Brand entity của Công Thiên Agency nằm tại " },
+          { type: "link", text: "https://www.congthienagency.com/vi", href: "https://www.congthienagency.com/vi" },
+          { type: "text", text: ". Khi thông tin tên, địa chỉ, dịch vụ, số điện thoại và link nhất quán, khách dễ tin hơn và công cụ tìm kiếm cũng dễ hiểu thực thể hơn." },
+        ],
+      },
+      {
+        heading: "Khi nào nên thuê ngoài",
+        bullets: [
+          "Bạn có sản phẩm thật nhưng không duy trì được lịch đăng đều.",
+          "Fanpage có ảnh và bài cũ nhưng thiếu cấu trúc bán hàng.",
+          "Team nội bộ phản hồi khách tốt nhưng không có người viết content.",
+          "Bạn cần chuẩn hóa hình ảnh thương hiệu trước khi chạy ads hoặc tăng trưởng kênh.",
+        ],
+      },
+      {
+        heading: "Backlink, internal link và external link",
+        bodyParts: [
+          { type: "text", text: "Content social nên kéo người dùng về tài sản bạn kiểm soát: " },
+          { type: "link", text: "website", href: "/vi/thiet-ke-website" },
+          { type: "text", text: ", " },
+          { type: "link", text: "Google Maps reputation", href: "/vi/google-maps-marketing/review-reputation" },
+          { type: "text", text: " hoặc " },
+          { type: "link", text: "Social Marketing", href: "/vi/social-marketing" },
+          { type: "text", text: ". External link nên dùng chọn lọc, ví dụ Meta Business, Instagram Business hoặc tài liệu nền tảng khi cần." },
+        ],
+      },
+      {
+        heading: "Cách đo content social",
+        bullets: [
+          "Tần suất đăng đúng lịch và chất lượng nội dung theo trụ cột.",
+          "Reach, save, share, comment, inbox, click link và booking.",
+          "Tỉ lệ bài có social proof, CTA, ảnh thật và thông tin dịch vụ rõ.",
+          "Tín hiệu gián tiếp: khách nói đã xem Fanpage, Instagram, TikTok hoặc Threads.",
+        ],
+      },
+      {
+        heading: "Rich results cho trang dịch vụ",
+        body:
+          "Trang này có breadcrumb, Service schema và FAQ schema để tăng khả năng Google hiểu dịch vụ thuê social media content, các câu hỏi phổ biến và mối liên hệ với cụm Social Marketing của website.",
+      },
+    ],
+    deliverables: {
+      title: "Gói thuê social media content gồm có",
+      items: [
+        "Audit Fanpage, Instagram, TikTok hoặc Threads hiện tại",
+        "Content pillars theo ngành, tệp khách và mục tiêu booking",
+        "Lịch nội dung tháng với chủ đề, CTA và định dạng bài",
+        "Caption tiếng Việt hoặc tiếng Anh theo giọng thương hiệu",
+        "Brief hình ảnh, Reels, carousel và social proof cần thu thập",
+        "Internal link về website, Google Maps, landing page hoặc Zalo",
+      ],
+    },
+    whoFor: [
+      "Spa, massage, wellness cần bài đều và đáng tin",
+      "Nhà hàng, cafe, bar muốn nội dung bán trải nghiệm",
+      "Khách sạn, homestay cần social hỗ trợ booking trực tiếp",
+      "Tour, cooking class, local experience muốn kể câu chuyện thật",
+      "Doanh nghiệp chuẩn bị chạy ads nhưng kênh social còn mỏng",
+    ],
+    process: [
+      { step: "Audit", detail: "Rà soát kênh, tệp khách, dịch vụ, ảnh và nội dung cũ." },
+      { step: "Plan", detail: "Xây content pillars, lịch đăng, CTA và định dạng theo tháng." },
+      { step: "Produce", detail: "Viết caption, brief ảnh/video và tối ưu link về điểm chạm chuyển đổi." },
+      { step: "Report", detail: "Đọc chỉ số, rút insight và điều chỉnh lịch nội dung tháng sau." },
+    ],
+    priceFrom: "Từ 5.000.000đ / tháng",
+    priceNote:
+      "Giá phụ thuộc số kênh, số bài, ngôn ngữ, mức thiết kế hình ảnh, Reels/video ngắn và yêu cầu phản hồi inbox. Chi phí quay chụp có thể tính riêng.",
+    faqs: [
+      {
+        q: "thuê social media content có bao gồm thiết kế ảnh không?",
+        a: "Có thể bao gồm tùy gói. Với doanh nghiệp có ảnh thật sẵn, chúng tôi có thể viết caption và brief bố cục. Nếu cần thiết kế carousel, chỉnh ảnh hoặc Reels, phạm vi sẽ được tách rõ để dễ báo giá.",
+      },
+      {
+        q: "Một tháng nên đăng bao nhiêu bài?",
+        a: "Với doanh nghiệp dịch vụ nhỏ, 12-20 bài/tháng là nhịp hợp lý để kênh không bị trống và vẫn đủ thời gian làm nội dung có chất lượng. Nếu có nhiều sự kiện, ưu đãi hoặc video ngắn, lịch có thể tăng lên.",
+      },
+      {
+        q: "Content social có giúp tăng booking không?",
+        a: "Có, nếu nội dung được gắn với hành trình khách hàng. Bài chỉ để đẹp thường khó tạo booking. Bài có thông tin dịch vụ, ảnh thật, review, FAQ, giá tham khảo, CTA và link đặt lịch sẽ hỗ trợ chuyển đổi tốt hơn.",
+      },
+      {
+        q: "Có viết content tiếng Anh không?",
+        a: "Có. Với doanh nghiệp du lịch phục vụ khách quốc tế, content tiếng Anh giúp Fanpage và Instagram chuyên nghiệp hơn. Có thể kết hợp tiếng Việt, tiếng Anh và nội dung riêng cho khách Hàn nếu đi cùng Naver Marketing.",
+      },
+      {
+        q: "Có cần chạy ads khi thuê content không?",
+        a: "Không bắt buộc. Content tốt giúp kênh nhìn đáng tin trước. Khi đã có nền nội dung, chạy ads sẽ hiệu quả hơn vì khách click vào page thấy thương hiệu đang hoạt động thật, có ảnh, có phản hồi và có social proof.",
+      },
+      {
+        q: "Main keyword của trang này là gì?",
+        a: "Main keyword của trang là 'thuê social media content'. Keyword được giữ nguyên trong H1, breadcrumb, primaryKeyword và meta title để phục vụ SEO đúng intent.",
+      },
+      {
+        q: "Công Thiên Agency khác gì freelancer viết caption?",
+        a: "Công Thiên Agency nhìn social như một phần của hệ thống marketing: website, Google Maps, Naver, social proof và booking. Vì vậy nội dung không chỉ là câu chữ, mà còn là cách dẫn khách về đúng điểm chạm chuyển đổi.",
+      },
+      {
+        q: "Cần chuẩn bị gì trước khi thuê social media content?",
+        a: "Bạn nên chuẩn bị danh sách dịch vụ, giá hoặc khoảng giá, ảnh thật hiện có, ưu đãi đang chạy, câu hỏi khách hay hỏi, link website, Google Maps, Zalo và các kênh social đang dùng. Nếu chưa có nhiều ảnh, vẫn có thể bắt đầu bằng content plan và brief hình ảnh để buổi quay chụp sau này hiệu quả hơn. Càng nhiều dữ liệu thật từ doanh nghiệp, content càng ít chung chung và càng dễ biến thành bài đăng có khả năng tạo booking.",
+      },
+    ],
+    related: [
+      { label: "Công Thiên Agency", href: "https://www.congthienagency.com/vi", note: "Brand entity" },
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Pillar" },
+      { label: "Threads Growth", href: "/vi/social-marketing/threads-growth", note: "Internal link" },
+      { label: "Facebook Page Management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam", note: "EN related" },
+      { label: "Social proof là gì", href: "/vi/blog/social-proof-la-gi", note: "Internal link" },
+      { label: "Meta Business", href: "https://www.facebook.com/business", note: "External link" },
+      { label: "Instagram Business", href: "https://business.instagram.com/", note: "External link" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "thuê social media content cho doanh nghiệp dịch vụ" },
+    ],
+    schema: { serviceType: "thuê social media content", offerMinPriceVnd: 5000000 },
+  },
+
+  /* ───────────────── EN: Naver advertising ───────────────── */
+  {
+    path: "/en/naver-marketing/naver-advertising",
+    lastModified: "2026-06-20",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver advertising", href: "/en/naver-marketing/naver-advertising" },
+    ],
+    primaryKeyword: "Naver advertising",
+    metaTitle: "Naver advertising | Cong Thien Agency",
+    metaDescription:
+      "Naver advertising for Vietnam businesses targeting Korean travelers: Search Ads, Naver Blog, Naver Place, blogger reviews, SEO structure, FAQ and rich results.",
+    eyebrow: "Naver · Advertising",
+    h1: "Naver advertising",
+    heroSub:
+      "A practical service page for hotels, restaurants, spas and tours in Vietnam that want Korean travelers to find, trust and contact them through Naver.",
+    heroCta: "Plan Naver advertising",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Naver advertising is not only a paid media question. In Korea, Naver functions as a search engine, content discovery layer, map platform and review environment. Korean travelers often move from search results to blog posts, Place profiles, maps, photos and brand websites before they enquire. For Vietnam tourism businesses, the best plan combines paid visibility with Korean-language content, trusted reviews, clear location signals and a conversion path. Cong Thien Agency uses this page to explain the working model: Search Ads can create fast visibility, Naver Blog builds trust, Naver Place strengthens local intent, and your website, Zalo, WhatsApp or booking form converts the demand.",
+    sections: [
+      {
+        heading: "Search intent behind this topic",
+        body:
+          "People searching for Naver advertising usually want to know whether they should buy ads, publish Naver Blog content, book Korean bloggers or optimise Naver Place. The answer depends on the business category, Korean demand, existing proof and ability to handle Korean enquiries.",
+      },
+      {
+        heading: "Core Naver advertising channels",
+        bullets: [
+          "Naver Search Ad for keyword-led visibility in Korean search results.",
+          "Naver Blog posts for review-style content and long-form trust building.",
+          "Naver Place and Naver Map for local business information and conversion confidence.",
+          "Korean blogger and KOC reviews for third-party proof when the brand is still unknown.",
+        ],
+      },
+      {
+        heading: "When paid ads make sense",
+        body:
+          "Paid ads work best after the destination is ready. A Korean user who clicks an ad should land on a page or profile with clear services, real photos, pricing context, location and booking options. If the trust layer is missing, paid traffic may produce visits without enquiries.",
+      },
+      {
+        heading: "When Naver Blog comes first",
+        body:
+          "For travel, hospitality, spa and restaurant businesses, Naver Blog often deserves attention before paid search. Korean travelers use long-form blog posts to verify atmosphere, prices, menus, directions, staff experience and whether the business feels real. A paid ad can introduce the brand, but a credible blog post helps the reader believe the brand.",
+      },
+      {
+        heading: "What content assets are needed",
+        bullets: [
+          "Real photos of the venue, service, menu, rooms, treatments or tour experience.",
+          "Korean-language descriptions that sound natural, not machine-translated.",
+          "Clear contact paths: website, Zalo, WhatsApp, booking form or Naver Place.",
+          "Review-style content that answers practical questions before the user asks them.",
+        ],
+      },
+      {
+        heading: "Backlinks and external links",
+        body:
+          "Backlinks should be earned through useful content, partner mentions, review posts and official profiles, not manufactured at scale. A good Naver Blog post may link to the website, booking page or map profile. External links on your own website should point to official platform pages when they help the user verify where Naver Search Ads, Naver Blog or Naver Map actually live.",
+      },
+      {
+        heading: "Entity, links and authority",
+        bodyParts: [
+          { type: "text", text: "Your entity should connect brand name, website, phone number, location, Naver content and social profiles. The official brand page for Cong Thien Agency is " },
+          { type: "link", text: "https://www.congthienagency.com/vi", href: "https://www.congthienagency.com/vi" },
+          { type: "text", text: ". Clean links from Naver Blog posts, partner pages, Google Business Profile and social channels help users verify the business." },
+        ],
+      },
+      {
+        heading: "SEO and rich results",
+        body:
+          "This page uses Service schema, Breadcrumb schema and FAQ schema through the site template. The structure helps Google understand the service, the entity, related questions and the relationship between the English page and the broader Naver Marketing cluster.",
+      },
+    ],
+    deliverables: {
+      title: "What we help with",
+      items: [
+        "Naver visibility audit for Vietnam tourism businesses",
+        "Korean keyword mapping by category, city and search intent",
+        "Channel recommendation: Search Ad, Blog, Place or blogger reviews",
+        "Landing page and CTA review for Korean traveler conversion",
+        "Internal links, external links and clean backlink planning",
+        "FAQ and service schema-ready content structure",
+      ],
+    },
+    whoFor: [
+      "Vietnam spas, restaurants, hotels and tours targeting Korean guests",
+      "Owners comparing Naver Search Ads with Naver Blog reviews",
+      "Marketing teams needing a Korean-market content plan",
+      "Brands wanting a trust layer before paid media spend",
+    ],
+    process: [
+      { step: "Audit", detail: "Review current website, maps, social and Naver visibility." },
+      { step: "Map", detail: "Build Korean keyword and intent map." },
+      { step: "Plan", detail: "Choose the right mix of Search Ads, Blog, Place and reviews." },
+      { step: "Track", detail: "Measure indexation, referral traffic, enquiries and Korean lead signals." },
+    ],
+    priceFrom: "From 8,000,000 VND",
+    priceNote: "Paid media budget, blogger fees and translation depth are scoped separately.",
+    faqs: [
+      {
+        q: "Is Naver advertising the same as Google Ads?",
+        a: "No. Search Ads are one part of Naver, but Korean users also rely heavily on Blog, Place, Map and review content. For tourism businesses, advertising should include both visibility and trust-building content.",
+      },
+      {
+        q: "Can Vietnam businesses advertise on Naver?",
+        a: "Yes, but language, account setup, payment, Korean keyword research and landing page readiness need planning. Many Vietnam businesses start with Naver Blog and blogger reviews before adding paid search.",
+      },
+      {
+        q: "Do I need Korean content?",
+        a: "For Korean traveler acquisition, yes. English content can support international teams, but Korean content is what matches Korean search behavior and improves trust inside Naver.",
+      },
+      {
+        q: "What external sources are useful?",
+        a: "Useful official sources include Naver Search Ad at searchad.naver.com and Naver Blog at blog.naver.com. These explain platform surfaces; the strategic work is connecting them to your business goals.",
+      },
+      {
+        q: "How much budget should a business prepare?",
+        a: "A practical starting budget should cover strategy, Korean keyword mapping, several trust-building content assets and tracking. For many Vietnam tourism businesses, the first phase is not simply a media budget; it is a foundation budget. After the first Naver Blog posts, Place optimisation or blogger reviews are live, a business can decide whether paid Search Ads deserve additional spend.",
+      },
+      {
+        q: "Can Naver advertising work without a Korean landing page?",
+        a: "It can work, but conversion is usually stronger when the user has a Korean-language destination or at least a very clear English page with real photos, prices, directions and contact options. If the page is confusing, paid visibility is wasted because the user still needs trust before making an enquiry.",
+      },
+      {
+        q: "What should be measured beyond clicks?",
+        a: "Measure indexation, keyword visibility, referral clicks, Naver-sourced messages, Korean-language enquiries, branded searches and the number of trust assets created. For Naver, content and social proof can be campaign outcomes even before direct sales are easy to attribute.",
+      },
+      {
+        q: "Who should manage replies from Korean leads?",
+        a: "The business should decide this before launch. If Korean leads arrive through Zalo, WhatsApp, email or booking forms, response templates and translation support should be ready. Slow or unclear replies can weaken a campaign even when the Naver content itself performs well.",
+      },
+      {
+        q: "What is the minimum content foundation before paid spend?",
+        a: "A minimum foundation usually includes one clear landing page, a complete contact path, real images, a Korean keyword map, several Naver Blog or blogger review assets and a profile-level location signal such as Naver Place or Google Business Profile. This foundation gives paid traffic something to validate. Without it, a user may click an ad, search the brand again, find very little supporting proof and leave without contacting the business.",
+      },
+      {
+        q: "How does Naver advertising support brand search?",
+        a: "Naver advertising can create demand that later appears as branded search. A traveler may first see a blog post, then search the business name, then check the website, then message on WhatsApp or Zalo. That means attribution should not only credit the last click. Brand search growth, direct messages mentioning Naver and repeat exposure across Blog, Place and website are important signs that the campaign is working.",
+      },
+      {
+        q: "Can one campaign target both Korean residents and Korean tourists?",
+        a: "Yes, but the content angles should differ. Korean residents in Vietnam may care more about convenience, language support and repeat use. Korean tourists often care about itinerary fit, location, safety, reviews, price and booking simplicity. The keyword map and content plan should separate these two audiences instead of assuming all Korean speakers search the same way.",
+      },
+      {
+        q: "What makes a Naver campaign fail?",
+        a: "Most weak campaigns fail because they treat Naver as a single ad placement instead of a trust ecosystem. Common issues include thin Korean copy, no real photos, no clear booking path, no review content, disconnected business information and no one ready to answer Korean enquiries. Fixing those basics often improves results more than simply increasing the paid media budget.",
+      },
+    ],
+    related: [
+      { label: "Cong Thien Agency", href: "https://www.congthienagency.com/vi", note: "Brand entity" },
+      { label: "How to advertise on Naver", href: "/en/naver-marketing/how-to-advertise-on-naver", note: "Guide" },
+      { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "Internal link" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Internal link" },
+      { label: "Naver Search Ad", href: "https://searchad.naver.com/", note: "External link" },
+      { label: "Naver Blog", href: "https://blog.naver.com", note: "External link" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver advertising for Vietnam businesses targeting Korean travelers" },
+    ],
+    schema: { serviceType: "Naver advertising", offerMinPriceVnd: 8000000 },
+  },
+
+  /* ───────────────── EN: How to advertise on Naver ───────────────── */
+  {
+    path: "/en/naver-marketing/how-to-advertise-on-naver",
+    lastModified: "2026-06-20",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "How to advertise on Naver", href: "/en/naver-marketing/how-to-advertise-on-naver" },
+    ],
+    primaryKeyword: "how to advertise on Naver",
+    metaTitle: "how to advertise on Naver | Cong Thien Agency",
+    metaDescription:
+      "How to advertise on Naver for Vietnam tourism businesses: Korean keywords, Search Ads, Naver Blog, Place, landing pages, backlinks, FAQ and rich results.",
+    eyebrow: "Naver · Step by step",
+    h1: "how to advertise on Naver",
+    heroSub:
+      "A step-by-step Naver playbook for Vietnam businesses: prepare Korean keywords, trust content, Naver Place, landing pages and measurement before scaling spend.",
+    heroCta: "Get a Naver plan",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "How to advertise on Naver is a strategy question before it is a media buying question. A business should first decide which Korean audience it wants, what the search intent is, what proof already exists and where the enquiry should convert. For Vietnam hotels, spas, restaurants and tour operators, the path usually combines Naver Blog content, blogger reviews, Naver Place optimisation and a website or contact channel that Korean travelers can understand.",
+    sections: [
+      {
+        heading: "Step 1: Define the commercial goal",
+        body:
+          "A launch campaign, a seasonal push, direct bookings and long-term Korean search presence need different structures. The clearer the business goal, the easier it is to choose between ads, blog content, blogger reviews and local optimisation.",
+      },
+      {
+        heading: "Step 2: Map Korean keywords",
+        bullets: [
+          "Category keywords: spa, restaurant, hotel, homestay, cooking class and tour in Korean.",
+          "Location keywords: Hoi An, Da Nang, Vietnam and neighborhood terms.",
+          "Intent keywords: review, price, booking, near me, recommended and family-friendly.",
+          "Brand keywords: official name, Korean transliteration and common spelling variations.",
+        ],
+      },
+      {
+        heading: "Step 3: Prepare conversion assets",
+        body:
+          "Before paid traffic, prepare a credible destination. This may be a Korean landing page, an English page with clear visuals, a Naver Blog post, a Naver Place profile, a booking form or a direct Zalo/WhatsApp path.",
+      },
+      {
+        heading: "Step 4: Decide the first channel",
+        body:
+          "The first channel should match the weakest part of the funnel. If nobody can find the brand, use search visibility. If people can find it but do not trust it, build review-style Naver Blog content. If the location is unclear, fix Naver Place and map signals. If the business already has proof and a good landing page, test Search Ads with a controlled budget.",
+      },
+      {
+        heading: "Step 5: Write for Korean decision behavior",
+        body:
+          "Korean travel research is detail-heavy. Strong content includes atmosphere, exact location, menus or services, price cues, how to book, who the experience suits and what makes it different from nearby competitors. A thin translated sales page usually underperforms a practical review-style article with real photos.",
+      },
+      {
+        heading: "Step 6: Add clean internal and external links",
+        bodyParts: [
+          { type: "text", text: "Connect the campaign to related pages such as " },
+          { type: "link", text: "Naver advertising", href: "/en/naver-marketing/naver-advertising" },
+          { type: "text", text: ", " },
+          { type: "link", text: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam" },
+          { type: "text", text: " and the official brand page " },
+          { type: "link", text: "Cong Thien Agency", href: "https://www.congthienagency.com/vi" },
+          { type: "text", text: ". Use external links to official platform pages when they help the reader verify the source." },
+        ],
+      },
+      {
+        heading: "Step 7: Measure signals",
+        body:
+          "Track published URLs, indexation, keyword visibility, referral clicks, message volume and qualified Korean enquiries. For Naver, social proof and brand trust are also measurable outcomes, not just immediate sales.",
+      },
+      {
+        heading: "Step 8: Refresh and expand",
+        body:
+          "Naver content should not be treated as a one-time upload. Refresh older posts when prices, opening hours, photos or service menus change. Expand into new keywords once the first cluster has enough signals. This keeps the account alive and gives search engines fresh context.",
+      },
+    ],
+    deliverables: {
+      title: "Step-by-step support",
+      items: [
+        "Korean keyword and intent map",
+        "Naver Blog and Place readiness audit",
+        "Landing page and CTA recommendations",
+        "Content brief for blog posts or blogger reviews",
+        "Internal link, external link and backlink plan",
+        "FAQ-rich service page structure for Google rich results",
+      ],
+    },
+    whoFor: [
+      "Businesses new to Naver",
+      "Marketing teams preparing Korean campaigns",
+      "Vietnam tourism brands deciding where to start",
+      "Owners wanting a practical checklist before spending money",
+    ],
+    process: [
+      { step: "Diagnose", detail: "Clarify business goal and current assets." },
+      { step: "Prepare", detail: "Build keyword map, content plan and landing path." },
+      { step: "Launch", detail: "Publish content, optimise Place or test paid visibility." },
+      { step: "Improve", detail: "Refresh content and scale what produces qualified leads." },
+    ],
+    priceFrom: "From 8,000,000 VND",
+    priceNote: "Scope depends on content volume, blogger involvement, language depth and paid media support.",
+    faqs: [
+      {
+        q: "What is the first step to advertise on Naver?",
+        a: "Start with Korean keyword research and a trust audit. If the business has no Korean content, no review layer and no clear landing path, paid ads should wait until those assets exist.",
+      },
+      {
+        q: "Should I use Naver Blog or Search Ads first?",
+        a: "For tourism businesses, Naver Blog or blogger reviews often come first because Korean travelers rely on review-style content. Search Ads can be added once the trust layer is strong.",
+      },
+      {
+        q: "How long does it take?",
+        a: "A serious starting phase usually takes two to three months. That gives enough time to publish content, collect signals, measure enquiries and decide whether to scale paid media.",
+      },
+      {
+        q: "Does this page support rich results?",
+        a: "Yes. The site template adds breadcrumb, service and FAQ structured data, which helps search engines understand the page and can support rich result eligibility.",
+      },
+      {
+        q: "What assets should I prepare before the first campaign?",
+        a: "Prepare brand name, location, website, Google Maps link, service menu, prices or price range, real photos, target audience, booking process and any existing reviews. These inputs let the campaign become specific instead of generic. If the business lacks photos, create a photo brief before writing Naver content.",
+      },
+      {
+        q: "Can I start with one Naver Blog post?",
+        a: "One post can create a useful proof asset, but it rarely creates broad search coverage. A stronger starting point is a small cluster of posts covering the core service, location, price or experience angle, then connecting those posts back to the website or booking channel.",
+      },
+      {
+        q: "How should backlinks be handled?",
+        a: "Backlinks should be natural and relevant. Good sources include Naver Blog reviews, partner pages, local tourism mentions, social profiles and official map or business profiles. Avoid low-quality link schemes because they do not build trust with Korean travelers.",
+      },
+      {
+        q: "Can Cong Thien Agency execute the content, not just advise?",
+        a: "Yes. Cong Thien Agency can help with Naver content planning, Naver Blog writing, Korean blogger coordination, Naver Place optimisation and the website or landing page path that receives the enquiry.",
+      },
+      {
+        q: "What should the landing page include?",
+        a: "A useful landing page should include the service offer, real photos, location, pricing context, opening hours, booking steps, contact buttons, reviews or proof, and language support. For Korean traffic, the page should reduce uncertainty quickly. If the user has to guess whether the business is open, where it is, how much it costs or how to book, the page is not ready for Naver traffic.",
+      },
+      {
+        q: "How often should Naver content be refreshed?",
+        a: "Refresh content whenever important business details change, such as menu, rooms, services, prices, opening hours, seasonal offers or contact paths. For active campaigns, review older content monthly or quarterly. Fresh photos and updated practical details help the content stay useful, and useful content is more likely to support search visibility and conversion.",
+      },
+      {
+        q: "What is the difference between a guide page and a sales page?",
+        a: "A guide page answers how the channel works and helps the user make a decision. A sales page focuses on the service offer. This page intentionally does both: it explains how to advertise on Naver, then connects that explanation to services that Cong Thien Agency can execute for Vietnam businesses targeting Korean travelers.",
+      },
+      {
+        q: "Should Naver content mention competitors or comparisons?",
+        a: "Comparison topics can work when handled carefully. Korean travelers often compare neighborhoods, menus, spa styles, hotel locations or tour formats before booking. The content should explain useful differences without attacking competitors. A practical comparison page or blog post can capture mid-funnel searches and help the reader understand why your service is the right fit for a specific situation.",
+      },
+      {
+        q: "How do I know which keyword to target first?",
+        a: "Start with the keyword that matches both search demand and business readiness. A high-volume keyword is not always the best first target if your page, photos or offer do not satisfy that intent. For a new campaign, choose a reachable cluster: service plus city plus review or booking intent. After the first pages collect signals, expand toward broader and more competitive terms with stronger internal links and proof. This keeps expansion measurable and practical.",
+      },
+    ],
+    related: [
+      { label: "Cong Thien Agency", href: "https://www.congthienagency.com/vi", note: "Brand entity" },
+      { label: "Naver advertising", href: "/en/naver-marketing/naver-advertising", note: "Related" },
+      { label: "Naver Blogs", href: "/en/naver-marketing/naver-blogs", note: "Internal link" },
+      { label: "Naver Blog English", href: "/en/naver-marketing/naver-blog-english", note: "Internal link" },
+      { label: "Naver Search Ad", href: "https://searchad.naver.com/", note: "External link" },
+      { label: "Naver.com", href: "https://www.naver.com", note: "External link" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/naver-pillar.webp", alt: "How to advertise on Naver step by step" },
+    ],
+    schema: { serviceType: "how to advertise on Naver", offerMinPriceVnd: 8000000 },
+  },
+
+  /* ───────────────── EN: Hire social media content ───────────────── */
+  {
+    path: "/en/social-marketing/hire-social-media-content",
+    lastModified: "2026-06-20",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Hire social media content", href: "/en/social-marketing/hire-social-media-content" },
+    ],
+    primaryKeyword: "hire social media content",
+    metaTitle: "hire social media content | Cong Thien Agency",
+    metaDescription:
+      "Hire social media content for tourism and service businesses in Vietnam: content calendar, captions, Reels briefs, social proof, internal links, FAQ and schema.",
+    eyebrow: "Social · Content",
+    h1: "hire social media content",
+    heroSub:
+      "A practical social content service for businesses that need consistent posts, stronger trust signals and clearer paths from social channels to bookings.",
+    heroCta: "Plan social content",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Hire social media content when your business has real services, real guests and real stories, but no consistent system for turning them into posts. For spas, restaurants, hotels, cafes, tours and local experiences, social media is often checked before a guest sends a message or books. A quiet page creates doubt. A busy but generic page creates noise. Cong Thien Agency plans social content as part of a wider marketing system: website, Google Maps, Naver, reviews, social proof and direct contact channels.",
+    sections: [
+      {
+        heading: "What this searcher wants",
+        body:
+          "People searching this topic want scope, price, post volume, design expectations, caption quality, platform coverage and measurement. They are not only buying words; they are buying a system that keeps the brand visible and credible.",
+      },
+      {
+        heading: "What social content includes",
+        bullets: [
+          "Monthly content calendar linked to services, seasonality, offers and guest behavior.",
+          "Captions for Facebook, Instagram, TikTok or Threads in the brand voice.",
+          "Briefs for real photos, short videos, Reels and carousel posts.",
+          "Calls to action that lead to inbox, Zalo, WhatsApp, website, Google Maps or booking forms.",
+        ],
+      },
+      {
+        heading: "Entity and trust",
+        bodyParts: [
+          { type: "text", text: "Social content should reinforce the same entity signals as the website and map profiles. The official brand page is " },
+          { type: "link", text: "https://www.congthienagency.com/vi", href: "https://www.congthienagency.com/vi" },
+          { type: "text", text: ". Consistent name, services, phone, location and links reduce friction for both users and search engines." },
+        ],
+      },
+      {
+        heading: "What makes outsourced content work",
+        body:
+          "Outsourced content works when the agency has access to real business information. Service details, staff notes, guest questions, reviews, seasonal offers, photos and booking rules make the difference between specific content and generic posting. The business should not disappear after hiring content support; the best results come from a light but steady feedback loop.",
+      },
+      {
+        heading: "Platform-specific content roles",
+        bullets: [
+          "Facebook supports local trust, reviews, inbox behavior and practical service updates.",
+          "Instagram supports visual discovery, atmosphere, Reels and saved inspiration.",
+          "TikTok supports short-form reach, behind-the-scenes clips and experience-led storytelling.",
+          "Threads supports founder voice, quick updates, community notes and lightweight thought content.",
+        ],
+      },
+      {
+        heading: "Links and measurement",
+        body:
+          "Good social content points users to owned assets: service pages, booking pages, Google Maps, Naver content or a direct contact channel. Measurement should include reach and engagement, but also link clicks, enquiries, saves, shares and mentions from guests who checked the social profile before booking.",
+      },
+      {
+        heading: "Backlinks from social content",
+        body:
+          "Most social links are not classic SEO backlinks, but they still matter as discovery and entity signals. A consistent profile linking to the website, Google Maps and booking pages helps users verify the brand. Social content can also attract real mentions from partners, guests and local media when the posts are useful enough to share.",
+      },
+      {
+        heading: "Structured SEO support",
+        body:
+          "This English page is connected to the Social Marketing cluster and uses FAQ schema, breadcrumb schema and service schema through the shared page template, supporting search engines and rich result eligibility.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Social profile audit",
+        "Monthly content pillars and calendar",
+        "Captions in English or Vietnamese",
+        "Image, carousel and Reels briefs",
+        "Social proof and review prompts",
+        "Internal link and CTA planning",
+      ],
+    },
+    whoFor: [
+      "Spas and wellness businesses",
+      "Restaurants, cafes and bars",
+      "Hotels, homestays and villas",
+      "Tours, cooking classes and local experiences",
+      "Brands preparing to run ads after improving their social presence",
+    ],
+    process: [
+      { step: "Audit", detail: "Review channels, services, audience and existing assets." },
+      { step: "Plan", detail: "Create pillars, calendar, formats and CTAs." },
+      { step: "Produce", detail: "Write captions and briefs for visuals or short videos." },
+      { step: "Review", detail: "Read signals and refine the next month." },
+    ],
+    priceFrom: "From 5,000,000 VND / month",
+    priceNote: "Final pricing depends on channels, post volume, languages, design work and video requirements.",
+    faqs: [
+      {
+        q: "Does hiring social media content include design?",
+        a: "It can. Some businesses need captions and planning only; others need carousel layouts, edited visuals or Reels briefs. The scope is separated clearly before quoting.",
+      },
+      {
+        q: "How many posts per month are recommended?",
+        a: "For small service businesses, 12-20 posts per month is a practical baseline. It keeps the channel active without forcing low-quality filler content.",
+      },
+      {
+        q: "Can social content increase bookings?",
+        a: "Yes, when it supports the buyer journey. Content with real photos, service details, reviews, FAQs, booking links and clear CTAs performs better than generic brand posts.",
+      },
+      {
+        q: "Can you write in English?",
+        a: "Yes. English content is useful for tourism businesses serving international guests, and it can be paired with Vietnamese or Korean-market content when needed.",
+      },
+      {
+        q: "What should I prepare before hiring social media content?",
+        a: "Prepare service lists, pricing or price ranges, real photos, customer questions, brand tone, website links, Google Maps links, current social accounts and examples of posts you like or dislike. The more real inputs available, the less generic the content will feel.",
+      },
+      {
+        q: "Do I need video content?",
+        a: "Video is strongly recommended for tourism and service businesses, but it does not need to be overproduced. Short clips showing the space, staff, service process, guest experience or practical directions can feed Reels, TikTok and Stories. Captions and planning can be created before or after filming.",
+      },
+      {
+        q: "How is performance reported?",
+        a: "A useful report should cover publishing consistency, best-performing topics, engagement quality, link clicks, inbox enquiries, booking signals and what to change next month. Vanity metrics alone are not enough; the content should move users closer to trust and contact.",
+      },
+      {
+        q: "Can this support paid ads later?",
+        a: "Yes. A strong organic content base makes paid ads more credible. When a user clicks an ad and checks the page, recent posts, real photos, reviews and clear service information reduce doubt and improve the chance of enquiry.",
+      },
+      {
+        q: "What is the difference between social content and social media management?",
+        a: "Social content usually covers planning, captions, post ideas, visual briefs and publishing assets. Social media management can also include scheduling, community replies, inbox handling, reporting, profile optimisation and campaign coordination. Some businesses only need content; others need the full management layer because nobody internally has time to keep the channel moving.",
+      },
+      {
+        q: "Can one content calendar serve every platform?",
+        a: "One calendar can coordinate themes, but each platform should have a slightly different execution. Facebook may need more practical service information, Instagram may need stronger visual storytelling, TikTok may need short video hooks and Threads may need lighter conversational updates. Reusing the same idea is fine; copying the same post everywhere usually weakens performance.",
+      },
+      {
+        q: "How does social content connect to SEO?",
+        a: "Social posts are not a replacement for website SEO, but they support entity trust and user behavior. A complete social profile links back to the website, reinforces brand name and services, and gives users another place to verify activity. When social content earns real mentions, shares or partner references, it can indirectly support discoverability and brand confidence.",
+      },
+      {
+        q: "What makes content feel premium for hospitality and tourism?",
+        a: "Premium content is specific. It shows real spaces, real staff, real guest questions, service details, local context and practical booking information. It avoids generic captions that could fit any business. For tourism, the best content helps a stranger imagine the experience clearly enough to trust the brand before they arrive.",
+      },
+      {
+        q: "Should social content be written before or after photos are ready?",
+        a: "Both workflows can work. If photos are ready, captions can be written around real proof immediately. If photos are not ready, the content plan should come first because it tells the team what to shoot: service steps, room details, menu highlights, guest moments, staff introductions, directions and frequently asked questions. Planning first often makes the photo session more efficient and more useful for future posts.",
+      },
+      {
+        q: "What should not be outsourced?",
+        a: "The business should keep ownership of facts, offers, guest experience and final approval. An outside content partner can structure and write the content, but the business still needs to confirm prices, availability, policies, sensitive claims and operational details. This keeps the content accurate and prevents the social channel from promising something the team cannot deliver.",
+      },
+    ],
+    related: [
+      { label: "Cong Thien Agency", href: "https://www.congthienagency.com/vi", note: "Brand entity" },
+      { label: "Social Marketing", href: "/vi/social-marketing", note: "Pillar" },
+      { label: "Facebook Page Management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam", note: "Internal link" },
+      { label: "Social Media Growth Vietnam", href: "/en/social-marketing/social-media-growth-vietnam", note: "Internal link" },
+      { label: "Meta Business", href: "https://www.facebook.com/business", note: "External link" },
+      { label: "Instagram Business", href: "https://business.instagram.com/", note: "External link" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "Hire social media content for tourism and service businesses" },
+    ],
+    schema: { serviceType: "hire social media content", offerMinPriceVnd: 5000000 },
+  },
+
 ];
 
 export function getService(path: string): Service | undefined {
