@@ -4363,6 +4363,8 @@ export const SERVICES: Service[] = [
       { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "Related keyword" },
       { label: "Naver SEO for hotels", href: "/en/naver-marketing/naver-seo-agency-for-hotels", note: "Hotel keyword" },
       { label: "Naver Place optimization", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Vietnamese service page" },
+      { label: "Naver Marketing Vietnam: reach Korean tourists", href: "/en/blog/naver-marketing-vietnam-guide", note: "Blog guide" },
+      { label: "How to attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Blog guide" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver marketing agency Vietnam for Korean tourists" },
@@ -4466,6 +4468,8 @@ export const SERVICES: Service[] = [
       { label: "Korean blogger booking", href: "/vi/naver-marketing/booking-blogger-han", note: "Vietnamese service page" },
       { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
       { label: "Naver Place vs Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao", note: "Vietnamese explainer" },
+      { label: "Naver Blog reviews guide", href: "/en/blog/naver-blog-reviews-guide", note: "Blog guide" },
+      { label: "What Korean tourists search for in Vietnam", href: "/en/blog/what-korean-tourists-search-vietnam", note: "Blog guide" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver Blog marketing Vietnam for Korean travelers" },
@@ -4569,6 +4573,7 @@ export const SERVICES: Service[] = [
       { label: "Hotel website design", href: "/vi/thiet-ke-website/website-khach-san-homestay-hoi-an", note: "Direct booking" },
       { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Agency service" },
       { label: "Google Maps for hotels", href: "/vi/google-maps-marketing/cho-khach-san", note: "Vietnamese local SEO page" },
+      { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Blog guide" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/illustrations/homestay.webp", alt: "Naver SEO agency for hotels in Vietnam" },
@@ -4672,6 +4677,8 @@ export const SERVICES: Service[] = [
       { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "Content strategy" },
       { label: "Korean blogger booking", href: "/vi/naver-marketing/booking-blogger-han", note: "Vietnamese review page" },
       { label: "Naver Marketing Hoi An", href: "/vi/naver-marketing/hoi-an", note: "Vietnamese local page" },
+      { label: "How to attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Blog guide" },
+      { label: "What Korean tourists search for in Vietnam", href: "/en/blog/what-korean-tourists-search-vietnam", note: "Blog guide" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "How to attract Korean tourists with Naver in Vietnam" },
@@ -4775,6 +4782,8 @@ export const SERVICES: Service[] = [
       { label: "Naver Place optimization", href: "/vi/naver-marketing/toi-uu-naver-place", note: "Vietnamese service page" },
       { label: "Restaurant website design", href: "/vi/thiet-ke-website/nha-hang-hoi-an", note: "Menu and booking" },
       { label: "Google Maps for restaurants", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Vietnamese local SEO page" },
+      { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Blog guide" },
+      { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Blog guide" },
     ],
     images: [
       { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Naver Map optimization for restaurants in Vietnam" },
@@ -5253,6 +5262,7 @@ export const SERVICES: Service[] = [
       { label: "Attract Korean Tourists with Naver", href: "/en/naver-marketing/attract-korean-tourists-with-naver", note: "Tourism playbook" },
       { label: "Naver Blogs overview", href: "/en/naver-marketing/naver-blogs", note: "Platform overview" },
       { label: "Naver Blog official", href: "https://blog.naver.com", note: "External · Naver Blog platform" },
+      { label: "Naver Blog reviews guide", href: "/en/blog/naver-blog-reviews-guide", note: "Blog guide" },
       { label: "Papago translator", href: "https://papago.naver.com", note: "External · Naver translation tool" },
     ],
     images: [
@@ -5530,6 +5540,7 @@ export const SERVICES: Service[] = [
       { label: "Naver Blog English guide", href: "/en/naver-marketing/naver-blog-english", note: "For non-Korean readers" },
       { label: "Attract Korean Tourists with Naver", href: "/en/naver-marketing/attract-korean-tourists-with-naver", note: "Tourism playbook" },
       { label: "Naver Blog official", href: "https://blog.naver.com", note: "External · Naver Blog platform" },
+      { label: "Naver Blog reviews guide", href: "/en/blog/naver-blog-reviews-guide", note: "Blog guide" },
       { label: "Naver search engine", href: "https://www.naver.com", note: "External · Korea's #1 search engine" },
     ],
     images: [
@@ -5806,6 +5817,7 @@ export const SERVICES: Service[] = [
       { label: "Audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile", note: "Profile audit" },
       { label: "Review reputation Vietnam", href: "/vi/google-maps-marketing/review-reputation", note: "VI service page" },
       { label: "Handle negative reviews", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc", note: "Negative review workflow" },
+      { label: "Google Maps for Hoi An & Da Nang businesses", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Blog guide" },
       { label: "Google Business Profile Help", href: "https://support.google.com/business", note: "External · Google official support" },
       { label: "Google review policies", href: "https://support.google.com/contributionpolicy/answer/7400114", note: "External · Google policy reference" },
     ],
@@ -5955,6 +5967,210 @@ export const SERVICES: Service[] = [
       { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Việc làm đánh giá Map – chương trình CTV trải nghiệm thật" },
     ],
     schema: { serviceType: "Google Maps Review & Reputation Marketing", offerMinPriceVnd: 6000000 },
+  },
+
+  // ─── EN Website Design spokes ───────────────────────────────────────────────
+  {
+    path: "/en/website-design/spa-hotel-website-hoi-an",
+    cluster: "website",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Spa & Hotel Website Design Hoi An", href: "/en/website-design/spa-hotel-website-hoi-an" },
+    ],
+    primaryKeyword: "spa hotel website design Hoi An",
+    metaTitle: "Spa & Hotel Website Design in Hoi An | Cong Thien Agency",
+    metaDescription:
+      "Professional website design for spas, hotels, homestays and resorts in Hoi An and Da Nang. Mobile-first, fast, multilingual and built for direct bookings.",
+    eyebrow: "Website · Hoi An",
+    h1: "Spa & Hotel Website Design in Hoi An and Da Nang",
+    heroSub:
+      "Websites built specifically for tourism accommodation and wellness businesses in Hoi An and Da Nang — fast, mobile-first, multilingual and optimised for direct bookings.",
+    heroCta: "Get a website proposal",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Your website is the only online asset you fully control. OTA platforms like Booking.com and Agoda charge commission on every booking and own the customer relationship. A well-built, fast-loading website for your spa or hotel in Hoi An creates a direct booking channel that costs nothing per transaction, ranks on Google, and gives Korean, Western and Vietnamese guests a trustworthy place to learn about your business and book.",
+    sections: [
+      {
+        heading: "What a spa or hotel website needs to convert visitors into bookings",
+        bullets: [
+          "Fast loading on mobile — most guests research and book on their phone, often on slow hotel Wi-Fi.",
+          "Real photography of the space, rooms and services — not stock images that undermine trust.",
+          "Clear pricing or rate request form that removes friction from the booking step.",
+          "Multilingual content in English and Vietnamese as a minimum; Korean language pages if Korean tourists are a target segment.",
+          "Integration with Google Maps so the listing and website reinforce each other for local search.",
+        ],
+      },
+      {
+        heading: "SEO and Google Maps visibility built into the design",
+        body:
+          "The website is built to be indexed and ranked by Google from day one — with correct heading structure, LocalBusiness schema markup, consistent name and address information, fast page load scores and location-relevant content. These signals also strengthen your Google Business Profile ranking because Google uses website data to validate and rank local listings.",
+      },
+      {
+        heading: "Multilingual and Korean-ready",
+        body:
+          "For spas and hotels in Hoi An and Da Nang that serve Korean tourists, the website can include Korean-language service pages that connect to your Naver marketing strategy. A website page in Korean that is linked from a Naver Blog review creates a trust chain from discovery to booking that fully Korean-language businesses cannot offer.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Mobile-first responsive design built on Next.js or a suitable CMS",
+        "PageSpeed performance target of 90+ on mobile",
+        "LocalBusiness schema markup for Google Maps reinforcement",
+        "Booking enquiry form or integration with your booking system",
+        "English and Vietnamese content as standard; Korean content available as an add-on",
+        "Handover with a simple content management guide",
+      ],
+    },
+    whoFor: [
+      "Spas and massage centres in Hoi An and Da Nang",
+      "Boutique hotels, resorts and homestays",
+      "Wellness and retreat businesses",
+      "Accommodation businesses wanting to reduce OTA commission",
+    ],
+    process: [
+      { step: "Brief", detail: "Understand your guest profile, booking channels and what you want the website to achieve." },
+      { step: "Design", detail: "Create a site structure and visual design suited to your brand and guest expectations." },
+      { step: "Build", detail: "Develop the site with performance, SEO and multilingual requirements built in from the start." },
+      { step: "Launch", detail: "Deploy, connect to Google Search Console and submit the sitemap for indexing." },
+    ],
+    priceFrom: "Website from 15,000,000 VND",
+    priceNote:
+      "Price depends on page count, features, languages and booking integrations. Message me on Zalo for a quote based on your specific requirements.",
+    faqs: [
+      {
+        q: "Do I need a website if I already have a Booking.com or Agoda listing?",
+        a: "Yes. OTA platforms take 15–25% commission on every booking and control the guest relationship. Your own website creates a direct booking channel where you pay no commission and can build your brand and email list independently.",
+      },
+      {
+        q: "How long does a spa or hotel website take to build?",
+        a: "A standard project takes 3–5 weeks from brief to launch. Timeline depends on how quickly content (photos, text, pricing) is ready and how many revision rounds are needed.",
+      },
+      {
+        q: "Will the website rank on Google?",
+        a: "The site is built with technical SEO, LocalBusiness schema and Google Maps integration from the start. Ranking depends on competitive factors in your specific market, but the technical foundation will be correct.",
+      },
+      {
+        q: "Can you add Korean-language pages to the website?",
+        a: "Yes. Korean-language service pages can be added as part of the initial build or as a later add-on. These pages work best when combined with a Naver marketing strategy that links Korean blog content back to the website.",
+      },
+      {
+        q: "Can you connect the website to my existing booking system?",
+        a: "This depends on your booking system and whether it provides an embeddable widget or API. Common systems like Booking Engine, SimplyBook and similar can usually be integrated.",
+      },
+    ],
+    related: [
+      { label: "Tourism Website Design Vietnam", href: "/en/website-design/tourism-website-design-vietnam", note: "Related service" },
+      { label: "Google Maps for hotels", href: "/vi/google-maps-marketing/cho-khach-san", note: "Local SEO service" },
+      { label: "Naver SEO for hotels", href: "/en/naver-marketing/naver-seo-agency-for-hotels", note: "Korean market" },
+      { label: "Website design for tourism Hoi An", href: "/en/blog/website-design-for-tourism-hoi-an", note: "Blog guide" },
+      { label: "Booking website vs OTA for tourism", href: "/en/blog/booking-website-vs-ota-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-website.webp", alt: "Spa hotel website design for tourism businesses in Hoi An" },
+    ],
+    schema: { serviceType: "Website Design for Spas and Hotels", offerMinPriceVnd: 15000000 },
+  },
+  {
+    path: "/en/website-design/tourism-website-design-vietnam",
+    cluster: "website",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Tourism Website Design Vietnam", href: "/en/website-design/tourism-website-design-vietnam" },
+    ],
+    primaryKeyword: "tourism website design Vietnam",
+    metaTitle: "Tourism Website Design in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Website design for tourism businesses in Vietnam: cooking classes, tour operators, restaurants and local experiences in Hoi An and Da Nang. Fast, multilingual and built for bookings.",
+    eyebrow: "Website · Vietnam Tourism",
+    h1: "Tourism Website Design for Vietnam Businesses",
+    heroSub:
+      "Websites for cooking classes, tour operators, restaurants, local experiences and hospitality businesses in Vietnam — built to rank on Google, load fast and convert international visitors into bookings.",
+    heroCta: "Get a website proposal",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Tourism businesses in Vietnam — cooking classes, local tours, restaurants, activity providers — often rely entirely on OTA listings and social media. A dedicated website changes the game: it creates a direct booking channel that you own, a platform for Korean and English-language SEO, and a trust anchor that booking platforms cannot provide.",
+    sections: [
+      {
+        heading: "What makes a tourism website different from a general business website",
+        bullets: [
+          "Booking and enquiry flow is central — not an afterthought. The site must make it easy to check availability and book or enquire.",
+          "Photo and video content is the primary conversion driver — guests need to see exactly what the experience looks and feels like before they commit.",
+          "Multilingual is not optional for international tourism businesses — English is a minimum; Korean or Japanese may apply depending on your target market.",
+          "Local SEO signals must be built in — the site should reinforce your Google Maps listing and rank for location-based searches.",
+          "Mobile performance is critical — most international tourists research and book on their phone.",
+        ],
+      },
+      {
+        heading: "Reaching Korean tourists through your website",
+        body:
+          "For cooking classes, tours and restaurants in Hoi An that serve Korean visitors, a website with Korean-language pages creates a powerful combination with your Naver marketing: Korean blog posts link to your Korean website pages, Korean tourists can read about your business in their own language, and Google indexes the Korean content for local search. This is the difference between being found and not being found by the Korean market.",
+      },
+      {
+        heading: "Direct booking without OTA commission",
+        body:
+          "Many tourism activity providers in Hoi An pay 20–30% commission to OTA platforms like Viator, Klook or GetYourGuide. A website with a direct booking form or integration with a booking engine creates a channel where the commission stays with you. Over time this difference compounds significantly, especially for recurring and high-volume businesses.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Website design and development suited to tourism activity businesses",
+        "Booking enquiry form or direct booking integration",
+        "Mobile-first, fast-loading build with PageSpeed 90+ target",
+        "English and Vietnamese content; Korean language available as add-on",
+        "LocalBusiness schema and Google Maps reinforcement",
+        "Photo optimisation for tourism visuals",
+      ],
+    },
+    whoFor: [
+      "Cooking classes and culinary experience providers",
+      "Local tour operators and activity providers",
+      "Restaurants and cafes targeting international guests",
+      "Photography tours, bicycle tours and cultural experiences",
+    ],
+    process: [
+      { step: "Brief", detail: "Define your core offering, target guests, booking process and any existing tech stack." },
+      { step: "Design", detail: "Build a site structure that leads international visitors naturally from discovery to enquiry." },
+      { step: "Build", detail: "Develop with performance, multilingual SEO and booking flow requirements in place from the start." },
+      { step: "Launch", detail: "Go live with sitemap submission, Google Search Console setup and a short training session." },
+    ],
+    priceFrom: "Website from 12,000,000 VND",
+    priceNote:
+      "Price depends on page count, booking integration, number of languages and photo editing requirements. Message me on Zalo for a custom quote.",
+    faqs: [
+      {
+        q: "Can you build a website for a cooking class or tour business in Hoi An?",
+        a: "Yes — cooking classes and local tours are a strong fit for this service. The site will include an experience description page, photo gallery, booking form and optional Korean-language content.",
+      },
+      {
+        q: "What booking system should I use?",
+        a: "This depends on your volume and workflow. Simple businesses often start with a WhatsApp or Zalo enquiry form. Growing businesses can integrate with SimplyBook, Fareharbor or a custom solution. The recommendation will come from the brief.",
+      },
+      {
+        q: "How does a website help my Google Maps ranking?",
+        a: "Google uses your website to verify and strengthen your local listing — checking that the name, address and phone number match, reading the content to understand what you offer, and using the site's quality and speed as a trust signal. A well-built website directly improves your Maps ranking over time.",
+      },
+      {
+        q: "Do I need Korean-language pages if I want Korean tourists?",
+        a: "It helps significantly — especially if you are also investing in Naver Blog marketing. Korean pages create a landing destination for Naver blog links and allow Korean tourists to read about your business in their own language before they book.",
+      },
+    ],
+    related: [
+      { label: "Spa & Hotel Website Design Hoi An", href: "/en/website-design/spa-hotel-website-hoi-an", note: "Related service" },
+      { label: "Attract Korean tourists with Naver", href: "/en/naver-marketing/attract-korean-tourists-with-naver", note: "Korean market" },
+      { label: "Google Maps for restaurants", href: "/vi/google-maps-marketing/cho-nha-hang", note: "Local SEO" },
+      { label: "Website design for tourism Hoi An", href: "/en/blog/website-design-for-tourism-hoi-an", note: "Blog guide" },
+      { label: "Multilingual website for Vietnam tourism", href: "/en/blog/multilingual-website-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-website.webp", alt: "Tourism website design for cooking classes and tours in Vietnam" },
+    ],
+    schema: { serviceType: "Tourism Website Design", offerMinPriceVnd: 12000000 },
   },
 
 ];

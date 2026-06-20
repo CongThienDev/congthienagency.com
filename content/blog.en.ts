@@ -11,7 +11,7 @@ export const BLOG_HUB_EN = {
   focusLinks: [
     { label: "Naver Marketing", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Core service" },
     { label: "Google Maps Marketing", href: "/en/google-maps-marketing/map-review-jobs", note: "Core service" },
-    { label: "Website Design", href: "/en/naver-marketing/attract-korean-tourists-with-naver", note: "Core service" },
+    { label: "Website Design", href: "/en/website-design/tourism-website-design-vietnam", note: "Core service" },
   ],
 };
 
@@ -509,6 +509,336 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     related: [
       { label: "Google Maps Marketing service", href: "/en/google-maps-marketing/map-review-jobs", note: "Service" },
+      { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Related" },
+      { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Related" },
+    ],
+  },
+  // ─── Website cluster EN ──────────────────────────────────────────────────────
+  {
+    slug: "website-design-for-tourism-hoi-an",
+    heroImage: {
+      src: "/images/blog/website-design-for-tourism-hoi-an.webp",
+      alt: "Laptop showing a tourism website for a business in Hoi An Vietnam",
+    },
+    path: "/en/blog/website-design-for-tourism-hoi-an",
+    cluster: "website",
+    title: "Website Design for Tourism Businesses in Hoi An and Da Nang",
+    metaTitle: "Website Design for Tourism Businesses Hoi An Da Nang | Cong Thien Agency",
+    metaDescription:
+      "What tourism businesses in Hoi An and Da Nang need from a website in 2026: direct booking, multilingual content, Google Maps integration and fast mobile performance.",
+    excerpt:
+      "A website built for a tourism business is not the same as a generic business website. Here is what spas, hotels, cooking classes and tours in Hoi An and Da Nang actually need.",
+    date: "2026-06-20",
+    readingMinutes: 8,
+    primaryKeyword: "website design tourism Hoi An",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Website Design for Tourism Hoi An", href: "/en/blog/website-design-for-tourism-hoi-an" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Tourism businesses in Hoi An and Da Nang operate in one of the most competitive online markets in Southeast Asia. Every spa, restaurant, cooking class and hotel is competing for the same international travellers — and most of those travellers decide where to spend their money before they even arrive in Vietnam. Your website is either part of that decision or absent from it.",
+      },
+      { type: "h2", text: "Why tourism businesses need a dedicated website" },
+      {
+        type: "p",
+        text: "A generic business website is not enough for tourism. Tourism websites exist at the intersection of search engine visibility, booking conversion and cross-channel trust building. A potential guest needs to find you on Google, trust what they see, understand what you offer and complete a booking — or at minimum make contact — without leaving your site. Each of those steps requires specific design and technical decisions.",
+      },
+      { type: "h2", text: "What international guests look for on a tourism website" },
+      {
+        type: "ul",
+        items: [
+          "Real photography — not stock images. Guests want to see the actual space, food, staff and service.",
+          "Clear pricing or a simple rate request process — vagueness about price creates friction and drives guests to OTA platforms instead.",
+          "Easy mobile browsing — the majority of international tourists research on their phone.",
+          "Fast loading — slow sites are abandoned before they are read, especially in areas with variable internet.",
+          "A contact method they trust — WhatsApp or Zalo for most international guests; KakaoTalk for Korean visitors.",
+        ],
+      },
+      { type: "h2", text: "Google Maps integration: why your website and listing must work together" },
+      {
+        type: "p",
+        text: "Google uses your website to verify and reinforce your Google Maps listing. When your website contains consistent business name, address and contact information, uses LocalBusiness schema markup and loads quickly, Google's local ranking algorithm rewards this with better Maps visibility. A fast, well-structured website is one of the most practical things you can do to improve your position in local search results.",
+      },
+      { type: "h2", text: "Multilingual websites for Hoi An and Da Nang" },
+      {
+        type: "p",
+        text: "Hoi An and Da Nang receive guests from Korea, Japan, Australia, Europe and across Southeast Asia. A website that is only available in Vietnamese is effectively invisible to most of them. English as a second language is the minimum standard. Korean-language pages are particularly valuable for spas, hotels and restaurants that want to attract Korean tourists — and they work best when combined with a Naver marketing presence that links Korean blog content back to your Korean website pages.",
+      },
+      { type: "h2", text: "Direct booking: the core function of a tourism website" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "The most important function of a tourism website is converting visitors into bookings without requiring them to go through an OTA. Whether this is an embedded booking form, a WhatsApp link, a calendar widget or a full payment-enabled booking engine depends on your business model and volume. The key is that the path from 'I am interested' to 'I have confirmed' must be as short and clear as possible. For more on this, read the guide to " },
+          { type: "link", text: "booking websites for tourism businesses in Vietnam", href: "/en/blog/booking-website-vs-ota-tourism-vietnam" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Technical standards that matter for tourism websites" },
+      {
+        type: "ul",
+        items: [
+          "PageSpeed score of 90+ on mobile — Google uses this as a ranking factor and guests notice slow sites.",
+          "Correct heading structure (H1, H2, H3) so that each page has one clear topic Google can understand.",
+          "LocalBusiness schema markup so that Google can extract your business information reliably.",
+          "Canonical URLs and hreflang tags for multilingual pages to avoid duplicate content issues.",
+          "An SSL certificate (HTTPS) — non-negotiable for any guest-facing page that handles contact forms or payments.",
+        ],
+      },
+      { type: "h2", text: "Getting started" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "The first step is defining what you need the website to do — which booking channels to support, which languages to include, what the main guest journey looks like. From there, the design and build follows a clear brief. See the " },
+          { type: "link", text: "website design service for spas and hotels in Hoi An", href: "/en/website-design/spa-hotel-website-hoi-an" },
+          { type: "text", text: " or the " },
+          { type: "link", text: "tourism website design service for tours and cooking classes", href: "/en/website-design/tourism-website-design-vietnam" },
+          { type: "text", text: " for full details." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How much does a tourism website cost in Vietnam?",
+        a: "A professional website for a spa, hotel or cooking class in Hoi An typically starts from 12–15 million VND for a standard build. Price depends on page count, booking integrations, number of languages and how much content preparation is required.",
+      },
+      {
+        q: "Should I use WordPress or a custom framework for my tourism website?",
+        a: "For small-to-medium tourism businesses, a headless Next.js build or a well-configured WordPress site both work well. The priority is performance and ease of content updates. The choice depends on your team's comfort with technology and the complexity of your booking flow.",
+      },
+      {
+        q: "Can I manage the website content myself after it is built?",
+        a: "Yes — the handover includes a content management guide. Most content updates for a tourism business (updating photos, changing prices, adding seasonal offers) can be done without technical knowledge once the system is set up.",
+      },
+      {
+        q: "How long does it take for the website to appear on Google?",
+        a: "Google typically indexes a new site within 2–4 weeks of launch if a sitemap is submitted to Google Search Console. Initial ranking for competitive terms takes longer — but the technical setup from the launch date means you are accumulating authority from day one.",
+      },
+    ],
+    related: [
+      { label: "Spa & Hotel Website Design", href: "/en/website-design/spa-hotel-website-hoi-an", note: "Service" },
+      { label: "Tourism Website Design Vietnam", href: "/en/website-design/tourism-website-design-vietnam", note: "Service" },
+      { label: "Booking website vs OTA for tourism", href: "/en/blog/booking-website-vs-ota-tourism-vietnam", note: "Related" },
+      { label: "Google Maps for Hoi An businesses", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Related" },
+    ],
+  },
+  {
+    slug: "booking-website-vs-ota-tourism-vietnam",
+    heroImage: {
+      src: "/images/blog/booking-website-vs-ota-tourism-vietnam.webp",
+      alt: "Person booking a hotel on their phone — direct booking vs OTA platform",
+    },
+    path: "/en/blog/booking-website-vs-ota-tourism-vietnam",
+    cluster: "website",
+    title: "Booking Website vs OTA Platforms: What Works for Tourism Businesses in Vietnam",
+    metaTitle: "Direct Booking Website vs OTA for Tourism Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Should your tourism business in Hoi An or Da Nang invest in its own booking website or rely on Booking.com, Agoda, Viator and Klook? A practical comparison for spas, hotels, tours and restaurants.",
+    excerpt:
+      "OTA platforms bring guests but charge 15–25% commission and own the customer relationship. A direct booking website is cheaper per transaction — but only if it converts. Here is how to think through the decision.",
+    date: "2026-06-20",
+    readingMinutes: 8,
+    primaryKeyword: "booking website vs OTA Vietnam tourism",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Booking Website vs OTA Tourism Vietnam", href: "/en/blog/booking-website-vs-ota-tourism-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Booking.com, Agoda, Viator, Klook, GetYourGuide — OTA platforms dominate how international tourists book travel experiences in Vietnam. If you are a hotel, spa, cooking class or tour operator in Hoi An or Da Nang, you are almost certainly listed on at least one. The question is whether your own website can — and should — sit alongside those listings as a direct booking channel.",
+      },
+      { type: "h2", text: "How OTA platforms work — and what they cost" },
+      {
+        type: "p",
+        text: "OTA platforms charge commission on every booking they generate. For accommodation platforms like Booking.com and Agoda, commission is typically 15–20%. For activity platforms like Viator and Klook, it is often 20–30%. On a 2,000,000 VND cooking class booking, a 25% commission means 500,000 VND goes to the platform. Multiply that across a season and the total is significant.",
+      },
+      { type: "h2", text: "What OTA platforms give you that a website cannot easily replicate" },
+      {
+        type: "ul",
+        items: [
+          "Visibility to guests who are browsing the platform without a specific destination in mind.",
+          "Built-in payment processing and booking management in multiple currencies.",
+          "Reviews that feed the platform's own trust system and search ranking.",
+          "Access to guests who specifically prefer booking through a trusted platform rather than a direct site they have not heard of.",
+          "Mobile apps that many guests keep open throughout their trip.",
+        ],
+      },
+      { type: "h2", text: "What your own website offers that OTA platforms cannot" },
+      {
+        type: "ul",
+        items: [
+          "Zero commission on direct bookings — every booking you convert on your own site keeps the full revenue.",
+          "Full ownership of the guest relationship — you can build an email list, follow up and encourage repeat visits.",
+          "Control over how your business is presented — OTA listings are formatted by the platform, not by you.",
+          "An SEO asset that compounds over time — your website can rank on Google for searches that happen before guests open an OTA app.",
+          "A platform for content in languages the OTA does not support well — Korean pages, for instance, are far more effective on your own site than in an OTA listing.",
+        ],
+      },
+      { type: "h2", text: "The case for both: OTA plus direct" },
+      {
+        type: "p",
+        text: "For most tourism businesses in Hoi An and Da Nang, the right answer is not OTA or website — it is OTA and website. OTA platforms provide discovery for guests who are not already aware of your business. Your website converts guests who have already found you through Google, a Naver Blog review or a recommendation — these guests are higher intent and more likely to book direct if the process is smooth.",
+      },
+      { type: "h2", text: "When a direct booking website makes the biggest difference" },
+      {
+        type: "ul",
+        items: [
+          "When your average booking value is high — the commission saving per transaction justifies the website investment faster.",
+          "When you have consistent Google Maps or Naver visibility that is sending traffic somewhere.",
+          "When you serve returning guests who know your business — these guests will always prefer to book direct if the option is clear.",
+          "When your OTA commission costs are already material — if you are paying 3–5 million VND or more per month in commission, a website pays for itself within one season.",
+        ],
+      },
+      { type: "h2", text: "What a direct booking website needs to actually convert" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "A direct booking website only works if it loads fast, looks trustworthy, and makes the booking process as simple as possible. A slow, incomplete or hard-to-navigate site will push guests back to the OTA they arrived from. For the technical and design requirements, read the full guide on " },
+          { type: "link", text: "website design for tourism businesses in Hoi An", href: "/en/blog/website-design-for-tourism-hoi-an" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "A practical starting point" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "If you are currently paying significant OTA commission and have any Google Maps or Naver presence, the maths usually support building a direct booking website. Start with a focused brief: one core guest type, one booking flow, English and Vietnamese as a minimum. See the " },
+          { type: "link", text: "tourism website design service page", href: "/en/website-design/tourism-website-design-vietnam" },
+          { type: "text", text: " for what is included." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can I ask guests to book direct instead of through Booking.com?",
+        a: "Yes — you can promote direct booking on your own website, Google Business Profile and social channels. However, most OTA contracts prohibit you from offering a lower rate on your own site than what appears on the OTA (rate parity clauses). Check your contract terms.",
+      },
+      {
+        q: "How do I convince a guest to book direct rather than through an OTA they already trust?",
+        a: "The most effective approach is to make direct booking genuinely easier and to offer something the OTA cannot — a personal message from the owner, a small gift on arrival, flexible cancellation, or a custom package. Guests who already trust your business often prefer the direct relationship when the process is simple.",
+      },
+      {
+        q: "What booking system should I use for a small tourism business in Vietnam?",
+        a: "For small businesses, a WhatsApp or Zalo enquiry form with manual confirmation is a perfectly valid starting point — it has zero software cost and most guests are comfortable with messaging. For higher volume, simple booking engines like SimplyBook or a custom calendar integration can handle automated availability and confirmation.",
+      },
+      {
+        q: "Do I need to stay on Booking.com and Agoda if I have my own website?",
+        a: "Not necessarily — but removing OTA listings before your direct channel is established carries risk. The safer approach is to build your direct booking site and Google presence first, then gradually reduce OTA dependence as direct bookings increase.",
+      },
+    ],
+    related: [
+      { label: "Tourism Website Design Vietnam", href: "/en/website-design/tourism-website-design-vietnam", note: "Service" },
+      { label: "Spa & Hotel Website Design Hoi An", href: "/en/website-design/spa-hotel-website-hoi-an", note: "Service" },
+      { label: "Website design for tourism Hoi An", href: "/en/blog/website-design-for-tourism-hoi-an", note: "Related" },
+      { label: "Google Maps for tourism businesses", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Related" },
+    ],
+  },
+  {
+    slug: "multilingual-website-tourism-vietnam",
+    heroImage: {
+      src: "/images/blog/multilingual-website-tourism-vietnam.webp",
+      alt: "World map on laptop screen — multilingual website for global tourism audience",
+    },
+    path: "/en/blog/multilingual-website-tourism-vietnam",
+    cluster: "website",
+    title: "Why Tourism Businesses in Vietnam Need a Multilingual Website",
+    metaTitle: "Multilingual Website for Tourism Business in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Why spas, hotels, tours and restaurants in Hoi An and Da Nang need multilingual websites — English, Korean and Vietnamese — and what the SEO and conversion benefits look like in practice.",
+    excerpt:
+      "A website that only works in one language leaves most of your potential international guests without a clear path to booking. Here is why multilingual matters and how to build it right.",
+    date: "2026-06-20",
+    readingMinutes: 7,
+    primaryKeyword: "multilingual website Vietnam tourism",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Multilingual Website Tourism Vietnam", href: "/en/blog/multilingual-website-tourism-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Hoi An and Da Nang attract tourists from Korea, Japan, Australia, Europe, China and across Southeast Asia. No single language — not even English — reaches all of them equally. A tourism business that invests in a multilingual website is not just being courteous to international guests. It is making a practical SEO and conversion decision that directly affects how many international visitors find and book with you.",
+      },
+      { type: "h2", text: "Why Vietnamese-only websites miss most of their potential audience" },
+      {
+        type: "p",
+        text: "Most international tourists searching for spas, hotels, cooking classes or tours in Hoi An are not searching in Vietnamese — they are searching in English, Korean, Japanese or their own language. A website with only Vietnamese content is largely invisible to these searchers on Google. And even when they arrive at a Vietnamese-only website through a link or recommendation, many guests cannot understand the content well enough to build trust or complete a booking.",
+      },
+      { type: "h2", text: "The core languages for Hoi An and Da Nang tourism websites" },
+      {
+        type: "ul",
+        items: [
+          "Vietnamese — for local search, Google Maps reinforcement and domestic guests.",
+          "English — the international default language for travellers from Australia, Europe and much of Asia who do not share a native language with the host country.",
+          "Korean — essential for businesses that target Korean tourists, given that Korea is consistently one of the top source markets for Da Nang and Hoi An.",
+        ],
+      },
+      { type: "h2", text: "How multilingual websites improve Google search ranking" },
+      {
+        type: "p",
+        text: "A website with correct multilingual implementation — separate language URLs, hreflang tags and language-specific content — can rank on Google for searches in multiple languages independently. Your English page ranks for English searches; your Korean page can rank for Korean-language searches. This multiplies the number of search queries your site can appear for without creating duplicate content issues.",
+      },
+      { type: "h2", text: "Korean-language pages and their connection to Naver marketing" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "For tourism businesses investing in Naver Blog marketing, a Korean-language website page is a critical component of the conversion path. When a Korean blogger writes a Naver post about your spa or cooking class, they typically link to your website. If the destination is a Vietnamese-only page, the Korean reader who clicks through encounters content they cannot read easily — and trust drops immediately. A Korean-language page that matches the content of the Naver Blog post creates a seamless path from discovery to booking. Read more about how this works in the guide to " },
+          { type: "link", text: "Naver Marketing Vietnam", href: "/en/blog/naver-marketing-vietnam-guide" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "What multilingual implementation looks like technically" },
+      {
+        type: "ul",
+        items: [
+          "Each language has its own URL (e.g. /en/, /ko/, /vi/) — not Google Translate overlays, which are penalised.",
+          "hreflang tags in the page head tell Google which language version is intended for which audience.",
+          "The content is written in natural language by a native speaker or fluent writer — not machine-translated.",
+          "The booking flow and contact method are accessible from all language versions.",
+          "The sitemap includes all language versions so Google can discover and index them.",
+        ],
+      },
+      { type: "h2", text: "The return on multilingual investment" },
+      {
+        type: "p",
+        text: "Adding a second language to an existing website is an investment in both content (writing and translation) and technical implementation (URL structure, hreflang, navigation). The return is measured in additional organic search traffic from international guests and higher conversion from guests who can read your content in their own language. For businesses where Korean tourists represent 20% or more of revenue, Korean language pages typically recoup their cost within one high season.",
+      },
+      { type: "h2", text: "Getting started" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "The practical starting point is defining which languages your guest mix actually requires — not adding every possible language, but the two or three that represent your highest-value international segments. For most Hoi An and Da Nang tourism businesses, that is Vietnamese plus English, with Korean as a high-priority addition. See the " },
+          { type: "link", text: "website design service overview", href: "/en/website-design/tourism-website-design-vietnam" },
+          { type: "text", text: " for how multilingual is built into the standard build." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can I use Google Translate to make my website multilingual?",
+        a: "No. Google Translate widgets are not indexed by Google as separate language content — they are overlays that do not produce separate language URLs. They also produce unnatural translations that reduce trust. True multilingual SEO requires separate language pages with real, well-written content.",
+      },
+      {
+        q: "How much does adding Korean to my website cost?",
+        a: "Korean content can be added to an existing website as a set of language-specific pages. The cost depends on how many pages need Korean versions and whether copywriting is included. For a focused 5–8 page Korean section on a spa or hotel site, this is typically a manageable addition to the initial build cost.",
+      },
+      {
+        q: "Will Korean-language pages on my website help my Naver ranking?",
+        a: "Korean pages on your website are indexed by Naver (which does crawl international websites) and can appear in Naver search results. More importantly, they provide a high-quality destination for Korean blog links — which is critical for converting the traffic that Naver Blog marketing generates.",
+      },
+      {
+        q: "Do I need separate websites for each language or one website with language switching?",
+        a: "One website with correct language path structure (e.g. /en/, /ko/, /vi/) is the standard approach. It is simpler to manage, more cost-effective to build and allows Google to understand the relationship between language versions through hreflang tags.",
+      },
+    ],
+    related: [
+      { label: "Tourism Website Design Vietnam", href: "/en/website-design/tourism-website-design-vietnam", note: "Service" },
+      { label: "Website design for tourism Hoi An", href: "/en/blog/website-design-for-tourism-hoi-an", note: "Related" },
       { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Related" },
       { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Related" },
     ],
