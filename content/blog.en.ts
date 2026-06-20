@@ -9,9 +9,9 @@ export const BLOG_HUB_EN = {
   heroSub:
     "Practical guides on Naver Marketing, Google Maps, and digital strategy for spas, restaurants, hotels and tours targeting Korean tourists in Central Vietnam.",
   focusLinks: [
-    { label: "Naver Marketing", href: "/en/services/naver-marketing", note: "Core service" },
-    { label: "Google Maps Marketing", href: "/en/services/google-maps", note: "Core service" },
-    { label: "Website Design", href: "/en/services/website-design", note: "Core service" },
+    { label: "Naver Marketing", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Core service" },
+    { label: "Google Maps Marketing", href: "/en/google-maps-marketing/map-review-jobs", note: "Core service" },
+    { label: "Website Design", href: "/en/naver-marketing/attract-korean-tourists-with-naver", note: "Core service" },
   ],
 };
 
@@ -90,7 +90,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         type: "p",
         parts: [
           { type: "text", text: "The practical starting point is registering your business on Naver Place and ensuring all information is accurate in Korean. Simultaneously, begin working with Korean bloggers who visit the area — either by hosting famil visits or through a structured blogger collaboration programme. For a full overview of the process and what is included in each stage, see the " },
-          { type: "link", text: "Naver Marketing service page", href: "/en/services/naver-marketing" },
+          { type: "link", text: "Naver Marketing service page", href: "/en/naver-marketing/naver-marketing-agency-vietnam" },
           { type: "text", text: "." },
         ],
       },
@@ -114,7 +114,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Naver Marketing service", href: "/en/services/naver-marketing", note: "Service" },
+      { label: "Naver Marketing service", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Service" },
       { label: "What is Naver Blog?", href: "/vi/blog/what-is-naver-blog-complete-guide", note: "Related" },
       { label: "How to attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Related" },
     ],
@@ -193,7 +193,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         type: "p",
         parts: [
           { type: "text", text: "The first step is a Naver Place listing in Korean, followed by a structured approach to acquiring Naver Blog reviews. For a full service overview covering blogger outreach, listing management and Korean-language content, see the " },
-          { type: "link", text: "Naver Marketing service page", href: "/en/services/naver-marketing" },
+          { type: "link", text: "Naver Marketing service page", href: "/en/naver-marketing/naver-marketing-agency-vietnam" },
           { type: "text", text: ". If you prefer to start with a single channel, begin with Naver Place — it is the most immediate win." },
         ],
       },
@@ -213,7 +213,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Naver Marketing service", href: "/en/services/naver-marketing", note: "Service" },
+      { label: "Naver Marketing service", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Service" },
       { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Related" },
       { label: "What Korean tourists search for", href: "/en/blog/what-korean-tourists-search-vietnam", note: "Related" },
     ],
@@ -302,7 +302,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         type: "p",
         parts: [
           { type: "text", text: "The first practical step is to identify which of these keyword clusters your business can realistically target, then build a Naver Blog and Naver Place presence that addresses those specific searches. A spa in Hoi An should target '호이안 스파 추천'; a cooking class should target '호이안 쿠킹클래스'. See the full " },
-          { type: "link", text: "Naver Marketing service overview", href: "/en/services/naver-marketing" },
+          { type: "link", text: "Naver Marketing service overview", href: "/en/naver-marketing/naver-marketing-agency-vietnam" },
           { type: "text", text: " for how this is structured in practice." },
         ],
       },
@@ -324,7 +324,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     related: [
       { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Related" },
       { label: "How to attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Related" },
-      { label: "Naver Marketing service", href: "/en/services/naver-marketing", note: "Service" },
+      { label: "Naver Marketing service", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Service" },
     ],
   },
   {
@@ -396,7 +396,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         type: "p",
         parts: [
           { type: "text", text: "The starting point is identifying which Korean keywords are most relevant to your business, then building a blogger outreach programme that generates content targeting those specific searches. For businesses in Hoi An and Da Nang, Cong Thien Agency manages this entire process — from blogger identification to content review. See the " },
-          { type: "link", text: "Naver Marketing service page", href: "/en/services/naver-marketing" },
+          { type: "link", text: "Naver Marketing service page", href: "/en/naver-marketing/naver-marketing-agency-vietnam" },
           { type: "text", text: " for full details." },
         ],
       },
@@ -417,7 +417,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     related: [
       { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Related" },
-      { label: "Naver Marketing service", href: "/en/services/naver-marketing", note: "Service" },
+      { label: "Naver Marketing service", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Service" },
       { label: "What Korean tourists search for", href: "/en/blog/what-korean-tourists-search-vietnam", note: "Related" },
     ],
   },
@@ -508,7 +508,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Google Maps Marketing service", href: "/en/services/google-maps", note: "Service" },
+      { label: "Google Maps Marketing service", href: "/en/google-maps-marketing/map-review-jobs", note: "Service" },
       { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Related" },
       { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Related" },
     ],
