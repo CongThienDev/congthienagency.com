@@ -6173,6 +6173,570 @@ export const SERVICES: Service[] = [
     schema: { serviceType: "Tourism Website Design", offerMinPriceVnd: 12000000 },
   },
 
+  // ─── EN Google Maps spokes ───────────────────────────────────────────────────
+  {
+    path: "/en/google-maps-marketing/google-business-profile-vietnam",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Google Business Profile Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam" },
+    ],
+    primaryKeyword: "Google Business Profile Vietnam",
+    metaTitle: "Google Business Profile Setup & Optimisation in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Expert Google Business Profile setup and optimisation for tourism businesses in Hoi An and Da Nang. Correct categories, keyword-rich descriptions, photo strategy and local SEO.",
+    eyebrow: "Google Maps · GBP",
+    h1: "Google Business Profile Setup and Optimisation in Vietnam",
+    heroSub:
+      "A complete, well-optimised Google Business Profile is the foundation of local search visibility for any tourism business in Hoi An and Da Nang.",
+    heroCta: "Get a GBP audit",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Google Business Profile (formerly Google My Business) is the listing that appears when someone searches for your business — or for businesses like yours — on Google Search and Google Maps. For hotels, spas, restaurants, cooking classes and tours in Hoi An and Da Nang, an incomplete or incorrectly set up profile means invisibility when international tourists are actively looking to book.",
+    sections: [
+      {
+        heading: "What an optimised Google Business Profile includes",
+        bullets: [
+          "Correct primary and secondary business categories that match how tourists search for your type of business.",
+          "A keyword-rich business description written in English (and optionally Vietnamese and Korean) that describes what makes your business distinctive.",
+          "Accurate opening hours, service attributes, booking links and contact information consistent with your website.",
+          "A complete photo set covering interior, exterior, services and food or products.",
+          "Regular Google Posts to signal that the listing is actively managed.",
+        ],
+      },
+      {
+        heading: "Why category selection matters more than most businesses realise",
+        body:
+          "Google uses your primary category to determine which searches your listing is eligible to appear for. A spa listed under 'Day Spa' ranks differently from one listed under 'Beauty Salon' or 'Massage Therapist' — and the right choice depends on how tourists in your specific market actually search. Getting this wrong from the start means months of lost visibility.",
+      },
+      {
+        heading: "GBP and your website work together",
+        body:
+          "Google cross-references your Google Business Profile with your website to verify consistency and assess trust. A website with matching NAP information, LocalBusiness schema markup and relevant local content directly strengthens your GBP ranking. The two assets reinforce each other — optimising one without the other leaves performance on the table.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Full audit of existing GBP or new profile setup from scratch",
+        "Category selection and optimisation for your specific business type",
+        "Description writing in English (Vietnamese and Korean available as add-on)",
+        "Photo set review and upload guidance",
+        "Service list and attribute completion",
+        "Google Search Console connection and sitemap submission",
+      ],
+    },
+    whoFor: [
+      "Spas, hotels and restaurants newly setting up a GBP",
+      "Businesses with an existing profile that is incomplete or incorrectly categorised",
+      "Tourism businesses preparing for a high season push",
+      "Any business that wants to improve its local search ranking on Google Maps",
+    ],
+    process: [
+      { step: "Audit", detail: "Review current profile status, category accuracy and completeness score." },
+      { step: "Optimise", detail: "Fix categories, description, attributes, hours and photos." },
+      { step: "Content", detail: "Add Google Posts and ensure website consistency." },
+      { step: "Monitor", detail: "Track impressions, calls and direction requests in GBP Insights." },
+    ],
+    priceFrom: "From 3,500,000 VND / campaign",
+    priceNote:
+      "Price depends on current profile state, languages required and whether website updates are included. Message on Zalo for a scope-specific quote.",
+    faqs: [
+      {
+        q: "Is Google Business Profile free to set up?",
+        a: "Yes — the listing itself is free. The cost of this service is for the setup, optimisation work and ongoing content strategy, not for the listing itself.",
+      },
+      {
+        q: "How long does it take to see improvement in Google Maps ranking after optimisation?",
+        a: "Profile updates can take effect within a few days to a few weeks. Ranking improvement depends on your market's competitiveness — for many tourism businesses in Hoi An, a complete and accurate profile shows measurable improvement within 4–8 weeks.",
+      },
+      {
+        q: "Do I need to verify my Google Business Profile?",
+        a: "Yes — a verified listing appears in Google Maps search results and gives you control over the information displayed. Verification is done via postcard, phone, email or video depending on what Google allows for your business type and location.",
+      },
+      {
+        q: "Can you manage the profile on an ongoing basis?",
+        a: "Yes — monthly management is available, including Google Posts, photo updates, review response guidance and performance reporting.",
+      },
+    ],
+    related: [
+      { label: "Google Maps Review & Reputation", href: "/en/google-maps-marketing/review-reputation-vietnam", note: "Reviews service" },
+      { label: "Google Maps for spas Vietnam", href: "/en/google-maps-marketing/google-maps-for-spas-vietnam", note: "Industry spoke" },
+      { label: "Google Maps guide Hoi An Da Nang", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Blog guide" },
+      { label: "Google Business Profile setup Vietnam", href: "/en/blog/google-business-profile-setup-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Google Business Profile setup and optimisation for tourism businesses in Vietnam" },
+    ],
+    schema: { serviceType: "Google Business Profile Optimisation", offerMinPriceVnd: 3500000 },
+  },
+  {
+    path: "/en/google-maps-marketing/review-reputation-vietnam",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Google Review & Reputation Vietnam", href: "/en/google-maps-marketing/review-reputation-vietnam" },
+    ],
+    primaryKeyword: "Google Maps review reputation Vietnam",
+    metaTitle: "Google Maps Review & Reputation Management in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Build genuine Google review volume and manage your online reputation for tourism businesses in Hoi An and Da Nang. No fake reviews — only sustainable, policy-compliant review strategy.",
+    eyebrow: "Google Maps · Review & Reputation",
+    h1: "Google Maps Review & Reputation Management for Tourism Businesses in Vietnam",
+    heroSub:
+      "Build a steady stream of genuine guest reviews and manage your Google reputation the right way — without risking your listing.",
+    heroCta: "Get a reputation audit",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Star rating is the first thing a tourist sees when your business appears on Google Maps. A high rating with a consistent volume of recent, genuine reviews signals trust and converts browsers into guests. This service helps tourism businesses in Hoi An and Da Nang build that review presence systematically — without fake reviews, without risk.",
+    sections: [
+      {
+        heading: "Why genuine reviews matter more than volume alone",
+        bullets: [
+          "Google's algorithm detects patterns of fake or incentivised reviews and can remove or suppress them.",
+          "International tourists read review content, not just star scores — a recent, detailed review builds more trust than an old aggregate.",
+          "Diverse reviews from different nationalities reinforce trust across your target audiences.",
+          "Review response behaviour signals to Google and to potential guests that your business is professionally managed.",
+        ],
+      },
+      {
+        heading: "How we build genuine review volume",
+        body:
+          "The most effective system is a simple, consistent post-service review request — a QR code at reception, a follow-up WhatsApp message, a card left with the bill. The key is timing (request immediately after a positive experience), ease (one tap to the review form) and training (staff who know when and how to ask). This consistently outperforms any shortcut and builds a review base that compounds over time.",
+      },
+      {
+        heading: "Managing negative reviews the right way",
+        body:
+          "Negative reviews are inevitable — what matters is how you respond. A thoughtful, professional response to a negative review often does more for your reputation than the review itself does against it. We advise on response tone, what to acknowledge, what to avoid and how to invite the guest back. This is covered in detail in our guide on responding to negative Google reviews.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Review velocity audit — current pace, recency and rating breakdown",
+        "Post-service review request system (QR code, message templates, staff script)",
+        "Review response templates for positive and negative reviews",
+        "Monthly review performance report",
+        "Guidance on flagging fake or malicious reviews for Google removal",
+      ],
+    },
+    whoFor: [
+      "Spas and wellness businesses wanting to increase review count",
+      "Restaurants and cafes competing on Google Maps local ranking",
+      "Hotels and homestays targeting international guests",
+      "Any tourism business whose review score is holding back bookings",
+    ],
+    process: [
+      { step: "Audit", detail: "Assess current review count, rating, recency and response rate." },
+      { step: "System", detail: "Build the post-service review request process for your specific workflow." },
+      { step: "Train", detail: "Brief staff or owners on how and when to ask for reviews." },
+      { step: "Monitor", detail: "Track monthly review velocity and flag issues." },
+    ],
+    priceFrom: "From 3,500,000 VND / campaign",
+    priceNote: "Price depends on current review state and scope of ongoing management required.",
+    faqs: [
+      {
+        q: "Do you offer fake or paid Google reviews?",
+        a: "No. Fake reviews violate Google's policies and can result in listing suspension. This service is built entirely on genuine reviews from real guests using a post-service request process.",
+      },
+      {
+        q: "How quickly can we increase our review count?",
+        a: "A well-implemented post-service request system typically generates 5–15 new reviews per month for an active tourism business. The pace depends on guest volume and how consistently the process is applied.",
+      },
+      {
+        q: "Can you remove bad reviews?",
+        a: "Only reviews that violate Google's content policies can be flagged for removal — and Google decides whether to act. What we can do is help you respond effectively and build enough genuine positive reviews that any individual negative review has less impact on your overall score.",
+      },
+      {
+        q: "How important is responding to reviews for ranking?",
+        a: "Google has confirmed that responding to reviews is a positive signal for local ranking. Beyond ranking, responses signal professionalism to potential guests reading your profile.",
+      },
+    ],
+    related: [
+      { label: "Negative Review Management", href: "/en/google-maps-marketing/negative-review-management-vietnam", note: "Related service" },
+      { label: "GBP Setup Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "Foundation" },
+      { label: "Get more Google reviews guide", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Blog guide" },
+      { label: "Respond to negative reviews", href: "/en/blog/respond-to-negative-reviews-tourism", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Google Maps review and reputation management for tourism businesses in Vietnam" },
+    ],
+    schema: { serviceType: "Google Maps Review & Reputation Management", offerMinPriceVnd: 3500000 },
+  },
+  {
+    path: "/en/google-maps-marketing/google-maps-for-spas-vietnam",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Google Maps for Spas Vietnam", href: "/en/google-maps-marketing/google-maps-for-spas-vietnam" },
+    ],
+    primaryKeyword: "Google Maps for spas Vietnam",
+    metaTitle: "Google Maps Optimisation for Spas in Hoi An & Da Nang | Cong Thien Agency",
+    metaDescription:
+      "Improve your spa's Google Maps ranking in Hoi An and Da Nang: category optimisation, treatment photos, genuine reviews and local SEO for spa businesses targeting international guests.",
+    eyebrow: "Google Maps · Spa",
+    h1: "Google Maps Optimisation for Spas in Hoi An and Da Nang",
+    heroSub:
+      "Most tourists searching for a spa in Hoi An or Da Nang choose from the top three Google Maps results. This service is about getting your spa into that position.",
+    heroCta: "Get a spa profile audit",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "When a tourist arrives in Hoi An or Da Nang and searches 'spa near me' or 'massage Hoi An', they are shown a list of three businesses — the local pack. The spas that appear there capture a disproportionate share of walk-in and same-day bookings. Google Maps optimisation for spas is about making sure your business is consistently in that pack for the searches that matter to your guests.",
+    sections: [
+      {
+        heading: "Why spas depend more on Google Maps than most businesses",
+        bullets: [
+          "Spa bookings are often same-day or next-day — guests search while already in the destination.",
+          "Photo quality is a primary decision driver — guests compare treatment rooms, ambience and cleanliness before choosing.",
+          "Review count and rating directly determine who appears in the local pack.",
+          "Many international guests do not know specific spa names — they discover through search.",
+        ],
+      },
+      {
+        heading: "What spa-specific profile optimisation looks like",
+        body:
+          "A spa profile needs: the correct primary category (Day Spa, Massage Therapist, or Beauty Salon depending on your primary service), a complete treatment menu listed as services, high-quality photos of treatment rooms and relaxation spaces, accurate booking link or WhatsApp contact, and a description written in English that includes location keywords like 'Hoi An old town' or 'Da Nang beachfront'.",
+      },
+      {
+        heading: "Building reviews for a spa",
+        body:
+          "Spas are well-positioned to build reviews consistently because the service experience is personal and positive outcomes are the norm. The best system is a QR code at checkout with a short message thanking the guest and inviting them to share their experience. Staff training on when and how to mention it matters — timing the ask at the moment of maximum satisfaction is the key variable.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Spa GBP audit and category correction",
+        "Treatment service list and attribute completion",
+        "Photo strategy for spa interiors and treatments",
+        "Post-treatment review request system",
+        "English-language description and Google Post templates",
+      ],
+    },
+    whoFor: [
+      "Day spas and massage centres in Hoi An and Da Nang",
+      "Wellness retreats and holistic therapy centres",
+      "Hotel spas wanting to attract outside guests",
+      "New spas needing to build their Google presence from scratch",
+    ],
+    process: [
+      { step: "Audit", detail: "Review current spa profile — category, photos, reviews and completeness." },
+      { step: "Optimise", detail: "Fix categories, update description, complete service list and photo set." },
+      { step: "Reviews", detail: "Set up post-treatment review request workflow." },
+      { step: "Monitor", detail: "Track profile impressions, clicks and calls monthly." },
+    ],
+    priceFrom: "From 3,500,000 VND / campaign",
+    priceNote: "Scope depends on current profile state and whether ongoing management is included.",
+    faqs: [
+      {
+        q: "Does it help if my spa is not in the city centre?",
+        a: "Yes — Google ranks businesses relative to the searcher's location. A spa in a quieter area can still rank strongly for searches made by guests staying in that part of the city, especially with a well-optimised profile.",
+      },
+      {
+        q: "How do I compete with spas that have hundreds of reviews?",
+        a: "Recency matters as much as volume. A spa with 50 reviews in the last 3 months often outranks one with 300 reviews spread over 4 years. Consistent, recent reviews are the practical priority.",
+      },
+      {
+        q: "Can you help with my Naver presence too?",
+        a: "Yes — for spas targeting Korean tourists specifically, Naver Blog and Naver Place are equally important as Google Maps. Both can be managed together as part of a combined Korean and international guest strategy.",
+      },
+    ],
+    related: [
+      { label: "Spa website design Hoi An", href: "/en/website-design/spa-hotel-website-hoi-an", note: "Website service" },
+      { label: "Naver SEO for hotels", href: "/en/naver-marketing/naver-seo-agency-for-hotels", note: "Korean market" },
+      { label: "GBP setup Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "Foundation" },
+      { label: "Google Maps guide Hoi An Da Nang", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Blog guide" },
+      { label: "Get more Google reviews", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/spa.webp", alt: "Google Maps optimisation for spas in Hoi An and Da Nang" },
+    ],
+    schema: { serviceType: "Google Maps Optimisation for Spas", offerMinPriceVnd: 3500000 },
+  },
+  {
+    path: "/en/google-maps-marketing/google-maps-for-restaurants-vietnam",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Google Maps for Restaurants Vietnam", href: "/en/google-maps-marketing/google-maps-for-restaurants-vietnam" },
+    ],
+    primaryKeyword: "Google Maps for restaurants Vietnam",
+    metaTitle: "Google Maps Optimisation for Restaurants in Hoi An & Da Nang | Cong Thien Agency",
+    metaDescription:
+      "Improve your restaurant's Google Maps ranking in Hoi An and Da Nang: menu listing, food photos, genuine reviews and local SEO for restaurants targeting international diners.",
+    eyebrow: "Google Maps · Restaurant",
+    h1: "Google Maps Optimisation for Restaurants in Hoi An and Da Nang",
+    heroSub:
+      "Restaurants in Hoi An and Da Nang compete intensely for tourist footfall. A well-optimised Google Maps listing puts your restaurant in front of international guests at the moment they are deciding where to eat.",
+    heroCta: "Get a restaurant profile audit",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "International tourists in Hoi An and Da Nang choose restaurants primarily through Google Maps. They search 'restaurant near me', read reviews, look at food photos and compare options within minutes of feeling hungry. A restaurant that is not visible — or that has an incomplete profile with no recent reviews or poor photos — simply does not get chosen.",
+    sections: [
+      {
+        heading: "What restaurants need on Google Maps to compete",
+        bullets: [
+          "Correct category: 'Restaurant' or a more specific type (Vietnamese Restaurant, Seafood Restaurant, Cafe) depending on your menu.",
+          "A complete menu listing in English — tourists often check the menu before they visit.",
+          "High-quality food photos showing actual dishes rather than empty dining rooms.",
+          "Accurate price range attribute so guests know what to expect.",
+          "Opening hours that are kept current — incorrect hours are one of the most common reasons restaurants lose Maps trust.",
+        ],
+      },
+      {
+        heading: "Food photos: the single most important asset",
+        body:
+          "For restaurants, Google Maps photos drive decisions more than any other factor. Dishes should be photographed in natural light, on clean backgrounds, showing realistic portion sizes and presentation. Owner-uploaded photos are supplemented by guest photos — encouraging guests to photograph and upload their dishes is a legitimate and effective strategy for building a strong visual profile.",
+      },
+      {
+        heading: "Reviews for restaurants: volume and frequency",
+        body:
+          "Restaurants can build review velocity faster than almost any other business type because of daily guest turnover. A simple QR code on the receipt or a short verbal invitation from staff is enough to generate consistent weekly reviews. The goal is steady, diverse reviews from multiple nationalities — which reflects the typical restaurant guest mix in Hoi An and Da Nang.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Restaurant GBP audit and category optimisation",
+        "Menu listing and price range attribute setup",
+        "Food photo strategy and upload guidance",
+        "Post-meal review request system",
+        "English description with location and cuisine keywords",
+      ],
+    },
+    whoFor: [
+      "Restaurants and cafes in Hoi An old town and Da Nang",
+      "Street food venues and local experience restaurants",
+      "Cooking class providers wanting to attract dining guests",
+      "Hotel restaurants targeting outside guests",
+    ],
+    process: [
+      { step: "Audit", detail: "Review current restaurant profile — categories, menu, photos, reviews." },
+      { step: "Optimise", detail: "Complete menu, update photos, fix categories and attributes." },
+      { step: "Reviews", detail: "Set up post-meal review request process." },
+      { step: "Monitor", detail: "Track impressions, direction requests and calls monthly." },
+    ],
+    priceFrom: "From 3,500,000 VND / campaign",
+    priceNote: "Final scope depends on profile state and whether ongoing monthly management is required.",
+    faqs: [
+      {
+        q: "Should I list my restaurant on Google Maps in Vietnamese or English?",
+        a: "Ideally both. The business name and primary information should be consistent across languages. The description can be in English as the primary international language, with Vietnamese for local search.",
+      },
+      {
+        q: "How do I get tourists to leave Google reviews?",
+        a: "The most effective method is a QR code linking directly to your Google review form, placed on the receipt or table card. Timing the ask at the end of a positive meal — when the guest is most satisfied — is key.",
+      },
+      {
+        q: "Does Naver also matter for restaurants?",
+        a: "Yes — for restaurants that attract Korean tourists, Naver Blog reviews and Naver Place are critical. Korean food bloggers are extremely active and a single well-placed Naver post can drive significant footfall. Both Google and Naver strategies can run in parallel.",
+      },
+    ],
+    related: [
+      { label: "Review & Reputation Vietnam", href: "/en/google-maps-marketing/review-reputation-vietnam", note: "Reviews service" },
+      { label: "Naver Map optimization restaurants", href: "/en/naver-marketing/naver-map-optimization-restaurants-vietnam", note: "Korean market" },
+      { label: "GBP setup Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "Foundation" },
+      { label: "Google Maps guide Hoi An", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Blog guide" },
+      { label: "Get more Google reviews", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Google Maps optimisation for restaurants in Hoi An and Da Nang" },
+    ],
+    schema: { serviceType: "Google Maps Optimisation for Restaurants", offerMinPriceVnd: 3500000 },
+  },
+  {
+    path: "/en/google-maps-marketing/google-maps-for-hotels-vietnam",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Google Maps for Hotels Vietnam", href: "/en/google-maps-marketing/google-maps-for-hotels-vietnam" },
+    ],
+    primaryKeyword: "Google Maps for hotels Vietnam",
+    metaTitle: "Google Maps Optimisation for Hotels in Hoi An & Da Nang | Cong Thien Agency",
+    metaDescription:
+      "Improve your hotel's Google Maps visibility in Hoi An and Da Nang: profile optimisation, room photos, genuine reviews and local SEO to attract direct bookings from international guests.",
+    eyebrow: "Google Maps · Hotel",
+    h1: "Google Maps Optimisation for Hotels in Hoi An and Da Nang",
+    heroSub:
+      "International guests searching for hotels in Hoi An and Da Nang compare options on Google Maps before opening a single booking platform. A strong profile here creates the first impression.",
+    heroCta: "Get a hotel profile audit",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Hotels, boutique stays and homestays in Hoi An and Da Nang compete across Google Search, Google Maps and OTA platforms. What many overlook is that Google Maps is often the first touchpoint — the place where a guest decides whether to investigate further or move on. A well-optimised profile at this stage does not just improve ranking; it converts interest into clicks, clicks into website visits and website visits into direct bookings.",
+    sections: [
+      {
+        heading: "What hotel Google Maps profiles must get right",
+        bullets: [
+          "Correct property type category — Hotel, Boutique Hotel, Bed & Breakfast, or Hostel depending on your classification.",
+          "Room and facility photos: pool, lobby, rooms, views and breakfast are the highest-priority visual categories for accommodation.",
+          "Check-in and check-out information, payment methods and accessibility attributes — guests use these to filter options.",
+          "Booking link connected directly to your website or booking engine to capture direct bookings.",
+          "Response to every review — hotels are scrutinised more closely than most business types on this measure.",
+        ],
+      },
+      {
+        heading: "Reviews for hotels: what international guests read",
+        body:
+          "International hotel guests read reviews carefully. They look for mentions of breakfast quality, room cleanliness, staff responsiveness, noise levels and Wi-Fi speed. Review responses from management that address specific complaints show future guests how the hotel handles problems. This matters as much as the overall star score.",
+      },
+      {
+        heading: "Connecting Google Maps to direct booking",
+        body:
+          "The practical goal of hotel Google Maps optimisation is not just better ranking — it is more direct bookings. A profile that includes a direct booking link, a clear description of what makes the property distinctive, and strong social proof through reviews gives guests a reason to book direct rather than through an OTA. Combined with a fast, well-built website, this creates a direct channel that compounds over time.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Hotel GBP audit and category check",
+        "Room and facility photo review and upload strategy",
+        "Amenity and attribute completion",
+        "Booking link and contact information setup",
+        "Review response templates for hotel-specific guest feedback",
+        "Monthly performance review",
+      ],
+    },
+    whoFor: [
+      "Boutique hotels, resorts and homestays in Hoi An and Da Nang",
+      "Properties wanting to reduce OTA dependence through direct booking",
+      "Hotels with low review scores or outdated profiles",
+      "New properties needing to build a Google presence from launch",
+    ],
+    process: [
+      { step: "Audit", detail: "Assess current hotel profile — categories, photos, reviews and booking link." },
+      { step: "Optimise", detail: "Complete amenities, update photos, connect booking link." },
+      { step: "Reviews", detail: "Set up post-checkout review request and response workflow." },
+      { step: "Monitor", detail: "Track monthly profile views, booking link clicks and review velocity." },
+    ],
+    priceFrom: "From 3,500,000 VND / campaign",
+    priceNote: "Price depends on property size, current profile state and scope of ongoing management.",
+    faqs: [
+      {
+        q: "Does Google Maps ranking affect my position on Booking.com or Agoda?",
+        a: "No — Google Maps ranking is independent of OTA platforms. However, a strong Google Maps presence gives guests a direct path to your website, which can reduce OTA dependence over time.",
+      },
+      {
+        q: "Should I respond to all reviews including positive ones?",
+        a: "Yes. Responding to positive reviews reinforces good guest relationships and signals an active, engaged management team. Keep positive responses brief and genuine — not a copy-paste template.",
+      },
+      {
+        q: "How do I get guests to leave Google reviews rather than just Booking.com reviews?",
+        a: "At checkout, provide a QR code linking to your Google review form alongside your thank-you card. Many guests are willing to leave a Google review if the process is simple and they are asked at the right moment.",
+      },
+    ],
+    related: [
+      { label: "Spa & Hotel Website Design", href: "/en/website-design/spa-hotel-website-hoi-an", note: "Website service" },
+      { label: "Naver SEO for hotels", href: "/en/naver-marketing/naver-seo-agency-for-hotels", note: "Korean market" },
+      { label: "Review & Reputation Vietnam", href: "/en/google-maps-marketing/review-reputation-vietnam", note: "Reviews service" },
+      { label: "Google Maps guide Hoi An", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Blog guide" },
+      { label: "Local SEO Vietnam tourism", href: "/en/blog/local-seo-vietnam-tourism", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/homestay.webp", alt: "Google Maps optimisation for hotels and homestays in Hoi An and Da Nang" },
+    ],
+    schema: { serviceType: "Google Maps Optimisation for Hotels", offerMinPriceVnd: 3500000 },
+  },
+  {
+    path: "/en/google-maps-marketing/negative-review-management-vietnam",
+    cluster: "maps",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Negative Review Management Vietnam", href: "/en/google-maps-marketing/negative-review-management-vietnam" },
+    ],
+    primaryKeyword: "negative review management Vietnam",
+    metaTitle: "Negative Google Review Management for Tourism Businesses | Cong Thien Agency",
+    metaDescription:
+      "Professional negative Google review management for spas, restaurants, hotels and tours in Hoi An and Da Nang. Response strategy, flagging policy violations and reputation recovery.",
+    eyebrow: "Google Maps · Reputation",
+    h1: "Negative Google Review Management for Tourism Businesses in Vietnam",
+    heroSub:
+      "A single badly-handled negative review can damage bookings for months. A well-handled one can do the opposite — demonstrating to future guests exactly how your business operates under pressure.",
+    heroCta: "Get a reputation audit",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Negative reviews are part of running any tourism business. What separates businesses that recover quickly from those that see sustained booking drops is not the number of negative reviews — it is how they respond. This service helps tourism businesses in Hoi An and Da Nang manage negative reviews professionally, flag policy violations for removal, and build enough positive review volume that individual negative reviews lose their impact.",
+    sections: [
+      {
+        heading: "The three types of negative review and how to handle each",
+        bullets: [
+          "Genuine negative feedback from a dissatisfied guest — requires a direct, empathetic professional response that acknowledges the issue without being defensive.",
+          "Inaccurate or exaggerated reviews — respond factually without becoming confrontational; correct the record calmly.",
+          "Fake or competitor reviews — document the evidence and flag to Google for policy violation review. These can be removed if they violate Google's content guidelines.",
+        ],
+      },
+      {
+        heading: "Why your response is read by more people than the review itself",
+        body:
+          "When a potential guest reads a negative review, they immediately scroll to the response. A professional, solution-focused response communicates to that potential guest that the business is managed attentively and that problems are taken seriously. A defensive or absent response communicates the opposite. The goal of your response is not to win an argument with the reviewer — it is to reassure the next thousand guests who read that exchange.",
+      },
+      {
+        heading: "Reputation recovery: building volume to dilute impact",
+        body:
+          "The most sustainable protection against negative reviews is a consistent volume of genuine positive ones. When a new 1-star review arrives on a business with 12 reviews, it is devastating. When the same review arrives on a business with 200 reviews and a 4.7 average, it barely moves the needle. The long-term strategy is building that volume through a systematic post-service review request process.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Negative review audit — categorise existing negative reviews by type",
+        "Response templates for different negative review scenarios",
+        "Google policy violation reporting for fake or malicious reviews",
+        "Positive review generation system to dilute negative impact",
+        "Monthly reputation monitoring report",
+      ],
+    },
+    whoFor: [
+      "Businesses that have received a damaging negative review",
+      "Tourism businesses with a dropping review score",
+      "Properties targeted by competitors with fake negative reviews",
+      "Any business wanting a proactive reputation management system",
+    ],
+    process: [
+      { step: "Audit", detail: "Review all existing negative reviews and categorise by type and severity." },
+      { step: "Respond", detail: "Draft and publish professional responses to open negative reviews." },
+      { step: "Flag", detail: "Report policy-violating reviews to Google with documented evidence." },
+      { step: "Build", detail: "Implement positive review generation to improve overall score trajectory." },
+    ],
+    priceFrom: "From 3,500,000 VND / campaign",
+    priceNote: "Scope depends on review volume, severity of issues and ongoing management requirements.",
+    faqs: [
+      {
+        q: "Can Google remove a negative review?",
+        a: "Google will remove reviews that violate its content policies — including fake reviews, spam, reviews from non-customers, or reviews containing prohibited content. Genuine reviews from real customers, even very negative ones, are not typically removed. We help identify which reviews qualify for a removal request and document the case.",
+      },
+      {
+        q: "Should I respond to old negative reviews even if they are months old?",
+        a: "Yes. Potential guests often read every review regardless of date. A professional response to an old negative review is still worth writing — it demonstrates that the business takes feedback seriously even when the pressure has passed.",
+      },
+      {
+        q: "What should I avoid saying in a response to a negative review?",
+        a: "Avoid being defensive, denying facts that the guest clearly experienced, or attacking the reviewer's credibility. Even if you believe the review is unfair, the response must read as professional and solution-focused to the thousands of future guests who will see it.",
+      },
+    ],
+    related: [
+      { label: "Review & Reputation Vietnam", href: "/en/google-maps-marketing/review-reputation-vietnam", note: "Full service" },
+      { label: "GBP setup Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "Foundation" },
+      { label: "Respond to negative reviews guide", href: "/en/blog/respond-to-negative-reviews-tourism", note: "Blog guide" },
+      { label: "Get more Google reviews", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Negative Google review management for tourism businesses in Vietnam" },
+    ],
+    schema: { serviceType: "Negative Review Management", offerMinPriceVnd: 3500000 },
+  },
+
 ];
 
 export function getService(path: string): Service | undefined {

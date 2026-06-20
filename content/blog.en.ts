@@ -843,6 +843,618 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Related" },
     ],
   },
+  // ─── Google Maps cluster EN ──────────────────────────────────────────────────
+  {
+    slug: "google-business-profile-setup-vietnam",
+    heroImage: {
+      src: "/images/blog/google-business-profile-setup-vietnam.webp",
+      alt: "Smartphone showing Google Maps business listing in Vietnam",
+    },
+    path: "/en/blog/google-business-profile-setup-vietnam",
+    cluster: "maps",
+    title: "Google Business Profile Setup for Tourism Businesses in Vietnam",
+    metaTitle: "Google Business Profile Setup in Vietnam: Complete Guide | Cong Thien Agency",
+    metaDescription:
+      "Step-by-step guide to setting up and optimising Google Business Profile for spas, hotels, restaurants and tours in Hoi An and Da Nang. Categories, photos, descriptions and local SEO.",
+    excerpt:
+      "A complete, correctly set up Google Business Profile is the single most important local SEO asset for any tourism business in Hoi An or Da Nang. Here is how to do it right.",
+    date: "2026-06-20",
+    readingMinutes: 8,
+    primaryKeyword: "Google Business Profile setup Vietnam",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Google Business Profile Setup Vietnam", href: "/en/blog/google-business-profile-setup-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Google Business Profile (GBP) — formerly Google My Business — is the listing that appears on the right side of Google Search results and on Google Maps when someone searches for your business or businesses like it. For a spa, hotel, restaurant or tour operator in Hoi An or Da Nang, it is the single most visible online asset you control after your website. An incomplete or incorrectly configured profile costs you bookings every day.",
+      },
+      { type: "h2", text: "Step 1: Claim and verify your listing" },
+      {
+        type: "p",
+        text: "Before you can optimise anything, you need to claim and verify your Google Business Profile. Search for your business on Google Maps — if it already exists as an unclaimed listing, click 'Claim this business'. If it does not exist, create it from scratch at business.google.com. Verification is typically done by postcard (Google mails a code to your business address) or, increasingly, by video verification. Without verification, you cannot edit your profile.",
+      },
+      { type: "h2", text: "Step 2: Choose the right primary category" },
+      {
+        type: "p",
+        text: "Your primary category is the most important single choice you make in your Google Business Profile. It determines which searches your listing is eligible to appear for. A spa should choose 'Day Spa' or 'Massage Therapist' depending on the primary service — not 'Beauty Salon' unless that is the dominant offering. A restaurant should choose the most specific relevant category: 'Vietnamese Restaurant', 'Seafood Restaurant', or 'Cafe' rather than just 'Restaurant'. Secondary categories can be added to cover additional services.",
+      },
+      { type: "h2", text: "Step 3: Write a keyword-rich English description" },
+      {
+        type: "ul",
+        items: [
+          "Lead with your service type and location: 'Traditional Vietnamese spa in Hoi An old town' or 'Boutique hotel in Da Nang beachfront'.",
+          "Include the specific services or experiences you offer: 'hot stone massage, herbal steam, body scrub' or 'sea-view rooms, pool, breakfast included'.",
+          "Mention the guest experience: international-friendly, English-speaking staff, WhatsApp booking.",
+          "Keep it under 750 characters — Google truncates longer descriptions in the listing.",
+          "Do not stuff keywords unnaturally — write for a human reader first.",
+        ],
+      },
+      { type: "h2", text: "Step 4: Complete every attribute and service" },
+      {
+        type: "p",
+        text: "Google Business Profile offers dozens of attributes depending on your category — accessibility features, payment methods, languages spoken, Wi-Fi availability, outdoor seating, and more. Every relevant attribute you complete strengthens your profile's completeness score and helps Google match your listing to relevant searches. For tourism businesses, 'English-speaking staff', 'accepts credit cards' and 'online booking available' are particularly valuable for international guests.",
+      },
+      { type: "h2", text: "Step 5: Upload a complete photo set" },
+      {
+        type: "ul",
+        items: [
+          "Cover photo: your best exterior or signature interior shot — this appears prominently in search results.",
+          "Logo: a clean, square version of your brand logo.",
+          "Interior photos: at least 5–10 photos showing the space, atmosphere and key areas.",
+          "Product or service photos: food dishes, treatment rooms, hotel rooms, tour activities.",
+          "Team photos: optional but builds personal trust.",
+          "Aim for a minimum of 15–20 photos at launch, and add new photos monthly.",
+        ],
+      },
+      { type: "h2", text: "Step 6: Add your booking link and contact information" },
+      {
+        type: "p",
+        text: "Connect a booking link — your website booking page, WhatsApp link or reservation form — so guests can act immediately from your profile. Ensure your phone number, website URL and address exactly match the information on your website. Inconsistency between your GBP and website sends a weak signal to Google and can suppress your local ranking.",
+      },
+      { type: "h2", text: "Step 7: Start posting and managing reviews" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Regular Google Posts (short updates, offers or announcements) signal that your listing is actively managed. Begin a systematic post-service review request from day one — even one new genuine review per week compounds significantly over time. For full guidance on building reviews, see the guide to " },
+          { type: "link", text: "getting more Google reviews for tourism businesses in Vietnam", href: "/en/blog/get-more-google-reviews-tourism-vietnam" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How long does Google Business Profile verification take?",
+        a: "Postcard verification typically takes 5–14 days for the code to arrive. Video verification, where available, can be completed in 1–3 days. Telephone verification is sometimes available for established businesses.",
+      },
+      {
+        q: "Can I have a Google Business Profile without a physical address?",
+        a: "Yes — service-area businesses can hide their address and instead list the areas they serve. This is appropriate for businesses that operate at the customer's location rather than a fixed premises.",
+      },
+      {
+        q: "What happens if someone edits my Google Business Profile without permission?",
+        a: "Google allows anyone to suggest edits to business listings. These suggestions may be applied automatically or queued for your review. Monitoring your profile regularly — at least monthly — allows you to catch and correct inaccurate changes before they affect your ranking.",
+      },
+      {
+        q: "Do I need to set up GBP in multiple languages?",
+        a: "Your primary GBP listing is shown in the searcher's language when possible. For international tourism businesses, writing your description in English covers the widest international audience. Korean, Japanese or other language descriptions can be added in the 'Additional information' section for specific markets.",
+      },
+    ],
+    related: [
+      { label: "GBP setup service", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "Service" },
+      { label: "Google Maps guide Hoi An Da Nang", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Related" },
+      { label: "Get more Google reviews", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Related" },
+      { label: "Local SEO Vietnam tourism", href: "/en/blog/local-seo-vietnam-tourism", note: "Related" },
+    ],
+  },
+  {
+    slug: "get-more-google-reviews-tourism-vietnam",
+    heroImage: {
+      src: "/images/blog/get-more-google-reviews-tourism-vietnam.webp",
+      alt: "Guest leaving a Google review on smartphone after visiting a restaurant in Vietnam",
+    },
+    path: "/en/blog/get-more-google-reviews-tourism-vietnam",
+    cluster: "maps",
+    title: "How to Get More Genuine Google Reviews for Your Tourism Business in Vietnam",
+    metaTitle: "Get More Google Reviews for Tourism Business Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Practical strategies for spas, restaurants, hotels and tours in Hoi An and Da Nang to build genuine Google review volume — consistently, sustainably and within Google's policies.",
+    excerpt:
+      "Review count and recency are among the strongest signals Google uses to rank local businesses. Here is how to build a sustainable review system without shortcuts that risk your listing.",
+    date: "2026-06-20",
+    readingMinutes: 7,
+    primaryKeyword: "get more Google reviews tourism Vietnam",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Get More Google Reviews Tourism Vietnam", href: "/en/blog/get-more-google-reviews-tourism-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Review count, average rating and review recency are three of the most powerful ranking signals in Google's local search algorithm. A business with 150 reviews averaging 4.8 stars, with 20 new reviews in the last 30 days, will almost always outrank a competitor with 30 old reviews averaging 4.5. For tourism businesses in Hoi An and Da Nang — spas, hotels, restaurants, cooking classes, tours — building a genuine review system is one of the highest-return activities available.",
+      },
+      { type: "h2", text: "Why fake reviews are never worth the risk" },
+      {
+        type: "p",
+        text: "Google's spam detection has become sophisticated enough to catch most patterns of fake review activity — unusual velocity, reviews from accounts with no history, reviews that arrive in suspicious clusters. When caught, reviews are removed, and repeat violations can lead to listing suspension. Beyond the risk, fake reviews do not build the kind of trust that genuine reviews do — experienced international travellers notice when reviews read as inauthentic. The only sustainable approach is genuine reviews from real guests.",
+      },
+      { type: "h2", text: "The post-service review request: the most effective system" },
+      {
+        type: "p",
+        text: "The single most effective method for building review volume is a consistent post-service review request at the moment of maximum guest satisfaction. For a spa, this is immediately after the treatment when the guest is relaxed and happy. For a restaurant, it is at the end of a positive meal when the bill arrives. For a hotel, it is at checkout after a smooth stay. The system has three components: a trigger (the right moment), a tool (a QR code or short link), and a message (brief and warm, not pushy).",
+      },
+      { type: "h2", text: "Building your review request QR code" },
+      {
+        type: "ul",
+        items: [
+          "Go to your Google Business Profile and find your Review Link under 'Get more reviews'.",
+          "Shorten the link with a URL shortener or generate a QR code from the direct link.",
+          "Print the QR code and add it to your receipt, table card, room card or checkout desk.",
+          "Add a short message: 'Enjoyed your visit? Share your experience on Google — it only takes a minute.'",
+          "Test the QR code from different phones and ensure it opens directly to the review form.",
+        ],
+      },
+      { type: "h2", text: "Staff training: the human element" },
+      {
+        type: "p",
+        text: "A QR code alone is less effective than a QR code accompanied by a brief verbal mention from a staff member. Training staff to say something simple — 'We'd really appreciate your Google review if you have a moment' — at the right time increases conversion significantly. The key is timing (during a clearly positive moment) and tone (warm and genuine, not transactional).",
+      },
+      { type: "h2", text: "WhatsApp and Zalo follow-up" },
+      {
+        type: "p",
+        text: "For tourism businesses that collect guest contact details — a hotel that takes a phone number at check-in, a spa that messages guests their booking confirmation — a follow-up WhatsApp or Zalo message the day after the visit is a highly effective review request channel. The message should be short: thank the guest for their visit, mention that reviews help the business and provide a direct link. Response rates are typically higher than email for tourism businesses in Vietnam.",
+      },
+      { type: "h2", text: "Responding to every review" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Responding to reviews — especially new ones — signals to both Google and potential guests that the business is actively managed. Positive responses can be brief and personalised. Negative responses require more care: acknowledge the issue, avoid being defensive and invite the guest to follow up directly. For a detailed guide on handling negative reviews, see " },
+          { type: "link", text: "how to respond to negative Google reviews for tourism businesses", href: "/en/blog/respond-to-negative-reviews-tourism" },
+          { type: "text", text: "." },
+        ],
+      },
+      { type: "h2", text: "Review velocity: consistency beats bursts" },
+      {
+        type: "p",
+        text: "Google's algorithm rewards steady, consistent review velocity over time. A business that receives 10 reviews per month every month outranks one that received 50 reviews in January and none since. This means the review request process needs to become part of daily operations — not a one-off campaign. Even 3–5 genuine reviews per month, sustained over a year, creates a review profile that is very difficult for competitors to match.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Can I ask guests to change or remove a negative review?",
+        a: "You can politely invite a guest to update their review if you have addressed their concern — but you cannot pressure or incentivise them to do so. Google's policies prohibit offering rewards in exchange for changing reviews.",
+      },
+      {
+        q: "Should I put a review request on my menu or room card?",
+        a: "Yes — a QR code on a physical card that guests have in their hands at the right moment is highly effective. Keep the message simple: a thank-you and a direct request to share their experience.",
+      },
+      {
+        q: "Does the language of a review affect my ranking?",
+        a: "Google uses reviews in all languages for ranking purposes. English reviews tend to be most useful for international guests reading them, but Korean, Japanese, French or any language review counts equally for your local search ranking.",
+      },
+      {
+        q: "What is the minimum review count needed to rank well in the Hoi An local pack?",
+        a: "This varies by category and location. For competitive niches like 'spa Hoi An', businesses in the local pack typically have 50–200+ reviews. For less competitive categories, 20–30 genuine recent reviews may be sufficient to rank strongly.",
+      },
+    ],
+    related: [
+      { label: "Review & Reputation service", href: "/en/google-maps-marketing/review-reputation-vietnam", note: "Service" },
+      { label: "GBP setup Vietnam", href: "/en/blog/google-business-profile-setup-vietnam", note: "Related" },
+      { label: "Respond to negative reviews", href: "/en/blog/respond-to-negative-reviews-tourism", note: "Related" },
+      { label: "Google Maps guide Hoi An", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Related" },
+    ],
+  },
+  {
+    slug: "local-seo-vietnam-tourism",
+    heroImage: {
+      src: "/images/blog/local-seo-vietnam-tourism.webp",
+      alt: "Map pin location icon on phone screen — local SEO for tourism businesses in Vietnam",
+    },
+    path: "/en/blog/local-seo-vietnam-tourism",
+    cluster: "maps",
+    title: "Local SEO for Tourism Businesses in Vietnam: What Actually Works",
+    metaTitle: "Local SEO for Tourism Businesses in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "A practical guide to local SEO for spas, hotels, restaurants and tours in Hoi An and Da Nang: Google Business Profile, review signals, website consistency and what drives local ranking.",
+    excerpt:
+      "Local SEO is what determines whether your business appears when a tourist nearby searches for what you offer. Here is what drives local ranking in Hoi An and Da Nang and what you can do about it.",
+    date: "2026-06-20",
+    readingMinutes: 8,
+    primaryKeyword: "local SEO Vietnam tourism",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Local SEO Vietnam Tourism", href: "/en/blog/local-seo-vietnam-tourism" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Local SEO is the set of practices that determine how visible your business is when someone nearby — or planning to visit — searches for what you offer. For a spa in Hoi An, 'local SEO' is what determines whether you appear when a tourist searches 'spa near me' from their hotel room. For a restaurant in Da Nang, it is what puts you in front of a diner searching 'Vietnamese restaurant Da Nang' at 6pm. Understanding how it works is the first step to improving your position.",
+      },
+      { type: "h2", text: "The three factors Google uses for local ranking" },
+      {
+        type: "p",
+        text: "Google uses three primary factors for local search ranking: relevance, distance and prominence. Relevance is how well your business matches what the searcher is looking for — determined by your Google Business Profile category, description and content. Distance is how close your business is to the searcher or the location mentioned in the query. Prominence is how well-known and trusted your business is — driven by reviews, links, citations and website quality. Distance is largely fixed, but relevance and prominence are both improvable.",
+      },
+      { type: "h2", text: "Relevance: making sure Google understands what you do" },
+      {
+        type: "ul",
+        items: [
+          "Set the most accurate primary category in your Google Business Profile.",
+          "Write a description that uses the natural language your target guests would use to search for you.",
+          "List your services explicitly in the GBP Services section.",
+          "Publish Google Posts that mention your specific offerings — treatments, cuisine types, room types.",
+          "Ensure your website content matches what Google reads in your GBP — consistent service names and location references.",
+        ],
+      },
+      { type: "h2", text: "Prominence: the review and reputation signals" },
+      {
+        type: "p",
+        text: "Prominence is the hardest factor to build quickly but has the most durable effect. It is built through: consistent review volume over time, high review ratings, the quality and authority of websites that mention or link to you, citations (mentions of your business name, address and phone across directories), and the overall strength of your website. A business mentioned in major travel publications or booking platforms with a link to your website has higher prominence than one that only appears on Google Maps.",
+      },
+      { type: "h2", text: "NAP consistency: a simple rule that many businesses break" },
+      {
+        type: "p",
+        text: "NAP stands for Name, Address, Phone. These three pieces of information must be identical — not just similar — across your Google Business Profile, your website, your OTA listings and any directory where your business appears. A business listed as 'Serena Day Spa' on Google but 'Serena Spa & Wellness' on Booking.com creates a consistency problem that weakens local ranking signals. Choose one canonical form of each and use it everywhere.",
+      },
+      { type: "h2", text: "How your website supports your Google Maps ranking" },
+      {
+        type: "p",
+        text: "Google reads your website to verify your GBP information and to understand what your business does. A website with LocalBusiness schema markup, consistent NAP information, fast load speed and location-relevant content directly strengthens your local ranking. A website that takes 6 seconds to load on mobile, has no schema markup and does not mention Hoi An or Da Nang in its content provides almost no local SEO support to your Maps listing.",
+      },
+      { type: "h2", text: "Common local SEO mistakes tourism businesses make" },
+      {
+        type: "ul",
+        items: [
+          "Incorrect or generic GBP category — 'Restaurant' instead of 'Vietnamese Restaurant'.",
+          "No English description in GBP — invisible to international guests searching in English.",
+          "Inconsistent business name across platforms — confuses Google's entity matching.",
+          "No photos or outdated photos — the single most visible quality signal for tourism businesses.",
+          "No review request process — relying on guests to leave reviews spontaneously is 5–10x less effective than asking.",
+          "Website and GBP show different opening hours or address — a trust and ranking penalty.",
+        ],
+      },
+      { type: "h2", text: "Where to start" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "The practical starting point is auditing your Google Business Profile for the most common issues: category accuracy, description quality, photo count, attribute completeness and NAP consistency with your website. Most of these can be fixed in a single session. For the full process, see the guide to " },
+          { type: "link", text: "Google Business Profile setup for tourism businesses in Vietnam", href: "/en/blog/google-business-profile-setup-vietnam" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is local SEO different from regular SEO?",
+        a: "Yes — local SEO specifically targets searches with local intent (near me, city name, location-specific queries) and prioritises Google Business Profile signals alongside traditional website SEO factors. Regular SEO focuses on ranking website pages for national or international queries without a local component.",
+      },
+      {
+        q: "How long does local SEO take to show results?",
+        a: "Profile optimisation improvements can show measurable results within 2–6 weeks. Building review volume and domain authority takes 3–6 months. Local SEO is cumulative — the work you do today continues paying returns for months and years.",
+      },
+      {
+        q: "Does having a website make a difference to my Google Maps ranking?",
+        a: "Yes — significantly. A website connected to your GBP that has consistent information, fast load speed and location-relevant content improves your local ranking. Businesses without websites are at a structural disadvantage in competitive markets like Hoi An and Da Nang.",
+      },
+      {
+        q: "Should I list my business on TripAdvisor and other directories for local SEO?",
+        a: "Consistent citations across trusted directories (TripAdvisor, Foursquare, Yelp, local tourism directories) contribute to prominence signals. The key is consistency — the same business name, address and phone on every platform.",
+      },
+    ],
+    related: [
+      { label: "GBP setup service Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "Service" },
+      { label: "Google Maps guide Hoi An", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Related" },
+      { label: "Google Business Profile setup", href: "/en/blog/google-business-profile-setup-vietnam", note: "Related" },
+      { label: "Google Maps ranking factors", href: "/en/blog/google-maps-ranking-hoi-an-da-nang", note: "Related" },
+    ],
+  },
+  {
+    slug: "google-maps-ranking-hoi-an-da-nang",
+    heroImage: {
+      src: "/images/blog/google-maps-ranking-hoi-an-da-nang.webp",
+      alt: "Laptop open to Google search results — local SEO and ranking for Hoi An Da Nang",
+    },
+    path: "/en/blog/google-maps-ranking-hoi-an-da-nang",
+    cluster: "maps",
+    title: "Google Maps Ranking for Tourism Businesses in Hoi An and Da Nang",
+    metaTitle: "Google Maps Ranking Factors Hoi An Da Nang Tourism | Cong Thien Agency",
+    metaDescription:
+      "What determines Google Maps ranking for spas, restaurants, hotels and tours in Hoi An and Da Nang — and the practical steps that have the biggest impact on local search position.",
+    excerpt:
+      "Why does one spa appear first on Google Maps while a better spa three doors down is invisible? These are the ranking factors that matter most in the Hoi An and Da Nang local market.",
+    date: "2026-06-20",
+    readingMinutes: 7,
+    primaryKeyword: "Google Maps ranking Hoi An Da Nang",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Google Maps Ranking Hoi An Da Nang", href: "/en/blog/google-maps-ranking-hoi-an-da-nang" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "The Google Maps local pack — the three businesses that appear under the map in a local search result — captures the vast majority of clicks for any local query. For tourism businesses in Hoi An and Da Nang, being in that pack for your most important search terms is the difference between a fully booked calendar and an empty one. Understanding what Google uses to determine those positions is the first step to improving yours.",
+      },
+      { type: "h2", text: "Factor 1: relevance — does Google know what you are?" },
+      {
+        type: "p",
+        text: "Relevance is about matching your business profile to what the searcher is looking for. It starts with your primary Google Business Profile category — this is the most critical single configuration decision. A spa that selects 'Day Spa' as its primary category will rank for 'spa' searches in its area. One that selects 'Beauty Salon' will not. After category, relevance is built through your service list, business description, Google Posts and website content — all of which Google reads to understand precisely what your business offers.",
+      },
+      { type: "h2", text: "Factor 2: distance — how close are you to the searcher?" },
+      {
+        type: "p",
+        text: "Distance is the simplest factor and the one you cannot change — it is measured from the searcher's current location (or the location mentioned in their query) to your business address. What this means in practice is that 'near me' searches are won by proximity, while location-specific searches like 'spa Hoi An old town' can be won by businesses anywhere within a reasonable range of that location. You cannot move your business, but you can ensure Google has your exact address correctly mapped.",
+      },
+      { type: "h2", text: "Factor 3: prominence — how well-known and trusted are you?" },
+      {
+        type: "ul",
+        items: [
+          "Review count and rating — the most visible prominence signal and the one tourists use to compare options.",
+          "Review recency — consistent recent reviews signal an active business.",
+          "Website authority — a well-built, fast website with location-relevant content strengthens prominence.",
+          "Citations — your business mentioned consistently across booking platforms, travel sites and directories.",
+          "Links — mentions and links from reputable travel websites, local media or business directories.",
+        ],
+      },
+      { type: "h2", text: "How the Hoi An and Da Nang markets are different" },
+      {
+        type: "p",
+        text: "Hoi An and Da Nang are high-competition local markets for almost every tourism category — there are hundreds of spas, restaurants and hotels competing for the same search terms. This means the baseline prominence requirement is higher than in less competitive cities. In Hoi An old town, appearing in the top three spa results typically requires 50+ reviews with consistent recency, a fully optimised profile and a fast website with LocalBusiness schema markup.",
+      },
+      { type: "h2", text: "What you can do right now to improve your ranking" },
+      {
+        type: "ul",
+        items: [
+          "Audit your GBP category — is it the most specific and accurate option for your business type?",
+          "Check that your business name, address and phone match exactly across GBP, website and major OTA listings.",
+          "Count your reviews from the last 90 days — if fewer than 5, make review request a priority this month.",
+          "Open your GBP on mobile and check that photos load quickly and look professional — this is what tourists see.",
+          "Connect your website to GBP and ensure the website mentions your specific location (Hoi An, Da Nang, exact neighbourhood).",
+        ],
+      },
+      { type: "h2", text: "Ranking for multilingual searches" },
+      {
+        type: "p",
+        text: "Tourists in Hoi An and Da Nang search in many languages — English, Korean, Japanese, French, and others. Google generally serves the most complete, well-optimised listing regardless of search language, but adding descriptions in the relevant international languages strengthens relevance signals for non-English searches. Korean-language information is particularly valuable for businesses targeting Korean tourists — the largest single international market for this region.",
+      },
+      { type: "h2", text: "Tracking your ranking progress" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Google Business Profile Insights shows how many people searched for your business, clicked for directions, visited your website or called — broken down by search query. Use this data monthly to track which queries are driving engagement and whether profile changes have moved impressions. For the full optimisation process, see the guide to " },
+          { type: "link", text: "local SEO for tourism businesses in Vietnam", href: "/en/blog/local-seo-vietnam-tourism" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Why does a business with fewer reviews sometimes rank higher than one with more?",
+        a: "Review recency, rating and profile completeness all affect ranking independently of volume. A business with 30 recent 5-star reviews and a complete profile often outranks one with 100 reviews spread over three years with a 4.2 average.",
+      },
+      {
+        q: "Does Google Maps ranking change depending on where the searcher is located?",
+        a: "Yes — Google Maps ranking is inherently location-dependent. Your ranking for 'spa Hoi An' searched from Sydney is different from the ranking for 'spa near me' searched from inside Hoi An old town. This is why building strong relevance and prominence signals matters — they affect your ranking across all location contexts.",
+      },
+      {
+        q: "Can paid Google Ads improve my Maps ranking?",
+        a: "Running Google Ads can place your business at the top of local search results as a paid placement, but it does not improve your organic local ranking directly. Google Ads and Google Business Profile organic ranking are separate systems.",
+      },
+      {
+        q: "How often should I update my Google Business Profile?",
+        a: "At minimum, review your GBP monthly to check for suggested edits, respond to new reviews and update seasonal hours. Active businesses benefit from weekly Google Posts and regular photo updates.",
+      },
+    ],
+    related: [
+      { label: "GBP setup Vietnam", href: "/en/blog/google-business-profile-setup-vietnam", note: "Related" },
+      { label: "Local SEO Vietnam tourism", href: "/en/blog/local-seo-vietnam-tourism", note: "Related" },
+      { label: "Google Maps guide Hoi An Da Nang", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Related" },
+      { label: "Get more Google reviews", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Related" },
+    ],
+  },
+  {
+    slug: "respond-to-negative-reviews-tourism",
+    heroImage: {
+      src: "/images/blog/respond-to-negative-reviews-tourism.webp",
+      alt: "Business owner typing a professional response to a negative online review",
+    },
+    path: "/en/blog/respond-to-negative-reviews-tourism",
+    cluster: "maps",
+    title: "How to Respond to Negative Google Reviews for Tourism Businesses",
+    metaTitle: "Respond to Negative Google Reviews Tourism Vietnam | Cong Thien Agency",
+    metaDescription:
+      "How spas, hotels, restaurants and tours in Hoi An and Da Nang should respond to negative Google reviews — response tone, what to avoid, how to handle fake reviews and reputation recovery.",
+    excerpt:
+      "A negative review is not the problem. A poorly handled response is. Here is how to respond to negative Google reviews in a way that rebuilds trust with the thousands of future guests who will read the exchange.",
+    date: "2026-06-20",
+    readingMinutes: 7,
+    primaryKeyword: "respond to negative Google reviews tourism",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Respond to Negative Reviews Tourism", href: "/en/blog/respond-to-negative-reviews-tourism" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Every tourism business with enough guests will eventually receive a negative Google review. A spa where one guest's treatment did not meet expectations. A hotel where a room had a maintenance issue. A restaurant where service was slow on a busy night. What separates businesses that recover quickly from those that see sustained damage is not whether they receive negative reviews — it is how they respond.",
+      },
+      { type: "h2", text: "Who your response is really written for" },
+      {
+        type: "p",
+        text: "When you respond to a negative review, you are not writing for the reviewer. You are writing for the next thousand potential guests who will read that review and your response before deciding whether to visit. Your response communicates your business's character, professionalism and how you handle problems. A calm, empathetic, solution-focused response to even an unfair negative review often increases trust with future guests — because it demonstrates a level of maturity that confident businesses show.",
+      },
+      { type: "h2", text: "The four elements of an effective response" },
+      {
+        type: "ul",
+        items: [
+          "Acknowledge: thank the reviewer for sharing their experience, however negative. Starting with acknowledgement rather than defence sets a professional tone.",
+          "Empathise: if the guest had a poor experience, say so genuinely — 'We are sorry this did not meet your expectations' is more powerful than 'We aim to provide good service'.",
+          "Explain (sparingly): if there is context that explains what happened — a particularly busy evening, a staff training issue that has since been addressed — you can briefly mention it. Do not use this to dismiss the complaint.",
+          "Invite: close by inviting the guest to contact you directly to discuss further. This shows good faith and occasionally results in a review update.",
+        ],
+      },
+      { type: "h2", text: "What to avoid when responding to negative reviews" },
+      {
+        type: "ul",
+        items: [
+          "Being defensive or dismissive — 'This is not what happened' or 'We cannot verify this guest stayed with us.'",
+          "Attacking the reviewer's credibility — even if you suspect the review is fake, do not say so publicly.",
+          "Using copy-paste templates that are clearly generic — guests notice and it makes the response feel insincere.",
+          "Responding in anger — always write the first draft, wait, then review before publishing.",
+          "Disclosing personal details about the guest or the incident that should remain private.",
+        ],
+      },
+      { type: "h2", text: "Handling fake or competitor reviews" },
+      {
+        type: "p",
+        text: "If you believe a review is fake — from someone who never visited your business, from a competitor, or containing content that violates Google's policies — you can flag it for removal through your Google Business Profile dashboard. Select the review, click the flag icon and choose the most appropriate policy violation. Google reviews the flag and decides whether to remove the content. Document your case: screenshots, booking records, any evidence that the reviewer was not a genuine customer.",
+      },
+      { type: "h2", text: "Response time matters" },
+      {
+        type: "p",
+        text: "Responding within 24–48 hours of a negative review appearing is significantly more effective than waiting weeks. A prompt response signals attentiveness. A delayed response suggests the business is not monitoring its reputation. For tourism businesses in peak season, setting up a Google Business Profile notification so you are alerted to new reviews is essential — a negative review left unresponded for two weeks during high season can affect dozens of potential booking decisions.",
+      },
+      { type: "h2", text: "The long-term fix: outvolume the negatives" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "The most durable protection against negative reviews is a consistent volume of genuine positive ones. A single 1-star review on a business with 15 reviews can drop the average dramatically. The same review on a business with 200 reviews barely moves the needle. Building review volume systematically through a post-service request process is the highest-leverage long-term reputation management strategy. See the full guide to " },
+          { type: "link", text: "building genuine Google reviews for tourism businesses", href: "/en/blog/get-more-google-reviews-tourism-vietnam" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Should I respond to positive reviews as well?",
+        a: "Yes. Responding to positive reviews signals that you value guest feedback and are actively engaged with your listing. Keep positive responses brief and personalised — reference something specific from the review to show you actually read it.",
+      },
+      {
+        q: "Can a negative review be removed if it is inaccurate?",
+        a: "Only if it violates Google's content policies — for example, if it contains hate speech, spam, personal attacks or is from someone who never visited. Inaccurate reviews from genuine customers are generally not removed by Google, even if your account of events differs significantly from the reviewer's.",
+      },
+      {
+        q: "What should I do if a competitor is leaving fake negative reviews?",
+        a: "Flag each review through GBP, document your evidence and report the pattern to Google Business Profile support. If the fake review activity is sustained and causing real damage, you can escalate through Google's support channels. This process takes time — maintaining a healthy positive review volume is the best protection while the process unfolds.",
+      },
+      {
+        q: "How do I respond to a negative review in a language I do not speak?",
+        a: "Use a professional translator or translation service rather than machine translation. A response in imperfect translated English is worse than no response for some international audiences. If the review is in Korean, a professional Korean-language response is far more effective.",
+      },
+    ],
+    related: [
+      { label: "Negative Review Management service", href: "/en/google-maps-marketing/negative-review-management-vietnam", note: "Service" },
+      { label: "Review & Reputation Vietnam", href: "/en/google-maps-marketing/review-reputation-vietnam", note: "Service" },
+      { label: "Get more Google reviews", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Related" },
+      { label: "Google Maps guide Hoi An", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Related" },
+    ],
+  },
+  {
+    slug: "google-maps-photos-guide-tourism",
+    heroImage: {
+      src: "/images/blog/google-maps-photos-guide-tourism.webp",
+      alt: "Photographer taking food photos at a restaurant in Vietnam for Google Maps listing",
+    },
+    path: "/en/blog/google-maps-photos-guide-tourism",
+    cluster: "maps",
+    title: "Google Maps Photos for Tourism Businesses: A Complete Guide",
+    metaTitle: "Google Maps Photos Guide for Tourism Businesses in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "What photos to upload to Google Maps for spas, restaurants, hotels and tours in Hoi An and Da Nang — categories, quality standards, strategy and how photos affect local ranking.",
+    excerpt:
+      "Photos are the single most visible element of your Google Maps listing to a tourist deciding where to go. Here is what to upload, how to shoot it and why it affects your ranking.",
+    date: "2026-06-20",
+    readingMinutes: 7,
+    primaryKeyword: "Google Maps photos tourism business Vietnam",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Google Maps Photos Guide Tourism", href: "/en/blog/google-maps-photos-guide-tourism" },
+    ],
+    body: [
+      {
+        type: "p",
+        text: "When a tourist opens your Google Maps listing, the photos are the first thing they see — displayed prominently before your description, reviews or contact information. For tourism businesses in Hoi An and Da Nang — spas, restaurants, hotels, cooking classes, tours — photo quality is not an aesthetic choice. It is a primary conversion driver. A listing with poor, dark or generic photos loses potential guests in the first three seconds, regardless of your review score.",
+      },
+      { type: "h2", text: "Why Google Maps photos affect your ranking" },
+      {
+        type: "p",
+        text: "Google uses photo engagement as a quality signal. Listings that receive more photo views, more photo clicks and more user-uploaded photos signal to Google that they are generating interest and trust — which contributes to local ranking. Google has also confirmed that having a complete photo set across the recommended categories (interior, exterior, products, team) is associated with better profile performance. Photos are not just about conversion — they are a ranking input.",
+      },
+      { type: "h2", text: "The essential photo categories for tourism businesses" },
+      {
+        type: "ul",
+        items: [
+          "Exterior: the front of your building during daylight — helps guests identify the location on arrival.",
+          "Interior: 5–10 shots of the main spaces — dining room, reception, treatment rooms, hotel lobby.",
+          "Products or services: food dishes for restaurants, treatment rooms and spa beds for spas, room types for hotels, activity scenes for tours.",
+          "Team: optional but effective for building personal trust — particularly for boutique businesses.",
+          "Menu or price list: for restaurants and spas, a clear photo of a current menu or treatment menu.",
+          "Cover photo: your single best image — this appears first in search results and significantly influences click-through.",
+        ],
+      },
+      { type: "h2", text: "Photo quality standards that matter" },
+      {
+        type: "ul",
+        items: [
+          "Natural light or warm artificial light — avoid harsh flash photography that flattens depth and colour.",
+          "Minimum 720×720 pixels — Google recommends at least this resolution for clear display.",
+          "Horizontal (landscape) orientation — displays better in the Google Maps photo carousel.",
+          "Real photos of your actual space and products — not stock images, which reduce authenticity significantly.",
+          "No text overlays or marketing graphics — Google may suppress these and they look unprofessional in a photo carousel.",
+          "Current photos — update when the space changes, when seasonal menus launch or when key products change.",
+        ],
+      },
+      { type: "h2", text: "User-generated photos: a signal you can encourage" },
+      {
+        type: "p",
+        text: "Guests can upload photos to your Google Maps listing independently, and Google gives these user-generated photos significant weight as authenticity signals. Encouraging guests to photograph and upload their visit — a simple verbal invitation or a small sign near the exit — builds a photo set that feels more genuine and diverse than owner-uploaded content alone. This is a legitimate and effective strategy: you are not faking anything, you are simply making it easy for satisfied guests to share.",
+      },
+      { type: "h2", text: "How often to add new photos" },
+      {
+        type: "p",
+        text: "Photo freshness is a quality signal. Businesses that add new photos regularly outperform those with a static photo set added years ago. A practical schedule is adding 3–5 new photos per month — seasonal dishes, new room styling, team additions, renovated areas. This keeps the listing feeling current and active, which matters both for ranking and for the impression it creates on potential guests viewing the listing.",
+      },
+      { type: "h2", text: "Photography investment vs return" },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "For most tourism businesses, professional photography is one of the highest-return marketing investments available. A single half-day shoot with a professional photographer produces photos that will serve your Google Maps listing, website, social media and OTA platforms simultaneously. The cost of one professional shoot is typically recouped within a week or two of bookings that result from improved profile performance. Combined with an optimised Google Business Profile, good photos are the fastest visible improvement most businesses can make. For the full profile optimisation checklist, see the guide to " },
+          { type: "link", text: "Google Business Profile setup for tourism businesses", href: "/en/blog/google-business-profile-setup-vietnam" },
+          { type: "text", text: "." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can I remove photos that guests have uploaded to my Google Maps listing?",
+        a: "You can flag guest-uploaded photos that violate Google's content policies (e.g. inappropriate content), but you generally cannot remove photos simply because you dislike them. The best approach is to ensure your own uploaded photos are higher quality than any unflattering guest photos.",
+      },
+      {
+        q: "How many photos should I upload when first setting up my Google Business Profile?",
+        a: "Aim for a minimum of 15–20 photos across the key categories: exterior, interior, products or services, and a team photo if appropriate. More is better at launch — it immediately signals a complete, professionally managed profile.",
+      },
+      {
+        q: "Does the order of photos matter?",
+        a: "Google's algorithm selects the cover photo and lead images algorithmically based on engagement — you cannot fully control which photos appear first. However, designating your best image as the cover photo gives it the strongest initial placement.",
+      },
+      {
+        q: "Are videos allowed on Google Business Profile?",
+        a: "Yes — you can upload videos up to 30 seconds and 75MB in size. Short videos of the experience — a treatment room walkthrough, food preparation, a room tour — can increase profile engagement significantly.",
+      },
+    ],
+    related: [
+      { label: "GBP setup Vietnam", href: "/en/blog/google-business-profile-setup-vietnam", note: "Related" },
+      { label: "Google Maps guide Hoi An", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Related" },
+      { label: "Google Maps ranking factors", href: "/en/blog/google-maps-ranking-hoi-an-da-nang", note: "Related" },
+      { label: "Google Maps for spas Vietnam", href: "/en/google-maps-marketing/google-maps-for-spas-vietnam", note: "Service" },
+    ],
+  },
 ];
 
 export function getPostEn(slug: string): BlogPost | undefined {
