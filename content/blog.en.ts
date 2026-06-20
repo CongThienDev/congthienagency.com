@@ -2043,6 +2043,598 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Service" },
     ],
   },
+
+  // ─── P3 Social cluster ────────────────────────────────────────────────────────
+  {
+    slug: "social-proof-tourism-vietnam",
+    heroImage: { src: "/images/blog/social-proof-tourism-vietnam.webp", alt: "Social proof and online reviews for tourism businesses in Vietnam" },
+    path: "/en/blog/social-proof-tourism-vietnam",
+    cluster: "social",
+    title: "Social Proof for Tourism Businesses in Vietnam: What Works and What Doesn't",
+    metaTitle: "Social Proof for Tourism in Vietnam | What Actually Drives Bookings",
+    metaDescription:
+      "Practical guide to social proof for spas, restaurants and hotels in Hoi An and Da Nang. Which review platforms matter, how to collect genuine reviews, and how social proof drives international bookings.",
+    excerpt:
+      "For tourism businesses in Vietnam, social proof is not just about star ratings — it's the combination of reviews, social presence and third-party endorsements that converts a suspicious prospect into a confirmed booking.",
+    date: "2026-06-20",
+    readingMinutes: 7,
+    primaryKeyword: "social proof tourism Vietnam",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Social Proof Tourism Vietnam", href: "/en/blog/social-proof-tourism-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "International tourists arrive in Vietnam having done extensive online research. By the time they book a spa, restaurant or hotel, they've read multiple reviews across several platforms. Social proof — the accumulated evidence that others have had a good experience — is the primary trust mechanism that converts this research into action. Understanding which social proof signals matter for your specific market is more valuable than accumulating review numbers on the wrong platform." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Which review platforms matter for which guest markets",
+      },
+      {
+        type: "ul",
+        items: [
+          "Google Reviews: the universal standard for Western guests (Europe, North America, Australia). High review count and strong star rating on Google Maps is table stakes for any business targeting international guests.",
+          "TripAdvisor: still relevant for hospitality — hotels and restaurants in particular. Older demographics and group tours research heavily on TripAdvisor.",
+          "Naver Blog reviews: the primary trust mechanism for Korean tourists. A detailed Korean blog post about your spa or restaurant carries more weight than any star rating for this market.",
+          "Booking.com and Agoda reviews: critical for hotel bookings — often the final verification step before confirming.",
+          "Facebook reviews and recommendations: relevant for social-platform-native audiences, particularly for newer businesses building community trust.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why volume matters more than perfection",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "A business with 200 Google reviews averaging 4.4 stars consistently outperforms a business with 30 reviews averaging 5.0 stars in booking conversion. Prospective guests discount perfect scores with low volume as potentially fake or unrepresentative. Review volume signals longevity, consistency and broad customer experience — all of which are more reassuring than a handful of five-star reviews." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Collecting genuine reviews: the right approach",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ask at the right moment: immediately after the service, when the guest's experience is freshest and satisfaction is highest.",
+          "Remove friction: a QR code at checkout that goes directly to the Google review form is more effective than asking guests to find your profile themselves.",
+          "Ask genuinely, not transactionally: 'If you enjoyed your experience, we'd appreciate a Google review' is better than 'Please leave us 5 stars.'",
+          "Follow up via WhatsApp or email for guests who didn't review during the visit — but only once.",
+          "For Korean guests: encourage a Naver Place check-in or ask if they'd consider sharing their experience on Naver Blog.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Social proof beyond star ratings",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Review scores are one component of social proof, but not the only one. A tourism business's broader social proof picture includes: the number and quality of photos on Google Maps and the website, a verified Facebook Page, consistent social media posting showing real activity, featured media coverage or blog posts, and physical trust signals visible on arrival (certificates, awards, association memberships). The combination of these signals creates a coherent picture of trustworthiness that star ratings alone cannot convey." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Responding to reviews: social proof in action",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "How a business responds to reviews is itself a form of social proof. Prospective guests read review responses to assess whether the business is attentive, professional and accountable. A thoughtful, personalised response to a negative review can actually increase booking confidence — it demonstrates that the business takes feedback seriously and handles problems professionally. Generic copy-paste thank-you responses to positive reviews add little value; specific, warm responses that reference the reviewer's experience reinforce authenticity." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How many Google reviews does a spa in Hoi An need to be competitive?",
+        a: "In competitive tourist areas like Hoi An, 50+ reviews is a reasonable baseline for credibility. 100+ reviews puts a business in a strong competitive position. The average star rating matters less than the volume and recency — a consistent stream of recent reviews signals active operation.",
+      },
+      {
+        q: "Should I worry about a few negative reviews?",
+        a: "A small proportion of negative reviews (under 15%) is actually beneficial for credibility — an entirely positive review history looks suspicious to savvy guests. The key is responding to negatives professionally and ensuring the overall narrative in reviews reflects genuine positive experiences.",
+      },
+    ],
+    related: [
+      { label: "Facebook Page management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam", note: "Service" },
+      { label: "Get more Google reviews Vietnam", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Related" },
+      { label: "Respond to negative reviews tourism", href: "/en/blog/respond-to-negative-reviews-tourism", note: "Related" },
+      { label: "Google Business Profile Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "Service" },
+    ],
+  },
+  {
+    slug: "facebook-page-tourism-vietnam",
+    heroImage: { src: "/images/blog/facebook-page-tourism-vietnam.webp", alt: "Facebook page setup for tourism businesses in Hoi An and Da Nang" },
+    path: "/en/blog/facebook-page-tourism-vietnam",
+    cluster: "social",
+    title: "How to Build a Facebook Page That Converts Tourists in Hoi An and Da Nang",
+    metaTitle: "Facebook Page for Tourism Businesses in Vietnam | Complete Setup Guide",
+    metaDescription:
+      "Step-by-step guide to building a professional Facebook Page for spas, restaurants and hotels in Hoi An and Da Nang. Cover everything that international and Korean guests check before booking.",
+    excerpt:
+      "A well-built Facebook Page functions as a 24/7 trust checkpoint for international tourists. This guide covers what tourism businesses in Vietnam need on their page to convert visitors into bookings.",
+    date: "2026-06-19",
+    readingMinutes: 7,
+    primaryKeyword: "Facebook page tourism Vietnam",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Facebook Page Tourism Vietnam", href: "/en/blog/facebook-page-tourism-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Before booking a spa, restaurant or hotel in Hoi An or Da Nang, a large proportion of international guests check the business's Facebook Page. What they find — or don't find — there influences whether they enquire. A Facebook Page that is sparse, outdated or unprofessional creates doubt. A well-maintained page with clear information, real photos and genuine reviews provides the social proof that turns a prospect into a booking." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "The essential elements of a tourism Facebook Page",
+      },
+      {
+        type: "ul",
+        items: [
+          "Profile photo: your business logo at a size that is legible even as a small thumbnail. Not a personal photo or a photo of the venue — the logo.",
+          "Cover photo: a high-quality image of your best visual asset — a treatment room, dining space, room view or signature dish. Update this seasonally.",
+          "Business category: set the correct category (Spa, Restaurant, Hotel, Tour) so Facebook populates the right fields and discovery features.",
+          "Contact information: phone number, WhatsApp link, website URL and address all filled in completely and accurately.",
+          "About section: a two-to-three sentence description of what makes your business worth visiting, written in English for international guests.",
+          "Operating hours: accurate and kept up to date — outdated hours are a common guest complaint.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Content posting: quality and consistency matter more than frequency",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "A Facebook Page with irregular, low-quality posts signals neglect — the opposite of confidence-building. Tourism businesses in Hoi An and Da Nang that post consistently (3–5 times per week) with real photos of their services, venue and guest experiences build pages that function as living brochures. The most effective content types for tourism: photos of specific treatments or dishes (not generic photos), guest testimonial posts, seasonal offers and local event tie-ins, and behind-the-scenes content that makes the experience feel accessible." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Response time: the 'Very responsive' badge matters",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Facebook displays a 'Very responsive' badge on pages that reply to messages within an hour at least 90% of the time. For international guests considering booking via Facebook Messenger, this badge is a significant trust signal — it means they can expect a quick answer to their enquiry. Achieving and maintaining this badge requires consistent message monitoring during business hours, and ideally an automated greeting message set up for out-of-hours enquiries." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Facebook reviews: actively managing your rating",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Facebook reviews appear prominently on your page and influence international guests' decisions — particularly for businesses where Facebook is the primary discovery channel. Actively inviting satisfied guests to leave a Facebook review (alongside Google) builds the review count that makes your page look credible. Responding to all reviews — positive and negative — demonstrates attentiveness and is visible to prospective guests reading your page." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Korean tourists and Facebook",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Korean tourists use Facebook less than Western guests for discovery, but they still check Facebook as a secondary trust verification after finding your business on Naver. A Facebook Page that is clearly active and professionally maintained reinforces the credibility established through Naver Blog reviews. For businesses with a significant Korean guest base, adding Korean captions to photo posts and a KakaoTalk contact link in the About section improves Korean guest conversion from Facebook visits." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Should a tourism business have separate Facebook Pages for English and Vietnamese audiences?",
+        a: "Generally no — managing multiple pages divides your review count and attention. A single page with posts in both English and Vietnamese (and Korean where relevant) serves all audiences from one profile. Facebook's multilingual post feature can show language-specific versions to the relevant audience automatically.",
+      },
+      {
+        q: "How important is the Facebook Page compared to Google Maps for international guests?",
+        a: "Google Maps is typically higher priority for discovery — most international guests find businesses through Google Search and Maps. Facebook functions more as a secondary trust check after discovery. Both are important, but if you have limited time, prioritise Google Business Profile first and Facebook maintenance second.",
+      },
+    ],
+    related: [
+      { label: "Facebook Page management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam", note: "Service" },
+      { label: "Meta Verified Vietnam", href: "/en/social-marketing/meta-verified-vietnam", note: "Service" },
+      { label: "Social proof tourism Vietnam", href: "/en/blog/social-proof-tourism-vietnam", note: "Related" },
+      { label: "Google Business Profile Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "Service" },
+    ],
+  },
+  {
+    slug: "meta-verified-guide-vietnam",
+    heroImage: { src: "/images/blog/meta-verified-guide-vietnam.webp", alt: "Meta Verified blue badge guide for tourism businesses in Vietnam" },
+    path: "/en/blog/meta-verified-guide-vietnam",
+    cluster: "social",
+    title: "Meta Verified for Tourism Businesses in Vietnam: Is It Worth It?",
+    metaTitle: "Meta Verified Guide for Tourism in Vietnam | Is the Blue Badge Worth It?",
+    metaDescription:
+      "Honest guide to Meta Verified for spas, restaurants and hotels in Hoi An and Da Nang. What the blue badge does, what it doesn't do, and how to prepare your page for verification eligibility.",
+    excerpt:
+      "The Meta verified badge signals authenticity to international guests — but the process requires preparation and the outcome isn't guaranteed. Here's what tourism businesses in Vietnam need to know.",
+    date: "2026-06-18",
+    readingMinutes: 6,
+    primaryKeyword: "Meta Verified Vietnam tourism",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Meta Verified Guide Vietnam", href: "/en/blog/meta-verified-guide-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Meta's verified badge — the blue checkmark displayed on verified Facebook Pages and Instagram accounts — is increasingly sought after by tourism businesses in Vietnam targeting international guests. It signals authenticity, reduces impersonation risk and can improve how a business appears in search results on both platforms. But it's not a guarantee for any business, and the process requires preparation. This guide covers what the badge actually does and how to approach verification eligibility practically." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Meta Verified actually gives a tourism business",
+      },
+      {
+        type: "ul",
+        items: [
+          "A blue badge displayed prominently on the Facebook Page and Instagram profile, visible to all visitors.",
+          "Increased platform protection: verified accounts receive priority support and additional account security features.",
+          "Reduced impersonation risk: the badge differentiates your authentic page from copycat accounts with similar names.",
+          "Trust signal for international guests: particularly for Western guests who associate the blue badge with legitimacy.",
+          "Improved search visibility within Meta's platforms for your business name.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Meta Verified does not guarantee",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "The verified badge does not guarantee higher organic reach, more followers or more bookings. It is a trust signal, not an algorithm boost. A business with a blue badge and poor content still loses to a competitor without the badge but with stronger reviews, more photos and better engagement. The badge is valuable as part of a broader credibility strategy — not as a standalone marketing investment." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Eligibility: what Meta looks for",
+      },
+      {
+        type: "ul",
+        items: [
+          "Authenticity: the page or account must represent a real business with consistent identity across channels.",
+          "Completeness: the Facebook Page must be fully populated — profile photo, cover photo, about section, contact information and website.",
+          "Activity: pages with consistent recent posting history are stronger candidates than inactive pages.",
+          "Consistency: the business name, contact information and address must match across the website, Google Maps and other online listings.",
+          "Business documentation: Meta typically requires business registration documents for business page verification.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Preparing your page for verification: what to fix before applying",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Before submitting a Meta verification application, review your Facebook Page against the eligibility factors above. Common issues that reduce verification eligibility: inconsistent business name spelling across platforms, missing or outdated About section information, incomplete contact details, mismatch between the Facebook Page address and the Google Maps address, and lack of recent posting activity. Fixing these before applying gives your application the strongest foundation." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "The honest reality: approval is not certain",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Meta's verification process includes an internal review that is not fully transparent in its criteria. Well-prepared pages from legitimate businesses are sometimes declined; occasionally less complete pages are approved. The review timeline can range from a few days to several weeks. Reapplication after a decline is possible, but immediate reapplication rarely succeeds — it's better to address any potential gaps before reapplying. Any agency that guarantees approval is not being honest about how the process works." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How much does Meta Verified cost?",
+        a: "Meta Verified has both free and paid tiers. Basic business page verification may be available at no cost; Meta Verified for Business (with additional features) carries a monthly subscription fee that varies by region. Check Meta's current pricing as it changes periodically.",
+      },
+      {
+        q: "Does the Meta Verified badge help attract Korean tourists specifically?",
+        a: "Korean tourists primarily use Naver for tourism research — the Facebook blue badge has less impact on this segment than on Western guests. The badge is more valuable for credibility with European, North American and Australian guests who recognise and trust it as an authenticity signal.",
+      },
+    ],
+    related: [
+      { label: "Meta Verified support Vietnam", href: "/en/social-marketing/meta-verified-vietnam", note: "Service" },
+      { label: "Facebook Page management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam", note: "Service" },
+      { label: "Facebook Page tourism guide", href: "/en/blog/facebook-page-tourism-vietnam", note: "Related" },
+      { label: "Social proof tourism Vietnam", href: "/en/blog/social-proof-tourism-vietnam", note: "Related" },
+    ],
+  },
+  {
+    slug: "social-media-growth-tourism",
+    heroImage: { src: "/images/blog/social-media-growth-tourism.webp", alt: "Social media growth strategy for tourism businesses in Hoi An and Da Nang" },
+    path: "/en/blog/social-media-growth-tourism",
+    cluster: "social",
+    title: "Social Media Growth for Tourism Businesses in Vietnam: A Practical Guide",
+    metaTitle: "Social Media Growth for Tourism in Vietnam | What Actually Works",
+    metaDescription:
+      "Practical guide to growing Facebook and Instagram for spas, restaurants and hotels in Hoi An and Da Nang. What drives real follower growth, what to avoid, and how social media connects to bookings.",
+    excerpt:
+      "Social media growth for tourism businesses in Vietnam is not about follower numbers alone — it's about building the channel presence that converts curious visitors into confirmed guests.",
+    date: "2026-06-17",
+    readingMinutes: 7,
+    primaryKeyword: "social media growth tourism Vietnam",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Social Media Growth Tourism", href: "/en/blog/social-media-growth-tourism" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Social media growth is one of the most misunderstood investments tourism businesses make. The goal is not a large follower count as an end in itself — it's a channel that builds credibility, reaches potential guests, and converts curiosity into bookings. Understanding the connection between social media presence and booking conversion is more valuable than any follower growth tactic." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why social channel baseline matters for tourism businesses",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "International guests discovering a spa, restaurant or hotel often check multiple platforms before booking. When a potential guest arrives at a Facebook Page with 120 followers and no recent posts, the page creates doubt — even if the business has excellent reviews on Google. A channel with an established follower base and consistent recent content signals an active, legitimate business. This baseline credibility is the practical value of social channel growth for tourism businesses." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "What drives organic social growth for tourism businesses",
+      },
+      {
+        type: "ul",
+        items: [
+          "Visual content quality: tourism businesses in Hoi An and Da Nang have strong visual assets — a spa treatment room, a beautifully plated dish, a beach view. High-quality photography consistently outperforms all other content types for social growth.",
+          "Consistent posting schedule: the Facebook algorithm rewards consistent activity. Businesses that post 3–5 times per week maintain organic reach better than those who post irregularly.",
+          "Engagement with comments: responding promptly to comments signals activity to the algorithm and builds community trust.",
+          "Tagging relevant locations and local accounts: posts tagged with Hội An or Đà Nẵng gain discovery from users exploring those locations.",
+          "Guest-generated content: encouraging guests to tag your business in their posts creates organic reach to their follower networks.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Organic growth vs Social Growth Package: understanding the difference",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Organic growth through content and community building is the most sustainable path — but it is slow, particularly for new channels with no existing audience. A Social Growth Package can accelerate the channel baseline (follower count, page credibility signals) in a shorter timeframe, giving organic content a platform to build on. The two approaches are complementary: a Social Growth Package establishes the baseline; consistent organic content then maintains and grows the channel authentically. Neither is effective without the other." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Facebook vs Instagram for tourism in Hoi An and Da Nang",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Facebook remains the stronger platform for direct booking enquiries in Vietnam's international tourism market — most guests who contact businesses directly through social media use Facebook Messenger. Instagram is more valuable for brand building and visual discovery, particularly for younger travellers and for businesses with strong photography. For most tourism businesses in Hoi An and Da Nang, Facebook should be the primary focus with Instagram as a secondary channel where content can often be repurposed from Facebook." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "What social growth cannot replace",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Strong social media channels support but cannot replace the foundational trust signals that drive bookings: Google Maps reviews for the international market, Naver Blog reviews for Korean guests, and a website with accurate information and a booking pathway. Social media is most valuable as a channel that reinforces decisions already made based on reviews and recommendations — rarely the first or only reason a guest books." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How many Facebook followers does a spa in Hoi An need to look credible?",
+        a: "There's no universal threshold, but pages with fewer than 500 followers often raise implicit doubt with international guests. 1,000–3,000 followers provides a credibility baseline for a small-to-medium tourism business in Hoi An. Beyond this, engagement quality matters more than raw follower count.",
+      },
+      {
+        q: "Should I invest in Facebook Ads to grow followers?",
+        a: "Facebook Like campaigns can grow a page audience, but the quality of followers matters. Audiences from broad geographic targeting often have low engagement rates. Better ROI typically comes from targeted ads directed at international tourist demographics in markets that actually visit Hoi An and Da Nang.",
+      },
+    ],
+    related: [
+      { label: "Social Media Growth Vietnam", href: "/en/social-marketing/social-media-growth-vietnam", note: "Service" },
+      { label: "Facebook Page management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam", note: "Service" },
+      { label: "Social proof tourism Vietnam", href: "/en/blog/social-proof-tourism-vietnam", note: "Related" },
+      { label: "Facebook page tourism Vietnam", href: "/en/blog/facebook-page-tourism-vietnam", note: "Related" },
+    ],
+  },
+
+  // ─── P3 Website cluster additions ────────────────────────────────────────────
+  {
+    slug: "hotel-direct-booking-website-vietnam",
+    heroImage: { src: "/images/blog/hotel-direct-booking-website-vietnam.webp", alt: "Hotel direct booking website for Hoi An and Da Nang reducing OTA commissions" },
+    path: "/en/blog/hotel-direct-booking-website-vietnam",
+    cluster: "website",
+    title: "Why Hotels in Hoi An and Da Nang Need a Direct Booking Website",
+    metaTitle: "Hotel Direct Booking Website Vietnam | Reduce OTA Commission | Guide",
+    metaDescription:
+      "How hotels and homestays in Hoi An and Da Nang can use a direct booking website to reduce OTA dependency, save on commission fees and build direct guest relationships.",
+    excerpt:
+      "Hotels in Hoi An and Da Nang that rely entirely on OTA platforms pay 15–25% commission on every booking. A direct booking website recovers that margin — and the guests it attracts are often more valuable.",
+    date: "2026-06-16",
+    readingMinutes: 7,
+    primaryKeyword: "hotel direct booking website Vietnam",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Hotel Direct Booking Website Vietnam", href: "/en/blog/hotel-direct-booking-website-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "The average OTA commission in Vietnam's hotel market is 15–25% of the booking value. For a hotel in Hoi An generating 500 million VND in monthly OTA revenue, that's 75–125 million VND per month paid to Booking.com, Agoda and Expedia — every month, every year. A direct booking website doesn't eliminate OTA dependency overnight, but it creates an alternative channel that captures a growing share of bookings at zero commission." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "The OTA dependency trap",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "OTA platforms offer distribution reach that hotels cannot replicate independently. But the relationship creates a dependency that compounds over time: the higher the OTA ranking, the more bookings flow through OTAs; the more bookings flow through OTAs, the more commission is paid; the more commission is paid, the less margin available for direct marketing investment. Hotels that don't actively build a direct booking channel find themselves increasingly dependent on OTA platforms as their primary guest acquisition method." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "What a direct booking website needs to convert guests",
+      },
+      {
+        type: "ul",
+        items: [
+          "Rate parity or direct booking incentive: guests need a reason to book directly rather than through the OTA they already trust. The most effective approach is a 'best rate guaranteed' statement with a small direct incentive (free early check-in, welcome drink, complimentary transfer).",
+          "Real room photos and descriptions: OTA listings standardise room presentation — a direct website can show your property at its best with more photos and more detailed descriptions.",
+          "Frictionless booking: a calendar showing real-time availability with a simple booking form — not an email address to send enquiries.",
+          "Mobile-first design: the majority of hotel research happens on mobile. A slow or poorly formatted mobile experience loses bookings at the last step.",
+          "Trust signals: guest reviews displayed on the direct website (pulled from Google), property accreditations and clear cancellation policy.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to shift guests from OTA to direct",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Guests who find your hotel on Booking.com often then search Google for the hotel's own website before booking — particularly for higher-value stays where they want more information. A direct website that appears prominently in this branded search, offers a direct booking incentive and provides a better booking experience than the OTA listing captures these guests at zero commission. This 'billboard effect' — using OTA listings to generate awareness and your website to convert — is the most practical strategy for shifting OTA bookings to direct." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Building the direct guest relationship",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "A guest who books directly provides their email address and contact details — which OTA bookings typically don't. This direct relationship enables pre-arrival communication, personalised offers and post-stay engagement that builds returning guest rates. A hotel with a 20% returning guest rate dramatically reduces its OTA dependency over time because returning guests almost always book direct. Direct booking is not just about saving commission on the first booking — it's about the cumulative value of the guest relationship over multiple stays." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can a small homestay in Hoi An justify the cost of a direct booking website?",
+        a: "Yes — even a homestay with 5 rooms paying 20% OTA commission on 70% occupancy would save significantly on annual commission fees with a direct booking website. The website cost is typically recovered within the first 2–3 months of direct bookings. Smaller properties benefit proportionally more from direct bookings because commission fees hit a higher percentage of their operating margin.",
+      },
+      {
+        q: "Do OTAs penalise hotels for having lower rates on their own website?",
+        a: "Most OTA contracts include rate parity clauses that require the hotel to offer the same price through the OTA as through the direct website. However, offering non-price incentives for direct booking (room upgrade, complimentary transfer, welcome drink) is generally permitted and is the standard approach to making direct booking attractive without technically violating rate parity.",
+      },
+    ],
+    related: [
+      { label: "Hotel website design Vietnam", href: "/en/website-design/hotel-website-design-vietnam", note: "Service" },
+      { label: "Website booking system Vietnam", href: "/en/website-design/website-booking-system-vietnam", note: "Service" },
+      { label: "Booking website vs OTA Vietnam", href: "/en/blog/booking-website-vs-ota-tourism-vietnam", note: "Related" },
+      { label: "Tourism website design Vietnam", href: "/en/website-design/tourism-website-design-vietnam", note: "Service" },
+    ],
+  },
+  {
+    slug: "website-speed-seo-tourism-vietnam",
+    heroImage: { src: "/images/blog/website-speed-seo-tourism-vietnam.webp", alt: "Website speed and SEO optimisation for tourism businesses in Vietnam" },
+    path: "/en/blog/website-speed-seo-tourism-vietnam",
+    cluster: "website",
+    title: "Website Speed and SEO for Tourism Businesses in Vietnam: What Actually Matters",
+    metaTitle: "Website Speed & SEO for Tourism in Vietnam | PageSpeed Guide",
+    metaDescription:
+      "Practical guide to website speed and SEO for spas, restaurants and hotels in Hoi An and Da Nang. Which PageSpeed factors matter for Google ranking, and what to fix first.",
+    excerpt:
+      "A slow tourism website loses bookings twice: once when Google ranks it lower, and again when visitors abandon it before the page loads. Here's what to fix and in what order.",
+    date: "2026-06-15",
+    readingMinutes: 7,
+    primaryKeyword: "website speed SEO tourism Vietnam",
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Blog", href: "/en/blog" },
+      { label: "Website Speed SEO Tourism Vietnam", href: "/en/blog/website-speed-seo-tourism-vietnam" },
+    ],
+    body: [
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Website speed is both a Google ranking factor and a direct conversion factor. A tourism website that loads slowly on a mobile connection loses visitors before they see a single photo of the spa, restaurant or hotel. In a market where guests are often researching on mobile data while travelling, a 5-second load time can mean the difference between a booking and a lost visitor who tries the next search result." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Core Web Vitals: the metrics Google actually measures",
+      },
+      {
+        type: "ul",
+        items: [
+          "LCP (Largest Contentful Paint): how quickly the main content of the page loads. Target under 2.5 seconds. The most common culprit is an oversized hero image.",
+          "FID / INP (Interaction to Next Paint): how quickly the page responds to user interaction. Target under 200ms. Caused by excessive JavaScript.",
+          "CLS (Cumulative Layout Shift): how much the page layout shifts during loading. Target under 0.1. Common when images load without defined dimensions.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The single biggest speed issue for tourism websites: images",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Tourism businesses have beautiful photography — and most tourism websites serve this photography unoptimised. A full-size JPEG photo straight from a camera can be 5–10MB. The same photo optimised for web as a WebP format at the correct display size can be 50–150KB — 50x smaller, loading 50x faster. Converting all images to WebP format and serving them at the correct size for the display device is the single highest-impact speed improvement most tourism websites can make." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "SEO for tourism websites: local search focus",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Tourism websites in Hoi An and Da Nang compete in local search — 'spa Hoi An', 'restaurant Da Nang beach', 'hotel near ancient town'. Local SEO for tourism requires: accurate and consistent business information across Google Business Profile, website and all directory listings; location-specific page titles and meta descriptions; service pages targeting specific search terms rather than generic 'About Us' or 'Services' pages; and internal links connecting service pages to each other." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Mobile-first: non-negotiable for tourism websites",
+      },
+      {
+        type: "p",
+        parts: [
+          { type: "text", text: "Google uses mobile-first indexing — it primarily uses the mobile version of a website for ranking and indexing. A tourism website that is well-designed on desktop but broken or slow on mobile is penalised in rankings and abandoned by mobile visitors. Given that the majority of travel research now happens on mobile, a mobile-first website is not an option — it's the baseline requirement for any tourism business expecting to rank and convert international guests." },
+        ],
+      },
+      {
+        type: "h2",
+        text: "What to check first: a quick speed audit",
+      },
+      {
+        type: "ul",
+        items: [
+          "Run your website URL through Google PageSpeed Insights (free) — it reports exactly which issues are affecting your score and provides specific recommendations.",
+          "Check your hero image file size: if it's over 200KB, it's oversized for web and is likely your biggest single speed issue.",
+          "Test on mobile data, not wifi: visit your own website on a mobile connection to experience it as travelling guests do.",
+          "Check Google Search Console for Core Web Vitals report: this shows real-world performance data from actual visitors, not just lab scores.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Does a high PageSpeed score directly improve my Google ranking?",
+        a: "PageSpeed is one of many Google ranking factors — a high score alone won't rank a weak website above a strong competitor. But for websites that are otherwise competitive, Core Web Vitals performance is a tiebreaker that can shift positions. More importantly, a fast website converts better regardless of ranking — it directly affects how many visitors become bookings.",
+      },
+      {
+        q: "What is a realistic PageSpeed target for a tourism website with lots of photos?",
+        a: "A well-optimised tourism website with professional photography can achieve 80–90+ on Google PageSpeed Insights with correct image optimisation, WebP format and lazy loading. Achieving 100 is difficult and often unnecessary — 80+ represents a well-performing site that will not lose visitors to load time.",
+      },
+    ],
+    related: [
+      { label: "Tourism website design Vietnam", href: "/en/website-design/tourism-website-design-vietnam", note: "Service" },
+      { label: "Spa & hotel website Hoi An", href: "/en/website-design/spa-hotel-website-hoi-an", note: "Service" },
+      { label: "Multilingual website tourism Vietnam", href: "/en/blog/multilingual-website-tourism-vietnam", note: "Related" },
+      { label: "Hotel direct booking website Vietnam", href: "/en/blog/hotel-direct-booking-website-vietnam", note: "Related" },
+    ],
+  },
 ];
 
 export function getPostEn(slug: string): BlogPost | undefined {

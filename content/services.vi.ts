@@ -7192,6 +7192,645 @@ export const SERVICES: Service[] = [
     schema: { serviceType: "Negative Review Management", offerMinPriceVnd: 3500000 },
   },
 
+  // ─── EN Social spokes (P3) ───────────────────────────────────────────────────
+  {
+    path: "/en/social-marketing/meta-verified-vietnam",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Meta Verified Vietnam", href: "/en/social-marketing/meta-verified-vietnam" },
+    ],
+    primaryKeyword: "Meta Verified Vietnam",
+    metaTitle: "Meta Verified Support for Tourism Businesses in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Profile preparation and Meta Verified application support for tourism businesses in Hoi An and Da Nang. We prepare your Facebook Page for eligibility — outcome depends on Meta's review process.",
+    eyebrow: "Social · Meta Verified",
+    h1: "Meta Verified Support for Tourism Businesses in Vietnam",
+    heroSub:
+      "A verified badge builds trust with international guests and reduces brand impersonation risk. This service prepares your Facebook Page profile to meet Meta's eligibility requirements.",
+    heroCta: "Get a Meta Verified consultation",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "A Meta verified badge on your Facebook Page signals authenticity to international visitors — particularly important for tourism businesses in Hoi An and Da Nang competing for the attention of guests who don't know your brand personally. This service prepares your page profile to the strongest possible state for Meta's verification process. Important: the final approval decision belongs entirely to Meta — this is a profile preparation service, not a guarantee of approval.",
+    sections: [
+      {
+        heading: "Why a verified badge matters for tourism businesses",
+        bullets: [
+          "International tourists checking your Facebook Page see the verified badge as a trust signal before booking.",
+          "Reduces the risk of impersonation by competitor pages using similar names or branding.",
+          "Strengthens brand professionalism in markets where social proof is a primary decision factor.",
+          "Meta Verified accounts receive additional platform support and protection features.",
+        ],
+      },
+      {
+        heading: "What profile preparation includes",
+        body:
+          "We audit your Facebook Page for the factors Meta assesses in the verification process: profile completeness, information consistency with your website and other channels, business documentation, and page authenticity signals. We bring each factor to its strongest state before you submit the verification application.",
+      },
+      {
+        heading: "Transparency about the outcome",
+        body:
+          "Meta's verification process is not guaranteed for any page, regardless of how well-prepared the profile is. Approval depends on Meta's internal criteria, which can change without notice. We are transparent about this from the start — our commitment is to the preparation process, not to a specific outcome.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Facebook Page audit against Meta's verification eligibility factors",
+        "Profile information and brand consistency review",
+        "Business documentation checklist and preparation guidance",
+        "Application process walkthrough",
+        "Post-submission follow-up support",
+      ],
+    },
+    whoFor: [
+      "Tourism businesses wanting to build Facebook Page credibility",
+      "Brands experiencing impersonation or confusion with similar pages",
+      "Hotels, spas and restaurants targeting international guests",
+      "Pages with consistent history wanting to formalise their verified status",
+    ],
+    process: [
+      { step: "Audit", detail: "Assess current page against Meta's verification eligibility signals." },
+      { step: "Prepare", detail: "Optimise profile information, consistency and documentation." },
+      { step: "Apply", detail: "Guide you through the Meta verification application process." },
+      { step: "Follow up", detail: "Assist with any Meta response and advise on next steps." },
+    ],
+    priceFrom: "From 3,000,000 VND / page",
+    priceNote: "This is a profile preparation and support fee. Verification outcome depends on Meta's review process — no approval is guaranteed.",
+    faqs: [
+      {
+        q: "Is Meta Verified approval guaranteed?",
+        a: "No. This is a profile preparation and application support service — the final decision belongs to Meta. We prepare your page to the strongest possible state but cannot influence Meta's internal review criteria.",
+      },
+      {
+        q: "Can a new Facebook Page get Meta Verified?",
+        a: "Possibly, if it meets Meta's eligibility criteria — page age is one factor but not the only one. Page completeness, authenticity and information consistency matter significantly. We assess each page individually before recommending whether to proceed.",
+      },
+      {
+        q: "What documents does Meta require for verification?",
+        a: "Requirements vary by account type and region. Typically Meta requests business registration documents and government-issued identity. We provide a checklist based on current Meta requirements at the time of application.",
+      },
+    ],
+    related: [
+      { label: "Social Media Growth Vietnam", href: "/en/social-marketing/social-media-growth-vietnam", note: "Related service" },
+      { label: "Facebook Page management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam", note: "Related service" },
+      { label: "Meta Verified guide Vietnam", href: "/en/blog/meta-verified-guide-vietnam", note: "Blog guide" },
+      { label: "Social proof for tourism Vietnam", href: "/en/blog/social-proof-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "Meta Verified support for tourism businesses in Vietnam" },
+    ],
+    schema: { serviceType: "Meta Verified Support", offerMinPriceVnd: 3000000 },
+  },
+  {
+    path: "/en/social-marketing/social-media-growth-vietnam",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Social Media Growth Vietnam", href: "/en/social-marketing/social-media-growth-vietnam" },
+    ],
+    primaryKeyword: "social media growth Vietnam tourism",
+    metaTitle: "Social Media Growth for Tourism Businesses in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Social Growth Package for spas, restaurants and hotels in Hoi An and Da Nang. Content-led Facebook and Instagram growth that builds brand recognition with international guests.",
+    eyebrow: "Social · Growth",
+    h1: "Social Media Growth for Tourism Businesses in Vietnam",
+    heroSub:
+      "A sparse social profile loses international guests before they ever reach your booking page. This service builds the channel presence and follower base that gives your business credibility online.",
+    heroCta: "Get a social growth consultation",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "For tourism businesses in Hoi An and Da Nang, social media is often the first impression international guests form before deciding to enquire. A Facebook or Instagram account with minimal followers and sparse content raises doubt — particularly among Western guests and Korean tourists using social channels as a secondary trust check. This Social Growth Package builds the baseline channel presence your business needs to convert social visitors into bookings.",
+    sections: [
+      {
+        heading: "Why channel foundation matters before content investment",
+        bullets: [
+          "International guests check social channels as part of their pre-booking trust assessment.",
+          "A new or sparse channel can undermine confidence even when reviews on other platforms are strong.",
+          "Content investment performs better when the channel already has an established baseline.",
+          "A consistent follower base signals market presence to new visitors evaluating multiple options.",
+        ],
+      },
+      {
+        heading: "Content-led growth: the sustainable approach",
+        body:
+          "Growth numbers only create value when combined with real content. Our Social Growth Package is always paired with a content direction plan — because followers without content don't convert to bookings, and a channel that looks hollow despite high numbers raises more suspicion than a smaller authentic-looking account. We grow channels in ways that support the real business goal: more direct enquiries and bookings.",
+      },
+      {
+        heading: "Platforms: Facebook and Instagram for tourism",
+        body:
+          "Facebook remains the primary social discovery platform for a broad international audience visiting Vietnam. Instagram is particularly effective for spas, restaurants and hotels with strong visual content. We advise on channel priority based on your specific guest profile and current platform presence before starting any growth programme.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Channel audit and platform priority recommendation",
+        "Content direction plan for posts that complement growth",
+        "Social Growth Package roll-out on agreed platform(s)",
+        "Monthly performance review and next-step recommendation",
+      ],
+    },
+    whoFor: [
+      "New tourism businesses establishing social presence",
+      "Spas, restaurants and hotels with low follower counts on key platforms",
+      "Businesses preparing social channels before a marketing campaign",
+      "Tourism operators wanting to strengthen their social trust signals",
+    ],
+    process: [
+      { step: "Audit", detail: "Review current channels, follower counts and content state." },
+      { step: "Plan", detail: "Define platform priority and content direction to accompany growth." },
+      { step: "Grow", detail: "Roll out Social Growth Package on agreed channels." },
+      { step: "Review", detail: "Monthly assessment of engagement quality and next steps." },
+    ],
+    priceFrom: "From 100,000 VND / 1,000 followers",
+    priceNote: "Best combined with real content for sustainable results. Final pricing depends on platform and growth target.",
+    faqs: [
+      {
+        q: "Does more followers directly increase bookings?",
+        a: "Followers alone don't create bookings — content and trust signals do. The value of a higher follower count is the credibility it lends your profile when potential guests check your social channels. We always pair growth with content direction to ensure the channel converts.",
+      },
+      {
+        q: "Which platform should a spa in Hoi An prioritise?",
+        a: "Instagram is typically stronger for visually-driven spa content; Facebook has broader reach for general tourism guests. For Korean guests specifically, Facebook and Naver are the relevant channels. We advise on platform split based on your actual guest demographics.",
+      },
+      {
+        q: "How long does it take to see results?",
+        a: "Follower growth from a Social Growth Package is typically visible within 2–4 weeks. Meaningful booking impact from improved social presence usually becomes measurable 2–3 months after channel baseline is established.",
+      },
+    ],
+    related: [
+      { label: "Meta Verified Vietnam", href: "/en/social-marketing/meta-verified-vietnam", note: "Related service" },
+      { label: "Facebook Page management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam", note: "Related service" },
+      { label: "Social proof tourism Vietnam", href: "/en/blog/social-proof-tourism-vietnam", note: "Blog guide" },
+      { label: "Facebook page tourism Vietnam", href: "/en/blog/facebook-page-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/growth.webp", alt: "Social media growth for tourism businesses in Hoi An and Da Nang" },
+    ],
+    schema: { serviceType: "Social Media Growth", offerMinPriceVnd: 100000 },
+  },
+  {
+    path: "/en/social-marketing/facebook-account-recovery-vietnam",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Facebook Account Recovery Vietnam", href: "/en/social-marketing/facebook-account-recovery-vietnam" },
+    ],
+    primaryKeyword: "Facebook account recovery Vietnam",
+    metaTitle: "Facebook Account Recovery Support for Businesses in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Support for recovering disabled or restricted Facebook Pages and accounts for tourism businesses in Vietnam. We document and submit appeals — outcome depends on Meta's review.",
+    eyebrow: "Social · Recovery",
+    h1: "Facebook Account Recovery Support for Tourism Businesses in Vietnam",
+    heroSub:
+      "A disabled or restricted Facebook Page can cut off bookings overnight. This service supports you through Meta's appeal and recovery process — transparently and without false promises.",
+    heroCta: "Get recovery support",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Facebook Page or account suspension can happen for policy violations, false reports or algorithmic errors — and the impact for a tourism business that relies on Facebook for bookings can be severe. This service provides structured support through Meta's appeal and recovery process: documentation, appeal submission, follow-up, and alternative channel setup while recovery is pending. Outcome depends entirely on Meta's review — we are transparent about what is and isn't within our control.",
+    sections: [
+      {
+        heading: "Common reasons Facebook Pages are disabled in Vietnam",
+        bullets: [
+          "Policy violations: content that breaches Meta's community standards, whether intentional or not.",
+          "False reporting: competitor or malicious reports that trigger automated review.",
+          "Identity verification failures: account ownership disputes or unverified business information.",
+          "Advertising policy violations: ads that breach Meta's advertising policies even if the page content is clean.",
+          "Algorithmic flags: automated systems flagging unusual activity patterns.",
+        ],
+      },
+      {
+        heading: "What the recovery support process looks like",
+        body:
+          "We start by identifying the stated reason for the restriction or disable, then document the evidence needed for a recovery appeal. We prepare and submit the appeal through Meta's official channels, follow up on response timelines and advise on next steps based on Meta's decision. We also help set up backup channels so the business is not completely dark while recovery is pending.",
+      },
+      {
+        heading: "What we cannot control or promise",
+        body:
+          "Meta's review decisions are final and can take weeks to months. Some accounts are not recoverable if the violation is severe or the account history is problematic. We will advise honestly on the realistic probability of recovery before you commit to the service — not every case is worth pursuing through the appeal process.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Account and page audit to identify reason for restriction",
+        "Evidence documentation for appeal",
+        "Official Meta appeal submission and follow-up",
+        "Backup channel setup advice while recovery is pending",
+        "Post-recovery setup to prevent recurrence",
+      ],
+    },
+    whoFor: [
+      "Tourism businesses with disabled or restricted Facebook Pages",
+      "Businesses that have lost access to their primary booking channel",
+      "Pages facing advertising bans or limited functionality",
+      "Accounts experiencing repeated false reporting from competitors",
+    ],
+    process: [
+      { step: "Diagnose", detail: "Identify reason for restriction and recovery probability." },
+      { step: "Document", detail: "Prepare evidence package for Meta appeal." },
+      { step: "Appeal", detail: "Submit official recovery request and track Meta's response." },
+      { step: "Recover", detail: "Advise on page setup and safeguards to prevent recurrence." },
+    ],
+    priceFrom: "From 3,000,000 VND / case",
+    priceNote: "Recovery outcome depends on Meta's review process. We provide an honest probability assessment before you proceed.",
+    faqs: [
+      {
+        q: "Is account recovery always possible?",
+        a: "No — some accounts cannot be recovered if the violation is severe or the account history has compounding issues. We assess recovery probability honestly before you engage the service and will tell you clearly if we believe appeal is unlikely to succeed.",
+      },
+      {
+        q: "How long does Facebook account recovery take?",
+        a: "Meta's review timeline for appeals ranges from 2 weeks to 3 months depending on the case type, violation severity and appeal queue. We cannot accelerate Meta's internal process — we can only ensure your appeal is complete and correctly submitted.",
+      },
+      {
+        q: "What should a business do immediately after a page is disabled?",
+        a: "Do not create a new page to replace the disabled one — this can permanently complicate recovery. Document the notification you received from Meta, screenshot your page content if accessible, and begin the appeal process through the official channel as quickly as possible.",
+      },
+    ],
+    related: [
+      { label: "Meta Verified Vietnam", href: "/en/social-marketing/meta-verified-vietnam", note: "Related service" },
+      { label: "Social Media Growth Vietnam", href: "/en/social-marketing/social-media-growth-vietnam", note: "Related service" },
+      { label: "Facebook Page tourism Vietnam", href: "/en/blog/facebook-page-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "Facebook account recovery support for tourism businesses in Vietnam" },
+    ],
+    schema: { serviceType: "Facebook Account Recovery Support", offerMinPriceVnd: 3000000 },
+  },
+  {
+    path: "/en/social-marketing/facebook-page-management-vietnam",
+    cluster: "social",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Facebook Page Management Vietnam", href: "/en/social-marketing/facebook-page-management-vietnam" },
+    ],
+    primaryKeyword: "Facebook page management Vietnam tourism",
+    metaTitle: "Facebook Page Management for Tourism Businesses in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Professional Facebook Page management for spas, restaurants and hotels in Hoi An and Da Nang. Content planning, posting, response management and performance reporting.",
+    eyebrow: "Social · Page Management",
+    h1: "Facebook Page Management for Tourism Businesses in Vietnam",
+    heroSub:
+      "A well-managed Facebook Page builds trust with international guests before they ever contact you. This service handles the content, posting schedule and response management so your page stays active and professional.",
+    heroCta: "Get a page management proposal",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "For tourism businesses in Hoi An and Da Nang, a consistently maintained Facebook Page is often a key factor in international guest trust. Guests from Korea, Europe and Australia check Facebook before booking to verify the business is active, read reviews and assess the quality of the experience. A page with outdated posts or unanswered messages signals neglect — the opposite of the impression you want to make on a prospective guest.",
+    sections: [
+      {
+        heading: "What a managed Facebook Page does for your business",
+        bullets: [
+          "Consistent posting schedule signals to Facebook's algorithm that your page is active — supporting organic reach.",
+          "Professional photo and caption quality reinforces your brand positioning with international guests.",
+          "Fast message response time (tracked as a 'Very responsive' badge) increases guest confidence before enquiry.",
+          "Review responses show that you are attentive and professional — visible to all prospective visitors.",
+          "Regular content about services, seasonal promotions and guest experiences keeps your page relevant in follower feeds.",
+        ],
+      },
+      {
+        heading: "Content approach for tourism businesses",
+        body:
+          "Tourism content for Facebook performs best when it is visual, specific and experiential. Posts about specific treatments, dishes, room types or activities outperform generic promotional posts. We build content plans around your real business calendar — seasonal offers, local events, new services — rather than generic social media templates.",
+      },
+      {
+        heading: "Multilingual page management",
+        body:
+          "Tourism businesses in Hoi An and Da Nang often serve guests from multiple countries. We can manage page content in English for the international audience, with Korean-language captions where the Korean market is a primary focus. Vietnamese content is available separately through the VI services.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Monthly content calendar with post topics and publishing schedule",
+        "Photo caption writing in English (Korean optional)",
+        "Scheduled posting at optimal engagement times",
+        "Comment and message response management",
+        "Monthly performance report (reach, engagement, response time)",
+      ],
+    },
+    whoFor: [
+      "Spas, restaurants and hotels with no consistent Facebook posting",
+      "Tourism businesses wanting a professional English-language social presence",
+      "Business owners who don't have time to manage social media themselves",
+      "Businesses preparing their page for Meta Verified application",
+    ],
+    process: [
+      { step: "Onboard", detail: "Content audit, brand voice brief and first content calendar." },
+      { step: "Create", detail: "Monthly content production and scheduling for approval." },
+      { step: "Publish", detail: "Scheduled posting and response management." },
+      { step: "Report", detail: "Monthly performance summary and next-month priorities." },
+    ],
+    priceFrom: "From 5,000,000 VND / month",
+    priceNote: "Pricing depends on posting frequency, language requirements and whether photography is included.",
+    faqs: [
+      {
+        q: "How many posts per week does Facebook Page management include?",
+        a: "Standard management includes 3–5 posts per week, which is sufficient to maintain algorithm visibility and give regular followers consistent content. Higher frequencies are available for businesses wanting more intensive social presence.",
+      },
+      {
+        q: "Do I need to provide photos?",
+        a: "Ideally yes — photos of your actual space, services and products perform significantly better than stock imagery. We can advise on a simple monthly photo capture routine for your team, or arrange a photography session separately.",
+      },
+      {
+        q: "Can you manage both Facebook and Instagram from the same package?",
+        a: "Yes — Facebook and Instagram management can be bundled since content is often adaptable across both platforms. We advise on the degree of platform-specific adaptation based on where your audience is most active.",
+      },
+    ],
+    related: [
+      { label: "Meta Verified Vietnam", href: "/en/social-marketing/meta-verified-vietnam", note: "Related service" },
+      { label: "Social Media Growth Vietnam", href: "/en/social-marketing/social-media-growth-vietnam", note: "Related service" },
+      { label: "Social proof tourism Vietnam", href: "/en/blog/social-proof-tourism-vietnam", note: "Blog guide" },
+      { label: "Facebook page tourism Vietnam", href: "/en/blog/facebook-page-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-social.webp", alt: "Facebook page management for tourism businesses in Hoi An and Da Nang" },
+    ],
+    schema: { serviceType: "Facebook Page Management", offerMinPriceVnd: 5000000 },
+  },
+
+  // ─── EN Website Design additional spokes (P3) ────────────────────────────────
+  {
+    path: "/en/website-design/restaurant-website-design-vietnam",
+    cluster: "website",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Restaurant Website Design Vietnam", href: "/en/website-design/restaurant-website-design-vietnam" },
+    ],
+    primaryKeyword: "restaurant website design Vietnam",
+    metaTitle: "Restaurant Website Design for Hoi An & Da Nang | Cong Thien Agency",
+    metaDescription:
+      "Professional website design for restaurants in Hoi An and Da Nang. Multilingual menus, online reservations, Google Maps integration and content ready for Korean and international guests.",
+    eyebrow: "Website · Restaurant",
+    h1: "Restaurant Website Design for Hoi An and Da Nang",
+    heroSub:
+      "International guests decide whether to visit a restaurant based on its website before they ever step outside. A well-designed restaurant website converts that pre-visit research into a reservation.",
+    heroCta: "Get a restaurant website quote",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Restaurants in Hoi An and Da Nang targeting international guests — particularly Korean tourists and Western travellers — need a website that functions as a booking engine, not just a brochure. Guests want to see the menu, understand the price range, verify the location and make a reservation without leaving the page. A restaurant website that serves these needs directly converts more of the traffic that comes from Naver Blog posts, Google Maps and social media.",
+    sections: [
+      {
+        heading: "What international guests want from a restaurant website",
+        bullets: [
+          "A menu with photos, descriptions and prices — not a PDF that requires downloading.",
+          "Clear location with a Google Maps embed showing how to get from the tourist centre.",
+          "Reservation method: WhatsApp, form or direct booking — frictionless and in their language.",
+          "Photography of the actual dining space, not generic stock imagery.",
+          "Operating hours and any seasonal closures clearly stated.",
+        ],
+      },
+      {
+        heading: "Multilingual restaurant websites",
+        body:
+          "A restaurant website in English only covers part of the international market in Hoi An and Da Nang. Korean guests — one of the largest international dining segments — benefit significantly from a Korean menu section, Korean phonetics for the restaurant name, and a KakaoTalk contact option. We build multilingual restaurant websites that serve the full international guest mix your business actually receives.",
+      },
+      {
+        heading: "Connecting website to your Naver and Google presence",
+        body:
+          "A restaurant website works best when it is the destination that Naver Blog posts and Google Maps listings link to. When a Korean blogger publishes a post about your restaurant on Naver and links to a page with a Korean menu and KakaoTalk contact, conversion is direct and measurable. We build restaurant websites with this link ecosystem in mind from the start.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Restaurant website design and development (Next.js or equivalent)",
+        "Digital menu with photos, descriptions and pricing",
+        "Online reservation form or booking widget",
+        "Google Maps integration and location page",
+        "Multilingual support (English + Korean option)",
+        "Mobile-first responsive design",
+        "PageSpeed and Core Web Vitals optimisation",
+      ],
+    },
+    whoFor: [
+      "Restaurants targeting Korean and international tourist guests",
+      "Dining venues with only a Facebook page but no website",
+      "Restaurants with outdated websites that don't convert visitors to reservations",
+      "Hotel restaurants wanting a standalone web presence",
+    ],
+    process: [
+      { step: "Brief", detail: "Gather menu content, brand photos and reservation requirements." },
+      { step: "Design", detail: "Build mobile-first restaurant layout with menu and booking." },
+      { step: "Multilingual", detail: "Add language variants and Korean menu phonetics." },
+      { step: "Launch", detail: "Connect to domain, submit to Google and Naver." },
+    ],
+    priceFrom: "From 12,000,000 VND",
+    priceNote: "Pricing depends on number of menu sections, language variants and booking system complexity.",
+    faqs: [
+      {
+        q: "Do I need to provide professional food photos for the website?",
+        a: "Professional photos make a significant difference in how a restaurant website converts visitors. If you don't have existing photos, we can recommend a food photography session as part of the project — good photos of real dishes consistently outperform stock imagery for restaurant trust signals.",
+      },
+      {
+        q: "Can the website handle online reservations directly?",
+        a: "Yes — we integrate either a custom reservation form or a third-party booking widget depending on your reservation management needs. The simplest option for smaller restaurants is a WhatsApp or form-based reservation; more complex setups can include calendar management.",
+      },
+    ],
+    related: [
+      { label: "Tourism website design Vietnam", href: "/en/website-design/tourism-website-design-vietnam", note: "Related service" },
+      { label: "Google Maps for restaurants Vietnam", href: "/en/google-maps-marketing/google-maps-for-restaurants-vietnam", note: "Google channel" },
+      { label: "Naver marketing for restaurants", href: "/en/naver-marketing/naver-marketing-for-restaurants", note: "Korean channel" },
+      { label: "Booking website vs OTA Vietnam", href: "/en/blog/booking-website-vs-ota-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Restaurant website design for Hoi An and Da Nang international guests" },
+    ],
+    schema: { serviceType: "Restaurant Website Design", offerMinPriceVnd: 12000000 },
+  },
+  {
+    path: "/en/website-design/hotel-website-design-vietnam",
+    cluster: "website",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Hotel Website Design Vietnam", href: "/en/website-design/hotel-website-design-vietnam" },
+    ],
+    primaryKeyword: "hotel website design Vietnam",
+    metaTitle: "Hotel & Homestay Website Design for Hoi An & Da Nang | Cong Thien Agency",
+    metaDescription:
+      "Hotel and homestay website design with direct booking integration for properties in Hoi An and Da Nang. Reduce OTA commission fees with a website that converts international guests directly.",
+    eyebrow: "Website · Hotel",
+    h1: "Hotel and Homestay Website Design for Hoi An and Da Nang",
+    heroSub:
+      "Every guest who books through Booking.com or Agoda costs you 15–25% in commission. A direct booking website recovers that margin — and guests who book direct are often higher-value customers.",
+    heroCta: "Get a hotel website quote",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Hotels and homestays in Hoi An and Da Nang typically pay OTA platforms 15–25% commission on every booking. A direct booking website captures a portion of this revenue by giving guests a way to book without going through a third-party platform. Beyond the commission saving, direct bookings allow you to capture guest contact details, build a returning guest database and communicate directly with guests before and after their stay.",
+    sections: [
+      {
+        heading: "Why OTA-only is a risk for hotels in Hoi An",
+        bullets: [
+          "OTA ranking algorithms change — a hotel relying entirely on Booking.com can lose visibility overnight.",
+          "OTAs own the guest relationship — you often don't get guest email or contact details from an OTA booking.",
+          "Commission rates compound at scale — a 100-room hotel paying 20% commission loses millions in annual margin.",
+          "Direct guests tend to be higher-value: they've chosen to research and book directly, signalling stronger intent and often higher spend.",
+        ],
+      },
+      {
+        heading: "What a direct booking website needs",
+        body:
+          "A hotel direct booking website needs to do more than look good — it needs to convert the guest who arrived from Google Maps, Naver Blog or a social media post. Core elements: a room listing with real photos and accurate pricing, a direct booking calendar, a rate parity signal (same price or better than OTA), trust signals such as reviews and accreditations, and a fast mobile experience because most research happens on phones.",
+      },
+      {
+        heading: "Korean-language hotel websites",
+        body:
+          "Korean guests are among the most research-intensive hotel bookers in the Vietnam market. A hotel page with Korean room descriptions, Korean pricing and a KakaoTalk contact option captures Korean guests who arrive via Naver and would otherwise fall back to booking through an OTA. The conversion difference between a Korean-language direct page and an English-only page for this segment is substantial.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Hotel website design and development with direct booking integration",
+        "Room listing pages with photo galleries and pricing",
+        "Booking calendar and reservation form",
+        "Multilingual support (English + Korean option)",
+        "Google Maps and Naver Place connection",
+        "Mobile-first, fast-loading design",
+        "SEO setup for hotel search terms in Hoi An / Da Nang",
+      ],
+    },
+    whoFor: [
+      "Hotels and homestays wanting to reduce OTA dependency",
+      "Properties with no website or outdated website",
+      "Boutique hotels targeting Korean and Western guests",
+      "Hotel groups wanting a unified direct booking presence",
+    ],
+    process: [
+      { step: "Scope", detail: "Define room types, languages, booking flow and direct booking goals." },
+      { step: "Design", detail: "Build hotel website with room listings and direct booking." },
+      { step: "Connect", detail: "Integrate booking system and link to Google Maps and Naver." },
+      { step: "Launch", detail: "Go live and submit to search engines." },
+    ],
+    priceFrom: "From 15,000,000 VND",
+    priceNote: "Price depends on number of room types, language variants and booking system integration.",
+    faqs: [
+      {
+        q: "Can I offer better rates on my own website than on Booking.com?",
+        a: "Yes — offering a direct booking incentive (lowest rate guarantee, free early check-in, complimentary transfer) is a proven strategy for shifting guests from OTA to direct. We can display this prominently on your website to capture guests who would otherwise convert on the OTA.",
+      },
+      {
+        q: "Do I need a channel manager to run a direct booking website?",
+        a: "A channel manager is useful if you're running multiple OTA channels simultaneously to prevent overbooking. For smaller properties relying primarily on direct bookings, a simple calendar and form approach is often sufficient and avoids the complexity and cost of a channel manager.",
+      },
+    ],
+    related: [
+      { label: "Spa & hotel website Hoi An", href: "/en/website-design/spa-hotel-website-hoi-an", note: "Related service" },
+      { label: "Google Maps for hotels Vietnam", href: "/en/google-maps-marketing/google-maps-for-hotels-vietnam", note: "Google channel" },
+      { label: "Naver SEO agency for hotels", href: "/en/naver-marketing/naver-seo-agency-for-hotels", note: "Korean channel" },
+      { label: "Booking website vs OTA Vietnam", href: "/en/blog/booking-website-vs-ota-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/homestay.webp", alt: "Hotel and homestay website design for direct bookings in Hoi An and Da Nang" },
+    ],
+    schema: { serviceType: "Hotel Website Design", offerMinPriceVnd: 15000000 },
+  },
+  {
+    path: "/en/website-design/website-booking-system-vietnam",
+    cluster: "website",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Website Booking System Vietnam", href: "/en/website-design/website-booking-system-vietnam" },
+    ],
+    primaryKeyword: "website booking system Vietnam tourism",
+    metaTitle: "Website Booking System for Tourism Businesses in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Online booking system integration for spas, tours and hotels in Hoi An and Da Nang. Accept direct reservations 24/7 without relying on phone calls or third-party OTA platforms.",
+    eyebrow: "Website · Booking",
+    h1: "Website Booking System for Tourism Businesses in Vietnam",
+    heroSub:
+      "International guests want to book at midnight their time, when you are asleep. An online booking system captures those reservations automatically — without phone calls, message delays or OTA commission.",
+    heroCta: "Get a booking system consultation",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Tourism businesses in Hoi An and Da Nang lose bookings every day to the friction of their reservation process. A guest who finds your spa on Naver, wants to book a treatment at 11pm Korea time, and can only reach you by WhatsApp message will often default to booking a competitor who has an online calendar instead. A website booking system removes this friction and captures reservation intent at the moment it occurs — regardless of your timezone or working hours.",
+    sections: [
+      {
+        heading: "The cost of reservation friction",
+        bullets: [
+          "International guests in different time zones cannot call or message at convenient hours — they book where they can book immediately.",
+          "WhatsApp and email-only bookings create a bottleneck — each reservation requires staff time and back-and-forth messages.",
+          "OTA booking platforms capture the guests who want to book instantly, charging you 15–25% commission for the privilege.",
+          "A 24/7 online booking system recovers this revenue without adding operational complexity.",
+        ],
+      },
+      {
+        heading: "Types of booking systems for tourism businesses",
+        body:
+          "The right booking system depends on your business type. Spas and tour operators benefit from date and time slot booking with treatment or activity selection. Hotels need room-type availability calendars with pricing. Restaurants typically use table reservation systems with party size and time selection. We recommend and integrate the system that fits your operational reality — not overcomplicate it with features you won't use.",
+      },
+      {
+        heading: "Booking systems that work for Korean guests",
+        body:
+          "Korean guests often prefer structured booking processes over open-ended WhatsApp conversations. A booking form with Korean-language labels, a KakaoTalk confirmation option and prices stated in Korean Won (with VND conversion) significantly improves booking conversion from the Korean market.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Booking system selection and integration into existing or new website",
+        "Service or room listing setup with pricing and availability",
+        "Automated confirmation email or message template",
+        "Korean-language booking form option",
+        "Admin dashboard for managing reservations",
+        "Google Calendar or management system integration",
+      ],
+    },
+    whoFor: [
+      "Spas wanting to accept online treatment bookings without WhatsApp back-and-forth",
+      "Tour operators with multiple departure slots to manage",
+      "Hotels wanting direct bookings without OTA dependency",
+      "Any tourism business losing enquiries to timezone friction",
+    ],
+    process: [
+      { step: "Assess", detail: "Understand reservation flow, service types and timezone requirements." },
+      { step: "Select", detail: "Recommend the right booking system for your business category." },
+      { step: "Integrate", detail: "Build or connect the booking system to your website." },
+      { step: "Test", detail: "End-to-end booking flow testing before go-live." },
+    ],
+    priceFrom: "From 8,000,000 VND",
+    priceNote: "Price depends on system complexity, number of service types and language requirements. Third-party booking software fees may apply separately.",
+    faqs: [
+      {
+        q: "Can a booking system be added to an existing website?",
+        a: "Yes — in most cases we can integrate a booking system into an existing website without a full redesign. The integration approach depends on the website platform. We assess compatibility before quoting.",
+      },
+      {
+        q: "What happens when a guest books — how do I receive the notification?",
+        a: "You receive an automatic booking notification by email, and optionally by WhatsApp or SMS. The booking appears in an admin calendar dashboard where you can confirm, modify or cancel. Guests receive an automatic confirmation immediately after booking.",
+      },
+      {
+        q: "Do Korean guests prefer booking systems or WhatsApp messages?",
+        a: "Korean guests are comfortable with structured online booking forms — particularly if the form is in Korean and offers a KakaoTalk or WhatsApp confirmation. An online booking system removes the need for them to communicate across time zones and aligns with how they book most travel services.",
+      },
+    ],
+    related: [
+      { label: "Tourism website design Vietnam", href: "/en/website-design/tourism-website-design-vietnam", note: "Related service" },
+      { label: "Hotel website design Vietnam", href: "/en/website-design/hotel-website-design-vietnam", note: "Related service" },
+      { label: "Booking website vs OTA Vietnam", href: "/en/blog/booking-website-vs-ota-tourism-vietnam", note: "Blog guide" },
+      { label: "Multilingual website tourism Vietnam", href: "/en/blog/multilingual-website-tourism-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/hero/macbook-hero.jpg", alt: "Website booking system for tourism businesses in Vietnam" },
+    ],
+    schema: { serviceType: "Website Booking System", offerMinPriceVnd: 8000000 },
+  },
+
 ];
 
 export function getService(path: string): Service | undefined {
