@@ -5813,11 +5813,11 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      { label: "Google Maps Review & Reputation", href: "/en/services", note: "Service hub" },
-      { label: "Audit Google Business Profile", href: "/vi/google-maps-marketing/audit-google-business-profile", note: "Profile audit" },
-      { label: "Review reputation Vietnam", href: "/vi/google-maps-marketing/review-reputation", note: "VI service page" },
-      { label: "Handle negative reviews", href: "/vi/google-maps-marketing/quan-ly-review-tieu-cuc", note: "Negative review workflow" },
-      { label: "Google Maps for Hoi An & Da Nang businesses", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Blog guide" },
+      { label: "Google Business Profile Vietnam", href: "/en/google-maps-marketing/google-business-profile-vietnam", note: "EN service" },
+      { label: "Review & Reputation Vietnam", href: "/en/google-maps-marketing/review-reputation-vietnam", note: "EN service" },
+      { label: "Negative Review Management", href: "/en/google-maps-marketing/negative-review-management-vietnam", note: "EN service" },
+      { label: "Google Maps for Hoi An & Da Nang", href: "/en/blog/google-maps-hoi-an-da-nang-guide", note: "Blog guide" },
+      { label: "Get more Google reviews", href: "/en/blog/get-more-google-reviews-tourism-vietnam", note: "Blog guide" },
       { label: "Google Business Profile Help", href: "https://support.google.com/business", note: "External · Google official support" },
       { label: "Google review policies", href: "https://support.google.com/contributionpolicy/answer/7400114", note: "External · Google policy reference" },
     ],
@@ -5967,6 +5967,461 @@ export const SERVICES: Service[] = [
       { slot: "hero", suggestion: "/images/services/service-maps.webp", alt: "Việc làm đánh giá Map – chương trình CTV trải nghiệm thật" },
     ],
     schema: { serviceType: "Google Maps Review & Reputation Marketing", offerMinPriceVnd: 6000000 },
+  },
+
+  // ─── EN Naver spokes (P2) ────────────────────────────────────────────────────
+  {
+    path: "/en/naver-marketing/naver-marketing-for-spas",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Marketing for Spas", href: "/en/naver-marketing/naver-marketing-for-spas" },
+    ],
+    primaryKeyword: "Naver marketing for spas Vietnam",
+    metaTitle: "Naver Marketing for Spas in Hoi An & Da Nang | Cong Thien Agency",
+    metaDescription:
+      "Attract Korean tourists to your spa in Hoi An or Da Nang through Naver Blog reviews, Naver Place optimisation and Korean-language content. Spa-specific Naver marketing strategy.",
+    eyebrow: "Naver · Spa",
+    h1: "Naver Marketing for Spas in Hoi An and Da Nang",
+    heroSub:
+      "Korean tourists search for spas in Hoi An and Da Nang primarily on Naver — not Google. This service builds your spa's visibility on the platform that actually reaches Korean guests.",
+    heroCta: "Get a Naver spa marketing plan",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Spa treatments are one of the top activities Korean tourists seek in Hoi An and Da Nang. The searches they make — '호이안 스파 추천' (Hoi An spa recommendation) or '다낭 마사지' (Da Nang massage) — happen on Naver, not Google. Building a Naver presence for your spa means being visible at the exact moment Korean visitors are deciding where to book.",
+    sections: [
+      {
+        heading: "How Korean tourists choose a spa in Hoi An",
+        bullets: [
+          "They read Naver Blog reviews from Korean travellers who have visited the spa and describe the experience in detail.",
+          "They check Naver Place to confirm the spa exists, see photos of the treatment rooms and read the Korean-language description.",
+          "They look for specific treatments mentioned — traditional Vietnamese massage, herbal steam, hot stone, body scrub.",
+          "They want a clear booking method: WhatsApp or KakaoTalk link in the blog post or Naver Place listing.",
+        ],
+      },
+      {
+        heading: "What spa Naver marketing includes",
+        body:
+          "The strategy has three components: Naver Blog reviews from Korean travel bloggers who visit and write about their treatment experience, Naver Place setup with Korean-language descriptions and accurate spa information, and optionally Korean-language pages on your website that Naver blog posts can link to. Together these create a discovery path from Naver search to booking.",
+      },
+      {
+        heading: "Why spa Naver content works especially well",
+        body:
+          "Spa visits are highly experiential and visual — exactly the type of experience Korean travel bloggers write about in detail. A well-written Naver Blog post about a spa treatment, with photos of the ambience, the treatment room and the result, is one of the highest-converting content types for Korean tourist decisions. Spas that invest in Naver Blog reviews consistently report strong Korean guest bookings from this channel alone.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Naver keyword research for spa searches in Hoi An and Da Nang",
+        "Naver Place setup or optimisation with Korean-language content",
+        "Korean blogger coordination — identification, outreach, visit and review",
+        "Content direction for Korean-language spa descriptions",
+        "Internal link plan connecting Naver content to your website",
+      ],
+    },
+    whoFor: [
+      "Day spas and massage centres targeting Korean tourists",
+      "Wellness retreats wanting Korean language visibility",
+      "Hotel spas looking to attract Korean hotel guests",
+      "Spas with no current Naver presence",
+    ],
+    process: [
+      { step: "Keyword", detail: "Map Korean spa search terms for your location and service type." },
+      { step: "Place", detail: "Set up or optimise Naver Place with Korean-language content." },
+      { step: "Blog", detail: "Coordinate Korean blogger visit and review publication." },
+      { step: "Link", detail: "Connect Naver content to your website and booking channel." },
+    ],
+    priceFrom: "Naver Blogger Review from 8,000,000 VND / 4 posts",
+    priceNote: "Scope depends on number of posts, blogger type and whether Naver Place management is included.",
+    faqs: [
+      {
+        q: "How many Naver Blog posts does a spa need to start appearing in Korean searches?",
+        a: "A minimum of 3–5 posts from different Korean bloggers targeting the same keyword cluster is typically needed to build consistent search visibility. More posts from diverse sources increase coverage and trust.",
+      },
+      {
+        q: "Do Naver posts need to mention specific treatments?",
+        a: "Yes — the most effective Naver spa posts include the specific treatment name (in Korean), the experience from arrival to checkout, honest pricing and photos of the treatment room and result. Generic posts without detail perform significantly worse.",
+      },
+      {
+        q: "Can this be combined with Google Maps marketing?",
+        a: "Yes — the strongest setup for a spa in Hoi An combines Naver Blog reviews and Naver Place for Korean guests with optimised Google Maps presence for all other international guests. Both channels can run simultaneously.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Full service" },
+      { label: "Google Maps for spas Vietnam", href: "/en/google-maps-marketing/google-maps-for-spas-vietnam", note: "Google channel" },
+      { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Blog guide" },
+      { label: "What Korean tourists search for", href: "/en/blog/what-korean-tourists-search-vietnam", note: "Blog guide" },
+      { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/spa.webp", alt: "Naver marketing for spas in Hoi An and Da Nang attracting Korean tourists" },
+    ],
+    schema: { serviceType: "Naver Marketing for Spas", offerMinPriceVnd: 8000000 },
+  },
+  {
+    path: "/en/naver-marketing/naver-marketing-for-restaurants",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Marketing for Restaurants", href: "/en/naver-marketing/naver-marketing-for-restaurants" },
+    ],
+    primaryKeyword: "Naver marketing for restaurants Vietnam",
+    metaTitle: "Naver Marketing for Restaurants in Hoi An & Da Nang | Cong Thien Agency",
+    metaDescription:
+      "Get your restaurant found by Korean tourists on Naver. Naver Blog food reviews, Naver Place listing and Korean-language content for restaurants in Hoi An and Da Nang.",
+    eyebrow: "Naver · Restaurant",
+    h1: "Naver Marketing for Restaurants in Hoi An and Da Nang",
+    heroSub:
+      "Korean food bloggers are among the most influential voices in Korean travel content. A well-placed Naver food review can fill your restaurant with Korean guests for an entire season.",
+    heroCta: "Get a Naver restaurant plan",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Korean tourists are passionate food researchers. Before arriving in Hoi An or Da Nang, many spend hours reading Naver Blog food posts — searching '호이안 맛집' (Hoi An best restaurants) or '다낭 베트남 음식' (Da Nang Vietnamese food). A restaurant that appears in these searches through Naver Blog reviews and a strong Naver Place listing captures this intent at its highest point.",
+    sections: [
+      {
+        heading: "Why Korean food bloggers drive restaurant bookings",
+        bullets: [
+          "Korean travel blog posts about restaurants are detailed and visual — they include photos of every dish, honest assessments of taste and value, and specific ordering recommendations.",
+          "Korean readers trust these posts as a substitute for visiting themselves in advance — they are pre-qualified buyers.",
+          "A post targeting '호이안 맛집' (Hoi An best restaurants) from an established Korean food blogger can rank on Naver for months and drive consistent reservations.",
+          "Restaurant posts are shared in KakaoTalk group chats by travellers recommending to friends — organic amplification beyond the initial post reach.",
+        ],
+      },
+      {
+        heading: "Naver Place for restaurants",
+        body:
+          "Naver Place is the Korean equivalent of Google Maps for local business discovery. Registering your restaurant on Naver Place with a Korean-language description, menu photos, accurate hours and a booking contact gives Korean tourists a trusted reference point. A restaurant on Naver Place that has also been reviewed on Naver Blog has a double presence — the most effective combination for Korean tourist conversion.",
+      },
+      {
+        heading: "What makes a restaurant Naver post effective",
+        body:
+          "The best Naver food posts include: the restaurant name in Korean phonetics, directions from a nearby landmark, 10–20 photos of actual dishes, honest price comparisons, specific dishes to order, and a contact method for reservations. Posts written by bloggers who have genuinely visited and eaten are significantly more trusted than sponsored content that reads as promotional.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Naver keyword map for restaurant searches in your location",
+        "Naver Place setup with Korean-language menu descriptions",
+        "Korean food blogger coordination — visit, photography, review",
+        "Content direction for menu items to feature",
+        "Booking channel setup (WhatsApp/KakaoTalk link in Naver content)",
+      ],
+    },
+    whoFor: [
+      "Vietnamese restaurants targeting Korean tourist footfall",
+      "Cafes and dessert shops with strong visual appeal",
+      "Cooking class providers wanting Korean discovery",
+      "Hotels with restaurants wanting to attract Korean in-house guests",
+    ],
+    process: [
+      { step: "Keyword", detail: "Research Korean food search terms for your cuisine type and location." },
+      { step: "Place", detail: "Set up Naver Place with Korean menu and photo content." },
+      { step: "Blog", detail: "Coordinate Korean food blogger visit and review." },
+      { step: "Monitor", detail: "Track Naver traffic signals and review reach." },
+    ],
+    priceFrom: "Naver Blogger Review from 8,000,000 VND / 4 posts",
+    priceNote: "Scope varies by number of posts, blogger tier and Naver Place management requirements.",
+    faqs: [
+      {
+        q: "Does my restaurant need a Korean menu to work with Naver marketing?",
+        a: "A full Korean menu is ideal but not essential to start. At minimum, having Korean phonetics for your restaurant name and key dish names allows bloggers to write accurately and helps Korean guests order confidently.",
+      },
+      {
+        q: "Can Korean food bloggers visit my restaurant during regular service?",
+        a: "Yes — most Korean blogger visits happen during regular operating hours. Some bloggers prefer a quieter visit to photograph dishes without disruption; others integrate naturally into normal service.",
+      },
+      {
+        q: "How do Korean tourists make a restaurant reservation?",
+        a: "Most prefer messaging over phone calls. WhatsApp and KakaoTalk links in the Naver post or Naver Place listing are the most effective conversion points. A simple reservation form on your website also works well.",
+      },
+    ],
+    related: [
+      { label: "Naver Map optimization restaurants", href: "/en/naver-marketing/naver-map-optimization-restaurants-vietnam", note: "Related service" },
+      { label: "Google Maps for restaurants", href: "/en/google-maps-marketing/google-maps-for-restaurants-vietnam", note: "Google channel" },
+      { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Blog guide" },
+      { label: "What Korean tourists search for", href: "/en/blog/what-korean-tourists-search-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/illustrations/restaurant.webp", alt: "Naver marketing for restaurants in Hoi An and Da Nang for Korean tourists" },
+    ],
+    schema: { serviceType: "Naver Marketing for Restaurants", offerMinPriceVnd: 8000000 },
+  },
+  {
+    path: "/en/naver-marketing/naver-marketing-hoi-an",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Marketing Hoi An", href: "/en/naver-marketing/naver-marketing-hoi-an" },
+    ],
+    primaryKeyword: "Naver marketing Hoi An",
+    metaTitle: "Naver Marketing for Tourism Businesses in Hoi An | Cong Thien Agency",
+    metaDescription:
+      "Naver Blog reviews, Naver Place optimisation and Korean-language SEO for tourism businesses in Hoi An. Reach Korean tourists before they book their spa, restaurant or tour.",
+    eyebrow: "Naver · Hoi An",
+    h1: "Naver Marketing for Tourism Businesses in Hoi An",
+    heroSub:
+      "Hoi An is one of the most searched destinations on Naver among Korean tourists planning Vietnam trips. This service builds your business's visibility in those searches.",
+    heroCta: "Get a Hoi An Naver plan",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Hội An consistently appears in Korean travel planning as one of Vietnam's most visited destinations. Korean tourists search Naver for every aspect of a Hoi An trip: spas, restaurants, lantern boat experiences, cooking classes, accommodation and day tours. For businesses in Hoi An, appearing in these Naver searches is not a competitive advantage — it is a baseline requirement for reaching the Korean market.",
+    sections: [
+      {
+        heading: "How Korean tourists research Hoi An on Naver",
+        bullets: [
+          "'호이안 여행 일정' (Hoi An travel itinerary) — broad planning searches that Korean trip planners read first.",
+          "'호이안 스파 추천' (Hoi An spa recommendation) — high-volume searches for wellness experiences.",
+          "'호이안 맛집' (Hoi An best food places) — restaurant discovery through Korean food blogger reviews.",
+          "'호이안 쿠킹클래스' (Hoi An cooking class) — activity searches for experiential tourism.",
+          "'호이안 숙소' (Hoi An accommodation) — hotel and homestay searches by independent travellers.",
+        ],
+      },
+      {
+        heading: "What a Hoi An Naver strategy looks like",
+        body:
+          "A Hoi An-focused Naver strategy starts with mapping which Korean keyword clusters apply to your specific business type, then building Naver Blog content and Naver Place presence that targets those searches. A spa in the old town targets different keywords from a restaurant near An Bang beach — the location-specific framing of content is as important as the service type.",
+      },
+      {
+        heading: "Hoi An: a high-competition Naver market",
+        body:
+          "Hoi An is not a blank canvas on Naver — some businesses have been investing in Korean marketing for years and have substantial Naver Blog review archives. The practical implication is that newer entrants need a minimum volume of quality posts to break into visible search positions. A single Naver post is rarely enough; 3–5 posts targeting complementary keywords from different bloggers is a realistic starting point.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Hoi An Naver keyword audit for your business category",
+        "Naver Place setup with Hoi An location-specific Korean content",
+        "Korean blogger coordination with Hoi An travel content focus",
+        "Content direction for old town, beach area or countryside framing",
+        "Internal links connecting Naver content to your website",
+      ],
+    },
+    whoFor: [
+      "All tourism businesses in Hoi An old town and surrounding areas",
+      "Spas, restaurants, hotels, cooking classes and tour operators",
+      "Businesses with no current Naver presence",
+      "Businesses with some Naver content wanting to scale",
+    ],
+    process: [
+      { step: "Audit", detail: "Review current Naver visibility and competitor content in Hoi An." },
+      { step: "Map", detail: "Define keyword targets by business type and Hoi An location." },
+      { step: "Execute", detail: "Coordinate blogger visits, Naver Place and website content." },
+      { step: "Scale", detail: "Expand with additional posts and keyword targets as results emerge." },
+    ],
+    priceFrom: "Naver Blogger Review from 8,000,000 VND / 4 posts",
+    priceNote: "Final scope depends on business category, post volume and current Naver presence.",
+    faqs: [
+      {
+        q: "Is Hoi An more competitive on Naver than Da Nang?",
+        a: "Both are competitive. Hoi An has higher search volume for experience-type searches (spa, cooking class, lantern boat). Da Nang has higher volume for accommodation and golf. The strategy differs slightly by destination.",
+      },
+      {
+        q: "Can a new business in Hoi An compete on Naver?",
+        a: "Yes — Naver Blog posts can rank quickly for long-tail keywords even when published by newer businesses. The key is targeting specific, less-competed keyword variations before moving to high-competition head terms.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Full service" },
+      { label: "Naver Marketing Da Nang", href: "/en/naver-marketing/naver-marketing-da-nang", note: "Related location" },
+      { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Blog guide" },
+      { label: "What Korean tourists search for", href: "/en/blog/what-korean-tourists-search-vietnam", note: "Blog guide" },
+      { label: "Naver Place guide Vietnam", href: "/en/blog/naver-place-guide-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver marketing for tourism businesses in Hoi An" },
+    ],
+    schema: { serviceType: "Naver Marketing Hoi An", offerMinPriceVnd: 8000000 },
+  },
+  {
+    path: "/en/naver-marketing/naver-marketing-da-nang",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver Marketing Da Nang", href: "/en/naver-marketing/naver-marketing-da-nang" },
+    ],
+    primaryKeyword: "Naver marketing Da Nang",
+    metaTitle: "Naver Marketing for Tourism Businesses in Da Nang | Cong Thien Agency",
+    metaDescription:
+      "Naver Blog reviews, Naver Place optimisation and Korean-language SEO for spas, restaurants, hotels and golf in Da Nang. Reach Korean tourists planning their Da Nang trip on Naver.",
+    eyebrow: "Naver · Da Nang",
+    h1: "Naver Marketing for Tourism Businesses in Da Nang",
+    heroSub:
+      "Da Nang receives more Korean tourists than almost any city in Southeast Asia. Naver is where they research, plan and make their booking decisions — and this service puts your business in front of them.",
+    heroCta: "Get a Da Nang Naver plan",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "Đà Nẵng is one of the most visited destinations in Vietnam for Korean tourists — particularly for its beaches, golf courses, hotels and proximity to Hoi An. Korean visitors to Da Nang are active Naver researchers: they plan restaurant itineraries, book massages and choose hotels based heavily on Naver Blog content. A business in Da Nang that invests in Naver presence is investing in the primary discovery channel of its largest international customer segment.",
+    sections: [
+      {
+        heading: "The Da Nang Korean tourist profile",
+        bullets: [
+          "Da Nang attracts a high proportion of Korean golf tourists — one of the highest golf participation markets globally.",
+          "Korean beach resort guests — the Mỹ Khê beach and resort strip are heavily searched on Naver.",
+          "Korean group tours and family travel — often using Naver for itinerary planning before group departure.",
+          "Korean business travellers — Da Nang's growing MICE market includes Korean corporate groups.",
+          "Korean food tourists — Da Nang's restaurant scene is heavily documented on Naver food blogs.",
+        ],
+      },
+      {
+        heading: "Top Naver search terms for Da Nang",
+        body:
+          "The highest-volume Da Nang Naver searches include: '다낭 호텔 추천' (Da Nang hotel recommendation), '다낭 맛집' (Da Nang best restaurants), '다낭 골프장' (Da Nang golf courses), '다낭 마사지 추천' (Da Nang massage recommendation) and '다낭 여행 코스' (Da Nang travel itinerary). Each search cluster represents a distinct business category that can build Naver visibility.",
+      },
+      {
+        heading: "Da Nang vs Hoi An: different search patterns",
+        body:
+          "Da Nang Naver searches are more accommodation and activity-driven, while Hoi An searches skew more toward cultural and wellness experiences. A business operating in both locations benefits from location-specific Naver content rather than generic Vietnam content — Korean tourists plan by city, not by country.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "Da Nang Naver keyword audit by business category",
+        "Naver Place setup with Da Nang location-specific Korean content",
+        "Korean blogger coordination with Da Nang travel content focus",
+        "Separate keyword strategy from Hoi An if operating both locations",
+        "Connection to website Korean pages and booking channel",
+      ],
+    },
+    whoFor: [
+      "Hotels, resorts and beach accommodation in Da Nang",
+      "Golf courses and sports facilities",
+      "Restaurants and cafes on Mỹ Khê and Han River areas",
+      "Spas and massage centres near beach resorts",
+    ],
+    process: [
+      { step: "Audit", detail: "Review current Naver visibility for Da Nang-specific searches." },
+      { step: "Target", detail: "Define keyword priorities by location and business category." },
+      { step: "Execute", detail: "Coordinate blogger visits and Naver Place optimisation." },
+      { step: "Grow", detail: "Scale with additional posts and location keyword expansion." },
+    ],
+    priceFrom: "Naver Blogger Review from 8,000,000 VND / 4 posts",
+    priceNote: "Scope depends on business category, post volume and Da Nang location specifics.",
+    faqs: [
+      {
+        q: "Is the Korean golf market a realistic Naver target for Da Nang golf courses?",
+        a: "Yes — '다낭 골프장' (Da Nang golf courses) is one of the highest-volume Naver search terms for Da Nang. Korean golf tourists research courses extensively on Naver before booking tee times. A well-placed Naver Blog post about a specific Da Nang course can drive direct booking enquiries.",
+      },
+      {
+        q: "Should Da Nang and Hoi An businesses share the same Naver strategy?",
+        a: "No — Korean tourists search for Da Nang and Hoi An separately and the keyword clusters are different. A combined strategy that treats both as interchangeable misses the location-specific intent of Korean travel planning.",
+      },
+    ],
+    related: [
+      { label: "Naver Marketing Hoi An", href: "/en/naver-marketing/naver-marketing-hoi-an", note: "Related location" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Full service" },
+      { label: "Attract Korean tourists to Hoi An", href: "/en/blog/attract-korean-tourists-hoi-an", note: "Blog guide" },
+      { label: "Naver Marketing Vietnam guide", href: "/en/blog/naver-marketing-vietnam-guide", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver marketing for tourism businesses in Da Nang" },
+    ],
+    schema: { serviceType: "Naver Marketing Da Nang", offerMinPriceVnd: 8000000 },
+  },
+  {
+    path: "/en/naver-marketing/naver-koc-vietnam",
+    cluster: "naver",
+    isPillar: false,
+    breadcrumb: [
+      { label: "Home", href: "/en" },
+      { label: "Services", href: "/en/services" },
+      { label: "Naver KOC Vietnam", href: "/en/naver-marketing/naver-koc-vietnam" },
+    ],
+    primaryKeyword: "Naver KOC Vietnam",
+    metaTitle: "Naver KOC & Korean Blogger Reviews for Tourism in Vietnam | Cong Thien Agency",
+    metaDescription:
+      "Work with verified Korean KOC (Key Opinion Consumers) and Naver bloggers to create authentic review content for your tourism business in Hoi An and Da Nang.",
+    eyebrow: "Naver · KOC",
+    h1: "Naver KOC and Korean Blogger Reviews for Tourism in Vietnam",
+    heroSub:
+      "Korean KOC (Key Opinion Consumers) and Naver bloggers are the primary trust builders for the Korean tourist market. This service coordinates their visits and reviews for your business.",
+    heroCta: "Get a KOC review plan",
+    heroCtaHref: SITE.contact.zalo,
+    intro:
+      "A KOC (Key Opinion Consumer) is a Korean content creator whose influence comes from the authenticity and detail of their reviews rather than celebrity status. On Naver, KOCs publish long-form blog posts about their real experiences — spa treatments, restaurant meals, hotel stays — that Korean travellers trust deeply when planning trips. Working with the right KOC for your business category creates content that drives bookings for months after the initial post.",
+    sections: [
+      {
+        heading: "KOC vs celebrity influencer: why KOCs convert better for tourism",
+        bullets: [
+          "KOC content reads as genuine personal experience — Korean readers can tell the difference between authentic and paid-feeling content.",
+          "KOCs typically have smaller but more engaged audiences who actively trust their recommendations.",
+          "A KOC post remains visible in Naver search for months or years — unlike social media posts that disappear within days.",
+          "KOC fees are generally more accessible than celebrity influencer rates while delivering stronger long-term search impact.",
+          "KOCs in the travel niche have established follower bases who specifically seek travel recommendations.",
+        ],
+      },
+      {
+        heading: "How the KOC coordination process works",
+        body:
+          "We identify Korean KOCs whose existing content matches your business category and target audience — a spa-focused KOC for spas, a food blogger for restaurants. We coordinate the visit logistics, provide the Korean blogger with accurate business information and any necessary translation support, review the content direction and manage the publication timeline. The business owner's main role is hosting the visit and providing the best possible experience.",
+      },
+      {
+        heading: "What makes a KOC post rank on Naver",
+        body:
+          "Naver Blog posts rank based on content relevance to the keyword, the blogger's account authority (view history, engagement) and post recency. A KOC with a strong, established Naver account will generate better search placement than a new blogger with the same content. This is why blogger selection matters as much as content quality — we prioritise KOCs with proven Naver account histories in your business category.",
+      },
+    ],
+    deliverables: {
+      title: "What is included",
+      items: [
+        "KOC identification matched to your business category and location",
+        "Visit coordination and scheduling",
+        "Content direction brief in Korean for the blogger",
+        "Review quality check before publication",
+        "Post-publication performance monitoring",
+      ],
+    },
+    whoFor: [
+      "Spas wanting authentic Korean treatment reviews",
+      "Restaurants looking for detailed Korean food blog coverage",
+      "Hotels and homestays needing Korean accommodation reviews",
+      "Any tourism business wanting to build Naver Blog presence",
+    ],
+    process: [
+      { step: "Match", detail: "Identify KOCs whose existing content fits your category and audience." },
+      { step: "Brief", detail: "Prepare Korean-language content direction for the blogger." },
+      { step: "Visit", detail: "Coordinate the visit and hosting logistics." },
+      { step: "Publish", detail: "Review content and confirm publication on target keywords." },
+    ],
+    priceFrom: "Naver Blogger Review from 8,000,000 VND / 4 posts",
+    priceNote: "Price varies by KOC tier, post volume and whether Naver Place management is included.",
+    faqs: [
+      {
+        q: "What is the difference between a Naver KOC and a Korean influencer?",
+        a: "A Korean influencer typically operates on Instagram or YouTube with large follower counts and charges accordingly. A Naver KOC is a blogger whose influence comes from detailed, trusted written reviews on Naver Blog — smaller audience but higher purchase intent among that audience, and content that remains searchable long-term.",
+      },
+      {
+        q: "Can I specify what the KOC writes about my business?",
+        a: "You can provide information and direction, but the content should read as the blogger's genuine experience. Scripted or promotional-feeling posts perform significantly worse on Naver — authenticity is the core value of KOC content. The best approach is to provide a great experience and let the blogger write genuinely.",
+      },
+      {
+        q: "How long does a KOC post stay visible on Naver?",
+        a: "A well-written Naver Blog post from an established KOC can rank and drive traffic for 12–24 months or longer. Unlike social media, Naver Blog content is indexed and searched over time — making each post a long-term SEO asset.",
+      },
+    ],
+    related: [
+      { label: "Naver Blog Marketing Vietnam", href: "/en/naver-marketing/naver-blog-marketing-vietnam", note: "Blog marketing service" },
+      { label: "Naver Marketing Agency Vietnam", href: "/en/naver-marketing/naver-marketing-agency-vietnam", note: "Full service" },
+      { label: "Book Korean bloggers guide", href: "/en/blog/book-korean-bloggers-vietnam", note: "Blog guide" },
+      { label: "Naver Blog reviews guide", href: "/en/blog/naver-blog-reviews-guide", note: "Blog guide" },
+      { label: "Naver KOC guide Vietnam", href: "/en/blog/naver-koc-guide-vietnam", note: "Blog guide" },
+    ],
+    images: [
+      { slot: "hero", suggestion: "/images/services/service-naver.webp", alt: "Naver KOC and Korean blogger reviews for tourism businesses in Vietnam" },
+    ],
+    schema: { serviceType: "Naver KOC Korean Blogger Reviews", offerMinPriceVnd: 8000000 },
   },
 
   // ─── EN Website Design spokes ───────────────────────────────────────────────
