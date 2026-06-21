@@ -4,6 +4,7 @@ import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb } from "@/components/Bits";
 import { ContactButtons } from "@/components/ContactButtons";
+import { GoogleMapEmbed } from "@/components/GoogleMapEmbed";
 import { JsonLd } from "@/components/JsonLd";
 import { CONTACT_VI } from "@/content/pages.vi";
 import { graphDocument, breadcrumbGraph } from "@/lib/schema";
@@ -80,6 +81,13 @@ export default async function Page({ params }: Params) {
                 </div>
               </dl>
             </div>
+          </div>
+
+          <div className="mt-10">
+            <GoogleMapEmbed
+              title="Google Maps của Công Thiên Agency"
+              description="Bạn có thể mở trực tiếp hồ sơ Google Maps của tôi để xem vị trí, chỉ đường và thông tin doanh nghiệp."
+            />
           </div>
         </Container>
       </section>

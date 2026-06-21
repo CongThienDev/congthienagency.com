@@ -31,6 +31,21 @@ export function FloatingContactWidget() {
         />
       </a>
       <a
+        href={SITE.contact.maps.shortUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Mở Google Maps"
+        className="grid h-12 w-12 place-items-center rounded-full border border-line bg-white shadow-lift transition-all hover:-translate-y-0.5"
+      >
+        <Image
+          src="/icon-service/map-icon.png"
+          alt="Google Maps"
+          width={22}
+          height={22}
+          className="h-5.5 w-5.5 object-contain"
+        />
+      </a>
+      <a
         href={`tel:${SITE.contact.phoneE164}`}
         aria-label={`Gọi ${SITE.contact.phoneDisplay}`}
         className="grid h-12 w-12 place-items-center rounded-full border border-line bg-white text-ink shadow-lift transition-all hover:-translate-y-0.5 hover:text-blue-700"

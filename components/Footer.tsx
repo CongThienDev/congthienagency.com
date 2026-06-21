@@ -5,6 +5,7 @@ import { FOOTER_VI } from "@/content/navigation";
 import { SITE, type Locale } from "@/content/site";
 import { IconChat, IconMail, IconMapPin, IconCode } from "./Icons";
 import type { ReactNode } from "react";
+import { GoogleMapEmbed } from "./GoogleMapEmbed";
 
 function brandIconForHref(href: string): ReactNode {
   if (href.includes("thiet-ke-website")) return <IconCode className="h-3.5 w-3.5 text-blue-400" />;
@@ -25,25 +26,57 @@ export function Footer({ locale }: { locale: Locale }) {
       <footer className="relative overflow-hidden border-t border-white/10 bg-ink text-white">
         <div aria-hidden className="bg-glow-dark absolute inset-0 opacity-60" />
         <Container className="relative py-14">
-          <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
-            <div className="max-w-xs">
-              <BrandLockup />
-              <p className="mt-4 text-sm leading-relaxed text-blue-100/60">
-                Websites, Naver & Google Maps marketing for tourism businesses
-                in Hoi An – Da Nang.
-              </p>
+          <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
+              <div className="max-w-xs">
+                <BrandLockup />
+                <p className="mt-4 text-sm leading-relaxed text-blue-100/60">
+                  Websites, Naver & Google Maps marketing for tourism businesses
+                  in Hoi An – Da Nang.
+                </p>
+              </div>
+              <div className="flex flex-col gap-2.5 text-sm">
+                <Link href="/en/services" className="text-blue-100/70 transition-colors hover:text-white">
+                  Services
+                </Link>
+                <Link href="/en/pricing" className="text-blue-100/70 transition-colors hover:text-white">
+                  Pricing
+                </Link>
+                <Link href="/en/about" className="text-blue-100/70 transition-colors hover:text-white">
+                  About
+                </Link>
+                <Link href="/en/contact" className="text-blue-100/70 transition-colors hover:text-white">
+                  Contact
+                </Link>
+              </div>
+              <div className="flex flex-col gap-2.5 text-sm">
+                <a
+                  href={SITE.contact.zalo}
+                  className="text-blue-100/70 transition-colors hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Zalo: {SITE.contact.phoneDisplay}
+                </a>
+                <a href={`mailto:${SITE.contact.email}`} className="text-blue-100/70 transition-colors hover:text-white">
+                  {SITE.contact.email}
+                </a>
+                <a
+                  href={SITE.contact.fanpage}
+                  className="text-blue-100/70 transition-colors hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook Fanpage
+                </a>
+              </div>
             </div>
-            <div className="flex flex-col gap-2.5 text-sm">
-              <Link href="/en/services" className="text-blue-100/70 transition-colors hover:text-white">Services</Link>
-              <Link href="/en/pricing" className="text-blue-100/70 transition-colors hover:text-white">Pricing</Link>
-              <Link href="/en/about" className="text-blue-100/70 transition-colors hover:text-white">About</Link>
-              <Link href="/en/contact" className="text-blue-100/70 transition-colors hover:text-white">Contact</Link>
-            </div>
-            <div className="flex flex-col gap-2.5 text-sm">
-              <a href={SITE.contact.zalo} className="text-blue-100/70 transition-colors hover:text-white" target="_blank" rel="noopener noreferrer">Zalo: {SITE.contact.phoneDisplay}</a>
-              <a href={`mailto:${SITE.contact.email}`} className="text-blue-100/70 transition-colors hover:text-white">{SITE.contact.email}</a>
-              <a href={SITE.contact.fanpage} className="text-blue-100/70 transition-colors hover:text-white" target="_blank" rel="noopener noreferrer">Facebook Fanpage</a>
-            </div>
+            <GoogleMapEmbed
+              title="Find Cong Thien Agency on Google Maps"
+              description="Open the business profile directly in Google Maps for location details and navigation."
+              ctaLabel="Open Google Maps"
+              compact
+            />
           </div>
           <div className="mt-12 border-t border-white/10 pt-6 text-xs text-blue-100/40">
             © {year} {SITE.name}. Service area: Hoi An – Da Nang, Vietnam.
@@ -97,6 +130,14 @@ export function Footer({ locale }: { locale: Locale }) {
           <FooterCol title="Dịch vụ" links={FOOTER_VI.services} brandIcons />
           <FooterCol title="Ngành nghề" links={FOOTER_VI.industries} />
           <FooterCol title="Công ty" links={FOOTER_VI.company} />
+        </div>
+
+        <div className="mt-10">
+          <GoogleMapEmbed
+            title="Google Maps của Công Thiên Agency"
+            description="Xem hồ sơ doanh nghiệp Công Thiên Agency trên Google Maps để chỉ đường và liên hệ với chúng tôi."
+            compact
+          />
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">

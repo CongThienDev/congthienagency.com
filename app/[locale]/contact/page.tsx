@@ -4,6 +4,7 @@ import { Shell } from "@/components/Shell";
 import { Container } from "@/components/Container";
 import { Breadcrumb } from "@/components/Bits";
 import { ContactButtons } from "@/components/ContactButtons";
+import { GoogleMapEmbed } from "@/components/GoogleMapEmbed";
 import { JsonLd } from "@/components/JsonLd";
 import { CONTACT_EN } from "@/content/pages.en";
 import { graphDocument, breadcrumbGraph } from "@/lib/schema";
@@ -76,6 +77,14 @@ export default async function Page({ params }: Params) {
                 </div>
               </dl>
             </div>
+          </div>
+
+          <div className="mt-10">
+            <GoogleMapEmbed
+              title="Google Maps listing"
+              description="Open the business listing directly in Google Maps for navigation, location details and brand verification."
+              ctaLabel="Open Google Maps"
+            />
           </div>
         </Container>
       </section>
