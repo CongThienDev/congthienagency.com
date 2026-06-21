@@ -8362,8 +8362,11 @@ export const SERVICES: Service[] = [
       },
       {
         heading: "When paid ads make sense",
-        body:
-          "Paid ads work best after the destination is ready. A Korean user who clicks an ad should land on a page or profile with clear services, real photos, pricing context, location and booking options. If the trust layer is missing, paid traffic may produce visits without enquiries.",
+        bodyParts: [
+          { type: "text", text: "Paid ads work best after the destination is ready. A Korean user who clicks an ad should land on a page or profile with clear services, real photos, pricing context, location and booking options. If the trust layer is missing, " },
+          { type: "link", text: "hire social media content", href: "/en/social-marketing/hire-social-media-content" },
+          { type: "text", text: " can help keep the brand active and credible after that first click, otherwise paid traffic may produce visits without enquiries." },
+        ],
       },
       {
         heading: "When Naver Blog comes first",
@@ -8682,8 +8685,11 @@ export const SERVICES: Service[] = [
     sections: [
       {
         heading: "What this searcher wants",
-        body:
-          "People searching this topic want scope, price, post volume, design expectations, caption quality, platform coverage and measurement. They are not only buying words; they are buying a system that keeps the brand visible and credible.",
+        bodyParts: [
+          { type: "text", text: "People searching this topic want scope, price, post volume, design expectations, caption quality, platform coverage and measurement. They are not only buying words; they are buying a system that keeps the brand visible and credible. When social content is expected to support search demand from Korean travelers, it should align with a page such as " },
+          { type: "link", text: "Naver advertising", href: "/en/naver-marketing/naver-advertising" },
+          { type: "text", text: " so the message after the click stays consistent from discovery to enquiry." },
+        ],
       },
       {
         heading: "What social content includes",
