@@ -26,12 +26,14 @@ const WEBSITE_SPOKES = [
 const WEBSITE_ARTICLES = [
   { label: "Website booking online cần những gì", href: "/vi/blog/website-booking-online-can-nhung-gi" },
   { label: "Website đa ngôn ngữ cho khách quốc tế", href: "/vi/blog/website-da-ngon-ngu-cho-khach-quoc-te" },
+  { label: "Thiết kế website tại Hội An", href: "/vi/thiet-ke-website" },
   { label: "Landing page là gì, khi nào cần", href: "/vi/blog/landing-page-la-gi-khi-nao-doanh-nghiep-can" },
   { label: "Bảo trì website doanh nghiệp cần làm gì", href: "/vi/blog/bao-tri-website-doanh-nghiep-can-lam-gi" },
   { label: "Website tích hợp Google Maps tăng khách", href: "/vi/blog/website-tich-hop-google-maps-de-tang-khach" },
 ];
 const SOCIAL_SPOKES = [
   { label: "Threads Growth — phát triển kênh Threads", href: "/vi/social-marketing/threads-growth" },
+  { label: "Thuê social media content", href: "/vi/social-marketing/thue-social-media-content" },
   { label: "Hỗ trợ xác minh Fanpage / Meta Verified", href: "/vi/social-marketing/xac-minh-fanpage" },
   { label: "Social Growth Package", href: "/vi/social-marketing/tang-truong-kenh" },
   { label: "Hỗ trợ khôi phục tài khoản Facebook", href: "/vi/social-marketing/khoi-phuc-tai-khoan-facebook" },
@@ -43,6 +45,9 @@ const SOCIAL_ARTICLES = [
   { label: "Social proof là gì", href: "/vi/blog/social-proof-la-gi" },
 ];
 const NAVER_SPOKES = [
+  { label: "Quảng cáo trên Naver", href: "/vi/naver-marketing/quang-cao-tren-naver" },
+  { label: "Cách quảng cáo trên Naver", href: "/vi/naver-marketing/cach-quang-cao-tren-naver" },
+  { label: "Naver Blog là gì", href: "/vi/naver-marketing/naver-blogs" },
   { label: "Viết bài Naver Blog", href: "/vi/naver-marketing/viet-bai-naver-blog" },
   { label: "Quản lý tài khoản Naver", href: "/vi/naver-marketing/quan-ly-tai-khoan-naver" },
   { label: "Tối ưu Naver Place", href: "/vi/naver-marketing/toi-uu-naver-place" },
@@ -51,6 +56,9 @@ const NAVER_SPOKES = [
   { label: "Naver hay Google cho khách Hàn", href: "/vi/naver-marketing/naver-vs-google" },
 ];
 const NAVER_ARTICLES = [
+  { label: "Naver Marketing là gì", href: "/vi/blog/naver-marketing-la-gi" },
+  { label: "What is Naver Blog?", href: "/vi/blog/what-is-naver-blog-complete-guide" },
+  { label: "Cách viết bài Naver Blog chuẩn", href: "/vi/blog/cach-viet-bai-naver-blog-chuan" },
   { label: "Naver Place khác Naver Blog", href: "/vi/blog/naver-place-khac-naver-blog-the-nao" },
   { label: "Bao lâu thì Naver có tín hiệu", href: "/vi/blog/bao-lau-thi-naver-co-tin-hieu" },
   { label: "Cách đo hiệu quả chiến dịch Naver", href: "/vi/blog/cach-do-hieu-qua-chien-dich-naver" },

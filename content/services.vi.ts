@@ -66,7 +66,7 @@ export const SERVICES: Service[] = [
     primaryKeyword: "thiết kế website Hội An Đà Nẵng",
     metaTitle: "Thiết kế website Hội An Đà Nẵng chuẩn SEO | Công Thiên Agency",
     metaDescription:
-      "Thiết kế website Hội An – Đà Nẵng cho spa, nhà hàng, khách sạn, tour và cooking class. Chuẩn SEO, tải nhanh, có booking và thanh toán online.",
+      "Thiết kế website Hội An – Đà Nẵng, thiết kế website tại Hội An cho spa, nhà hàng, khách sạn, tour và cooking class. Chuẩn SEO, tải nhanh, có booking online.",
     eyebrow: "Dịch vụ · Website",
     h1: "Thiết kế website Hội An – Đà Nẵng chuẩn SEO, có booking online",
     heroSub:
@@ -85,9 +85,9 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "Website của tôi tập trung vào điều gì?",
+        heading: "Thiết kế website tại Hội An nên tập trung vào điều gì?",
         body:
-          "Khác với nhiều đơn vị chỉ dựng landing page, tôi trực tiếp code hệ thống booking và thanh toán: giỏ hàng, PayPal / Stripe / Credit Card và email xác nhận tự động sau khi khách đặt — như đã triển khai cho Serena Retreat và Ruong House.",
+          "Khác với nhiều đơn vị chỉ dựng landing page, dịch vụ thiết kế website tại Hội An của tôi trực tiếp code hệ thống booking và thanh toán: giỏ hàng, PayPal / Stripe / Credit Card và email xác nhận tự động sau khi khách đặt — như đã triển khai cho Serena Retreat và Ruong House.",
       },
       {
         heading: "SEO & tốc độ là mặc định, không phải tùy chọn",
@@ -143,6 +143,10 @@ export const SERVICES: Service[] = [
       {
         q: "Thiết kế website mất bao lâu?",
         a: "Tùy quy mô. Tham khảo thực tế: Serena Retreat 15 ngày, Ruong House 1 tháng cho full website có booking và thanh toán.",
+      },
+      {
+        q: "Thiết kế website tại Hội An phù hợp với doanh nghiệp nào?",
+        a: "Thiết kế website tại Hội An phù hợp nhất với spa, nhà hàng, cafe, khách sạn, homestay, tour, cooking class và các mô hình dịch vụ du lịch cần khách xem thông tin rõ ràng, đặt lịch hoặc đặt dịch vụ trực tiếp. Website nên đi cùng Google Maps, social proof và nếu phục vụ khách Hàn thì có thể kết hợp thêm Naver Marketing.",
       },
       {
         q: "Website có booking và thanh toán online không?",
@@ -5561,11 +5565,11 @@ export const SERVICES: Service[] = [
       { label: "Naver Blogs", href: "/vi/naver-marketing/naver-blogs" },
     ],
     primaryKeyword: "Naver blogs",
-    metaTitle: "Naver Blogs là gì? Cách doanh nghiệp Việt Nam dùng Naver Blog",
+    metaTitle: "Naver Blog là gì? Naver Blogs cho doanh nghiệp Việt Nam",
     metaDescription:
-      "Naver blogs là hệ thống blog cá nhân và thương hiệu trên Naver. Giải thích cách Naver Blog hoạt động, vì sao khách Hàn tin và cách thương hiệu Việt Nam xuất hiện trên đó.",
+      "Naver blog là gì, Naver blogs hoạt động ra sao và vì sao khách Hàn tin nội dung review trên Naver. Hướng dẫn cho doanh nghiệp Việt Nam muốn xuất hiện trên Naver.",
     eyebrow: "Naver · Tổng quan nền tảng",
-    h1: "Naver Blogs: lớp nội dung tin cậy của tìm kiếm Hàn Quốc",
+    h1: "Naver Blog là gì? Naver Blogs và lớp nội dung tin cậy của tìm kiếm Hàn Quốc",
     heroSub:
       "Naver blogs là blog cá nhân và blog thương hiệu trên naver.com — công cụ tìm kiếm lớn nhất Hàn Quốc. Đây là nơi khách Hàn đọc review và quyết định trước khi đặt phòng, đặt tour, đặt bàn.",
     heroCta: "Tư vấn chiến lược Naver",
@@ -5574,9 +5578,9 @@ export const SERVICES: Service[] = [
       "Naver blogs là tầng nội dung dài của Naver — công cụ tìm kiếm chiếm thị phần lớn nhất tại Hàn Quốc. Mỗi tài khoản Naver có thể mở blog riêng, đăng ảnh, viết review, chia sẻ trải nghiệm. Với khách Hàn tìm thông tin du lịch Việt Nam, Naver blogs thường đáng tin hơn quảng cáo, Instagram hay thậm chí Google.",
     sections: [
       {
-        heading: "Naver blogs là gì?",
+        heading: "Naver blog là gì?",
         body:
-          "Naver blog là blog cá nhân hoặc blog thương hiệu nằm trên tên miền blog.naver.com. Ai có tài khoản Naver đều mở được. Bài viết có thể là chữ, ảnh, video, liên kết. Naver thường ưu tiên hiển thị bài blog trong kết quả tìm kiếm về review và gợi ý.",
+          "Naver blog là gì? Đây là blog cá nhân hoặc blog thương hiệu nằm trên tên miền blog.naver.com. Ai có tài khoản Naver đều mở được. Bài viết có thể là chữ, ảnh, video, liên kết. Naver thường ưu tiên hiển thị bài blog trong kết quả tìm kiếm về review và gợi ý.",
       },
       {
         heading: "Vì sao người Hàn tin Naver blogs",
@@ -5630,6 +5634,10 @@ export const SERVICES: Service[] = [
     priceNote:
       "Chi phí phụ thuộc tài khoản đăng, số lượng bài, chất lượng ảnh và có book blogger Hàn hay không.",
     faqs: [
+      {
+        q: "Naver blog là gì?",
+        a: "Naver blog là nền tảng blog thuộc hệ sinh thái Naver của Hàn Quốc, nơi cá nhân hoặc thương hiệu đăng bài viết dài, hình ảnh, video, review và liên kết. Với khách Hàn, Naver blog là nguồn tham khảo quan trọng trước khi chọn spa, nhà hàng, khách sạn, tour hoặc trải nghiệm du lịch.",
+      },
       {
         q: "Naver blogs khác gì blog thông thường?",
         a: "Blog thông thường nằm trên domain riêng của bạn và được Google index. Naver blogs nằm trên blog.naver.com — thuộc hệ sinh thái Naver, công cụ tìm kiếm lớn nhất Hàn Quốc. Naver ưu tiên hiển thị bài blog trong kết quả tìm kiếm cho các truy vấn review, gợi ý và trải nghiệm. Với khách Hàn, Naver Search là điểm bắt đầu — không phải Google.",
@@ -7857,8 +7865,11 @@ export const SERVICES: Service[] = [
     sections: [
       {
         heading: "Ý định tìm kiếm của keyword này",
-        body:
-          "Người tìm 'quảng cáo trên naver' thường chưa chắc muốn tự chạy ads ngay. Họ muốn biết Naver có những hình thức quảng cáo nào, có phù hợp với doanh nghiệp Việt Nam không, cần tiếng Hàn hay tài khoản Hàn không, ngân sách bao nhiêu và làm sao đo hiệu quả. Vì vậy trang này trả lời cả ba lớp: paid ads, content marketing và local presence.",
+        bodyParts: [
+          { type: "text", text: "Người tìm 'quảng cáo trên naver' thường chưa chắc muốn tự chạy ads ngay. Họ muốn biết Naver có những hình thức quảng cáo nào, có phù hợp với doanh nghiệp Việt Nam không, cần tiếng Hàn hay tài khoản Hàn không, ngân sách bao nhiêu và làm sao đo hiệu quả. Nếu bạn đang cần một checklist triển khai theo thứ tự rõ ràng, hãy xem thêm " },
+          { type: "link", text: "cách quảng cáo trên naver", href: "/vi/naver-marketing/cach-quang-cao-tren-naver" },
+          { type: "text", text: ". Vì vậy trang này trả lời cả ba lớp: paid ads, content marketing và local presence." },
+        ],
       },
       {
         heading: "Các hình thức quảng cáo chính trên Naver",
@@ -8010,8 +8021,11 @@ export const SERVICES: Service[] = [
     sections: [
       {
         heading: "Bước 1: Xác định mục tiêu kinh doanh",
-        body:
-          "Trước khi chọn kênh, hãy xác định bạn muốn gì: tăng nhận diện với khách Hàn, có bài review để sales dùng, tăng booking trực tiếp, hỗ trợ mùa cao điểm hay xây tài sản Naver dài hạn. Mỗi mục tiêu dẫn đến một cấu trúc khác nhau.",
+        bodyParts: [
+          { type: "text", text: "Trước khi chọn kênh, hãy xác định bạn muốn gì: tăng nhận diện với khách Hàn, có bài review để sales dùng, tăng booking trực tiếp, hỗ trợ mùa cao điểm hay xây tài sản Naver dài hạn. Nếu bạn cần trang tổng quan trước khi đi vào checklist, nên đọc thêm " },
+          { type: "link", text: "quảng cáo trên naver", href: "/vi/naver-marketing/quang-cao-tren-naver" },
+          { type: "text", text: " để hiểu các hình thức triển khai chính. Mỗi mục tiêu dẫn đến một cấu trúc khác nhau." },
+        ],
       },
       {
         heading: "Bước 2: Nghiên cứu keyword tiếng Hàn",
@@ -8168,8 +8182,11 @@ export const SERVICES: Service[] = [
     sections: [
       {
         heading: "Người tìm keyword này cần gì",
-        body:
-          "Người tìm 'thuê social media content' thường muốn biết thuê ai viết bài, chi phí bao nhiêu, một tháng gồm bao nhiêu post, có thiết kế ảnh không, có quay Reels không, có lên kế hoạch không và làm sao biết content hiệu quả. Vì vậy trang này tập trung vào scope, quy trình và tiêu chí đánh giá.",
+        bodyParts: [
+          { type: "text", text: "Người tìm 'thuê social media content' thường muốn biết thuê ai viết bài, chi phí bao nhiêu, một tháng gồm bao nhiêu post, có thiết kế ảnh không, có quay Reels không, có lên kế hoạch không và làm sao biết content hiệu quả. Nếu doanh nghiệp đang kéo lead từ các kênh tìm kiếm như " },
+          { type: "link", text: "quảng cáo trên naver", href: "/vi/naver-marketing/quang-cao-tren-naver" },
+          { type: "text", text: ", social content càng cần đồng bộ thông điệp và bằng chứng xã hội để không làm rơi niềm tin sau cú click đầu tiên. Vì vậy trang này tập trung vào scope, quy trình và tiêu chí đánh giá." },
+        ],
       },
       {
         heading: "Social media content gồm những gì",
@@ -8345,8 +8362,11 @@ export const SERVICES: Service[] = [
       },
       {
         heading: "When paid ads make sense",
-        body:
-          "Paid ads work best after the destination is ready. A Korean user who clicks an ad should land on a page or profile with clear services, real photos, pricing context, location and booking options. If the trust layer is missing, paid traffic may produce visits without enquiries.",
+        bodyParts: [
+          { type: "text", text: "Paid ads work best after the destination is ready. A Korean user who clicks an ad should land on a page or profile with clear services, real photos, pricing context, location and booking options. If the trust layer is missing, " },
+          { type: "link", text: "hire social media content", href: "/en/social-marketing/hire-social-media-content" },
+          { type: "text", text: " can help keep the brand active and credible after that first click, otherwise paid traffic may produce visits without enquiries." },
+        ],
       },
       {
         heading: "When Naver Blog comes first",
@@ -8665,8 +8685,11 @@ export const SERVICES: Service[] = [
     sections: [
       {
         heading: "What this searcher wants",
-        body:
-          "People searching this topic want scope, price, post volume, design expectations, caption quality, platform coverage and measurement. They are not only buying words; they are buying a system that keeps the brand visible and credible.",
+        bodyParts: [
+          { type: "text", text: "People searching this topic want scope, price, post volume, design expectations, caption quality, platform coverage and measurement. They are not only buying words; they are buying a system that keeps the brand visible and credible. When social content is expected to support search demand from Korean travelers, it should align with a page such as " },
+          { type: "link", text: "Naver advertising", href: "/en/naver-marketing/naver-advertising" },
+          { type: "text", text: " so the message after the click stays consistent from discovery to enquiry." },
+        ],
       },
       {
         heading: "What social content includes",

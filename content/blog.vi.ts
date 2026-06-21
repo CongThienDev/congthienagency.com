@@ -41,6 +41,8 @@ export const BLOG_HUB = {
   focusLinks: [
     { label: "Thiết kế website", href: "/vi/thiet-ke-website", note: "Trang dịch vụ trụ cột" },
     { label: "Naver Marketing", href: "/vi/naver-marketing", note: "Trang dịch vụ trụ cột" },
+    { label: "Quảng cáo trên Naver", href: "/vi/naver-marketing/quang-cao-tren-naver", note: "Keyword dịch vụ mới" },
+    { label: "Thuê social media content", href: "/vi/social-marketing/thue-social-media-content", note: "Keyword dịch vụ mới" },
     { label: "Google Maps Marketing", href: "/vi/google-maps-marketing", note: "Trang dịch vụ trụ cột" },
   ],
 };
@@ -135,7 +137,11 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Khách của spa tại Hội An phần lớn là khách du lịch và khách quốc tế. Họ tìm spa trên Google, xem nhanh trên điện thoại và muốn đặt ngay. Website của bạn cần phục vụ đúng hành vi đó.",
+        parts: [
+          { type: "text", text: "Khách của spa tại Hội An phần lớn là khách du lịch và khách quốc tế. Họ tìm spa trên Google, xem nhanh trên điện thoại và muốn đặt ngay. Vì vậy " },
+          { type: "link", text: "thiết kế website tại Hội An", href: "/vi/thiet-ke-website" },
+          { type: "text", text: " cho nhóm dịch vụ này phải ưu tiên tốc độ, mobile UX và khả năng đặt lịch rõ ràng ngay từ màn hình đầu tiên." },
+        ],
       },
       { type: "h2", text: "Những yếu tố bắt buộc" },
       {
@@ -189,7 +195,11 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Naver là cỗ máy tìm kiếm phổ biến nhất Hàn Quốc. Khi khách Hàn lên kế hoạch du lịch Hội An – Đà Nẵng, họ tìm spa, nhà hàng và tour trên Naver chứ không phải Google.",
+        parts: [
+          { type: "text", text: "Naver là cỗ máy tìm kiếm phổ biến nhất Hàn Quốc. Khi khách Hàn lên kế hoạch du lịch Hội An – Đà Nẵng, họ tìm spa, nhà hàng và tour trên Naver chứ không phải Google. Nếu doanh nghiệp muốn mở rộng hiện diện nhanh hơn ngoài blog review, cần hiểu rõ " },
+          { type: "link", text: "quảng cáo trên Naver", href: "/vi/naver-marketing/quang-cao-tren-naver" },
+          { type: "text", text: " để chọn đúng điểm chạm theo từng giai đoạn của hành trình khách hàng." },
+        ],
       },
       { type: "h2", text: "Naver Marketing gồm những gì?" },
       {
@@ -215,6 +225,16 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Dịch vụ Naver Marketing",
         href: "/vi/naver-marketing",
         note: "Dịch vụ",
+      },
+      {
+        label: "Quảng cáo trên Naver",
+        href: "/vi/naver-marketing/quang-cao-tren-naver",
+        note: "Trang dịch vụ mới",
+      },
+      {
+        label: "Cách quảng cáo trên Naver",
+        href: "/vi/naver-marketing/cach-quang-cao-tren-naver",
+        note: "Hướng dẫn triển khai",
       },
       {
         label: "Naver Marketing cho spa",
@@ -248,7 +268,11 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Naver Blog is a blogging platform inside the Naver ecosystem, the search and content environment Korean users rely on every day. For businesses in tourism, hospitality, wellness and F&B, it matters because many Korean customers read blog reviews before they decide where to go.",
+        parts: [
+          { type: "text", text: "Naver Blog is a blogging platform inside the Naver ecosystem, the search and content environment Korean users rely on every day. For businesses in tourism, hospitality, wellness and F&B, it matters because many Korean customers read blog reviews before they decide where to go. If you want to connect that review behavior to a broader acquisition plan, this is where " },
+          { type: "link", text: "Naver advertising", href: "/en/naver-marketing/naver-advertising" },
+          { type: "text", text: " becomes useful as the commercial layer around trust content." },
+        ],
       },
       { type: "h2", text: "How Naver Blog works" },
       {
@@ -1085,7 +1109,11 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Naver Blog là nơi khách Hàn đọc review trước khi đặt spa, nhà hàng hay tour. Nhưng một bài viết mang giọng quảng cáo sẽ bị bỏ qua. Bài hiệu quả phải đọc như trải nghiệm thật của một người Hàn.",
+        parts: [
+          { type: "text", text: "Naver Blog là nơi khách Hàn đọc review trước khi đặt spa, nhà hàng hay tour. Nhưng một bài viết mang giọng quảng cáo sẽ bị bỏ qua. Nếu đội ngũ của bạn vẫn đang hỏi " },
+          { type: "link", text: "Naver Blog là gì", href: "/vi/naver-marketing/naver-blogs" },
+          { type: "text", text: " và nó khác gì với website hay social post, hãy hiểu nền tảng trước rồi mới viết đúng kiểu nội dung người Hàn sẵn sàng đọc hết." },
+        ],
       },
       { type: "h2", text: "Cấu trúc một bài Naver Blog hiệu quả" },
       {
@@ -1106,7 +1134,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Từ khóa và độ dài" },
       {
         type: "p",
-        text: "Bài nên lặp lại từ khóa chính một cách tự nhiên trong tiêu đề, đoạn mở và các tiêu đề phụ, kèm từ khóa phụ theo ngữ cảnh. Độ dài vừa đủ để kể trọn trải nghiệm — quan trọng là giá trị thông tin, không phải nhồi từ khóa.",
+        parts: [
+          { type: "text", text: "Bài nên lặp lại từ khóa chính một cách tự nhiên trong tiêu đề, đoạn mở và các tiêu đề phụ, kèm từ khóa phụ theo ngữ cảnh. Khi doanh nghiệp muốn đi xa hơn review thuần túy và bắt đầu scale lead, nên tách thêm landing page riêng cho " },
+          { type: "link", text: "cách quảng cáo trên Naver", href: "/vi/naver-marketing/cach-quang-cao-tren-naver" },
+          { type: "text", text: " để giải thích quy trình, định dạng và cách đo hiệu quả. Độ dài vừa đủ để kể trọn trải nghiệm — quan trọng là giá trị thông tin, không phải nhồi từ khóa." },
+        ],
       },
       { type: "h2", text: "Vì sao nên để người Hàn viết" },
       {
@@ -1119,6 +1151,16 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Booking blogger Hàn Quốc",
         href: "/vi/naver-marketing/booking-blogger-han",
         note: "Dịch vụ",
+      },
+      {
+        label: "Naver Blog là gì",
+        href: "/vi/naver-marketing/naver-blogs",
+        note: "Trang dịch vụ",
+      },
+      {
+        label: "Quảng cáo trên Naver",
+        href: "/vi/naver-marketing/quang-cao-tren-naver",
+        note: "Trang dịch vụ",
       },
       {
         label: "Chuẩn bị hình ảnh cho bài Naver",
@@ -2878,7 +2920,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Xây social proof bền vững, không phải con số ảo" },
       {
         type: "p",
-        text: "Điểm mấu chốt: social proof chỉ có giá trị khi nó thật. Đánh giá ảo, follower mua hay tương tác giả có thể tạo cảm giác đông đúc nhất thời, nhưng không tạo niềm tin thật và tiềm ẩn rủi ro nền tảng. Cách bền vững là tích lũy đánh giá thật, nội dung thật và một kênh social chỉn chu theo thời gian.",
+        parts: [
+          { type: "text", text: "Điểm mấu chốt: social proof chỉ có giá trị khi nó thật. Đánh giá ảo, follower mua hay tương tác giả có thể tạo cảm giác đông đúc nhất thời, nhưng không tạo niềm tin thật và tiềm ẩn rủi ro nền tảng. Cách bền vững là tích lũy đánh giá thật, nội dung thật và một kênh social chỉn chu theo thời gian. Nếu doanh nghiệp chưa có team in-house, giải pháp thực tế thường là " },
+          { type: "link", text: "thuê social media content", href: "/vi/social-marketing/thue-social-media-content" },
+          { type: "text", text: " để duy trì lịch đăng đều, đúng giọng thương hiệu và bám sát các bằng chứng xã hội thực sự." },
+        ],
       },
       { type: "h2", text: "Bắt đầu từ những kênh khách hay kiểm tra" },
       {
@@ -2891,6 +2937,11 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Social Marketing & hỗ trợ Facebook",
         href: "/vi/social-marketing",
         note: "Dịch vụ",
+      },
+      {
+        label: "Thuê social media content",
+        href: "/vi/social-marketing/thue-social-media-content",
+        note: "Trang dịch vụ mới",
       },
       {
         label: "Google Maps Review & Reputation",
@@ -4262,7 +4313,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Threads có nhược điểm gì doanh nghiệp cần biết?" },
       {
         type: "p",
-        text: "Threads chưa có công cụ chạy quảng cáo trả phí cho doanh nghiệp (tính đến giữa năm 2026), nên bạn chỉ có thể tăng tiếp cận bằng nội dung tự nhiên. Thuật toán Meta cũng thay đổi liên tục — một bài đột nhiên viral nhưng bài tiếp theo có thể chỉ 200 lượt xem. Doanh nghiệp cần kỳ vọng thực tế và đầu tư dài hạn, không chạy theo viral.",
+        parts: [
+          { type: "text", text: "Threads chưa có công cụ chạy quảng cáo trả phí cho doanh nghiệp (tính đến giữa năm 2026), nên bạn chỉ có thể tăng tiếp cận bằng nội dung tự nhiên. Thuật toán Meta cũng thay đổi liên tục — một bài đột nhiên viral nhưng bài tiếp theo có thể chỉ 200 lượt xem. Vì vậy nếu muốn duy trì nhịp đăng đều và thông điệp nhất quán, nhiều doanh nghiệp chọn " },
+          { type: "link", text: "thuê social media content", href: "/vi/social-marketing/thue-social-media-content" },
+          { type: "text", text: " thay vì để kênh bị gián đoạn sau vài tuần thử nghiệm. Doanh nghiệp cần kỳ vọng thực tế và đầu tư dài hạn, không chạy theo viral." },
+        ],
       },
       {
         type: "p",
@@ -4340,6 +4395,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Thuê social media content", href: "/vi/social-marketing/thue-social-media-content", note: "Trang dịch vụ mới" },
       { label: "Cách xây kênh Threads cho doanh nghiệp dịch vụ", href: "/vi/blog/cach-xay-kenh-threads-cho-doanh-nghiep-dich-vu", note: "Blog" },
       { label: "Threads vs Instagram vs Facebook nên chọn gì", href: "/vi/blog/threads-vs-instagram-facebook-nen-chon-gi", note: "Blog" },
       { label: "Threads Growth", href: "/vi/social-marketing/threads-growth", note: "Dịch vụ" },
